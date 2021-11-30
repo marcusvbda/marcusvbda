@@ -13,10 +13,11 @@
 <div align="center">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
 ![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
+![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=react)
 ![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
 ![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=ionic)
 ![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
 ![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=node.js)
 ![](https://img.shields.io/badge/--3178C6.svg?style=flat&logoColor=FAFAFF&logo=typescript)
@@ -71,6 +72,7 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 - Vue
 - Node
 - Vercel
+- Git ( github, bitbucket e gitlab )
 
 ### Banco de dados
 - MySQL
@@ -79,6 +81,50 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 - Firebird
 - PostgreSQL
 
+
+
+## Experiências profissionais
+
+### Frontend Developer - Diwe - (Dez 2020 - Atual)
+<div align="center">
+    
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=react)
+![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
+![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
+![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
+![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
+![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=node.js)
+![](https://img.shields.io/badge/--3178C6.svg?style=flat&logoColor=FAFAFF&logo=typescript)
+![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
+![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
+![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
+    
+</div>
+
+Desenvolvimento de sistema de parceiros, como portais, erps e sistema para capacitação profissional na area da construção civil.
+
+
+
+### Fullstack Developer - Otimize - (Jan 2019 - Atual)
+<div align="center">
+    
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
+![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
+![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
+![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
+![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
+![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
+![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
+![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
+![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
+    
+</div>
+
+Desenvolvimento de sistema de parceiro na area de papelaria digital e software proprietário de ecommerce e marketing digital.
 
 
 
