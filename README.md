@@ -1,6 +1,6 @@
-<h2 align="center">
+<h1 align="center">
    👋 Oi, me chamo Vinicius Bassalobre 😉
-</h2>
+</h1>
 
 <p align='center'>
 <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img height="28"  src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"></a>
