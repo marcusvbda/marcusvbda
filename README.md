@@ -1,7 +1,14 @@
-<!-- <p align="center">
-    <img src="https://i.imgur.com/E7B3H9Z.png" title="Wikler Lopes banner" />
-</p> -->
-<h2 align="center">👋 Oi, me chamo Vinicius Bassalobre</h2>
+<h2 align="center">
+    Oi, me chamo Vinicius Bassalobre 👋
+</h2>
+
+<p align='center'>
+<a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img height="28"  src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"></a>
+<a href="https://www.instagram.com/bdavinicius/" target="_blank" title="Instagram"><img height="28" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"></i></a>
+<a href="https://twitter.com/mvbassalobre" target="_blank" title="Twitter"><img  height="28" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/twitter.svg"></a>
+</p>
+
+
 
 <div align="center">
     
@@ -26,7 +33,7 @@ Sou desenvolvedor a mais de 10 anos e durante esse tempo desenvolvi softwares pa
 Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia.
 
 
-## 🧐 Principais Projetos que atuei
+## Principais Projetos que atuei
 
 - Payt - Ecommerce Marketing Digital - Web 
 - Ezcore Leads - CRM com acadêmico - Web
@@ -35,14 +42,14 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 - Interno - ERP para empresa de vendas - Web
 - PPA - Módulo web e mobile para sistema de gestão de postos de combustíveis liquidos - Web/Mobile
 - PDC - Plataforma de ensino profissionalizante digital com foco em construção civil - Web/Mobile
-- Diversos sites/landing de parceiros - Web
-- e muito mais... 
 
-## 💡 Estatísticas e atividade no github
-----
+## Estatísticas e atividade no github
 
 ![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusvbda&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
 
+
+
+## Habilidade e conhecimentos
 
