@@ -1,5 +1,5 @@
 <h2 align="center">
-   👋 Oi, me chamo Vinicius Bassalobre 👋
+   👋 Oi, me chamo Vinicius Bassalobre 😉
 </h2>
 
 <p align='center'>
@@ -29,7 +29,7 @@
     
 </div>
 
-## Sobre
+## 🤙 Sobre
 
 Sou desenvolvedor desde de 2010 e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
 Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia.
@@ -38,7 +38,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
 
 
 
-## Principais Projetos que atuei
+## 🚧 Principais Projetos que atuei
 
 - Payt - Ecommerce Marketing Digital - Web 
 - Ezcore Leads - CRM com acadêmico - Web
@@ -48,7 +48,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
 - PPA - Módulo web e mobile para sistema de gestão de postos de combustíveis liquidos - Web/Mobile
 - PDC - Plataforma de ensino profissionalizante digital com foco em construção civil - Web/Mobile
 
-## Estatísticas e atividade no github
+## 📈 Estatísticas e atividade no github
 
 ![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
 
@@ -56,7 +56,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
 
 
 
-## Habilidade e conhecimentos
+## 🔥 Habilidade e conhecimentos
 
 ### Linguas
 🇧🇷 🇺🇸  
@@ -89,7 +89,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
 
 
 
-## Experiências profissionais
+## 👨‍⚖️ Experiências profissionais
 
 ### Frontend Developer - Diwe - (Dez 2020 - Atual)
 <div align="left">
