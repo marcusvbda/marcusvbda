@@ -154,28 +154,6 @@ Desenvolvimento de sistema CRM acadêmico para polos de universidades EAD e sist
 
 
 
-
-### Fullstack Developer - Otimize - (Jan 2019 - Atual)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-    
-</div>
-
-Desenvolvimento de sistema de parceiro na área de papelaria digital e software proprietário de ecommerce e marketing digital.
-
-
-
-
 ### Fullstack Developer - Copy Supply - (Mar 2018 - Jan 2019)
 <div align="left">
     
