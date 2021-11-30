@@ -1,5 +1,5 @@
 <h2 align="center">
-   👋 Oi, me chamo Vinicius Bassalobre 😉
+   👋 Oi, me chamo Vinicius Bassalobre 🇧🇷 😉
 </h2>
 
 <p align='center'>
@@ -58,7 +58,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
 
 ## 🔥 Habilidade e conhecimentos
 
-### Linguas
+### Linguas ( escrita, leitura e conversação )
 🇧🇷 🇺🇸  
 
 ### Linguagens
