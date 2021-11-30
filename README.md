@@ -29,12 +29,12 @@
     
 </div>
 
-## 🤙 Sobre
+## 🤙 Apresentação
 
 Sou desenvolvedor desde de 2010 e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
 Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia.
 
-Sempre estive envolvido com técnologia, desde antes de ter minha primeira posição com desenvolvedor junior, já tinha como hobbie brincar de criar pequenas aplicações para me auxiliar no dia-a-dia, como gestores financeiros e até um controle de filmes e séries para assistir 😃
+Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posição com desenvolvedor júnior, já tinha como hobbie brincar de criar pequenas aplicações para me auxiliar no dia-a-dia, como gestores financeiros e até um controle de filmes e séries para assistir 😃
 
 
 
@@ -110,7 +110,7 @@ Sempre estive envolvido com técnologia, desde antes de ter minha primeira posi�
     
 </div>
 
-Desenvolvimento de sistema de parceiros, como portais, erps e sistema para capacitação profissional na area da construção civil.
+Desenvolvimento de sistema de parceiros, como portais, ERPs e sistema para capacitação profissional na area da construção civil.
 
 
 
@@ -130,7 +130,7 @@ Desenvolvimento de sistema de parceiros, como portais, erps e sistema para capac
     
 </div>
 
-Desenvolvimento de sistema de parceiro na area de papelaria digital e software proprietário de ecommerce e marketing digital.
+Desenvolvimento de sistema de parceiro na área de papelaria digital e software proprietário de ecommerce e marketing digital.
 
 
 
@@ -171,7 +171,7 @@ Desenvolvimento de sistema CRM acadêmico para polos de universidades EAD e sist
     
 </div>
 
-Desenvolvimento de sistema de parceiro na area de papelaria digital e software proprietário de ecommerce e marketing digital.
+Desenvolvimento de sistema de parceiro na área de papelaria digital e software proprietário de ecommerce e marketing digital.
 
 
 
