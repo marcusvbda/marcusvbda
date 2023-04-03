@@ -1,5 +1,5 @@
 <h1 align="center">
-   👋 Oi, me chamo Vinicius Bassalobre 😉
+   Vinicius Bassalobre
 </h1>
 
 <p align='center'>
@@ -29,16 +29,13 @@
     
 </div>
 
-## 🤙 Apresentação
+## Apresentação
 
 Sou desenvolvedor desde de 2010 e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
-Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia.
-
-Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posição com desenvolvedor júnior, já tinha como hobbie brincar de criar pequenas aplicações para me auxiliar no dia-a-dia, como gestores financeiros e até um controle de filmes e séries para assistir 😃
+Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia
 
 
-
-## 🚧 Principais Projetos que atuei
+## Principais Projetos que atuei
 
 - Payt - Ecommerce Marketing Digital - Web 
 - Ezcore Leads - CRM com acadêmico - Web
@@ -56,10 +53,11 @@ Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posiç
 
 
 
-## 🔥 Habilidade e conhecimentos
+## Habilidade e conhecimentos
 
 ### Linguas ( escrita, leitura e conversação )
-🇧🇷 🇺🇸  
+- Inglês (B2)
+- Português (Nativo) 
 
 ### Linguagens
 - PHP 
@@ -67,6 +65,7 @@ Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posiç
 - Java
 - Javascript
 - Typescript
+- Node
 
 ### Plataformas/Frameworks/Biblioteca
 - Laravel 
@@ -78,7 +77,7 @@ Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posiç
 - Vue
 - Node
 - Vercel
-- Git ( github, bitbucket e gitlab )
+- Git
 
 ### Banco de dados
 - MySQL
@@ -86,10 +85,10 @@ Sempre estive envolvido com tecnologia, desde antes de ter minha primeira posiç
 - SQL Server
 - Firebird
 - PostgreSQL
+- DynamoDB
 
 
-
-## 👨‍⚖️ Experiências profissionais
+## Experiências profissionais
 
 ### Frontend Developer - Diwe - (Dez 2020 - Atual)
 <div align="left">
