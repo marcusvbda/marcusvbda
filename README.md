@@ -47,9 +47,9 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 
 ## 📈 Estatísticas e atividade no github
 
-![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=mvbassalobre&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
+![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mvbassalobre&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusvbda&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
 
 
 
