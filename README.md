@@ -31,7 +31,7 @@
 
 ## Apresentação
 
-Sou desenvolvedor desde de 2010 e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
+Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
 Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia
 
 
