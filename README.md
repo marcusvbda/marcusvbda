@@ -3,8 +3,8 @@
 </h1>
 
 <p align='center'>
- <img height="28"  src="https://www.worldometers.info/img/flags/br-flag.gif">
- <img height="28"  src="https://www.worldometers.info/img/flags/us-flag.gif">
+ <img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif">
+ <img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif">
 </p>
 
 
