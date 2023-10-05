@@ -41,7 +41,8 @@
  <img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif">
 </p>
 Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
-Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia
+Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia.
+
 
 <p align='center'>
  <img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif">
