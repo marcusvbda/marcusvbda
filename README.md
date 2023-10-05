@@ -8,13 +8,6 @@
 </p>
 
 
-<p align='center'>
-<a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img height="28"  src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"></a>
-<a href="https://www.instagram.com/bdavinicius/" target="_blank" title="Instagram"><img height="28" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"></i></a>
-<a href="https://twitter.com/mvbassalobre" target="_blank" title="Twitter"><img  height="28" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/twitter.svg"></a>
-</p>
-
-
 <div align="center">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
@@ -35,6 +28,13 @@
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=nestjs)
     
 </div>
+
+## Redes sociais / Social networks
+
+- <a href="https://github.com/marcusvbda/vstack" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/github.svg"> https://github.com/marcusvbda/vstack </a>
+-  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"> https://www.linkedin.com/in/mvbassalobre</a>
+-  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"> https://www.instagram.com/bdavinicius</a>
+-  <a href="https://twitter.com/mvbassalobre" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/twitter.svg"> https://twitter.com/mvbassalobre</a>
 
 ## Apresentação / Presentation  
 <p>
