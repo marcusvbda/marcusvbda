@@ -9,7 +9,6 @@
 </p>
 
 
-
 <div align="center">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
@@ -26,26 +25,33 @@
 ![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
 ![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=react)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=nestjs)
     
 </div>
 
-## Apresentação
+## Apresentação / Presentation
 
-Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos e com diversas stacks e devices.
-Busco diariamente formas de tornar meu código melhor e mais performático para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto-nível e com oque tem de mais moderno no mercado em questão de tecnologia
+Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
+Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia
 
+I've been a developer since 2010 (graduated in Systems Analysis and Development from UNIMAR in Marilia/SP), and during this time, I've developed software for various industries, using various stacks, devices, and platforms.
+Every day, I seek ways to make my code better, cleaner, and more performant. I also work on developing the soft skills expected, not only to meet the demands of current and future partners but, most importantly, to satisfy my own high standards of delivering top-notch software with the latest technology available in the market.
 
-## Principais Projetos que atuei
+## Formação acadêmico / Education
+Sou analista de sistemas formada pelo UNIMAR (universidade de Marilia - SP), no curso 'Análise e desenvolvimento de Sistemas'
 
-- Payt - Ecommerce Marketing Digital - Web 
-- Ezcore Leads - CRM com acadêmico - Web
-- Ezcore Prisma - ERP para empresa de consultoria financeiro - Web
-- Ezcore Prisma - ERP para empresa do ramo financeiro - Web
-- Interno - ERP para empresa de vendas - Web
-- PPA - Módulo web e mobile para sistema de gestão de postos de combustíveis liquidos - Web/Mobile
-- PDC - Plataforma de ensino profissionalizante digital com foco em construção civil - Web/Mobile
+I am a systems analyst graduated from UNIMAR (University of Marília - SP), in the 'Systems Analysis and Development' program.
 
-## 📈 Estatísticas e atividade no github
+## Principais Projetos que atuei / Key Projects I've worked on
+
+- Elearning - Ecommerce Marketing Digital - Web/Mobile
+- Branco App - Web/Mobile
+- Payt - Ecommerce and Marketing Digital - Web/Mobile 
+- Ezcore Leads - CRM - Web
+- Conexa - Lead Page - Web
+
+## 📈 Estatísticas e atividade no github / GitHub Statistics and Activity
 
 ![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
 
@@ -53,13 +59,13 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 
 
 
-## Habilidade e conhecimentos
+## Habilidade e conhecimentos / Skills and Knowledge.
 
-### Linguas ( escrita, leitura e conversação )
-- Inglês (B2)
-- Português (Nativo) 
+### Linguas ( escrita, leitura e conversação ) / Languages (writing, reading, and conversation).
+- Inglês conversação / English conversation level
+- Português (nativo) / Portugues (native)
 
-### Linguagens
+### Linguagens / Languages
 - PHP 
 - C#
 - Java
@@ -67,19 +73,23 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 - Typescript
 - Node
 
-### Plataformas/Frameworks/Biblioteca
+### Plataformas,frameworks e biblioteca - Platforms, frameworks and Library
 - Laravel 
 - Express
 - Nest
 - Next
 - Nuxt
+- Supabase
+- Tailwind
+- Sass
+- Bootstrap
 - React
 - Vue
 - Node
 - Vercel
 - Git
 
-### Banco de dados
+### Banco de dados / Databases
 - MySQL
 - MongoDB
 - SQL Server
@@ -88,9 +98,9 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 - DynamoDB
 
 
-## Experiências profissionais
+## Experiências profissionais / Work experience
 
-### Frontend Developer - Diwe - (Dez 2020 - Atual)
+### Fullstack Developer - Diwe - (Dez 2020 - Atual / Current)
 <div align="left">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
@@ -106,14 +116,15 @@ Busco diariamente formas de tornar meu código melhor e mais performático para 
 ![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
 ![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=nestjs)
     
 </div>
+Nesta startup de atuo com um forte foco em profound marketing. Recebemos as demandas dos clientes e as transformamos em soluções inovadoras e muitas vezes encontramos a oportunidade apartir de uma análise das necessidades do mesmo. Nossa Stack gira principalmente em torno de TypeScript e Nest.js para o desenvolvimento backend, além de React para o frontend. No entanto, também realizamos projetos envolvendo React Native para o desenvolvimento de aplicativos móveis e PHP (Laravel) e VUE para sistemas de controle interno.
 
-Desenvolvimento de sistema de parceiros, como portais, ERPs e sistema para capacitação profissional na area da construção civil.
+In this startup, I work with a strong focus on profound marketing. We receive client demands and transform them into innovative solutions, often identifying opportunities through a needs analysis. Our technology stack primarily revolves around TypeScript and Nest.js for backend development, as well as React for the frontend. However, we also undertake projects involving React Native for mobile app development, and PHP (Laravel) and Vue for internal control systems
 
 
-
-### Fullstack Developer - Otimize - (Jan 2019 - Atual)
+### Fullstack Developer - Otimize - (Jan 2019 - Out 2023)
 <div align="left">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
@@ -126,15 +137,14 @@ Desenvolvimento de sistema de parceiros, como portais, ERPs e sistema para capac
 ![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
 ![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
+![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=reactjs)
     
 </div>
+Nesta startup, atuei como fullstack e desenvolvi sistemas avançados para e-commerce e marketing digital. Nossa principal stack gira em torno do PHP (Laravel) para o desenvolvimento backend, complementado pelo Vue.js para o frontend e React Native para o desenvolvimento de aplicativos móveis.
 
-Desenvolvimento de sistema de parceiro na área de papelaria digital e software proprietário de ecommerce e marketing digital.
+In this startup, I worked as a fullstack developer and created advanced systems for e-commerce and digital marketing. Our main stack revolved around PHP (Laravel) for backend development, complemented by Vue.js for the frontend, and React Native for mobile app development.
 
-
-
-
-### Software Owner - Ezcore - (Jan 2016 - Atual)
+### Software Owner - Ezcore - (Jan 2016 - Jan 2023)
 <div align="left">
     
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
@@ -148,9 +158,9 @@ Desenvolvimento de sistema de parceiro na área de papelaria digital e software 
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
     
 </div>
+Fui software owner de um CRM desenvolvido para uma faculdade que iniciava no mundo EAD. Esse CRM era usado pelo seu setor de marketing e televendas para converter leads e novos alunos. Por vários anos fui o mantenedor e desenvolvedor de novas features para esse sistema até a venda em definitivo do sistema para a faculdade que hoje o mantém com seu time interno.
 
-Desenvolvimento de sistema CRM acadêmico para polos de universidades EAD e sistema de gestão para empresas de consultoria financeira.
-
+I served as the software owner of a CRM developed for a college that was just venturing into the world of online education (EAD). This CRM was utilized by its marketing and telesales departments to convert leads and enroll new students. For several years, I was the maintainer and developer of new features for this system until it was eventually sold to the college, which now maintains it with its internal team.
 
 
 ### Fullstack Developer - Copy Supply - (Mar 2018 - Jan 2019)
@@ -162,8 +172,9 @@ Desenvolvimento de sistema CRM acadêmico para polos de universidades EAD e sist
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=javascript)
     
 </div>
+Nesta empresa liderei um time de desenvolvimento por tempo determinado, para desenvolver um CRM que é utilizado até hoje pelo seu setor de vendas e telemarketing.
 
-Desenvolvimento de sistema interno para gestão de vendas no telemarketing integrado com PABX e sistema de controle e acompanhamento de pedidos.
+At this company, I led a development team for a specified period to create a CRM that is still in use today by its sales and telemarketing department.
 
 ### Fullstack Developer - Martersel / Alive IT - (Abr  2014 - Mar 2018)
 <div align="left">
@@ -174,9 +185,9 @@ Desenvolvimento de sistema interno para gestão de vendas no telemarketing integ
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=javascript)
     
 </div>
+Converti um sistema de automação de bombas de combustiveis liquidos e gestão para postos que rodava em C++ a mais de 15 anos para um stack web com PHP e alguns outros microsserviços em C# e NodeJs.
 
-Desenvolvimento de sistema de automação de bombas de combustiveis liquidos e gestão para postos.
-Após a venda da empresa a stack se modernizou e foi desenvolvido módulos web e mobile desses sistemas.
+I converted a liquid fuel pump automation and management system for gas stations, which had been running in C++ for over 15 years, into a web stack using PHP and several other microservices in C# and Node.js.
 
 ### Desktop Developer - Guess - (Nov 2012 - Abr 2014)
 <div align="left">
@@ -185,5 +196,9 @@ Após a venda da empresa a stack se modernizou e foi desenvolvido módulos web e
 ![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=mysql)
     
 </div>
+Aqui iniciei minha carreira como desenvolvedor. Foi minha primeira e única com desenvolvimento desktop ( DELPHI ). Desenvolviamos aplicações que atendiam o ramo do mercado imobiliário.
 
-Desenvolvimento de sistema desktop para gestão de imobiliarias e controle de corretores.
+Here, I began my career as a developer. It was my first and only experience with desktop development (DELPHI). We developed applications that served the real estate market.
+
+
+
