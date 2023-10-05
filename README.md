@@ -3,8 +3,8 @@
 </h1>
 
 <p align='center'>
- <img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif">
- <img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif">
+ <img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif">
+ <img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif">
 </p>
 
 
@@ -38,20 +38,20 @@
 
 ## Apresentação / Presentation  
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
 Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia.
 </p>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif"  > I've been a developer since 2010 (graduated in Systems Analysis and Development from UNIMAR in Marilia/SP), and during this time, I've developed software for various industries, using various stacks, devices, and platforms.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif"  > I've been a developer since 2010 (graduated in Systems Analysis and Development from UNIMAR in Marilia/SP), and during this time, I've developed software for various industries, using various stacks, devices, and platforms.
 Every day, I seek ways to make my code better, cleaner, and more performant. I also work on developing the soft skills expected, not only to meet the demands of current and future partners but, most importantly, to satisfy my own high standards of delivering top-notch software with the latest technology available in the market.
 </p>
 
 ## Formação acadêmico / Education
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou analista de sistemas formada pelo UNIMAR (universidade de Marilia - SP), no curso 'Análise e desenvolvimento de Sistemas'
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou analista de sistemas formada pelo UNIMAR (universidade de Marilia - SP), no curso 'Análise e desenvolvimento de Sistemas'
 </p>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I am a systems analyst graduated from UNIMAR (University of Marília - SP), in the 'Systems Analysis and Development' program.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I am a systems analyst graduated from UNIMAR (University of Marília - SP), in the 'Systems Analysis and Development' program.
 </p>
 
 ## Principais Projetos que atuei / Key Projects I've worked on
@@ -131,11 +131,11 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup de atuo com um forte foco em profound marketing. Recebemos as demandas dos clientes e as transformamos em soluções inovadoras e muitas vezes encontramos a oportunidade apartir de uma análise das necessidades do mesmo. Nossa Stack gira principalmente em torno de TypeScript e Nest.js para o desenvolvimento backend, além de React para o frontend. No entanto, também realizamos projetos envolvendo React Native para o desenvolvimento de aplicativos móveis e PHP (Laravel) e VUE para sistemas de controle interno.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup de atuo com um forte foco em profound marketing. Recebemos as demandas dos clientes e as transformamos em soluções inovadoras e muitas vezes encontramos a oportunidade apartir de uma análise das necessidades do mesmo. Nossa Stack gira principalmente em torno de TypeScript e Nest.js para o desenvolvimento backend, além de React para o frontend. No entanto, também realizamos projetos envolvendo React Native para o desenvolvimento de aplicativos móveis e PHP (Laravel) e VUE para sistemas de controle interno.
 </p>
 
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I work with a strong focus on profound marketing. We receive client demands and transform them into innovative solutions, often identifying opportunities through a needs analysis. Our technology stack primarily revolves around TypeScript and Nest.js for backend development, as well as React for the frontend. However, we also undertake projects involving React Native for mobile app development, and PHP (Laravel) and Vue for internal control systems
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I work with a strong focus on profound marketing. We receive client demands and transform them into innovative solutions, often identifying opportunities through a needs analysis. Our technology stack primarily revolves around TypeScript and Nest.js for backend development, as well as React for the frontend. However, we also undertake projects involving React Native for mobile app development, and PHP (Laravel) and Vue for internal control systems
 </p>   
 
 ### Fullstack Developer - Otimize - (Jan 2019 - Out 2023)
@@ -155,11 +155,11 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup, atuei como fullstack e desenvolvi sistemas avançados para e-commerce e marketing digital. Nossa principal stack gira em torno do PHP (Laravel) para o desenvolvimento backend, complementado pelo Vue.js para o frontend e React Native para o desenvolvimento de aplicativos móveis.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup, atuei como fullstack e desenvolvi sistemas avançados para e-commerce e marketing digital. Nossa principal stack gira em torno do PHP (Laravel) para o desenvolvimento backend, complementado pelo Vue.js para o frontend e React Native para o desenvolvimento de aplicativos móveis.
 </p>   
 
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I worked as a fullstack developer and created advanced systems for e-commerce and digital marketing. Our main stack revolved around PHP (Laravel) for backend development, complemented by Vue.js for the frontend, and React Native for mobile app development.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I worked as a fullstack developer and created advanced systems for e-commerce and digital marketing. Our main stack revolved around PHP (Laravel) for backend development, complemented by Vue.js for the frontend, and React Native for mobile app development.
 </p>
 
 ### Software Owner - Ezcore - (Jan 2016 - Jan 2023)
@@ -177,11 +177,11 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Fui software owner de um CRM desenvolvido para uma faculdade que iniciava no mundo EAD. Esse CRM era usado pelo seu setor de marketing e televendas para converter leads e novos alunos. Por vários anos fui o mantenedor e desenvolvedor de novas features para esse sistema até a venda em definitivo do sistema para a faculdade que hoje o mantém com seu time interno.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Fui software owner de um CRM desenvolvido para uma faculdade que iniciava no mundo EAD. Esse CRM era usado pelo seu setor de marketing e televendas para converter leads e novos alunos. Por vários anos fui o mantenedor e desenvolvedor de novas features para esse sistema até a venda em definitivo do sistema para a faculdade que hoje o mantém com seu time interno.
 </p>
 
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I served as the software owner of a CRM developed for a college that was just venturing into the world of online education (EAD). This CRM was utilized by its marketing and telesales departments to convert leads and enroll new students. For several years, I was the maintainer and developer of new features for this system until it was eventually sold to the college, which now maintains it with its internal team.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I served as the software owner of a CRM developed for a college that was just venturing into the world of online education (EAD). This CRM was utilized by its marketing and telesales departments to convert leads and enroll new students. For several years, I was the maintainer and developer of new features for this system until it was eventually sold to the college, which now maintains it with its internal team.
 </p>
 
 ### Fullstack Developer - Copy Supply - (Mar 2018 - Jan 2019)
@@ -194,10 +194,10 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta empresa liderei um time de desenvolvimento por tempo determinado, para desenvolver um CRM que é utilizado até hoje pelo seu setor de vendas e telemarketing.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta empresa liderei um time de desenvolvimento por tempo determinado, para desenvolver um CRM que é utilizado até hoje pelo seu setor de vendas e telemarketing.
 </p>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > At this company, I led a development team for a specified period to create a CRM that is still in use today by its sales and telemarketing department.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > At this company, I led a development team for a specified period to create a CRM that is still in use today by its sales and telemarketing department.
 </p>
 ### Fullstack Developer - Martersel / Alive IT - (Abr  2014 - Mar 2018)
 <div align="left">
@@ -209,10 +209,10 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Converti um sistema de automação de bombas de combustiveis liquidos e gestão para postos que rodava em C++ a mais de 15 anos para um stack web com PHP e alguns outros microsserviços em C# e NodeJs.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Converti um sistema de automação de bombas de combustiveis liquidos e gestão para postos que rodava em C++ a mais de 15 anos para um stack web com PHP e alguns outros microsserviços em C# e NodeJs.
 </p>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I converted a liquid fuel pump automation and management system for gas stations, which had been running in C++ for over 15 years, into a web stack using PHP and several other microservices in C# and Node.js.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I converted a liquid fuel pump automation and management system for gas stations, which had been running in C++ for over 15 years, into a web stack using PHP and several other microservices in C# and Node.js.
 </p>
 
 ### Desktop Developer - Guess - (Nov 2012 - Abr 2014)
@@ -223,10 +223,10 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
     
 </div>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Aqui iniciei minha carreira como desenvolvedor. Foi minha primeira e única com desenvolvimento desktop ( DELPHI ). Desenvolviamos aplicações que atendiam o ramo do mercado imobiliário.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Aqui iniciei minha carreira como desenvolvedor. Foi minha primeira e única com desenvolvimento desktop ( DELPHI ). Desenvolviamos aplicações que atendiam o ramo do mercado imobiliário.
 </p>
 <p>
-<img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif" > Here, I began my career as a developer. It was my first and only experience with desktop development (DELPHI). We developed applications that served the real estate market.
+<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > Here, I began my career as a developer. It was my first and only experience with desktop development (DELPHI). We developed applications that served the real estate market.
 </p>
 
 
