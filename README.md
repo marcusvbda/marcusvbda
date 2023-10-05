@@ -62,14 +62,6 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
 - Ezcore Leads - CRM - Web
 - Conexa - Lead Page - Web
 
-## 📈 Estatísticas e atividade no github / GitHub Statistics and Activity
-
-![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusvbda&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
-
-
-
 ## Habilidade e conhecimentos / Skills and Knowledge.
 
 ### Linguas ( escrita, leitura e conversação ) / Languages (writing, reading, and conversation).
@@ -229,4 +221,10 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
 <img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > Here, I began my career as a developer. It was my first and only experience with desktop development (DELPHI). We developed applications that served the real estate market.
 </p>
 
+
+## 📈 Estatísticas e atividade no github / GitHub Statistics and Activity
+
+![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusvbda&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
 
