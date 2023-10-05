@@ -36,11 +36,16 @@
     
 </div>
 
-## Apresentação / Presentation
-
+## Apresentação / Presentation  
+<p align='center'>
+ <img height="15"  src="https://www.worldometers.info/img/flags/br-flag.gif">
+</p>
 Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
 Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia
 
+<p align='center'>
+ <img height="15"  src="https://www.worldometers.info/img/flags/us-flag.gif">
+</p>
 I've been a developer since 2010 (graduated in Systems Analysis and Development from UNIMAR in Marilia/SP), and during this time, I've developed software for various industries, using various stacks, devices, and platforms.
 Every day, I seek ways to make my code better, cleaner, and more performant. I also work on developing the soft skills expected, not only to meet the demands of current and future partners but, most importantly, to satisfy my own high standards of delivering top-notch software with the latest technology available in the market.
 
