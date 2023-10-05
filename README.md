@@ -1,9 +1,12 @@
 <h1 align="center">
    Vinicius Bassalobre
-   
-   ![]([https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php](https://www.worldometers.info/img/flags/br-flag.gif))
-   ![]([https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php](https://www.worldometers.info/img/flags/us-flag.gif))
 </h1>
+
+<p align='center'>
+ <img height="28"  src="https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php](https://www.worldometers.info/img/flags/br-flag.gif">
+ <img height="28"  src="https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php](https://www.worldometers.info/img/flags/us-flag.gif">
+</p>
+
 
 <p align='center'>
 <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img height="28"  src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"></a>
