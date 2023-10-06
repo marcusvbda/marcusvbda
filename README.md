@@ -192,6 +192,7 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
 <p>
 <img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > At this company, I led a development team for a specified period to create a CRM that is still in use today by its sales and telemarketing department.
 </p>
+
 ### Fullstack Developer - Martersel / Alive IT - (Abr  2014 - Mar 2018)
 <div align="left">
     
