@@ -31,10 +31,11 @@
 
 ## Redes sociais / Social networks
 
-- <a href="https://github.com/marcusvbda" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/github.svg"> https://github.com/marcusvbda</a>
--  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"> https://www.linkedin.com/in/mvbassalobre</a>
--  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"> https://www.instagram.com/bdavinicius</a>
--  <a href="https://twitter.com/mvbassalobre" target="_blank" title="LinkedIn"><img style="height:15px" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/twitter.svg"> https://twitter.com/mvbassalobre</a>
+-  <a href="mailto:bassalobre.vinicius@gmail.com" target="_blank" title="Email">bassalobre.vinicius@gmail.com</a>
+-  <a href="https://github.com/marcusvbda" target="_blank" title="LinkedIn">https://github.com/marcusvbda</a>
+-  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn">https://www.linkedin.com/in/mvbassalobre</a>
+-  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn">https://www.instagram.com/bdavinicius</a>
+-  <a href="https://twitter.com/mvbassalobre" target="_blank" title="LinkedIn">https://twitter.com/mvbassalobre</a>
 
 ## Apresentação / Presentation  
 <p>
