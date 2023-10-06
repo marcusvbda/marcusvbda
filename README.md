@@ -194,14 +194,14 @@ Every day, I seek ways to make my code better, cleaner, and more performant. I a
 </p>
 
 ### Fullstack Developer - Martersel / Alive IT - (Abr  2014 - Mar 2018)
+
 <div align="left">
-    
 ![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=C#)
 ![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
 ![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
 ![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=javascript)
-    
 </div>
+
 <p>
 <img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Converti um sistema de automação de bombas de combustiveis liquidos e gestão para postos que rodava em C++ a mais de 15 anos para um stack web com PHP e alguns outros microsserviços em C# e NodeJs.
 </p>
