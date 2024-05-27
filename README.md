@@ -1,240 +1,146 @@
-<h1 align="center">
-   Vinicius Bassalobre
-</h1>
+# Marcus Vinicius Bassalobre de Assis
+#### Fullstack Developer
 
-<p align='center'>
- <img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif">
- <img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif">
-</p>
+Taboão da Serra
++55 14 99676-6177
 
+Self-taught programmer who began coding at the age of 16, starting with desktop applications. Gained professional experience at 18, transitioning to web development with a specialization in both backend and frontend technologies. Now a seasoned Fullstack Developer with over 10 years of experience in building web applications. Adept at utilizing modern frameworks, designing intuitive user interfaces, and implementing robust backend solutions.
 
-<div align="center">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=delphi)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=react)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=node.js)
-![](https://img.shields.io/badge/--3178C6.svg?style=flat&logoColor=FAFAFF&logo=typescript)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=react)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=nestjs)
-    
-</div>
+### PERSONAL INFORMATION
+  Address: , Taboão da Serra, 
+  Nationality: 
+  Driving License: 
+  Hobbies: 
 
-## Redes sociais / Social networks
+### SOCIAL PROFILES
+  * github.com/marcusvbda: github.com/marcusvbda
+  * linkedin.com/in/mvbassalobre: linkedin.com/in/mvbassalobre
+  * twitter.com/mvbassalobre: twitter.com/mvbassalobre
 
--  <a href="mailto:bassalobre.vinicius@gmail.com" target="_blank" title="Email">bassalobre.vinicius@gmail.com</a>
--  <a href="https://github.com/marcusvbda" target="_blank" title="LinkedIn">https://github.com/marcusvbda</a>
--  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn">https://www.linkedin.com/in/mvbassalobre</a>
--  <a href="https://www.linkedin.com/in/mvbassalobre/" target="_blank" title="LinkedIn">https://www.instagram.com/bdavinicius</a>
--  <a href="https://twitter.com/mvbassalobre" target="_blank" title="LinkedIn">https://twitter.com/mvbassalobre</a>
+### LANGUAGES
+  ★★★★★ Portuguese
+  ★★★★☆ English
 
-## Apresentação / Presentation  
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou desenvolvedor desde de 2010 (formado em Analise e desenvolvimento de sistemas pela UNIMAR de marilia/SP) e durante esse tempo desenvolvi softwares para diversos segmentos, com diversas stacks e devices e plataformas.
-Busco todos os dias formas de tornar meu código melhor, mais limpo e mais performático, além de desenvolver as soft skills esperadas, para poder atender não somente as demandas dos atuais e futuros parceiros, mas principalmente minha auto exigência de entregar sempre softwares de alto nível e com oque tem de mais moderno no mercado em questão de tecnologia.
-</p>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif"  > I've been a developer since 2010 (graduated in Systems Analysis and Development from UNIMAR in Marilia/SP), and during this time, I've developed software for various industries, using various stacks, devices, and platforms.
-Every day, I seek ways to make my code better, cleaner, and more performant. I also work on developing the soft skills expected, not only to meet the demands of current and future partners but, most importantly, to satisfy my own high standards of delivering top-notch software with the latest technology available in the market.
-</p>
+### SKILLS
+  ★★★★☆ Docker
+  ★★★★★ Bootstrap
+  ★★★★★ PHP
+  ★★★★★ HTML + CSS + JS
+  ★★★★★ Node.js
+  ★★★★★ React
+  ★★★★★ Laravel
+  ★★★☆☆ MongoDB
+  ★★★☆☆ jQuery
+  ★★★★★ NextJS
+  ★★★★★ SQL
+  ★★★★★ VueJS
+  ★★★★☆ Postgres
+  ★★★★★ MySQL
+  ★★★☆☆ C++
+  ★★★☆☆ C# / ASP.NET MVC Core
+  ★★★☆☆ Tailwind
+  ★★★★★ SASS
 
-## Formação acadêmico / Education
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Sou analista de sistemas formada pelo UNIMAR (universidade de Marilia - SP), no curso 'Análise e desenvolvimento de Sistemas'
-</p>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I am a systems analyst graduated from UNIMAR (University of Marília - SP), in the 'Systems Analysis and Development' program.
-</p>
-
-## Principais Projetos que atuei / Key Projects I've worked on
-
-- Elearning - Ecommerce Marketing Digital - Web/Mobile
-- Branco App - Web/Mobile
-- Payt - Ecommerce and Marketing Digital - Web/Mobile 
-- Ezcore Leads - CRM - Web
-- Conexa - Lead Page - Web
-
-## Habilidade e conhecimentos / Skills and Knowledge.
-
-### Linguas ( escrita, leitura e conversação ) / Languages (writing, reading, and conversation).
-- Inglês conversação / English conversation level 
-- Português (nativo) / Portugues (native)
-
-### Linguagens / Languages
-- PHP 
-- C#
-- Java
-- Javascript
-- Typescript
-- Node
-
-### Plataformas,frameworks e biblioteca - Platforms, frameworks and Library
-- Laravel 
-- Express
-- Nest
-- Next
-- Nuxt
-- Supabase
-- Tailwind
-- Sass
-- Bootstrap
-- React
-- Vue
-- Node
-- Vercel
-- Git
-
-### Banco de dados / Databases
-- MySQL
-- MongoDB
-- SQL Server
-- Firebird
-- PostgreSQL
-- DynamoDB
+### WORK EXPERIENCE
+  * 2023
+    Fullstack engineer at Investidor 10, São Paulo - SP ( Brazil )
+      
+  Actively developing and implementing features for a platform aimed at helping users better monitor their investments.
+  Utilizing MySQL, SASS, Laravel, Vue.js, and React (Next.js) to build a robust and user-friendly platform.
+  Collaborating with the team to gather requirements, design workflows, and prioritize features based on user feedback and business goals.
+  Designing and implementing backend functionalities in Laravel to manage user data, investment information, and analytics.
+  Developing frontend interfaces using Vue.js and React (Next.js) to provide a seamless and responsive user experience.
+  Integrating third-party APIs and services for data aggregation, analysis, and reporting.
+  Conducting testing, performance optimization, and ongoing maintenance to ensure platform stability, security, and scalability.
+  Participating in code reviews, team meetings, and agile ceremonies to ensure project alignment and delivery.
 
 
-## Experiências profissionais / Work experience
-
-### Fullstack Developer - Diwe - (Dez 2020 - Atual / Current)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=react)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=node.js)
-![](https://img.shields.io/badge/--3178C6.svg?style=flat&logoColor=FAFAFF&logo=typescript)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=nestjs)
-    
-</div>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup de atuo com um forte foco em profound marketing. Recebemos as demandas dos clientes e as transformamos em soluções inovadoras e muitas vezes encontramos a oportunidade apartir de uma análise das necessidades do mesmo. Nossa Stack gira principalmente em torno de TypeScript e Nest.js para o desenvolvimento backend, além de React para o frontend. No entanto, também realizamos projetos envolvendo React Native para o desenvolvimento de aplicativos móveis e PHP (Laravel) e VUE para sistemas de controle interno.
-</p>
-
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I work with a strong focus on profound marketing. We receive client demands and transform them into innovative solutions, often identifying opportunities through a needs analysis. Our technology stack primarily revolves around TypeScript and Nest.js for backend development, as well as React for the frontend. However, we also undertake projects involving React Native for mobile app development, and PHP (Laravel) and Vue for internal control systems
-</p>   
-
-### Fullstack Developer - Otimize - (Jan 2019 - Out 2023)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=reactjs)
-    
-</div>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta startup, atuei como fullstack e desenvolvi sistemas avançados para e-commerce e marketing digital. Nossa principal stack gira em torno do PHP (Laravel) para o desenvolvimento backend, complementado pelo Vue.js para o frontend e React Native para o desenvolvimento de aplicativos móveis.
-</p>   
-
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > In this startup, I worked as a fullstack developer and created advanced systems for e-commerce and digital marketing. Our main stack revolved around PHP (Laravel) for backend development, complemented by Vue.js for the frontend, and React Native for mobile app development.
-</p>
-
-### Software Owner - Ezcore - (Jan 2016 - Jan 2023)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-    
-</div>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Fui software owner de um CRM desenvolvido para uma faculdade que iniciava no mundo EAD. Esse CRM era usado pelo seu setor de marketing e televendas para converter leads e novos alunos. Por vários anos fui o mantenedor e desenvolvedor de novas features para esse sistema até a venda em definitivo do sistema para a faculdade que hoje o mantém com seu time interno.
-</p>
-
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I served as the software owner of a CRM developed for a college that was just venturing into the world of online education (EAD). This CRM was utilized by its marketing and telesales departments to convert leads and enroll new students. For several years, I was the maintainer and developer of new features for this system until it was eventually sold to the college, which now maintains it with its internal team.
-</p>
-
-### Fullstack Developer - Copy Supply - (Mar 2018 - Jan 2019)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=C#)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=javascript)
-    
-</div>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Nesta empresa liderei um time de desenvolvimento por tempo determinado, para desenvolver um CRM que é utilizado até hoje pelo seu setor de vendas e telemarketing.
-</p>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > At this company, I led a development team for a specified period to create a CRM that is still in use today by its sales and telemarketing department.
-</p>
-
-### Fullstack Developer - Martersel / Alive IT - (Abr  2014 - Mar 2018)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=php)
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=laravel)
-![](https://img.shields.io/badge/--0769AD.svg?style=flat&logoColor=FAFAFF&logo=jquery)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=html5)
-![](https://img.shields.io/badge/--1572b6.svg?style=flat&logoColor=FAFAFF&logo=css3)
-![](https://img.shields.io/badge/--4479A1.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-![](https://img.shields.io/badge/--F7DF1E.svg?style=flat&logoColor=0D0D0D&logo=javascript)
-![](https://img.shields.io/badge/--339933.svg?style=flat&logoColor=FAFAFF&logo=vue.js)
-![](https://img.shields.io/badge/--CC6699.svg?style=flat&logoColor=FAFAFF&logo=sass)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=bootstrap)
-![](https://img.shields.io/badge/--7952B3.svg?style=flat&logoColor=FAFAFF&logo=reactjs)
-    
-</div>
-
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Converti um sistema de automação de bombas de combustiveis liquidos e gestão para postos que rodava em C++ a mais de 15 anos para um stack web com PHP e alguns outros microsserviços em C# e NodeJs.
-</p>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > I converted a liquid fuel pump automation and management system for gas stations, which had been running in C++ for over 15 years, into a web stack using PHP and several other microservices in C# and Node.js.
-</p>
-
-### Desktop Developer - Guess - (Nov 2012 - Abr 2014)
-<div align="left">
-    
-![](https://img.shields.io/badge/--777BB4.svg?style=flat&logoColor=FAFAFF&logo=delphi)
-![](https://img.shields.io/badge/--E34F26.svg?style=flat&logoColor=FAFAFF&logo=mysql)
-    
-</div>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/br-flag.gif" > Aqui iniciei minha carreira como desenvolvedor. Foi minha primeira e única com desenvolvimento desktop ( DELPHI ). Desenvolviamos aplicações que atendiam o ramo do mercado imobiliário.
-</p>
-<p>
-<img style="height:15px"  src="https://www.worldometers.info/img/flags/us-flag.gif" > Here, I began my career as a developer. It was my first and only experience with desktop development (DELPHI). We developed applications that served the real estate market.
-</p>
+  * 2020 – 2024
+    Fullstack engineer at Diwe profund marketing, São Paulo - SP ( Brazil )
+      
+  Designed and developed various on-demand systems, including a task management, finance, and internal demand management system for the company.
+  Created a training platform for professionals in the construction industry and several institutional websites.
+  Utilized technologies such as Laravel, NestJS, Next.js (React), Nuxt.js (Vue), Express.js, MongoDB, PostgreSQL, MySQL, AWS, Azure, and Google Cloud to build scalable and efficient solutions.
+  Integrated with third-party platforms such as Salesforce, Marketing Cloud, and Magento, building custom integrations to enhance functionality and data exchange.
+  Collaborated with clients and internal stakeholders to gather requirements, plan features, and deliver solutions that met business objectives and user needs.
+  Managed deployments, performance optimization, and ongoing maintenance to ensure system reliability, security, and performance.
 
 
-## 📈 Estatísticas e atividade no github / GitHub Statistics and Activity
+  * 2017 – 2023
+    Fullstack engineer at Otimize / Payt, São Paulo - SP ( Brazil )
+      
+  Led the development of a SaaS platform catering to various clients including an online printing service, a comprehensive digital marketing platform with sales frontend and management area, and a SaaS platform for digital course creation.
+  Utilized Laravel, Node.js with TypeScript, SCSS, MongoDB, MySQL, and other technologies to build scalable and feature-rich applications.
+  Designed and developed frontend interfaces using modern frameworks and libraries to ensure a seamless user experience.
+  Implemented backend functionalities, including user management, content creation, analytics, and billing systems, tailored to the specific needs of each client.
+  Integrated third-party APIs and services for enhanced functionality and data exchange.
+  Provided ongoing support, maintenance, and updates to ensure the platform's stability, security, and performance.
+  Collaborated with cross-functional teams to gather requirements, plan features, and deliver solutions that met client expectations and business objectives.
 
-![Vinicius Bassalobre GitHub Stats](https://github-readme-stats.vercel.app/api?username=marcusvbda&show_icons=true&hide=contribs,prs&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&count_private=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusvbda&show_icons=true&theme=algolia&locale=pt-BR&border_radius=12&hide_border=true&layout=compact&card_width=445&langs_count=6)
+  * 2017 – 2023
+    Software Owner ( CRM fullstack developer ) at UNIMAR ( University of Marilia ), São Paulo - SP ( Brazil )
+      
+  Led the development of a CRM system tailored for lead management and conversion to enrollments in an E-learning college.
+  Utilized Laravel, Tailwind CSS, Bootstrap, Vue.js, and MySQL to build a comprehensive and efficient CRM platform.
+  Designed, developed, and maintained both the backend functionalities and the database structure to ensure optimal performance and data integrity.
+  Collaborated with stakeholders to gather requirements and design workflows that aligned with business goals and user needs.
+  Provided technical support and training to employees for system usage, ensuring smooth adoption and effective utilization of the CRM.
+  Implemented features and enhancements to improve lead conversion rates, streamline processes, and enhance user experience.
+
+
+  * 2016 – 2017
+    C# and ASP.NET developer at Copy supply, São Paulo - SP ( Brazil )
+      
+  Developed a CRM system from scratch for the sales team, focusing on customer service and sales of materials and supplies for printing companies.
+  Implemented the CRM system, providing full support and training to the sales team for effective utilization.
+  Utilized C# and ASP.NET to create a robust and scalable CRM platform tailored to the company's specific needs.
+  Integrated SQL Server databases to store and manage customer data, sales transactions, and inventory information.
+  Hosted the CRM system on Azure, ensuring reliable performance, security, and scalability for the application.
+  Collaborated with stakeholders to gather requirements, design workflows, and implement features to improve sales processes and customer management.
+
+
+  * 2014 – 2016
+    PHP developer at Alive IT, Marília - SP ( Brazil )
+      
+  Developed applications for gas stations and convenience stores using Laravel and MySQL.
+  Utilized Bootstrap, HTML, CSS, and Blade to create responsive and user-friendly interfaces.
+  Deployed and managed applications on AWS, ensuring high availability and scalability.
+  Provided direct customer support and technical assistance, resolving client issues effectively.
+  Collaborated with clients to gather requirements and deliver customized solutions tailored to their business needs.
+
+
+  * 2013 – 2014
+    Delphi developer at Guess, Marilia - SP ( Brazil )
+      
+  Worked with Firebird and Delphi.
+  Implemented systems for new clients.
+  Provided technical maintenance and support to clients.
+  Implemented features and fixed issues in a system designed for construction and real estate management.
+
+
+  * 2010 – 2013
+    C++ developer at  Mastersel, Marília - SP ( Brazil )
+      
+  Developed commercial automation applications using C++.
+  Provided customer service and technical support to clients.
+  Implemented and onboarded new clients, ensuring smooth integration of software solutions.
+  Maintained and updated existing applications to enhance functionality and performance.
+  Diagnosed and resolved technical issues, delivering prompt and effective solutions.
+
+
+
+### EDUCATION
+  * 2023 – 2024
+    Alura, São Paulo - SP ( Brazil ) IA applications with NodeJS
+  * 2023
+    Times, São Paulo - SP ( Brazil ) Professional English
+  * 2016 – 2016
+    Alura, São Paulo - SP ( Brazil ) DevOps
+  * 2015 – 2016
+    Udemy, São Paulo - SP ( Brazil ) Fullstack web develop
+  * 2013 – 2016
+    UNIMAR, Marilia - SP ( Brazil ) Bachelor of analysis and systems development
+  * 2009 – 2010
+    Fisk, Marilia - SP ( Brazil ) English for teenagers
 
