@@ -18,7 +18,7 @@
         {
             "src": "/api/(.*)",
             "dest": "server/src/index.ts"
-        },
+        }
     ],
     "env": {
         "NODE_ENV": "production"
