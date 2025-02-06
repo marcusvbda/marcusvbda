@@ -10,7 +10,7 @@ start-dev:
 	@echo "$(YELLOW)Starting development server ui...$(RESET)"
 	@yarn run dev &
 	@echo "$(YELLOW)Starting development server api ...$(RESET)"
-	@cd server && yarn run dev &
+	@yarn run api-dev &
 	@wait
 
 start-prod:
