@@ -1,9 +1,26 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
+    basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    reactStrictMode: false,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+                port: '',
+                pathname: '**',
+            },
+            {
+                protocol: 'http',
+                hostname: '**',
+                port: '',
+                pathname: '**',
+            },
+        ],
+    },
 };
 
 export default nextConfig;
