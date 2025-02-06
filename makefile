@@ -7,8 +7,11 @@ set-node-version:
 
 start-dev:
 	@$(MAKE) set-node-version
-	@echo "$(YELLOW)Starting development server...$(RESET)"
-	@yarn run dev
+	@echo "$(YELLOW)Starting development server ui...$(RESET)"
+	@yarn run dev &
+	@echo "$(YELLOW)Starting development server api ...$(RESET)"
+	@cd server && yarn run dev &
+	@wait
 
 start-prod:
 	@$(MAKE) set-node-version
