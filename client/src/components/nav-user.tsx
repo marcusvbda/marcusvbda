@@ -6,7 +6,9 @@ import {
 	ChevronsUpDown,
 	CreditCard,
 	LogOut,
+	Moon,
 	Sparkles,
+	Sun,
 } from 'lucide-react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -26,6 +28,8 @@ import {
 	useSidebar,
 } from '@/components/ui/sidebar';
 import Link from 'next/link';
+import { ModeToggle } from './mode-toggle';
+import { useTheme } from 'next-themes';
 
 export function NavUser({
 	user,
@@ -37,6 +41,7 @@ export function NavUser({
 	};
 }) {
 	const { isMobile } = useSidebar();
+	const { theme } = useTheme();
 
 	return (
 		<SidebarMenu>
@@ -98,6 +103,12 @@ export function NavUser({
 								Notifications
 							</DropdownMenuItem>
 						</DropdownMenuGroup>
+						<ModeToggle>
+							<DropdownMenuItem>
+								{theme === 'light' ? <Sun /> : <Moon />}
+								Theme
+							</DropdownMenuItem>
+						</ModeToggle>
 						<DropdownMenuSeparator />
 						<Link href="/auth/login" prefetch={false}>
 							<DropdownMenuItem>
