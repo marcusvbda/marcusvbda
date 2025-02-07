@@ -12,15 +12,8 @@ import { Label } from '@/components/ui/label';
 import Link from 'next/link';
 
 export default function LoginPage() {
-	return <LoginForm />;
-}
-
-const LoginForm = ({
-	className,
-	...props
-}: React.ComponentPropsWithoutRef<'div'>) => {
 	return (
-		<div className={cn('flex flex-col gap-6', className)} {...props}>
+		<div className={cn('flex flex-col gap-6')}>
 			<Card>
 				<CardHeader className="text-center">
 					<CardTitle className="text-xl">Welcome back</CardTitle>
@@ -102,4 +95,4 @@ const LoginForm = ({
 			</div>
 		</div>
 	);
-};
+}

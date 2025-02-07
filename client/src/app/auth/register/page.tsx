@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
@@ -10,24 +11,51 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
+import { z } from 'zod';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Loader2 } from 'lucide-react';
 
 export default function RegisterPage() {
-	return <RegisterForm />;
-}
+	const checkEmailExists = async (email: string) => {
+		// emulate a request with promise
+		return new Promise((resolve) => {
+			setTimeout(() => {
+				resolve(email === 'm@example.com');
+			}, 1000);
+		});
+	};
 
-const RegisterForm = ({
-	className,
-	...props
-}: React.ComponentPropsWithoutRef<'div'>) => {
+	const registerSchema = z.object({
+		email: z
+			.string()
+			.email('Invalid email')
+			.refine(async (email) => await checkEmailExists(email), {
+				message: 'Email already in use',
+			}),
+	});
+
+	const {
+		register,
+		handleSubmit,
+		formState: { errors, isSubmitting },
+	} = useForm({
+		resolver: zodResolver(registerSchema),
+	});
+
+	const onSubmit = (data: any) => {
+		console.log(data);
+	};
+
 	return (
-		<div className={cn('flex flex-col gap-6', className)} {...props}>
+		<div className={cn('flex flex-col gap-6')}>
 			<Card>
 				<CardHeader className="text-center">
 					<CardTitle className="text-xl">Create an account</CardTitle>
 					<CardDescription>Start your 30-day free trial.</CardDescription>
 				</CardHeader>
 				<CardContent>
-					<form>
+					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="grid gap-6">
 							<div className="flex flex-col gap-4">
 								<Button variant="outline" className="w-full">
@@ -56,34 +84,25 @@ const RegisterForm = ({
 							</div>
 							<div className="grid gap-6">
 								<div className="grid gap-2">
-									<Label htmlFor="name">Name</Label>
-									<Input
-										id="name"
-										type="text"
-										placeholder="Enter your name"
-										required
-									/>
-								</div>
-								<div className="grid gap-2">
 									<Label htmlFor="email">Email</Label>
-									<Input
-										id="email"
-										type="email"
-										placeholder="m@example.com"
-										required
-									/>
-								</div>
-								<div className="grid gap-2">
-									<Label htmlFor="password">Password</Label>
-									<div>
-										<Input id="password" type="password" required />
-										<p className="mt-1 text-sm text-muted-foreground">
-											Must be at least 8 characters.
-										</p>
+									<div className="flex flex-col gap-1">
+										<Input
+											{...register('email')}
+											id="email"
+											placeholder="m@example.com"
+										/>
+										{errors.email && (
+											<p className="text-red-500 text-xs">{`${errors.email.message}`}</p>
+										)}
 									</div>
 								</div>
-								<Button type="submit" className="w-full">
+								<Button
+									type="submit"
+									className="w-full"
+									disabled={isSubmitting}
+								>
 									Get started
+									{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
 								</Button>
 							</div>
 						</div>
@@ -99,4 +118,4 @@ const RegisterForm = ({
 			</div>
 		</div>
 	);
-};
+}
