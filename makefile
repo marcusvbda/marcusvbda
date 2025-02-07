@@ -5,21 +5,13 @@ set-node-version:
 	@echo "$(YELLOW)Setting up node version...$(RESET)"
 	@NVM_DIR="$${HOME}/.nvm" && . "$${NVM_DIR}/nvm.sh" && nvm use
 
-start-dev:
+start-client-dev:
 	@$(MAKE) set-node-version
 	@echo "$(YELLOW)Starting development server ui...$(RESET)"
-	@cd client && yarn run dev &
+	@cd client && yarn run dev
+
+start-server-dev:
+	@$(MAKE) set-node-version
 	@echo "$(YELLOW)Starting development server api ...$(RESET)"
 	@cd server && yarn run dev &
 	@wait
-
-start-prod:
-	@$(MAKE) set-node-version
-	@yarn run build
-	@yarn run start
-
-build:
-	@echo "$(YELLOW)Installing backend dependencies...$(RESET)"
-	@yarn install
-	@echo "$(YELLOW)Copying env files...$(RESET)"
-	@docker compose exec app cp .env.example .env.local
