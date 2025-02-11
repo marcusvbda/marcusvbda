@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const Express = require('express');
-const cors = require('cors');
+import Express from 'express';
+import cors from 'cors';
+import router from './router';
+
 require('dotenv').config({
 	path: '.env.local',
 });
@@ -8,10 +10,10 @@ require('dotenv').config({
 const app = Express();
 
 app.use(cors());
+app.use(Express.json());
+app.use(Express.urlencoded({ extended: true }));
 
-app.get('/api/hello', (req: any, res: any) => {
-	res.json({ message: 'Hello from Express!' });
-});
+app.use('/api', router);
 
 const port = process.env.PORT || 8000;
 

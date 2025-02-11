@@ -15,14 +15,22 @@ import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
+import { useCallback } from 'react';
+import { useFetch } from '@/hooks/use-fetch';
+import { authRoutes } from '@/constants/routes';
 
 export default function RegisterPage() {
-	const checkEmailExists = async (email: string) => {
-		// emulate a request with promise
+	const { fetcher } = useFetch();
+	const { checkEmail } = authRoutes;
+
+	const checkEmailHandle = async (email: string) => {
 		return new Promise((resolve) => {
-			setTimeout(() => {
-				resolve(email === 'm@example.com');
-			}, 1000);
+			fetcher(
+				{ route: checkEmail },
+				{
+					onSuccess: resolve,
+				},
+			);
 		});
 	};
 
@@ -30,7 +38,7 @@ export default function RegisterPage() {
 		email: z
 			.string()
 			.email('Invalid email')
-			.refine(async (email) => await checkEmailExists(email), {
+			.refine(async (email) => await checkEmailHandle(email), {
 				message: 'Email already in use',
 			}),
 	});
@@ -43,9 +51,11 @@ export default function RegisterPage() {
 		resolver: zodResolver(registerSchema),
 	});
 
-	const onSubmit = (data: any) => {
-		console.log(data);
-	};
+	const onSubmit = useCallback(() => {
+		(data: any) => {
+			console.log(data);
+		};
+	}, []);
 
 	return (
 		<div className={cn('flex flex-col gap-6')}>
