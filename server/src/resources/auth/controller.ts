@@ -19,12 +19,12 @@ const controller = {
 	async sendConfirmationCode(req: any, res: any) {
 		const { base, email, locale } = req.body;
 		const code = controller.generateConfirmationCode(base, email);
-		sendEmail({
+		const result = await sendEmail({
 			to: [{ email }],
 			subject: 'Confirm email',
 			htmlContent: locales.get('messageCheckCode', locale, { code }),
 		});
-		return res.json(true);
+		return res.json(result);
 	},
 	async validateCode(req: any, res: any) {
 		const { base, email, code } = req.body;
