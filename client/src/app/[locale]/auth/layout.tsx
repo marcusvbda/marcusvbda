@@ -1,11 +1,11 @@
+import LocaleLink from '@/components/locale-link';
 import { GalleryVerticalEnd } from 'lucide-react';
-import Link from 'next/link';
 
 export default function AuthLayout({ children }: any) {
 	return (
 		<div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-muted p-6 md:p-10">
 			<div className="flex w-full max-w-sm flex-col gap-6">
-				<Link
+				<LocaleLink
 					href="/"
 					prefetch={false}
 					className="flex items-center gap-2 self-center font-medium"
@@ -14,7 +14,7 @@ export default function AuthLayout({ children }: any) {
 						<GalleryVerticalEnd className="size-4" />
 					</div>
 					Acme Inc.
-				</Link>
+				</LocaleLink>
 				{children}
 			</div>
 		</div>

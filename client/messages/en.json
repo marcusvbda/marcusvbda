@@ -1,0 +1,11 @@
+{
+    "Register": {
+        "create_account": "Create an account",
+        "start_trial": "Start your 30-day free trial",
+        "register_with": "Register with {provider}",
+        "continue_with_email": "Or continue with your email",
+        "get_started": "Get started",
+        "already_have_account": "Already have an account?",
+        "login": "Login"
+    }
+}
