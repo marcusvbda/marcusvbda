@@ -8,11 +8,11 @@ import FormMainStep from './form-main-step';
 import FormCodeCheckStep from './form-code-check-step';
 
 export default function RegisterPage() {
-	const [form, setForm] = useState<any>({
-		email: 'bassalobre.vinicius@gmail.com',
-	});
-	const [step, setStep] = useState('code-check');
 	const t = useTranslations('RegisterPage');
+	const [form, setForm] = useState<any>({
+		email: '',
+	});
+	const [step, setStep] = useState('main');
 
 	return (
 		<div className={cn('flex flex-col gap-6')}>
