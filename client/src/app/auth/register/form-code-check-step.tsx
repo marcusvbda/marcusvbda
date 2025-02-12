@@ -89,7 +89,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 		<>
 			<CardHeader className="text-center">
 				<CardTitle className="text-xl">{t('email_validation')}</CardTitle>
-				<CardDescription>{t('email_validation_desc')}</CardDescription>
+				<CardDescription>{t('code_check_description')}</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmitHandle)}>

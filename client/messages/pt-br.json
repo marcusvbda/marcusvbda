@@ -14,6 +14,7 @@
         "email_is_used": "Email já está em uso",
         "receive_code": "Receber código",
         "validate_code": "Validar código",
-        "code_required": "Código é obrigatório"
+        "code_required": "Código é obrigatório",
+        "code_check_description": "Verifique em seu email o código recebido e confirme no campo abaixo"
     }
 }
