@@ -13,13 +13,14 @@ import { useFetch } from '@/hooks/use-fetch';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import crypto from 'crypto';
 
 export default function FormCodeCheckStep({ onSubmit, email }: any) {
+	const locale = useLocale();
 	const [sent, setSent] = useState(false);
 	const [base, setBase] = useState('');
 	const [isSending, setIsSending] = useState(false);
@@ -62,6 +63,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 				body: {
 					base: _base,
 					email,
+					locale,
 				},
 			},
 			{

@@ -12,7 +12,7 @@ const config = {
   changelogCollectionName: "changelog",
   lockCollectionName: "changelog_lock",
   lockTtl: 0,
-  migrationFileExtension: ".ts",
+  migrationFileExtension: ".js",
   useFileHash: false,
   moduleSystem: 'commonjs',
 };

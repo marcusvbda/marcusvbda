@@ -1,5 +1,7 @@
+import locales from '../../locales';
+import { sendEmail } from '../../lib/mailer';
 import { User } from './models';
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 const controller = {
 	async checkEmail(req: any, res: any) {
@@ -15,9 +17,13 @@ const controller = {
 		return hash.substring(0, 6).toUpperCase();
 	},
 	async sendConfirmationCode(req: any, res: any) {
-		const { base, email } = req.body;
+		const { base, email, locale } = req.body;
 		const code = controller.generateConfirmationCode(base, email);
-		console.log(`Send code ${code} to email`);
+		sendEmail({
+			to: [{ email }],
+			subject: 'Confirm email',
+			htmlContent: locales.get('messageCheckCode', locale, { code }),
+		});
 		return res.json(true);
 	},
 	async validateCode(req: any, res: any) {
