@@ -26,7 +26,7 @@ export default function RegisterPage() {
 	const checkEmailHandle = async (email: string) => {
 		return new Promise((resolve) => {
 			fetcher(
-				{ route: checkEmail },
+				{ route: `${checkEmail}?email=${email}` },
 				{
 					onSuccess: resolve,
 				},
