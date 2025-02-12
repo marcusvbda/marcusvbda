@@ -15,6 +15,6 @@
         "receive_code": "Receber código",
         "validate_code": "Validar código",
         "code_required": "Código é obrigatório",
-        "code_check_description": "Verifique em seu email o código recebido e confirme no campo abaixo"
+        "code_check_description": "Verifique o código enviado para o seu e-mail e insira-o no campo abaixo."
     }
 }
