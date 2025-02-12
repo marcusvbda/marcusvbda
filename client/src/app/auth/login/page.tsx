@@ -10,7 +10,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
-import LocaleLink from '@/components/locale-link';
 
 export default function LoginPage() {
 	return (
@@ -78,13 +77,13 @@ export default function LoginPage() {
 							</div>
 							<div className="text-center text-sm">
 								{'Don`t'} have an account?{' '}
-								<LocaleLink
+								<Link
 									prefetch={false}
 									href="/auth/register"
 									className="underline underline-offset-4"
 								>
 									Register
-								</LocaleLink>
+								</Link>
 							</div>
 						</div>
 					</form>

@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import Link from 'next/link';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -17,18 +18,15 @@ import { Loader2 } from 'lucide-react';
 import { useCallback } from 'react';
 import { useFetch } from '@/hooks/use-fetch';
 import { authRoutes } from '@/constants/routes';
-import { useTranslations } from 'next-intl';
-import LocaleLink from '@/components/locale-link';
 
 export default function RegisterPage() {
-	const t = useTranslations('Register');
 	const { fetcher } = useFetch();
 	const { checkEmail } = authRoutes;
 
 	const checkEmailHandle = async (email: string) => {
 		return new Promise((resolve) => {
 			fetcher(
-				{ route: `${checkEmail}?email=${email}` },
+				{ route: checkEmail },
 				{
 					onSuccess: resolve,
 				},
@@ -63,8 +61,8 @@ export default function RegisterPage() {
 		<div className={cn('flex flex-col gap-6')}>
 			<Card>
 				<CardHeader className="text-center">
-					<CardTitle className="text-xl">{t('create_account')}</CardTitle>
-					<CardDescription>{t('start_trial')}</CardDescription>
+					<CardTitle className="text-xl">Create an account</CardTitle>
+					<CardDescription>Start your 30-day free trial.</CardDescription>
 				</CardHeader>
 				<CardContent>
 					<form onSubmit={handleSubmit(onSubmit)}>
@@ -77,7 +75,7 @@ export default function RegisterPage() {
 											fill="currentColor"
 										/>
 									</svg>
-									{t('register_with', { provider: 'apple' })}
+									Register with Apple
 								</Button>
 								<Button variant="outline" className="w-full">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -86,12 +84,12 @@ export default function RegisterPage() {
 											fill="currentColor"
 										/>
 									</svg>
-									{t('register_with', { provider: 'google' })}
+									Register with Google
 								</Button>
 							</div>
 							<div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
 								<span className="relative z-10 bg-background px-2 text-muted-foreground">
-									{t('continue_with_email')}
+									Or continue with
 								</span>
 							</div>
 							<div className="grid gap-6">
@@ -113,7 +111,7 @@ export default function RegisterPage() {
 									className="w-full"
 									disabled={isSubmitting}
 								>
-									{t('get_started')}
+									Get started
 									{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
 								</Button>
 							</div>
@@ -122,10 +120,11 @@ export default function RegisterPage() {
 				</CardContent>
 			</Card>
 			<div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
-				{t('already_have_account')}{' '}
-				<LocaleLink prefetch={false} href="/auth/login">
-					{t('login')}.
-				</LocaleLink>
+				Already have an account?{' '}
+				<Link prefetch={false} href="/auth/login">
+					Login
+				</Link>
+				.
 			</div>
 		</div>
 	);

@@ -24,7 +24,7 @@ export default function Hero() {
 	}, [titleNumber, titles]);
 
 	return (
-		<div className="w-full px-4">
+		<div className="w-full">
 			<div className="container mx-auto">
 				<div className="flex gap-8 py-20 lg:pt-40 items-center justify-center flex-col">
 					<div>

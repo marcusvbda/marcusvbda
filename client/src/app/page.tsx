@@ -1,4 +1,7 @@
+'use client';
+
 import { ReactNode } from 'react';
+
 import Header from '@/components/lp-header';
 import Hero from '@/components/lp-hero';
 import Features from '@/components/lp-features';
