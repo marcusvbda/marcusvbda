@@ -1,0 +1,19 @@
+{
+    "RegisterPage": {
+        "create_account": "Criar uma conta",
+        "start_trial": "Comece seus 30 dias grátis.",
+        "register_with": "Entre com a {provider}",
+        "or_continue_with": "Ou continue com",
+        "get_started": "Começar",
+        "already_have_account": "Já tem uma conta ?",
+        "login": "Entrar",
+        "email_validation": "Validação de Email",
+        "email_validation_desc": "Nós vamos enviar em seu email um código de verificação.",
+        "code": "Código",
+        "invalid_code": "Código inválido",
+        "email_is_used": "Email já está em uso",
+        "receive_code": "Receber código",
+        "validate_code": "Validar código",
+        "code_required": "Código é obrigatório"
+    }
+}

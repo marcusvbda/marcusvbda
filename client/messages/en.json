@@ -1,0 +1,19 @@
+{
+    "RegisterPage": {
+        "create_account": "Create an account",
+        "start_trial": "Start your 30-day free trial.",
+        "register_with": "Register with {provider}",
+        "or_continue_with": "Or continue with",
+        "get_started": "Get started",
+        "already_have_account": "Already have an account?",
+        "login": "Login",
+        "email_validation": "Email validation",
+        "email_validation_desc": "We are going to send a verification code in your email.",
+        "code": "Code",
+        "invalid_code": "Invalid code",
+        "email_is_used": "Email already in use",
+        "receive_code": "Receive code",
+        "validate_code": "Validate code",
+        "code_required": "Code is required"
+    }
+}
