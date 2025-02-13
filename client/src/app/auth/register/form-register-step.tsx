@@ -46,27 +46,29 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 		resolver: zodResolver(registerSchema),
 	});
 
-	const onSubmit = useCallback((form: any) => {
-		fetcher(
-			{
-				route: authRoutes.createNewUser,
-				method: 'POST',
-				body: {
-					...form,
-					email,
-					codeResult,
+	const onSubmit = useCallback(async (form: any) => {
+		return new Promise((resolve: any) => {
+			fetcher(
+				{
+					route: authRoutes.createNewUser,
+					method: 'POST',
+					body: {
+						...form,
+						email,
+						codeResult,
+					},
 				},
-			},
-			{
-				onFinally: () => {
-					toast({
-						title: t('accountCreated'),
-						description: t('accountCreatedDesc'),
-					});
-					router.push('/auth/login');
+				{
+					onFinally: () => resolve,
 				},
-			},
-		);
+			);
+		}).finally(() => {
+			toast({
+				title: t('accountCreated'),
+				description: t('accountCreatedDesc'),
+			});
+			router.push('/auth/login');
+		});
 	}, []);
 
 	return (
