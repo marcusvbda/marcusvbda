@@ -10,11 +10,25 @@
         "email_validation": "Validação de Email",
         "email_validation_desc": "Nós vamos enviar em seu email um código de verificação.",
         "code": "Código",
+        "invalid_email": "Email inválido",
         "invalid_code": "Código inválido",
         "email_is_used": "Email já está em uso",
         "receive_code": "Receber código",
         "validate_code": "Validar código",
         "code_required": "Código é obrigatório",
-        "code_check_description": "Verifique o código enviado para o seu e-mail e insira-o no campo abaixo."
+        "code_check_description": "Verifique o código enviado para o seu e-mail e insira-o no campo abaixo.",
+        "register_description": "Preencha os campos corretamente para concluir seu cadastro.",
+        "finish": "Concluir registro",
+        "fullName": "Nome completo",
+        "nickName": "Como gostaria de ser chamado ?",
+        "fullNameRequired": "Nome completo é obrigatório",
+        "nickNameRequired": "Nome curto é obrigatório",
+        "passwordRequired": "Senha é obrigatória",
+        "confirmPasswordRequired": "Confirme a sua senha",
+        "passwordsMustMatch": "As senhas não combinam",
+        "password": "Senha",
+        "confirmPassword": "Confirme a senha",
+        "accountCreated": "Conta criada com sucesso !",
+        "accountCreatedDesc": "Agora você pode efetuar login. Aproveite !"
     }
 }

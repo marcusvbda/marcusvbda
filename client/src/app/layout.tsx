@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import './globals.scss';
 import { ThemeProvider } from '@/components/theme-provider';
 import { getLocale, getMessages } from 'next-intl/server';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {};
@@ -25,6 +26,7 @@ export default async function RootLayout({ children }: any) {
 						{children}
 					</NextIntlClientProvider>
 				</ThemeProvider>
+				<Toaster />
 			</body>
 		</html>
 	);

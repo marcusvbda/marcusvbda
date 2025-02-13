@@ -19,13 +19,12 @@ import { z } from 'zod';
 
 export default function FormMainStep({ onSubmit }: any) {
 	const t = useTranslations('RegisterPage');
-	const { checkEmail } = authRoutes;
 	const { fetcher } = useFetch();
 
 	const checkEmailHandle = async (email: string) => {
 		return new Promise((resolve) => {
 			fetcher(
-				{ route: `${checkEmail}?email=${email}` },
+				{ route: `${authRoutes.checkEmail}?email=${email}` },
 				{
 					onSuccess: resolve,
 				},
@@ -36,7 +35,7 @@ export default function FormMainStep({ onSubmit }: any) {
 	const registerSchema = z.object({
 		email: z
 			.string()
-			.email('Invalid email')
+			.email(t('invalid_email'))
 			.refine(async (email: string) => await checkEmailHandle(email), {
 				message: t('email_is_used'),
 			}),
@@ -92,6 +91,7 @@ export default function FormMainStep({ onSubmit }: any) {
 										{...register('email')}
 										id="email"
 										placeholder="email@example.com"
+										maxLength={255}
 									/>
 									{errors.email && (
 										<p className="text-red-500 text-xs">{`${errors.email.message}`}</p>

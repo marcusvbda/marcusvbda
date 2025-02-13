@@ -10,11 +10,25 @@
         "email_validation": "Email validation",
         "email_validation_desc": "We are going to send a verification code in your email.",
         "code": "Code",
+        "invalid_email": "Invalid email",
         "invalid_code": "Invalid code",
         "email_is_used": "Email already in use",
         "receive_code": "Receive code",
         "validate_code": "Validate code",
         "code_required": "Code is required",
-        "code_check_description": "Check your inbox and enter the code in the field below."
+        "code_check_description": "Check your inbox and enter the code in the field below.",
+        "register_description": "Fill in the fields correctly to complete your registration.",
+        "finish": "Finish registration",
+        "fullName": "Full name",
+        "nickName": "How would you like to be called ?",
+        "fullNameRequired": "Full name is required",
+        "nickNameRequired": "Nickname is required",
+        "passwordRequired": "Password is required",
+        "confirmPasswordRequired": "Confirm your password",
+        "passwordsMustMatch": "Passwords must match",
+        "password": "Password",
+        "confirmPassword": "Confirm password",
+        "accountCreated": "Account created successfully !",
+        "accountCreatedDesc": "Now you can login. Enjoy it !"
     }
 }

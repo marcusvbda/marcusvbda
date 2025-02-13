@@ -2,6 +2,7 @@ import locales from '../../locales';
 import { sendEmail } from '../../lib/mailer';
 import { User } from './models';
 import crypto from 'crypto';
+import bcrypt from 'bcrypt';
 
 const controller = {
 	async checkEmail(req: any, res: any) {
@@ -30,6 +31,41 @@ const controller = {
 		const { base, email, code } = req.body;
 		const oldCode = controller.generateConfirmationCode(base, email);
 		return res.json(oldCode === code);
+	},
+	async storeUser(req: any, res: any) {
+		const { codeResult, email, fullName, nickName, password } = req.body;
+		const generatedCode = controller.generateConfirmationCode(
+			codeResult.base,
+			email
+		);
+
+		const oldUser = await User.findOne({ email });
+
+		if (
+			generatedCode !== codeResult.typed ||
+			!email ||
+			!fullName ||
+			!nickName ||
+			!password ||
+			oldUser
+		) {
+			return res.status(400).json({ success: false });
+		}
+
+		const hashedPassword = await bcrypt.hash(
+			process.env.ADMIN_PASSWORD,
+			Number(process.env.PASSWORD_SALT_ROUNDS)
+		);
+
+		const newUser = new User({
+			email,
+			fullName,
+			nickName,
+			password: hashedPassword,
+		});
+		await newUser.save();
+
+		return res.json({ success: true });
 	},
 };
 

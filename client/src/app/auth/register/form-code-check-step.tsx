@@ -26,12 +26,15 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	const [isSending, setIsSending] = useState(false);
 	const t = useTranslations('RegisterPage');
 	const { fetcher } = useFetch();
-	const { sendCodeConfirmation, validateCode } = authRoutes;
 
 	const checkCodeHandle = async (code: string) => {
 		return new Promise((resolve) => {
 			fetcher(
-				{ route: validateCode, method: 'POST', body: { email, base, code } },
+				{
+					route: authRoutes.validateCode,
+					method: 'POST',
+					body: { email, base, code },
+				},
 				{
 					onSuccess: resolve,
 				},
@@ -58,7 +61,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 		setBase(_base);
 		fetcher(
 			{
-				route: sendCodeConfirmation,
+				route: authRoutes.sendCodeConfirmation,
 				method: 'POST',
 				body: {
 					base: _base,
@@ -75,14 +78,17 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 		);
 	}, [email]);
 
-	const onSubmitHandle = async (data: any) => {
-		const isValid = await checkCodeHandle(data.code);
+	const onSubmitHandle = async (form: any) => {
+		const isValid = await checkCodeHandle(form.code);
 		if (!isValid) {
 			setError('code', { type: 'manual', message: t('invalid_code') });
 			return;
 		}
 
-		onSubmit();
+		onSubmit({
+			typed: form.code,
+			base,
+		});
 	};
 
 	return (
