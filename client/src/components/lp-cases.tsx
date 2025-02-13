@@ -32,7 +32,7 @@ export default function Cases() {
 		<div className="w-full py-20 lg:py-t0">
 			<div className="container mx-auto">
 				<div className="flex flex-col  gap-10">
-					<h2 className="text-xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+					<h2 className="text-xl md:text-5xl px-4  tracking-tighter lg:max-w-xl font-regular text-left">
 						Trusted by thousands of businesses worldwide
 					</h2>
 					<Carousel setApi={setApi} className="w-full">
