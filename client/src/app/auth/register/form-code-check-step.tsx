@@ -115,7 +115,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 											<Input
 												{...register('code')}
 												id="code"
-												placeholder="******"
+												placeholder=""
 												maxLength={6}
 												className="uppercase"
 											/>

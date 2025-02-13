@@ -59,7 +59,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 					},
 				},
 				{
-					onFinally: () => resolve,
+					onFinally: () => resolve(),
 				},
 			);
 		}).finally(() => {

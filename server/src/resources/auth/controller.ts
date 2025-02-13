@@ -40,7 +40,6 @@ const controller = {
 		);
 
 		const oldUser = await User.findOne({ email });
-
 		if (
 			generatedCode !== codeResult.typed ||
 			!email ||
