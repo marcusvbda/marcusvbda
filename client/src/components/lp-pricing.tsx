@@ -10,7 +10,7 @@ import { Button } from './ui/button';
 
 export default function Pricing() {
 	return (
-		<div className="w-full py-20 lg:pt-40">
+		<div className="w-full py-20 lg:pt-40 px-4">
 			<div className="container mx-auto">
 				<div className="flex text-center justify-center items-center gap-4 flex-col">
 					<Badge>Pricing</Badge>
