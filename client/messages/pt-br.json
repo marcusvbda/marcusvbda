@@ -2,7 +2,7 @@
     "RegisterPage": {
         "create_account": "Criar uma conta",
         "start_trial": "Comece seus 30 dias grátis.",
-        "register_with": "Entre com a {provider}",
+        "register_with": "Entre com {provider}",
         "or_continue_with": "Ou continue com",
         "get_started": "Começar",
         "already_have_account": "Já tem uma conta ?",

@@ -20,6 +20,7 @@
         "express": "^4.18.2",
         "migrate-mongoose": "^4.0.0",
         "mongoose": "^8.10.0",
+        "node-fetch": "^3.3.2",
         "nodeenv": "^3.0.75",
         "nodemailer": "^6.10.0",
         "nodemailer-sendinblue": "^1.2.3"
