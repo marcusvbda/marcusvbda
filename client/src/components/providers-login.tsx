@@ -3,16 +3,19 @@ import { authRoutes } from '@/constants/routes';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { useTranslations } from 'next-intl';
-import { enabledProviders } from '@/app/oauth/[provider]/page';
+import { enabledOAuthProviders } from '@/constants/providers';
 
 export default function ProvidersLogin() {
 	const t = useTranslations('RegisterPage');
 
-	const { providerLogin } = authRoutes;
 	return (
 		<div className="flex flex-col gap-4">
-			{enabledProviders.includes('x') && (
-				<Link href={providerLogin.replace('{provider}', 'x')}>
+			{enabledOAuthProviders.includes('x') && (
+				<Link
+					href={'/oauth/{provider}/{action}'
+						.replace('{provider}', 'x')
+						.replace('{action}', 'redirect')}
+				>
 					<Button variant="outline" className="w-full">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +34,12 @@ export default function ProvidersLogin() {
 					</Button>
 				</Link>
 			)}
-			{enabledProviders.includes('github') && (
-				<Link href={providerLogin.replace('{provider}', 'github')}>
+			{enabledOAuthProviders.includes('github') && (
+				<Link
+					href={'/oauth/{provider}/{action}'
+						.replace('{provider}', 'github')
+						.replace('{action}', 'redirect')}
+				>
 					<Button variant="outline" className="w-full">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +56,12 @@ export default function ProvidersLogin() {
 					</Button>
 				</Link>
 			)}
-			{enabledProviders.includes('apple') && (
-				<Link href={providerLogin.replace('{provider}', 'apple')}>
+			{enabledOAuthProviders.includes('apple') && (
+				<Link
+					href={'/oauth/{provider}/{action}'
+						.replace('{provider}', 'apple')
+						.replace('{action}', 'redirect')}
+				>
 					<Button variant="outline" className="w-full">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 							<path
@@ -62,8 +73,12 @@ export default function ProvidersLogin() {
 					</Button>
 				</Link>
 			)}
-			{enabledProviders.includes('google') && (
-				<Link href={providerLogin.replace('{provider}', 'google')}>
+			{enabledOAuthProviders.includes('google') && (
+				<Link
+					href={'/oauth/{provider}/{action}'
+						.replace('{provider}', 'google')
+						.replace('{action}', 'redirect')}
+				>
 					<Button variant="outline" className="w-full">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 							<path

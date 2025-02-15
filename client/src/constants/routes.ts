@@ -4,5 +4,4 @@ export const authRoutes = {
 	validateCode: `${process.env.NEXT_PUBLIC_API_URL}/auth/validate-code`,
 	createNewUser: `${process.env.NEXT_PUBLIC_API_URL}/auth/store-user`,
 	receiveProviderUser: `${process.env.NEXT_PUBLIC_API_URL}/auth/receive-provider-user`,
-	providerLogin: `${process.env.NEXT_PUBLIC_API_URL}/auth/oauth-provider-redirect/{provider}`,
 };
