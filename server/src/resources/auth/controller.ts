@@ -32,6 +32,25 @@ const controller = {
 		const oldCode = controller.generateConfirmationCode(base, email);
 		return res.json(oldCode === code);
 	},
+	async receiveProviderUser(req: any, res: any) {
+		const data = req.body;
+		const tempToken = crypto.randomBytes(16).toString('hex');
+		const tempTokenDueDate: Date = new Date(Date.now() + 60 * 1000);
+		const oldUser = await User.findOne({ email: data.email });
+
+		if (oldUser) {
+			oldUser.tempToken = tempToken;
+			oldUser.tempTokenDueDate = tempTokenDueDate;
+			await oldUser.save();
+		} else {
+			const newUser = new User({ ...data, tempToken, tempTokenDueDate });
+			await newUser.save();
+		}
+		return res.json({
+			action: 'provider-login',
+			token: { value: tempToken, dueDate: tempTokenDueDate },
+		});
+	},
 	async storeUser(req: any, res: any) {
 		const { codeResult, email, fullName, nickName, password } = req.body;
 		const generatedCode = controller.generateConfirmationCode(
@@ -80,9 +99,12 @@ const controller = {
 		return actions[provider](req, res);
 	},
 	makeProviderCallbackRoute(req: any, provider: string) {
-		return `${req.protocol}://${req.get(
-			'host'
-		)}/api/auth/oauth-provider-callback/{provider}`;
+		const host = req.get('host');
+		const domain = `${req.protocol}://${host}`;
+		return `${domain}/api/auth/oauth-provider-callback/{provider}`.replace(
+			'{provider}',
+			provider
+		);
 	},
 	oAuthAppleRedirect(req: any, res: any) {
 		const authUrl = new URL('https://appleid.apple.com/auth/authorize');
@@ -146,7 +168,6 @@ const controller = {
 		if (!code) {
 			return res.status(400).json({ error: 'Missing authorization code' });
 		}
-
 		const tokenUrl = 'https://oauth2.googleapis.com/token';
 		const params = new URLSearchParams({
 			client_id: process.env.GOOGLE_CLIENT_ID!,
@@ -172,9 +193,7 @@ const controller = {
 
 		tokenData.access_token;
 
-		let authUrl = new URL(
-			`${process.env.APP_CLIENT_URI}/auth/login-provider/google`
-		);
+		let authUrl = new URL(`${process.env.APP_CLIENT_URI}/oauth/google`);
 		authUrl.searchParams.set('token', tokenData.access_token);
 		return res.redirect(authUrl.toString());
 	},
