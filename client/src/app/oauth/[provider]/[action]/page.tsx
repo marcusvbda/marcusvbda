@@ -75,7 +75,7 @@ export default function OAuth({ params, searchParams }: any) {
 			await action(receivedProvider);
 		};
 
-		handleAction(provider, action);
+		// handleAction(provider, action);
 	});
 
 	useEffect(() => {
