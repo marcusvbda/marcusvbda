@@ -19,7 +19,6 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 export default function FormMainStep({ onSubmit }: any) {
-	const { providerLogin } = authRoutes;
 	const t = useTranslations('RegisterPage');
 	const { fetcher } = useFetch();
 
