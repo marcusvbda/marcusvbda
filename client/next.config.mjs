@@ -4,10 +4,11 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
+    trailingSlash: false,
+    output: "standalone",
     eslint: {
         ignoreDuringBuilds: true,
     },
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
     reactStrictMode: false,
     images: {
         remotePatterns: [
