@@ -10,6 +10,20 @@
             "use": "@vercel/next"
         }
     ],
+    "routes": [
+        {
+            "src": "/auth/providers/.*",
+            "dest": "client/$1"
+        },
+        {
+            "src": "/api/(.*)",
+            "dest": "server/src/index.ts"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "client/$1"
+        }
+    ],
     "env": {
         "NODE_ENV": "production"
     }

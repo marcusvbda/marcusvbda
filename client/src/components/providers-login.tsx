@@ -12,7 +12,7 @@ export default function ProvidersLogin() {
 		<div className="flex flex-col gap-4">
 			{enabledOAuthProviders.includes('x') && (
 				<Link
-					href={'/auth/provider/{provider}/{action}'
+					href={'/auth/providers/{provider}/{action}'
 						.replace('{provider}', 'x')
 						.replace('{action}', 'redirect')}
 				>
@@ -36,7 +36,7 @@ export default function ProvidersLogin() {
 			)}
 			{enabledOAuthProviders.includes('github') && (
 				<Link
-					href={'/auth/provider/{provider}/{action}'
+					href={'/auth/providers/{provider}/{action}'
 						.replace('{provider}', 'github')
 						.replace('{action}', 'redirect')}
 				>
@@ -58,7 +58,7 @@ export default function ProvidersLogin() {
 			)}
 			{enabledOAuthProviders.includes('apple') && (
 				<Link
-					href={'/auth/provider/{provider}/{action}'
+					href={'/auth/providers/{provider}/{action}'
 						.replace('{provider}', 'apple')
 						.replace('{action}', 'redirect')}
 				>
@@ -75,7 +75,7 @@ export default function ProvidersLogin() {
 			)}
 			{enabledOAuthProviders.includes('google') && (
 				<Link
-					href={'/auth/provider/{provider}/{action}'
+					href={'/auth/providers/{provider}/{action}'
 						.replace('{provider}', 'google')
 						.replace('{action}', 'redirect')}
 				>
