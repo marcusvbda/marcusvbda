@@ -1,5 +1,4 @@
 'use client';
-import { authRoutes } from '@/constants/routes';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { useTranslations } from 'next-intl';
@@ -26,7 +25,7 @@ export default function ProvidersLogin() {
 							<path
 								d="M3 3l18 18M21 3L3 21"
 								stroke="currentColor"
-								stroke-width="2"
+								strokeWidth="2"
 								fill="none"
 							/>
 						</svg>
