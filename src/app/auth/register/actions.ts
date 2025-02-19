@@ -20,7 +20,7 @@ export const sendCodeConfirmation = async (payload: any) => {
 	const { base, email } = payload;
 	const code = await generateConfirmationCode(base, email);
 	const result = await sendEmail({
-		to: [{ email: 'bassalobre.vinicius@gmail.com' }],
+		to: [{ email }],
 		subject: 'Confirm email',
 		htmlContent: `<p>Seu código é : <strong>${code}</strong></p>`,
 	});
