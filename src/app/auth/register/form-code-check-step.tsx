@@ -8,39 +8,36 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { authRoutes } from '@/constants/routes';
-import { useFetch } from '@/hooks/use-fetch';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import crypto from 'crypto';
+import { checkCode, sendCodeConfirmation } from './actions';
 
 export default function FormCodeCheckStep({ onSubmit, email }: any) {
-	const locale = useLocale();
 	const [sent, setSent] = useState(false);
 	const [base, setBase] = useState('');
 	const [isSending, setIsSending] = useState(false);
 	const t = useTranslations('RegisterPage');
-	const { fetcher } = useFetch();
 
-	const checkCodeHandle = async (code: string) => {
-		return new Promise((resolve) => {
-			fetcher(
-				{
-					route: authRoutes.validateCode,
-					method: 'POST',
-					body: { email, base, code },
-				},
-				{
-					onSuccess: resolve,
-				},
-			);
-		});
-	};
+	// const checkCodeHandle = async (code: string) => {
+	// 	return new Promise((resolve) => {
+	// 		fetcher(
+	// 			{
+	// 				route: authRoutes.validateCode,
+	// 				method: 'POST',
+	// 				body: { email, base, code },
+	// 			},
+	// 			{
+	// 				onSuccess: resolve,
+	// 			},
+	// 		);
+	// 	});
+	// };
 
 	const registerSchema = z.object({
 		code: z.string().min(1, t('code_required')),
@@ -59,27 +56,17 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 		setIsSending(true);
 		const _base = crypto.randomBytes(15).toString('hex').slice(0, 15);
 		setBase(_base);
-		fetcher(
-			{
-				route: authRoutes.sendCodeConfirmation,
-				method: 'POST',
-				body: {
-					base: _base,
-					email,
-					locale,
-				},
-			},
-			{
-				onFinally: () => {
-					setSent(true);
-					setIsSending(false);
-				},
-			},
-		);
+		sendCodeConfirmation({
+			base: _base,
+			email,
+		}).then(() => {
+			setSent(true);
+			setIsSending(false);
+		});
 	}, [email]);
 
 	const onSubmitHandle = async (form: any) => {
-		const isValid = await checkCodeHandle(form.code);
+		const isValid = await checkCode({ code: form.code, email, base });
 		if (!isValid) {
 			setError('code', { type: 'manual', message: t('invalid_code') });
 			return;

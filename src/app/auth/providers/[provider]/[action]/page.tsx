@@ -1,6 +1,5 @@
 'use client';
 import { enabledOAuthProviders } from '@/constants/providers';
-import { authRoutes } from '@/constants/routes';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -10,11 +9,9 @@ import {
 	redirectGithub,
 	redirectGoogle,
 } from './actions';
-import { useFetch } from '@/hooks/use-fetch';
+import { receiveProviderUser } from '@/app/auth/register/actions';
 
 export default function OAuth({ params, searchParams }: any) {
-	const { fetcher } = useFetch();
-	const { receiveProviderUser } = authRoutes;
 	const { provider, action } = params;
 	const { code } = searchParams;
 	const [error, setError] = useState('');
@@ -37,19 +34,10 @@ export default function OAuth({ params, searchParams }: any) {
 				const userInfo = await action(originalUrl, code);
 				if (userInfo === 'error') return setError('no-redirect-userinfo');
 
-				fetcher(
-					{
-						route: receiveProviderUser,
-						method: 'POST',
-						body: userInfo,
-					},
-					{
-						onSuccess: (user: any) => {
-							console.log('logar com', user);
-							router.push('/admin');
-						},
-					},
-				);
+				receiveProviderUser(userInfo).then((user: any) => {
+					console.log('logar com', user);
+					router.push('/admin');
+				});
 			},
 			redirect: async (receivedProvider: string) => {
 				const handlers: any = {

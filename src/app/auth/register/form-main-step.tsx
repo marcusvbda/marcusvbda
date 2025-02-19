@@ -9,35 +9,22 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { authRoutes } from '@/constants/routes';
-import { useFetch } from '@/hooks/use-fetch';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { checkEmail } from './actions';
 
 export default function FormMainStep({ onSubmit }: any) {
 	const t = useTranslations('RegisterPage');
-	const { fetcher } = useFetch();
-
-	const checkEmailHandle = async (email: string) => {
-		return new Promise((resolve) => {
-			fetcher(
-				{ route: `${authRoutes.checkEmail}?email=${email}` },
-				{
-					onSuccess: resolve,
-				},
-			);
-		});
-	};
 
 	const registerSchema = z.object({
 		email: z
 			.string()
 			.email(t('invalid_email'))
-			.refine(async (email: string) => await checkEmailHandle(email), {
+			.refine(async (email: string) => await checkEmail(email), {
 				message: t('email_is_used'),
 			}),
 	});

@@ -8,8 +8,6 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { authRoutes } from '@/constants/routes';
-import { useFetch } from '@/hooks/use-fetch';
 import { useToast } from '@/hooks/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
@@ -19,12 +17,12 @@ import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { storeUser } from './actions';
 
 export default function FormRegisterStep({ email, codeResult }: any) {
 	const { toast } = useToast();
 	const router = useRouter();
 	const t = useTranslations('RegisterPage');
-	const { fetcher } = useFetch();
 
 	const registerSchema = z
 		.object({
@@ -46,30 +44,23 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 		resolver: zodResolver(registerSchema),
 	});
 
-	const onSubmit = useCallback(async (form: any) => {
-		return new Promise((resolve: any) => {
-			fetcher(
-				{
-					route: authRoutes.createNewUser,
-					method: 'POST',
-					body: {
-						...form,
-						email,
-						codeResult,
-					},
-				},
-				{
-					onFinally: () => resolve(),
-				},
-			);
-		}).finally(() => {
-			toast({
-				title: t('accountCreated'),
-				description: t('accountCreatedDesc'),
+	const onSubmit = useCallback(
+		async (form: any) => {
+			storeUser({
+				...form,
+				email,
+				codeResult,
+			}).then(() => {
+				toast({
+					title: t('accountCreated'),
+					description: t('accountCreatedDesc'),
+				});
+				router.push('/auth/login');
 			});
-			router.push('/auth/login');
-		});
-	}, []);
+		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+		[codeResult, email],
+	);
 
 	return (
 		<>
