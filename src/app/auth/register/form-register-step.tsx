@@ -12,28 +12,28 @@ import { useToast } from '@/hooks/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { storeUser } from './actions';
+import { useT } from '@/i18n/translate';
 
 export default function FormRegisterStep({ email, codeResult }: any) {
 	const { toast } = useToast();
 	const router = useRouter();
-	const t = useTranslations('RegisterPage');
+	const t = useT('RegisterPage');
 
 	const registerSchema = z
 		.object({
-			fullName: z.string().min(1, t('fullNameRequired')),
-			nickName: z.string().min(1, t('nickNameRequired')),
-			password: z.string().min(1, t('passwordRequired')),
-			confirmPassword: z.string().min(1, t('confirmPasswordRequired')),
+			fullName: z.string().min(1, t('Full name is required')),
+			nickName: z.string().min(1, t('Nickname is required')),
+			password: z.string().min(1, t('Password is required')),
+			confirmPassword: z.string().min(1, t('Confirm your password')),
 		})
 		.refine((form: any) => form.password === form.confirmPassword, {
-			message: t('passwordsMustMatch'),
-			path: ['confirmPassword'],
+			message: t('Passwords must match'),
+			path: ['Confirm your password'],
 		});
 
 	const {
@@ -52,8 +52,8 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 				codeResult,
 			}).then(() => {
 				toast({
-					title: t('accountCreated'),
-					description: t('accountCreatedDesc'),
+					title: t('Account created successfully!'),
+					description: t('Now you can login') + '. ' + t('Enjoy it!'),
 				});
 				router.push('/auth/login');
 			});
@@ -65,8 +65,8 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 	return (
 		<>
 			<CardHeader className="text-center">
-				<CardTitle className="text-xl">{t('create_account')}</CardTitle>
-				<CardDescription>{t('register_description')}</CardDescription>
+				<CardTitle className="text-xl">{t('Create an account')}</CardTitle>
+				<CardDescription>{t('Start your 30-day free trial')}.</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmit)}>
@@ -76,7 +76,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								<Label htmlFor="email">{t('fullName')}</Label>
 								<div className="flex flex-col gap-1">
 									<Input
-										{...register('fullName')}
+										{...register('Full name')}
 										id="fullName"
 										maxLength={255}
 									/>
@@ -86,7 +86,9 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								</div>
 							</div>
 							<div className="grid gap-2">
-								<Label htmlFor="email">{t('nickName')}</Label>
+								<Label htmlFor="email">
+									{t('How would you like to be called?')}
+								</Label>
 								<div className="flex flex-col gap-1">
 									<Input
 										{...register('nickName')}
@@ -99,7 +101,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								</div>
 							</div>
 							<div className="grid gap-2">
-								<Label htmlFor="email">{t('password')}</Label>
+								<Label htmlFor="email">{t('Password')}</Label>
 								<div className="flex flex-col gap-1">
 									<Input
 										{...register('password')}
@@ -113,7 +115,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								</div>
 							</div>
 							<div className="grid gap-2">
-								<Label htmlFor="email">{t('confirmPassword')}</Label>
+								<Label htmlFor="email">{t('Confirm your password')}</Label>
 								<div className="flex flex-col gap-1">
 									<Input
 										{...register('confirmPassword')}
@@ -127,7 +129,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								</div>
 							</div>
 							<Button type="submit" className="w-full" disabled={isSubmitting}>
-								{t('finish')}
+								{t('Finish registration')}
 								{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
 							</Button>
 						</div>

@@ -12,20 +12,20 @@ import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { checkEmail } from './actions';
+import { useT } from '@/i18n/translate';
 
 export default function FormMainStep({ onSubmit }: any) {
-	const t = useTranslations('RegisterPage');
+	const t = useT('RegisterPage');
 
 	const registerSchema = z.object({
 		email: z
 			.string()
-			.email(t('invalid_email'))
+			.email(t('Invalid email'))
 			.refine(async (email: string) => await checkEmail(email), {
-				message: t('email_is_used'),
+				message: t('Email already in use'),
 			}),
 	});
 
@@ -40,8 +40,8 @@ export default function FormMainStep({ onSubmit }: any) {
 	return (
 		<>
 			<CardHeader className="text-center">
-				<CardTitle className="text-xl">{t('create_account')}</CardTitle>
-				<CardDescription>{t('start_trial')}</CardDescription>
+				<CardTitle className="text-xl">{t('Create an account')}</CardTitle>
+				<CardDescription>{t('Start your 30-day free trial')}.</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmit)}>
@@ -49,7 +49,7 @@ export default function FormMainStep({ onSubmit }: any) {
 						<ProvidersLogin />
 						<div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
 							<span className="relative z-10 bg-background px-2 text-muted-foreground">
-								{t('or_continue_with')}
+								{t('Or continue with')}
 							</span>
 						</div>
 						<div className="grid gap-6">
@@ -68,7 +68,7 @@ export default function FormMainStep({ onSubmit }: any) {
 								</div>
 							</div>
 							<Button type="submit" className="w-full" disabled={isSubmitting}>
-								{t('get_started')}
+								{t('Get started')}
 								{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
 							</Button>
 						</div>

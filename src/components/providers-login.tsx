@@ -1,11 +1,11 @@
 'use client';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import { useTranslations } from 'next-intl';
 import { enabledOAuthProviders } from '@/constants/providers';
+import { useT } from '@/i18n/translate';
 
 export default function ProvidersLogin() {
-	const t = useTranslations('RegisterPage');
+	const t = useT('RegisterPage');
 
 	return (
 		<div className="flex flex-col gap-4">
@@ -29,7 +29,7 @@ export default function ProvidersLogin() {
 								fill="none"
 							/>
 						</svg>
-						{t('register_with', { provider: 'X' })}
+						{t('Register with {provider}', { provider: 'X' })}
 					</Button>
 				</Link>
 			)}
@@ -51,7 +51,7 @@ export default function ProvidersLogin() {
 								fill="currentColor"
 							/>
 						</svg>
-						{t('register_with', { provider: 'Github' })}
+						{t('Register with {provider}', { provider: 'Github' })}
 					</Button>
 				</Link>
 			)}
@@ -68,7 +68,7 @@ export default function ProvidersLogin() {
 								fill="currentColor"
 							/>
 						</svg>
-						{t('register_with', { provider: 'Apple' })}
+						{t('Register with {provider}', { provider: 'Apple' })}
 					</Button>
 				</Link>
 			)}
@@ -85,7 +85,7 @@ export default function ProvidersLogin() {
 								fill="currentColor"
 							/>
 						</svg>
-						{t('register_with', { provider: 'Google' })}
+						{t('Register with {provider}', { provider: 'Google' })}
 					</Button>
 				</Link>
 			)}

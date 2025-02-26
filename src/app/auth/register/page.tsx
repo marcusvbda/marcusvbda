@@ -3,20 +3,21 @@ import { cn } from '@/lib/utils';
 import { Card } from '@/components/ui/card';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import FormMainStep from './form-main-step';
 import FormCodeCheckStep from './form-code-check-step';
 import FormRegisterStep from './form-register-step';
 import { GalleryVerticalEnd } from 'lucide-react';
+import { useT } from '@/i18n/translate';
+import ClientComponent from '@/components/client-component';
 
 export default function RegisterPage() {
-	const t = useTranslations('RegisterPage');
+	const t = useT('RegisterPage');
 	const [email, setEmail] = useState('');
 	const [codeResult, setCodeResult] = useState<any>(null);
 	const [step, setStep] = useState('main');
 
 	return (
-		<>
+		<ClientComponent>
 			<Link
 				href="/"
 				prefetch={false}
@@ -51,12 +52,12 @@ export default function RegisterPage() {
 					)}
 				</Card>
 				<div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
-					{t('already_have_account')}{' '}
+					{t('Already have an account?')}{' '}
 					<Link prefetch={false} href="/auth/login">
-						{t('login')}.
+						{t('Login')}.
 					</Link>
 				</div>
 			</div>
-		</>
+		</ClientComponent>
 	);
 }

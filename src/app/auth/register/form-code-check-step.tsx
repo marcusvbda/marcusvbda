@@ -11,36 +11,21 @@ import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import crypto from 'crypto';
 import { checkCode, sendCodeConfirmation } from './actions';
+import { useT } from '@/i18n/translate';
 
 export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	const [sent, setSent] = useState(false);
 	const [base, setBase] = useState('');
 	const [isSending, setIsSending] = useState(false);
-	const t = useTranslations('RegisterPage');
-
-	// const checkCodeHandle = async (code: string) => {
-	// 	return new Promise((resolve) => {
-	// 		fetcher(
-	// 			{
-	// 				route: authRoutes.validateCode,
-	// 				method: 'POST',
-	// 				body: { email, base, code },
-	// 			},
-	// 			{
-	// 				onSuccess: resolve,
-	// 			},
-	// 		);
-	// 	});
-	// };
+	const t = useT('RegisterPage');
 
 	const registerSchema = z.object({
-		code: z.string().min(1, t('code_required')),
+		code: z.string().min(1, t('Code is required')),
 	});
 
 	const {
@@ -68,7 +53,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	const onSubmitHandle = async (form: any) => {
 		const isValid = await checkCode({ code: form.code, email, base });
 		if (!isValid) {
-			setError('code', { type: 'manual', message: t('invalid_code') });
+			setError('code', { type: 'manual', message: t('Invalid code') });
 			return;
 		}
 
@@ -81,8 +66,10 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	return (
 		<>
 			<CardHeader className="text-center">
-				<CardTitle className="text-xl">{t('email_validation')}</CardTitle>
-				<CardDescription>{t('code_check_description')}</CardDescription>
+				<CardTitle className="text-xl">{t('Email validation')}</CardTitle>
+				<CardDescription>
+					{t('We are going to send a verification code in your email')}.
+				</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<form onSubmit={handleSubmit(onSubmitHandle)}>
@@ -97,7 +84,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 							{sent ? (
 								<>
 									<div className="grid gap-2">
-										<Label htmlFor="email">{t('code')}</Label>
+										<Label htmlFor="email">{t('Code')}</Label>
 										<div className="flex flex-col gap-1">
 											<Input
 												{...register('code')}
@@ -116,7 +103,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 										className="w-full"
 										disabled={isSubmitting}
 									>
-										{t('validate_code')}
+										{t('Validate code')}
 										{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
 									</Button>
 								</>
@@ -127,7 +114,7 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 									disabled={isSending}
 									onClick={sendCodeToEmail}
 								>
-									{t('receive_code')}
+									{t('Receive code')}
 									{isSending && <Loader2 className="ml-1 animate-spin" />}
 								</Button>
 							)}
