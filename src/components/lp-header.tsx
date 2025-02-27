@@ -132,6 +132,7 @@ export default function Header() {
 						Book a demo
 					</Button>
 					<div className="border-r hidden md:inline"></div>
+    <div className="flex flex-col gap-1">
 					<Button
 						variant="outline"
 						onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -142,6 +143,7 @@ export default function Header() {
 						<Button>Restricted area</Button>
 					</Link>
 				</div>
+</div>
 				<div className="flex w-12 shrink lg:hidden items-end justify-end">
 					<Button variant="ghost" onClick={() => setOpen(!isOpen)}>
 						{isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
