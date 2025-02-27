@@ -132,7 +132,7 @@ export default function Header() {
 						Book a demo
 					</Button>
 					<div className="border-r hidden md:inline"></div>
-    <div className="flex flex-col md:flex-row gap-1 items-center justify-center">
+    <div className="flex flex-col md:flex-row gap-1 items-center justify-center py-1 md:py-0">
 					<Button
 						variant="outline"
 						onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
