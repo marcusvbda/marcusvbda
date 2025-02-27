@@ -1,5 +1,5 @@
+// 'use client';
 import { AppSidebar } from '@/components/app-sidebar';
-import { ModeToggle } from '@/components/mode-toggle';
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -15,11 +15,10 @@ import {
 } from '@/components/ui/sidebar';
 import { Separator } from '@radix-ui/react-separator';
 
-export default function DefaultLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function AdminTemplate({ children }: any) {
+	// const { user } = useAuth();
+	// console.log(user);
+
 	return (
 		<SidebarProvider>
 			<AppSidebar />

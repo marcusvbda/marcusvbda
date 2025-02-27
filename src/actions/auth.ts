@@ -100,15 +100,35 @@ export const login = async (payload: any) => {
 
 	if (!isPasswordValid) return { success: false };
 
-	const safeReturn = { ...oldUser.toObject(), password: '***********' };
-
 	cookies().set({
 		name: sessionCookieName,
-		value: JSON.stringify(safeReturn),
+		value: JSON.stringify({
+			_id: oldUser._id.toString(),
+			email: oldUser.email,
+		}),
 		httpOnly: true,
 		secure: process.env.NODE_ENV === 'production',
 		path: '/',
 	});
 
 	return { success: true, user: { nickName: oldUser.nickName } };
+};
+
+export const getLoggedUser = async (payload: any = null) => {
+	const { _id, email } = payload
+		? payload
+		: JSON.parse(cookies().get(sessionCookieName)?.value || '{}');
+	const user = await User.findOne({ email, _id });
+	if (!user) {
+		cookies().delete(sessionCookieName);
+		return { success: false };
+	}
+
+	const safeReturn = {
+		...user.toObject(),
+		_id: user._id.toString(),
+		password: '***********',
+	};
+
+	return { success: true, user: safeReturn };
 };
