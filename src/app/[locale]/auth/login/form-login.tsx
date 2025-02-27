@@ -8,13 +8,50 @@ import { Input } from '@/components/ui/input';
 import { useT } from '@/i18n/translate';
 import { Label } from '@radix-ui/react-label';
 import { Link } from '@/i18n/navigation';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { useCallback } from 'react';
+import { Loader2 } from 'lucide-react';
 
 export default function FormLogin() {
 	const t = useT('LoginPage');
 
+	const loginSchema = z.object({
+		email: z.string().email(t('Invalid email')),
+		password: z.string().min(1, t('Password is required')),
+	});
+
+	const {
+		register,
+		handleSubmit,
+		formState: { errors, isSubmitting },
+	} = useForm({
+		resolver: zodResolver(loginSchema),
+	});
+
+	const onSubmit = useCallback(
+		async (form: any) => {
+			console.log(form);
+			// storeUser({
+			// 	...form,
+			// 	email,
+			// 	codeResult,
+			// }).then(() => {
+			// 	toast({
+			// 		title: t('Account created successfully!'),
+			// 		description: t('Now you can login') + '. ' + t('Enjoy it!'),
+			// 	});
+			// 	router.push('/auth/login');
+			// });
+		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+		[],
+	);
+
 	return (
 		<ClientComponent>
-			<form>
+			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className="grid gap-6">
 					<ProvidersLogin />
 					<div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
@@ -28,9 +65,12 @@ export default function FormLogin() {
 							<Input
 								id="email"
 								type="email"
+								{...register('email')}
 								placeholder="m@example.com"
-								required
 							/>
+							{errors.email && (
+								<p className="text-red-500 text-xs">{`${errors.email.message}`}</p>
+							)}
 						</div>
 						<div className="grid gap-2">
 							<div className="flex items-center">
@@ -42,11 +82,18 @@ export default function FormLogin() {
 									{t('Forgot your password?')}
 								</a>
 							</div>
-							<Input id="password" type="password" required />
+							<Input id="password" type="password" {...register('password')} />
+							{errors.password && (
+								<p className="text-red-500 text-xs">{`${errors.password.message}`}</p>
+							)}
 						</div>
-						<Link href="/admin" prefetch={false}>
-							<Button className="w-full">Login</Button>
-						</Link>
+						<Button type="submit" className="w-full">
+							{isSubmitting ? (
+								<Loader2 className="ml-1 animate-spin" />
+							) : (
+								t('Login')
+							)}
+						</Button>
 					</div>
 					<div className="text-center text-sm">
 						{t('Don`t have an account?')}{' '}

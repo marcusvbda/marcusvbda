@@ -9,7 +9,7 @@ import {
 	redirectGithub,
 	redirectGoogle,
 } from './actions';
-import { receiveProviderUser } from '@/app/auth/register/actions';
+import { receiveProviderUser } from '../../../register/actions';
 
 export default function OAuth({ params, searchParams }: any) {
 	const { provider, action } = params;

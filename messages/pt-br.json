@@ -41,6 +41,8 @@
         "By clicking continue, you agree to our": "Ao clicar em continuar, você concorda com nossos",
         "Terms of Service": "Termos de serviço",
         "and": "e",
-        "Privacy Policy": "Politica de privacidade"
+        "Privacy Policy": "Politica de privacidade",
+        "Password is required": "A senha é obrigatória",
+        "Invalid email": "E-mail inválido"
     }
 }

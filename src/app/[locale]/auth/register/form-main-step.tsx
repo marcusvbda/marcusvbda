@@ -68,8 +68,11 @@ export default function FormMainStep({ onSubmit }: any) {
 								</div>
 							</div>
 							<Button type="submit" className="w-full" disabled={isSubmitting}>
-								{t('Get started')}
-								{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
+								{isSubmitting ? (
+									<Loader2 className="ml-1 animate-spin" />
+								) : (
+									t('Get started')
+								)}
 							</Button>
 						</div>
 					</div>

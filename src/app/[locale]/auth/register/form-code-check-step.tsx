@@ -103,8 +103,11 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 										className="w-full"
 										disabled={isSubmitting}
 									>
-										{t('Validate code')}
-										{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
+										{isSubmitting ? (
+											<Loader2 className="ml-1 animate-spin" />
+										) : (
+											t('Validate code')
+										)}
 									</Button>
 								</>
 							) : (
@@ -114,8 +117,11 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 									disabled={isSending}
 									onClick={sendCodeToEmail}
 								>
-									{t('Receive code')}
-									{isSending && <Loader2 className="ml-1 animate-spin" />}
+									{isSending ? (
+										<Loader2 className="ml-1 animate-spin" />
+									) : (
+										t('Receive code')
+									)}
 								</Button>
 							)}
 						</div>

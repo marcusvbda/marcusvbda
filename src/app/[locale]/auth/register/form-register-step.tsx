@@ -76,7 +76,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								<Label htmlFor="email">{t('fullName')}</Label>
 								<div className="flex flex-col gap-1">
 									<Input
-										{...register('Full name')}
+										{...register('fullName')}
 										id="fullName"
 										maxLength={255}
 									/>
@@ -129,8 +129,11 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 								</div>
 							</div>
 							<Button type="submit" className="w-full" disabled={isSubmitting}>
-								{t('Finish registration')}
-								{isSubmitting && <Loader2 className="ml-1 animate-spin" />}
+								{isSubmitting ? (
+									<Loader2 className="ml-1 animate-spin" />
+								) : (
+									t('Finish registration')
+								)}
 							</Button>
 						</div>
 					</div>
