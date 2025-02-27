@@ -136,3 +136,8 @@ export const getLoggedUser = async (payload: any = null) => {
 		return { success: false };
 	}
 };
+
+export const logout = async () => {
+	cookies().delete(sessionCookieName);
+	return { success: true };
+};

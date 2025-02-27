@@ -12,9 +12,9 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { Loader2 } from 'lucide-react';
-import { login } from '@/actions/auth';
+import { login, logout } from '@/actions/auth';
 import { useToast } from '@/hooks/use-toast';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function FormLogin() {
 	const router = useRouter();
@@ -64,6 +64,10 @@ export default function FormLogin() {
 			router.push('/admin');
 		}
 	};
+
+	useEffect(() => {
+		logout();
+	}, []);
 
 	return (
 		<ClientComponent>
