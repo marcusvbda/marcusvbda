@@ -7,15 +7,20 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useT } from '@/i18n/translate';
 import { Label } from '@radix-ui/react-label';
-import { Link } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { useCallback } from 'react';
 import { Loader2 } from 'lucide-react';
+import { login } from '@/actions/auth';
+import { useToast } from '@/hooks/use-toast';
+import { useState } from 'react';
 
 export default function FormLogin() {
+	const router = useRouter();
 	const t = useT('LoginPage');
+	const { toast } = useToast();
+	const [loading, setLoading] = useState(false);
 
 	const loginSchema = z.object({
 		email: z.string().email(t('Invalid email')),
@@ -30,24 +35,35 @@ export default function FormLogin() {
 		resolver: zodResolver(loginSchema),
 	});
 
-	const onSubmit = useCallback(
-		async (form: any) => {
-			console.log(form);
-			// storeUser({
-			// 	...form,
-			// 	email,
-			// 	codeResult,
-			// }).then(() => {
-			// 	toast({
-			// 		title: t('Account created successfully!'),
-			// 		description: t('Now you can login') + '. ' + t('Enjoy it!'),
-			// 	});
-			// 	router.push('/auth/login');
-			// });
-		},
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[],
-	);
+	const onSubmit = async (form: any) => {
+		try {
+			setLoading(true);
+			const res: any = await login(form);
+
+			if (!res.success) {
+				toast({
+					title: t('Oops'),
+					description: t('Invalid email or password'),
+				});
+				return;
+			}
+
+			toast({
+				title: t('Welcome'),
+				description: t('Welcome back {nickName}', {
+					nickName: res?.user?.nickName || '',
+				}),
+			});
+		} catch (error) {
+			toast({
+				title: t('Error'),
+				description: t('Something went wrong, please try again later.'),
+			});
+			setLoading(false);
+		} finally {
+			router.push('/admin');
+		}
+	};
 
 	return (
 		<ClientComponent>
@@ -87,8 +103,12 @@ export default function FormLogin() {
 								<p className="text-red-500 text-xs">{`${errors.password.message}`}</p>
 							)}
 						</div>
-						<Button type="submit" className="w-full">
-							{isSubmitting ? (
+						<Button
+							type="submit"
+							className="w-full"
+							disabled={isSubmitting || loading}
+						>
+							{isSubmitting || loading ? (
 								<Loader2 className="ml-1 animate-spin" />
 							) : (
 								t('Login')

@@ -15,8 +15,8 @@ import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import crypto from 'crypto';
-import { checkCode, sendCodeConfirmation } from './actions';
 import { useT } from '@/i18n/translate';
+import { checkCode, sendCodeConfirmation } from '@/actions/auth';
 
 export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	const [sent, setSent] = useState(false);
@@ -37,17 +37,16 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 		resolver: zodResolver(registerSchema),
 	});
 
-	const sendCodeToEmail = useCallback(() => {
+	const sendCodeToEmail = useCallback(async () => {
 		setIsSending(true);
 		const _base = crypto.randomBytes(15).toString('hex').slice(0, 15);
 		setBase(_base);
-		sendCodeConfirmation({
+		await sendCodeConfirmation({
 			base: _base,
 			email,
-		}).then(() => {
-			setSent(true);
-			setIsSending(false);
 		});
+		setSent(true);
+		setIsSending(false);
 	}, [email]);
 
 	const onSubmitHandle = async (form: any) => {

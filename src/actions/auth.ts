@@ -3,6 +3,8 @@ import crypto from 'crypto';
 import bcrypt from 'bcrypt';
 import { sendEmail } from '@/lib/mailer';
 import User from '@/models/User.model';
+import { cookies } from 'next/headers';
+import { sessionCookieName } from '@/constants/providers';
 
 export const checkEmail = async (email: string) => {
 	const user = await User.findOne({ email });
@@ -54,7 +56,6 @@ export const storeUser = async (payload: any) => {
 		password,
 		Number(process.env.PASSWORD_SALT_ROUNDS),
 	);
-
 	const newUser = new User({
 		email,
 		fullName,
@@ -62,6 +63,7 @@ export const storeUser = async (payload: any) => {
 		password: hashedPassword,
 	});
 	await newUser.save();
+	return { success: true };
 };
 
 export const receiveProviderUser = async (payload: any) => {
@@ -82,4 +84,31 @@ export const receiveProviderUser = async (payload: any) => {
 		action: 'provider-login',
 		token: { value: tempToken, dueDate: tempTokenDueDate },
 	};
+};
+
+export const login = async (payload: any) => {
+	const { email, password } = payload;
+	const oldUser = await User.findOne({ email });
+
+	if (!oldUser) return { success: false };
+
+	// eslint-disable-next-line import/no-named-as-default-member
+	const isPasswordValid = await bcrypt.compare(
+		password,
+		oldUser?.password || '',
+	);
+
+	if (!isPasswordValid) return { success: false };
+
+	const safeReturn = { ...oldUser.toObject(), password: '***********' };
+
+	cookies().set({
+		name: sessionCookieName,
+		value: JSON.stringify(safeReturn),
+		httpOnly: true,
+		secure: process.env.NODE_ENV === 'production',
+		path: '/',
+	});
+
+	return { success: true, user: { nickName: oldUser.nickName } };
 };

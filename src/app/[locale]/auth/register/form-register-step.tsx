@@ -12,14 +12,15 @@ import { useToast } from '@/hooks/use-toast';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
+import { useRouter } from '@/i18n/navigation';
+import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { storeUser } from './actions';
 import { useT } from '@/i18n/translate';
+import { storeUser } from '@/actions/auth';
 
 export default function FormRegisterStep({ email, codeResult }: any) {
+	const [loading, setLoading] = useState(false);
 	const { toast } = useToast();
 	const router = useRouter();
 	const t = useT('RegisterPage');
@@ -33,7 +34,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 		})
 		.refine((form: any) => form.password === form.confirmPassword, {
 			message: t('Passwords must match'),
-			path: ['Confirm your password'],
+			path: ['confirmPassword'],
 		});
 
 	const {
@@ -46,17 +47,27 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 
 	const onSubmit = useCallback(
 		async (form: any) => {
-			storeUser({
-				...form,
-				email,
-				codeResult,
-			}).then(() => {
+			setLoading(true);
+			try {
+				const res = await storeUser({
+					...form,
+					email,
+					codeResult,
+				});
+				if (!res.success) throw new Error();
+			} catch (error) {
+				toast({
+					title: t('Error'),
+					description: t('Error creating user'),
+				});
+				setLoading(false);
+			} finally {
 				toast({
 					title: t('Account created successfully!'),
 					description: t('Now you can login') + '. ' + t('Enjoy it!'),
 				});
 				router.push('/auth/login');
-			});
+			}
 		},
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[codeResult, email],
@@ -73,7 +84,7 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 					<div className="grid gap-6">
 						<div className="grid gap-6">
 							<div className="grid gap-2">
-								<Label htmlFor="email">{t('fullName')}</Label>
+								<Label htmlFor="email">{t('Full name')}</Label>
 								<div className="flex flex-col gap-1">
 									<Input
 										{...register('fullName')}
@@ -128,8 +139,12 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 									)}
 								</div>
 							</div>
-							<Button type="submit" className="w-full" disabled={isSubmitting}>
-								{isSubmitting ? (
+							<Button
+								type="submit"
+								className="w-full"
+								disabled={isSubmitting || loading}
+							>
+								{isSubmitting || loading ? (
 									<Loader2 className="ml-1 animate-spin" />
 								) : (
 									t('Finish registration')

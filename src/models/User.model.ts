@@ -3,7 +3,8 @@ import mongoose, { models } from 'mongoose';
 connectDB();
 
 const UserSchema = new mongoose.Schema({
-	name: String,
+	fullName: { type: String, required: true },
+	nickName: { type: String, required: true },
 	email: { type: String, unique: true, required: true },
 	password: String,
 	tempToken: String,

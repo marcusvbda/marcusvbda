@@ -14,8 +14,8 @@ import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { checkEmail } from './actions';
 import { useT } from '@/i18n/translate';
+import { checkEmail } from '@/actions/auth';
 
 export default function FormMainStep({ onSubmit }: any) {
 	const t = useT('RegisterPage');

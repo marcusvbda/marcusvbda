@@ -1,7 +1,7 @@
 'use client';
 import { enabledOAuthProviders } from '@/constants/providers';
 import { Loader2 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
 import { useEffect, useState } from 'react';
 import {
 	callbackGithub,
@@ -9,7 +9,7 @@ import {
 	redirectGithub,
 	redirectGoogle,
 } from './actions';
-import { receiveProviderUser } from '../../../register/actions';
+import { receiveProviderUser } from '@/actions/auth';
 
 export default function OAuth({ params, searchParams }: any) {
 	const { provider, action } = params;
