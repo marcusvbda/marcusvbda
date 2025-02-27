@@ -139,7 +139,6 @@ export const getLoggedUser = async (payload: any = null) => {
 			password: '***********',
 		};
 		cacheUser.set(cacheKey, { user: safeReturn, timestamp: Date.now() });
-		console.log('entrou');
 		return { success: true, user: safeReturn };
 	} catch (error) {
 		return { success: false };

@@ -10,6 +10,16 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {};
 
 export default async function RootLayout({ children }: any) {
+	const originalConsoleError = console.error;
+
+	//ignore intl warnings
+	console.error = (...args) => {
+		if (/MISSING_MESSAGE/.test(args[0])) {
+			return;
+		}
+		originalConsoleError(...args);
+	};
+
 	const locale = await getLocale();
 	const messages = await getMessages();
 
