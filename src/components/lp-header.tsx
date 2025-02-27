@@ -13,8 +13,11 @@ import {
 import { Button } from './ui/button';
 import { Menu, MoveRight, X } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { useTheme } from 'next-themes';
 
 export default function Header() {
+	const { setTheme, theme } = useTheme();
+
 	const navigationItems = [
 		{
 			title: 'Home',
@@ -129,11 +132,14 @@ export default function Header() {
 						Book a demo
 					</Button>
 					<div className="border-r hidden md:inline"></div>
-					<Link href="/auth/login" prefetch={false}>
-						<Button variant="outline">Sign in</Button>
-					</Link>
-					<Link href="/auth/register" prefetch={false}>
-						<Button>Get started</Button>
+					<Button
+						variant="outline"
+						onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+					>
+						Set to {theme === 'dark' ? 'light' : 'dark'} mode
+					</Button>
+					<Link href="/admin" prefetch={false}>
+						<Button>Restricted area</Button>
 					</Link>
 				</div>
 				<div className="flex w-12 shrink lg:hidden items-end justify-end">

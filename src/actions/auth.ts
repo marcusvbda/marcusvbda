@@ -114,18 +114,11 @@ export const login = async (payload: any) => {
 	return { success: true, user: { nickName: oldUser.nickName } };
 };
 
-const cacheUser = new Map<string, { user: any; timestamp: number }>();
 export const getLoggedUser = async (payload: any = null) => {
 	try {
 		const { _id, email } = payload
 			? payload
 			: JSON.parse(cookies().get(sessionCookieName)?.value || '{}');
-
-		const cacheKey = `${_id}_${email}`;
-		const cachedData = cacheUser.get(cacheKey);
-		if (cachedData && Date.now() - cachedData.timestamp < 60000) {
-			return { success: true, user: cachedData.user };
-		}
 
 		const user = await User.findOne({ email, _id });
 		if (!user) {
@@ -138,7 +131,6 @@ export const getLoggedUser = async (payload: any = null) => {
 			_id: user._id.toString(),
 			password: '***********',
 		};
-		cacheUser.set(cacheKey, { user: safeReturn, timestamp: Date.now() });
 		return { success: true, user: safeReturn };
 	} catch (error) {
 		return { success: false };
