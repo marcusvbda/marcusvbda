@@ -6,6 +6,7 @@ import { redirect } from '@/i18n/navigation';
 import { AuthContextProvider } from '@/providers/AuthProvider';
 import { cookies } from 'next/headers';
 import { notFound } from 'next/navigation';
+import { Children, cloneElement } from 'react';
 
 export default async function Protected({ children, roles = '*' }: any) {
 	const session = JSON.parse(cookies().get(sessionCookieName)?.value || '{}');
@@ -27,6 +28,13 @@ export default async function Protected({ children, roles = '*' }: any) {
 	}
 
 	return (
-		<AuthContextProvider user={foundUser?.user}>{children}</AuthContextProvider>
+		<AuthContextProvider user={foundUser?.user}>
+			{cloneElement(children, {
+				user: foundUser?.user,
+				children: Children.toArray(children.props.children).map((child: any) =>
+					cloneElement(child, { user: foundUser?.user }),
+				),
+			})}
+		</AuthContextProvider>
 	);
 }

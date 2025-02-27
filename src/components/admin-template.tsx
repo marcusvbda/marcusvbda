@@ -1,4 +1,3 @@
-// 'use client';
 import { AppSidebar } from '@/components/app-sidebar';
 import {
 	Breadcrumb,
@@ -15,10 +14,11 @@ import {
 } from '@/components/ui/sidebar';
 import { Separator } from '@radix-ui/react-separator';
 
-export default function AdminTemplate({ children }: any) {
-	// const { user } = useAuth();
-	// console.log(user);
-
+export default async function AdminTemplate({
+	children,
+	//  ,user
+}: any) {
+	// console.log('loggedUser', user);
 	return (
 		<SidebarProvider>
 			<AppSidebar />

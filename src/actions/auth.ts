@@ -115,20 +115,24 @@ export const login = async (payload: any) => {
 };
 
 export const getLoggedUser = async (payload: any = null) => {
-	const { _id, email } = payload
-		? payload
-		: JSON.parse(cookies().get(sessionCookieName)?.value || '{}');
-	const user = await User.findOne({ email, _id });
-	if (!user) {
-		cookies().delete(sessionCookieName);
+	try {
+		const { _id, email } = payload
+			? payload
+			: JSON.parse(cookies().get(sessionCookieName)?.value || '{}');
+		const user = await User.findOne({ email, _id });
+		if (!user) {
+			cookies().delete(sessionCookieName);
+			return { success: false };
+		}
+
+		const safeReturn = {
+			...user.toObject(),
+			_id: user._id.toString(),
+			password: '***********',
+		};
+
+		return { success: true, user: safeReturn };
+	} catch (error) {
 		return { success: false };
 	}
-
-	const safeReturn = {
-		...user.toObject(),
-		_id: user._id.toString(),
-		password: '***********',
-	};
-
-	return { success: true, user: safeReturn };
 };
