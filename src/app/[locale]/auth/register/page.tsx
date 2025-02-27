@@ -1,7 +1,7 @@
 'use client';
 import { cn } from '@/lib/utils';
 import { Card } from '@/components/ui/card';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import FormMainStep from './form-main-step';
 import FormCodeCheckStep from './form-code-check-step';

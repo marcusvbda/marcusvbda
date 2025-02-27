@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { Button } from './ui/button';
 import { enabledOAuthProviders } from '@/constants/providers';
 import { useT } from '@/i18n/translate';

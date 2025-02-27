@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { GalleryVerticalEnd } from 'lucide-react';
 import FormLogin from './form-login';
 import { cn } from '@/lib/utils';

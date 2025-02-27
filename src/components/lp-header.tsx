@@ -12,7 +12,7 @@ import {
 } from './ui/navigation-menu';
 import { Button } from './ui/button';
 import { Menu, MoveRight, X } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 export default function Header() {
 	const navigationItems = [

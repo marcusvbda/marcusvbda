@@ -27,7 +27,7 @@ import {
 	SidebarMenuItem,
 	useSidebar,
 } from '@/components/ui/sidebar';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { ModeToggle } from './mode-toggle';
 import { useTheme } from 'next-themes';
 
