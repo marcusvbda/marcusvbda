@@ -11,10 +11,11 @@ import CTA from '@/components/lp-cta';
 import Contacts from '@/components/lp-contacts';
 import Footer from '@/components/lp-footer';
 import Testimonials from '@/components/lp-testimonials';
+import ClientComponent from '@/components/client-component';
 
 export default function Home(): ReactNode {
 	return (
-		<>
+		<ClientComponent loaderClassName="py-10">
 			<Header />
 			<Hero />
 			<CTA />
@@ -24,6 +25,6 @@ export default function Home(): ReactNode {
 			<Pricing />
 			<Contacts />
 			<Footer />
-		</>
+		</ClientComponent>
 	);
 }
