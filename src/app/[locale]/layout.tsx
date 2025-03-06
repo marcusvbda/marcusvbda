@@ -14,7 +14,11 @@ export default async function RootLayout({ children }: any) {
 
 	//ignore intl warnings
 	console.error = (...args) => {
-		if (/MISSING_MESSAGE/.test(args[0])) {
+		if (
+			/MISSING_MESSAGE/.test(args[0]) ||
+			/INVALID_MESSAGE/.test(args[0]) ||
+			/INVALID_TAG/.test(args[0])
+		) {
 			return;
 		}
 		originalConsoleError(...args);

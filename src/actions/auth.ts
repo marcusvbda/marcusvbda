@@ -5,6 +5,8 @@ import { sendEmail } from '@/lib/mailer';
 import User from '@/models/User.model';
 import { cookies } from 'next/headers';
 import { sessionCookieName } from '@/constants/providers';
+import { getLocale } from 'next-intl/server';
+import { getServerTranslations } from '@/i18n/server-translate';
 
 export const checkEmail = async (email: string) => {
 	const user = await User.findOne({ email });
@@ -19,12 +21,13 @@ export const generateConfirmationCode = async (base: string, email: string) => {
 };
 
 export const sendCodeConfirmation = async (payload: any) => {
+	const t = await getServerTranslations('RegisterPage');
 	const { base, email } = payload;
 	const code = await generateConfirmationCode(base, email);
 	const result = await sendEmail({
 		to: [{ email }],
-		subject: 'Confirm email',
-		htmlContent: `<p>Your code is: <strong>${code}</strong></p>`,
+		subject: t('Confirm email'),
+		htmlContent: t('<p>Your code is: <strong>{code}</strong></p>', { code }),
 	});
 	return result;
 };
@@ -142,10 +145,9 @@ export const logout = async () => {
 	return { success: true };
 };
 
-export const sendForgotPasswordEmail = async (
-	email: string,
-	locale: string,
-) => {
+export const sendForgotPasswordEmail = async (email: string) => {
+	const locale = await getLocale();
+	const t = await getServerTranslations('ForgotPasswordPage', locale);
 	const user = await User.findOne({ email });
 
 	if (!user) return { success: false };
@@ -159,8 +161,13 @@ export const sendForgotPasswordEmail = async (
 
 	const result = await sendEmail({
 		to: [{ email }],
-		subject: 'Recover password',
-		htmlContent: `<p>To recover your password, click the link below: <a href="${url}">${url}</a></p>`,
+		subject: t('Forgot password'),
+		htmlContent: t(
+			"<p>To recover your password, click the link below: <a href='{url}'>{url}</a></p>",
+			{
+				url,
+			},
+		),
 	});
 	return result;
 };

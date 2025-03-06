@@ -14,11 +14,9 @@ import { logout, sendForgotPasswordEmail } from '@/actions/auth';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useState } from 'react';
 import { useRouter } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
 
 export default function FormForgot() {
 	const router = useRouter();
-	const locale = useLocale();
 	const t = useT('ForgotPasswordPage');
 	const { toast } = useToast();
 	const [loading, setLoading] = useState(false);
@@ -38,7 +36,7 @@ export default function FormForgot() {
 	const onSubmit = async (form: any) => {
 		try {
 			setLoading(true);
-			const res: any = await sendForgotPasswordEmail(form.email, locale);
+			const res: any = await sendForgotPasswordEmail(form.email);
 
 			if (!res.success) {
 				toast({

@@ -18,7 +18,6 @@ export default function ForgotPasswordContent({ code }: any) {
 
 	return (
 		<>
-			{code}
 			<Link
 				href="/"
 				prefetch={false}

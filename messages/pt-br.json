@@ -1,5 +1,13 @@
 {
+    "LandingPage": {
+        "Home": "Inicio",
+        "Restricted area": "Area restrita",
+        "Set to {theme} mode": "Definir para o modo {theme}",
+        "Change language to {locale}": "Mudar o idioma para {locale}"
+    },
     "RegisterPage": {
+        "Confirm email": "Confirme seu e-mail",
+        "<p>Your code is: <strong>{code}</strong></p>": "<p>Seu código é: <strong>{code}</strong></p>",
         "Create an account": "Criar uma conta",
         "Start your 30-day free trial": "Comece seu teste gratuito de 30 dias",
         "Register with {provider}": "Registrar com {provider}",
@@ -51,6 +59,8 @@
         "Welcome back {nickName}": "Bem-vindo de volta {nickName}"
     },
     "ForgotPasswordPage": {
+        "Recover password": "Recuperar senha",
+        "<p>To recover your password, click the link below: <a href='{url}'>{url}</a></p>": "<p>Para recuperar sua senha, clique no link abaixo: <a href='{url}'>{url}</a></p>",
         "Forgot password": "Esqueceu sua senha",
         "Enter your email to receive a password reset link": "Digite seu e-mail para receber um link de redefinição de senha",
         "Or, return to": "Ou, volte para",
