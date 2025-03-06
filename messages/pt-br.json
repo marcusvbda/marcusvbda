@@ -49,5 +49,21 @@
         "Invalid email or password": "E-mail ou senha inválidos",
         "Welcome": "Bem-vindo",
         "Welcome back {nickName}": "Bem-vindo de volta {nickName}"
+    },
+    "ForgotPasswordPage": {
+        "Forgot password": "Esqueceu sua senha",
+        "Enter your email to receive a password reset link": "Digite seu e-mail para receber um link de redefinição de senha",
+        "Or, return to": "Ou, volte para",
+        "Send reset password link": "Enviar link de redefinição de senha",
+        "All done!": "Tudo certo!",
+        "A link has been sent to your email address, please check your inbox": "Um link foi enviado para o seu e-mail, por favor, verifique sua caixa de entrada",
+        "Type and confirm your new password": "Digite e confirme sua nova senha",
+        "Password is required": "A senha é obrigatória",
+        "Confirm your password": "Confirme sua senha",
+        "Passwords must match": "As senhas devem coincidir",
+        "Invalid email": "E-mail inválido",
+        "Your password has been changed, you can now log in": "Sua senha foi alterada, você pode entrar agora",
+        "Password": "Senha",
+        "Confirm password": "Confirmar senha"
     }
 }

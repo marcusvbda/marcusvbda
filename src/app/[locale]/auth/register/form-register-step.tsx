@@ -13,11 +13,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from '@/i18n/navigation';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { useT } from '@/i18n/translate';
-import { storeUser } from '@/actions/auth';
+import { logout, storeUser } from '@/actions/auth';
 
 export default function FormRegisterStep({ email, codeResult }: any) {
 	const [loading, setLoading] = useState(false);
@@ -44,6 +44,10 @@ export default function FormRegisterStep({ email, codeResult }: any) {
 	} = useForm({
 		resolver: zodResolver(registerSchema),
 	});
+
+	useEffect(() => {
+		logout();
+	}, []);
 
 	const onSubmit = useCallback(
 		async (form: any) => {

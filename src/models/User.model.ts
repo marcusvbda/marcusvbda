@@ -11,6 +11,8 @@ const UserSchema = new mongoose.Schema({
 	tempTokenDueDate: Date,
 	role: { type: String, default: 'user' },
 	avatar: String,
+	resetPassword: String,
+	resetPasswordDueDate: Date,
 	createdAt: { type: Date, default: Date.now },
 });
 

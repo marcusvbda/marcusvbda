@@ -11,12 +11,12 @@ import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Label } from '@radix-ui/react-label';
 import { Loader2 } from 'lucide-react';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import crypto from 'crypto';
 import { useT } from '@/i18n/translate';
-import { checkCode, sendCodeConfirmation } from '@/actions/auth';
+import { checkCode, logout, sendCodeConfirmation } from '@/actions/auth';
 
 export default function FormCodeCheckStep({ onSubmit, email }: any) {
 	const [sent, setSent] = useState(false);
@@ -61,6 +61,10 @@ export default function FormCodeCheckStep({ onSubmit, email }: any) {
 			base,
 		});
 	};
+
+	useEffect(() => {
+		logout();
+	}, []);
 
 	return (
 		<>

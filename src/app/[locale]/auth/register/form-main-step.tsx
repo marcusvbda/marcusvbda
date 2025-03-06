@@ -15,7 +15,8 @@ import { Loader2 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { useT } from '@/i18n/translate';
-import { checkEmail } from '@/actions/auth';
+import { checkEmail, logout } from '@/actions/auth';
+import { useEffect } from 'react';
 
 export default function FormMainStep({ onSubmit }: any) {
 	const t = useT('RegisterPage');
@@ -36,6 +37,10 @@ export default function FormMainStep({ onSubmit }: any) {
 	} = useForm({
 		resolver: zodResolver(registerSchema),
 	});
+
+	useEffect(() => {
+		logout();
+	}, []);
 
 	return (
 		<>

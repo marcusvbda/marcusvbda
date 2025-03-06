@@ -24,7 +24,7 @@ export const sendCodeConfirmation = async (payload: any) => {
 	const result = await sendEmail({
 		to: [{ email }],
 		subject: 'Confirm email',
-		htmlContent: `<p>Seu código é : <strong>${code}</strong></p>`,
+		htmlContent: `<p>Your code is: <strong>${code}</strong></p>`,
 	});
 	return result;
 };
@@ -140,4 +140,54 @@ export const getLoggedUser = async (payload: any = null) => {
 export const logout = async () => {
 	cookies().delete(sessionCookieName);
 	return { success: true };
+};
+
+export const sendForgotPasswordEmail = async (
+	email: string,
+	locale: string,
+) => {
+	const user = await User.findOne({ email });
+
+	if (!user) return { success: false };
+
+	const uniqueKey = crypto.randomBytes(16).toString('hex');
+	const url = `${process.env.APP_URL}/${locale}/auth/forgot-password/${uniqueKey}`;
+
+	user.resetPassword = uniqueKey;
+	user.resetPasswordDueDate = new Date(Date.now() + 60 * 60 * 1000);
+	await user.save();
+
+	const result = await sendEmail({
+		to: [{ email }],
+		subject: 'Recover password',
+		htmlContent: `<p>To recover your password, click the link below: <a href="${url}">${url}</a></p>`,
+	});
+	return result;
+};
+
+export const checkRememberCode = async (code: string) => {
+	const user = await User.findOne({
+		resetPassword: code,
+		resetPasswordDueDate: { $gt: Date.now() },
+	});
+	if (!user) return false;
+	return true;
+};
+
+export const changeUserPassword = async (password: string, code: string) => {
+	const user = await User.findOne({
+		resetPassword: code,
+		resetPasswordDueDate: { $gt: Date.now() },
+	});
+	if (!user) return false;
+
+	// eslint-disable-next-line import/no-named-as-default-member
+	user.password = await bcrypt.hash(
+		password,
+		Number(process.env.PASSWORD_SALT_ROUNDS),
+	);
+	user.resetPassword = undefined;
+	user.resetPasswordDueDate = undefined;
+	await user.save();
+	return true;
 };
