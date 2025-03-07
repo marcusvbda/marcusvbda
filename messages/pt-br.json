@@ -81,7 +81,31 @@
         "Log out": "Sair",
         "Main": "Principal"
     },
-    "Breadcrumb": {
-        "Settings": "Configurações"
+    "Pages": {
+        "Settings": "Configurações",
+        "Manage your account settings": "Gerencie suas configurações de conta"
+    },
+    "SettingsPage": {
+        "Profile": "Perfil",
+        "Password": "Senha",
+        "Appearance": "Aparencia",
+        "Nickname": "Como gostaria de ser chamado",
+        "Full name": "Nome completo",
+        "Save changes": "Salvar alterações",
+        "Full nume is required": "O nome completo é obrigatório",
+        "Nickname is required": "O apelido é obrigatório",
+        "Invalid email": "E-mail inválido",
+        "Confirm your password": "Confirme sua senha",
+        "Passwords must match": "As senhas devem coincidir",
+        "Password is required": "A senha é obrigatória",
+        "Change password": "Mudar senha",
+        "Theme": "Tema",
+        "Theme is required": "O tema é obrigatório",
+        "Ligth": "Claro",
+        "Dark": "Escuro",
+        "System": "Sistema",
+        "Language": "Idioma",
+        "English": "Inglês",
+        "Brazilian portuguese": "Português brasileiro"
     }
 }

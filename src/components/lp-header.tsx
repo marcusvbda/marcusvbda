@@ -8,18 +8,18 @@ import { useTheme } from 'next-themes';
 import { useLocale } from 'next-intl';
 import { useT } from '@/i18n/translate';
 
+const changePageLanguage = (locale: string) => {
+	const url = window.location.href;
+	const urlParts = url.split('/');
+	urlParts[3] = locale;
+	const newUrl = urlParts.join('/');
+	window.location.href = newUrl;
+};
+
 export default function Header() {
 	const t = useT('LandingPage');
 	const { setTheme, theme } = useTheme();
 	const locale = useLocale();
-
-	const changePageLanguage = (locale: string) => {
-		const url = window.location.href;
-		const urlParts = url.split('/');
-		urlParts[3] = locale;
-		const newUrl = urlParts.join('/');
-		window.location.href = newUrl;
-	};
 
 	const navigationItems: any = useMemo(() => {
 		return [

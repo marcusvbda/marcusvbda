@@ -1,35 +1,48 @@
 'use client';
-// import Heading from '@/components/heading';
-import { Separator } from '@/components/ui/separator';
 
-// const sidebarNavItems: any[] = [
-// 	{
-// 		title: 'Profile',
-// 		url: '/settings/profile',
-// 		icon: null,
-// 	},
-// 	{
-// 		title: 'Password',
-// 		url: '/settings/password',
-// 		icon: null,
-// 	},
-// 	{
-// 		title: 'Appearance',
-// 		url: '/settings/appearance',
-// 		icon: null,
-// 	},
-// ];
+import ClientComponent from '@/components/client-component';
+import { Button } from '@/components/ui/button';
+
+import { useState } from 'react';
+import ProfileForm from './profile-form';
+import { useT } from '@/i18n/translate';
+import PasswordForm from './password-form';
+import AppearenceForm from './appearence-form';
+import LanguageForm from './language-form';
+
+const sidebarNavItems: any[] = [
+	'Profile',
+	'Language',
+	'Password',
+	'Appearance',
+];
 
 export default function FragmentSettings() {
-	return (
-		<div className="px-4 py-6">
-			<div className="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-12">
-				<Separator className="my-6 md:hidden" />
+	const [step, setStep] = useState('Profile');
+	const t = useT('SettingsPage');
 
-				<div className="flex-1 md:max-w-2xl">
-					<section className="max-w-xl space-y-12">teste</section>
-				</div>
-			</div>
+	return (
+		<div className="flex flex-col md:flex-row gap-8">
+			<aside className="w-full max-w-xl lg:w-48">
+				<nav className="flex md:flex-col space-y-1 space-x-0 gap-1 flex-wrap">
+					{sidebarNavItems.map((item: string, key: number) => (
+						<Button
+							key={key}
+							className="w-full"
+							variant={step === item ? 'default' : 'outline'}
+							onClick={() => setStep(item)}
+						>
+							{t(item)}
+						</Button>
+					))}
+				</nav>
+			</aside>
+			<ClientComponent>
+				{step === 'Profile' && <ProfileForm />}
+				{step === 'Language' && <LanguageForm />}
+				{step === 'Password' && <PasswordForm />}
+				{step === 'Appearance' && <AppearenceForm />}
+			</ClientComponent>
 		</div>
 	);
 }

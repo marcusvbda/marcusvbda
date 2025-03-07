@@ -6,6 +6,7 @@ import {
 	BreadcrumbItem,
 	BreadcrumbList,
 	BreadcrumbPage,
+	BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import {
 	SidebarInset,
@@ -16,13 +17,16 @@ import { Link } from '@/i18n/navigation';
 import { useT } from '@/i18n/translate';
 import { cn } from '@/lib/utils';
 import { Separator } from '@radix-ui/react-separator';
+import { Fragment } from 'react';
 
 export default function AdminTemplate({
 	children,
 	user,
+	title = '',
+	description = '',
 	breadcrumbItems = [],
 }: any) {
-	const t = useT('Breadcrumb');
+	const t = useT('Pages');
 
 	return (
 		<SidebarProvider>
@@ -35,26 +39,47 @@ export default function AdminTemplate({
 						<Breadcrumb>
 							<BreadcrumbList>
 								{breadcrumbItems.map((item: any, key: number) => (
-									<BreadcrumbItem className="hidden md:block" key={key}>
-										{item?.url ? (
-											<Link
-												href={item.url}
-												className={cn(
-													'transition-colors hover:text-foreground',
-												)}
-											>
-												{t(item.title)}
-											</Link>
-										) : (
-											<BreadcrumbPage>{t(item.title)}</BreadcrumbPage>
+									<Fragment key={key}>
+										<BreadcrumbItem className="hidden md:block">
+											{item?.url ? (
+												<Link
+													href={item.url}
+													className={cn(
+														'transition-colors hover:text-foreground',
+													)}
+												>
+													{t(item.title)}
+												</Link>
+											) : (
+												<BreadcrumbPage>{t(item.title)}</BreadcrumbPage>
+											)}
+										</BreadcrumbItem>
+										{key < breadcrumbItems.length - 1 && (
+											<BreadcrumbSeparator />
 										)}
-									</BreadcrumbItem>
+									</Fragment>
 								))}
 							</BreadcrumbList>
 						</Breadcrumb>
 					</div>
 				</header>
-				<main className="flex flex-1 flex-col gap-4 p-4 pt-0">{children}</main>
+				<main className="flex flex-1 flex-col gap-4 p-4 pt-0">
+					<div className="px-4 py-6">
+						<div className="flex flex-col">
+							{title && (
+								<h2 className="text-xl font-semibold tracking-tight">
+									{t(title)}
+								</h2>
+							)}
+							{description && (
+								<p className="text-muted-foreground text-sm">
+									{t(description)}
+								</p>
+							)}
+							<div className="mt-4">{children}</div>
+						</div>
+					</div>
+				</main>
 			</SidebarInset>
 		</SidebarProvider>
 	);
