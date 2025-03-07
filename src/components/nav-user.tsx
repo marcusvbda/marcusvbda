@@ -1,15 +1,6 @@
 'use client';
 
-import {
-	BadgeCheck,
-	Bell,
-	ChevronsUpDown,
-	CreditCard,
-	LogOut,
-	Moon,
-	Sparkles,
-	Sun,
-} from 'lucide-react';
+import { BadgeCheck, ChevronsUpDown, LogOut } from 'lucide-react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
@@ -28,20 +19,19 @@ import {
 	useSidebar,
 } from '@/components/ui/sidebar';
 import { Link } from '@/i18n/navigation';
-import { ModeToggle } from './mode-toggle';
-import { useTheme } from 'next-themes';
+import { useMemo } from 'react';
+import { useT } from '@/i18n/translate';
 
-export function NavUser({
-	user,
-}: {
-	user: {
-		name: string;
-		email: string;
-		avatar: string;
-	};
-}) {
+export function NavUser({ user }: any) {
+	const t = useT('AdminSidebar');
 	const { isMobile } = useSidebar();
-	const { theme } = useTheme();
+
+	const avatarFallback = useMemo(() => {
+		const initials = (user?.fullName || '')
+			.split(' ')
+			.map((word: any) => (word[0] || '').toUpperCase());
+		return initials.slice(0, 2).join('');
+	}, [user]);
 
 	return (
 		<SidebarMenu>
@@ -54,7 +44,9 @@ export function NavUser({
 						>
 							<Avatar className="h-8 w-8 rounded-lg">
 								<AvatarImage src={user.avatar} alt={user.name} />
-								<AvatarFallback className="rounded-lg">CN</AvatarFallback>
+								<AvatarFallback className="rounded-lg">
+									{avatarFallback}
+								</AvatarFallback>
 							</Avatar>
 							<div className="grid flex-1 text-left text-sm leading-tight">
 								<span className="truncate font-semibold">{user.name}</span>
@@ -73,7 +65,9 @@ export function NavUser({
 							<div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
 								<Avatar className="h-8 w-8 rounded-lg">
 									<AvatarImage src={user.avatar} alt={user.name} />
-									<AvatarFallback className="rounded-lg">CN</AvatarFallback>
+									<AvatarFallback className="rounded-lg">
+										{avatarFallback}
+									</AvatarFallback>
 								</Avatar>
 								<div className="grid flex-1 text-left text-sm leading-tight">
 									<span className="truncate font-semibold">{user.name}</span>
@@ -82,38 +76,20 @@ export function NavUser({
 							</div>
 						</DropdownMenuLabel>
 						<DropdownMenuSeparator />
-						<DropdownMenuGroup>
-							<DropdownMenuItem>
-								<Sparkles />
-								Upgrade to Pro
-							</DropdownMenuItem>
-						</DropdownMenuGroup>
 						<DropdownMenuSeparator />
 						<DropdownMenuGroup>
-							<DropdownMenuItem>
-								<BadgeCheck />
-								Account
-							</DropdownMenuItem>
-							<DropdownMenuItem>
-								<CreditCard />
-								Billing
-							</DropdownMenuItem>
-							<DropdownMenuItem>
-								<Bell />
-								Notifications
-							</DropdownMenuItem>
+							<Link href="/admin/settings" prefetch={false}>
+								<DropdownMenuItem>
+									<BadgeCheck />
+									{t('Settings')}
+								</DropdownMenuItem>
+							</Link>
 						</DropdownMenuGroup>
-						<ModeToggle>
-							<DropdownMenuItem>
-								{theme === 'light' ? <Sun /> : <Moon />}
-								Theme
-							</DropdownMenuItem>
-						</ModeToggle>
 						<DropdownMenuSeparator />
 						<Link href="/auth/login" prefetch={false}>
 							<DropdownMenuItem>
 								<LogOut />
-								Log out
+								{t('Log out')}
 							</DropdownMenuItem>
 						</Link>
 					</DropdownMenuContent>

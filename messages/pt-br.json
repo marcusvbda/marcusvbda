@@ -75,5 +75,13 @@
         "Your password has been changed, you can now log in": "Sua senha foi alterada, você pode entrar agora",
         "Password": "Senha",
         "Confirm password": "Confirmar senha"
+    },
+    "AdminSidebar": {
+        "Settings": "Configurações",
+        "Log out": "Sair",
+        "Main": "Principal"
+    },
+    "Breadcrumb": {
+        "Settings": "Configurações"
     }
 }

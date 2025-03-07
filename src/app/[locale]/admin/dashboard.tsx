@@ -19,12 +19,7 @@ import {
 import { Progress } from '@radix-ui/react-progress';
 import { Table } from 'lucide-react';
 
-export default function Dashboard(
-	{
-		// user
-	}: any,
-) {
-	// console.log(user);
+export default function Dashboard() {
 	return (
 		<ClientComponent>
 			<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

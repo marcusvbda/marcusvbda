@@ -31,8 +31,8 @@ export default async function Protected({ children, roles = '*' }: any) {
 		<AuthContextProvider user={foundUser?.user}>
 			{cloneElement(children, {
 				user: foundUser?.user,
-				children: Children.toArray(children.props.children).map((child: any) =>
-					cloneElement(child, { user: foundUser?.user }),
+				children: Children.toArray(children.props?.children || []).map(
+					(child: any) => cloneElement(child, { user: foundUser?.user }),
 				),
 			})}
 		</AuthContextProvider>
