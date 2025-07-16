@@ -1,110 +1,97 @@
-# Marcus Vinicius Bassalobre de Assis
 
-## Fullstack Developer | 10+ Years of Experience
-
-### Personal Information
-
-- **Location:** Dublin, Ireland (Brazilian citizen)  
-- **Visa:** Stamp 2 (requires sponsorship for full-time positions)  
-- **Phone:** +55 14 99676-6177 (WhatsApp) | +353 83 881-8967  
-- **Email:** bassalobre.vinicius@gmail.com  
-- **GitHub:** [github.com/marcusvbda](https://github.com/marcusvbda)  
-- **LinkedIn:** [linkedin.com/in/mvbassalobre](https://www.linkedin.com/in/mvbassalobre)  
-- **Twitter:** [twitter.com/mvbassalobre](https://twitter.com/mvbassalobre)  
+# Marcus Vinicius Bassalobre de Assis  
+**Senior Fullstack Developer**  
+ðŸ“ Dublin, Ireland | ðŸ‡§ðŸ‡· Brazilian, open to sponsorship | âœ‰ï¸ bassalobre.vinicius@gmail.com  
+ðŸ”— [LinkedIn](https://www.linkedin.com/in/mvbassalobre) | ðŸ”— [GitHub](https://github.com/marcusvbda)
 
 ---
 
-### Profile
-
-Brazilian Fullstack Developer currently based in Dublin, Ireland. Self-taught programmer who began coding desktop applications at age 16 and gained professional experience at 18. With over a decade of experience in software development, I have built scalable web applications and robust backend systems across various industries. I specialize in modern frontend frameworks, clean architecture, and cloud-based solutions. Passionate about delivering value through technology, user-focused design, and performance optimization.
-
----
-
-### Skills
-
-- **Frontend:** React, Vue.js, Next.js, Nuxt.js, jQuery, Bootstrap, Tailwind CSS, SASS, HTML, CSS, JavaScript  
-- **Backend:** PHP, Laravel, Node.js, NestJS, Express.js, C#, ASP.NET Core MVC, C++  
-- **Databases:** MySQL, PostgreSQL, MongoDB, SQL Server, Firebird  
-- **DevOps & Tools:** Docker, AWS, Azure, Google Cloud, Git, CI/CD, REST APIs  
-- **Languages:** JavaScript, TypeScript, PHP, C#, C++, SQL  
+## Professional Summary  
+Senior Fullstack Developer with 10+ years of experience building scalable web applications using Laravel, PHP, JavaScript, TypeScript, Node.js, and modern frontend frameworks like Nuxt.js and Next.js. Proven track record in leading and maintaining mission-critical products, including the core investment tracking platform at Investidor10 and the first version of Payt, one of Brazil's top e-commerce platforms. Strong English (C1), experience with international teams, and open-source contributor (Filament PHP). Currently based in Dublin, open to remote or sponsored opportunities worldwide.
 
 ---
 
-### Professional Experience
-
-#### **Fullstack Engineer – Investidor 10**  
-_São Paulo, Brazil – 2023_
-
-- Built a web platform for users to track and manage financial investments.  
-- Designed backend architecture and APIs using Laravel and MySQL.  
-- Developed responsive and scalable interfaces using Vue.js and React (Next.js).  
-- Integrated third-party APIs for real-time financial data.  
-- Focused on application performance, security, and maintainability.
-
-#### **Fullstack Engineer – Diwe Profund Marketing**  
-_São Paulo, Brazil – 2020–2024_
-
-- Delivered customized systems including task management, finance, and internal workflow platforms.  
-- Led development of a learning management system for the construction industry.  
-- Integrated solutions with Salesforce, Marketing Cloud, and Magento.  
-- Used Laravel, NestJS, Next.js, Nuxt.js, MongoDB, PostgreSQL, MySQL, AWS, Azure, and Google Cloud.  
-
-#### **Fullstack Engineer – Otimize / Payt**  
-_São Paulo, Brazil – 2017–2023_
-
-- Led development of SaaS products for e-learning, digital marketing, and online printing services.  
-- Designed fullstack applications using Laravel, Node.js (TypeScript), SCSS, and modern JavaScript frameworks.  
-- Created intuitive UIs and robust backend features including billing and analytics.  
-
-#### **Software Owner (CRM Fullstack Developer) – UNIMAR (University of Marília)**  
-_São Paulo, Brazil – 2017–2023_
-
-- Developed and maintained a CRM system for managing student enrollment and leads.  
-- Built a modular Laravel application with Vue.js, MySQL, and Tailwind CSS.  
-- Conducted user training and provided long-term support.  
-
-#### **C# and ASP.NET Developer – Copy Supply**  
-_São Paulo, Brazil – 2016–2017_
-
-- Developed a CRM system for sales and customer management using C# and ASP.NET MVC.  
-- Hosted application on Microsoft Azure.
-
-#### **PHP Developer – Alive IT**  
-_Marília, Brazil – 2014–2016_
-
-- Built web solutions for gas stations and convenience stores using Laravel and MySQL.  
-- Deployed cloud infrastructure on AWS.
-
-#### **Delphi Developer – Guess**  
-_Marília, Brazil – 2013–2014_
-
-- Maintained and enhanced construction and real estate management systems.
-
-#### **C++ Developer – Mastersel**  
-_Marília, Brazil – 2010–2013_
-
-- Created commercial automation software for small businesses.
+## Tech Stack  
+**Languages:** PHP, JavaScript, TypeScript, C++, Delphi  
+**Frameworks & Libraries:** Laravel, NestJS, Express, Nuxt.js, Next.js, ASP.NET MVC  
+**Databases:** MySQL, PostgreSQL, SQL Server, MongoDB, DynamoDB  
+**Tools & Platforms:** Docker, Docker Compose, Git, GitHub, VS Code, Figma, ClickUp, Trello, Notion  
+**Cloud/DevOps:** Basic knowledge with containers and CI using Docker  
+**Other:** SCRUM, SaaS development, API design, CRM systems, Marketing & E-commerce platforms  
 
 ---
 
-### Education
+## Professional Experience
 
-- **AI Applications with Node.js** – Alura, Brazil _(2023–2024)_  
-- **Professional English** – Times School, Brazil _(2023)_  
-- **Professional English** – Future Learning, Dublin IE _(Current)_  
-- **DevOps Certification** – Alura, Brazil _(2016)_  
-- **Fullstack Web Development** – Udemy, Brazil _(2015–2016)_  
-- **Bachelor’s in Systems Analysis and Development** – UNIMAR, Brazil _(2013–2016)_  
+**Investidor10** â€“ *Fullstack Developer (PHP, Laravel, JS)*  
+Remote from SÃ£o Paulo / Dublin â€“ 2022 to Present  
+- Led the development of **"Carteira"**, the companyâ€™s most important investment portfolio product.  
+- Handled end-to-end architecture, development, and ongoing maintenance of the feature.  
+- Played a key role in scaling the platform to one of Latin America's largest investment portals.
+
+**Vega Checkout (Monetizze)** â€“ *Fullstack Developer (Laravel)*  
+Remote â€“ 2022 (9-month contract)  
+- Contributed to core e-commerce features on a large-scale checkout platform.  
+- Project ran in parallel to Investidor10 contributions.
+
+**Diwe** â€“ *Fullstack Developer (PHP, Node.js)*  
+Remote â€“ 2020 to 2022  
+- Developed and maintained marketing and web systems for clients like Gerdau, Unimed, and Quartzolit.  
+- Worked across multiple stacks for diverse international clients.
+
+**Payt** â€“ *Fullstack Developer (PHP, Laravel)*  
+Remote â€“ 2017 to 2020  
+- Developed the **first full version of Payt**, now one of Brazilâ€™s top e-commerce/marketing automation platforms.  
+- Participated in scaling and maintaining the platform long-term.
+
+**Otimize** â€“ *Fullstack Developer (PHP, Laravel)*  
+Remote â€“ 2014 to 2017  
+- Developed a SaaS platform for online print companies.  
+- Created and supported custom web tools for B2B clients.
+
+**Copy Supply** â€“ *Software Developer (ASP.NET MVC)*  
+SÃ£o Paulo â€“ 2012 to 2014  
+- Maintained internal systems for industrial graphics supply management.
+
+**AliveIT (ex-Mastersell)** â€“ *Developer (PHP, C++)*  
+MarÃ­lia â€“ 2010 to 2012  
+- Initially worked in tech support, then transitioned to development.  
+- Developed automation systems for fuel stations using Laravel and C++.  
+
+**Guess Software** â€“ *Intern (Delphi)*  
+MarÃ­lia â€“ 2009 (6 months)  
+- Developed real estate management tools during mandatory university internship.
 
 ---
 
-### Languages
+## Freelance Highlights  
+- Developed CRM system for Unimar University, used for 2 years by sales department.  
+- Built and deployed websites for:  
+  - **Conexa** (main company site)  
+  - **Divercity Park** (MaringÃ¡)  
+  - **Mudas Carvalho**, **Tom Construtora**, and various small businesses.  
 
-- **Portuguese:** Native  
-- **English:** B2–C1 (Professional working proficiency)
+---
 
+## Education  
+**Bachelor in Systems Analysis and Development**  
+Universidade de MarÃ­lia (UNIMAR), Brazil
 
-<a href="https://www.buymeacoffee.com/mvbassalobre" target="_blank" style="margin-top:50">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px; width: 162px;" />
-</a>
+---
 
+## Certifications  
+- Advanced Scrum  
+- Modern Applications with Laravel  
+- Advanced Professional English
+
+---
+
+## Languages  
+- Portuguese: Native  
+- English: Advanced (C1 â€“ fluent in speaking, reading, writing, listening)  
+- Spanish: Basic comprehension
+
+---
+
+## Open Source  
+- Contributor to **Filament PHP**, a popular open-source admin panel framework for Laravel.
