@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Linkedin, MapPin } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Contact = () => {
@@ -25,6 +25,12 @@ export const Contact = () => {
 			value: t('contact.locationValue'),
 			href: null,
 		},
+		{
+			icon: Github,
+			label: 'Github',
+			value: 'github.com/marcusvbda',
+			href: 'https://github.com/marcusvbda',
+		},
 	];
 
 	return (
@@ -42,7 +48,7 @@ export const Contact = () => {
 					</p>
 				</div>
 
-				<div className="grid md:grid-cols-3 gap-6">
+				<div className="grid md:grid-cols-4 gap-6">
 					{contactMethods.map((method, index) => {
 						const Icon = method.icon;
 						return (

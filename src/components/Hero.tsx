@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, Linkedin } from 'lucide-react';
+import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mac.png';
@@ -42,7 +42,7 @@ export const Hero = () => {
 							{t('hero.bio')}
 						</p>
 
-						<div className="flex flex-wrap gap-4 pt-4">
+						<div className="flex justify-center md:justify-start flex-wrap gap-4 pt-4">
 							<Button
 								size="lg"
 								onClick={scrollToContact}
@@ -61,9 +61,19 @@ export const Hero = () => {
 									LinkedIn
 								</a>
 							</Button>
+							<Button size="lg" variant="outline" asChild>
+								<a
+									href="https://github.com/marcusvbda"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Github className="mr-2 h-4 w-4" />
+									Github
+								</a>
+							</Button>
 						</div>
 
-						<div className="pt-8 animate-bounce">
+						<div className="pt-8 animate-bounce flex justify-center md:justify-start">
 							<a
 								href="#about"
 								onClick={(e) => {
