@@ -100,7 +100,7 @@ export const Hero = () => {
 							<div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							<img
 								src={profileImage}
-								alt="Marcus Vinicius Bassalobre"
+								alt="Marcus Vinicius Bassalobre de Assis"
 								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
 							/>
 						</div>

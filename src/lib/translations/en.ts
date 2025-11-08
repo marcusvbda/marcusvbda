@@ -8,7 +8,7 @@ export const en = {
 	},
 	hero: {
 		greeting: "Hi, I'm",
-		name: 'Marcus Vinicius Bassalobre',
+		name: 'Marcus Vinicius Bassalobre de Assis',
 		role: 'Senior Fullstack Engineer',
 		location: 'Dublin, Ireland',
 		bio: "I'm a Senior Fullstack Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",

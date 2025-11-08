@@ -21,7 +21,7 @@ export const About = () => {
 						<Card className="overflow-hidden hover-lift">
 							<img
 								src={profileImage}
-								alt="Marcus Vinicius Bassalobre"
+								alt="Marcus Vinicius Bassalobre de Assis"
 								className="w-full h-full object-cover grayscale"
 							/>
 						</Card>
