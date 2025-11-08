@@ -1,7 +1,7 @@
 # Marcus Vinicius Bassalobre de Assis
 
 **Senior Fullstack Engineer**  
-📍 Dublin, Ireland | 📧 [bassalobre.vinicius@gmail.com](mailto:bassalobre.vinicius@gmail.com) | 🌐 [linkedin.com/in/marcusvbassalobre](https://linkedin.com/in/marcusvbassalobre)  
+📍 Dublin, Ireland | 📧 [bassalobre.vinicius@gmail.com](mailto:bassalobre.vinicius@gmail.com) | 🌐 [linkedin.com/in/mvbassalobre](https://linkedin.com/in/mvbassalobre)  
 🧠 React | Next.js | Laravel | NestJS | TypeScript | Vue | PHP | n8n | Tailwind
 
 ---
@@ -123,5 +123,5 @@ Bachelor’s in Systems Analysis and Development
 ## 📫 Contact
 
 📧 [bassalobre.vinicius@gmail.com](mailto:bassalobre.vinicius@gmail.com)  
-🌐 [linkedin.com/in/marcusvbassalobre](https://linkedin.com/in/marcusvbassalobre)  
+🌐 [linkedin.com/in/mvbassalobre](https://linkedin.com/in/mvbassalobre)  
 📍 Dublin, Ireland
