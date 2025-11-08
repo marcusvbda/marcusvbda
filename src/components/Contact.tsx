@@ -16,8 +16,8 @@ export const Contact = () => {
 		{
 			icon: Linkedin,
 			label: t('contact.linkedin'),
-			value: 'mvbassalobresalobre',
-			href: 'https://linkedin.com/in/mvbassalobresalobre',
+			value: 'mvbassalobre',
+			href: 'https://linkedin.com/in/mvbassalobre',
 		},
 		{
 			icon: MapPin,

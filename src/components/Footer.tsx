@@ -13,7 +13,7 @@ export const Footer = () => {
 		},
 		{
 			icon: Linkedin,
-			href: 'https://linkedin.com/in/mvbassalobresalobre',
+			href: 'https://linkedin.com/in/mvbassalobre',
 			label: 'LinkedIn',
 		},
 	];

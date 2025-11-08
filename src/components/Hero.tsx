@@ -53,7 +53,7 @@ export const Hero = () => {
 							</Button>
 							<Button size="lg" variant="outline" asChild>
 								<a
-									href="https://linkedin.com/in/mvbassalobresalobre"
+									href="https://linkedin.com/in/mvbassalobre"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
