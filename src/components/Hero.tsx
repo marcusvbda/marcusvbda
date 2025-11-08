@@ -1,7 +1,7 @@
 import { ArrowDown, Mail, Linkedin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/profile-1.png';
+import profileImage from '@/assets/mac.png';
 
 export const Hero = () => {
 	const { t } = useLanguage();
@@ -86,7 +86,7 @@ export const Hero = () => {
 						className="relative animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
-						<div className="relative w-full aspect-square max-w-md mx-auto">
+						<div className="relative w-full max-w-md mx-auto">
 							<div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							<img
 								src={profileImage}
