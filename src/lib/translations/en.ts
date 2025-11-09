@@ -45,7 +45,7 @@ export const en = {
 	skills: {
 		title: 'Skills & Technologies',
 		subtitle: 'Technical Expertise',
-		categories: data?.skills?.pt || {},
+		categories: data?.skills?.en || {},
 	},
 	contact: {
 		title: 'Get in Touch',

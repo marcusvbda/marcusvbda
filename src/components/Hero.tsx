@@ -1,9 +1,12 @@
 import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { data } from '@/data';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import { ResumeDocument } from './resumeDocument';
 
 export const Hero = () => {
-	const { t } = useLanguage();
+	const { t, language } = useLanguage();
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -46,7 +49,7 @@ export const Hero = () => {
 								size="lg"
 								variant="outline"
 								onClick={scrollToContact}
-								className="w-full md:w-3/12"
+								className="w-full md:w-auto"
 							>
 								<Mail className="mr-2 h-4 w-4" />
 								{t('hero.cta')}
@@ -55,7 +58,7 @@ export const Hero = () => {
 								size="lg"
 								variant="outline"
 								asChild
-								className="w-full md:w-3/12"
+								className="w-full md:w-auto"
 							>
 								<a
 									href="https://linkedin.com/in/mvbassalobre"
@@ -70,7 +73,7 @@ export const Hero = () => {
 								size="lg"
 								variant="outline"
 								asChild
-								className="w-full md:w-4/12"
+								className="w-full md:w-auto"
 							>
 								<a
 									href="https://github.com/marcusvbda"
@@ -81,22 +84,36 @@ export const Hero = () => {
 									Github
 								</a>
 							</Button>
-							<Button
-								size="lg"
-								variant="outline"
-								asChild
-								className="bg-accent hover:bg-accent/90 w-full md:w-3/12"
+							<PDFDownloadLink
+								className="w-full"
+								document={
+									<ResumeDocument
+										data={data}
+										lang={language}
+										sections={{
+											summary: t('about.title'),
+											experience: t('experience.title'),
+											education: t('education.title'),
+											skills: t('skills.title'),
+										}}
+									/>
+								}
+								fileName={`${data.info.en.name} - ${language}`}
 							>
-								<a
-									href={`/assets/Marcus Vinicius Bassalobre de Assis.pdf`}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-white"
-								>
-									<Download className="mr-2 h-4 w-4" />
-									{t('hero.checkCv')}
-								</a>
-							</Button>
+								{() => (
+									<Button
+										size="lg"
+										variant="outline"
+										asChild
+										className="bg-accent hover:bg-accent/90 w-full md:w-auto"
+									>
+										<span className="text-white">
+											<Download className="mr-2 h-4 w-4" />
+											{t('hero.checkCv')}
+										</span>
+									</Button>
+								)}
+							</PDFDownloadLink>
 						</div>
 
 						<div className="pt-8 animate-bounce flex justify-center md:justify-start">
