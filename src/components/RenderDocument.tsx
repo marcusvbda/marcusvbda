@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 	},
 });
 
-export const ResumeDocument = ({ data, lang, sections }: any) => {
+export const RenderDocument = ({ data, lang, sections }: any) => {
 	const info = data.info[lang];
 	const bio = data.about[lang];
 	const experiences = data.experiences[lang];

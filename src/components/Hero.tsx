@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { data } from '@/data';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { ResumeDocument } from './resumeDocument';
+import { RenderDocument } from './RenderDocument';
 
 export const Hero = () => {
 	const { t, language } = useLanguage();
@@ -87,7 +87,7 @@ export const Hero = () => {
 							<PDFDownloadLink
 								className="w-full"
 								document={
-									<ResumeDocument
+									<RenderDocument
 										data={data}
 										lang={language}
 										sections={{
