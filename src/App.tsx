@@ -8,7 +8,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import Index from './pages/Index';
 import { useTheme } from 'next-themes';
 import NotFound from './pages/NotFound';
-import { data } from './data';
+import { data } from '@/../data';
 import { ThemeProvider } from './contexts/ThemeProvider';
 
 const queryClient = new QueryClient();
@@ -23,7 +23,6 @@ function AppContent() {
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="light"
-				enableSystem
 				disableTransitionOnChange
 			>
 				<LanguageProvider>

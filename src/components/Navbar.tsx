@@ -54,6 +54,7 @@ export const Navbar = () => {
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
 						<img
+							loading="lazy"
 							src={`/assets/logo.png`}
 							alt="logo"
 							className="w-32 md:w-52 dark:invert"

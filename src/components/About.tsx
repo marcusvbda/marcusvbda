@@ -19,6 +19,7 @@ export const About = () => {
 					<div className="md:col-span-2 animate-fade-in">
 						<Card className="overflow-hidden hover-lift">
 							<img
+								loading="lazy"
 								src={`/assets/blue.png`}
 								alt="Marcus Vinicius Bassalobre de Assis"
 								className="w-full h-full object-cover grayscale"

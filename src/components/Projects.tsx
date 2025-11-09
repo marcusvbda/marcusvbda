@@ -42,6 +42,7 @@ export const Projects = () => {
 						>
 							<div className="aspect-video overflow-hidden bg-muted">
 								<img
+									loading="lazy"
 									src={t(`projects.items.${project}.image`) || '#'}
 									alt={t(`projects.items.${project}.title`)}
 									className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -81,6 +82,7 @@ export const Projects = () => {
 									<div className="space-y-6 pt-4">
 										<div className="aspect-video overflow-hidden rounded-lg">
 											<img
+												loading="lazy"
 												src={
 													t(`projects.items.${selectedProject}.image`) || '#'
 												}

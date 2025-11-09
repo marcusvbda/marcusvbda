@@ -1,7 +1,7 @@
 import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { data } from '@/data';
+import { data } from '@/../data';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { RenderDocument } from './RenderDocument';
 
@@ -142,6 +142,7 @@ export const Hero = () => {
 						<div className="relative w-full max-w-md mx-auto">
 							<div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							<img
+								loading="lazy"
 								src={t('hero.avatar')}
 								alt="Marcus Vinicius Bassalobre de Assis"
 								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
