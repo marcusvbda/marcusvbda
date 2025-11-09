@@ -14,6 +14,7 @@ export const en = {
 		bio: "I'm a Senior Fullstack Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
 		cta: 'Get in Touch',
 		scrollDown: 'Scroll down to explore',
+		checkCv: 'Check my CV',
 	},
 	about: {
 		title: 'About Me',

@@ -14,6 +14,7 @@ export const pt = {
 		bio: 'Sou Engenheiro de Software Fullstack Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
 		cta: 'Entre em Contato',
 		scrollDown: 'Role para explorar',
+		checkCv: 'Veja meu CV',
 	},
 	about: {
 		title: 'Sobre Mim',

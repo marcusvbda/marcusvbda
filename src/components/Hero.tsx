@@ -85,7 +85,7 @@ export const Hero = () => {
 									className="text-white"
 								>
 									<Download className="mr-2 h-4 w-4" />
-									Check my ch
+									{t('hero.checkCv')}
 								</a>
 							</Button>
 						</div>
