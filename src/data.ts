@@ -385,4 +385,31 @@ export const data = {
 			},
 		},
 	},
+	education: {
+		en: {
+			unimar: {
+				title: 'Bachelor in Systems Analysis and Development',
+				description:
+					'Universidade de Marília • Brazil, São Paulo • 2013 - 2016',
+			},
+			deepLearning: {
+				title: 'Supervised Machine Learning: Regression and Classification',
+				description:
+					'DeepLearning.AI & Stanford University • Online • 2025 - 2025',
+			},
+		},
+		pt: {
+			unimar: {
+				title: 'Análise e Desenvolvimento de Sistemas',
+				description:
+					'Universidade de Marília • Brasil, São Paulo • 2013 - 2016',
+			},
+			deepLearning: {
+				title:
+					'Regressão and Classificação em Aprendizado de Máquina Supervisionado',
+				description:
+					'DeepLearning.AI & Stanford University • Online • 2025 - 2025',
+			},
+		},
+	},
 };

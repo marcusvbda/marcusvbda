@@ -22,6 +22,7 @@ export const Navbar = () => {
 		{ label: t('nav.experience'), href: '#experience' },
 		{ label: t('nav.projects'), href: '#projects' },
 		{ label: t('nav.skills'), href: '#skills' },
+		{ label: t('nav.education'), href: '#education' },
 		{ label: t('nav.contact'), href: '#contact' },
 	];
 

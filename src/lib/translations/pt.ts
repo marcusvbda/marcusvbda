@@ -7,6 +7,7 @@ export const pt = {
 		projects: 'Projetos',
 		skills: 'Habilidades',
 		contact: 'Contato',
+		education: 'Educação',
 	},
 	info: data?.info?.pt || {},
 	hero: {
@@ -32,6 +33,10 @@ export const pt = {
 		companies: data?.experiences?.pt || {},
 	},
 	projects: data?.projects?.pt || {},
+	education: {
+		title: 'Educação',
+		items: data?.education?.pt || {},
+	},
 	skills: {
 		title: 'Habilidades & Tecnologias',
 		subtitle: 'Expertise Técnico',

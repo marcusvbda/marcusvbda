@@ -6,6 +6,7 @@ export const en = {
 		experience: 'Experience',
 		projects: 'Projects',
 		skills: 'Skills',
+		education: 'Education',
 		contact: 'Contact',
 	},
 	info: data?.info?.en || {},
@@ -36,6 +37,10 @@ export const en = {
 		subtitle: "What I've Built",
 		viewProject: 'View Project',
 		items: data?.projects?.en || {},
+	},
+	education: {
+		title: 'Education',
+		items: data?.education?.en || {},
 	},
 	skills: {
 		title: 'Skills & Technologies',
