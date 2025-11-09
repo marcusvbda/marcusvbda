@@ -1,7 +1,8 @@
-import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
+import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mac.png';
+import cv from '@/assets/Marcus Vinicius Bassalobre de Assis.pdf';
 
 export const Hero = () => {
 	const { t } = useLanguage();
@@ -69,6 +70,22 @@ export const Hero = () => {
 								>
 									<Github className="mr-2 h-4 w-4" />
 									Github
+								</a>
+							</Button>
+							<Button
+								size="lg"
+								variant="outline"
+								asChild
+								className="bg-accent hover:bg-accent/90"
+							>
+								<a
+									href={cv}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-white"
+								>
+									<Download className="mr-2 h-4 w-4" />
+									Check my ch
 								</a>
 							</Button>
 						</div>

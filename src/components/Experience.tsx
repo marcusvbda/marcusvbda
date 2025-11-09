@@ -6,18 +6,6 @@ import { Briefcase } from 'lucide-react';
 export const Experience = () => {
 	const { t } = useLanguage();
 
-	const experiences = [
-		'investidor10',
-		'vega',
-		'diwe',
-		'otimize',
-		'unimar',
-		'copySupply',
-		'aliveIt',
-		'guess',
-		'mastersel',
-	];
-
 	return (
 		<section id="experience" className="section-padding">
 			<div className="max-width-content">
@@ -31,7 +19,7 @@ export const Experience = () => {
 				</div>
 
 				<div className="space-y-8">
-					{experiences.map((exp, index) => (
+					{Object.keys(t('experience.companies') || []).map((exp, index) => (
 						<Card
 							key={exp}
 							className="hover-lift animate-fade-in"
@@ -57,15 +45,6 @@ export const Experience = () => {
 								<p className="text-muted-foreground leading-relaxed">
 									{t(`experience.companies.${exp}.description`)}
 								</p>
-								<div className="flex flex-wrap gap-2">
-									{t(`experience.companies.${exp}.tech`)
-										.split(', ')
-										.map((tech) => (
-											<Badge key={tech} variant="secondary">
-												{tech}
-											</Badge>
-										))}
-								</div>
 							</CardContent>
 						</Card>
 					))}

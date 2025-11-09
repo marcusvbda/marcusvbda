@@ -9,13 +9,13 @@ export const Contact = () => {
 	const contactMethods = [
 		{
 			icon: Mail,
-			label: t('contact.email'),
+			label: 'Email',
 			value: 'bassalobre.vinicius@gmail.com',
 			href: 'mailto:bassalobre.vinicius@gmail.com',
 		},
 		{
 			icon: Linkedin,
-			label: t('contact.linkedin'),
+			label: 'Linkedin',
 			value: 'mvbassalobre',
 			href: 'https://linkedin.com/in/mvbassalobre',
 		},
