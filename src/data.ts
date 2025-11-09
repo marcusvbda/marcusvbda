@@ -236,7 +236,7 @@ export const data = {
 				image: '/companies/orazelo.png',
 				title: 'Orazelo App',
 				description:
-					'Aplicativo de autoconhecimento e saúde mental desenvolvido para o público cristão, disponível na Google Play e na App Store. A plataforma oferece reflexões guiadas, conteúdo espiritual e ferramentas de crescimento pessoal, unindo fé e tecnologia com uma experiência moderna e intuitiva.',
+					'Mental health and self-knowledge app developed for Christians, available on Google Play and the App Store. The platform offers guided reflections, spiritual content, and personal growth tools, combining faith-based insights with modern UX design.',
 				tech: 'React Native, TypeScript, Node.js, Firebase',
 			},
 			rh99: {
@@ -319,7 +319,7 @@ export const data = {
 					image: '/companies/orazelo.png',
 					title: 'Orazelo App',
 					description:
-						'Mental health and self-knowledge app developed for Christians, available on Google Play and the App Store. The platform offers guided reflections, spiritual content, and personal growth tools, combining faith-based insights with modern UX design.',
+						'Aplicativo de autoconhecimento e saúde mental desenvolvido para o público cristão, disponível na Google Play e na App Store. A plataforma oferece reflexões guiadas, conteúdo espiritual e ferramentas de crescimento pessoal, unindo fé e tecnologia com uma experiência moderna e intuitiva.',
 					tech: 'React Native, TypeScript, Node.js, Firebase',
 				},
 				rh99: {
