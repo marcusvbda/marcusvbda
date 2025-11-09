@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,42 +10,14 @@ import {
 	DialogDescription,
 } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
-import investidor10Light from '@/assets/project-investidor10-light.jpeg';
-import vegaLight from '@/assets/project-vega-light.jpeg';
-import intelbras from '@/assets/project-intelbras.jpeg';
-import parceiro from '@/assets/project-parceiro.jpeg';
-import divercity from '@/assets/divercity.png';
-import tom from '@/assets/tom.png';
-import inteligenzia from '@/assets/inteligenzia.png';
-import mudas from '@/assets/mudas.png';
-import orazelo from '@/assets/orazelo.png';
-import rh99 from '@/assets/rh99.png';
-import unimed from '@/assets/unimed.png';
 
 export const Projects = () => {
 	const { t } = useLanguage();
-	const [selectedProject, setSelectedProject] = useState<{
-		id: string;
-		image: string;
-	} | null>(null);
+	const [selectedProject, setSelectedProject] = useState<string | null>(null);
 
 	const handleCloseModal = () => {
 		setSelectedProject(null);
 	};
-
-	const projects = [
-		{ id: 'investidor10', image: investidor10Light },
-		{ id: 'vega', image: vegaLight },
-		{ id: 'intelbras', image: intelbras },
-		{ id: 'parceiro', image: parceiro },
-		{ id: 'divercity', image: divercity },
-		{ id: 'tom', image: tom },
-		{ id: 'inteligenzia', image: inteligenzia },
-		{ id: 'mudascarvalho', image: mudas },
-		{ id: 'orazelo', image: orazelo },
-		{ id: 'rh99', image: rh99 },
-		{ id: 'unimed', image: unimed },
-	];
 
 	return (
 		<section id="projects" className="section-padding bg-muted/30">
@@ -57,11 +30,10 @@ export const Projects = () => {
 						{t('projects.subtitle')}
 					</p>
 				</div>
-
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-					{projects.map((project, index) => (
+					{Object.keys(t('projects.items') || {}).map((project: any, index) => (
 						<Card
-							key={project.id}
+							key={index}
 							className="overflow-hidden hover-lift animate-fade-in cursor-pointer"
 							onClick={() => {
 								setSelectedProject(project);
@@ -70,25 +42,25 @@ export const Projects = () => {
 						>
 							<div className="aspect-video overflow-hidden bg-muted">
 								<img
-									src={project.image}
-									alt={t(`projects.items.${project.id}.title`)}
+									src={t(`projects.items.${project}.image`) || '#'}
+									alt={t(`projects.items.${project}.title`)}
 									className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 								/>
 							</div>
 							<CardHeader>
 								<CardTitle className="text-xl">
-									{t(`projects.items.${project.id}.title`)}
+									{t(`projects.items.${project}.title`)}
 								</CardTitle>
 							</CardHeader>
 							<CardContent className="space-y-4">
 								<p className="text-muted-foreground leading-relaxed">
-									{t(`projects.items.${project.id}.description`)}
+									{t(`projects.items.${project}.description`)}
 								</p>
 								<div className="flex flex-wrap gap-2">
-									{t(`projects.items.${project.id}.tech`)
+									{(t(`projects.items.${project}.tech`) || '')
 										.split(', ')
-										.map((tech) => (
-											<Badge key={tech} variant="secondary">
+										.map((tech, i) => (
+											<Badge key={`tech_${tech}_${i}`} variant="secondary">
 												{tech}
 											</Badge>
 										))}
@@ -103,25 +75,27 @@ export const Projects = () => {
 						<DialogContent className="max-w-5xl">
 							<DialogHeader>
 								<DialogTitle className="text-2xl">
-									{t(`projects.items.${selectedProject.id}.title`)}
+									{t(`projects.items.${selectedProject}.title`)}
 								</DialogTitle>
 								<DialogDescription asChild>
 									<div className="space-y-6 pt-4">
 										<div className="aspect-video overflow-hidden rounded-lg">
 											<img
-												src={selectedProject.image}
-												alt={t(`projects.items.${selectedProject.id}.title`)}
+												src={
+													t(`projects.items.${selectedProject}.image`) || '#'
+												}
+												alt={t(`projects.items.${selectedProject}.title`)}
 												className="w-full h-full object-cover"
 											/>
 										</div>
 										<p className="text-muted-foreground leading-relaxed">
-											{t(`projects.items.${selectedProject.id}.description`)}
+											{t(`projects.items.${selectedProject}.description`)}
 										</p>
 										<div className="flex flex-wrap gap-2">
-											{t(`projects.items.${selectedProject.id}.tech`)
+											{t(`projects.items.${selectedProject}.tech`)
 												.split(', ')
-												.map((tech) => (
-													<Badge key={tech} variant="secondary">
+												.map((tech, i) => (
+													<Badge key={`tech_${tech}_${i}`} variant="secondary">
 														{tech}
 													</Badge>
 												))}

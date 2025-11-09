@@ -3,7 +3,6 @@ import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import logo from '@/assets/logo.png';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -52,14 +51,14 @@ export const Navbar = () => {
 						}}
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
-						<img src={logo} className="w-32 md:w-52" />
+						<img src={`/assets/logo.png`} className="w-32 md:w-52" />
 					</a>
 
 					{/* Desktop Navigation */}
 					<div className="hidden md:flex items-center gap-8">
 						{navItems.map((item) => (
 							<a
-								key={item.href}
+								key={`nav_${item.label}`}
 								href={item.href}
 								onClick={(e) => {
 									e.preventDefault();
@@ -97,7 +96,7 @@ export const Navbar = () => {
 						<div className="flex flex-col gap-4">
 							{navItems.map((item) => (
 								<a
-									key={item.href}
+									key={`nav_${item.label}`}
 									href={item.href}
 									onClick={(e) => {
 										e.preventDefault();

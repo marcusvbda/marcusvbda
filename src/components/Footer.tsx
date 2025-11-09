@@ -14,7 +14,7 @@ export const Footer = () => {
 		{
 			icon: Linkedin,
 			href: 'https://linkedin.com/in/mvbassalobre',
-			label: 'LinkedIn',
+			label: 'Linkedin',
 		},
 	];
 
@@ -36,7 +36,7 @@ export const Footer = () => {
 							const Icon = link.icon;
 							return (
 								<a
-									key={link.label}
+									key={`social_${link.label}`}
 									href={link.href}
 									target={link.href.startsWith('http') ? '_blank' : undefined}
 									rel={

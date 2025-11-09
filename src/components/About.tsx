@@ -1,6 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card } from '@/components/ui/card';
-import profileImage from '@/assets/blue.png';
 
 export const About = () => {
 	const { t } = useLanguage();
@@ -20,7 +19,7 @@ export const About = () => {
 					<div className="md:col-span-2 animate-fade-in">
 						<Card className="overflow-hidden hover-lift">
 							<img
-								src={profileImage}
+								src={`/assets/blue.png`}
 								alt="Marcus Vinicius Bassalobre de Assis"
 								className="w-full h-full object-cover grayscale"
 							/>
@@ -32,15 +31,16 @@ export const About = () => {
 						className="md:col-span-3 space-y-6 animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
-						<p className="text-lg leading-relaxed text-muted-foreground">
-							{t('about.p1')}
-						</p>
-						<p className="text-lg leading-relaxed text-muted-foreground">
-							{t('about.p2')}
-						</p>
-						<p className="text-lg leading-relaxed text-muted-foreground">
-							{t('about.p3')}
-						</p>
+						{(t('about.description') || '')
+							.split('\n')
+							.map((x: string, key: number) => (
+								<p
+									key={`desc_${key}`}
+									className="text-lg leading-relaxed text-muted-foreground"
+								>
+									{x}
+								</p>
+							))}
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mail, Linkedin, MapPin, Github } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Github, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Contact = () => {
@@ -10,26 +10,32 @@ export const Contact = () => {
 		{
 			icon: Mail,
 			label: 'Email',
-			value: 'bassalobre.vinicius@gmail.com',
-			href: 'mailto:bassalobre.vinicius@gmail.com',
+			value: t('info.email'),
+			href: `mailto:${t('info.email')}`,
 		},
 		{
 			icon: Linkedin,
 			label: 'Linkedin',
-			value: 'mvbassalobre',
-			href: 'https://linkedin.com/in/mvbassalobre',
+			value: (t('info.linkedin') || '#').split('/').pop(),
+			href: t('info.linkedin'),
 		},
 		{
 			icon: MapPin,
 			label: t('contact.location'),
-			value: t('contact.locationValue'),
+			value: t('info.location'),
 			href: null,
 		},
 		{
 			icon: Github,
 			label: 'Github',
-			value: 'github.com/marcusvbda',
-			href: 'https://github.com/marcusvbda',
+			value: (t('info.github') || '#').split('/').pop(),
+			href: t('info.github') || '#',
+		},
+		{
+			icon: Phone,
+			label: t('contact.phone'),
+			value: t('info.phone'),
+			href: null,
 		},
 	];
 
@@ -48,55 +54,121 @@ export const Contact = () => {
 					</p>
 				</div>
 
-				<div className="grid md:grid-cols-4 gap-6">
-					{contactMethods.map((method, index) => {
-						const Icon = method.icon;
-						return (
-							<Card
-								key={method.label}
-								className="hover-lift animate-fade-in"
-								style={{ animationDelay: `${index * 0.1}s` }}
-							>
-								<CardContent className="pt-6">
-									<div className="text-center space-y-4">
-										<div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10">
-											<Icon className="h-6 w-6 text-accent" />
-										</div>
-										<div className="space-y-1">
-											<p className="font-semibold">{method.label}</p>
-											{method.href ? (
-												<Button
-													variant="link"
-													asChild
-													className="text-muted-foreground hover:text-accent h-auto p-0"
-												>
-													<a
-														href={method.href}
-														target={
-															method.href.startsWith('http')
-																? '_blank'
-																: undefined
-														}
-														rel={
-															method.href.startsWith('http')
-																? 'noopener noreferrer'
-																: undefined
-														}
+				<div className="space-y-6">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+						{contactMethods.slice(0, 3).map((method, index) => {
+							const Icon = method.icon;
+							return (
+								<Card
+									key={`card_${method.label}`}
+									className="hover-lift animate-fade-in"
+									style={{ animationDelay: `${index * 0.1}s` }}
+								>
+									<CardContent className="pt-6">
+										<div className="text-center space-y-4">
+											<div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10">
+												<Icon className="h-6 w-6 text-accent" />
+											</div>
+											<div className="space-y-1">
+												<p className="font-semibold">{method.label}</p>
+												{method.href ? (
+													<Button
+														variant="link"
+														asChild
+														className="text-muted-foreground hover:text-accent h-auto p-0"
 													>
-														{method.value}
-													</a>
-												</Button>
-											) : (
-												<p className="text-sm text-muted-foreground">
-													{method.value}
-												</p>
-											)}
+														<a
+															href={method.href}
+															target={
+																method.href.startsWith('http')
+																	? '_blank'
+																	: undefined
+															}
+															rel={
+																method.href.startsWith('http')
+																	? 'noopener noreferrer'
+																	: undefined
+															}
+														>
+															{method.value}
+														</a>
+													</Button>
+												) : (
+													<>
+														{(method.value || '').split(',').map((x, i) => (
+															<p
+																key={`method_${method.label}_${i}`}
+																className="text-sm text-muted-foreground"
+															>
+																{x}
+															</p>
+														))}
+													</>
+												)}
+											</div>
 										</div>
-									</div>
-								</CardContent>
-							</Card>
-						);
-					})}
+									</CardContent>
+								</Card>
+							);
+						})}
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:w-2/3 mx-auto">
+						{contactMethods.slice(3).map((method, index) => {
+							const Icon = method.icon;
+							return (
+								<Card
+									key={`card_${method.label}`}
+									className="hover-lift animate-fade-in"
+									style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+								>
+									<CardContent className="pt-6">
+										<div className="text-center space-y-4">
+											<div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10">
+												<Icon className="h-6 w-6 text-accent" />
+											</div>
+											<div className="space-y-1">
+												<p className="font-semibold">{method.label}</p>
+												{method.href ? (
+													<Button
+														variant="link"
+														asChild
+														className="text-muted-foreground hover:text-accent h-auto p-0"
+													>
+														<a
+															href={method.href}
+															target={
+																method.href.startsWith('http')
+																	? '_blank'
+																	: undefined
+															}
+															rel={
+																method.href.startsWith('http')
+																	? 'noopener noreferrer'
+																	: undefined
+															}
+														>
+															{method.value}
+														</a>
+													</Button>
+												) : (
+													<>
+														{(method.value || '').split(',').map((x, i) => (
+															<p
+																key={`method_${method.label}_${i}`}
+																className="text-sm text-muted-foreground"
+															>
+																{x}
+															</p>
+														))}
+													</>
+												)}
+											</div>
+										</div>
+									</CardContent>
+								</Card>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 		</section>

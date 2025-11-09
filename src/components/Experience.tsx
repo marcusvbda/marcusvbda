@@ -1,6 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Briefcase } from 'lucide-react';
 
 export const Experience = () => {
@@ -18,10 +17,10 @@ export const Experience = () => {
 					</p>
 				</div>
 
-				<div className="space-y-8">
+				<div className="space-y-8 grid">
 					{Object.keys(t('experience.companies') || []).map((exp, index) => (
 						<Card
-							key={exp}
+							key={`xp_${exp}`}
 							className="hover-lift animate-fade-in"
 							style={{ animationDelay: `${index * 0.1}s` }}
 						>

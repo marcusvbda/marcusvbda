@@ -1,8 +1,6 @@
 import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/mac.png';
-import cv from '@/assets/Marcus Vinicius Bassalobre de Assis.pdf';
 
 export const Hero = () => {
 	const { t } = useLanguage();
@@ -46,23 +44,34 @@ export const Hero = () => {
 						<div className="flex justify-center md:justify-start flex-wrap gap-4 pt-4">
 							<Button
 								size="lg"
+								variant="outline"
 								onClick={scrollToContact}
-								className="bg-accent hover:bg-accent/90"
+								className="w-full md:w-3/12"
 							>
 								<Mail className="mr-2 h-4 w-4" />
 								{t('hero.cta')}
 							</Button>
-							<Button size="lg" variant="outline" asChild>
+							<Button
+								size="lg"
+								variant="outline"
+								asChild
+								className="w-full md:w-3/12"
+							>
 								<a
 									href="https://linkedin.com/in/mvbassalobre"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									<Linkedin className="mr-2 h-4 w-4" />
-									LinkedIn
+									Linkedin
 								</a>
 							</Button>
-							<Button size="lg" variant="outline" asChild>
+							<Button
+								size="lg"
+								variant="outline"
+								asChild
+								className="w-full md:w-4/12"
+							>
 								<a
 									href="https://github.com/marcusvbda"
 									target="_blank"
@@ -76,10 +85,10 @@ export const Hero = () => {
 								size="lg"
 								variant="outline"
 								asChild
-								className="bg-accent hover:bg-accent/90"
+								className="bg-accent hover:bg-accent/90 w-full md:w-3/12"
 							>
 								<a
-									href={cv}
+									href={`/assets/Marcus Vinicius Bassalobre de Assis.pdf`}
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white"
@@ -116,7 +125,7 @@ export const Hero = () => {
 						<div className="relative w-full max-w-md mx-auto">
 							<div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							<img
-								src={profileImage}
+								src={t('hero.avatar')}
 								alt="Marcus Vinicius Bassalobre de Assis"
 								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
 							/>
