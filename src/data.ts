@@ -1,4 +1,6 @@
 export const data = {
+	keywords:
+		'fullstack engineer, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
 	info: {
 		pt: {
 			avatar: '/assets/mac.png',

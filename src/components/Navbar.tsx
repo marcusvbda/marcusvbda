@@ -51,7 +51,7 @@ export const Navbar = () => {
 						}}
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
-						<img src={`/assets/logo.png`} className="w-32 md:w-52" />
+						<img src={`/assets/logo.png`} alt="logo" className="w-32 md:w-52" />
 					</a>
 
 					{/* Desktop Navigation */}
