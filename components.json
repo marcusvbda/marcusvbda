@@ -6,7 +6,7 @@
   "tailwind": {
     "darkMode": "class",
     "config": "tailwind.config.ts",
-    "css": "src/app.css",
+    "css": "src/index.css",
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""
