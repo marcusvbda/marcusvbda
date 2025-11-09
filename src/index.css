@@ -69,6 +69,7 @@
     --border: 217 33% 24%;
     --input: 217 33% 24%;
     --ring: 212 27% 84%;
+
   }
 }
 
@@ -101,11 +102,5 @@
 
   .hover-lift {
     @apply transition-transform duration-300 hover:-translate-y-1;
-  }
-}
-
-.dark {
-  .dark\:invert {
-    @apply invert;
   }
 }

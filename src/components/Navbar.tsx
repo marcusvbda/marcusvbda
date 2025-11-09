@@ -60,7 +60,6 @@ export const Navbar = () => {
 						/>
 					</a>
 
-					{/* Desktop Navigation */}
 					<div className="hidden md:flex items-center gap-8">
 						{navItems.map((item) => (
 							<a
