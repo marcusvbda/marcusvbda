@@ -8,36 +8,44 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
 import { data } from './data';
+import { ThemeProvider } from './contexts/ThemeProvider';
 
 const queryClient = new QueryClient();
 
 const App = () => (
 	<QueryClientProvider client={queryClient}>
-		<LanguageProvider>
-			<HelmetProvider>
-				<Helmet>
-					<title>{data?.info?.en?.name || ''}</title>
-					<meta name="description" content={data?.bio?.en || ''} />
-					<meta name="author" content={data?.info?.en?.name || ''} />
-					<meta
-						property="og:title"
-						content={`${data?.info?.en?.name || ''} - ${data?.info?.en?.role || ''}`}
-					/>
-					<meta property="og:description" content={data?.bio?.en || ''} />
-					<meta name="keywords" content={data?.keywords || ''} />
-				</Helmet>
-				<TooltipProvider>
-					<Toaster />
-					<Sonner />
-					<BrowserRouter>
-						<Routes>
-							<Route path="/" element={<Index />} />
-							<Route path="*" element={<NotFound />} />
-						</Routes>
-					</BrowserRouter>
-				</TooltipProvider>
-			</HelmetProvider>
-		</LanguageProvider>
+		<ThemeProvider
+			attribute="class"
+			defaultTheme="system"
+			enableSystem
+			disableTransitionOnChange
+		>
+			<LanguageProvider>
+				<HelmetProvider>
+					<Helmet>
+						<title>{data?.info?.en?.name || ''}</title>
+						<meta name="description" content={data?.bio?.en || ''} />
+						<meta name="author" content={data?.info?.en?.name || ''} />
+						<meta
+							property="og:title"
+							content={`${data?.info?.en?.name || ''} - ${data?.info?.en?.role || ''}`}
+						/>
+						<meta property="og:description" content={data?.bio?.en || ''} />
+						<meta name="keywords" content={data?.keywords || ''} />
+					</Helmet>
+					<TooltipProvider>
+						<Toaster />
+						<Sonner />
+						<BrowserRouter>
+							<Routes>
+								<Route path="/" element={<Index />} />
+								<Route path="*" element={<NotFound />} />
+							</Routes>
+						</BrowserRouter>
+					</TooltipProvider>
+				</HelmetProvider>
+			</LanguageProvider>
+		</ThemeProvider>
 	</QueryClientProvider>
 );
 

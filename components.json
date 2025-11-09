@@ -4,8 +4,9 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
+    "darkMode": "class",
     "config": "tailwind.config.ts",
-    "css": "src/index.css",
+    "css": "src/app.css",
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""

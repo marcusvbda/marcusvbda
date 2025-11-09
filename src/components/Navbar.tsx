@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,11 @@ export const Navbar = () => {
 						}}
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
-						<img src={`/assets/logo.png`} alt="logo" className="w-32 md:w-52" />
+						<img
+							src={`/assets/logo.png`}
+							alt="logo"
+							className="w-32 md:w-52 dark:invert"
+						/>
 					</a>
 
 					{/* Desktop Navigation */}
@@ -70,12 +75,13 @@ export const Navbar = () => {
 								{item.label}
 							</a>
 						))}
+						<ThemeToggle />
 						<LanguageSwitcher />
 					</div>
 
 					{/* Mobile Menu Button */}
 					<div className="md:hidden flex items-center gap-2">
-						<LanguageSwitcher />
+						<ThemeToggle />
 						<Button
 							variant="ghost"
 							size="icon"
@@ -88,6 +94,8 @@ export const Navbar = () => {
 								<Menu className="h-5 w-5" />
 							)}
 						</Button>
+						<div className="border-l h-6" />
+						<LanguageSwitcher />
 					</div>
 				</div>
 
@@ -108,6 +116,7 @@ export const Navbar = () => {
 									{item.label}
 								</a>
 							))}
+							<div className="border-t pt-4" />
 						</div>
 					</div>
 				)}
