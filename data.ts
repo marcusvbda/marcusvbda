@@ -177,7 +177,7 @@ export const data = {
 	projects: {
 		en: {
 			investidor10: {
-				image: '/companies/i10.png',
+				image: '/companies/i10.jpeg',
 				title: 'Investidor10 Platform',
 				description:
 					"Complete redesign and rebuild of Brazil's leading investment research platform. Implemented modern architecture with SSR, optimized performance achieving 95+ Lighthouse scores, and built a comprehensive design system.",
