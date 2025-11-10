@@ -1,6 +1,7 @@
 'use client';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 export const Footer = () => {
 	const { t } = useLanguage();
@@ -36,7 +37,7 @@ export const Footer = () => {
 						{socialLinks.map((link) => {
 							const Icon = link.icon;
 							return (
-								<a
+								<Link
 									key={`social_${link.label}`}
 									href={link.href}
 									target={link.href.startsWith('http') ? '_blank' : undefined}
@@ -49,7 +50,7 @@ export const Footer = () => {
 									className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
 								>
 									<Icon className="h-5 w-5" />
-								</a>
+								</Link>
 							);
 						})}
 					</div>

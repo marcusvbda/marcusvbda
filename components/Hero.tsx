@@ -7,6 +7,7 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import { RenderDocument } from './RenderDocument';
 import { data } from '@/data';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export const Hero = () => {
 	const [client, setClient] = useState(false);
@@ -67,14 +68,14 @@ export const Hero = () => {
 								asChild
 								className="w-full md:w-auto"
 							>
-								<a
-									href="https://linkedin.com/in/mvbassalobre"
+								<Link
+									href={'https://'.concat(t('info.linkedin'))}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									<Linkedin className="mr-2 h-4 w-4" />
 									Linkedin
-								</a>
+								</Link>
 							</Button>
 							<Button
 								size="lg"
@@ -82,14 +83,14 @@ export const Hero = () => {
 								asChild
 								className="w-full md:w-auto"
 							>
-								<a
-									href="https://github.com/marcusvbda"
+								<Link
+									href={'https://'.concat(t('info.github') || '#')}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									<Github className="mr-2 h-4 w-4" />
 									Github
-								</a>
+								</Link>
 							</Button>
 							{client && (
 								<PDFDownloadLink
@@ -126,7 +127,7 @@ export const Hero = () => {
 						</div>
 
 						<div className="pt-8 animate-bounce flex justify-center md:justify-start">
-							<a
+							<Link
 								href="#about"
 								onClick={(e) => {
 									e.preventDefault();
@@ -139,7 +140,7 @@ export const Hero = () => {
 							>
 								<ArrowDown className="h-4 w-4" />
 								{t('hero.scrollDown')}
-							</a>
+							</Link>
 						</div>
 					</div>
 

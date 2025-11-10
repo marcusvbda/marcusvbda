@@ -9,7 +9,6 @@ import { ThemeToggle } from './ThemeToggle';
 import { useIsMobile } from '@/hooks/useMobile';
 
 export const Navbar = () => {
-	const [visible, setVisible] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
 	const { t } = useLanguage();
@@ -40,12 +39,6 @@ export const Navbar = () => {
 		}
 	};
 
-	useEffect(() => {
-		setVisible(true);
-	}, []);
-
-	if (!visible) return;
-
 	return (
 		<nav
 			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md ${
@@ -58,7 +51,7 @@ export const Navbar = () => {
 		>
 			<div className="max-width-content section-padding py-4!">
 				<div className="flex items-center justify-between">
-					<a
+					<Link
 						href="#hero"
 						onClick={(e) => {
 							e.preventDefault();
@@ -72,11 +65,11 @@ export const Navbar = () => {
 							alt="logo"
 							className="w-32 md:w-52 dark:invert"
 						/>
-					</a>
+					</Link>
 
 					<div className="hidden md:flex items-center gap-8">
 						{navItems.map((item) => (
-							<a
+							<Link
 								key={`nav_${item.label}`}
 								href={item.href}
 								onClick={(e) => {
@@ -86,7 +79,7 @@ export const Navbar = () => {
 								className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
 							>
 								{item.label}
-							</a>
+							</Link>
 						))}
 						<ThemeToggle />
 						<LanguageSwitcher />

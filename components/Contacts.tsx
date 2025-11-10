@@ -4,8 +4,9 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
 import { Mail, Linkedin, MapPin, Github, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
-export const Contact = () => {
+export const Contacts = () => {
 	const { t } = useLanguage();
 
 	const contactMethods = [
@@ -19,7 +20,7 @@ export const Contact = () => {
 			icon: Linkedin,
 			label: 'Linkedin',
 			value: (t('info.linkedin') || '#').split('/').pop(),
-			href: t('info.linkedin'),
+			href: 'https://'.concat(t('info.linkedin')),
 		},
 		{
 			icon: MapPin,
@@ -31,7 +32,7 @@ export const Contact = () => {
 			icon: Github,
 			label: 'Github',
 			value: (t('info.github') || '#').split('/').pop(),
-			href: t('info.github') || '#',
+			href: 'https://'.concat(t('info.github') || '#'),
 		},
 		{
 			icon: Phone,
@@ -79,7 +80,7 @@ export const Contact = () => {
 														asChild
 														className="text-muted-foreground hover:text-accent h-auto p-0"
 													>
-														<a
+														<Link
 															href={method.href}
 															target={
 																method.href.startsWith('http')
@@ -93,7 +94,7 @@ export const Contact = () => {
 															}
 														>
 															{method.value}
-														</a>
+														</Link>
 													</Button>
 												) : (
 													<>
@@ -136,7 +137,7 @@ export const Contact = () => {
 														asChild
 														className="text-muted-foreground hover:text-accent h-auto p-0"
 													>
-														<a
+														<Link
 															href={method.href}
 															target={
 																method.href.startsWith('http')
@@ -150,7 +151,7 @@ export const Contact = () => {
 															}
 														>
 															{method.value}
-														</a>
+														</Link>
 													</Button>
 												) : (
 													<>
