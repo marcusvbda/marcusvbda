@@ -3,21 +3,56 @@ import { cookies } from 'next/headers';
 import crypto from 'crypto';
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
+const bcrypt = require('bcrypt');
+import { z } from 'zod';
 
-export const loginById = async (userId: number) => {
+export const loginByUserName = async (prevState: any, formData: FormData) => {
+	const schema = z.object({
+		username: z.string().min(1, 'Username is required'),
+		password: z.string().min(1, 'Password is required'),
+	});
+	const dataToValidate = Object.fromEntries(formData.entries());
+	const validation = schema.safeParse(dataToValidate);
+
+	if (!validation.success) {
+		return {
+			error: validation.error.flatten().fieldErrors,
+			success: false,
+			username: formData.get('username'),
+			password: formData.get('password'),
+		};
+	}
+
+	const { username, password } = validation.data;
+
 	const foundUser = await prisma.user.findUnique({
 		where: {
-			id: userId,
+			username,
 		},
 	});
 
 	if (!foundUser) {
-		return { success: false, message: 'User not found' };
+		return {
+			success: false,
+			error: { password: ['Invalid username or password'] },
+			username,
+			password,
+		};
+	}
+
+	const passwordMatch = await bcrypt.compare(password, foundUser.password);
+
+	if (!passwordMatch) {
+		return {
+			error: { password: ['Invalid username or password'] },
+			success: false,
+			username,
+			password,
+		};
 	}
 
 	await loginUser(foundUser);
-
-	return { success: true };
+	return { success: true, error: {} };
 };
 
 export const loginUser = async (user: any) => {
