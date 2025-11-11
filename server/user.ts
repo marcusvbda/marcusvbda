@@ -29,10 +29,21 @@ export const loginUser = async (user: any) => {
 		.digest('hex');
 
 	const maxAge = 60 * 60 * 24 * 7;
+
+	const newDuete = new Date(Date.now() + maxAge * 1000);
+
+	await prisma.token.deleteMany({
+		where: {
+			dueDate: {
+				lt: newDuete,
+			},
+		},
+	});
+
 	await prisma.token.create({
 		data: {
 			token,
-			dueDate: new Date(Date.now() + maxAge * 1000),
+			dueDate: newDuete,
 			userId: user?.id,
 		},
 	});
