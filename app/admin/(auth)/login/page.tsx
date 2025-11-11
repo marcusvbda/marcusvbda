@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Spinner } from '@/components/ui/spinner';
 import { cn } from '@/lib/utils';
 import { loginByUserName } from '@/server/user';
 import { Label } from '@radix-ui/react-label';
@@ -50,6 +51,7 @@ export default function LoginPage(): ReactNode {
 									name="username"
 									defaultValue={state.username}
 									placeholder="Mr. white"
+									disabled={pending}
 								/>
 								{state?.error?.username && (
 									<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
@@ -65,6 +67,7 @@ export default function LoginPage(): ReactNode {
 									defaultValue={state.password}
 									type="password"
 									placeholder="*****"
+									disabled={pending}
 								/>
 								{state?.error?.password && (
 									<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
@@ -72,7 +75,12 @@ export default function LoginPage(): ReactNode {
 									</div>
 								)}
 							</div>
-							<Button type="submit" className="w-full">
+							<Button
+								type="submit"
+								className="w-full flex items-center gap-2"
+								disabled={pending}
+							>
+								{pending && <Spinner className="size-3" />}
 								Login
 							</Button>
 						</div>
