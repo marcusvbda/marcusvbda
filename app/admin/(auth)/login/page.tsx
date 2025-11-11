@@ -13,7 +13,7 @@ import { ReactNode, useActionState, useEffect } from 'react';
 export default function LoginPage(): ReactNode {
 	const searchParams = useSearchParams();
 
-	const [state, formAction, pending] = useActionState(loginByUserName, {
+	const [state, formAction, pending] = useActionState(loginByUserName as any, {
 		error: {} as any,
 		username: '',
 		password: '',
