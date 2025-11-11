@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, ReactNode, Suspense, useContext } from 'react';
 
 const sessionContet = createContext<any>({
 	session: null,
@@ -15,7 +15,7 @@ export const SessionProvider = ({
 }) => {
 	return (
 		<sessionContet.Provider value={{ session }}>
-			{children}
+			<Suspense>{children}</Suspense>
 		</sessionContet.Provider>
 	);
 };
