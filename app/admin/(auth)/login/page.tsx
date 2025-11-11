@@ -1,4 +1,4 @@
-import FormLogin from '@/components/FormLogin';
+import FormLogin from '@/components/admin/FormLogin';
 import { getCurrentSession } from '@/server/user';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
