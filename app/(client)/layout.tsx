@@ -1,6 +1,6 @@
 'use client';
 
-import { ThemeProvider } from '@/contexts/ThemeProvider';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { useTheme } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
