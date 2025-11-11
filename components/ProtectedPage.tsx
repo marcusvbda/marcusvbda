@@ -23,7 +23,7 @@ export default async function ProtectedPage({
 	const isChecked = Boolean(session?.id && session?.user?.id);
 	if (!isChecked) {
 		const redirectTo = await getRedirectTo();
-		return redirect(`/login?redirect=${redirectTo}`);
+		return redirect(`/admin/login?redirect=${redirectTo}`);
 	}
 
 	return <SessionProvider session={session}>{children}</SessionProvider>;
