@@ -30,66 +30,62 @@ export default function FormLogin({
 	}, [state.success]);
 
 	return (
-		<div className="w-full flex items-center justify-center py-20 px-6">
-			<div className="flex flex-col gap-6 w-full md:w-8/12 lg:w-3/12">
-				<form action={formAction}>
-					<div className="flex flex-col gap-6">
-						<div className="flex flex-col items-center gap-2">
-							<a
-								href="#"
-								className="flex flex-col items-center gap-2 font-medium"
-							>
-								<div className="flex h-8 w-8 items-center justify-center rounded-md">
-									<GalleryVerticalEnd className="size-6" />
-								</div>
-								<span className="sr-only">Acme Inc.</span>
-							</a>
-							<h1 className="text-xl font-bold">Portfolio Admin</h1>
-						</div>
-						<div className="flex flex-col gap-6">
-							<div className="grid gap-2">
-								<Label>Username</Label>
-								<Input
-									aria-invalid={Boolean(state?.error?.username?.[0])}
-									name="username"
-									defaultValue={state.username}
-									placeholder="Mr. white"
-									disabled={pending}
-								/>
-								{state?.error?.username && (
-									<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
-										{state?.error?.username?.[0]}
-									</div>
-								)}
-							</div>
-							<div className="grid gap-2">
-								<Label>Password</Label>
-								<Input
-									aria-invalid={Boolean(state?.error?.password?.[0])}
-									name="password"
-									defaultValue={state.password}
-									type="password"
-									placeholder="*****"
-									disabled={pending}
-								/>
-								{state?.error?.password && (
-									<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
-										{state?.error?.password?.[0]}
-									</div>
-								)}
-							</div>
-							<Button
-								type="submit"
-								className="w-full flex items-center gap-2"
-								disabled={pending}
-							>
-								{pending && <Spinner className="size-3" />}
-								Login
-							</Button>
-						</div>
-					</div>
-				</form>
+		<div className="w-full flex flex-col items-center py-10 gap-6">
+			<div className="flex flex-col items-center gap-2">
+				<div className="flex h-8 w-8 items-center justify-center rounded-md">
+					<GalleryVerticalEnd className="size-6" />
+				</div>
+				<span className="sr-only">Acme Inc.</span>
+				<h1 className="text-xl font-bold">Portfolio Admin</h1>
 			</div>
+			<form
+				action={formAction}
+				className="p-6 w-full md:w-8/12 lg:w-3/12 bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+			>
+				<div className="flex flex-col gap-6">
+					<div className="flex flex-col gap-6">
+						<div className="grid gap-2">
+							<Label>Username</Label>
+							<Input
+								aria-invalid={Boolean(state?.error?.username?.[0])}
+								name="username"
+								defaultValue={state.username}
+								placeholder="Mr. white"
+								disabled={pending}
+							/>
+							{state?.error?.username && (
+								<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
+									{state?.error?.username?.[0]}
+								</div>
+							)}
+						</div>
+						<div className="grid gap-2">
+							<Label>Password</Label>
+							<Input
+								aria-invalid={Boolean(state?.error?.password?.[0])}
+								name="password"
+								defaultValue={state.password}
+								type="password"
+								placeholder="*****"
+								disabled={pending}
+							/>
+							{state?.error?.password && (
+								<div className="flex items-center gap-2 text-destructive text-sm relative -top-3">
+									{state?.error?.password?.[0]}
+								</div>
+							)}
+						</div>
+						<Button
+							type="submit"
+							className="w-full flex items-center gap-2"
+							disabled={pending}
+						>
+							{pending && <Spinner className="size-3" />}
+							Login
+						</Button>
+					</div>
+				</div>
+			</form>
 		</div>
 	);
 }
