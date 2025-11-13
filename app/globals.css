@@ -45,15 +45,15 @@
 @layer base {
   :root {
     --background: hsl(210 20% 98%);
-    --foreground: lab(2.75381% 0 0);
+    --foreground: hsl(222 47% 11%);
 
     --card: hsl(0 0% 100%);
-    --card-foreground: lab(2.75381% 0 0);
+    --card-foreground: hsl(222 47% 11%);
 
     --popover: hsl(0 0% 100%);
-    --popover-foreground: lab(2.75381% 0 0);
+    --popover-foreground: hsl(222 47% 11%);
 
-    --primary: lab(2.75381% 0 0);
+    --primary: hsl(222 47% 11%);
     --primary-foreground: hsl(210 40% 98%);
 
     --secondary: hsl(217 33% 17%);
@@ -70,28 +70,28 @@
 
     --border: hsl(214 32% 91%);
     --input: hsl(214 32% 91%);
-    --ring: lab(2.75381% 0 0);
+    --ring: hsl(222 47% 11%);
 
     --radius: 0.75rem;
 
-    --hero-gradient-from: lab(2.75381% 0 0);
+    --hero-gradient-from: hsl(222 47% 11%);
     --hero-gradient-to: hsl(217 33% 17%);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: lab(2.75381% 0 0);
+    --background: hsl(222 47% 11%);
     --foreground: hsl(210 40% 98%);
 
     --card: hsl(217 33% 17%);
     --card-foreground: hsl(210 40% 98%);
 
-    --popover: lab(2.75381% 0 0);
+    --popover: hsl(217 33% 17%);
     --popover-foreground: hsl(210 40% 98%);
 
     --primary: hsl(210 40% 98%);
-    --primary-foreground: lab(2.75381% 0 0);
+    --primary-foreground: hsl(222 47% 11%);
 
     --secondary: hsl(217 33% 24%);
     --secondary-foreground: hsl(210 40% 98%);
@@ -141,37 +141,5 @@
 
   .hover-lift {
     @apply transition-transform duration-300 hover:-translate-y-1;
-  }
-}
-
-:root {
-  --sidebar: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-  --sidebar-primary: hsl(240 5.9% 10%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-}
-
-.dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  body {
-    @apply bg-background text-foreground;
   }
 }

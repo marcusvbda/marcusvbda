@@ -22,14 +22,16 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 			<SidebarProvider>
 				<AppSidebar />
 				<SidebarInset>
-					<header className="flex h-16 shrink-0 items-center gap-2">
+					<header className="flex h-16 shrink-0 items-center gap-2 dark:bg-muted">
 						<div className="flex items-center gap-2 px-4">
 							<SidebarTrigger className="-ml-1" />
 							<Separator orientation="vertical" className="mr-2 h-4" />
 							<div id="breadcrumb-portal-section" />
 						</div>
 					</header>
-					<div className="flex flex-1 flex-col gap-4 p-4 pt-0">{children}</div>
+					<div className="flex flex-1 flex-col gap-4 p-4 pt-0 dark:bg-muted">
+						{children}
+					</div>
 				</SidebarInset>
 			</SidebarProvider>
 		</ProtectedPage>

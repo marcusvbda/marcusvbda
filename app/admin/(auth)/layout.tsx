@@ -5,5 +5,9 @@ export default function authLayout({
 }: {
 	children: ReactNode;
 }): ReactNode {
-	return <div className="bg-muted flex min-h-svh px-4">{children}</div>;
+	return (
+		<div className="bg-muted dark:bg-transparent flex min-h-svh px-4">
+			{children}
+		</div>
+	);
 }
