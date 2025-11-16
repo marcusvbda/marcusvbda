@@ -19,6 +19,7 @@ export const Hero = () => {
 			element.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
 	useEffect(() => {
 		setClient(true);
 	}, []);
