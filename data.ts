@@ -406,7 +406,7 @@ export const data = {
 			},
 			deepLearning: {
 				title:
-					'Regressão and Classificação em Aprendizado de Máquina Supervisionado',
+					'Regressão e Classificação em Aprendizado de Máquina Supervisionado',
 				description:
 					'DeepLearning.AI & Stanford University • Online • 2025 - 2025',
 			},
