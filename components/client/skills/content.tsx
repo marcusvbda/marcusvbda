@@ -1,27 +1,27 @@
 'use client';
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '@/contexts/language-context';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
 import { Badge } from '@/components/ui/badge';
 
-export const Skills = () => {
-	const { t } = useLanguage();
+export default function Content({ content }: any) {
+	const { language } = useLanguage();
 
 	return (
 		<section id="skills" className="section-padding">
 			<div className="max-width-content">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{t('skills.title')}
+						{content?.skills?.[language]?.title}
 					</h2>
 					<p className="text-lg text-muted-foreground">
-						{t('skills.subtitle')}
+						{content?.skills?.[language]?.subtitle}
 					</p>
 				</div>
 
 				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-					{Object.keys(t('skills.categories') || {}).map(
+					{Object.keys(content?.skills?.[language]?.categories || {}).map(
 						(index: string, i: any) => {
 							return (
 								<Card
@@ -31,14 +31,17 @@ export const Skills = () => {
 								>
 									<CardHeader>
 										<CardTitle className="flex items-center gap-2">
-											{t(`skills.categories.${index}.label`)}
+											{content?.skills?.[language]?.categories?.[index]?.label}
 										</CardTitle>
 									</CardHeader>
 									<CardContent>
 										<div className="flex flex-wrap gap-2">
-											{(t(`skills.categories.${index}.skills`) || '')
+											{(
+												content?.skills?.[language]?.categories?.[index]
+													?.skills || ''
+											)
 												.split(',')
-												.map((skill, i) => (
+												.map((skill: any, i: any) => (
 													<Badge
 														key={`skill_${skill}_${i}`}
 														variant="secondary"
@@ -56,4 +59,4 @@ export const Skills = () => {
 			</div>
 		</section>
 	);
-};
+}

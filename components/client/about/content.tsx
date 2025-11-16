@@ -1,8 +1,8 @@
 'use client';
 
-import { useLanguage } from '@/contexts/LanguageContext';
 import { ReactNode } from 'react';
 import { Card } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/language-context';
 
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();

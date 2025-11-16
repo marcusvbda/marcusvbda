@@ -7,7 +7,7 @@ import {
 	BreadcrumbList,
 } from '@/components/ui/breadcrumb';
 import Portal from '@/components/ui/portal';
-import { useSession } from '@/contexts/SessionContext';
+import { useSession } from '@/contexts/session-context';
 import { signOut } from '@/server/user';
 import { ReactNode } from 'react';
 

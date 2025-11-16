@@ -6,7 +6,7 @@ import { Spinner } from '@/components/ui/spinner';
 import { loginByUserName } from '@/server/user';
 import { Label } from '@radix-ui/react-label';
 import { GalleryVerticalEnd } from 'lucide-react';
-import { redirect, useSearchParams } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import { ReactNode, useActionState, useEffect } from 'react';
 
 export default function FormLogin({
@@ -14,8 +14,6 @@ export default function FormLogin({
 }: {
 	redirectTo: string;
 }): ReactNode {
-	const searchParams = useSearchParams();
-
 	const [state, formAction, pending] = useActionState(loginByUserName as any, {
 		error: {} as any,
 		username: '',

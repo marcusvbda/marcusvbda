@@ -1,36 +1,40 @@
 'use client';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import Link from 'next/link';
 
-export const Footer = () => {
-	const { t } = useLanguage();
+import { useLanguage } from '@/contexts/language-context';
+import Link from 'next/link';
+import { Github, Linkedin, Mail } from 'lucide-react';
+
+export default function Content({ content }: any) {
+	const { language } = useLanguage();
 	const currentYear = new Date().getFullYear();
+	const t = content?.footer?.[language];
+	const info = content?.info?.[language];
 
 	const socialLinks = [
 		{
 			icon: Mail,
-			href: 'mailto:bassalobre.vinicius@gmail.com',
+			href: `mailto:${info?.email}`,
 			label: 'Email',
 		},
 		{
 			icon: Linkedin,
-			href: 'https://linkedin.com/in/mvbassalobre',
+			href: `https://${info?.linkedin}`,
 			label: 'Linkedin',
+		},
+		{
+			icon: Github,
+			href: `https://${info?.github}`,
+			label: 'Github',
 		},
 	];
 
 	return (
 		<footer className="border-t bg-card">
-			<div className="max-width-content section-padding !py-12">
+			<div className="max-width-content section-padding py-12!">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-6">
 					<div className="text-center md:text-left">
-						<p className="font-bold text-lg mb-1">
-							Marcus Vinicius Bassalobre de Assis
-						</p>
-						<p className="text-sm text-muted-foreground">
-							{t('footer.builtWith')}
-						</p>
+						<p className="font-bold text-lg mb-1">{info?.name}</p>
+						<p className="text-sm text-muted-foreground">{t?.builtWith}</p>
 					</div>
 
 					<div className="flex items-center gap-4">
@@ -57,10 +61,9 @@ export const Footer = () => {
 				</div>
 
 				<div className="mt-8 pt-6 border-t text-center text-sm text-muted-foreground">
-					© {currentYear} Marcus Vinicius Bassalobre de Assis.{' '}
-					{t('footer.rights')}.
+					© {currentYear} {info?.name}. {t?.rights}.
 				</div>
 			</div>
 		</footer>
 	);
-};
+}

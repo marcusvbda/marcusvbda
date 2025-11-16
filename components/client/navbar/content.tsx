@@ -1,18 +1,19 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '../ui/button';
+
+import { useEffect, useState } from 'react';
+import { useLanguage } from '@/contexts/language-context';
 import Link from 'next/link';
-import { useIsMobile } from '@/hooks/useMobile';
+import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './theme-toggle';
 import { LanguageSwitcher } from './language-switcher';
+import { useIsMobile } from '@/hooks/use-mobile';
 
-export default function Navbar() {
+export default function Content({ content }: any) {
+	const { language } = useLanguage();
+	const isMobile = useIsMobile();
 	const [isOpen, setIsOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
-	const { t } = useLanguage();
-	const isMobile = useIsMobile();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -22,14 +23,13 @@ export default function Navbar() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	const navItems = [
-		{ label: t('nav.about'), href: '#about' },
-		{ label: t('nav.experience'), href: '#experience' },
-		{ label: t('nav.projects'), href: '#projects' },
-		{ label: t('nav.skills'), href: '#skills' },
-		{ label: t('nav.education'), href: '#education' },
-		{ label: t('nav.contact'), href: '#contact' },
-	];
+	const navContent = content?.nav?.[language] || {};
+	const navItems = Object.keys(navContent)
+		.filter((key) => key !== 'language')
+		.map((key) => ({
+			label: navContent[key],
+			href: `#${key}`,
+		}));
 
 	const scrollToSection = (href: string) => {
 		const element = document.querySelector(href);

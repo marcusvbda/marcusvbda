@@ -1,7 +1,7 @@
 'use client';
 
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { LanguageProvider } from '@/contexts/LanguageContext';
+import { ThemeProvider } from '@/contexts/theme-context';
+import { LanguageProvider } from '@/contexts/language-context';
 import { useTheme } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { TooltipProvider } from '@radix-ui/react-tooltip';

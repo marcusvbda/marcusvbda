@@ -1,13 +1,5 @@
-import ProtectedPage from '@/components/admin/ProtectedPage';
-import { AppSidebar } from '@/components/app-sidebar';
-import {
-	Breadcrumb,
-	BreadcrumbItem,
-	BreadcrumbLink,
-	BreadcrumbList,
-	BreadcrumbPage,
-	BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+import { AppSidebar } from '@/components/admin/app-sidebar';
+import ProtectedPage from '@/components/admin/protected-page';
 import {
 	SidebarInset,
 	SidebarProvider,

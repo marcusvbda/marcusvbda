@@ -1,13 +1,13 @@
 'use client';
 
 import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '@/contexts/language-context';
 import { Button } from '@/components/ui/button';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { data } from '@/data';
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { RenderDocument } from '../render-document';
+import { RenderDocument } from './render-document';
 
 export default function Content({ content }: any): ReactNode {
 	const [client, setClient] = useState(false);

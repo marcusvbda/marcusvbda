@@ -1,4 +1,4 @@
-import { SessionProvider } from '@/contexts/SessionContext';
+import { SessionProvider } from '@/contexts/session-context';
 import { getCurrentSession } from '@/server/user';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';

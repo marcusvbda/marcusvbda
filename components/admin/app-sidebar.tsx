@@ -3,15 +3,15 @@
 import * as React from 'react';
 import { Globe, LayoutDashboard } from 'lucide-react';
 
-import { NavMain } from '@/components/nav-main';
-import { NavUser } from '@/components/nav-user';
 import {
 	Sidebar,
 	SidebarContent,
 	SidebarHeader,
 	SidebarMenu,
 } from '@/components/ui/sidebar';
-import { useSession } from '@/contexts/SessionContext';
+import { useSession } from '@/contexts/session-context';
+import { NavUser } from './nav-user';
+import { NavMain } from './nav-main';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 	const { session } = useSession();

@@ -1,5 +1,4 @@
 'use client';
-import { translations } from '@/lib/translations';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
 	createContext,
@@ -14,7 +13,6 @@ type Language = 'en' | 'pt';
 interface LanguageContextType {
 	language: Language;
 	setLanguage: (lang: Language) => void;
-	t: (key: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -40,17 +38,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 		setLanguageState(lang);
 	};
 
-	const t = (key: string): string => {
-		const keys = key.split('.');
-		let value: any = translations[language];
-
-		for (const k of keys) {
-			value = value?.[k];
-		}
-
-		return value || key;
-	};
-
 	useEffect(() => {
 		setMounted(true);
 	}, []);
@@ -58,7 +45,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 	if (!mounted) return;
 
 	return (
-		<LanguageContext.Provider value={{ language, setLanguage, t }}>
+		<LanguageContext.Provider value={{ language, setLanguage }}>
 			{children}
 		</LanguageContext.Provider>
 	);
