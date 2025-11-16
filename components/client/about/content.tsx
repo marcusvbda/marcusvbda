@@ -6,16 +6,17 @@ import { useLanguage } from '@/contexts/language-context';
 
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
+	const about = content?.about?.[language];
+	const hero = content?.hero?.[language];
+
 	return (
 		<section id="about" className="section-padding bg-muted/30">
 			<div className="max-width-content">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{content?.about?.[language]?.title}
+						{about?.title}
 					</h2>
-					<p className="text-lg text-muted-foreground">
-						{content?.about?.[language]?.subtitle}
-					</p>
+					<p className="text-lg text-muted-foreground">{about?.subtitle}</p>
 				</div>
 
 				<div className="grid md:grid-cols-5 gap-12 items-center">
@@ -24,8 +25,8 @@ export default function Content({ content }: any): ReactNode {
 						<Card className="overflow-hidden hover-lift">
 							<img
 								loading="lazy"
-								src={content?.about?.[language]?.image}
-								alt={content?.hero?.[language]?.name}
+								src={about?.image}
+								alt={hero?.name}
 								className="w-full h-full object-cover grayscale"
 							/>
 						</Card>
@@ -36,7 +37,7 @@ export default function Content({ content }: any): ReactNode {
 						className="md:col-span-3 space-y-6 animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
-						{(content?.about?.[language]?.description || '')
+						{(about?.description || '')
 							.split('\n')
 							.map((x: string, key: number) => (
 								<p

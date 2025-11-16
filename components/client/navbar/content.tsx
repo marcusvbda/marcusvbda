@@ -23,11 +23,12 @@ export default function Content({ content }: any) {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	const navContent = content?.nav?.[language] || {};
-	const navItems = Object.keys(navContent)
+	const nav = content?.nav?.[language] || {};
+
+	const navItems = Object.keys(nav)
 		.filter((key) => key !== 'language')
 		.map((key) => ({
-			label: navContent[key],
+			label: nav[key],
 			href: `#${key}`,
 		}));
 

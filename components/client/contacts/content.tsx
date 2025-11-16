@@ -1,44 +1,45 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
-import { Badge } from '@/components/ui/badge';
-import { Github, Link, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Github, Link2Icon, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
+import Link from 'next/link';
 
 export default function Content({ content }: any) {
 	const { language } = useLanguage();
+	const info = content?.info?.[language];
+	const contact = content?.contact?.[language];
 
 	const contactMethods = [
 		{
 			icon: Mail,
 			label: 'Email',
-			value: content?.info?.[language]?.email,
-			href: `mailto:${content?.info?.[language]?.email}`,
+			value: info?.email,
+			href: `mailto:${info?.email}`,
 		},
 		{
 			icon: Linkedin,
 			label: 'Linkedin',
-			value: (content?.info?.[language]?.linkedin || '#').split('/').pop(),
-			href: 'https://'.concat(content?.info?.[language]?.linkedin),
+			value: (info?.linkedin || '#').split('/').pop(),
+			href: 'https://'.concat(info?.linkedin),
 		},
 		{
 			icon: MapPin,
-			label: content?.info?.[language]?.location,
-			value: content?.info?.[language]?.location,
+			label: info?.location,
+			value: info?.location,
 			href: null,
 		},
 		{
 			icon: Github,
 			label: 'Github',
-			value: (content?.info?.[language]?.github || '#').split('/').pop(),
-			href: 'https://'.concat(content?.info?.[language]?.github || '#'),
+			value: (info?.github || '#').split('/').pop(),
+			href: 'https://'.concat(info?.github || '#'),
 		},
 		{
 			icon: Phone,
-			label: content?.contact?.[language]?.phone,
-			value: content?.info?.[language]?.phone,
+			label: contact?.phone,
+			value: info?.phone,
 			href: null,
 		},
 	];
@@ -48,13 +49,13 @@ export default function Content({ content }: any) {
 			<div className="max-width-content max-w-4xl">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{content?.contact?.[language]?.title}
+						{contact?.title}
 					</h2>
 					<p className="text-lg text-muted-foreground mb-4">
-						{content?.contact?.[language]?.subtitle}
+						{contact?.subtitle}
 					</p>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
-						{content?.contact?.[language]?.description}
+						{contact?.description}
 					</p>
 				</div>
 
@@ -76,16 +77,18 @@ export default function Content({ content }: any) {
 											<div className="space-y-1">
 												<p className="font-semibold">{method.label}</p>
 												{method.href ? (
-													<a
+													<Link
 														href={method.href}
+														className="text-sm text-muted-foreground flex items-center gap-2 justify-center"
 														target={
 															method.href.startsWith('http')
 																? '_blank'
 																: undefined
 														}
 													>
+														<Link2Icon className="size-4" />
 														{method.value}
-													</a>
+													</Link>
 												) : (
 													<>
 														{(method.value || '')
