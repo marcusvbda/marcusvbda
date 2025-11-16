@@ -4,14 +4,14 @@ import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { RenderDocument } from './RenderDocument';
 import { data } from '@/data';
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
+import { RenderDocument } from '../render-document';
 
-export const Hero = () => {
+export default function Content({ content }: any): ReactNode {
 	const [client, setClient] = useState(false);
-	const { t, language } = useLanguage();
+	const { language } = useLanguage();
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -35,22 +35,22 @@ export const Hero = () => {
 					<div className="space-y-6 animate-fade-in">
 						<div className="space-y-2">
 							<p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-								{t('hero.greeting')}
+								{content?.hero?.[language]?.greetings}
 							</p>
 							<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-								{t('hero.name')}
+								{content?.hero?.[language]?.name}
 							</h1>
 							<h2 className="text-2xl md:text-3xl font-semibold text-accent">
-								{t('hero.role')}
+								{content?.hero?.[language]?.role}
 							</h2>
 							<p className="text-sm text-muted-foreground flex items-center gap-2">
 								<span className="inline-block w-2 h-2 bg-accent rounded-full animate-pulse" />
-								{t('hero.location')}
+								{content?.hero?.[language]?.location}
 							</p>
 						</div>
 
 						<p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-							{t('hero.bio')}
+							{content?.hero?.[language]?.bio}
 						</p>
 
 						<div className="flex justify-center md:justify-start flex-wrap gap-4 pt-4">
@@ -61,7 +61,7 @@ export const Hero = () => {
 								className="w-full md:w-auto"
 							>
 								<Mail className="mr-2 h-4 w-4" />
-								{t('hero.cta')}
+								{content?.hero?.[language]?.cta}
 							</Button>
 							<Button
 								size="lg"
@@ -70,7 +70,7 @@ export const Hero = () => {
 								className="w-full md:w-auto"
 							>
 								<Link
-									href={'https://'.concat(t('info.linkedin'))}
+									href={'https://'.concat(content?.info?.[language]?.linkedin)}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -85,7 +85,7 @@ export const Hero = () => {
 								className="w-full md:w-auto"
 							>
 								<Link
-									href={'https://'.concat(t('info.github') || '#')}
+									href={'https://'.concat(content?.info?.[language]?.github)}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -101,14 +101,14 @@ export const Hero = () => {
 											data={data}
 											lang={language}
 											sections={{
-												summary: t('about.title'),
-												experience: t('experience.title'),
-												education: t('education.title'),
-												skills: t('skills.title'),
+												summary: content?.about?.[language]?.title,
+												experience: content?.experience?.[language]?.title,
+												education: content?.education?.[language]?.title,
+												skills: content?.skills?.[language]?.title,
 											}}
 										/>
 									}
-									fileName={`${t('info.name')} - ${language}`}
+									fileName={`${content?.info?.[language]?.name} - ${language}`}
 								>
 									{() => (
 										<Button
@@ -119,7 +119,7 @@ export const Hero = () => {
 										>
 											<span className="text-white">
 												<Download className="mr-2 h-4 w-4" />
-												{t('hero.checkCv')}
+												{content?.hero?.[language]?.checkCv}
 											</span>
 										</Button>
 									)}
@@ -140,7 +140,7 @@ export const Hero = () => {
 								className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
 							>
 								<ArrowDown className="h-4 w-4" />
-								{t('hero.scrollDown')}
+								{content?.hero?.[language]?.scrollDown}
 							</Link>
 						</div>
 					</div>
@@ -154,7 +154,7 @@ export const Hero = () => {
 							<div className="absolute inset-0 bg-linear-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							<img
 								loading="lazy"
-								src={t('hero.avatar')}
+								src={content?.hero?.[language]?.avatar}
 								alt="Marcus Vinicius Bassalobre de Assis"
 								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
 							/>
@@ -164,4 +164,4 @@ export const Hero = () => {
 			</div>
 		</section>
 	);
-};
+}

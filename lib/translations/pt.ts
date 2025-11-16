@@ -25,6 +25,7 @@ export const pt = {
 		title: 'Sobre Mim',
 		subtitle: 'Criando Experiências Digitais',
 		description: data?.about?.pt || '',
+		image: '/assets/blue.png',
 	},
 	experience: {
 		title: 'Experiência',

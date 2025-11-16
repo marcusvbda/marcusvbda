@@ -1,12 +1,12 @@
 'use client';
 
-import Portal from '@/components/porta';
 import {
 	Breadcrumb,
 	BreadcrumbItem,
 	BreadcrumbLink,
 	BreadcrumbList,
 } from '@/components/ui/breadcrumb';
+import Portal from '@/components/ui/portal';
 import { useSession } from '@/contexts/SessionContext';
 import { signOut } from '@/server/user';
 import { ReactNode } from 'react';

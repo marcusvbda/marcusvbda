@@ -1,6 +1,15 @@
 'use server';
 
-export const getPageContent = async (page: string) => {
-	await new Promise((resolve) => setTimeout(resolve, 5000));
-	return { page };
+import { translations } from '@/lib/translations';
+import { cacheLife, cacheTag } from 'next/cache';
+
+export const getComponentContent = async (component: string) => {
+	'use cache';
+	cacheLife('max');
+	cacheTag(component);
+
+	return {
+		en: (translations as any)?.en?.[component],
+		pt: (translations as any)?.pt?.[component],
+	};
 };

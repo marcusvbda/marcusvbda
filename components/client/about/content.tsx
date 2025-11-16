@@ -1,19 +1,21 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Card } from './ui/card';
+import { ReactNode } from 'react';
+import { Card } from '@/components/ui/card';
 
-export const About = () => {
-	const { t } = useLanguage();
-
+export default function Content({ content }: any): ReactNode {
+	const { language } = useLanguage();
 	return (
 		<section id="about" className="section-padding bg-muted/30">
 			<div className="max-width-content">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{t('about.title')}
+						{content?.about?.[language]?.title}
 					</h2>
-					<p className="text-lg text-muted-foreground">{t('about.subtitle')}</p>
+					<p className="text-lg text-muted-foreground">
+						{content?.about?.[language]?.subtitle}
+					</p>
 				</div>
 
 				<div className="grid md:grid-cols-5 gap-12 items-center">
@@ -22,8 +24,8 @@ export const About = () => {
 						<Card className="overflow-hidden hover-lift">
 							<img
 								loading="lazy"
-								src={`/assets/blue.png`}
-								alt="Marcus Vinicius Bassalobre de Assis"
+								src={content?.about?.[language]?.image}
+								alt={content?.hero?.[language]?.name}
 								className="w-full h-full object-cover grayscale"
 							/>
 						</Card>
@@ -34,7 +36,7 @@ export const About = () => {
 						className="md:col-span-3 space-y-6 animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
-						{(t('about.description') || '')
+						{(content?.about?.[language]?.description || '')
 							.split('\n')
 							.map((x: string, key: number) => (
 								<p
@@ -49,4 +51,4 @@ export const About = () => {
 			</div>
 		</section>
 	);
-};
+}
