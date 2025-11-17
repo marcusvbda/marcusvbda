@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Globe, LayoutDashboard } from 'lucide-react';
+import { BoxIcon, Globe, LayoutDashboard } from 'lucide-react';
 
 import {
 	Sidebar,
@@ -23,16 +23,25 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 			avatar: '/avatars/shadcn.jpg',
 		},
 		items: {
-			'Main Menu': [
+			Site: [
 				{
 					title: 'Home Page',
 					url: '/',
 					icon: Globe,
 				},
+			],
+			Admin: [
 				{
-					title: 'Admin Dashboard',
+					title: 'Dashboard',
 					url: '/admin',
 					icon: LayoutDashboard,
+				},
+			],
+			CMS: [
+				{
+					title: 'Components',
+					url: '/admin/components',
+					icon: BoxIcon,
 				},
 			],
 		},

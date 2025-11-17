@@ -1,4 +1,5 @@
 import { AppSidebar } from '@/components/admin/app-sidebar';
+import BreadCrumb from '@/components/admin/bread-crumb';
 import ProtectedPage from '@/components/admin/protected-page';
 import {
 	SidebarInset,
@@ -18,7 +19,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 						<div className="flex items-center gap-2 px-4">
 							<SidebarTrigger className="-ml-1" />
 							<Separator orientation="vertical" className="mr-2 h-4" />
-							<div id="breadcrumb-portal-section" />
+							<BreadCrumb />
 						</div>
 					</header>
 					<div className="flex flex-1 flex-col gap-4 p-4 pt-0 dark:bg-muted">

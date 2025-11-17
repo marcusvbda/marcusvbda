@@ -11,6 +11,7 @@ export default function Portal({
 	to: string;
 }): ReactNode {
 	const [visible, setVisible] = useState(false);
+
 	useEffect(() => {
 		setVisible(true);
 	}, []);

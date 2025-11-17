@@ -1,11 +1,11 @@
 import { Skeleton } from '@/components/ui/skeleton';
 import { Suspense } from 'react';
-import ServerComponent from './server-component';
+import Wrapper from './wrapper';
 
 export default function Skills() {
 	return (
 		<Suspense fallback={<Fallback />}>
-			<ServerComponent />
+			<Wrapper />
 		</Suspense>
 	);
 }

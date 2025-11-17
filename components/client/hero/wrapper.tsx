@@ -2,7 +2,7 @@ import { getComponentContent } from '@/server/cms';
 import { use } from 'react';
 import Content from './content';
 
-export default function ServerComponent() {
+export default function Wrapper() {
 	const hero = use(getComponentContent('hero'));
 	const info = use(getComponentContent('info'));
 	const about = use(getComponentContent('about'));
