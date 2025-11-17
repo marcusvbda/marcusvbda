@@ -1,9 +1,7 @@
-import { SettingsDialog } from "@/components/settings-dialog"
-
 export default function Page() {
-  return (
-    <div className="flex h-svh items-center justify-center">
-      <SettingsDialog />
-    </div>
-  )
+	return (
+		<div className="flex h-svh items-center justify-center">
+			<h1>Dashboard</h1>
+		</div>
+	);
 }
