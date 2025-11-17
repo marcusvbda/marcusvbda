@@ -22,7 +22,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 							<BreadCrumb />
 						</div>
 					</header>
-					<div className="flex flex-1 flex-col gap-4 p-4 pt-0 dark:bg-muted">
+					<div className="flex flex-1 flex-col gap-4 p-4 pt-0 dark:bg-muted md:p-10">
 						{children}
 					</div>
 				</SidebarInset>
