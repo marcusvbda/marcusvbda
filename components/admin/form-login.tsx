@@ -48,7 +48,7 @@ export default function FormLogin({
 								aria-invalid={Boolean(state?.error?.username?.[0])}
 								name="username"
 								defaultValue={state.username}
-								placeholder="Mr. white"
+								placeholder="Mr. White"
 								disabled={pending}
 							/>
 							{state?.error?.username && (

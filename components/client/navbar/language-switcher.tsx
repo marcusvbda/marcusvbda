@@ -11,7 +11,7 @@ export const LanguageSwitcher = () => {
 				variant={language === 'en' ? 'secondary' : 'ghost'}
 				size="sm"
 				onClick={() => setLanguage('en')}
-				className="text-xs h-7 px-3"
+				className="text-xs h-7 px-3 hover:text-white"
 			>
 				EN
 			</Button>
@@ -19,7 +19,7 @@ export const LanguageSwitcher = () => {
 				variant={language === 'pt' ? 'secondary' : 'ghost'}
 				size="sm"
 				onClick={() => setLanguage('pt')}
-				className="text-xs h-7 px-3"
+				className="text-xs h-7 px-3 hover:text-white"
 			>
 				PT
 			</Button>

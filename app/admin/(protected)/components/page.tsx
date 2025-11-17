@@ -49,16 +49,16 @@ export default function ComponentsPage(): ReactNode {
 
 			<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 				<NewResource />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
-				<ResourceItem id="comp_01HGE8..." />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
+				<ResourceItem id="comp_01HGE8" />
 			</div>
 
 			<div className="flex w-full items-center justify-center">

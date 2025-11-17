@@ -18,6 +18,7 @@ export function ThemeToggle() {
 	return (
 		<Button
 			variant="outline"
+			className="group hover:text-white"
 			size="icon"
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 		>

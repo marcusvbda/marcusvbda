@@ -51,9 +51,9 @@ export default function Content({ content }: any) {
 											: undefined
 									}
 									aria-label={link.label}
-									className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
+									className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-accent hover:text-accent-foreground transition-colors bg-accent/10"
 								>
-									<Icon className="h-5 w-5" />
+									<Icon className="h-5 w-5 text-accent" />
 								</Link>
 							);
 						})}

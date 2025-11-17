@@ -64,7 +64,7 @@ export default function Content({ content }: any): ReactNode {
 								size="lg"
 								variant="outline"
 								onClick={scrollToContact}
-								className="w-full md:w-auto"
+								className="w-full md:w-auto hover:text-white"
 							>
 								<Mail className="mr-2 h-4 w-4" />
 								{hero?.cta}
@@ -73,7 +73,7 @@ export default function Content({ content }: any): ReactNode {
 								size="lg"
 								variant="outline"
 								asChild
-								className="w-full md:w-auto"
+								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
 									href={'https://'.concat(info?.linkedin)}
@@ -88,7 +88,7 @@ export default function Content({ content }: any): ReactNode {
 								size="lg"
 								variant="outline"
 								asChild
-								className="w-full md:w-auto"
+								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
 									href={'https://'.concat(info?.github)}
@@ -121,7 +121,7 @@ export default function Content({ content }: any): ReactNode {
 											size="lg"
 											variant="outline"
 											asChild
-											className="bg-accent hover:bg-accent/90 w-full md:w-auto"
+											className="bg-accent hover:bg-accent/90 w-full md:w-auto hover:text-white"
 										>
 											<span className="text-white">
 												<Download className="mr-2 h-4 w-4" />
