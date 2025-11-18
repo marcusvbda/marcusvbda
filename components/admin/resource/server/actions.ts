@@ -15,7 +15,7 @@ interface IPaginatedFetchResponse {
 
 export const paginatedFetch = async (
 	modelName: string,
-	{ page, perPage, orderBy, filter }: any
+	{ page, perPage, orderBy, filter, defaultFilter = {} }: any
 ): Promise<IPaginatedFetchResponse> => {
 	const prisma = new PrismaClient();
 	const model = (prisma as any)?.[modelName];
@@ -53,6 +53,33 @@ export const paginatedFetch = async (
 		where = { OR: orConditions };
 	}
 
+	if (defaultFilter && Object.keys(defaultFilter).length > 0) {
+		const defaultConditions = Object.entries(defaultFilter)
+			.map(([key, value]) => {
+				if (typeof value === 'object' && value !== null) {
+					return { [key]: value };
+				}
+				if (key === 'id') {
+					const numericValue = Number(String(value || '').replace(/\D/g, ''));
+					if (isNaN(numericValue)) {
+						return undefined;
+					}
+					return {
+						id: {
+							equals: numericValue,
+						},
+					};
+				}
+				return {
+					[key]: {
+						equals: String(value),
+					},
+				};
+			})
+			.filter(Boolean);
+		where = { ...where, AND: defaultConditions };
+	}
+
 	const [data, total, totalResult] = await Promise.all([
 		model.findMany({
 			skip,
@@ -85,6 +112,7 @@ export const updateOrCreate = async (
 		const zodSchema = z.object(
 			Object.keys(formFields).reduce((acc: any, key: any) => {
 				const field = formFields[key];
+				if (field.type === 'link') return { ...acc };
 				let rowZ: any;
 				if (field.type === 'number') {
 					rowZ = z.coerce.number();

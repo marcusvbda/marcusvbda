@@ -55,6 +55,7 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 				</SheetHeader>
 				<DynamicForm
 					itemState={row}
+					setVisible={setVisible}
 					onSaved={() => {
 						refetch();
 						setVisible(false);

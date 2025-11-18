@@ -3,6 +3,7 @@
 import { ReactNode } from 'react';
 import { useBreadcrumb } from '@/store/admin/use-breadcrumb';
 import Resource from '@/components/admin/resource';
+import { ListCheckIcon } from 'lucide-react';
 
 export default function ComponentsPage(): ReactNode {
 	useBreadcrumb([
@@ -20,6 +21,12 @@ export default function ComponentsPage(): ReactNode {
 			filterBy="id,name"
 			itemLabel="name"
 			fields={{
+				fieldsLink: {
+					type: 'link',
+					icon: <ListCheckIcon className="size-5" />,
+					label: 'Check component fields',
+					href: '/admin/components/[id]/fields',
+				},
 				name: {
 					type: 'text',
 					label: 'Name',
@@ -27,18 +34,6 @@ export default function ComponentsPage(): ReactNode {
 					required: true,
 				},
 			}}
-			// renderForm={(renderedForm: ReactNode, itemState?: any) => {
-			// 	return (
-			// 		<div className="w-full flex flex-col gap-2">
-			// 			{itemState?.id && (
-			// 				<div className="w-full">
-			// 					<h1 className="text-3xl">{itemState?.id}</h1>
-			// 				</div>
-			// 			)}
-			// 			{renderedForm}
-			// 		</div>
-			// 	);
-			// }}
 		/>
 	);
 }

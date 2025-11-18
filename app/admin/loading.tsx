@@ -8,7 +8,7 @@ export default function Loading(): ReactNode {
 export const LoadingSpinner = () => {
 	return (
 		<div className="w-full flex items-center justify-center py-10">
-			<Spinner className="size-10 opacity-5" />
+			<Spinner className="size-10 opacity-20" />
 		</div>
 	);
 };

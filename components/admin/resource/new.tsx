@@ -43,6 +43,7 @@ export const NewResource = () => {
 					</SheetDescription>
 				</SheetHeader>
 				<DynamicForm
+					setVisible={setVisible}
 					onSaved={() => {
 						refetch();
 						setVisible(false);

@@ -24,8 +24,22 @@ import {
 	AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { useMutation } from '@tanstack/react-query';
+import {
+	Item,
+	ItemActions,
+	ItemContent,
+	ItemMedia,
+	ItemTitle,
+} from '@/components/ui/item';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { ChevronRightIcon, ListCheckIcon } from 'lucide-react';
 
-export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
+export default function DynamicForm({
+	onSaved,
+	itemState,
+	setVisible,
+}: any): ReactNode {
 	const [confirmationDeleteVisible, setConfirmationDeleteVisible] =
 		useState(false);
 
@@ -47,6 +61,7 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 		? itemState
 		: Object.keys(computedFields).reduce((acc: any, key: any) => {
 				const type = computedFields[key].type;
+				if (type === 'link') return acc;
 				if (type === 'number') {
 					acc[key] = computedFields?.[key] || 0;
 					return acc;
@@ -95,16 +110,52 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 		});
 	};
 
+	const router = useRouter();
+
 	const renderedForm = (
-		<form action={formAction} className="w-full flex flex-col gap-6">
-			<div className="flex flex-col gap-6">
-				{Object.keys(computedFields).map((key: any) => {
-					const field = computedFields[key];
-					return (
-						<Field key={key}>
-							{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
-							<FieldContent>
-								{['text', 'number', 'email', 'url'].includes(field?.type) && (
+		<div className="flex flex-col gap-6">
+			{Object.keys(computedFields).map((key: any) => {
+				const field = computedFields[key];
+				return (
+					<Field key={key}>
+						<FieldContent>
+							{['link'].includes(field?.type) && (
+								<>
+									{!itemState?.id && (field?.href || '').includes('[id]') ? (
+										<></>
+									) : (
+										<Item variant="outline" size="sm" asChild>
+											<Link
+												href="#"
+												onClick={(e: any) => {
+													e.preventDefault();
+													setVisible(false);
+													setTimeout(() => {
+														router.push(
+															(field?.href || '').replaceAll(
+																'[id]',
+																itemState?.id
+															)
+														);
+													}, 500);
+												}}
+											>
+												<ItemMedia>{field?.icon}</ItemMedia>
+												<ItemContent>
+													<ItemTitle>{field?.label}</ItemTitle>
+												</ItemContent>
+												<ItemActions>
+													<ChevronRightIcon className="size-4" />
+												</ItemActions>
+											</Link>
+										</Item>
+									)}
+								</>
+							)}
+
+							{['text', 'number', 'email', 'url'].includes(field?.type) && (
+								<>
+									{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
 									<Input
 										aria-invalid={Boolean(state?.error?.[key]?.[0])}
 										name={key}
@@ -114,8 +165,11 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 										disabled={pending}
 										hidden={field?.hidden}
 									/>
-								)}
-								{field?.type === 'textarea' && (
+								</>
+							)}
+							{field?.type === 'textarea' && (
+								<>
+									{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
 									<Textarea
 										className="border resize-none rounded-lg p-2 text-sm"
 										aria-invalid={Boolean(state?.error?.[key]?.[0])}
@@ -126,12 +180,25 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 										hidden={field?.hidden}
 										rows={field?.rows || 5}
 									/>
-								)}
-								<FieldError>{state?.error?.[key] as any}</FieldError>
-							</FieldContent>
-						</Field>
-					);
-				})}
+								</>
+							)}
+							<FieldError>{state?.error?.[key] as any}</FieldError>
+						</FieldContent>
+					</Field>
+				);
+			})}
+		</div>
+	);
+
+	return (
+		<div className="w-full flex flex-col py-6">
+			<form action={formAction} className="w-full flex flex-col gap-6">
+				{renderForm
+					? renderForm(renderedForm, {
+							item: itemState,
+							setDrawerVisible: setVisible,
+					  })
+					: renderedForm}
 				<div className="w-full gap-2 flex items-center flex-row">
 					{itemState?.id && (
 						<AlertDialog
@@ -180,13 +247,7 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 						Save
 					</Button>
 				</div>
-			</div>
-		</form>
-	);
-
-	return (
-		<div className="w-full flex flex-col py-6">
-			{renderForm ? renderForm(renderedForm, itemState) : renderedForm}
+			</form>
 		</div>
 	);
 }

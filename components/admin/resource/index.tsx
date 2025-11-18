@@ -23,13 +23,20 @@ interface IText {
 	type: 'text' | 'number' | 'email' | 'url' | 'password';
 }
 
+interface ILink {
+	type: 'link';
+	href: string;
+	label: string;
+	icon: ReactNode;
+}
+
 interface ITextarea {
 	type: 'textarea';
 	rows?: number;
 }
 
 interface IFields {
-	[key: string]: ICommon & (IText | ITextarea);
+	[key: string]: ILink | (ICommon & (IText | ITextarea));
 }
 
 interface IProps {
@@ -51,6 +58,7 @@ interface IProps {
 	editView?: any;
 	fields: IFields;
 	renderForm?: any;
+	defaultFilter?: any;
 }
 
 export default function Resource({
@@ -69,6 +77,7 @@ export default function Resource({
 	classNameList = '',
 	fields,
 	renderForm,
+	defaultFilter,
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -95,6 +104,7 @@ export default function Resource({
 				perPage,
 				orderBy,
 				filter,
+				defaultFilter,
 			}),
 		initialPageParam: 1,
 		getNextPageParam: (lastPage) => {
