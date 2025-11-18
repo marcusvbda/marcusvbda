@@ -13,10 +13,12 @@ export default function ComponentsPage(): ReactNode {
 
 	return (
 		<Resource
+			entity="Component"
 			label="Component"
 			pluralLabel="Components"
 			description="Define your components to organize fields and consume it in your application."
-			filterBy="name,id"
+			filterBy="id,name"
+			itemLabel="name"
 		/>
 	);
 }

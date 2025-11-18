@@ -19,9 +19,15 @@ model User {
 
 model Token {
   id     Int     @id @default(autoincrement())
-  token  String @unique
-  user   User   @relation(fields: [userId], references: [id])
+  token  String  @unique
+  user   User    @relation(fields: [userId], references: [id])
   userId Int
   createdAt DateTime @default(now())
   dueDate DateTime @default(now())
+}
+
+model Component {
+  id     Int     @id @default(autoincrement())
+  name   String  @unique
+  createdAt DateTime @default(now())
 }
