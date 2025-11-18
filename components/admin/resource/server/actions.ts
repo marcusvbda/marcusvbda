@@ -121,6 +121,7 @@ export const updateOrCreate = async (
 		const prisma = new PrismaClient();
 		const model = (prisma as any)?.[modelName];
 
+		let message = 'Created successfully';
 		if (validatedFields.data.id) {
 			await model.update({
 				where: {
@@ -128,6 +129,7 @@ export const updateOrCreate = async (
 				},
 				data: validatedFields.data,
 			});
+			message = 'Updated successfully';
 		} else {
 			await model.create({
 				data: validatedFields.data,
@@ -136,13 +138,30 @@ export const updateOrCreate = async (
 
 		return {
 			success: true,
-			message: 'Created successfully',
+			message,
 		};
 	} catch (error) {
 		console.log(error);
 		return {
 			success: false,
 			error: 'Something went wrong',
+		};
+	}
+};
+
+export const deleteItem = async (id: any, modelName: string) => {
+	try {
+		const prisma = new PrismaClient();
+		const model = (prisma as any)?.[modelName];
+		await model.delete({ where: { id } });
+		return {
+			success: true,
+			message: 'Deleted successfully',
+		};
+	} catch (error) {
+		return {
+			success: false,
+			message: 'Something went wrong',
 		};
 	}
 };
