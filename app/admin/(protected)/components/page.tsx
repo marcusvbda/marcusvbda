@@ -19,6 +19,14 @@ export default function ComponentsPage(): ReactNode {
 			description="Define your components to organize fields and consume it in your application."
 			filterBy="id,name"
 			itemLabel="name"
+			fields={{
+				name: {
+					type: 'text',
+					label: 'Name',
+					placeholder: 'Component name',
+					required: true,
+				},
+			}}
 		/>
 	);
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useMemo, useState } from 'react';
+import { ReactNode, useActionState, useEffect, useMemo, useState } from 'react';
 import { Card, CardHeader } from '@/components/ui/card';
 import { PlusIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -15,10 +15,32 @@ import {
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
 import { useInfiniteQuery } from '@tanstack/react-query';
-import { paginatedFetch } from '@/server/resource';
+import { paginatedFetch, updateOrCreate } from '@/server/resource';
 import { Spinner } from '../ui/spinner';
 import { LoadingSpinner } from '@/app/admin/loading';
 import useDebounceState from '@/hooks/use-debounce-state';
+import { Field, FieldContent, FieldError, FieldLabel } from '../ui/field';
+import { Textarea } from '../ui/textarea';
+import { toast } from 'sonner';
+
+interface ICommon {
+	label?: string;
+	description?: string;
+	required?: boolean;
+	placeholder?: string;
+}
+interface IText {
+	type: 'text' | 'number' | 'email' | 'url' | 'password';
+}
+
+interface ITextarea {
+	type: 'textarea';
+	rows?: number;
+}
+
+interface IFields {
+	[key: string]: ICommon & (IText | ITextarea);
+}
 
 interface IProps {
 	itemId?: string;
@@ -35,6 +57,9 @@ interface IProps {
 	renderItem?: any;
 	className?: string;
 	classNameList?: string;
+	createView?: ReactNode;
+	editView?: any;
+	fields: IFields;
 }
 
 export default function Resource({
@@ -51,6 +76,7 @@ export default function Resource({
 	orderBy = { id: 'desc' },
 	className = '',
 	classNameList = '',
+	fields,
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -61,24 +87,31 @@ export default function Resource({
 		);
 	}, [searchState, filterBy]);
 
-	const { data, isLoading, isFetchingNextPage, fetchNextPage, hasNextPage } =
-		useInfiniteQuery({
-			queryKey: [entity, perPage, orderBy, filter],
-			queryFn: async ({ pageParam = 1 }) =>
-				await paginatedFetch(entity, {
-					page: pageParam,
-					perPage,
-					orderBy,
-					filter,
-				}),
-			initialPageParam: 1,
-			getNextPageParam: (lastPage) => {
-				if (lastPage.meta.page < lastPage.meta.totalPages) {
-					return lastPage.meta.page + 1;
-				}
-				return undefined;
-			},
-		});
+	const {
+		data,
+		isLoading,
+		isFetchingNextPage,
+		fetchNextPage,
+		hasNextPage,
+		refetch,
+		isRefetching,
+	} = useInfiniteQuery({
+		queryKey: [entity, perPage, orderBy, filter],
+		queryFn: async ({ pageParam = 1 }) =>
+			await paginatedFetch(entity, {
+				page: pageParam,
+				perPage,
+				orderBy,
+				filter,
+			}),
+		initialPageParam: 1,
+		getNextPageParam: (lastPage) => {
+			if (lastPage.meta.page < lastPage.meta.totalPages) {
+				return lastPage.meta.page + 1;
+			}
+			return undefined;
+		},
+	});
 
 	const ComputedLabel = label;
 	const ComputedPluralLabel = pluralLabel || `${label}s`;
@@ -110,7 +143,7 @@ export default function Resource({
 				)}
 			</div>
 
-			{isLoading ? (
+			{isLoading || isRefetching ? (
 				<LoadingSpinner />
 			) : (
 				<>
@@ -135,7 +168,13 @@ export default function Resource({
 							classNameList
 						)}
 					>
-						<NewResource renderNew={renderNew} />
+						<NewResource
+							onCreated={refetch}
+							label={ComputedLabel}
+							entity={entity}
+							renderNew={renderNew}
+							fields={fields}
+						/>
 						{allItems.map((x: any, key: number) => (
 							<ResourceItem
 								key={key}
@@ -205,12 +244,55 @@ const ResourceItem = ({ row, renderItem, itemLabel }: ResourceItemProps) => {
 	);
 };
 
-const NewResource = ({ renderNew }: { renderNew: any }) => {
-	const [isOpen, setIsOpen] = useState(false);
+const NewResource = ({
+	onCreated,
+	renderNew,
+	entity,
+	fields,
+	label,
+}: {
+	onCreated: any;
+	label: string;
+	entity: string;
+	renderNew: any;
+	fields: IFields;
+}) => {
+	const [visible, setVisible] = useState(false);
+
+	const initialState = Object.keys(fields).reduce((acc: any, key: any) => {
+		const type = fields[key].type;
+		if (type === 'number') {
+			acc[key] = 0;
+			return acc;
+		}
+		acc[key] = '';
+		return acc;
+	}, {});
+
+	const [state, formAction, pending] = useActionState(
+		async (_initialState: any, newState: FormData) =>
+			(await updateOrCreate(newState, entity, fields)) as any,
+		{
+			error: {} as any,
+			success: false,
+			...initialState,
+		}
+	);
+
+	useEffect(() => {
+		if (state?.message) {
+			toast?.[state?.message ? 'error' : 'success'](state?.message);
+		}
+		if (state?.success) {
+			onCreated && onCreated();
+			setVisible(false);
+		}
+		console.log(state);
+	}, [state]);
 
 	return (
-		<Sheet open={isOpen} onOpenChange={setIsOpen}>
-			<SheetTrigger>
+		<Sheet open={visible} onOpenChange={setVisible}>
+			<SheetTrigger asChild>
 				{renderNew ? (
 					renderNew()
 				) : (
@@ -224,22 +306,60 @@ const NewResource = ({ renderNew }: { renderNew: any }) => {
 					</Card>
 				)}
 			</SheetTrigger>
-			<SheetContent
-				className="max-w-full md:max-w-1/2"
-				// onInteractOutside={(event) => event.preventDefault()}
-			>
+			<SheetContent className="max-w-full md:max-w-1/2">
 				<SheetHeader>
-					<SheetTitle>Create new component</SheetTitle>
+					<SheetTitle>Create new {label.toLowerCase()}</SheetTitle>
 					<SheetDescription>
-						Fill properly the fields below to create a new component.
+						Fill properly the fields below to create a new {label.toLowerCase()}
+						.
 					</SheetDescription>
 				</SheetHeader>
-				<div className="py-4">
-					<p>Formulário de criação de componente aqui...</p>
-					<Button onClick={() => setIsOpen(false)} className="mt-4">
-						Save
-					</Button>
-				</div>
+				<form action={formAction} className="w-full flex flex-col gap-6 py-6">
+					<div className="flex flex-col gap-6">
+						{Object.keys(fields).map((key: any) => {
+							const field = fields[key];
+							return (
+								<Field key={key}>
+									{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
+									<FieldContent>
+										{['text', 'number', 'email', 'url'].includes(
+											field?.type
+										) && (
+											<Input
+												aria-invalid={Boolean(state?.error?.[key]?.[0])}
+												name={key}
+												type={field?.type}
+												defaultValue={state?.[key]}
+												placeholder={field?.placeholder || ''}
+												disabled={pending}
+											/>
+										)}
+										{field?.type === 'textarea' && (
+											<Textarea
+												className="border resize-none rounded-lg p-2 text-sm"
+												aria-invalid={Boolean(state?.error?.[key]?.[0])}
+												name={key}
+												defaultValue={state?.[key]}
+												placeholder={field?.placeholder || ''}
+												disabled={pending}
+												rows={field?.rows || 5}
+											/>
+										)}
+										<FieldError>{state?.error?.[key] as any}</FieldError>
+									</FieldContent>
+								</Field>
+							);
+						})}
+						<Button
+							type="submit"
+							className="w-full flex items-center gap-2"
+							disabled={pending}
+						>
+							{pending && <Spinner className="size-3" />}
+							Save
+						</Button>
+					</div>
+				</form>
 			</SheetContent>
 		</Sheet>
 	);

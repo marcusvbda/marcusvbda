@@ -23,7 +23,7 @@ export default function FormLogin({
 
 	useEffect(() => {
 		if (state.success) {
-			redirect(redirectTo);
+			redirect(redirectTo as any);
 		}
 	}, [state.success]);
 
