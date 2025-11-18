@@ -8,26 +8,25 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-
 model User {
-  id    Int     @id @default(autoincrement())
-  username  String @unique
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
   password  String
   createdAt DateTime @default(now())
   tokens    Token[]
 }
 
 model Token {
-  id     Int     @id @default(autoincrement())
-  token  String  @unique
-  user   User    @relation(fields: [userId], references: [id])
-  userId Int
+  id        Int      @id @default(autoincrement())
+  token     String   @unique
+  userId    Int
   createdAt DateTime @default(now())
-  dueDate DateTime @default(now())
+  dueDate   DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
 }
 
 model Component {
-  id     Int     @id @default(autoincrement())
-  name   String  @unique
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
   createdAt DateTime @default(now())
 }
