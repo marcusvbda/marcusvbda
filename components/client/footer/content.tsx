@@ -43,7 +43,7 @@ export default function Content({ content }: any) {
 							return (
 								<Link
 									key={`social_${link.label}`}
-									href={link.href}
+									href={link.href as any}
 									target={link.href.startsWith('http') ? '_blank' : undefined}
 									rel={
 										link.href.startsWith('http')

@@ -76,7 +76,7 @@ export default function Content({ content }: any): ReactNode {
 								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
-									href={'https://'.concat(info?.linkedin)}
+									href={'https://'.concat(info?.linkedin) as any}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -91,7 +91,7 @@ export default function Content({ content }: any): ReactNode {
 								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
-									href={'https://'.concat(info?.github)}
+									href={'https://'.concat(info?.github) as any}
 									target="_blank"
 									rel="noopener noreferrer"
 								>

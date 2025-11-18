@@ -78,7 +78,7 @@ export default function Content({ content }: any) {
 												<p className="font-semibold">{method.label}</p>
 												{method.href ? (
 													<Link
-														href={method.href}
+														href={method.href as any}
 														className="text-sm text-muted-foreground flex items-center gap-2 justify-center"
 														target={
 															method.href.startsWith('http')

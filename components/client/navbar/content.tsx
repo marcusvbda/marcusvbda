@@ -72,7 +72,7 @@ export default function Content({ content }: any) {
 						{navItems.map((item) => (
 							<Link
 								key={`nav_${item.label}`}
-								href={item.href}
+								href={item.href as any}
 								onClick={(e) => {
 									e.preventDefault();
 									scrollToSection(item.href);
@@ -113,7 +113,7 @@ export default function Content({ content }: any) {
 							{navItems.map((item) => (
 								<Link
 									key={`nav_${item.label}`}
-									href={item.href}
+									href={item.href as any}
 									onClick={(e) => {
 										e.preventDefault();
 										scrollToSection(item.href);
