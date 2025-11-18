@@ -43,7 +43,7 @@ export default function DynamicForm({
 	const [confirmationDeleteVisible, setConfirmationDeleteVisible] =
 		useState(false);
 
-	const { entity, fields, renderForm } = useResource();
+	const { entity, fields, renderForm, afterSave } = useResource();
 
 	const computedFields = useMemo(() => {
 		let cFields = Object.assign({}, fields);
@@ -60,19 +60,24 @@ export default function DynamicForm({
 	const initialState = itemState
 		? itemState
 		: Object.keys(computedFields).reduce((acc: any, key: any) => {
-				const type = computedFields[key].type;
-				if (type === 'link') return acc;
-				if (type === 'number') {
-					acc[key] = computedFields?.[key] || 0;
-					return acc;
-				}
-				acc[key] == computedFields?.[key] || '';
+			const type = computedFields[key].type;
+			if (type === 'link') return acc;
+			if (type === 'number') {
+				acc[key] = computedFields?.[key] || 0;
 				return acc;
-		  }, {});
+			}
+			acc[key] == computedFields?.[key] || '';
+			return acc;
+		}, {});
 
 	const [state, formAction, pending] = useActionState(
-		async (_initialState: any, newState: FormData) =>
-			(await updateOrCreate(newState, entity, computedFields)) as any,
+		async (_initialState: any, newState: FormData) => {
+			const result = await updateOrCreate(newState, entity, computedFields);
+			if (afterSave) {
+				await afterSave(result);
+			}
+			return result;
+		},
 		{
 			error: {} as any,
 			success: false,
@@ -91,7 +96,8 @@ export default function DynamicForm({
 
 	const { mutate: deleteMutate, isPending: isPendingDelete } = useMutation({
 		mutationFn: async ({ id, modelName }: any) => {
-			return await deleteItem(id, modelName);
+			const result = await deleteItem(id, modelName);
+			return result;
 		},
 	});
 
@@ -195,9 +201,9 @@ export default function DynamicForm({
 			<form action={formAction} className="w-full flex flex-col gap-6">
 				{renderForm
 					? renderForm(renderedForm, {
-							item: itemState,
-							setDrawerVisible: setVisible,
-					  })
+						item: itemState,
+						setDrawerVisible: setVisible,
+					})
 					: renderedForm}
 				<div className="w-full gap-2 flex items-center flex-row">
 					{itemState?.id && (

@@ -45,6 +45,7 @@ export const paginatedFetch = async (
 				return {
 					[key]: {
 						contains: String(value),
+						mode: 'insensitive',
 					},
 				};
 			})
@@ -56,24 +57,8 @@ export const paginatedFetch = async (
 	if (defaultFilter && Object.keys(defaultFilter).length > 0) {
 		const defaultConditions = Object.entries(defaultFilter)
 			.map(([key, value]) => {
-				if (typeof value === 'object' && value !== null) {
-					return { [key]: value };
-				}
-				if (key === 'id') {
-					const numericValue = Number(String(value || '').replace(/\D/g, ''));
-					if (isNaN(numericValue)) {
-						return undefined;
-					}
-					return {
-						id: {
-							equals: numericValue,
-						},
-					};
-				}
 				return {
-					[key]: {
-						equals: String(value),
-					},
+					[key]: value,
 				};
 			})
 			.filter(Boolean);
@@ -150,8 +135,9 @@ export const updateOrCreate = async (
 		const model = (prisma as any)?.[modelName];
 
 		let message = 'Created successfully';
+		let item;
 		if (validatedFields.data.id) {
-			await model.update({
+			item = await model.update({
 				where: {
 					id: validatedFields.data.id,
 				},
@@ -159,12 +145,13 @@ export const updateOrCreate = async (
 			});
 			message = 'Updated successfully';
 		} else {
-			await model.create({
+			item = await model.create({
 				data: validatedFields.data,
 			});
 		}
 
 		return {
+			item,
 			success: true,
 			message,
 		};

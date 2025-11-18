@@ -1,14 +1,6 @@
 import { data } from '@/data';
 
 export const pt = {
-	nav: {
-		about: 'Sobre',
-		experience: 'Experiência',
-		projects: 'Projetos',
-		skills: 'Habilidades',
-		contact: 'Contato',
-		education: 'Educação',
-	},
 	info: data?.info?.pt || {},
 	hero: {
 		greeting: 'Olá, eu sou',

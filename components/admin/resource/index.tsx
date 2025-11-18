@@ -59,6 +59,7 @@ interface IProps {
 	fields: IFields;
 	renderForm?: any;
 	defaultFilter?: any;
+	afterSave?: any
 }
 
 export default function Resource({
@@ -78,6 +79,7 @@ export default function Resource({
 	fields,
 	renderForm,
 	defaultFilter,
+	afterSave
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -128,6 +130,7 @@ export default function Resource({
 		itemLabel,
 		fields,
 		renderItem,
+		afterSave,
 		renderNew,
 		refetch,
 		renderForm,
@@ -138,7 +141,7 @@ export default function Resource({
 			<div className={cn('flex flex-col gap-6', className)}>
 				<div className="flex flex-col gap-2">
 					<h1 className="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl">
-						{ComputedLabel}
+						{pluralLabel}
 					</h1>
 					{description && (
 						<p className="text-muted-foreground text-[1.05rem] text-balance sm:text-base">

@@ -1,9 +1,9 @@
-import { getComponentContent } from '@/server/cms';
+import { getComponentContent, getComponentFields } from '@/server/cms';
 import { use } from 'react';
 import Content from './content';
 
 export default function Wrapper() {
-	const nav = use(getComponentContent('nav'));
+	const nav = use(getComponentFields('navbar'));
 	const info = use(getComponentContent('info'));
 
 	return <Content content={{ nav, info }} />;

@@ -1,14 +1,6 @@
 import { data } from '@/data';
 
 export const en = {
-	nav: {
-		about: 'About',
-		experience: 'Experience',
-		projects: 'Projects',
-		skills: 'Skills',
-		education: 'Education',
-		contact: 'Contact',
-	},
 	info: data?.info?.en || {},
 	hero: {
 		greeting: "Hi, I'm",
