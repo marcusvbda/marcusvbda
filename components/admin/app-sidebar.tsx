@@ -8,6 +8,7 @@ import {
 	SidebarContent,
 	SidebarHeader,
 	SidebarMenu,
+	useSidebar,
 } from '@/components/ui/sidebar';
 import { useSession } from '@/contexts/session-context';
 import { NavUser } from './nav-user';

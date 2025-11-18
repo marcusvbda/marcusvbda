@@ -24,10 +24,10 @@ export const NewResource = () => {
 				{renderNew ? (
 					renderNew()
 				) : (
-					<Card className="group h-32 max-h-32 cursor-pointer border-2 border-dotted bg-transparent shadow-none duration-300 transition-all hover:border-solid">
+					<Card className="group h-18 max-h-18 md:h-24 md:max-h-24 cursor-pointer border-2 border-dotted bg-transparent shadow-none duration-300 transition-all hover:border-solid">
 						<CardHeader className="flex h-full items-center justify-center">
 							<PlusIcon className="size-6 opacity-30 transition-opacity group-hover:opacity-100" />
-							<h4 className="text-lg opacity-30 transition-opacity group-hover:opacity-100">
+							<h4 className="opacity-30 transition-opacity group-hover:opacity-100">
 								Create new
 							</h4>
 						</CardHeader>

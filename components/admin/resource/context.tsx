@@ -14,6 +14,7 @@ interface IResourceContext {
 	fields: IFields;
 	renderItem?: (item: any) => ReactNode;
 	renderNew?: () => ReactNode;
+	renderForm?: (renderedForm: ReactNode, itemState?: any) => ReactNode;
 	refetch: () => void;
 }
 

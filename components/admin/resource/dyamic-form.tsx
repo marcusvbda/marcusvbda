@@ -23,12 +23,13 @@ import {
 	AlertDialogTitle,
 	AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
+import { useMutation } from '@tanstack/react-query';
 
 export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
-	const [deleting, setDeleting] = useState(false);
 	const [confirmationDeleteVisible, setConfirmationDeleteVisible] =
 		useState(false);
-	const { entity, fields } = useResource();
+
+	const { entity, fields, renderForm } = useResource();
 
 	const computedFields = useMemo(() => {
 		let cFields = Object.assign({}, fields);
@@ -73,20 +74,29 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 		}
 	}, [state, onSaved]);
 
+	const { mutate: deleteMutate, isPending: isPendingDelete } = useMutation({
+		mutationFn: async ({ id, modelName }: any) => {
+			return await deleteItem(id, modelName);
+		},
+	});
+
 	const deleteHandler = async (event: React.MouseEvent<HTMLButtonElement>) => {
 		event.preventDefault();
 		if (!itemState?.id) return;
-		setDeleting(true);
-		const result = await deleteItem(itemState.id, entity);
-		if (result.message) {
-			toast?.[result.success ? 'success' : 'error'](result.message);
-		}
-		if (result.success) onSaved();
-		setDeleting(false);
+
+		deleteMutate({ id: itemState?.id, modelName: entity } as any, {
+			onSuccess: (result: any) => {
+				toast?.[result.success ? 'success' : 'error'](result.message);
+				onSaved && onSaved();
+			},
+			onError: (error: any) => {
+				toast?.error(error.message);
+			},
+		});
 	};
 
-	return (
-		<form action={formAction} className="w-full flex flex-col gap-6 py-6">
+	const renderedForm = (
+		<form action={formAction} className="w-full flex flex-col gap-6">
 			<div className="flex flex-col gap-6">
 				{Object.keys(computedFields).map((key: any) => {
 					const field = computedFields[key];
@@ -122,7 +132,7 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 						</Field>
 					);
 				})}
-				<div className="w-full gap-2 flex items-center flex-col md:flex-row">
+				<div className="w-full gap-2 flex items-center flex-row">
 					{itemState?.id && (
 						<AlertDialog
 							open={confirmationDeleteVisible}
@@ -144,16 +154,17 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 								</AlertDialogHeader>
 								<AlertDialogFooter>
 									<AlertDialogCancel
+										disabled={isPendingDelete}
 										onClick={() => setConfirmationDeleteVisible(false)}
 									>
 										Cancel
 									</AlertDialogCancel>
 									<AlertDialogAction
 										onClick={deleteHandler}
-										disabled={deleting}
+										disabled={isPendingDelete}
 										className="flex items-center gap-2"
 									>
-										{deleting && <Spinner className="size-3" />}
+										{isPendingDelete && <Spinner className="size-3" />}
 										Confirm
 									</AlertDialogAction>
 								</AlertDialogFooter>
@@ -171,5 +182,11 @@ export default function DynamicForm({ onSaved, itemState }: any): ReactNode {
 				</div>
 			</div>
 		</form>
+	);
+
+	return (
+		<div className="w-full flex flex-col py-6">
+			{renderForm ? renderForm(renderedForm, itemState) : renderedForm}
+		</div>
 	);
 }

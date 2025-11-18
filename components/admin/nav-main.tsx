@@ -17,8 +17,10 @@ import {
 	SidebarMenuSub,
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
+	useSidebar,
 } from '@/components/ui/sidebar';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export function NavMain({
 	group,
@@ -36,6 +38,9 @@ export function NavMain({
 		}[];
 	}[];
 }) {
+	const { setOpenMobile } = useSidebar();
+	const router = useRouter();
+
 	return (
 		<SidebarGroup>
 			<SidebarGroupLabel>{group}</SidebarGroupLabel>
@@ -44,7 +49,14 @@ export function NavMain({
 					<Collapsible key={item.title} asChild defaultOpen={item.isActive}>
 						<SidebarMenuItem>
 							<SidebarMenuButton asChild tooltip={item.title}>
-								<Link href={item.url as any}>
+								<Link
+									href="#"
+									onClick={(e: any) => {
+										e.preventDefault();
+										router.push(item.url as any);
+										setOpenMobile(false);
+									}}
+								>
 									<item.icon />
 									<span>{item.title}</span>
 								</Link>
@@ -62,9 +74,16 @@ export function NavMain({
 											{item.items?.map((subItem) => (
 												<SidebarMenuSubItem key={subItem.title}>
 													<SidebarMenuSubButton asChild>
-														<a href={subItem.url}>
+														<Link
+															href="#"
+															onClick={(e: any) => {
+																e.preventDefault();
+																router.push(subItem.url as any);
+																setOpenMobile(false);
+															}}
+														>
 															<span>{subItem.title}</span>
-														</a>
+														</Link>
 													</SidebarMenuSubButton>
 												</SidebarMenuSubItem>
 											))}

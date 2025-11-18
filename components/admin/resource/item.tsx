@@ -32,7 +32,7 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 				{renderItem ? (
 					renderItem(row)
 				) : (
-					<Card className="relative h-32 max-h-32 cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-lg">
+					<Card className="relative h-18 max-h-18 md:h-24 md:max-h-24 cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-lg">
 						<span className="absolute right-2 top-2 text-xs font-mono text-muted-foreground">
 							{identifier}
 						</span>

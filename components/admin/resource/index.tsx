@@ -50,6 +50,7 @@ interface IProps {
 	createView?: ReactNode;
 	editView?: any;
 	fields: IFields;
+	renderForm?: any;
 }
 
 export default function Resource({
@@ -67,6 +68,7 @@ export default function Resource({
 	className = '',
 	classNameList = '',
 	fields,
+	renderForm,
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -118,6 +120,7 @@ export default function Resource({
 		renderItem,
 		renderNew,
 		refetch,
+		renderForm,
 	};
 
 	return (

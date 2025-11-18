@@ -27,6 +27,18 @@ export default function ComponentsPage(): ReactNode {
 					required: true,
 				},
 			}}
+			// renderForm={(renderedForm: ReactNode, itemState?: any) => {
+			// 	return (
+			// 		<div className="w-full flex flex-col gap-2">
+			// 			{itemState?.id && (
+			// 				<div className="w-full">
+			// 					<h1 className="text-3xl">{itemState?.id}</h1>
+			// 				</div>
+			// 			)}
+			// 			{renderedForm}
+			// 		</div>
+			// 	);
+			// }}
 		/>
 	);
 }
