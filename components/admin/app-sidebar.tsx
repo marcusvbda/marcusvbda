@@ -24,14 +24,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 			avatar: '/avatars/shadcn.jpg',
 		},
 		items: {
-			Site: [
-				{
-					title: 'Home Page',
-					url: '/',
-					icon: Globe,
-				},
-			],
-			Admin: [
+			' ': [
 				{
 					title: 'Dashboard',
 					url: '/admin',
