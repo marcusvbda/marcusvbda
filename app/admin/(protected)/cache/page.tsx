@@ -11,6 +11,7 @@ import { useMutation } from '@tanstack/react-query';
 import { refreshCacheComponentById } from '@/server/cms';
 import { toast } from 'sonner';
 import { CardItem } from '@/components/admin/resource/item';
+import Link from 'next/link';
 
 export default function CachePage(): ReactNode {
 	useBreadcrumb([
@@ -63,7 +64,10 @@ const CacheItem = ({ row }: any) => {
 		onOpenChange={setVisible}
 	>
 		<AlertDialogTrigger asChild>
-			<CardItem row={row} itemLabel="name" className="border-green-600 hover:border-green-600" />
+			<Link href="#" onClick={(e: any) => [e.preventDefault(), e.stopPropagation(), setVisible(true)]}>
+				<CardItem row={row} itemLabel="name" className="border-green-600 hover:border-green-600" />
+
+			</Link>
 		</AlertDialogTrigger>
 		<AlertDialogContent>
 			<AlertDialogHeader>
