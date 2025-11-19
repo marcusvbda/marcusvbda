@@ -35,6 +35,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function DynamicForm({
+	header,
 	onSaved,
 	itemState,
 	setVisible,
@@ -118,139 +119,142 @@ export default function DynamicForm({
 	const router = useRouter();
 
 	const renderedForm = (
-		<form action={formAction} className="w-full flex flex-col gap-6">
-			<div className="flex flex-col gap-6">
-				{Object.keys(computedFields).map((key: any) => {
-					const field = computedFields[key];
-					return (
-						<Field key={key}>
-							<FieldContent>
-								{['link'].includes(field?.type) && (
-									<>
-										{!itemState?.id && (field?.href || '').includes('[id]') ? (
-											<></>
-										) : (
-											<Item variant="outline">
-												<ItemContent>
-													<ItemTitle>{field?.label}</ItemTitle>
-													<ItemDescription>
-														{field?.description}
-													</ItemDescription>
-												</ItemContent>
-												<ItemActions>
-													<Link
-														href="#"
-														onClick={(e: any) => {
-															e.preventDefault();
-															setVisible(false);
-															setTimeout(() => {
-																router.push(
-																	(field?.href || '').replaceAll(
-																		'[id]',
-																		itemState?.id
-																	)
-																);
-															}, 500);
-														}}
-													>
-														<Button size="sm">
-															Open
-														</Button>
-													</Link>
-												</ItemActions>
-											</Item>
-										)}
-									</>
-								)}
+		<>
+			{header}
+			<form action={formAction} className="w-full flex flex-col gap-6 py-6">
+				<div className="flex flex-col gap-6">
+					{Object.keys(computedFields).map((key: any) => {
+						const field = computedFields[key];
+						return (
+							<Field key={key}>
+								<FieldContent>
+									{['link'].includes(field?.type) && (
+										<>
+											{!itemState?.id && (field?.href || '').includes('[id]') ? (
+												<></>
+											) : (
+												<Item variant="outline">
+													<ItemContent>
+														<ItemTitle>{field?.label}</ItemTitle>
+														<ItemDescription>
+															{field?.description}
+														</ItemDescription>
+													</ItemContent>
+													<ItemActions>
+														<Link
+															href="#"
+															onClick={(e: any) => {
+																e.preventDefault();
+																setVisible(false);
+																setTimeout(() => {
+																	router.push(
+																		(field?.href || '').replaceAll(
+																			'[id]',
+																			itemState?.id
+																		)
+																	);
+																}, 500);
+															}}
+														>
+															<Button size="sm">
+																Open
+															</Button>
+														</Link>
+													</ItemActions>
+												</Item>
+											)}
+										</>
+									)}
 
-								{['text', 'number', 'email', 'url'].includes(field?.type) && (
-									<>
-										{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
-										<Input
-											aria-invalid={Boolean(state?.error?.[key]?.[0])}
-											name={key}
-											type={field?.type}
-											defaultValue={state?.[key]}
-											placeholder={field?.placeholder || ''}
-											disabled={pending}
-											hidden={field?.hidden}
-										/>
-									</>
-								)}
-								{field?.type === 'textarea' && (
-									<>
-										{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
-										<Textarea
-											className="border resize-none rounded-lg p-2 text-sm"
-											aria-invalid={Boolean(state?.error?.[key]?.[0])}
-											name={key}
-											defaultValue={state?.[key]}
-											placeholder={field?.placeholder || ''}
-											disabled={pending}
-											hidden={field?.hidden}
-											rows={field?.rows || 5}
-										/>
-									</>
-								)}
-								<FieldError>{state?.error?.[key] as any}</FieldError>
-							</FieldContent>
-						</Field>
-					);
-				})}
-			</div>
-			<div className="w-full gap-2 flex items-center flex-row">
-				{itemState?.id && (
-					<AlertDialog
-						open={confirmationDeleteVisible}
-						onOpenChange={setConfirmationDeleteVisible}
+									{['text', 'number', 'email', 'url'].includes(field?.type) && (
+										<>
+											{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
+											<Input
+												aria-invalid={Boolean(state?.error?.[key]?.[0])}
+												name={key}
+												type={field?.type}
+												defaultValue={state?.[key]}
+												placeholder={field?.placeholder || ''}
+												disabled={pending}
+												hidden={field?.hidden}
+											/>
+										</>
+									)}
+									{field?.type === 'textarea' && (
+										<>
+											{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
+											<Textarea
+												className="border resize-none rounded-lg p-2 text-sm"
+												aria-invalid={Boolean(state?.error?.[key]?.[0])}
+												name={key}
+												defaultValue={state?.[key]}
+												placeholder={field?.placeholder || ''}
+												disabled={pending}
+												hidden={field?.hidden}
+												rows={field?.rows || 5}
+											/>
+										</>
+									)}
+									<FieldError>{state?.error?.[key] as any}</FieldError>
+								</FieldContent>
+							</Field>
+						);
+					})}
+				</div>
+				<div className="w-full gap-2 flex items-center flex-row">
+					{itemState?.id && (
+						<AlertDialog
+							open={confirmationDeleteVisible}
+							onOpenChange={setConfirmationDeleteVisible}
+						>
+							<AlertDialogTrigger asChild>
+								<Button type="button" variant="destructive" disabled={pending}>
+									Delete
+								</Button>
+							</AlertDialogTrigger>
+							<AlertDialogContent>
+								<AlertDialogHeader>
+									<AlertDialogTitle>
+										Deleting {`${entity.toLowerCase()}`}...
+									</AlertDialogTitle>
+									<AlertDialogDescription>
+										{`Are you sure you want to delete this ${entity.toLowerCase()}?`}
+									</AlertDialogDescription>
+								</AlertDialogHeader>
+								<AlertDialogFooter>
+									<AlertDialogCancel
+										disabled={isPendingDelete}
+										onClick={() => setConfirmationDeleteVisible(false)}
+									>
+										Cancel
+									</AlertDialogCancel>
+									<AlertDialogAction
+										onClick={deleteHandler}
+										disabled={isPendingDelete}
+										className="flex items-center gap-2"
+									>
+										{isPendingDelete && <Spinner className="size-3" />}
+										Confirm
+									</AlertDialogAction>
+								</AlertDialogFooter>
+							</AlertDialogContent>
+						</AlertDialog>
+					)}
+					<Button
+						type="submit"
+						className="flex items-center gap-2 ml-auto"
+						disabled={pending}
 					>
-						<AlertDialogTrigger asChild>
-							<Button type="button" variant="destructive" disabled={pending}>
-								Delete
-							</Button>
-						</AlertDialogTrigger>
-						<AlertDialogContent>
-							<AlertDialogHeader>
-								<AlertDialogTitle>
-									Deleting {`${entity.toLowerCase()}`}...
-								</AlertDialogTitle>
-								<AlertDialogDescription>
-									{`Are you sure you want to delete this ${entity.toLowerCase()}?`}
-								</AlertDialogDescription>
-							</AlertDialogHeader>
-							<AlertDialogFooter>
-								<AlertDialogCancel
-									disabled={isPendingDelete}
-									onClick={() => setConfirmationDeleteVisible(false)}
-								>
-									Cancel
-								</AlertDialogCancel>
-								<AlertDialogAction
-									onClick={deleteHandler}
-									disabled={isPendingDelete}
-									className="flex items-center gap-2"
-								>
-									{isPendingDelete && <Spinner className="size-3" />}
-									Confirm
-								</AlertDialogAction>
-							</AlertDialogFooter>
-						</AlertDialogContent>
-					</AlertDialog>
-				)}
-				<Button
-					type="submit"
-					className="flex items-center gap-2 ml-auto"
-					disabled={pending}
-				>
-					{pending && <Spinner className="size-3" />}
-					Save
-				</Button>
-			</div>
-		</form>
+						{pending && <Spinner className="size-3" />}
+						Save
+					</Button>
+				</div>
+			</form>
+		</>
 	);
 
 	return (
-		<div className="w-full flex flex-col py-6">
+		<div className="w-full flex flex-col">
 			{renderForm
 				? renderForm(renderedForm, {
 					item: itemState,

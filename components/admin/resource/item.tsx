@@ -45,13 +45,17 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 			<SheetContent className="max-w-full md:max-w-1/2">
 				<SheetHeader>
 					<SheetTitle>
-						Update {label.toLowerCase()} {identifier}
 					</SheetTitle>
-					<SheetDescription>
-						Fill properly the fields below to update your {label.toLowerCase()}.
-					</SheetDescription>
 				</SheetHeader>
 				<DynamicForm
+					header={<SheetHeader>
+						<SheetTitle>
+							Update {label.toLowerCase()} {identifier}
+						</SheetTitle>
+						<SheetDescription>
+							Fill properly the fields below to update your {label.toLowerCase()}.
+						</SheetDescription>
+					</SheetHeader>}
 					itemState={row}
 					setVisible={setVisible}
 					onSaved={() => {

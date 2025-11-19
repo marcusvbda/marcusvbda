@@ -38,13 +38,16 @@ export const NewResource = () => {
 			</SheetTrigger>
 			<SheetContent className="max-w-full md:max-w-1/2">
 				<SheetHeader>
-					<SheetTitle>Create new {label.toLowerCase()}</SheetTitle>
-					<SheetDescription>
-						Fill properly the fields below to create a new {label.toLowerCase()}
-						.
-					</SheetDescription>
+					<SheetTitle></SheetTitle>
 				</SheetHeader>
 				<DynamicForm
+					header={<SheetHeader>
+						<SheetTitle>Create new {label.toLowerCase()}</SheetTitle>
+						<SheetDescription>
+							Fill properly the fields below to create a new {label.toLowerCase()}
+							.
+						</SheetDescription>
+					</SheetHeader>}
 					setVisible={setVisible}
 					onSaved={() => {
 						refetch();
