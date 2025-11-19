@@ -55,14 +55,7 @@ export const paginatedFetch = async (
 	}
 
 	if (defaultFilter && Object.keys(defaultFilter).length > 0) {
-		const defaultConditions = Object.entries(defaultFilter)
-			.map(([key, value]) => {
-				return {
-					[key]: value,
-				};
-			})
-			.filter(Boolean);
-		where = { ...where, AND: defaultConditions };
+		where = { ...where, AND: defaultFilter };
 	}
 
 	const [data, total, totalResult] = await Promise.all([

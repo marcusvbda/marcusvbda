@@ -3,6 +3,7 @@
 import { translations } from '@/lib/translations';
 import { PrismaClient } from '@prisma/client';
 import { cacheLife, cacheTag, updateTag } from 'next/cache';
+import { success } from 'zod';
 
 export const getComponentContent = async (component: string) => {
 	'use cache';
@@ -39,15 +40,27 @@ export const getComponentFields = async (component: string) => {
 	return result;
 };
 
-
 export const refreshCacheComponentById = async (id: number) => {
-	const prisma = new PrismaClient();
-	const comp = await prisma.component.findUnique({
-		where: { id },
-	});
-	const componentName = comp?.name;
-	if (componentName) {
-		updateTag(componentName);
-		getComponentFields(componentName)
+	try {
+		const prisma = new PrismaClient();
+		const comp = await prisma.component.findUnique({
+			where: { id },
+		});
+		const componentName = comp?.name;
+		if (componentName) {
+			await updateTag(componentName);
+			await getComponentFields(componentName)
+		}
+
+		return {
+			success: true,
+			message: "Cache cleared succesfully"
+		}
+	} catch (error) {
+		return {
+			success: false,
+			message: "Something went wrong"
+		}
 	}
+
 };

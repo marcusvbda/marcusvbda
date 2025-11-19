@@ -15,8 +15,10 @@ import { useResource } from './context';
 import DynamicForm from './dyamic-form';
 
 export const NewResource = () => {
-	const { label, renderNew, refetch } = useResource();
+	const { label, renderNew, refetch, hideNew } = useResource();
 	const [visible, setVisible] = useState(false);
+
+	if (hideNew) return <></>
 
 	return (
 		<Sheet open={visible} onOpenChange={setVisible}>

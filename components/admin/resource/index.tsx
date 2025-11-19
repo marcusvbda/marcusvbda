@@ -27,7 +27,7 @@ interface ILink {
 	type: 'link';
 	href: string;
 	label: string;
-	icon: ReactNode;
+	description?: string;
 }
 
 interface ITextarea {
@@ -56,13 +56,17 @@ interface IProps {
 	classNameList?: string;
 	createView?: ReactNode;
 	editView?: any;
-	fields: IFields;
+	fields?: IFields;
 	renderForm?: any;
 	defaultFilter?: any;
 	afterSave?: any
+	icon?: ReactNode,
+	beforeList?: any
+	hideNew?: boolean
 }
 
 export default function Resource({
+	hideNew = false,
 	entity,
 	label,
 	pluralLabel,
@@ -76,10 +80,12 @@ export default function Resource({
 	orderBy = { id: 'desc' },
 	className = '',
 	classNameList = '',
-	fields,
+	fields = {},
 	renderForm,
 	defaultFilter,
-	afterSave
+	afterSave,
+	icon,
+	beforeList
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -99,7 +105,7 @@ export default function Resource({
 		refetch,
 		isRefetching,
 	} = useInfiniteQuery({
-		queryKey: [entity, perPage, orderBy, filter],
+		queryKey: [entity, perPage, orderBy, filter, defaultFilter],
 		queryFn: async ({ pageParam = 1 }) =>
 			await paginatedFetch(entity, {
 				page: pageParam,
@@ -134,13 +140,15 @@ export default function Resource({
 		renderNew,
 		refetch,
 		renderForm,
+		hideNew
 	};
 
 	return (
 		<ResourceProvider value={contextValue}>
 			<div className={cn('flex flex-col gap-6', className)}>
 				<div className="flex flex-col gap-2">
-					<h1 className="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl">
+					<h1 className="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl flex items-center gap-2">
+						{icon && icon}
 						{pluralLabel}
 					</h1>
 					{description && (
@@ -159,7 +167,7 @@ export default function Resource({
 						</div>
 					)}
 				</div>
-
+				{beforeList && beforeList}
 				{isLoading || isRefetching ? (
 					<LoadingSpinner />
 				) : (

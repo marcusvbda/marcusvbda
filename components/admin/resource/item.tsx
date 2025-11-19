@@ -10,9 +10,7 @@ import {
 } from '@/components/ui/sheet';
 import { Card, CardHeader } from '@/components/ui/card';
 import { useResource } from './context';
-import { useActionState, useEffect, useState } from 'react';
-import { toast } from 'sonner';
-import { updateOrCreate } from './server/actions';
+import { useState } from 'react';
 import DynamicForm from './dyamic-form';
 
 interface ResourceItemProps {

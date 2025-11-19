@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { BoxIcon, Globe, LayoutDashboard } from 'lucide-react';
+import { BoxIcon, DatabaseIcon, Globe, LayoutDashboard } from 'lucide-react';
 
 import {
 	Sidebar,
@@ -39,6 +39,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 				},
 			],
 			CMS: [
+				{
+					title: 'Cache',
+					url: '/admin/cache',
+					icon: DatabaseIcon,
+				},
 				{
 					title: 'Components',
 					url: '/admin/components',

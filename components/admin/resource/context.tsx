@@ -17,6 +17,7 @@ interface IResourceContext {
 	renderForm?: (renderedForm: ReactNode, itemState?: any) => ReactNode;
 	refetch: () => void;
 	afterSave?: (result: any) => void;
+	hideNew: boolean
 }
 
 const ResourceContext = createContext<IResourceContext | undefined>(undefined);

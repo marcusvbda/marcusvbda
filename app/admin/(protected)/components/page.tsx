@@ -3,8 +3,7 @@
 import { ReactNode } from 'react';
 import { useBreadcrumb } from '@/store/admin/use-breadcrumb';
 import Resource from '@/components/admin/resource';
-import { ListCheckIcon } from 'lucide-react';
-import { refreshCacheComponentById } from '@/server/cms';
+import { LayoutDashboard } from 'lucide-react';
 
 export default function ComponentsPage(): ReactNode {
 	useBreadcrumb([
@@ -16,17 +15,17 @@ export default function ComponentsPage(): ReactNode {
 	return (
 		<Resource
 			entity="Component"
+			icon={<LayoutDashboard className='size-10' />}
 			label="Component"
 			pluralLabel="Components"
 			description="Define your components to organize fields and consume it in your application."
 			filterBy="id,name"
 			itemLabel="name"
-			afterSave={(result: any) => refreshCacheComponentById(Number(result?.item?.id))}
 			fields={{
 				fieldsLink: {
 					type: 'link',
-					icon: <ListCheckIcon className="size-5" />,
-					label: 'Check component fields',
+					description: "Check the component fields",
+					label: 'Fields',
 					href: '/admin/components/[id]/fields',
 				},
 				name: {
