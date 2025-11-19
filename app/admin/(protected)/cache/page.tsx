@@ -4,7 +4,6 @@ import { ReactNode, useState } from 'react';
 import { useBreadcrumb } from '@/store/admin/use-breadcrumb';
 import Resource from '@/components/admin/resource';
 import { LayoutDashboard } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Spinner } from '@/components/ui/spinner';
 import { useMutation } from '@tanstack/react-query';
@@ -29,14 +28,14 @@ export default function CachePage(): ReactNode {
 			filterBy="id,name"
 			itemLabel="name"
 			hideNew={true}
-			renderItem={(row: any) => <CacheItem row={row} />}
+			renderItem={(cx: any) => <CacheItem cx={cx} />}
 		/>
 	);
 }
 
 
-const CacheItem = ({ row }: any) => {
-	const identifier = `#${row?.id && row?.id.toString().padStart(6, '0')}`;
+const CacheItem = ({ cx }: any) => {
+	const { row } = cx
 	const [visible, setVisible] = useState(false)
 	const { mutate, isPending } = useMutation({
 		mutationFn: async ({ id }: any) => {
@@ -64,10 +63,7 @@ const CacheItem = ({ row }: any) => {
 		onOpenChange={setVisible}
 	>
 		<AlertDialogTrigger asChild>
-			<Link href="#" onClick={(e: any) => [e.preventDefault(), e.stopPropagation(), setVisible(true)]}>
-				<CardItem row={row} itemLabel="name" className="border-green-600 hover:border-green-600" />
-
-			</Link>
+			<CardItem row={row} itemLabel="name" className="border-green-600 hover:border-green-600" onClick={(e: any) => [e.preventDefault(), e.stopPropagation(), setVisible(true)]} />
 		</AlertDialogTrigger>
 		<AlertDialogContent>
 			<AlertDialogHeader>

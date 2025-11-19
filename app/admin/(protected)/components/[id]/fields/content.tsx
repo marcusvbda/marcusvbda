@@ -6,6 +6,7 @@ import Resource from '@/components/admin/resource';
 import { ListIcon } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CardItem } from '@/components/admin/resource/item';
+import Link from 'next/link';
 
 export default function FieldPageContentClient({ component }: any): ReactNode {
     const [language, setLanguage] = useState("en")
@@ -58,8 +59,13 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                     required: true,
                 },
             }}
-            renderItem={(row: any) => {
-                return <CardItem row={row} itemLabel="name">
+            renderItem={(cx: any) => {
+                const { row, setVisible } = cx
+                return <CardItem row={row} itemLabel="name" onClick={(e: any) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setVisible(true);
+                }} >
                     <div className='text-sm text-muted-foreground'>{row?.value}</div>
                 </CardItem>
             }}
