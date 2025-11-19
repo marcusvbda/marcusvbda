@@ -11,7 +11,7 @@ export default function AdminPage(): ReactNode {
 	return (
 		<div className="flex flex-col gap-12">
 			<div className="flex flex-col gap-2">
-				<h1 className="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl flex items-center gap-2">
+				<h1 className="scroll-m-20 text-xl md:text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl flex items-center gap-2">
 					<LayoutDashboard className='size-10' />
 					Components & Fields
 				</h1>
@@ -27,7 +27,7 @@ export default function AdminPage(): ReactNode {
 			</div>
 
 			<div className="flex flex-col gap-2">
-				<h1 className="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl flex items-center gap-2">
+				<h1 className="scroll-m-20 text-xl md:text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl flex items-center gap-2">
 					<Globe2Icon className='size-10' />
 					Main Site
 				</h1>

@@ -25,7 +25,7 @@ export default function FormLogin({
 		if (state.success) {
 			redirect(redirectTo as any);
 		}
-	}, [state.success]);
+	}, [state, redirectTo]);
 
 	return (
 		<div className="w-full flex flex-col items-center py-10 gap-6">

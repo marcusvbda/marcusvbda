@@ -33,6 +33,7 @@ import {
 } from '@/components/ui/item';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Select from './fields/Select';
 
 export default function DynamicForm({
 	header,
@@ -193,6 +194,27 @@ export default function DynamicForm({
 												hidden={field?.hidden}
 												rows={field?.rows || 5}
 											/>
+										</>
+									)}
+									{field?.type === 'radio' && (
+										<>
+											{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
+											<div className='flex flex-col gap-2 w-full'>
+												{(field?.options || []).map((op: any, opKey: any) => <label key={opKey} className='flex items-center gap-2 text-xs text-muted-foreground'>
+													<input type='radio' name={key} value={op.value} checked={state?.[key] === op.value} />{op.label}
+												</label>)}
+											</div>
+										</>
+									)}
+									{field?.type === 'select' && (
+										<>
+											{field?.label && <FieldLabel>{field?.label}</FieldLabel>}
+											<Select state={state} index={key} field={field} pending={pending} />
+										</>
+									)}
+									{field?.type === 'custom' && (
+										<>
+											{field?.render && field?.render({ state, pending, field })}
 										</>
 									)}
 									<FieldError>{state?.error?.[key] as any}</FieldError>

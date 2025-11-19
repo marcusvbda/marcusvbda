@@ -5,17 +5,16 @@ import { useBreadcrumb } from '@/store/admin/use-breadcrumb';
 import Resource from '@/components/admin/resource';
 import { LayoutDashboard } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import Link from 'next/link';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Spinner } from '@/components/ui/spinner';
 import { useMutation } from '@tanstack/react-query';
 import { refreshCacheComponentById } from '@/server/cms';
 import { toast } from 'sonner';
+import { CardItem } from '@/components/admin/resource/item';
 
 export default function CachePage(): ReactNode {
 	useBreadcrumb([
 		{ href: '/admin', label: 'Home' },
-		{ label: 'CMS' },
 		{ label: 'Cache' },
 	]);
 
@@ -64,23 +63,7 @@ const CacheItem = ({ row }: any) => {
 		onOpenChange={setVisible}
 	>
 		<AlertDialogTrigger asChild>
-			<Card className="relative h-18 max-h-18 md:h-24 md:max-h-24 cursor-pointer transition-all duration-300 border-2 border-green-600 hover:border-green-600 hover:shadow-lg" >
-				<CardContent className="h-full items-center p-4 gap-4 grid grid-cols-1 md:grid-cols-3">
-					<span className="text-xs font-mono text-muted-foreground">
-						{identifier}
-					</span>
-					<div>
-						<h4 className="font-semibold gap-4">
-							{row?.name}
-						</h4>
-					</div>
-					<div>
-						<h4 className="font-semibold gap-4 text-muted-foreground">
-							{row?.value}
-						</h4>
-					</div>
-				</CardContent>
-			</Card >
+			<CardItem row={row} itemLabel="name" className="border-green-600 hover:border-green-600" />
 		</AlertDialogTrigger>
 		<AlertDialogContent>
 			<AlertDialogHeader>

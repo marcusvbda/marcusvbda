@@ -28,11 +28,13 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 	return (
 		<Sheet open={visible} onOpenChange={setVisible}>
 			<SheetTrigger asChild>
-				{renderItem ? (
-					renderItem(row)
-				) : (
-					<CardItem row={row} itemLabel={itemLabel} identifier={identifier} />
-				)}
+				<div>
+					{renderItem ? (
+						renderItem(row)
+					) : (
+						<CardItem row={row} itemLabel={itemLabel} identifier={identifier} />
+					)}
+				</div>
 			</SheetTrigger>
 			<SheetContent className="max-w-full md:max-w-1/2">
 				<SheetHeader>

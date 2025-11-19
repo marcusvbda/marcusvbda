@@ -21,7 +21,7 @@ export const getComponentFields = async (component: string) => {
 	cacheLife('max');
 	cacheTag(component);
 	const prisma = new PrismaClient();
-	const comp = await prisma.component.findUnique({
+	const comp = await (prisma as any)?.component.findUnique({
 		where: {
 			name: component,
 		},
@@ -42,7 +42,7 @@ export const getComponentFields = async (component: string) => {
 export const refreshCacheComponentById = async (id: number) => {
 	try {
 		const prisma = new PrismaClient();
-		const comp = await prisma.component.findUnique({
+		const comp = await (prisma as any)?.component.findUnique({
 			where: { id },
 		});
 		const componentName = comp?.name;

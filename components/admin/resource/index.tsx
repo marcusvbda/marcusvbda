@@ -35,8 +35,24 @@ interface ITextarea {
 	rows?: number;
 }
 
+interface IRadio {
+	type: 'radio';
+	options: { label: string; value: string }[];
+}
+
+interface ISelect {
+	type: 'select';
+	options: { label: string; value: string }[];
+	placeholder?: string;
+}
+
+interface ICustom {
+	type: 'custom';
+	render: any;
+}
+
 interface IFields {
-	[key: string]: ILink | (ICommon & (IText | ITextarea));
+	[key: string]: ILink | (ICommon & (IText | ITextarea | IRadio | ISelect | ICustom));
 }
 
 interface IProps {
@@ -157,10 +173,10 @@ export default function Resource({
 						</p>
 					)}
 					{filterBy && (
-						<div className="flex items-center justify-between gap-4">
+						<div className="flex items-center justify-between gap-4 mt-4 w-full md:mt-0">
 							<Input
 								placeholder={filterPlaceholder}
-								className="w-full max-w-xs ml-auto"
+								className="w-full md:max-w-xs ml-auto"
 								value={search}
 								onChange={(e) => setSearch(e.target.value)}
 							/>

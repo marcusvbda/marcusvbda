@@ -8,7 +8,6 @@ import { LayoutDashboard } from 'lucide-react';
 export default function ComponentsPage(): ReactNode {
 	useBreadcrumb([
 		{ href: '/admin', label: 'Home' },
-		{ label: 'CMS' },
 		{ label: 'Components' },
 	]);
 

@@ -7,9 +7,9 @@ export default async function LoginPage({
 	searchParams,
 }: any): Promise<ReactNode> {
 	const session = await getCurrentSession();
-	if (session?.id && session?.user?.id) {
-		return redirect('/admin');
-	}
 	const redirectTo = (await searchParams).redirect;
+	if (session?.id && session?.user?.id) {
+		return redirect(redirectTo || '/admin');
+	}
 	return <FormLogin redirectTo={redirectTo || '/admin'} />;
 }
