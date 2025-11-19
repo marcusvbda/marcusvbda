@@ -34,8 +34,9 @@ model Component {
 
 model Field {
   id           Int      @id @default(autoincrement())
-  name         String   @unique
+  name         String   
   value        String  
+  language     String   
   componentId  Int
   createdAt DateTime @default(now())
   component Component @relation(fields: [componentId], references: [id])

@@ -31,9 +31,8 @@ export const getComponentFields = async (component: string) => {
 	});
 
 	const result = (comp?.fields || []).reduce((acc: any, item: any) => {
-		const [key, lang] = item.name.split('_');
-		if (!acc[lang]) acc[lang] = {};
-		acc[lang][key] = item.value;
+		if (!acc[item.language]) acc[item.language] = {};
+		acc[item.language][item.name] = item.value;
 		return acc;
 	}, {});
 

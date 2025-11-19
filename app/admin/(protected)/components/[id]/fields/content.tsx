@@ -7,6 +7,7 @@ import Resource from '@/components/admin/resource';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { ListIcon, PlusIcon } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { CardItem } from '@/components/admin/resource/item';
 
 export default function FieldPageContentClient({ component }: any): ReactNode {
     const [tab, setTab] = useState("_en")
@@ -34,7 +35,6 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                         contains: tab
                     }
                 }}
-                classNameList="grid-cols-1!"
                 beforeList={
                     <Tabs defaultValue={tab}>
                         <TabsList>
@@ -49,6 +49,12 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                         placeholder: 'Field name',
                         required: true,
                     },
+                    language: {
+                        type: 'text',
+                        label: 'Language',
+                        placeholder: 'Field language',
+                        required: true,
+                    },
                     value: {
                         type: 'text',
                         label: 'Value',
@@ -57,36 +63,9 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                     },
                 }}
                 renderItem={(row: any) => {
-                    const identifier = `#${row?.id && row?.id.toString().padStart(6, '0')}`;
-                    return <Card className="relative cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-lg">
-                        <CardContent className="h-full items-center p-4 gap-4 grid grid-cols-1 md:grid-cols-3">
-                            <span className="text-xs font-mono text-muted-foreground">
-                                {identifier}
-                            </span>
-                            <div>
-                                <h4 className="font-semibold gap-4">
-                                    {row?.name}
-                                </h4>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold gap-4 text-muted-foreground">
-                                    {row?.value}
-                                </h4>
-                            </div>
-                        </CardContent>
-                    </Card >
-                }}
-                renderNew={() => {
-                    return <Card className="group cursor-pointer border-2 border-dotted bg-transparent shadow-none duration-300 transition-all hover:border-solid">
-                        <CardHeader className="flex h-full items-center justify-center py-4">
-                            <div className='flex items-center gap-2'>
-                                <PlusIcon className="size-4 opacity-30 transition-opacity group-hover:opacity-100" />
-                                <h4 className="opacity-30 transition-opacity group-hover:opacity-100">
-                                    Create new
-                                </h4>
-                            </div>
-                        </CardHeader>
-                    </Card>
+                    return <CardItem row={row} itemLabel="name">
+                        <div className='text-sm text-muted-foreground'>{row?.value}</div>
+                    </CardItem>
                 }}
             /></>
     );

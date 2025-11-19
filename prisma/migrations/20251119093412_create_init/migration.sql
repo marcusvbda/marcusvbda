@@ -33,6 +33,7 @@ CREATE TABLE "Field" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "value" TEXT NOT NULL,
+    "language" TEXT NOT NULL,
     "componentId" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -47,9 +48,6 @@ CREATE UNIQUE INDEX "Token_token_key" ON "Token"("token");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Component_name_key" ON "Component"("name");
-
--- CreateIndex
-CREATE UNIQUE INDEX "Field_name_key" ON "Field"("name");
 
 -- AddForeignKey
 ALTER TABLE "Token" ADD CONSTRAINT "Token_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

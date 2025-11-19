@@ -20,51 +20,63 @@ const createNavbarContent = async (prisma: any) => {
 				createMany: {
 					data: [
 						{
-							name: 'about_en',
+							name: 'about',
+							language: 'en',
 							value: 'About',
 						},
 						{
-							name: 'experience_en',
+							name: 'experience',
+							language: 'en',
 							value: 'Experience',
 						},
 						{
-							name: 'projects_en',
+							name: 'projects',
+							language: 'en',
 							value: 'Projects',
 						},
 						{
-							name: 'skills_en',
+							name: 'skills',
+							language: 'en',
 							value: 'Skills',
 						},
 						{
-							name: 'education_en',
+							name: 'education',
+							language: 'en',
 							value: 'Education',
 						},
 						{
-							name: 'contact_en',
+							name: 'contact',
+							language: 'en',
 							value: 'Contact',
 						},
 						{
-							name: 'about_pt',
+							name: 'about',
+							language: 'pt',
 							value: 'Sobre',
 						},
 						{
-							name: 'experience_pt',
+							name: 'experience',
+							language: 'pt',
 							value: 'Experiência',
 						},
 						{
-							name: 'projects_pt',
+							name: 'projects',
+							language: 'pt',
 							value: 'Projetos',
 						},
 						{
-							name: 'skills_pt',
+							name: 'skills',
+							language: 'pt',
 							value: 'Habilidades',
 						},
 						{
-							name: 'education_pt',
+							name: 'education',
+							language: 'pt',
 							value: 'Educação',
 						},
 						{
-							name: 'contact_pt',
+							name: 'contact',
+							language: 'pt',
 							value: 'Contato',
 						},
 					]

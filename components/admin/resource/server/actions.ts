@@ -65,7 +65,7 @@ export const paginatedFetch = async (
 			orderBy: orderBy,
 			where,
 		}),
-		model.count(),
+		model.count({ where: defaultFilter }),
 		model.count({ where }),
 	]);
 
