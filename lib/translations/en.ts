@@ -2,17 +2,6 @@ import { data } from '@/data';
 
 export const en = {
 	info: data?.info?.en || {},
-	hero: {
-		greeting: "Hi, I'm",
-		avatar: data?.info?.en?.avatar || '',
-		name: data?.info?.en?.name || '',
-		role: data?.info?.en?.role || '',
-		location: data?.info?.en?.location || '',
-		bio: data?.bio?.en || '',
-		cta: 'Get in touch',
-		scrollDown: 'Scroll down to explore',
-		checkCv: 'Check my CV',
-	},
 	about: {
 		title: 'About Me',
 		subtitle: 'Crafting Digital Experiences',

@@ -2,17 +2,6 @@ import { data } from '@/data';
 
 export const pt = {
 	info: data?.info?.pt || {},
-	hero: {
-		greeting: 'Olá, eu sou',
-		avatar: data?.info?.pt?.avatar || '',
-		name: data?.info?.pt?.name || '',
-		role: data?.info?.pt?.role || '',
-		location: data?.info?.pt?.location || '',
-		bio: data?.bio?.pt || '',
-		cta: 'Entre em contato',
-		scrollDown: 'Role para explorar',
-		checkCv: 'Veja meu CV',
-	},
 	about: {
 		title: 'Sobre Mim',
 		subtitle: 'Criando Experiências Digitais',

@@ -3,7 +3,6 @@
 import { translations } from '@/lib/translations';
 import { PrismaClient } from '@prisma/client';
 import { cacheLife, cacheTag, updateTag } from 'next/cache';
-import { success } from 'zod';
 
 export const getComponentContent = async (component: string) => {
 	'use cache';

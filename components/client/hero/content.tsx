@@ -41,7 +41,7 @@ export default function Content({ content }: any): ReactNode {
 					<div className="space-y-6 animate-fade-in">
 						<div className="space-y-2">
 							<p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-								{hero?.greetings}
+								{hero?.greeting}
 							</p>
 							<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
 								{hero?.name}
