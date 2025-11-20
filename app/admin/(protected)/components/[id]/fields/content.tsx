@@ -53,7 +53,8 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                     ],
                 },
                 value: {
-                    type: 'text',
+                    type: 'textarea',
+                    rows: 6,
                     label: 'Value',
                     placeholder: 'Field value',
                     required: true,
@@ -66,7 +67,7 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
                     e.stopPropagation();
                     setVisible(true);
                 }} >
-                    <div className='text-sm text-muted-foreground'>{row?.value}</div>
+                    <div className='text-sm text-muted-foreground truncate w-full max-w-full overflow-hidden text-center'>{row?.value}</div>
                 </CardItem>
             }}
         />

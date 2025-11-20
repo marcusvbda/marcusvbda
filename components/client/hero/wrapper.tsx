@@ -4,8 +4,8 @@ import Content from './content';
 
 export default function Wrapper() {
 	const hero = use(getComponentFields('hero'));
-	const info = use(getComponentContent('info'));
-	const about = use(getComponentContent('about'));
+	const info = use(getComponentFields('info'));
+	const about = use(getComponentFields('about'));
 	const experience = use(getComponentContent('experience'));
 	const skills = use(getComponentContent('skills'));
 	const education = use(getComponentContent('education'));

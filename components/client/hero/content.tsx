@@ -104,7 +104,7 @@ export default function Content({ content }: any): ReactNode {
 									className="w-full"
 									document={
 										<RenderDocument
-											data={data}
+											data={{ ...data, info }}
 											lang={language}
 											sections={{
 												summary: about?.title,

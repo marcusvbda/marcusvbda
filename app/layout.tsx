@@ -15,24 +15,22 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-	const title = data?.info?.en?.name || '';
-	const description = data?.bio?.en || '';
-	const author = data?.info?.en?.name || '';
-	const role = data?.info?.en?.role || '';
+	const title = "Marcus Vinicius Bassalobre de Assis";
+	const description = "Software Engineer";
 
 	return {
 		title,
 		description,
 		keywords: data?.keywords?.split(',') || [],
-		authors: [{ name: author }],
+		authors: [{ name: title }],
 		openGraph: {
-			title: `${title} - ${role}`,
+			title: `${title} - ${description}`,
 			description,
 			type: 'website',
 		},
 		twitter: {
 			card: 'summary_large_image',
-			title: `${title} - ${role}`,
+			title: `${title} - ${description}`,
 			description,
 		},
 	};

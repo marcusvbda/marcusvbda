@@ -1,30 +1,6 @@
 export const data = {
 	keywords:
 		'fullstack engineer, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
-	info: {
-		pt: {
-			avatar: '/assets/mac.png',
-			name: 'Marcus Vinicius Bassalobre de Assis',
-			role: 'Engenheiro Fullstack Sênior',
-			email: 'bassalobre.vinicius@gmail.com',
-			site: 'mvbassalobre.com',
-			linkedin: 'linkedin.com/in/mvbassalobre',
-			phone: '+353-81-881-8967 (Irlanda), +55 (14) 99676-6177 (Brasil)',
-			github: 'github.com/marcusvbda',
-			location: 'Dublin, Irlanda',
-		},
-		en: {
-			avatar: '/assets/mac.png',
-			name: 'Marcus Vinicius Bassalobre de Assis',
-			role: 'Senior Fullstack Engineer',
-			email: 'bassalobre.vinicius@gmail.com',
-			site: 'mvbassalobre.com',
-			linkedin: 'linkedin.com/in/mvbassalobre',
-			phone: '+353-81-881-8967 (Ireland), +55 (14) 99676-6177 (Brazil)',
-			github: 'github.com/marcusvbda',
-			location: 'Dublin, Ireland',
-		},
-	},
 	bio: {
 		pt: 'Sou Engenheiro de Software Fullstack Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
 		en: "I'm a Senior Fullstack Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",

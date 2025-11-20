@@ -1,13 +1,6 @@
 import { data } from '@/data';
 
 export const pt = {
-	info: data?.info?.pt || {},
-	about: {
-		title: 'Sobre Mim',
-		subtitle: 'Criando Experiências Digitais',
-		description: data?.about?.pt || '',
-		image: '/assets/blue.png',
-	},
 	experience: {
 		title: 'Experiência',
 		subtitle: 'Jornada Profissional',

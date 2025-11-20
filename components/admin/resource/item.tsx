@@ -25,7 +25,6 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 	const { label, itemLabel, renderItem, refetch } = useResource();
 	const identifier = `#${row?.id && row?.id.toString().padStart(6, '0')}`;
 
-
 	return (
 		<>
 			{renderItem && renderItem({ row, setVisible })}
@@ -63,7 +62,6 @@ export const ResourceItem = ({ row }: ResourceItemProps) => {
 		</>
 	);
 };
-
 
 export const CardItem = ({ className = '', row, itemLabel, children = null, onClick }: any) => {
 	const identifier = `#${row?.id && row?.id.toString().padStart(6, '0')}`;

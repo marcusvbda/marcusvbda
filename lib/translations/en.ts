@@ -1,13 +1,6 @@
 import { data } from '@/data';
 
 export const en = {
-	info: data?.info?.en || {},
-	about: {
-		title: 'About Me',
-		subtitle: 'Crafting Digital Experiences',
-		description: data?.about?.en || '',
-		image: '/assets/blue.png',
-	},
 	experience: {
 		title: 'Experience',
 		subtitle: 'Career Journey',

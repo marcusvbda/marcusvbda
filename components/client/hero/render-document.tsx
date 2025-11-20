@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 });
 
 export const RenderDocument = ({ data, lang, sections }: any) => {
-	const info = data.info[lang];
+	const info = data.info;
 	const bio = data.about[lang];
 	const experiences = data.experiences[lang];
 	const skills = data.skills[lang];
