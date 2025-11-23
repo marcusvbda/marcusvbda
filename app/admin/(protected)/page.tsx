@@ -32,7 +32,7 @@ export default function AdminPage(): ReactNode {
 					Main Site
 				</h1>
 				<div className='flex items-center gap-2 flex-wrap'>
-					<Link href="/admin/components" className="text-muted-foreground text-[1.05rem] text-balance sm:text-base underline">
+					<Link href="/" className="text-muted-foreground text-[1.05rem] text-balance sm:text-base underline">
 						Check the main website
 					</Link>
 				</div>

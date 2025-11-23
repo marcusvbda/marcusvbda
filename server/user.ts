@@ -1,9 +1,8 @@
 'use server';
 import { cookies } from 'next/headers';
 import crypto from 'crypto';
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
-const bcrypt = require('bcrypt');
+import db from '@/lib/db'
+import bcrypt from 'bcrypt';
 import { z } from 'zod';
 
 export const loginByUserName = async (prevState: any, formData: FormData) => {
@@ -25,7 +24,7 @@ export const loginByUserName = async (prevState: any, formData: FormData) => {
 
 	const { username, password } = validation.data;
 
-	const foundUser = await prisma.user.findUnique({
+	const foundUser = await db.user.findUnique({
 		where: {
 			username,
 		},
@@ -67,7 +66,7 @@ export const loginUser = async (user: any) => {
 
 	const newDuete = new Date(Date.now() + maxAge * 1000);
 
-	await prisma.token.deleteMany({
+	await db.token.deleteMany({
 		where: {
 			dueDate: {
 				lt: newDuete,
@@ -75,7 +74,7 @@ export const loginUser = async (user: any) => {
 		},
 	});
 
-	await prisma.token.create({
+	await db.token.create({
 		data: {
 			token,
 			dueDate: newDuete,
@@ -101,7 +100,7 @@ export const getCurrentSession = async () => {
 		return null;
 	}
 
-	const token = await prisma.token.findUnique({
+	const token = await db.token.findUnique({
 		where: {
 			token: session,
 		},
@@ -115,7 +114,7 @@ export const getCurrentSession = async () => {
 	}
 
 	if (token.dueDate < new Date()) {
-		await prisma.token.delete({
+		await db.token.delete({
 			where: {
 				id: token.id,
 			},
@@ -129,7 +128,7 @@ export const getCurrentSession = async () => {
 export const signOut = async () => {
 	const session = await getCurrentSession();
 	if (session) {
-		await prisma.token.delete({
+		await db.token.delete({
 			where: {
 				id: session.id,
 			},

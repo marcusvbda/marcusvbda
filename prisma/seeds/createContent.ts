@@ -14,7 +14,6 @@ export default async function (prisma: any) {
 	])
 }
 
-
 const createNavbarContent = async (prisma: any) => {
 	await prisma.component.create({
 		data: {
@@ -22,6 +21,11 @@ const createNavbarContent = async (prisma: any) => {
 			fields: {
 				createMany: {
 					data: [
+						{
+							name: 'logo',
+							language: 'en',
+							value: '/assets/logo.png',
+						},
 						{
 							name: 'about',
 							language: 'en',
@@ -51,6 +55,11 @@ const createNavbarContent = async (prisma: any) => {
 							name: 'contact',
 							language: 'en',
 							value: 'Contact',
+						},
+						{
+							name: 'logo',
+							language: 'pt',
+							value: '/assets/logo.png',
 						},
 						{
 							name: 'about',

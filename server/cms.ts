@@ -1,7 +1,7 @@
 'use server';
 
 import { translations } from '@/lib/translations';
-import { PrismaClient } from '@prisma/client';
+import db from "@/lib/db";
 import { cacheLife, cacheTag, updateTag } from 'next/cache';
 
 export const getComponentContent = async (component: string) => {
@@ -19,8 +19,7 @@ export const getComponentFields = async (component: string) => {
 	'use cache';
 	cacheLife('max');
 	cacheTag(component);
-	const prisma = new PrismaClient();
-	const comp = await (prisma as any)?.component.findUnique({
+	const comp = await (db as any)?.component.findUnique({
 		where: {
 			name: component,
 		},
@@ -40,8 +39,7 @@ export const getComponentFields = async (component: string) => {
 
 export const refreshCacheComponentById = async (id: number) => {
 	try {
-		const prisma = new PrismaClient();
-		const comp = await (prisma as any)?.component.findUnique({
+		const comp = await (db as any)?.component.findUnique({
 			where: { id },
 		});
 		const componentName = comp?.name;

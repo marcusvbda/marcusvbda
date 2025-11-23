@@ -1,5 +1,5 @@
 'use server';
-import { PrismaClient } from '@prisma/client';
+import db from '@/lib/db'
 import z from 'zod';
 
 interface IPaginatedFetchResponse {
@@ -17,8 +17,7 @@ export const paginatedFetch = async (
 	modelName: string,
 	{ page, perPage, orderBy, filter, defaultFilter = {} }: any
 ): Promise<IPaginatedFetchResponse> => {
-	const prisma = new PrismaClient();
-	const model = (prisma as any)?.[modelName];
+	const model = (db as any)?.[modelName];
 	if (!model) {
 		throw new Error(`Model not found ${modelName}`);
 	}
@@ -57,7 +56,6 @@ export const paginatedFetch = async (
 	if (defaultFilter && Object.keys(defaultFilter).length > 0) {
 		where = { ...where, AND: defaultFilter };
 	}
-
 	const [data, total, totalResult] = await Promise.all([
 		model.findMany({
 			skip,
@@ -124,8 +122,7 @@ export const updateOrCreate = async (
 			};
 		}
 
-		const prisma = new PrismaClient();
-		const model = (prisma as any)?.[modelName];
+		const model = (db as any)?.[modelName];
 
 		let message = 'Created successfully';
 		let item;
@@ -159,8 +156,7 @@ export const updateOrCreate = async (
 
 export const deleteItem = async (id: any, modelName: string) => {
 	try {
-		const prisma = new PrismaClient();
-		const model = (prisma as any)?.[modelName];
+		const model = (db as any)?.[modelName];
 		await model.delete({ where: { id } });
 		return {
 			success: true,

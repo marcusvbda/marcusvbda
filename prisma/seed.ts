@@ -1,13 +1,12 @@
-import { PrismaClient, Prisma } from '@prisma/client';
+import db from '../lib/db'
+
 import init from './seeds/init';
 import createContent from './seeds/createContent';
 
-const prisma = new PrismaClient();
-
 export async function main() {
 	await Promise.all([
-		init(prisma),
-		createContent(prisma)
+		init(db),
+		createContent(db)
 	]);
 }
 

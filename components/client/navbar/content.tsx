@@ -62,7 +62,7 @@ export default function Content({ content }: any) {
 					>
 						<img
 							loading="lazy"
-							src={`/assets/logo.png`}
+							src={nav?.logo || '#'}
 							alt="logo"
 							className="w-32 md:w-52 dark:invert"
 						/>
