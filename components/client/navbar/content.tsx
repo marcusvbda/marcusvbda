@@ -26,7 +26,7 @@ export default function Content({ content }: any) {
 	const nav = content?.nav?.[language] || {};
 
 	const navItems = Object.keys(nav)
-		.filter((key) => key !== 'language')
+		.filter((key) => !['language', 'logo'].includes(key))
 		.map((key) => ({
 			label: nav[key],
 			href: `#${key}`,
