@@ -1,28 +1,39 @@
 'use client';
 
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState, useRef } from 'react';
 import { JsonEditor as Editor } from 'json-edit-react';
 
 export default function JsonEditor({
 	name,
-	defaultValue,
+	value,
+	onChange,
 }: {
 	name: string;
-	defaultValue: any;
+	value: any;
+	onChange: (value: any) => void;
 }): ReactNode {
-	const [jsonData, setJsonData] = useState(defaultValue || {});
-	const [jsonDataString, setJsonDataString] = useState(
-		JSON.stringify(jsonData)
-	);
+	const [jsonData, setJsonData] = useState(value || {});
+	const prevValueRef = useRef(value);
+
 	useEffect(() => {
-		setJsonDataString(JSON.stringify(jsonData));
-	}, [jsonData]);
+		if (value !== prevValueRef.current) {
+			setJsonData(value || {});
+			prevValueRef.current = value;
+		}
+	}, [value]);
+
+	const handleDataChange = (newData: any) => {
+		setJsonData(newData);
+		onChange && onChange(newData);
+	};
+
+	const jsonDataString = JSON.stringify(jsonData);
 
 	return (
 		<>
 			<Editor
 				data={jsonData}
-				setData={setJsonData}
+				setData={handleDataChange}
 				className="w-full max-w-full!"
 			/>
 			<input

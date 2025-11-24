@@ -88,7 +88,8 @@ export const updateOrCreate = async (
 		const zodSchema = z.object(
 			Object.keys(formFields).reduce((acc: any, key: any) => {
 				const field = formFields[key];
-				if (field.type === 'link') return { ...acc };
+				const id = field.id;
+				if (!id) return { ...acc };
 				let rowZ: any;
 				if (field.type === 'number') {
 					rowZ = z.coerce.number();
@@ -109,7 +110,6 @@ export const updateOrCreate = async (
 				return { ...acc, [key]: rowZ };
 			}, {})
 		);
-
 		const fields = Object.keys(formFields).reduce((acc: any, key: any) => {
 			const type = formFields[key].type;
 			if (type === 'json') {
@@ -121,7 +121,6 @@ export const updateOrCreate = async (
 		}, {});
 
 		const validatedFields = await zodSchema.safeParseAsync(fields);
-		console.log(validatedFields.data);
 
 		if (!validatedFields.success) {
 			return {

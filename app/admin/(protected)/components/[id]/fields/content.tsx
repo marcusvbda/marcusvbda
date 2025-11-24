@@ -50,28 +50,40 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
 				</Tabs>
 			}
 			fields={{
+				componentId: {
+					id: 'componentId',
+					type: 'number',
+					required: true,
+					defaultValue: Number(component?.id),
+					hidden: true,
+				},
 				name: {
+					id: 'name',
 					type: 'text',
 					label: 'Name',
 					placeholder: 'Field name',
 					required: true,
 				},
 				language: {
+					id: 'language',
 					type: 'select',
 					label: 'Language',
 					required: true,
+					defaultValue: language,
 					options: [
 						{ label: 'PT', value: 'pt' },
 						{ label: 'EN', value: 'en' },
 					],
 				},
 				value: {
+					id: 'value',
 					type: 'textarea',
 					label: 'Value',
 					placeholder: 'Value',
 					rows: 5,
 				},
 				valueJson: {
+					id: 'valueJson',
 					type: 'json',
 					label: 'Value JSON',
 					placeholder: 'Value JSON',

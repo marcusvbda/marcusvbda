@@ -14,20 +14,17 @@ import { paginatedFetch } from './server/actions';
 import useDebounceState from './hooks/use-debounce-state';
 
 interface ICommon {
+	id: string;
 	label?: string;
 	description?: string;
 	required?: boolean;
 	placeholder?: string;
+	render?: any;
+	defaultValue?: any;
 }
 interface IText {
 	type: 'text' | 'number' | 'email' | 'url' | 'password';
-}
-
-interface ILink {
-	type: 'link';
-	href: string;
-	label: string;
-	description?: string;
+	hidden?: boolean;
 }
 
 interface ITextarea {
@@ -57,8 +54,8 @@ interface ICustom {
 
 interface IFields {
 	[key: string]:
-		| ILink
-		| (ICommon & (IText | ITextarea | IRadio | ISelect | ICustom | IJson));
+		| (ICommon & (IText | ITextarea | IRadio | ISelect | IJson))
+		| ICustom;
 }
 
 interface IProps {
