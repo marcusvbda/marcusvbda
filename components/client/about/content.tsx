@@ -3,6 +3,7 @@
 import { ReactNode } from 'react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/language-context';
+import Image from 'next/image';
 
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
@@ -23,12 +24,15 @@ export default function Content({ content }: any): ReactNode {
 					{/* Image */}
 					<div className="md:col-span-2 animate-fade-in">
 						<Card className="overflow-hidden hover-lift">
-							<img
-								loading="lazy"
-								src={about?.image}
-								alt={hero?.name}
-								className="w-full h-full object-cover grayscale"
-							/>
+							{about?.image && (
+								<Image
+									src={about.image}
+									alt={hero?.name || 'About me'}
+									width={600}
+									height={600}
+									className="w-full h-full object-cover grayscale"
+								/>
+							)}
 						</Card>
 					</div>
 

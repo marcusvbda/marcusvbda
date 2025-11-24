@@ -12,6 +12,7 @@ import {
 	DialogDescription,
 } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 
 export default function Content({ content }: any) {
 	const { language } = useLanguage();
@@ -41,13 +42,15 @@ export default function Content({ content }: any) {
 							}}
 							style={{ animationDelay: `${index * 0.1}s` }}
 						>
-							<div className="aspect-video overflow-hidden bg-muted">
-								<img
-									loading="lazy"
-									src={projects?.items?.[project]?.image || '#'}
-									alt={projects?.items?.[project]?.title}
-									className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-								/>
+							<div className="aspect-video overflow-hidden bg-muted relative">
+								{projects?.items?.[project]?.image && (
+									<Image
+										src={projects.items[project].image}
+										alt={projects.items[project].title}
+										fill
+										className="object-cover hover:scale-105 transition-transform duration-300"
+									/>
+								)}
 							</div>
 							<CardHeader>
 								<CardTitle className="text-xl">
@@ -81,13 +84,15 @@ export default function Content({ content }: any) {
 								</DialogTitle>
 								<DialogDescription asChild>
 									<div className="space-y-6 pt-4">
-										<div className="aspect-video overflow-hidden rounded-lg">
-											<img
-												loading="lazy"
-												src={projects?.items?.[selectedProject]?.image || '#'}
-												alt={projects?.items?.[selectedProject]?.title}
-												className="w-full h-full object-cover"
-											/>
+										<div className="aspect-video overflow-hidden rounded-lg relative">
+											{projects?.items?.[selectedProject]?.image && (
+												<Image
+													src={projects.items[selectedProject].image}
+													alt={projects.items[selectedProject].title}
+													fill
+													className="object-cover"
+												/>
+											)}
 										</div>
 										<p className="text-muted-foreground leading-relaxed">
 											{projects?.items?.[selectedProject]?.description}

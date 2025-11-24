@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './theme-toggle';
 import { LanguageSwitcher } from './language-switcher';
 import { useIsMobile } from '@/hooks/use-mobile';
+import Image from 'next/image';
 
 export default function Content({ content }: any) {
 	const { language } = useLanguage();
@@ -60,12 +61,16 @@ export default function Content({ content }: any) {
 						}}
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
-						<img
-							loading="lazy"
-							src={nav?.logo || '#'}
-							alt="logo"
-							className="w-32 md:w-52 dark:invert"
-						/>
+						{nav?.logo && (
+							<Image
+								src={nav.logo}
+								alt="logo"
+								width={208}
+								height={52}
+								priority
+								className="w-32 md:w-52 dark:invert"
+							/>
+						)}
 					</Link>
 
 					<div className="hidden md:flex items-center gap-8">
