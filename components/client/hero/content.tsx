@@ -8,6 +8,7 @@ import { data } from '@/data';
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { RenderDocument } from './render-document';
+import Image from 'next/image';
 
 export default function Content({ content }: any): ReactNode {
 	const [client, setClient] = useState(false);
@@ -158,12 +159,16 @@ export default function Content({ content }: any): ReactNode {
 					>
 						<div className="relative w-full max-w-md mx-auto">
 							<div className="absolute inset-0 bg-linear-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
-							<img
-								loading="lazy"
-								src={hero?.avatar}
-								alt="Marcus Vinicius Bassalobre de Assis"
-								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
-							/>
+							{hero?.avatar && (
+								<Image
+									src={hero.avatar}
+									alt="Marcus Vinicius Bassalobre de Assis"
+									width={400}
+									height={400}
+									priority
+									className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
+								/>
+							)}
 						</div>
 					</div>
 				</div>
