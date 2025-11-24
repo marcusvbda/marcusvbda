@@ -58,33 +58,38 @@ const styles = StyleSheet.create({
 	},
 });
 
-export const RenderDocument = ({ data, lang, sections }: any) => {
-	const info = data.info;
-	const bio = data.about[lang];
-	const experiences = data.experiences[lang];
-	const skills = data.skills[lang];
-	const education = data.education[lang];
+export const RenderDocument = ({
+	about,
+	info,
+	education,
+	skills,
+	experience,
+	sections,
+}: any) => {
+	const skillsContent = skills?.categories?.valueJson || {};
+	const educationContent = education?.items?.valueJson || {};
+	const experienceContent = experience?.companies?.valueJson || {};
 
 	return (
 		<Document>
 			<Page size="A4" style={styles.page}>
 				<View style={styles.header}>
-					<Text style={styles.name}>{info.name}</Text>
-					<Text style={styles.jobTitle}>{info.role}</Text>
+					<Text style={styles.name}>{info.name?.value}</Text>
+					<Text style={styles.jobTitle}>{info.role?.value}</Text>
 					<Text style={{ ...styles.contactInfo, marginTop: 10 }}>
-						{info.location} | {info.email} | {info.phone}
+						{info.location?.value} | {info.email?.value} | {info.phone?.value}
 					</Text>
 					<Text style={styles.contactInfo}>
-						{info.site} | {info.linkedin} | {info.github}
+						{info.site?.value} | {info.linkedin?.value} | {info.github?.value}
 					</Text>
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.summary}</Text>
-					<Text style={styles.jobDescription}>{bio}</Text>
+					<Text style={styles.jobDescription}>{about?.description?.value}</Text>
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.experience}</Text>
-					{Object.values(experiences).map((job: any, index) => (
+					{Object.values(experienceContent).map((job: any, index) => (
 						<View key={index} style={styles.job}>
 							<Text style={styles.jobTitle}>{job.role}</Text>
 							<Text style={styles.jobCompany}>
@@ -97,7 +102,7 @@ export const RenderDocument = ({ data, lang, sections }: any) => {
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.education}</Text>
-					{Object.values(education).map((edu: any, index) => (
+					{Object.values(educationContent).map((edu: any, index) => (
 						<View key={index} style={styles.job}>
 							<Text style={styles.jobTitle}>{edu.title}</Text>
 							<Text style={styles.jobDescription}>{edu.description}</Text>
@@ -106,7 +111,7 @@ export const RenderDocument = ({ data, lang, sections }: any) => {
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.skills}</Text>
-					{Object.values(skills).map((skill: any, index) => (
+					{Object.values(skillsContent).map((skill: any, index) => (
 						<View key={index} style={styles.skillCategory}>
 							<Text style={styles.skillLabel}>{skill.label}:</Text>
 							<Text style={styles.skills}>{skill.skills}</Text>

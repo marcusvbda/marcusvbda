@@ -46,13 +46,19 @@ interface ISelect {
 	placeholder?: string;
 }
 
+interface IJson {
+	type: 'json';
+}
+
 interface ICustom {
 	type: 'custom';
 	render: any;
 }
 
 interface IFields {
-	[key: string]: ILink | (ICommon & (IText | ITextarea | IRadio | ISelect | ICustom));
+	[key: string]:
+		| ILink
+		| (ICommon & (IText | ITextarea | IRadio | ISelect | ICustom | IJson));
 }
 
 interface IProps {
@@ -75,10 +81,10 @@ interface IProps {
 	fields?: IFields;
 	renderForm?: any;
 	defaultFilter?: any;
-	afterSave?: any
-	icon?: ReactNode,
-	beforeList?: any
-	hideNew?: boolean
+	afterSave?: any;
+	icon?: ReactNode;
+	beforeList?: any;
+	hideNew?: boolean;
 }
 
 export default function Resource({
@@ -101,7 +107,7 @@ export default function Resource({
 	defaultFilter,
 	afterSave,
 	icon,
-	beforeList
+	beforeList,
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -156,7 +162,7 @@ export default function Resource({
 		renderNew,
 		refetch,
 		renderForm,
-		hideNew
+		hideNew,
 	};
 
 	return (

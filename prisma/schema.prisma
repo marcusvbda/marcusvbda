@@ -35,7 +35,9 @@ model Component {
 model Field {
   id           Int      @id @default(autoincrement())
   name         String   
-  value        String  
+  type         String   @default("text")
+  value        String   @default("")
+  valueJson    Json     @default("{}")
   language     String   
   componentId  Int
   createdAt DateTime @default(now())

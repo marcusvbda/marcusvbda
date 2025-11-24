@@ -36,7 +36,7 @@ export default function Content({ content }: any) {
 	const navItems = Object.keys(nav)
 		.filter((key) => !['language', 'logo'].includes(key))
 		.map((key) => ({
-			label: nav[key],
+			label: nav[key]?.value,
 			href: `#${key}`,
 		}));
 
@@ -68,9 +68,9 @@ export default function Content({ content }: any) {
 						}}
 						className="text-xl font-bold text-foreground hover:text-accent transition-colors"
 					>
-						{nav?.logo && (
+						{nav?.logo?.value && (
 							<Image
-								src={nav.logo}
+								src={nav.logo.value}
 								alt="logo"
 								width={208}
 								height={52}

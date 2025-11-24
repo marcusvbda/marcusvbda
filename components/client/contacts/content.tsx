@@ -15,31 +15,31 @@ export default function Content({ content }: any) {
 		{
 			icon: Mail,
 			label: 'Email',
-			value: info?.email,
-			href: `mailto:${info?.email}`,
+			value: info?.email?.value,
+			href: `mailto:${info?.email?.value}`,
 		},
 		{
 			icon: Linkedin,
 			label: 'Linkedin',
-			value: (info?.linkedin || '#').split('/').pop(),
-			href: 'https://'.concat(info?.linkedin),
+			value: (info?.linkedin?.value || '#').split('/').pop(),
+			href: 'https://'.concat(info?.linkedin?.value),
 		},
 		{
 			icon: MapPin,
-			label: info?.location,
-			value: info?.location,
+			label: info?.location?.value,
+			value: info?.location?.value,
 			href: null,
 		},
 		{
 			icon: Github,
 			label: 'Github',
-			value: (info?.github || '#').split('/').pop(),
-			href: 'https://'.concat(info?.github || '#'),
+			value: (info?.github?.value || '#').split('/').pop(),
+			href: 'https://'.concat(info?.github?.value || '#'),
 		},
 		{
 			icon: Phone,
-			label: contact?.phone,
-			value: info?.phone,
+			label: contact?.phone?.value,
+			value: info?.phone?.value,
 			href: null,
 		},
 	];
@@ -49,13 +49,13 @@ export default function Content({ content }: any) {
 			<div className="max-width-content max-w-4xl">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{contact?.title}
+						{contact?.title?.value}
 					</h2>
 					<p className="text-lg text-muted-foreground mb-4">
-						{contact?.subtitle}
+						{contact?.subtitle?.value}
 					</p>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
-						{contact?.description}
+						{contact?.description?.value}
 					</p>
 				</div>
 

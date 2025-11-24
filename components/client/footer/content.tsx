@@ -7,23 +7,23 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 export default function Content({ content }: any) {
 	const { language } = useLanguage();
 	const currentYear = new Date().getFullYear();
-	const t = content?.footer?.[language];
+	const footer = content?.footer?.[language];
 	const info = content?.info?.[language];
 
 	const socialLinks = [
 		{
 			icon: Mail,
-			href: `mailto:${info?.email}`,
+			href: `mailto:${info?.email?.value}`,
 			label: 'Email',
 		},
 		{
 			icon: Linkedin,
-			href: `https://${info?.linkedin}`,
+			href: `https://${info?.linkedin?.value}`,
 			label: 'Linkedin',
 		},
 		{
 			icon: Github,
-			href: `https://${info?.github}`,
+			href: `https://${info?.github?.value}`,
 			label: 'Github',
 		},
 	];
@@ -33,8 +33,10 @@ export default function Content({ content }: any) {
 			<div className="max-width-content section-padding py-12!">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-6">
 					<div className="text-center md:text-left">
-						<p className="font-bold text-lg mb-1">{info?.name}</p>
-						<p className="text-sm text-muted-foreground">{t?.builtWith}</p>
+						<p className="font-bold text-lg mb-1">{info?.name?.value}</p>
+						<p className="text-sm text-muted-foreground">
+							{footer?.builtWith?.value}
+						</p>
 					</div>
 
 					<div className="flex items-center gap-4">
@@ -61,7 +63,7 @@ export default function Content({ content }: any) {
 				</div>
 
 				<div className="mt-8 pt-6 border-t text-center text-sm text-muted-foreground">
-					© {currentYear} {info?.name}. {t?.rights}.
+					© {currentYear} {info?.name?.value}. {footer?.rights?.value}.
 				</div>
 			</div>
 		</footer>

@@ -4,7 +4,6 @@ import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 import { Button } from '@/components/ui/button';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { data } from '@/data';
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { RenderDocument } from './render-document';
@@ -19,6 +18,7 @@ export default function Content({ content }: any): ReactNode {
 	const education = content?.education?.[language];
 	const skills = content?.skills?.[language];
 	const experience = content?.experience?.[language];
+	const projects = content?.projects?.[language];
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -42,22 +42,22 @@ export default function Content({ content }: any): ReactNode {
 					<div className="space-y-6 animate-fade-in">
 						<div className="space-y-2">
 							<p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-								{hero?.greeting}
+								{hero?.greeting?.value}
 							</p>
 							<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-								{hero?.name}
+								{hero?.name?.value}
 							</h1>
 							<h2 className="text-2xl md:text-3xl font-semibold text-accent">
-								{hero?.role}
+								{hero?.role?.value}
 							</h2>
 							<p className="text-sm text-muted-foreground flex items-center gap-2">
 								<span className="inline-block w-2 h-2 bg-accent rounded-full animate-pulse" />
-								{hero?.location}
+								{hero?.location?.value}
 							</p>
 						</div>
 
 						<p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-							{hero?.bio}
+							{hero?.bio?.value}
 						</p>
 
 						<div className="flex justify-center md:justify-start flex-wrap gap-4 pt-4">
@@ -68,7 +68,7 @@ export default function Content({ content }: any): ReactNode {
 								className="w-full md:w-auto hover:text-white"
 							>
 								<Mail className="mr-2 h-4 w-4" />
-								{hero?.cta}
+								{hero?.cta?.value}
 							</Button>
 							<Button
 								size="lg"
@@ -77,7 +77,7 @@ export default function Content({ content }: any): ReactNode {
 								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
-									href={'https://'.concat(info?.linkedin) as any}
+									href={'https://'.concat(info?.linkedin?.value) as any}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -92,7 +92,7 @@ export default function Content({ content }: any): ReactNode {
 								className="w-full md:w-auto hover:text-white"
 							>
 								<Link
-									href={'https://'.concat(info?.github) as any}
+									href={'https://'.concat(info?.github?.value) as any}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -105,17 +105,21 @@ export default function Content({ content }: any): ReactNode {
 									className="w-full"
 									document={
 										<RenderDocument
-											data={{ ...data, info }}
-											lang={language}
+											about={about}
+											info={info}
+											education={education}
+											skills={skills}
+											experience={experience}
+											projects={projects}
 											sections={{
-												summary: about?.title,
-												experience: experience?.title,
-												education: education?.title,
-												skills: skills?.title,
+												summary: about?.title?.value,
+												experience: experience?.title?.value,
+												education: education?.title?.value,
+												skills: skills?.title?.value,
 											}}
 										/>
 									}
-									fileName={`${info?.name} - ${language}`}
+									fileName={`${info?.name?.value} - ${language}`}
 								>
 									{() => (
 										<Button
@@ -126,7 +130,7 @@ export default function Content({ content }: any): ReactNode {
 										>
 											<span className="text-white">
 												<Download className="mr-2 h-4 w-4" />
-												{hero?.checkCv}
+												{hero?.checkCv?.value}
 											</span>
 										</Button>
 									)}
@@ -147,7 +151,7 @@ export default function Content({ content }: any): ReactNode {
 								className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
 							>
 								<ArrowDown className="h-4 w-4" />
-								{hero?.scrollDown}
+								{hero?.scrollDown?.value}
 							</Link>
 						</div>
 					</div>
@@ -161,7 +165,7 @@ export default function Content({ content }: any): ReactNode {
 							<div className="absolute inset-0 bg-linear-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							{hero?.avatar && (
 								<Image
-									src={hero.avatar}
+									src={hero.avatar?.value}
 									alt="Marcus Vinicius Bassalobre de Assis"
 									width={400}
 									height={400}

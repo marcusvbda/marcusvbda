@@ -18,7 +18,7 @@ export const NewResource = () => {
 	const { label, renderNew, refetch, hideNew } = useResource();
 	const [visible, setVisible] = useState(false);
 
-	if (hideNew) return <></>
+	if (hideNew) return <></>;
 
 	return (
 		<Sheet open={visible} onOpenChange={setVisible}>
@@ -36,18 +36,20 @@ export const NewResource = () => {
 					</Card>
 				)}
 			</SheetTrigger>
-			<SheetContent className="max-w-full md:max-w-1/2">
+			<SheetContent className="w-full md:w-1/2 max-w-full md:max-w-1/2 overflow-y-auto">
 				<SheetHeader>
 					<SheetTitle></SheetTitle>
 				</SheetHeader>
 				<DynamicForm
-					header={<SheetHeader>
-						<SheetTitle>Create new {label.toLowerCase()}</SheetTitle>
-						<SheetDescription>
-							Fill properly the fields below to create a new {label.toLowerCase()}
-							.
-						</SheetDescription>
-					</SheetHeader>}
+					header={
+						<SheetHeader>
+							<SheetTitle>Create new {label.toLowerCase()}</SheetTitle>
+							<SheetDescription>
+								Fill properly the fields below to create a new{' '}
+								{label.toLowerCase()}.
+							</SheetDescription>
+						</SheetHeader>
+					}
 					setVisible={setVisible}
 					onSaved={() => {
 						refetch();

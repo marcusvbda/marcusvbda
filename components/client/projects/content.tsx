@@ -18,6 +18,7 @@ export default function Content({ content }: any) {
 	const { language } = useLanguage();
 	const [selectedProject, setSelectedProject] = useState<string | null>(null);
 	const projects = content?.projects?.[language];
+	const items = projects?.items?.valueJson || {};
 
 	const handleCloseModal = () => {
 		setSelectedProject(null);
@@ -28,12 +29,14 @@ export default function Content({ content }: any) {
 			<div className="max-width-content">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{projects?.title}
+						{projects?.title?.value}
 					</h2>
-					<p className="text-lg text-muted-foreground">{projects?.subtitle}</p>
+					<p className="text-lg text-muted-foreground">
+						{projects?.subtitle?.value}
+					</p>
 				</div>
 				<div className="flex flex-wrap justify-center gap-8">
-					{Object.keys(projects?.items || {}).map((project: any, index) => (
+					{Object.keys(items || {}).map((project: any, index) => (
 						<Card
 							key={index}
 							className="overflow-hidden hover-lift animate-fade-in cursor-pointer w-full md:w-auto md:basis-[calc(33.333%-1.34rem)]"
@@ -43,10 +46,10 @@ export default function Content({ content }: any) {
 							style={{ animationDelay: `${index * 0.1}s` }}
 						>
 							<div className="aspect-video overflow-hidden bg-muted relative">
-								{projects?.items?.[project]?.image && (
+								{items?.[project]?.image && (
 									<Image
-										src={projects.items[project].image}
-										alt={projects.items[project].title}
+										src={items[project].image}
+										alt={items[project].title}
 										fill
 										className="object-cover hover:scale-105 transition-transform duration-300"
 									/>
@@ -54,15 +57,15 @@ export default function Content({ content }: any) {
 							</div>
 							<CardHeader>
 								<CardTitle className="text-xl">
-									{projects?.items?.[project]?.title}
+									{items?.[project]?.title?.value}
 								</CardTitle>
 							</CardHeader>
 							<CardContent className="space-y-4">
 								<p className="text-muted-foreground leading-relaxed">
-									{projects?.items?.[project]?.description}
+									{items?.[project]?.description}
 								</p>
 								<div className="flex flex-wrap gap-2">
-									{(projects?.items?.[project]?.tech || '')
+									{(items?.[project]?.tech || '')
 										.split(', ')
 										.map((tech: any, i: any) => (
 											<Badge key={`tech_${tech}_${i}`} variant="secondary">
@@ -80,25 +83,25 @@ export default function Content({ content }: any) {
 						<DialogContent className="max-w-5xl">
 							<DialogHeader>
 								<DialogTitle className="text-2xl">
-									{projects?.items?.[selectedProject]?.title}
+									{items?.[selectedProject]?.title}
 								</DialogTitle>
 								<DialogDescription asChild>
 									<div className="space-y-6 pt-4">
 										<div className="aspect-video overflow-hidden rounded-lg relative">
-											{projects?.items?.[selectedProject]?.image && (
+											{items?.[selectedProject]?.image && (
 												<Image
-													src={projects.items[selectedProject].image}
-													alt={projects.items[selectedProject].title}
+													src={items[selectedProject].image}
+													alt={items[selectedProject].title}
 													fill
 													className="object-cover"
 												/>
 											)}
 										</div>
 										<p className="text-muted-foreground leading-relaxed">
-											{projects?.items?.[selectedProject]?.description}
+											{items?.[selectedProject]?.description}
 										</p>
 										<div className="flex flex-wrap gap-2">
-											{(projects?.items?.[selectedProject]?.tech || '')
+											{(items?.[selectedProject]?.tech || '')
 												.split(', ')
 												.map((tech: any, i: any) => (
 													<Badge key={`tech_${tech}_${i}`} variant="secondary">

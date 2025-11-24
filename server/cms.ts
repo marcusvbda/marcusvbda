@@ -1,19 +1,7 @@
 'use server';
 
-import { translations } from '@/lib/translations';
-import db from "@/lib/db";
+import db from '@/lib/db';
 import { cacheLife, cacheTag, updateTag } from 'next/cache';
-
-export const getComponentContent = async (component: string) => {
-	'use cache';
-	cacheLife('max');
-	cacheTag(component);
-
-	return {
-		en: (translations as any)?.en?.[component],
-		pt: (translations as any)?.pt?.[component],
-	};
-};
 
 export const getComponentFields = async (component: string) => {
 	'use cache';
@@ -30,7 +18,10 @@ export const getComponentFields = async (component: string) => {
 
 	const result = (comp?.fields || []).reduce((acc: any, item: any) => {
 		if (!acc[item.language]) acc[item.language] = {};
-		acc[item.language][item.name] = item.value;
+		acc[item.language][item.name] = {
+			value: item.value,
+			valueJson: item.valueJson,
+		};
 		return acc;
 	}, {});
 
@@ -45,18 +36,17 @@ export const refreshCacheComponentById = async (id: number) => {
 		const componentName = comp?.name;
 		if (componentName) {
 			await updateTag(componentName);
-			await getComponentFields(componentName)
+			await getComponentFields(componentName);
 		}
 
 		return {
 			success: true,
-			message: "Cache cleared succesfully"
-		}
+			message: 'Cache cleared succesfully',
+		};
 	} catch (error) {
 		return {
 			success: false,
-			message: "Something went wrong"
-		}
+			message: 'Something went wrong',
+		};
 	}
-
 };

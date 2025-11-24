@@ -1,5 +1,5 @@
 'use server';
-import db from '@/lib/db'
+import db from '@/lib/db';
 import z from 'zod';
 
 interface IPaginatedFetchResponse {
@@ -94,12 +94,14 @@ export const updateOrCreate = async (
 					rowZ = z.coerce.number();
 				} else if (field.type === 'boolean') {
 					rowZ = z.boolean();
+				} else if (field.type === 'json') {
+					rowZ = z.any();
 				} else {
 					rowZ = z.string();
 				}
 
 				if (field?.required) {
-					if (field.type !== 'boolean') {
+					if (!['boolean', 'json'].includes(field.type)) {
 						rowZ = rowZ.min(1, `${key} is required`);
 					}
 				}
@@ -109,10 +111,17 @@ export const updateOrCreate = async (
 		);
 
 		const fields = Object.keys(formFields).reduce((acc: any, key: any) => {
+			const type = formFields[key].type;
+			if (type === 'json') {
+				const strValue = formData.get(key) as string;
+				const jsonValue = JSON.parse(strValue as string);
+				return { ...acc, [key]: jsonValue };
+			}
 			return { ...acc, [key]: formData.get(key) };
 		}, {});
 
 		const validatedFields = await zodSchema.safeParseAsync(fields);
+		console.log(validatedFields.data);
 
 		if (!validatedFields.success) {
 			return {

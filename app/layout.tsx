@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { data } from '@/data';
 import GlobalContextProvider from '@/contexts/global-context';
 
 const geistSans = Geist({
@@ -25,7 +24,8 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title,
 		description,
-		keywords: data?.keywords?.split(',') || [],
+		keywords:
+			'fullstack engineer, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
 		authors: [{ name: title }],
 		openGraph: {
 			title: `${title} - ${description}`,

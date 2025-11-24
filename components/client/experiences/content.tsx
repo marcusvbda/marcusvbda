@@ -8,21 +8,21 @@ import { useLanguage } from '@/contexts/language-context';
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
 	const experience = content?.experience?.[language];
-
+	const companies = experience?.companies?.valueJson || {};
 	return (
 		<section id="experience" className="section-padding">
 			<div className="max-width-content">
 				<div className="text-center mb-16 animate-fade-in">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						{experience?.title}
+						{experience?.title?.value}
 					</h2>
 					<p className="text-lg text-muted-foreground">
-						{experience?.subtitle}
+						{experience?.subtitle?.value}
 					</p>
 				</div>
 
 				<div className="space-y-8 grid">
-					{Object.keys(experience?.companies || []).map((exp, index) => (
+					{Object.keys(companies || {}).map((exp, index) => (
 						<Card
 							key={`xp_${exp}`}
 							className="hover-lift animate-fade-in"
@@ -33,20 +33,20 @@ export default function Content({ content }: any): ReactNode {
 									<div className="space-y-1 flex-1">
 										<CardTitle className="text-2xl flex items-center gap-2">
 											<Briefcase className="h-5 w-5 text-accent" />
-											{experience?.companies?.[exp]?.company}
+											{companies?.[exp]?.company}
 										</CardTitle>
 										<p className="text-lg font-semibold text-accent">
-											{experience?.companies?.[exp]?.role}
+											{companies?.[exp]?.role}
 										</p>
 										<p className="text-sm text-muted-foreground">
-											{experience?.companies?.[exp]?.period}
+											{companies?.[exp]?.period}
 										</p>
 									</div>
 								</div>
 							</CardHeader>
 							<CardContent className="space-y-4">
 								<p className="text-muted-foreground leading-relaxed">
-									{experience?.companies?.[exp]?.description}
+									{companies?.[exp]?.description?.value}
 								</p>
 							</CardContent>
 						</Card>

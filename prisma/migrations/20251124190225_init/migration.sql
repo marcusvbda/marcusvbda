@@ -32,7 +32,9 @@ CREATE TABLE "Component" (
 CREATE TABLE "Field" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
-    "value" TEXT NOT NULL,
+    "type" TEXT NOT NULL DEFAULT 'text',
+    "value" TEXT NOT NULL DEFAULT '',
+    "valueJson" JSONB NOT NULL DEFAULT '{}',
     "language" TEXT NOT NULL,
     "componentId" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
