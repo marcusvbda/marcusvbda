@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, memo, useCallback } from 'react';
 import {
 	Sheet,
 	SheetContent,
@@ -14,11 +14,16 @@ import { PlusIcon } from 'lucide-react';
 import { useResource } from './context';
 import DynamicForm from './dyamic-form';
 
-export const NewResource = () => {
+export const NewResource = memo(() => {
 	const { label, renderNew, refetch, hideNew } = useResource();
 	const [visible, setVisible] = useState(false);
 
-	if (hideNew) return <></>;
+	const handleSaved = useCallback(() => {
+		refetch();
+		setVisible(false);
+	}, [refetch]);
+
+	if (hideNew) return null;
 
 	return (
 		<Sheet open={visible} onOpenChange={setVisible}>
@@ -51,12 +56,11 @@ export const NewResource = () => {
 						</SheetHeader>
 					}
 					setVisible={setVisible}
-					onSaved={() => {
-						refetch();
-						setVisible(false);
-					}}
+					onSaved={handleSaved}
 				/>
 			</SheetContent>
 		</Sheet>
 	);
-};
+});
+
+NewResource.displayName = 'NewResource';

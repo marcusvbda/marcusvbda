@@ -1,33 +1,45 @@
 'use server';
 import db from '@/lib/db';
-import z from 'zod';
+import type {
+	PaginatedResponse,
+	FilterConfig,
+	OrderByConfig,
+	ResourceItem,
+} from '../types';
 
-interface IPaginatedFetchResponse {
-	items: any[];
-	meta: {
-		total: number;
-		totalResult: number;
-		page: number;
-		perPage: number;
-		totalPages: number;
-	};
+interface PaginatedFetchOptions {
+	page: number;
+	perPage: number;
+	orderBy: OrderByConfig;
+	filter: FilterConfig;
+	defaultFilter?: FilterConfig;
 }
 
 export const paginatedFetch = async (
 	modelName: string,
-	{ page, perPage, orderBy, filter, defaultFilter = {} }: any
-): Promise<IPaginatedFetchResponse> => {
-	const model = (db as any)?.[modelName];
+	{ page, perPage, orderBy, filter, defaultFilter = {} }: PaginatedFetchOptions
+): Promise<PaginatedResponse> => {
+	const model = (db as Record<string, any>)?.[modelName];
 	if (!model) {
-		throw new Error(`Model not found ${modelName}`);
+		throw new Error(`Model not found: ${modelName}`);
 	}
+
+	if (!model.findMany || !model.count) {
+		throw new Error(`Invalid model: ${modelName} - missing required methods`);
+	}
+
 	const skip = (page - 1) * perPage;
 
-	let where: any = {};
+	let where: Record<string, unknown> = {};
+
 	if (filter && Object.keys(filter).length > 0) {
 		const orConditions = Object.entries(filter)
 			.map(([key, value]) => {
-				if (typeof value === 'object' && value !== null) {
+				if (
+					typeof value === 'object' &&
+					value !== null &&
+					!Array.isArray(value)
+				) {
 					return { [key]: value };
 				}
 				if (key === 'id') {
@@ -44,85 +56,139 @@ export const paginatedFetch = async (
 				return {
 					[key]: {
 						contains: String(value),
-						mode: 'insensitive',
+						mode: 'insensitive' as const,
 					},
 				};
 			})
-			.filter(Boolean);
+			.filter(
+				(
+					condition
+				): condition is Record<string, unknown> & { id: { equals: number } } =>
+					condition !== undefined
+			);
 
-		where = { OR: orConditions };
+		if (orConditions.length > 0) {
+			where = { OR: orConditions };
+		}
 	}
 
 	if (defaultFilter && Object.keys(defaultFilter).length > 0) {
-		where = { ...where, AND: defaultFilter };
+		where = { ...where, ...defaultFilter };
 	}
-	const [data, total, totalResult] = await Promise.all([
-		model.findMany({
-			skip,
-			take: perPage,
-			orderBy: orderBy,
-			where,
-		}),
-		model.count({ where: defaultFilter }),
-		model.count({ where }),
-	]);
 
-	return {
-		items: data,
-		meta: {
-			total,
-			totalResult,
-			page,
-			perPage,
-			totalPages: Math.ceil(totalResult / perPage),
-		},
-	};
+	try {
+		const [data, total, totalResult] = await Promise.all([
+			model.findMany({
+				skip,
+				take: perPage,
+				orderBy: orderBy,
+				where,
+			}) as Promise<ResourceItem[]>,
+			model.count({ where: defaultFilter }) as Promise<number>,
+			model.count({ where }) as Promise<number>,
+		]);
+
+		return {
+			items: data,
+			meta: {
+				total,
+				totalResult,
+				page,
+				perPage,
+				totalPages: Math.ceil(totalResult / perPage),
+			},
+		};
+	} catch (error) {
+		console.error(`Error fetching ${modelName}:`, error);
+		throw new Error(
+			`Failed to fetch ${modelName}: ${
+				error instanceof Error ? error.message : 'Unknown error'
+			}`
+		);
+	}
 };
 
-export const updateOrCreate = async (modelName: string, payload: any) => {
+export const updateOrCreate = async (
+	modelName: string,
+	payload: ResourceItem
+): Promise<{
+	item?: ResourceItem;
+	success: boolean;
+	message: string;
+}> => {
 	try {
-		const model = (db as any)?.[modelName];
-		let message = 'Created successfully';
-		let item;
-		if (payload.id) {
-			item = await model.update({
-				where: {
-					id: payload.id,
-				},
-				data: payload,
-			});
+		const model = (db as Record<string, any>)?.[modelName];
+		if (!model) {
+			throw new Error(`Model not found: ${modelName}`);
+		}
+
+		if (!model.update || !model.create) {
+			throw new Error(`Invalid model: ${modelName} - missing required methods`);
+		}
+
+		const { id, ...data } = payload;
+		let item: ResourceItem;
+		let message: string;
+
+		if (id) {
+			item = (await model.update({
+				where: { id },
+				data,
+			})) as ResourceItem;
 			message = 'Updated successfully';
 		} else {
-			item = await model.create({
-				data: payload,
-			});
+			item = (await model.create({
+				data,
+			})) as ResourceItem;
+			message = 'Created successfully';
 		}
+
 		return {
 			item,
 			success: true,
 			message,
 		};
 	} catch (error) {
-		console.log(error);
+		console.error(`Error updating/creating ${modelName}:`, error);
+		const errorMessage =
+			error instanceof Error ? error.message : 'Something went wrong';
 		return {
 			success: false,
-			message: 'Something went wrong',
+			message: errorMessage,
 		};
 	}
 };
 
-export const deleteItem = async (id: any, modelName: string) => {
+export const deleteItem = async (
+	id: number | string,
+	modelName: string
+): Promise<{
+	success: boolean;
+	message: string;
+}> => {
 	try {
-		const model = (db as any)?.[modelName];
+		const model = (db as Record<string, any>)?.[modelName];
+		if (!model) {
+			throw new Error(`Model not found: ${modelName}`);
+		}
+
+		if (!model.delete) {
+			throw new Error(`Invalid model: ${modelName} - missing delete method`);
+		}
+
 		await model.delete({ where: { id } });
+
 		return {
 			success: true,
 			message: 'Deleted successfully',
 		};
 	} catch (error) {
+		console.error(`Error deleting ${modelName} with id ${id}:`, error);
+		const errorMessage =
+			error instanceof Error ? error.message : 'Something went wrong';
 		return {
 			success: false,
-			message: 'Something went wrong',
+			message: errorMessage,
 		};
 	}
 };
