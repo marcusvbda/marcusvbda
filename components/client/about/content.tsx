@@ -22,9 +22,9 @@ export default function Content({ content }: any): ReactNode {
 					</p>
 				</div>
 
-				<div className="grid md:grid-cols-5 gap-12 items-center">
+				<div className=" md:grid-cols-12 gap-12 items-center grid">
 					{/* Image */}
-					<div className="md:col-span-2 animate-fade-in">
+					<div className="md:col-span-4 animate-fade-in hidden md:block">
 						<Card className="overflow-hidden hover-lift">
 							{about?.image?.value && (
 								<Image
@@ -32,7 +32,7 @@ export default function Content({ content }: any): ReactNode {
 									alt={hero?.name || 'About me'}
 									width={600}
 									height={600}
-									className="w-full h-full object-cover grayscale"
+									className="w-full h-full object-cover"
 								/>
 							)}
 						</Card>
@@ -40,7 +40,7 @@ export default function Content({ content }: any): ReactNode {
 
 					{/* Content */}
 					<div
-						className="md:col-span-3 space-y-6 animate-fade-in"
+						className="md:col-span-8 space-y-6 animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
 						{(about?.description?.value || '')

@@ -3,6 +3,6 @@ import { use } from 'react';
 import Content from './content';
 
 export default function Wrapper() {
-	const experience = use(getComponentFields('experience'));
+	const { experience } = use(getComponentFields(['experience']));
 	return <Content content={{ experience }} />;
 }

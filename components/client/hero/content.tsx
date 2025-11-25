@@ -161,7 +161,7 @@ export default function Content({ content }: any): ReactNode {
 						className="relative animate-fade-in"
 						style={{ animationDelay: '0.2s' }}
 					>
-						<div className="relative w-full max-w-md mx-auto">
+						<div className="relative w-full max-w-md mx-auto hidden md:grid">
 							<div className="absolute inset-0 bg-linear-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
 							{hero?.avatar && (
 								<Image

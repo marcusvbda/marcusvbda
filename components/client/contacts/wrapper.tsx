@@ -3,8 +3,7 @@ import { use } from 'react';
 import Content from './content';
 
 export default function Wrapper() {
-	const info = use(getComponentFields('info'));
-	const contact = use(getComponentFields('contact'));
+	const { info, contact } = use(getComponentFields(['info', 'contact']));
 
 	return <Content content={{ info, contact }} />;
 }
