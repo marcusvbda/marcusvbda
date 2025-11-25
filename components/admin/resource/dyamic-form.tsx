@@ -1,22 +1,7 @@
-import {
-	Fragment,
-	ReactNode,
-	useActionState,
-	useEffect,
-	useMemo,
-	useState,
-} from 'react';
+import { Fragment, ReactNode, useState } from 'react';
 import { useResource } from './context';
 import { deleteItem, updateOrCreate } from './server/actions';
 import { toast } from 'sonner';
-import {
-	Field,
-	FieldContent,
-	FieldError,
-	FieldLabel,
-} from '@/components/ui/field';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
 import {
@@ -31,16 +16,6 @@ import {
 	AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { useMutation } from '@tanstack/react-query';
-import {
-	Item,
-	ItemActions,
-	ItemContent,
-	ItemDescription,
-	ItemTitle,
-} from '@/components/ui/item';
-import Link from 'next/link';
-import Select from './fields/Select';
-import JsonEditor from './fields/JsonEditor';
 
 export default function DynamicForm({
 	header,
@@ -51,80 +26,64 @@ export default function DynamicForm({
 	const [confirmationDeleteVisible, setConfirmationDeleteVisible] =
 		useState(false);
 
-	const { entity, fields, renderForm, afterSave } = useResource();
+	const {
+		entity,
+		fields,
+		afterSave,
+		beforeSave,
+		initialState: initialStateResource,
+	} = useResource();
+	const [error, setError] = useState<any>({});
 
-	const computedFields = useMemo(() => {
-		let cFields: any = Object.keys(fields).reduce((acc: any, fieldKey: any) => {
-			const field = fields[fieldKey];
-			if (!field?.id) return acc;
-			return { ...acc, [field.id]: field };
-		}, {});
-
-		if (itemState?.id) {
-			cFields.id = {
-				id: 'id',
-				type: 'number',
-				required: true,
-				hidden: true,
-			};
-		}
-
-		return cFields;
-	}, [fields, itemState?.id]);
-
-	let initialState: any = {};
-	if (itemState && itemState.id) {
-		initialState = Object.keys(computedFields).reduce((acc: any, key: any) => {
-			const id = computedFields[key].id;
-			if (!id) return acc;
-			acc[id] = itemState[id] !== undefined ? itemState[id] : '';
-			return acc;
-		}, {});
-	} else {
-		initialState = Object.keys(computedFields).reduce((acc: any, key: any) => {
-			const field = computedFields[key];
-			const id = field.id;
-			const type = field.type;
-			const defaultValue = field?.defaultValue;
-			if (!id) return acc;
-			if (type === 'number') {
-				acc[id] = defaultValue || 0;
-			} else if (type === 'boolean') {
-				acc[id] = defaultValue || false;
-			} else if (type === 'json') {
-				acc[id] = defaultValue || {};
-			} else {
-				acc[id] = defaultValue || '';
-			}
-			return acc;
-		}, {});
+	let initialState: any = itemState || initialStateResource || {};
+	if (itemState?.id) {
+		initialState.id = itemState.id;
 	}
 
 	const [formValues, setFormValues] = useState(initialState);
 
-	const [state, formAction, pending] = useActionState(
-		async (_initialState: any, newState: FormData) => {
-			const result = await updateOrCreate(newState, entity, computedFields);
-			if (afterSave) {
-				await afterSave(result);
-			}
+	const { mutate: storeMutate, isPending: isPendingStore } = useMutation({
+		mutationFn: async ({ entity, formValues }: any) => {
+			const result = await updateOrCreate(entity, formValues);
 			return result;
 		},
-		{
-			error: {} as any,
-			success: false,
-			...initialState,
-		}
-	);
+	});
 
-	useEffect(() => {
-		if (state?.message) {
-			toast?.[state?.success ? 'success' : 'error'](state?.message);
+	const handleStore = async () => {
+		if (beforeSave) {
+			await beforeSave({ formValues, error, setError, setFormValues });
 		}
-		if (state?.success) {
-			onSaved && onSaved();
+
+		if (error && Object.keys(error).length > 0) {
+			return;
 		}
-	}, [state, onSaved]);
+
+		storeMutate(
+			{ entity, formValues },
+			{
+				onSuccess: async (result: any) => {
+					if (!result.success) {
+						toast?.error(result.message);
+						setError({});
+						setFormValues(initialState);
+						return;
+					}
+					if (afterSave) {
+						await afterSave(result);
+					}
+					onSaved && onSaved();
+					setError({});
+					setFormValues(initialState);
+					toast?.[result.success ? 'success' : 'error'](result.message);
+				},
+				onError: (error: any) => {
+					toast?.error(error.message);
+					setError({});
+					setFormValues(initialState);
+				},
+			}
+		);
+	};
 
 	const { mutate: deleteMutate, isPending: isPendingDelete } = useMutation({
 		mutationFn: async ({ id, modelName }: any) => {
@@ -148,211 +107,30 @@ export default function DynamicForm({
 		});
 	};
 
-	const defaultRender = (renderContext: any, field: any, component: any) => {
-		if (field?.render) {
-			return field?.render({ ...renderContext, ...field, component });
-		}
-		return component;
-	};
+	const listFields = fields
+		? fields({
+				itemState,
+				error,
+				pending: isPendingStore || isPendingDelete,
+				formValues,
+				setFormValues,
+				setVisible,
+		  })
+		: [];
 
-	const renderedForm = (
-		<>
+	return (
+		<div className="w-full flex flex-col">
 			{header}
-			<form action={formAction} className="w-full flex flex-col gap-6 py-6">
+			<form
+				onSubmit={(e: any) => {
+					e.preventDefault();
+					handleStore();
+				}}
+				className="w-full flex flex-col gap-6 py-6"
+			>
 				<div className="flex flex-col gap-6">
-					{itemState?.id && (
-						<input
-							type="hidden"
-							name="id"
-							defaultValue={itemState?.id}
-							className="hidden"
-						/>
-					)}
-					{Object.keys(fields).map((key: any) => {
-						const field = fields[key];
-						const renderContext = {
-							state,
-							formValues,
-							pending,
-							field,
-							item: itemState,
-							setDrawerVisible: setVisible,
-						};
-						return (
-							<Fragment key={key}>
-								{['text', 'number', 'email', 'url'].includes(field?.type) && (
-									<>
-										{defaultRender(
-											renderContext,
-											field,
-											<Field key={key}>
-												<FieldContent>
-													{field?.label && (
-														<FieldLabel>
-															{field?.label} - {formValues?.[key]}
-														</FieldLabel>
-													)}
-													<Input
-														aria-invalid={Boolean(state?.error?.[key]?.[0])}
-														name={key}
-														type={field?.type}
-														placeholder={field?.placeholder || ''}
-														disabled={pending}
-														hidden={field?.hidden}
-														value={formValues?.[key] || ''}
-														onChange={(e: any) =>
-															setFormValues((prev: any) => ({
-																...prev,
-																[key]: e.target.value,
-															}))
-														}
-													/>
-													<FieldError>{state?.error?.[key] as any}</FieldError>
-												</FieldContent>
-											</Field>
-										)}
-									</>
-								)}
-								{field?.type === 'textarea' && (
-									<>
-										{defaultRender(
-											renderContext,
-											field,
-											<>
-												{field?.label && (
-													<FieldLabel>{field?.label}</FieldLabel>
-												)}
-												<Field key={key}>
-													<FieldContent>
-														<Textarea
-															className="border resize-none rounded-lg p-2 text-sm"
-															aria-invalid={Boolean(state?.error?.[key]?.[0])}
-															name={key}
-															value={formValues?.[key] || ''}
-															onChange={(e: any) =>
-																setFormValues((prev: any) => ({
-																	...prev,
-																	[key]: e.target.value,
-																}))
-															}
-															placeholder={field?.placeholder || ''}
-															disabled={pending}
-															hidden={field?.hidden}
-															rows={field?.rows || 5}
-														/>
-														<FieldError>
-															{state?.error?.[key] as any}
-														</FieldError>
-													</FieldContent>
-												</Field>
-											</>
-										)}
-									</>
-								)}
-								{field?.type === 'radio' && (
-									<>
-										{defaultRender(
-											renderContext,
-											field,
-											<>
-												<Field key={key}>
-													<FieldContent>
-														{field?.label && (
-															<FieldLabel>{field?.label}</FieldLabel>
-														)}
-														<div className="flex flex-col gap-2 w-full">
-															{(field?.options || []).map(
-																(op: any, opKey: any) => (
-																	<label
-																		key={opKey}
-																		className="flex items-center gap-2 text-xs text-muted-foreground"
-																	>
-																		<input
-																			type="radio"
-																			name={key}
-																			value={formValues?.[key] || ''}
-																			onChange={(e: any) =>
-																				setFormValues((prev: any) => ({
-																					...prev,
-																					[key]: e.target.value,
-																				}))
-																			}
-																		/>
-																		{op.label}
-																	</label>
-																)
-															)}
-														</div>
-													</FieldContent>
-												</Field>
-											</>
-										)}
-									</>
-								)}
-								{field?.type === 'select' && (
-									<>
-										{defaultRender(
-											renderContext,
-											field,
-											<>
-												<Field key={key}>
-													<FieldContent>
-														{field?.label && (
-															<FieldLabel>{field?.label}</FieldLabel>
-														)}
-														<Select
-															index={key}
-															field={field}
-															pending={pending}
-															value={formValues?.[key] || ''}
-															onChange={(e: any) =>
-																setFormValues((prev: any) => ({
-																	...prev,
-																	[key]: e,
-																}))
-															}
-														/>
-														<FieldError>
-															{state?.error?.[key] as any}
-														</FieldError>
-													</FieldContent>
-												</Field>
-											</>
-										)}
-									</>
-								)}
-								{field?.type === 'custom' && (
-									<>{field?.render && field?.render(renderContext)}</>
-								)}
-								{field?.type === 'json' && (
-									<>
-										{defaultRender(
-											renderContext,
-											field,
-											<>
-												<Field key={key}>
-													<FieldContent>
-														{field?.label && (
-															<FieldLabel>{field?.label}</FieldLabel>
-														)}
-														<JsonEditor
-															name={key}
-															value={state?.[key] || ''}
-															onChange={(e: any) =>
-																setFormValues((prev: any) => ({
-																	...prev,
-																	[key]: e,
-																})) as any
-															}
-														/>
-													</FieldContent>
-												</Field>
-											</>
-										)}
-									</>
-								)}
-							</Fragment>
-						);
+					{listFields.map((field: any, key: any) => {
+						return <Fragment key={key}>{field}</Fragment>;
 					})}
 				</div>
 				<div className="w-full gap-2 flex items-center flex-row">
@@ -362,7 +140,13 @@ export default function DynamicForm({
 							onOpenChange={setConfirmationDeleteVisible}
 						>
 							<AlertDialogTrigger asChild>
-								<Button type="button" variant="destructive" disabled={pending}>
+								<Button
+									type="button"
+									variant="destructive"
+									disabled={isPendingDelete}
+								>
+									{isPendingDelete ||
+										(isPendingStore && <Spinner className="size-3" />)}
 									Delete
 								</Button>
 							</AlertDialogTrigger>
@@ -397,24 +181,14 @@ export default function DynamicForm({
 					<Button
 						type="submit"
 						className="flex items-center gap-2 ml-auto"
-						disabled={pending}
+						disabled={isPendingStore}
 					>
-						{pending && <Spinner className="size-3" />}
+						{isPendingStore ||
+							(isPendingDelete && <Spinner className="size-3" />)}
 						Save
 					</Button>
 				</div>
 			</form>
-		</>
-	);
-
-	return (
-		<div className="w-full flex flex-col">
-			{renderForm
-				? renderForm(renderedForm, {
-						item: itemState,
-						setDrawerVisible: setVisible,
-				  })
-				: renderedForm}
 		</div>
 	);
 }

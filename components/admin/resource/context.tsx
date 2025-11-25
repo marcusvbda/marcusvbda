@@ -2,22 +2,19 @@
 
 import { createContext, useContext, ReactNode } from 'react';
 
-interface IFields {
-	[key: string]: any;
-}
-
 interface IResourceContext {
 	entity: string;
 	label: string;
 	pluralLabel: string;
 	itemLabel: string;
-	fields: IFields;
+	fields?: (cx: any) => ReactNode[];
 	renderItem?: (item: any) => ReactNode;
 	renderNew?: () => ReactNode;
-	renderForm?: (renderedForm: ReactNode, itemState?: any) => ReactNode;
 	refetch: () => void;
 	afterSave?: (result: any) => void;
-	hideNew: boolean
+	beforeSave?: (payload: any) => void;
+	hideNew: boolean;
+	initialState?: any;
 }
 
 const ResourceContext = createContext<IResourceContext | undefined>(undefined);

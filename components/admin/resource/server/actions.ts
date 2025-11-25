@@ -79,75 +79,24 @@ export const paginatedFetch = async (
 	};
 };
 
-export const updateOrCreate = async (
-	formData: FormData,
-	modelName: string,
-	formFields: any
-) => {
+export const updateOrCreate = async (modelName: string, payload: any) => {
 	try {
-		const zodSchema = z.object(
-			Object.keys(formFields).reduce((acc: any, key: any) => {
-				const field = formFields[key];
-				const id = field.id;
-				if (!id) return { ...acc };
-				let rowZ: any;
-				if (field.type === 'number') {
-					rowZ = z.coerce.number();
-				} else if (field.type === 'boolean') {
-					rowZ = z.boolean();
-				} else if (field.type === 'json') {
-					rowZ = z.any();
-				} else {
-					rowZ = z.string();
-				}
-
-				if (field?.required) {
-					if (!['boolean', 'json'].includes(field.type)) {
-						rowZ = rowZ.min(1, `${key} is required`);
-					}
-				}
-
-				return { ...acc, [key]: rowZ };
-			}, {})
-		);
-		const fields = Object.keys(formFields).reduce((acc: any, key: any) => {
-			const type = formFields[key].type;
-			if (type === 'json') {
-				const strValue = formData.get(key) as string;
-				const jsonValue = JSON.parse(strValue as string);
-				return { ...acc, [key]: jsonValue };
-			}
-			return { ...acc, [key]: formData.get(key) };
-		}, {});
-
-		const validatedFields = await zodSchema.safeParseAsync(fields);
-
-		if (!validatedFields.success) {
-			return {
-				success: false,
-				error: validatedFields.error.flatten().fieldErrors,
-				fields,
-			};
-		}
-
 		const model = (db as any)?.[modelName];
-
 		let message = 'Created successfully';
 		let item;
-		if (validatedFields.data.id) {
+		if (payload.id) {
 			item = await model.update({
 				where: {
-					id: validatedFields.data.id,
+					id: payload.id,
 				},
-				data: validatedFields.data,
+				data: payload,
 			});
 			message = 'Updated successfully';
 		} else {
 			item = await model.create({
-				data: validatedFields.data,
+				data: payload,
 			});
 		}
-
 		return {
 			item,
 			success: true,
@@ -157,7 +106,7 @@ export const updateOrCreate = async (
 		console.log(error);
 		return {
 			success: false,
-			error: 'Something went wrong',
+			message: 'Something went wrong',
 		};
 	}
 };

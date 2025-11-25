@@ -13,51 +13,6 @@ import { ResourceItem } from './item';
 import { paginatedFetch } from './server/actions';
 import useDebounceState from './hooks/use-debounce-state';
 
-interface ICommon {
-	id: string;
-	label?: string;
-	description?: string;
-	required?: boolean;
-	placeholder?: string;
-	render?: any;
-	defaultValue?: any;
-}
-interface IText {
-	type: 'text' | 'number' | 'email' | 'url' | 'password';
-	hidden?: boolean;
-}
-
-interface ITextarea {
-	type: 'textarea';
-	rows?: number;
-}
-
-interface IRadio {
-	type: 'radio';
-	options: { label: string; value: string }[];
-}
-
-interface ISelect {
-	type: 'select';
-	options: { label: string; value: string }[];
-	placeholder?: string;
-}
-
-interface IJson {
-	type: 'json';
-}
-
-interface ICustom {
-	type: 'custom';
-	render: any;
-}
-
-interface IFields {
-	[key: string]:
-		| (ICommon & (IText | ITextarea | IRadio | ISelect | IJson))
-		| ICustom;
-}
-
 interface IProps {
 	itemId?: string;
 	itemLabel?: string;
@@ -75,13 +30,14 @@ interface IProps {
 	classNameList?: string;
 	createView?: ReactNode;
 	editView?: any;
-	fields?: IFields;
-	renderForm?: any;
+	fields?: (cx: any) => ReactNode[];
 	defaultFilter?: any;
 	afterSave?: any;
+	beforeSave?: any;
 	icon?: ReactNode;
 	beforeList?: any;
 	hideNew?: boolean;
+	initialState?: any;
 }
 
 export default function Resource({
@@ -99,12 +55,13 @@ export default function Resource({
 	orderBy = { id: 'desc' },
 	className = '',
 	classNameList = '',
-	fields = {},
-	renderForm,
+	fields = () => [],
 	defaultFilter,
 	afterSave,
+	beforeSave,
 	icon,
 	beforeList,
+	initialState,
 }: IProps): ReactNode {
 	const [search, setSearch, searchState] = useDebounceState('', 500);
 
@@ -156,10 +113,11 @@ export default function Resource({
 		fields,
 		renderItem,
 		afterSave,
+		beforeSave,
 		renderNew,
 		refetch,
-		renderForm,
 		hideNew,
+		initialState,
 	};
 
 	return (
