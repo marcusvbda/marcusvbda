@@ -12,7 +12,7 @@ interface IResourceContext {
 	renderNew?: () => ReactNode;
 	refetch: () => void;
 	afterSave?: (result: any) => void;
-	beforeSave?: (payload: any) => void;
+	validateForm?: any;
 	hideNew: boolean;
 	initialState?: any;
 }

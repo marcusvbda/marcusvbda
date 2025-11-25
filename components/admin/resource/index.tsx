@@ -33,7 +33,7 @@ interface IProps {
 	fields?: (cx: any) => ReactNode[];
 	defaultFilter?: any;
 	afterSave?: any;
-	beforeSave?: any;
+	validateForm?: any;
 	icon?: ReactNode;
 	beforeList?: any;
 	hideNew?: boolean;
@@ -58,7 +58,7 @@ export default function Resource({
 	fields = () => [],
 	defaultFilter,
 	afterSave,
-	beforeSave,
+	validateForm,
 	icon,
 	beforeList,
 	initialState,
@@ -113,7 +113,7 @@ export default function Resource({
 		fields,
 		renderItem,
 		afterSave,
-		beforeSave,
+		validateForm,
 		renderNew,
 		refetch,
 		hideNew,

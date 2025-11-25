@@ -16,6 +16,7 @@ import {
 	AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { useMutation } from '@tanstack/react-query';
+import { z } from 'zod';
 
 export default function DynamicForm({
 	header,
@@ -30,7 +31,7 @@ export default function DynamicForm({
 		entity,
 		fields,
 		afterSave,
-		beforeSave,
+		validateForm,
 		initialState: initialStateResource,
 	} = useResource();
 	const [error, setError] = useState<any>({});
@@ -50,11 +51,18 @@ export default function DynamicForm({
 	});
 
 	const handleStore = async () => {
-		if (beforeSave) {
-			await beforeSave({ formValues, error, setError, setFormValues });
+		const componentSchema = z.object(validateForm || {});
+		const validation = componentSchema.safeParse(formValues);
+		let validationError = {};
+		if (!validation.success) {
+			validationError = validation.error.flatten().fieldErrors
+			setError(validationError);
+		} else {
+			validationError = {};
+			setError({});
 		}
 
-		if (error && Object.keys(error).length > 0) {
+		if (validationError && Object.keys(validationError).length > 0) {
 			return;
 		}
 
@@ -109,13 +117,13 @@ export default function DynamicForm({
 
 	const listFields = fields
 		? fields({
-				itemState,
-				error,
-				pending: isPendingStore || isPendingDelete,
-				formValues,
-				setFormValues,
-				setVisible,
-		  })
+			itemState,
+			error,
+			pending: isPendingStore || isPendingDelete,
+			formValues,
+			setFormValues,
+			setVisible,
+		})
 		: [];
 
 	return (
@@ -143,10 +151,9 @@ export default function DynamicForm({
 								<Button
 									type="button"
 									variant="destructive"
-									disabled={isPendingDelete}
+									disabled={isPendingStore || isPendingDelete}
 								>
-									{isPendingDelete ||
-										(isPendingStore && <Spinner className="size-3" />)}
+									{(isPendingStore || isPendingDelete) && <Spinner className="size-3" />}
 									Delete
 								</Button>
 							</AlertDialogTrigger>
@@ -181,10 +188,9 @@ export default function DynamicForm({
 					<Button
 						type="submit"
 						className="flex items-center gap-2 ml-auto"
-						disabled={isPendingStore}
+						disabled={isPendingStore || isPendingDelete}
 					>
-						{isPendingStore ||
-							(isPendingDelete && <Spinner className="size-3" />)}
+						{(isPendingStore || isPendingDelete) && <Spinner className="size-3" />}
 						Save
 					</Button>
 				</div>

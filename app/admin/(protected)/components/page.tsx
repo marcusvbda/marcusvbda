@@ -35,17 +35,8 @@ export default function ComponentsPage(): ReactNode {
 			description="Define your components to organize fields and consume it in your application."
 			filterBy="id,name"
 			itemLabel="name"
-			beforeSave={({ formValues, error, setError }: any) => {
-				const componentSchema = z.object({
-					name: require('zod').string().min(1, 'Name is required'),
-				});
-				const validation = componentSchema.safeParse(formValues);
-				if (!validation.success) {
-					const zodErrors = validation.error.flatten().fieldErrors;
-					setError(validation.error.flatten().fieldErrors);
-					return;
-				}
-				setError({});
+			validateForm={{
+				name: z.string().min(1, 'Name is required'),
 			}}
 			initialState={{
 				name: '',

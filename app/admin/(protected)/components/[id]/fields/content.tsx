@@ -46,20 +46,11 @@ export default function FieldPageContentClient({ component }: any): ReactNode {
 				componentId: Number(component?.id),
 				language,
 			}}
-			beforeSave={({ formValues, error, setError }: any) => {
-				const componentSchema = z.object({
-					name: require('zod').string().min(1, 'Name is required'),
-					language: require('zod').string().min(1, 'Language is required'),
-					value: require('zod').string().optional(),
-					valueJson: require('zod').object({}).optional(),
-				});
-				const validation = componentSchema.safeParse(formValues);
-				if (!validation.success) {
-					const zodErrors = validation.error.flatten().fieldErrors;
-					setError(validation.error.flatten().fieldErrors);
-					return;
-				}
-				setError({});
+			validateForm={{
+				name: z.string().min(1, 'Name is required'),
+				language: z.string().min(1, 'Language is required'),
+				value: z.string().optional(),
+				valueJson: z.object({}).optional(),
 			}}
 			beforeList={
 				<Tabs defaultValue={language}>
