@@ -18,7 +18,7 @@ export default function Content({ content }: any): ReactNode {
 	const [message, setMessage] = useState<string>('');
 	const [isLoading, setIsLoading] = useState(false);
 
-	const quickAmounts = [5, 10, 20, 50, 100];
+	const quickAmounts = [1, 5, 15, 20, 50];
 
 	const handleAmountSelect = (value: number) => {
 		setAmount(value);

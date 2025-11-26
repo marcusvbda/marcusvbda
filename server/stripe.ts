@@ -14,6 +14,7 @@ export const createCheckoutSession = async (
 ) => {
 	try {
 		const stripe = getStripeInstance();
+		const currency = 'brl';
 		const session = await stripe.checkout.sessions.create({
 			payment_method_types: ['card'],
 			mode: 'payment',
@@ -21,7 +22,7 @@ export const createCheckoutSession = async (
 			line_items: [
 				{
 					price_data: {
-						currency: 'brl',
+						currency,
 						unit_amount: amount,
 						product_data: {
 							name: 'Doação - Cafezinho',
@@ -31,6 +32,11 @@ export const createCheckoutSession = async (
 					quantity: 1,
 				},
 			],
+			payment_method_options: {
+				card: {
+					request_three_d_secure: 'automatic',
+				},
+			},
 			metadata: message
 				? {
 						donation_message: message,
