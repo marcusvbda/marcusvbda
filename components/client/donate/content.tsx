@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Coffee, Heart, Sparkles } from 'lucide-react';
+import { Spinner } from '@/components/ui/spinner';
 
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
@@ -142,9 +143,7 @@ export default function Content({ content }: any): ReactNode {
 										size="lg"
 									>
 										{isLoading ? (
-											<>
-												<span className="animate-spin mr-2">⏳</span>
-											</>
+											<Spinner className="size-3" />
 										) : (
 											<>
 												<Coffee className="w-5 h-5 mr-2" />
