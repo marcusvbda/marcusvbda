@@ -2,10 +2,14 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Suspense } from 'react';
 import Wrapper from './wrapper';
 
-export default function Donate() {
+interface DonateSuccessProps {
+	session_id: string;
+}
+
+export default function DonateSuccess({ session_id }: DonateSuccessProps) {
 	return (
 		<Suspense fallback={<Fallback />}>
-			<Wrapper />
+			<Wrapper session_id={session_id} />
 		</Suspense>
 	);
 }

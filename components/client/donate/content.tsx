@@ -11,7 +11,7 @@ import { Coffee, Heart, Sparkles } from 'lucide-react';
 
 export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
-
+	const donate = content?.donate?.[language];
 	const [amount, setAmount] = useState<number>(10);
 	const [customAmount, setCustomAmount] = useState<string>('');
 	const [message, setMessage] = useState<string>('');
@@ -26,7 +26,7 @@ export default function Content({ content }: any): ReactNode {
 
 	const handleDonate = async () => {
 		if (amount < 100) {
-			alert('O valor mínimo é R$ 1,00');
+			alert(donate?.minimumMessage?.value);
 			return;
 		}
 
@@ -40,11 +40,11 @@ export default function Content({ content }: any): ReactNode {
 				window.open(result.url);
 			} else {
 				console.error('Error creating checkout session:', result.error);
-				alert('Erro ao criar sessão de pagamento. Tente novamente.');
+				alert(donate?.errorMessage?.value);
 			}
 		} catch (error) {
 			console.error('Error:', error);
-			alert('Erro ao processar doação. Tente novamente.');
+			alert(donate?.errorMessage?.value);
 		} finally {
 			setIsLoading(false);
 		}
@@ -65,12 +65,11 @@ export default function Content({ content }: any): ReactNode {
 						</div>
 					</div>
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						Ajude um programador a comprar um cafezinho
+						{donate?.title?.value}
 						<Sparkles className="inline-block w-8 h-8 text-primary ml-2" />
 					</h2>
 					<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-						Seu apoio ajuda a manter este projeto vivo e a continuar criando
-						conteúdo de qualidade. Qualquer valor faz a diferença!
+						{donate?.subtitle?.value}
 					</p>
 				</div>
 
@@ -79,14 +78,14 @@ export default function Content({ content }: any): ReactNode {
 						<CardHeader className="text-center pb-4">
 							<CardTitle className="text-2xl flex items-center justify-center gap-2">
 								<Heart className="w-6 h-6 text-primary fill-primary" />
-								Faça sua doação
+								{donate?.buttonText?.value}
 							</CardTitle>
 						</CardHeader>
 						<CardContent className="space-y-6">
 							{/* Seleção de Valor */}
 							<div className="space-y-3">
 								<Label className="text-base font-semibold">
-									Escolha o valor da doação
+									{donate?.selectAmountLabel?.value}
 								</Label>
 								<div className="grid grid-cols-3 md:grid-cols-5 gap-3">
 									{quickAmounts.map((value) => (
@@ -108,7 +107,7 @@ export default function Content({ content }: any): ReactNode {
 									<div className="pt-2 p-3 bg-primary/5 rounded-lg border border-primary/20">
 										<p className="text-sm text-center">
 											<span className="font-semibold text-primary">
-												Valor selecionado: R$ {displayAmount}
+												{donate?.selectedAmountLabel?.value} R$ {displayAmount}
 											</span>
 										</p>
 									</div>
@@ -118,21 +117,18 @@ export default function Content({ content }: any): ReactNode {
 							{/* Mensagem */}
 							<div className="space-y-3">
 								<Label htmlFor="message" className="text-base font-semibold">
-									Deixe uma mensagem (opcional)
-									<span className="text-muted-foreground font-normal text-sm ml-2">
-										- Sua mensagem será enviada junto com a doação
-									</span>
+									{donate?.messageLabel?.value}
 								</Label>
 								<Textarea
 									id="message"
-									placeholder="Ex: Obrigado pelo conteúdo incrível! Continue assim! ☕"
+									placeholder={donate?.messagePlaceholder?.value}
 									value={message}
 									onChange={(e) => setMessage(e.target.value)}
 									className="min-h-[100px] resize-none"
 									maxLength={500}
 								/>
 								<p className="text-xs text-muted-foreground text-right">
-									{message.length}/500 caracteres
+									{message.length}/500 {donate?.charactersLabel?.value}
 								</p>
 							</div>
 
@@ -148,12 +144,11 @@ export default function Content({ content }: any): ReactNode {
 										{isLoading ? (
 											<>
 												<span className="animate-spin mr-2">⏳</span>
-												Processando...
 											</>
 										) : (
 											<>
 												<Coffee className="w-5 h-5 mr-2" />
-												Doar R$ {displayAmount}
+												{donate?.buttonText?.value} R$ {displayAmount}
 											</>
 										)}
 									</Button>
@@ -162,13 +157,9 @@ export default function Content({ content }: any): ReactNode {
 
 							{amount < 100 && (
 								<p className="text-sm text-destructive text-center">
-									O valor mínimo para doação é R$ 1,00
+									{donate?.minimumMessage?.value}
 								</p>
 							)}
-
-							<p className="text-xs text-center text-muted-foreground pt-2">
-								Pagamento seguro processado pelo Stripe
-							</p>
 						</CardContent>
 					</Card>
 				</div>

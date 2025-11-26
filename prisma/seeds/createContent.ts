@@ -17,6 +17,8 @@ export default async function (prisma: any) {
 		createSkillsContent(prisma),
 		createExperiencesContent(prisma),
 		createProjectsContent(prisma),
+		createDonateContent(prisma),
+		createDonateSuccessContent(prisma),
 	]);
 }
 
@@ -58,6 +60,11 @@ const createNavbarContent = async (prisma: any) => {
 							value: 'Education',
 						},
 						{
+							name: 'charactersLabel',
+							language: 'en',
+							value: 'characters',
+						},
+						{
 							name: 'contact',
 							language: 'en',
 							value: 'Contact',
@@ -71,6 +78,11 @@ const createNavbarContent = async (prisma: any) => {
 							name: 'about',
 							language: 'pt',
 							value: 'Sobre',
+						},
+						{
+							name: 'charactersLabel',
+							language: 'pt',
+							value: 'caracteres',
 						},
 						{
 							name: 'experience',
@@ -1026,6 +1038,240 @@ const createProjectsContent = async (prisma: any) => {
 									tech: 'Next.js, React, TypeScript, Node.js, AWS',
 								},
 							},
+						},
+					],
+				},
+			},
+		},
+	});
+};
+
+const createDonateContent = async (prisma: any) => {
+	await prisma.component.create({
+		data: {
+			name: 'donate',
+			fields: {
+				createMany: {
+					data: [
+						{
+							name: 'minimumMessage',
+							language: 'pt',
+							value: 'O valor mínimo é R$ 1,00',
+						},
+						{
+							name: 'errorMessage',
+							language: 'pt',
+							value: 'Erro ao processar doação. Tente novamente.',
+						},
+						{
+							name: 'title',
+							language: 'pt',
+							value: 'Ajude um programador a comprar um cafezinho',
+						},
+						{
+							name: 'subtitle',
+							language: 'pt',
+							value:
+								'Seu apoio ajuda a manter este projeto vivo e a continuar criando conteúdo de qualidade. Qualquer valor faz a diferença!',
+						},
+						{
+							name: 'buttonText',
+							language: 'pt',
+							value: 'Faça sua doação',
+						},
+						{
+							name: 'selectAmountLabel',
+							language: 'pt',
+							value: 'Escolha o valor da doação',
+						},
+						{
+							name: 'selectedAmountLabel',
+							language: 'pt',
+							value: 'Valor selecionado : ',
+						},
+						{
+							name: 'messageLabel',
+							language: 'pt',
+							value:
+								'Deixe uma mensagem (opcional) - Sua mensagem será enviada junto com a doação',
+						},
+						{
+							name: 'messagePlaceholder',
+							language: 'pt',
+							value: 'Ex: Obrigado pelo conteúdo incrível! Continue assim! ☕',
+						},
+						{
+							name: 'buttonText',
+							language: 'pt',
+							value: 'Doar',
+						},
+						{
+							name: 'minimumMessage',
+							language: 'pt',
+							value: 'O valor mínimo para doação é R$ 1,00',
+						},
+						{
+							name: 'minimumMessage',
+							language: 'en',
+							value: 'The minimum donation amount is $1.00',
+						},
+						{
+							name: 'errorMessage',
+							language: 'en',
+							value: 'Error processing donation. Please try again.',
+						},
+						{
+							name: 'title',
+							language: 'en',
+							value: 'Help a programmer buy a coffee',
+						},
+						{
+							name: 'subtitle',
+							language: 'en',
+							value:
+								'Your support keeps this project alive and allows me to continue creating quality content. Any amount makes a difference!',
+						},
+						{
+							name: 'buttonText',
+							language: 'en',
+							value: 'Make a donation',
+						},
+						{
+							name: 'selectAmountLabel',
+							language: 'en',
+							value: 'Select the donation amount',
+						},
+						{
+							name: 'selectedAmountLabel',
+							language: 'en',
+							value: 'Selected amount : ',
+						},
+						{
+							name: 'messageLabel',
+							language: 'en',
+							value:
+								'Leave a message (optional) - Your message will be sent along with the donation',
+						},
+						{
+							name: 'messagePlaceholder',
+							language: 'en',
+							value: 'Ex: Thank you for the incredible content! Keep going! ☕',
+						},
+						{
+							name: 'buttonText',
+							language: 'en',
+							value: 'Donate',
+						},
+						{
+							name: 'minimumMessage',
+							language: 'en',
+							value: 'The minimum donation amount is $1.00',
+						},
+					],
+				},
+			},
+		},
+	});
+};
+
+const createDonateSuccessContent = async (prisma: any) => {
+	await prisma.component.create({
+		data: {
+			name: 'donate-success',
+			fields: {
+				createMany: {
+					data: [
+						{
+							name: 'title',
+							language: 'pt',
+							value: 'Obrigado pela sua doação!',
+						},
+						{
+							name: 'subtitle',
+							language: 'pt',
+							value:
+								'Sua generosidade faz toda a diferença. Agradecemos muito pelo seu apoio!',
+						},
+						{
+							name: 'detailsTitle',
+							language: 'pt',
+							value: 'Detalhes da doação',
+						},
+						{
+							name: 'detailsPaymentStatus',
+							language: 'pt',
+							value: 'Status do pagamento',
+						},
+						{
+							name: 'detailsPaymentStatusPaid',
+							language: 'pt',
+							value: 'Pago',
+						},
+						{
+							name: 'detailsPaymentStatusPending',
+							language: 'pt',
+							value: 'Pendente',
+						},
+						{
+							name: 'detailsValue',
+							language: 'pt',
+							value: 'Valor',
+						},
+						{
+							name: 'detailsEmail',
+							language: 'pt',
+							value: 'Email',
+						},
+						{
+							name: 'buttonText',
+							language: 'pt',
+							value: 'Voltar para a página inicial',
+						},
+						{
+							name: 'title',
+							language: 'en',
+							value: 'Thank you for your donation!',
+						},
+						{
+							name: 'subtitle',
+							language: 'en',
+							value:
+								'Your generosity makes a difference. We appreciate your support!',
+						},
+						{
+							name: 'detailsTitle',
+							language: 'en',
+							value: 'Donation details',
+						},
+						{
+							name: 'detailsPaymentStatus',
+							language: 'en',
+							value: 'Payment status',
+						},
+						{
+							name: 'detailsPaymentStatusPaid',
+							language: 'en',
+							value: 'Paid',
+						},
+						{
+							name: 'detailsPaymentStatusPending',
+							language: 'en',
+							value: 'Pending',
+						},
+						{
+							name: 'detailsValue',
+							language: 'en',
+							value: 'Value',
+						},
+						{
+							name: 'detailsEmail',
+							language: 'en',
+							value: 'Email',
+						},
+						{
+							name: 'buttonText',
+							language: 'en',
+							value: 'Return to the home page',
 						},
 					],
 				},
