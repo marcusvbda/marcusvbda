@@ -32,11 +32,6 @@ export const createCheckoutSession = async (
 					quantity: 1,
 				},
 			],
-			payment_method_options: {
-				card: {
-					request_three_d_secure: 'automatic',
-				},
-			},
 			metadata: message
 				? {
 						donation_message: message,

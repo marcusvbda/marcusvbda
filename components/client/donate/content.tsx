@@ -38,14 +38,12 @@ export default function Content({ content }: any): ReactNode {
 				message.trim() || undefined
 			);
 			if (result.success && result.url) {
-				window.open(result.url);
+				window.location.href = result.url;
 			} else {
 				console.error('Error creating checkout session:', result.error);
-				alert(donate?.errorMessage?.value);
 			}
 		} catch (error) {
 			console.error('Error:', error);
-			alert(donate?.errorMessage?.value);
 		} finally {
 			setIsLoading(false);
 		}
