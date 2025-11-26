@@ -5,6 +5,7 @@ import Projects from '@/components/client/projects';
 import Education from '@/components/client/education';
 import Skills from '@/components/client/skills';
 import Contacts from '@/components/client/contacts';
+import Donate from '@/components/client/donate';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<Education />
 			<Skills />
 			<Contacts />
+			<Donate />
 		</>
 	);
 }
