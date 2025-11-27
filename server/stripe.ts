@@ -16,7 +16,6 @@ export const createCheckoutSession = async (
 		const stripe = getStripeInstance();
 		const currency = 'brl';
 		const session = await stripe.checkout.sessions.create({
-			payment_method_types: ['card'],
 			mode: 'payment',
 			success_url: `${process.env.STRIPE_CALLBACK_URL}/{CHECKOUT_SESSION_ID}`,
 			line_items: [
@@ -32,6 +31,14 @@ export const createCheckoutSession = async (
 					quantity: 1,
 				},
 			],
+			payment_method_options: {
+				card: {
+					request_three_d_secure: 'automatic',
+				},
+				boleto: {
+					expires_after_days: 3,
+				},
+			},
 			metadata: message
 				? {
 						donation_message: message,
