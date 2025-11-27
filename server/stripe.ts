@@ -31,12 +31,10 @@ export const createCheckoutSession = async (
 					quantity: 1,
 				},
 			],
+			payment_method_types: ['card'],
 			payment_method_options: {
 				card: {
 					request_three_d_secure: 'automatic',
-				},
-				boleto: {
-					expires_after_days: 3,
 				},
 			},
 			metadata: message
