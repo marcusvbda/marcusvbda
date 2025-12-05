@@ -524,12 +524,12 @@ const createEducationContent = async (prisma: any) => {
 									description: 'Harvard University • Online • 2025 - 2025',
 								},
 								futureLearning: {
-									title: 'Advanced English Course ( IRELAND )',
-									description: 'Future Learning • Online • 2025 - 2025',
+									title: 'Advanced English Course',
+									description: 'Future Learning • Ireland • 2025 - 2025',
 								},
 								times: {
-									title: 'Professional English Course ( BRAZIL )',
-									description: 'Times • Online • 2023 - 2024',
+									title: 'Professional English Course',
+									description: 'Times • Brazil • 2023 - 2024',
 								},
 							},
 						},
@@ -558,11 +558,11 @@ const createEducationContent = async (prisma: any) => {
 									description: 'Harvard University • Online • 2025 - 2025',
 								},
 								futureLearning: {
-									title: 'Curso Avançado de Inglês ( IRLANDA )',
-									description: 'Future Learning • Online • 2025 - 2025',
+									title: 'Curso Avançado de Inglês',
+									description: 'Future Learning (Irlanda) • 2025 - 2025',
 								},
 								times: {
-									title: 'Curso Profissional de Inglês ( BRASIL )',
+									title: 'Curso Profissional de Inglês',
 									description: 'Times • Online • 2023 - 2024',
 								},
 							},
