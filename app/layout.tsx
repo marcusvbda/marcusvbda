@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		title,
 		description,
 		keywords:
-			'fullstack engineer, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
+			'Software engineer, Fullstack, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
 		authors: [{ name: title }],
 		openGraph: {
 			title: `${title} - ${description}`,

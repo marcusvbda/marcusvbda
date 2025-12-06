@@ -1,5 +1,6 @@
 # **💼 Marcus Vinicius Bassalobre de Assis**
-### **Senior Fullstack Engineer**
+
+### **Senior Software Engineer**
 
 📍 Dublin, Ireland  
 📧 **bassalobre.vinicius@gmail.com**  
@@ -10,7 +11,8 @@
 ---
 
 ## **👤 About Me**
-Senior Fullstack Engineer with **15+ years of experience**, having led engineering teams and built scalable systems used by **millions of users** across fintech, SaaS, and B2B platforms.
+
+Senior Software Engineer with **15+ years of experience**, having led engineering teams and built scalable systems used by **millions of users** across fintech, SaaS, and B2B platforms.
 
 Expert in **React, Next.js, Laravel, Node.js, and TypeScript**, with a strong focus on performance, architecture, and business-driven development.
 
@@ -20,87 +22,96 @@ Passionate about mentoring engineers, improving engineering culture, and deliver
 
 ## **💼 Experience**
 
-### **Fullstack Engineer (PHP, Laravel, React, NestJS)**  
-**Investidor10** — Remote  
-📅 *Nov 2023 – Present*
+### **Software Engineer (PHP, Laravel, React, NestJS)**
 
-- Led the development of **Carteira**, a portfolio platform with **1M+ users**.  
-- Improved platform performance by **60%** through backend and frontend optimizations.  
+**Investidor10** — Remote  
+📅 _Nov 2023 – Present_
+
+- Led the development of **Carteira**, a portfolio platform with **1M+ users**.
+- Improved platform performance by **60%** through backend and frontend optimizations.
 - Designed scalable architecture to support long-term system growth.
 
 ---
 
-### **Fullstack Developer (PHP, Laravel, AlpineJS)**  
-**Vega Checkout** — Remote  
-📅 *Jan 2024 – Jul 2025*
+### **Software Engineer (PHP, Laravel, AlpineJS)**
 
-- Contributed to the new version of one of Brazil’s leading checkout/payment platforms.  
-- Worked on integrations with **Stripe, Pagar.me, Stone, Mastercard, MercadoPago**, and others.  
+**Vega Checkout** — Remote  
+📅 _Jan 2024 – Jul 2024_
+
+- Contributed to the new version of one of Brazil’s leading checkout/payment platforms.
+- Worked on integrations with **Stripe, Pagar.me, Stone, Mastercard, MercadoPago**, and others.
 - Delivered responsive UIs with Laravel, Tailwind, and AlpineJS.
 
 ---
 
-### **Fullstack Developer (PHP, Node.js)**  
-**DIWE** — Remote  
-📅 *Jun 2021 – Apr 2024*
+### **Software Engineer (PHP, Node.js)**
 
-- Led development efforts for clients like **St Gobain, UNIMED, Intelbras, Quartzolit**.  
-- Built a complete **internal ERP** and the **St Gobain Partner Portal** (300k+ users).  
-- Delivered scalable, maintainable fullstack solutions with user-focused features.
+**DIWE** — Remote  
+📅 _Jun 2021 – Apr 2024_
+
+- Led development efforts for clients like **St Gobain, UNIMED, Intelbras, Quartzolit**.
+- Built a complete **internal ERP** and the **St Gobain Partner Portal** (300k+ users).
+- Delivered scalable, maintainable software engineering solutions with user-focused features.
 
 ---
 
-### **Fullstack Developer (PHP, Laravel)**  
-**Otimize / Payt** — Remote  
-📅 *Oct 2018 – Oct 2023*
+### **Software Engineer (PHP, Laravel)**
 
-- First developer hired — built **PrintI**, the #1 B2B printing platform in Brazil.  
-- Later evolved into **Payt**, a digital checkout & product creation platform.  
-- Platform processed **BRL 11M+ in the first year**.  
+**Otimize / Payt** — Remote  
+📅 _Oct 2018 – Oct 2023_
+
+- First developer hired — built **PrintI**, the #1 B2B printing platform in Brazil.
+- Later evolved into **Payt**, a digital checkout & product creation platform.
+- Platform processed **BRL 11M+ in the first year**.
 - Long-term ownership of architecture, integrations, and mission-critical flows.
 
 ---
 
-### **Software Owner (CRM Fullstack Developer)**  
-**Universidade de Marília (UNIMAR)** — Remote  
-📅 *2017 – Sep 2023*
+### **Software Owner (CRM Software Engineer)**
 
-- Designed and maintained a custom CRM used by **90+ campuses nationwide**.  
-- Automated lead management and enrollment processes.  
+**Universidade de Marília (UNIMAR)** — Remote  
+📅 _2017 – Sep 2023_
+
+- Designed and maintained a custom CRM used by **90+ campuses nationwide**.
+- Automated lead management and enrollment processes.
 - Provided long-term support, improvements, and user training.
 
 ---
 
-### **Developer (PHP, C++, Firebird)**  
-**Alive IT** — Marília, Brazil  
-📅 *2014 – Dec 2017*
+### **Developer (PHP, C++, Firebird)**
 
-- Built automation systems for fuel stations using Laravel + C++.  
+**Alive IT** — Marília, Brazil  
+📅 _2014 – Dec 2017_
+
+- Built automation systems for fuel stations using Laravel + C++.
 - Improved efficiency, stability, and reliability across operations.
 
 ---
 
-### **Software Developer (ASP.NET MVC)**  
-**Copy Supply** — São Paulo, Brazil  
-📅 *Dec 2017 – Oct 2018*
+### **Software Developer (ASP.NET MVC)**
 
-- Built an end-to-end CRM for the internal sales team using ASP.NET MVC.  
+**Copy Supply** — São Paulo, Brazil  
+📅 _Dec 2017 – Oct 2018_
+
+- Built an end-to-end CRM for the internal sales team using ASP.NET MVC.
 - Streamlined workflows and improved customer lifecycle management.
 
 ---
 
-### **C++ Developer**  
-**Mastersel** — Marília, Brazil  
-📅 *2010 – 2013*
+### **C++ Developer**
 
-- Developed commercial automation applications and delivered technical support.  
+**Mastersel** — Marília, Brazil  
+📅 _2010 – 2013_
+
+- Developed commercial automation applications and delivered technical support.
 - Improved and maintained high-performance C++ systems.
 
 ---
 
-### **Intern (Delphi)**  
+### **Intern (Delphi)**
+
 **Guess Soluções em Tecnologia** — Marília, Brazil  
-📅 *2013 – 2014*
+📅 _2013 – 2014_
 
 - Developed automation tools for real estate workflows.
 
@@ -108,27 +119,32 @@ Passionate about mentoring engineers, improving engineering culture, and deliver
 
 ## **🎓 Education**
 
-### **Bachelor in Systems Analysis and Development**  
-Universidade de Marília — Brazil  
-📅 *2013 – 2016*
+### **Bachelor in Systems Analysis and Development**
 
-### **Supervised Machine Learning: Regression & Classification**  
+Universidade de Marília — Brazil  
+📅 _2013 – 2016_
+
+### **Supervised Machine Learning: Regression & Classification**
+
 DeepLearning.AI & Stanford University  
-📅 *2025*
+📅 _2025_
 
 ---
 
 ## **🛠️ Skills & Technologies**
 
 ### **Tools**
-Docker • Git • AWS • Vercel • CI/CD • Linux • MacOS • Windows  
-VSCode • Figma • OpenAI • N8N • Supabase • Firebase
+
+Docker • Git • AWS • Vercel • CI/CD • Linux • macOS • Windows  
+VS Code • Figma • OpenAI • N8N • Supabase • Firebase
 
 ### **Backend**
+
 Laravel • NestJS • Express • Node.js • PHP  
 PostgreSQL • MySQL • Redis • Prisma
 
 ### **Frontend**
+
 HTML • CSS • JavaScript • TypeScript  
 React • Next.js • Vue • Nuxt  
 Tailwind • Bootstrap • ShadCN  
@@ -136,5 +152,6 @@ Zustand • Redux • React Query • Context API
 Vite • SSR • SEO
 
 ### **Other**
+
 Agile/Scrum • REST APIs • GraphQL • Microservices  
 System Design • Testing • Team Leadership
