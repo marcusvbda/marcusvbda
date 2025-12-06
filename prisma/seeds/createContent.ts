@@ -156,7 +156,7 @@ const createHeroContent = async (prisma: any) => {
 						{
 							name: 'role',
 							language: 'en',
-							value: 'Senior Fullstack Engineer',
+							value: 'Senior Software Engineer',
 						},
 						{
 							name: 'location',
@@ -167,7 +167,7 @@ const createHeroContent = async (prisma: any) => {
 							name: 'bio',
 							language: 'en',
 							value:
-								"I'm a Senior Fullstack Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
+								"I'm a Senior Software Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
 						},
 						{
 							name: 'greeting',
@@ -202,7 +202,7 @@ const createHeroContent = async (prisma: any) => {
 						{
 							name: 'role',
 							language: 'pt',
-							value: 'Engenheiro Fullstack Sênior',
+							value: 'Engenheiro de Software Sênior',
 						},
 						{
 							name: 'location',
@@ -213,7 +213,7 @@ const createHeroContent = async (prisma: any) => {
 							name: 'bio',
 							language: 'pt',
 							value:
-								'Sou Engenheiro de Software Fullstack Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
+								'Sou Engenheiro de Software Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
 						},
 					],
 				},
@@ -242,7 +242,7 @@ const createInfoContent = async (prisma: any) => {
 						{
 							name: 'role',
 							language: 'en',
-							value: 'Senior Fullstack Engineer',
+							value: 'Senior Software Engineer',
 						},
 						{
 							name: 'email',
@@ -287,7 +287,7 @@ const createInfoContent = async (prisma: any) => {
 						{
 							name: 'role',
 							language: 'pt',
-							value: 'Engenheiro Fullstack Sênior',
+							value: 'Engenheiro de Software Sênior',
 						},
 						{
 							name: 'email',
@@ -517,15 +517,15 @@ const createEducationContent = async (prisma: any) => {
 									title:
 										'Supervised Machine Learning: Regression and Classification',
 									description:
-										'DeepLearning.AI & Stanford University • Online • 2025 - 2025',
+										'DeepLearning.AI & Stanford University • Online • 2025',
 								},
 								harvardX: {
 									title: "CS50's Introduction to Computer Science",
-									description: 'Harvard University • Online • 2025 - 2025',
+									description: 'Harvard University • Online • 2025',
 								},
 								futureLearning: {
 									title: 'Advanced English Course',
-									description: 'Future Learning • Ireland • 2025 - 2025',
+									description: 'Future Learning • Ireland • 2025',
 								},
 								times: {
 									title: 'Professional English Course',
@@ -551,15 +551,15 @@ const createEducationContent = async (prisma: any) => {
 									title:
 										'Regressão e Classificação em Aprendizado de Máquina Supervisionado',
 									description:
-										'DeepLearning.AI & Stanford University • Online • 2025 - 2025',
+										'DeepLearning.AI & Stanford University • Online • 2025',
 								},
 								harvardX: {
 									title: "CS50's Introduction to Computer Science",
-									description: 'Harvard University • Online • 2025 - 2025',
+									description: 'Harvard University • Online • 2025',
 								},
 								futureLearning: {
 									title: 'Curso Avançado de Inglês',
-									description: 'Future Learning (Irlanda) • 2025 - 2025',
+									description: 'Future Learning • Irlanda • 2025',
 								},
 								times: {
 									title: 'Curso Profissional de Inglês',
@@ -606,12 +606,12 @@ const createSkillsContent = async (prisma: any) => {
 										'Laravel, NestJS, ExpressJS, Node.js, PHP, PostgreSQL, MySQL, Redis, Prisma',
 								},
 								tools: {
-									label: 'Ferramentas',
+									label: 'Tools & DevOps',
 									skills:
-										'Docker, Git, AWS, Vercel, CI/CD, Linux, MacOS, Windows, Vercel, VSCode, Figma, OpenAI, N8N, Supabase, Firebase',
+										'Docker, Git, AWS, Vercel, CI/CD, Linux, macOS, Windows, VS Code, Figma, OpenAI, N8N, Supabase, Firebase',
 								},
 								others: {
-									label: 'Outros',
+									label: 'Methodologies & Others',
 									skills:
 										'Agile/Scrum, REST APIs, GraphQL, Microservices, Testing, System Design, Team Leadership',
 								},
@@ -644,10 +644,10 @@ const createSkillsContent = async (prisma: any) => {
 								tools: {
 									label: 'Ferramentas',
 									skills:
-										'Docker, Git, AWS, Vercel, CI/CD, Linux, MacOS, Windows, Vercel, VSCode, Figma, OpenAI, N8N, Supabase, Firebase',
+										'Docker, Git, AWS, Vercel, CI/CD, Linux, macOS, Windows, VS Code, Figma, OpenAI, N8N, Supabase, Firebase',
 								},
 								others: {
-									label: 'Outros',
+									label: 'Metodologias & Outros',
 									skills:
 										'Agile/Scrum, REST APIs, GraphQL, Microservices, Testing, System Design, Team Leadership',
 								},
@@ -688,31 +688,31 @@ const createExperiencesContent = async (prisma: any) => {
 							valueJson: {
 								investidor10: {
 									company: 'Investidor10',
-									role: 'Fullstack Engineer (PHP, Laravel, React, NestJs)',
+									role: 'Software Engineer (PHP, Laravel, React, NestJS)',
 									period: 'Nov 2023 - Present',
 									location: 'Rio de Janeiro, Rio de Janeiro, Brazil · Remote',
 									description:
-										"Led the end-to-end development of Carteira, one of Latin America's largest investment portfolio platforms, serving over 1 million users. Designed and implemented scalable architecture to support platform growth and ensure long-term reliability. Improved performance and user experience, achieving 60% faster load times and optimizing frontend and backend workflows. Collaborated closely with stakeholders and product teams to align technical solutions with business goals, delivering high-impact features.",
+										"Led end-to-end development of Carteira, one of Latin America's largest investment portfolio platforms serving 1M+ users. Architected and implemented scalable microservices architecture using PHP, Laravel, React, Next.js, NestJS, TypeScript, and PostgreSQL to support platform growth. Optimized application performance achieving 60% faster load times through code optimization, caching strategies, and database query improvements. Collaborated with product managers, designers, and stakeholders to deliver high-impact features aligned with business objectives. Implemented CI/CD pipelines, automated testing, and code review processes to ensure code quality and deployment reliability.",
 								},
 								vega: {
 									company: 'Vega Checkout',
-									role: 'Fullstack Developer (PHP, Laravel, AlpineJS)',
-									period: 'Jan 2024 - Jul 2025',
+									role: 'Software Engineer (PHP, Laravel, AlpineJS)',
+									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brazil · Remote',
 									description:
-										'Contributed to the development of the new version of Vega Checkout, one of Brazil’s top payment platforms formed by the merger of PerfectPay and Monetizze. Composed the development team responsible for building and maintaining core features, integrating multiple payment providers including Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro, and MercadoPago. Developed responsive, interactive user interfaces with Laravel, Tailwind, and AlpineJS, optimizing backend integrations and API performance to ensure smooth and reliable transactions. Collaborated closely with cross-functional teams to deliver stable, high-quality releases and enhance overall customer experience.',
+										"Developed core features for Vega Checkout, one of Brazil's leading payment platforms formed by the merger of PerfectPay and Monetizze. Built and maintained payment gateway integrations with multiple providers including Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro, and MercadoPago using REST APIs and webhook handlers. Developed responsive, interactive user interfaces with Laravel, Tailwind CSS, and AlpineJS, implementing real-time transaction processing and payment status updates. Optimized backend API performance and database queries to handle high transaction volumes, ensuring 99.9% uptime. Collaborated with cross-functional teams using Agile/Scrum methodologies to deliver stable, high-quality releases on schedule.",
 								},
 								diwe: {
 									company: 'DIWE',
-									role: 'Fullstack Developer (PHP, Node.js)',
+									role: 'Software Engineer (PHP, Node.js)',
 									period: 'Jun 2021 - Apr 2024',
 									location: 'Joinville, Santa Catarina, Brazil · Remote',
 									description:
-										'Served as a leader in the development team at Diwe, delivering fullstack solutions for digital marketing and technology clients, including St Gobain, UNIMED, Quartzolit, and Intelbras. Identified client challenges and implemented technology solutions to optimize business processes. Notable achievements include developing a complete internal ERP system and creating the St Gobain Partner Portal, a training platform for construction professionals that reached over 300,000 active users. Contributed to frontend and backend development, focusing on user-centric features, scalability, and maintainability, while collaborating closely with cross-functional teams to deliver projects on time and aligned with client expectations.',
+										'Served as a leader in the development team at Diwe, delivering software engineering solutions for digital marketing and technology clients, including St Gobain, UNIMED, Quartzolit, and Intelbras. Identified client challenges and implemented technology solutions to optimize business processes. Notable achievements include developing a complete internal ERP system and creating the St Gobain Partner Portal, a training platform for construction professionals that reached over 300,000 active users. Contributed to frontend and backend development, focusing on user-centric features, scalability, and maintainability, while collaborating closely with cross-functional teams to deliver projects on time and aligned with client expectations.',
 								},
 								otimize: {
 									company: 'Otimize / Payt',
-									role: 'Fullstack Developer (PHP, Laravel)',
+									role: 'Software Engineer (PHP, Laravel)',
 									period: 'Oct 2018 - Oct 2023',
 									location: 'São Paulo, Brazil · Remote',
 									description:
@@ -720,7 +720,7 @@ const createExperiencesContent = async (prisma: any) => {
 								},
 								unimar: {
 									company: 'Universidade de Marília',
-									role: 'Software Owner (CRM fullstack developer)',
+									role: 'Software Owner (CRM Software Engineer)',
 									period: '2017 - Sep 2023',
 									location: 'Marília, São Paulo, Brazil · Remote',
 									description:
@@ -730,17 +730,17 @@ const createExperiencesContent = async (prisma: any) => {
 									company: 'Copy Supply',
 									role: 'Software Developer (ASP.NET MVC)',
 									period: 'Dec 2017 - Oct 2018',
-									location: 'São Paulo e Região · On-site',
+									location: 'São Paulo, São Paulo, Brazil · On-site',
 									description:
-										'Developed the end-to-end internal sales team CRM using ASP.NET MVC, Bootstrap, and SQL Server, working in continuous development alongside the sales team. The solution improved client management and streamlined internal processes, delivering a reliable, scalable tool fully aligned with business needs.',
+										'Developed end-to-end internal sales team CRM system using ASP.NET MVC, C#, Bootstrap, JavaScript, and SQL Server. Implemented features for lead management, client tracking, sales pipeline visualization, and reporting dashboards. Worked in continuous development cycles with the sales team, gathering requirements and iterating on features. The solution improved client management efficiency and streamlined internal processes, delivering a reliable, scalable tool aligned with business needs.',
 								},
 								aliveIt: {
 									company: 'Alive it',
 									role: 'Developer (PHP, C++, Firebird)',
 									period: '2014 - Dec 2017',
-									location: 'Marília - SP, Brazil',
+									location: 'Marília, São Paulo, Brazil · On-site',
 									description:
-										'Started in technical support and later transitioned to development. Developed automation systems for fuel stations using Laravel and C++, contributing to improved operational efficiency and process reliability.',
+										'Started in technical support and transitioned to software development. Developed automation systems for fuel stations using PHP, Laravel, C++, and Firebird database. Built applications for inventory management, sales reporting, and point-of-sale integration. Contributed to improved operational efficiency and process reliability through automated workflows and real-time data processing.',
 								},
 								guess: {
 									company: 'Guess soluções em tecnologia',
@@ -781,31 +781,31 @@ const createExperiencesContent = async (prisma: any) => {
 							valueJson: {
 								investidor10: {
 									company: 'Investidor10',
-									role: 'Engenheiro Fullstack (PHP, Laravel, React, NestJs)',
+									role: 'Engenheiro de Software (PHP, Laravel, React, NestJS)',
 									period: 'Nov 2023 - Presente',
 									location: 'Rio de Janeiro, Rio de Janeiro, Brasil · Remoto',
 									description:
-										'Liderei o desenvolvimento end-to-end da Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina, atendendo mais de 1 milhão de usuários. Projetei e implementei arquitetura escalável para suportar o crescimento da plataforma e garantir confiabilidade a longo prazo. Melhorei performance e experiência do usuário, alcançando tempos de carregamento 60% mais rápidos e otimizando fluxos de trabalho de frontend e backend. Colaborei de perto com stakeholders e equipes de produto para alinhar soluções técnicas com objetivos de negócio, entregando funcionalidades de alto impacto.',
+										'Liderei o desenvolvimento end-to-end da Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina, atendendo mais de 1 milhão de usuários. Arquiteteei e implementei arquitetura escalável de microserviços usando PHP, Laravel, React, Next.js, NestJS, TypeScript e PostgreSQL para suportar o crescimento da plataforma. Otimizei performance da aplicação alcançando tempos de carregamento 60% mais rápidos através de otimização de código, estratégias de cache e melhorias em consultas de banco de dados. Colaborei com gerentes de produto, designers e stakeholders para entregar funcionalidades de alto impacto alinhadas com objetivos de negócio. Implementei pipelines de CI/CD, testes automatizados e processos de code review para garantir qualidade de código e confiabilidade de deploy.',
 								},
 								vega: {
 									company: 'Vega Checkout',
-									role: 'Desenvolvedor Fullstack (PHP, Laravel, AlpineJS)',
-									period: 'Jan 2024 - Jul 2025',
+									role: 'Engenheiro de Software (PHP, Laravel, AlpineJS)',
+									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brasil · Remoto',
 									description:
-										'Contribuí para o desenvolvimento da nova versão do Vega Checkout, uma das principais plataformas de pagamento do Brasil formada pela fusão de PerfectPay e Monetizze. Compus a equipe de desenvolvimento responsável por construir e manter funcionalidades principais, integrando múltiplos provedores de pagamento incluindo Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro e MercadoPago. Desenvolvi interfaces de usuário responsivas e interativas com Laravel, Tailwind e AlpineJS, otimizando integrações de backend e performance de API para garantir transações suaves e confiáveis. Colaborei de perto com equipes multifuncionais para entregar releases estáveis e de alta qualidade e melhorar a experiência geral do cliente.',
+										'Desenvolvi funcionalidades principais do Vega Checkout, uma das principais plataformas de pagamento do Brasil formada pela fusão de PerfectPay e Monetizze. Construí e mantive integrações de gateway de pagamento com múltiplos provedores incluindo Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro e MercadoPago usando REST APIs e handlers de webhook. Desenvolvi interfaces de usuário responsivas e interativas com Laravel, Tailwind CSS e AlpineJS, implementando processamento de transações em tempo real e atualizações de status de pagamento. Otimizei performance de API backend e consultas de banco de dados para lidar com altos volumes de transações, garantindo 99.9% de uptime. Colaborei com equipes multifuncionais usando metodologias Agile/Scrum para entregar releases estáveis e de alta qualidade no prazo.',
 								},
 								diwe: {
 									company: 'DIWE',
-									role: 'Desenvolvedor Fullstack (PHP, Node.js)',
+									role: 'Engenheiro de Software (PHP, Node.js)',
 									period: 'Jun 2021 - Abr 2024',
 									location: 'Joinville, Santa Catarina, Brasil · Remoto',
 									description:
-										'Atuei como líder na equipe de desenvolvimento na Diwe, entregando soluções fullstack para clientes de marketing digital e tecnologia, incluindo St Gobain, UNIMED, Quartzolit e Intelbras. Identifiquei desafios dos clientes e implementei soluções tecnológicas para otimizar processos de negócio. Conquistas notáveis incluem desenvolver um sistema ERP interno completo e criar o Portal Parceiro St Gobain, uma plataforma de treinamento para profissionais da construção que alcançou mais de 300.000 usuários ativos. Contribuí para desenvolvimento de frontend e backend, focando em funcionalidades centradas no usuário, escalabilidade e manutenibilidade, enquanto colaborava de perto com equipes multifuncionais para entregar projetos no prazo e alinhados com as expectativas dos clientes.',
+										'Atuei como líder na equipe de desenvolvimento na Diwe, entregando soluções de engenharia de software para clientes de marketing digital e tecnologia, incluindo St Gobain, UNIMED, Quartzolit e Intelbras. Identifiquei desafios dos clientes e implementei soluções tecnológicas para otimizar processos de negócio. Conquistas notáveis incluem desenvolver um sistema ERP interno completo e criar o Portal Parceiro St Gobain, uma plataforma de treinamento para profissionais da construção que alcançou mais de 300.000 usuários ativos. Contribuí para desenvolvimento de frontend e backend, focando em funcionalidades centradas no usuário, escalabilidade e manutenibilidade, enquanto colaborava de perto com equipes multifuncionais para entregar projetos no prazo e alinhados com as expectativas dos clientes.',
 								},
 								otimize: {
 									company: 'Otimize / Payt',
-									role: 'Desenvolvedor Fullstack (PHP, Laravel)',
+									role: 'Engenheiro de Software (PHP, Laravel)',
 									period: 'Out 2018 - Out 2023',
 									location: 'São Paulo, Brasil · Remoto',
 									description:
@@ -813,7 +813,7 @@ const createExperiencesContent = async (prisma: any) => {
 								},
 								unimar: {
 									company: 'Universidade de Marília',
-									role: 'Proprietário de Software (Desenvolvedor CRM fullstack)',
+									role: 'Proprietário de Software (Engenheiro de Software CRM)',
 									period: '2017 - Set 2023',
 									location: 'Marília, São Paulo, Brasil · Remoto',
 									description:
@@ -823,17 +823,17 @@ const createExperiencesContent = async (prisma: any) => {
 									company: 'Copy Supply',
 									role: 'Desenvolvedor de Software (ASP.NET MVC)',
 									period: 'Dez 2017 - Out 2018',
-									location: 'São Paulo e Região · Presencial',
+									location: 'São Paulo, São Paulo, Brasil · Presencial',
 									description:
-										'Desenvolvi o CRM interno da equipe de vendas de ponta a ponta usando ASP.NET MVC, Bootstrap e SQL Server, trabalhando em desenvolvimento contínuo junto com a equipe de vendas. A solução melhorou o gerenciamento de clientes e simplificou processos internos, entregando uma ferramenta confiável e escalável totalmente alinhada com as necessidades do negócio.',
+										'Desenvolvi sistema CRM interno da equipe de vendas de ponta a ponta usando ASP.NET MVC, C#, Bootstrap, JavaScript e SQL Server. Implementei funcionalidades para gerenciamento de leads, rastreamento de clientes, visualização de pipeline de vendas e dashboards de relatórios. Trabalhei em ciclos de desenvolvimento contínuo com a equipe de vendas, coletando requisitos e iterando em funcionalidades. A solução melhorou eficiência de gerenciamento de clientes e simplificou processos internos, entregando uma ferramenta confiável e escalável alinhada com as necessidades do negócio.',
 								},
 								aliveIt: {
 									company: 'Alive it',
 									role: 'Desenvolvedor (PHP, C++, Firebird)',
 									period: '2014 - Dez 2017',
-									location: 'Marília - SP, Brasil',
+									location: 'Marília, São Paulo, Brasil · Presencial',
 									description:
-										'Iniciei em suporte técnico e posteriormente fiz transição para desenvolvimento. Desenvolvi sistemas de automação para postos de combustível usando Laravel e C++, contribuindo para melhor eficiência operacional e confiabilidade de processos.',
+										'Iniciei em suporte técnico e fiz transição para desenvolvimento de software. Desenvolvi sistemas de automação para postos de combustível usando PHP, Laravel, C++ e banco de dados Firebird. Construí aplicações para gerenciamento de estoque, relatórios de vendas e integração de ponto de venda. Contribuí para melhor eficiência operacional e confiabilidade de processos através de fluxos de trabalho automatizados e processamento de dados em tempo real.',
 								},
 								guess: {
 									company: 'Guess soluções em tecnologia',
@@ -912,28 +912,28 @@ const createProjectsContent = async (prisma: any) => {
 									title: 'Parceiro da Construção',
 									description:
 										'B2B marketplace and learning platform connecting construction professionals. Built course management system, certification tracking, and professional networking features serving 300k+ users.',
-									tech: 'React, Wordpress, Laravel, MySQL, Redis, Docker',
+									tech: 'React, WordPress, Laravel, MySQL, Redis, Docker',
 								},
 								divercity: {
 									image: '/companies/divercity.png',
 									title: 'Divercity Park',
 									description:
 										'Institutional website for a children’s entertainment venue located in a shopping mall. Showcases attractions, events, pricing, and contact information with a playful and family-friendly design focused on accessibility and visual appeal.',
-									tech: 'Wordpress, Tailwind, MYSQL, PHP',
+									tech: 'WordPress, Tailwind CSS, MySQL, PHP',
 								},
 								tom: {
 									image: '/companies/tom.png',
 									title: 'Tom Incorporadora Platform',
 									description:
 										'Administrative web app developed for a real estate company to manage client interactions and project information. Includes dashboards, document management, and communication tools designed for efficiency and usability.',
-									tech: 'Laravel, FilamentPHP, MYSQL, Tailwind',
+									tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 								},
 								inteligenzia: {
 									image: '/companies/inteligenzia.png',
 									title: 'Inteligenzia Client Portal',
 									description:
 										'Client portal developed for Inteligenzia, the leading B2B marketing agency in Brazil and Latin America. Designed to centralize project management, performance reports, and communication between clients and the agency, improving transparency and collaboration.',
-									tech: 'Laravel, FilamentPHP, MYSQL, Tailwind',
+									tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 								},
 								mudascarvalho: {
 									image: '/companies/mudas.png',
@@ -954,7 +954,7 @@ const createProjectsContent = async (prisma: any) => {
 									title: 'RH99 Platform',
 									description:
 										'Professional social network connecting HR specialists and managers. Designed to foster collaboration, knowledge sharing, and recruitment opportunities through interactive profiles, posts, and discussion features.',
-									tech: 'Nuxt.js, VUE, TypeScript',
+									tech: 'Nuxt.js, Vue.js, TypeScript',
 								},
 								unimed: {
 									image: '/companies/unimed.png',
@@ -1010,28 +1010,28 @@ const createProjectsContent = async (prisma: any) => {
 									title: 'Parceiro da Construção',
 									description:
 										'Marketplace B2B e plataforma de aprendizado conectando profissionais da construção. Construí sistema de gerenciamento de cursos, rastreamento de certificações e funcionalidades de networking profissional atendendo mais de 300k usuários.',
-									tech: 'React, Wordpress, Laravel, MySQL, Redis, Docker',
+									tech: 'React, WordPress, Laravel, MySQL, Redis, Docker',
 								},
 								divercity: {
 									image: '/companies/divercity.png',
 									title: 'Divercity Park',
 									description:
 										'Site institucional para um espaço de entretenimento infantil localizado em um shopping center. Apresenta atrações, eventos, preços e informações de contato com um design lúdico e familiar focado em acessibilidade e apelo visual.',
-									tech: 'Wordpress, Tailwind, MYSQL, PHP',
+									tech: 'WordPress, Tailwind CSS, MySQL, PHP',
 								},
 								tom: {
 									image: '/companies/tom.png',
 									title: 'Plataforma Tom Incorporadora',
 									description:
 										'Aplicativo web administrativo desenvolvido para uma empresa imobiliária gerenciar interações com clientes e informações de projetos. Inclui dashboards, gerenciamento de documentos e ferramentas de comunicação projetadas para eficiência e usabilidade.',
-									tech: 'Laravel, FilamentPHP, MYSQL, Tailwind',
+									tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 								},
 								inteligenzia: {
 									image: '/companies/inteligenzia.png',
 									title: 'Portal Cliente Inteligenzia',
 									description:
 										'Portal de cliente desenvolvido para Inteligenzia, a principal agência de marketing B2B do Brasil e América Latina. Projetado para centralizar gerenciamento de projetos, relatórios de performance e comunicação entre clientes e a agência, melhorando transparência e colaboração.',
-									tech: 'Laravel, FilamentPHP, MYSQL, Tailwind',
+									tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 								},
 								mudascarvalho: {
 									image: '/companies/mudas.png',
@@ -1052,7 +1052,7 @@ const createProjectsContent = async (prisma: any) => {
 									title: 'Plataforma RH99',
 									description:
 										'Rede social profissional conectando especialistas e gerentes de RH. Projetada para promover colaboração, compartilhamento de conhecimento e oportunidades de recrutamento através de perfis interativos, posts e funcionalidades de discussão.',
-									tech: 'Nuxt.js, VUE, TypeScript',
+									tech: 'Nuxt.js, Vue.js, TypeScript',
 								},
 								unimed: {
 									image: '/companies/unimed.png',
@@ -1101,7 +1101,7 @@ const createDonateContent = async (prisma: any) => {
 						{
 							name: 'buttonText',
 							language: 'pt',
-							value: 'Faça sua doação',
+							value: 'Doar',
 						},
 						{
 							name: 'selectAmountLabel',
@@ -1123,16 +1123,6 @@ const createDonateContent = async (prisma: any) => {
 							name: 'messagePlaceholder',
 							language: 'pt',
 							value: 'Ex: Obrigado pelo conteúdo incrível! Continue assim! ☕',
-						},
-						{
-							name: 'buttonText',
-							language: 'pt',
-							value: 'Doar',
-						},
-						{
-							name: 'minimumMessage',
-							language: 'pt',
-							value: 'O valor mínimo para doação é R$ 1,00',
 						},
 						{
 							name: 'minimumMessage',
@@ -1158,7 +1148,7 @@ const createDonateContent = async (prisma: any) => {
 						{
 							name: 'buttonText',
 							language: 'en',
-							value: 'Make a donation',
+							value: 'Donate',
 						},
 						{
 							name: 'selectAmountLabel',
@@ -1180,16 +1170,6 @@ const createDonateContent = async (prisma: any) => {
 							name: 'messagePlaceholder',
 							language: 'en',
 							value: 'Ex: Thank you for the incredible content! Keep going! ☕',
-						},
-						{
-							name: 'buttonText',
-							language: 'en',
-							value: 'Donate',
-						},
-						{
-							name: 'minimumMessage',
-							language: 'en',
-							value: 'The minimum donation amount is $1.00',
 						},
 					],
 				},
