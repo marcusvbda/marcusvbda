@@ -57,7 +57,7 @@ export default function Content({ content }: any) {
 							</div>
 							<CardHeader>
 								<CardTitle className="text-xl">
-									{items?.[project]?.title?.value}
+									{items?.[project]?.title}
 								</CardTitle>
 							</CardHeader>
 							<CardContent className="space-y-4">
