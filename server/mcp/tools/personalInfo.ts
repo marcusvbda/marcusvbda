@@ -1,21 +1,34 @@
 import { Tool } from "../types";
+import db from '@/lib/db';
 
-const personInfoTool: Tool = {
-    user: {
-        name: "user",
-        description: "Get the current user's name.",
-        inputSchema: {
+const personalInfoTool: Tool = {
+    getPersonalInfo: {
+        description: "Get the current user's personal information.",
+        outputSchema: {
             type: "object",
-            properties: {}
+            properties: { type: "json", data: "{}" }
         },
         handler: async () => {
-            return {
-                content: [
-                    { type: "text", text: 'Vinicius' }
-                ]
-            }
-        }
+            const components = [
+                'hero',
+                'info',
+                'about',
+                'experience',
+                'skills',
+                'education',
+            ];
+
+            const comps = await (db as any)?.component.findMany({
+                where: {
+                    name: { in: components },
+                },
+                include: {
+                    fields: true,
+                },
+            });
+            return { type: "json", data: comps }
+        },
     }
 }
 
-export default personInfoTool;
+export default personalInfoTool;

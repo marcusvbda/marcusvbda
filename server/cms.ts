@@ -3,6 +3,35 @@
 import db from '@/lib/db';
 import { cacheLife, cacheTag, updateTag } from 'next/cache';
 
+export const getComponentFieldsById = async (components: string[]) => {
+	components.forEach((component) => cacheTag(component));
+
+	const comps = await (db as any)?.component.findMany({
+		where: {
+			name: { in: components },
+		},
+		include: {
+			fields: true,
+		},
+	});
+
+	const result: Record<string, any> = {};
+
+	comps?.forEach((comp: any) => {
+		const fields = (comp.fields || []).reduce((acc: any, item: any) => {
+			if (!acc[item.language]) acc[item.language] = {};
+			acc[item.language][item.name] = {
+				value: item.value,
+				valueJson: item.valueJson,
+			};
+			return acc;
+		}, {});
+		result[comp.name] = fields;
+	});
+
+	return result;
+};
+
 export const getComponentFields = async (components: string[]) => {
 	'use cache';
 	cacheLife('max');
