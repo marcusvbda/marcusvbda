@@ -1,5 +1,6 @@
 import Footer from '@/components/client/footer';
 import Navbar from '@/components/client/navbar';
+import Chatbot from '@/components/client/chatbot';
 
 export default function ClientLayout({ children }: any) {
 	return (
@@ -7,6 +8,7 @@ export default function ClientLayout({ children }: any) {
 			<Navbar />
 			<main>{children}</main>
 			<Footer />
+			<Chatbot />
 		</div>
 	);
 }
