@@ -41,11 +41,18 @@ const getSystemMessage = () => {
 }
 
 export const askOrchestrator = async (messages: any) => {
-    const hasSystemMessage = messages.some((message: any) => message.role === 'system');
-    if (!hasSystemMessage) {
-        messages.unshift(getSystemMessage());
-    }
+    try {
+        const hasSystemMessage = messages.some((message: any) => message.role === 'system');
+        if (!hasSystemMessage) {
+            messages.unshift(getSystemMessage());
+        }
 
-    const llmResponse = await askLLM(messages);
-    return llmResponse;
+        const llmResponse = await askLLM(messages);
+        return llmResponse;
+    } catch (error: any) {
+        return {
+            role: 'assistant',
+            content: 'Error: ' + (error.message || String(error)),
+        }
+    }
 }

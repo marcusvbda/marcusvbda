@@ -58,8 +58,8 @@ export const askLLM = async (messageList: any) => {
         }
 
         messages.push(...toolResults);
-
     }
+
     return messages;
 }
 
