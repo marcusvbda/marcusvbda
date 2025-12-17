@@ -1,5 +1,4 @@
 import personalInfoTool from "./tools/personalInfo";
-import { Tool } from "./types";
 
 const mcpServer = {
     tools: {
