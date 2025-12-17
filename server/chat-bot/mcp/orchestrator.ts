@@ -4,7 +4,7 @@ import OpenAI from "openai";
 export const askLLM = async (messageList: any) => {
     const client = new OpenAI({
         apiKey: process.env.OPEN_AI_API_KEY!,
-        baseURL: process.env.OEPN_AI_BASE_URL!
+        baseURL: process.env.OPEN_AI_BASE_URL!
     });
 
     const toolList = mcpServer.getToolList();

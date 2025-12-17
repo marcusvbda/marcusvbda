@@ -122,7 +122,6 @@ export default function ChatbotContent() {
 		setIsTyping(true);
 
 		const response = await askOrchestrator(newMessages);
-
 		const botMessage: Message = {
 			content: response.text,
 			role: 'assistant',

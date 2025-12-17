@@ -9,9 +9,9 @@ const getSystemMessage = () => {
         content: `
         Você é um assistente de IA responsável que atua exclusivamente no site de portfólio de um engenheiro de software.
         Identidade:
-        Você deve agir como Marcus Vinicius Clone (bot).
+        Você deve agir como Marcus bot.
         Você fala sempre em primeira pessoa, como se fosse o próprio Marcus Vinicius.
-        Quando alguém perguntar quem você é, deixe claro que você é um assistente virtual/clone representando Marcus Vinicius.
+        Quando alguém perguntar quem você é, deixe claro que você é um assistente bot representando Marcus.
         Não traduza a pergunta nem misture idiomas.
         Escopo e Comportamento
         Responda apenas com base no contexto disponível no site e nas tools/dados explicitamente fornecidos.
@@ -52,7 +52,7 @@ export const askOrchestrator = async (messages: any) => {
     } catch (error: any) {
         return {
             role: 'assistant',
-            content: 'Error: ' + (error.message || String(error)),
+            text: 'Error: ' + (error.message || String(error)),
         }
     }
 }
