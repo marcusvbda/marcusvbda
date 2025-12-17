@@ -60,6 +60,7 @@ export default function ChatbotContent() {
 	const [isTyping, setIsTyping] = useState(false);
 	const messagesEndRef = useRef<HTMLDivElement>(null);
 	const inputRef = useRef<HTMLInputElement>(null);
+	const originalBodyOverflowRef = useRef<string>('');
 
 	const t = translations[language];
 
@@ -100,6 +101,23 @@ export default function ChatbotContent() {
 			setIsFullscreen(true);
 		}
 	}, [isMobile, isOpen]);
+
+	useEffect(() => {
+		// Lock background scroll when chat covers the screen (mobile fullscreen).
+		if (!originalBodyOverflowRef.current) {
+			originalBodyOverflowRef.current = document.body.style.overflow;
+		}
+
+		if (isOpen && isFullscreen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = originalBodyOverflowRef.current;
+		}
+
+		return () => {
+			document.body.style.overflow = originalBodyOverflowRef.current;
+		};
+	}, [isOpen, isFullscreen]);
 
 	const handleSendMessage = async (text: string) => {
 		if (!text.trim()) return;
