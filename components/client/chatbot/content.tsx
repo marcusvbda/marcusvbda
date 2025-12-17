@@ -10,6 +10,7 @@ import TypingIndicator from './typingIndicator';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Message } from '@/server/chat-bot/mcp/types';
+import { askOrchestrator } from '@/server/chat-bot/mcp/client';
 
 const translations = {
 	en: {
@@ -53,6 +54,7 @@ export default function ChatbotContent() {
 	const { language } = useLanguage();
 	const [isOpen, setIsOpen] = useState(false);
 	const [isFullscreen, setIsFullscreen] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 	const [messages, setMessages] = useState<Message[]>([]);
 	const [inputValue, setInputValue] = useState('');
 	const [isTyping, setIsTyping] = useState(false);
@@ -78,6 +80,26 @@ export default function ChatbotContent() {
 			inputRef.current.focus();
 		}
 	}, [isOpen]);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia('(max-width: 767px)');
+		const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+			setIsMobile(event.matches);
+		};
+
+		handleChange(mediaQuery);
+		mediaQuery.addEventListener('change', handleChange);
+
+		return () => {
+			mediaQuery.removeEventListener('change', handleChange);
+		};
+	}, []);
+
+	useEffect(() => {
+		if (isMobile) {
+			setIsFullscreen(true);
+		}
+	}, [isMobile, isOpen]);
 
 	const handleSendMessage = async (text: string) => {
 		if (!text.trim()) return;
@@ -134,6 +156,7 @@ export default function ChatbotContent() {
 	};
 
 	const toggleFullscreen = () => {
+		if (isMobile) return;
 		setIsFullscreen(!isFullscreen);
 	};
 
@@ -166,19 +189,21 @@ export default function ChatbotContent() {
 								<h3 className="font-semibold text-lg">{t.title}</h3>
 							</div>
 							<div className="flex items-center gap-2">
-								<Button
-									variant="ghost"
-									size="icon"
-									onClick={toggleFullscreen}
-									className="h-8 w-8"
-									aria-label={isFullscreen ? t.minimize : t.maximize}
-								>
-									{isFullscreen ? (
-										<Minimize2 className="h-4 w-4" />
-									) : (
-										<Maximize2 className="h-4 w-4" />
-									)}
-								</Button>
+								{!isMobile && (
+									<Button
+										variant="ghost"
+										size="icon"
+										onClick={toggleFullscreen}
+										className="h-8 w-8"
+										aria-label={isFullscreen ? t.minimize : t.maximize}
+									>
+										{isFullscreen ? (
+											<Minimize2 className="h-4 w-4" />
+										) : (
+											<Maximize2 className="h-4 w-4" />
+										)}
+									</Button>
+								)}
 								<Button
 									variant="ghost"
 									size="icon"
