@@ -7,10 +7,9 @@ import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
 import { MessageCircle, X, Maximize2, Minimize2, Send } from 'lucide-react';
 import TypingIndicator from './typingIndicator';
-import { askOrchestrator } from '@/server/mcp/client';
-import { Message } from '@/server/mcp/types';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Message } from '@/server/chat-bot/mcp/types';
 
 const translations = {
 	en: {

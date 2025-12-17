@@ -17,6 +17,14 @@ const geistMono = Geist_Mono({
 	preload: true,
 });
 
+export const viewport = {
+	width: 'device-width',
+	initialScale: 1.0,
+	minimumScale: 1.0,
+	maximumScale: 1.0,
+	userScalable: 'no',
+};
+
 export async function generateMetadata(): Promise<Metadata> {
 	const title = 'Marcus Vinicius Bassalobre de Assis';
 	const description = 'Software Engineer';
