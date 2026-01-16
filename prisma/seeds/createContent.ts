@@ -170,6 +170,11 @@ const createHeroContent = async (prisma: any) => {
 								"I'm a Senior Software Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
 						},
 						{
+							name: 'relocationNote',
+							language: 'en',
+							value: 'Open to relocation and long-term international opportunities.',
+						},
+						{
 							name: 'greeting',
 							language: 'pt',
 							value: 'Olá, sou',
@@ -214,6 +219,11 @@ const createHeroContent = async (prisma: any) => {
 							language: 'pt',
 							value:
 								'Sou Engenheiro de Software Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
+						},
+						{
+							name: 'relocationNote',
+							language: 'pt',
+							value: 'Aberto à realocação e a oportunidades internacionais de longo prazo.',
 						},
 					],
 				},
@@ -347,7 +357,7 @@ const creatAboutContent = async (prisma: any) => {
 							name: 'description',
 							language: 'en',
 							value:
-								"With over 15 years of experience in software engineering, I've had the privilege of leading diverse teams and architecting solutions that impact millions of users. My journey has taken me from founding my own tech ventures to leading engineering at some of Brazil's most innovative fintech and SaaS companies. \nI specialize in building scalable, high-performance web applications using modern technologies like React, Next.js, Laravel, and TypeScript. My approach combines technical excellence with business acumen, always focusing on delivering measurable value.\nCurrently based in Dublin, Ireland, I'm passionate about mentoring engineers, establishing robust development practices, and pushing the boundaries of what's possible with web technologies.",
+								'Senior Software Engineer with 15+ years of experience designing and scaling backend-heavy systems for fintech, SaaS, and high-traffic platforms.\n\nStrong focus on system architecture, scalability, performance, and reliability, with a track record of leading technical decisions impacting millions of users and high-volume financial transactions.\n\nExperienced in working closely with product and business stakeholders, translating complex requirements into robust, maintainable solutions. Recently applying AI as a practical engineering tool to enhance developer productivity and system automation.',
 						},
 						{
 							name: 'image',
@@ -368,7 +378,7 @@ const creatAboutContent = async (prisma: any) => {
 							name: 'description',
 							language: 'pt',
 							value:
-								'Com mais de 15 anos de experiência em engenharia de software, tive o privilégio de liderar equipes diversas e arquitetar soluções que impactam milhões de usuários. Minha jornada me levou desde fundar meus próprios empreendimentos tecnológicos até liderar engenharia em algumas das empresas de fintech e SaaS mais inovadoras do Brasil.\nSou especializado em construir aplicações web escaláveis e de alta performance usando tecnologias modernas como React, Next.js, Laravel e TypeScript. Minha abordagem combina excelência técnica com visão de negócios, sempre focando em entregar valor mensurável.\nAtualmente baseado em Dublin, Irlanda, sou apaixonado por mentorar engenheiros, estabelecer práticas robustas de desenvolvimento e expandir os limites do que é possível com tecnologias web.',
+								'Engenheiro de Software Sênior com 15+ anos de experiência projetando e escalando sistemas focados em backend para fintech, SaaS e plataformas de alto tráfego.\n\nForte foco em arquitetura de sistemas, escalabilidade, performance e confiabilidade, com histórico de liderar decisões técnicas que impactam milhões de usuários e transações financeiras de alto volume.\n\nExperiência em trabalhar próximo a stakeholders de produto e negócios, traduzindo requisitos complexos em soluções robustas e manuteníveis. Recentemente aplicando IA como ferramenta prática de engenharia para aumentar produtividade de desenvolvedores e automação de sistemas.',
 						},
 						{
 							name: 'image',
@@ -517,7 +527,7 @@ const createEducationContent = async (prisma: any) => {
 									title:
 										'Supervised Machine Learning: Regression and Classification',
 									description:
-										'DeepLearning.AI & Stanford University • Online • 2025',
+										'DeepLearning.AI & Stanford University • Online • 2025 • Applied AI for automation, data workflows, and engineering productivity',
 								},
 								harvardX: {
 									title: "CS50's Introduction to Computer Science",
@@ -551,7 +561,7 @@ const createEducationContent = async (prisma: any) => {
 									title:
 										'Regressão e Classificação em Aprendizado de Máquina Supervisionado',
 									description:
-										'DeepLearning.AI & Stanford University • Online • 2025',
+										'DeepLearning.AI & Stanford University • Online • 2025 • IA aplicada para automação, workflows de dados e produtividade em engenharia',
 								},
 								harvardX: {
 									title: "CS50's Introduction to Computer Science",
@@ -595,25 +605,22 @@ const createSkillsContent = async (prisma: any) => {
 							name: 'categories',
 							language: 'en',
 							valueJson: {
-								frontend: {
-									label: 'Frontend',
-									skills:
-										'HTML,CSS,JavaScript,React,Next.js,TypeScript,Vue.js,Nuxt.js,Tailwind CSS,Bootstrap,ShadCn,Context API,Zustand,Redux,React Query,Vite,SSR,SEO',
-								},
 								backend: {
-									label: 'Backend',
-									skills:
-										'Laravel, NestJS, ExpressJS, Node.js, PHP, PostgreSQL, MySQL, Redis, Prisma',
+									label: 'Backend & Platform',
+									skills: 'PHP, Node.js, Laravel, NestJS, PostgreSQL, Redis',
 								},
-								tools: {
-									label: 'Tools & DevOps',
-									skills:
-										'Docker, Git, AWS, Vercel, CI/CD, Linux, macOS, Windows, VS Code, Figma, OpenAI, N8N, Supabase, Firebase',
+								frontend: {
+									label: 'Frontend (supporting)',
+									skills: 'React, Next.js, TypeScript, Tailwind CSS',
 								},
-								others: {
-									label: 'Methodologies & Others',
+								architecture: {
+									label: 'Architecture & Systems',
 									skills:
-										'Agile/Scrum, REST APIs, GraphQL, Microservices, Testing, System Design, Team Leadership',
+										'Distributed Systems, Microservices, REST APIs, System Design, Scalability, High-Availability Systems, Performance Optimization',
+								},
+								cloud: {
+									label: 'Cloud & DevOps',
+									skills: 'AWS, Docker, CI/CD, Vercel',
 								},
 							},
 						},
@@ -631,25 +638,22 @@ const createSkillsContent = async (prisma: any) => {
 							name: 'categories',
 							language: 'pt',
 							valueJson: {
-								frontend: {
-									label: 'Frontend',
-									skills:
-										'HTML,CSS,JavaScript,React,Next.js,TypeScript,Vue.js,Nuxt.js,Tailwind CSS,Bootstrap,ShadCn,Context API,Zustand,Redux,React Query,Vite,SSR,SEO',
-								},
 								backend: {
-									label: 'Backend',
-									skills:
-										'Laravel, NestJS, ExpressJS, Node.js, PHP, PostgreSQL, MySQL, Redis, Prisma',
+									label: 'Backend & Plataforma',
+									skills: 'PHP, Node.js, Laravel, NestJS, PostgreSQL, Redis',
 								},
-								tools: {
-									label: 'Ferramentas',
-									skills:
-										'Docker, Git, AWS, Vercel, CI/CD, Linux, macOS, Windows, VS Code, Figma, OpenAI, N8N, Supabase, Firebase',
+								frontend: {
+									label: 'Frontend (suporte)',
+									skills: 'React, Next.js, TypeScript, Tailwind CSS',
 								},
-								others: {
-									label: 'Metodologias & Outros',
+								cloud: {
+									label: 'Cloud & DevOps',
+									skills: 'AWS, Docker, CI/CD, Vercel',
+								},
+								architecture: {
+									label: 'Arquitetura & Sistemas',
 									skills:
-										'Agile/Scrum, REST APIs, GraphQL, Microservices, Testing, System Design, Team Leadership',
+										'Sistemas Distribuídos, Microserviços, REST APIs, Arquitetura de Sistemas, Escalabilidade, Sistemas de Alta Disponibilidade, Otimização de Performance',
 								},
 							},
 						},
@@ -688,75 +692,75 @@ const createExperiencesContent = async (prisma: any) => {
 							valueJson: {
 								investidor10: {
 									company: 'Investidor10',
-									role: 'Software Engineer (PHP, Laravel, React, NestJS)',
+									role: 'Senior Software Engineer',
 									period: 'Nov 2023 - Present',
-									location: 'Rio de Janeiro, Rio de Janeiro, Brazil · Remote',
+									location: 'Rio de Janeiro, Brazil · Remote',
+									displayPriority: 1,
 									description:
-										"Led end-to-end development of Carteira, one of Latin America's largest investment portfolio platforms serving 1M+ users. Architected and implemented scalable microservices architecture using PHP, Laravel, React, Next.js, NestJS, TypeScript, and PostgreSQL to support platform growth. Optimized application performance achieving 60% faster load times through code optimization, caching strategies, and database query improvements. Collaborated with product managers, designers, and stakeholders to deliver high-impact features aligned with business objectives. Implemented CI/CD pipelines, automated testing, and code review processes to ensure code quality and deployment reliability.",
+										"• Led backend and platform architecture decisions for Carteira, one of Latin America's largest investment portfolio platforms, supporting 1M+ users and high-volume financial transactions.\n• Designed and implemented scalable microservices architecture focused on performance, reliability, and long-term maintainability to support rapid platform growth.\n• Worked closely with product, business, and stakeholders to translate complex requirements into robust technical solutions.\n• Improved system performance by 60% through code optimization, caching strategies, and database query improvements.",
 								},
 								vega: {
 									company: 'Vega Checkout',
-									role: 'Software Engineer (PHP, Laravel, AlpineJS)',
+									role: 'Senior Software Engineer',
 									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brazil · Remote',
+									displayPriority: 2,
 									description:
-										"Developed core features for Vega Checkout, one of Brazil's leading payment platforms formed by the merger of PerfectPay and Monetizze. Built and maintained payment gateway integrations with multiple providers including Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro, and MercadoPago using REST APIs and webhook handlers. Developed responsive, interactive user interfaces with Laravel, Tailwind CSS, and AlpineJS, implementing real-time transaction processing and payment status updates. Optimized backend API performance and database queries to handle high transaction volumes, ensuring 99.9% uptime. Collaborated with cross-functional teams using Agile/Scrum methodologies to deliver stable, high-quality releases on schedule.",
-								},
-								diwe: {
-									company: 'DIWE',
-									role: 'Software Engineer (PHP, Node.js)',
-									period: 'Jun 2021 - Apr 2024',
-									location: 'Joinville, Santa Catarina, Brazil · Remote',
-									description:
-										'Served as a leader in the development team at Diwe, delivering software engineering solutions for digital marketing and technology clients, including St Gobain, UNIMED, Quartzolit, and Intelbras. Identified client challenges and implemented technology solutions to optimize business processes. Notable achievements include developing a complete internal ERP system and creating the St Gobain Partner Portal, a training platform for construction professionals that reached over 300,000 active users. Contributed to frontend and backend development, focusing on user-centric features, scalability, and maintainability, while collaborating closely with cross-functional teams to deliver projects on time and aligned with client expectations.',
+										"• Led backend architecture decisions for Vega Checkout, one of Brazil's leading payment platforms, processing millions of transactions monthly with 99.9% uptime.\n• Designed and implemented scalable payment gateway integrations with multiple providers (Stripe, PagSeguro, MercadoPago, and others) using REST APIs and webhook handlers.\n• Worked closely with product and business stakeholders to translate payment processing requirements into reliable, maintainable solutions.\n• Improved system stability and performance to handle critical financial transactions at scale.",
 								},
 								otimize: {
 									company: 'Otimize / Payt',
-									role: 'Software Engineer (PHP, Laravel)',
+									role: 'Senior Software Engineer',
 									period: 'Oct 2018 - Oct 2023',
 									location: 'São Paulo, Brazil · Remote',
+									displayPriority: 3,
 									description:
-										'Joined Otimize as the first developer, contributing from the ground up to build PrintI, the top 1 B2B platform for online printing in Brazil. Later, evolved the product into Payt, a leading digital checkout and product creation platform. I played a key role in developing robust, scalable SaaS solutions, maintaining long-term technical ownership of core features and integrations. Notably, the sales platform generated over BRL 11 million in customer transactions during its first year. Collaborated closely with stakeholders to deliver tailored solutions that met complex business demands, ensuring stability, scalability, and high-impact delivery.',
+										'• Led backend and platform architecture from the ground up for PrintI, the top B2B platform for online printing in Brazil, later evolving into Payt, a leading digital checkout platform.\n• Designed and implemented scalable SaaS solutions focused on performance, reliability, and maintainability, with the platform generating BRL 11M+ in transactions during the first year.\n• Worked closely with business stakeholders to translate complex requirements into technical solutions supporting rapid business growth.\n• Established technical foundations and long-term system architecture for high-traffic e-commerce and payment processing.',
+								},
+								diwe: {
+									company: 'DIWE',
+									role: 'Senior Software Engineer',
+									period: 'Jun 2021 - Apr 2024',
+									location: 'Joinville, Santa Catarina, Brazil · Remote',
+									displayPriority: 4,
+									description:
+										'• Led technical decisions for multi-brand enterprise platforms, including the St Gobain Partner Portal, a training platform serving 300,000+ active users.\n• Designed and implemented scalable systems for enterprise clients (St Gobain, UNIMED, Quartzolit, Intelbras) focused on performance and long-term maintainability.\n• Worked closely with clients and internal stakeholders to translate complex business requirements into robust technical solutions.\n• Improved system scalability and performance for high-traffic educational and marketing platforms.',
 								},
 								unimar: {
 									company: 'Universidade de Marília',
-									role: 'Software Owner (CRM Software Engineer)',
+									role: 'Senior Software Engineer (Software Owner)',
 									period: '2017 - Sep 2023',
 									location: 'Marília, São Paulo, Brazil · Remote',
+									displayPriority: 5,
 									description:
-										'Hired by the coordination team to end-to-end design, develop, and maintain a custom CRM for managing leads and student enrollment for online courses. Worked independently on development, ongoing maintenance, and continuous enhancements, with the system eventually being used by 90 E-learning campuses of Unimar across Brazil until its acquisition by the university. Streamlined processes through automation, improving operational efficiency, and provided ongoing support and training to ensure full adoption by users.',
+										"• Led end-to-end architecture and development of a custom CRM system managing student enrollment for online courses, deployed across 90 E-learning campuses in Brazil.\n• Designed and implemented scalable systems focused on reliability and maintainability, supporting critical enrollment and lead management processes.\n• Worked closely with university stakeholders to translate enrollment and CRM requirements into robust technical solutions.\n• Improved operational efficiency through system automation, eventually leading to the system's acquisition by the university.",
 								},
 								copySupply: {
 									company: 'Copy Supply',
-									role: 'Software Developer (ASP.NET MVC)',
+									role: 'Software Engineer',
 									period: 'Dec 2017 - Oct 2018',
-									location: 'São Paulo, São Paulo, Brazil · On-site',
+									location: 'São Paulo, Brazil · On-site',
+									displayPriority: 6,
 									description:
-										'Developed end-to-end internal sales team CRM system using ASP.NET MVC, C#, Bootstrap, JavaScript, and SQL Server. Implemented features for lead management, client tracking, sales pipeline visualization, and reporting dashboards. Worked in continuous development cycles with the sales team, gathering requirements and iterating on features. The solution improved client management efficiency and streamlined internal processes, delivering a reliable, scalable tool aligned with business needs.',
+										'• Contributed to commercial automation and internal systems development.',
 								},
 								aliveIt: {
-									company: 'Alive it',
-									role: 'Developer (PHP, C++, Firebird)',
+									company: 'Alive IT',
+									role: 'Software Engineer',
 									period: '2014 - Dec 2017',
 									location: 'Marília, São Paulo, Brazil · On-site',
+									displayPriority: 7,
 									description:
-										'Started in technical support and transitioned to software development. Developed automation systems for fuel stations using PHP, Laravel, C++, and Firebird database. Built applications for inventory management, sales reporting, and point-of-sale integration. Contributed to improved operational efficiency and process reliability through automated workflows and real-time data processing.',
-								},
-								guess: {
-									company: 'Guess soluções em tecnologia',
-									role: 'Intern (Delphi)',
-									period: '2013 - 2014',
-									location: 'Marília, São Paulo, Brazil · On-site',
-									description:
-										'Developed real estate management tools during a mandatory university internship, contributing to process automation and supporting the operational team.',
+										'• Contributed to commercial automation and internal systems development.',
 								},
 								mastersel: {
 									company: 'Mastersel',
-									role: 'C++ Developer',
+									role: 'Software Engineer',
 									period: '2010 - 2013',
 									location: 'Marília, São Paulo, Brazil · On-site',
+									displayPriority: 8,
 									description:
-										'Developed commercial automation applications in C++ and provided technical support to clients, ensuring smooth integration of new systems. Maintained and updated existing applications, improving functionality and performance, and resolving technical issues quickly and effectively.',
+										'• Contributed to commercial automation and internal systems development.',
 								},
 							},
 						},
@@ -781,75 +785,75 @@ const createExperiencesContent = async (prisma: any) => {
 							valueJson: {
 								investidor10: {
 									company: 'Investidor10',
-									role: 'Engenheiro de Software (PHP, Laravel, React, NestJS)',
+									role: 'Engenheiro de Software Sênior',
 									period: 'Nov 2023 - Presente',
-									location: 'Rio de Janeiro, Rio de Janeiro, Brasil · Remoto',
+									location: 'Rio de Janeiro, Brasil · Remoto',
+									displayPriority: 1,
 									description:
-										'Liderei o desenvolvimento end-to-end da Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina, atendendo mais de 1 milhão de usuários. Arquiteteei e implementei arquitetura escalável de microserviços usando PHP, Laravel, React, Next.js, NestJS, TypeScript e PostgreSQL para suportar o crescimento da plataforma. Otimizei performance da aplicação alcançando tempos de carregamento 60% mais rápidos através de otimização de código, estratégias de cache e melhorias em consultas de banco de dados. Colaborei com gerentes de produto, designers e stakeholders para entregar funcionalidades de alto impacto alinhadas com objetivos de negócio. Implementei pipelines de CI/CD, testes automatizados e processos de code review para garantir qualidade de código e confiabilidade de deploy.',
+										'• Liderou decisões de arquitetura de backend e plataforma para a Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina, suportando 1M+ usuários e transações financeiras de alto volume.\n• Projetou e implementou arquitetura escalável de microserviços focada em performance, confiabilidade e manutenibilidade de longo prazo para suportar crescimento rápido da plataforma.\n• Trabalhou próximo a stakeholders de produto, negócios e equipes técnicas, traduzindo requisitos complexos em soluções técnicas robustas.\n• Melhorou performance do sistema em 60% através de otimização de código, estratégias de cache e melhorias em consultas de banco de dados.',
 								},
 								vega: {
 									company: 'Vega Checkout',
-									role: 'Engenheiro de Software (PHP, Laravel, AlpineJS)',
+									role: 'Engenheiro de Software Sênior',
 									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brasil · Remoto',
+									displayPriority: 2,
 									description:
-										'Desenvolvi funcionalidades principais do Vega Checkout, uma das principais plataformas de pagamento do Brasil formada pela fusão de PerfectPay e Monetizze. Construí e mantive integrações de gateway de pagamento com múltiplos provedores incluindo Pagar.me, Stone, Stripe, PagBank, Mastercard, PagSeguro e MercadoPago usando REST APIs e handlers de webhook. Desenvolvi interfaces de usuário responsivas e interativas com Laravel, Tailwind CSS e AlpineJS, implementando processamento de transações em tempo real e atualizações de status de pagamento. Otimizei performance de API backend e consultas de banco de dados para lidar com altos volumes de transações, garantindo 99.9% de uptime. Colaborei com equipes multifuncionais usando metodologias Agile/Scrum para entregar releases estáveis e de alta qualidade no prazo.',
-								},
-								diwe: {
-									company: 'DIWE',
-									role: 'Engenheiro de Software (PHP, Node.js)',
-									period: 'Jun 2021 - Abr 2024',
-									location: 'Joinville, Santa Catarina, Brasil · Remoto',
-									description:
-										'Atuei como líder na equipe de desenvolvimento na Diwe, entregando soluções de engenharia de software para clientes de marketing digital e tecnologia, incluindo St Gobain, UNIMED, Quartzolit e Intelbras. Identifiquei desafios dos clientes e implementei soluções tecnológicas para otimizar processos de negócio. Conquistas notáveis incluem desenvolver um sistema ERP interno completo e criar o Portal Parceiro St Gobain, uma plataforma de treinamento para profissionais da construção que alcançou mais de 300.000 usuários ativos. Contribuí para desenvolvimento de frontend e backend, focando em funcionalidades centradas no usuário, escalabilidade e manutenibilidade, enquanto colaborava de perto com equipes multifuncionais para entregar projetos no prazo e alinhados com as expectativas dos clientes.',
+										'• Liderou decisões de arquitetura de backend para o Vega Checkout, uma das principais plataformas de pagamento do Brasil, processando milhões de transações mensais com 99.9% de uptime.\n• Projetou e implementou integrações escaláveis de gateway de pagamento com múltiplos provedores (Stripe, PagSeguro, MercadoPago e outros) usando REST APIs e handlers de webhook.\n• Trabalhou próximo a stakeholders de produto e negócios para traduzir requisitos de processamento de pagamentos em soluções confiáveis e manuteníveis.\n• Melhorou estabilidade e performance do sistema para lidar com transações financeiras críticas em escala.',
 								},
 								otimize: {
 									company: 'Otimize / Payt',
-									role: 'Engenheiro de Software (PHP, Laravel)',
+									role: 'Engenheiro de Software Sênior',
 									period: 'Out 2018 - Out 2023',
 									location: 'São Paulo, Brasil · Remoto',
+									displayPriority: 3,
 									description:
-										'Ingressei na Otimize como primeiro desenvolvedor, contribuindo desde o início para construir o PrintI, a plataforma B2B número 1 de impressão online no Brasil. Posteriormente, evolui o produto para Payt, uma plataforma líder de checkout digital e criação de produtos. Desempenhei papel fundamental no desenvolvimento de soluções SaaS robustas e escaláveis, mantendo propriedade técnica de longo prazo de funcionalidades principais e integrações. Notavelmente, a plataforma de vendas gerou mais de R$ 11 milhões em transações de clientes durante seu primeiro ano. Colaborei de perto com stakeholders para entregar soluções personalizadas que atenderam demandas complexas de negócio, garantindo estabilidade, escalabilidade e entrega de alto impacto.',
+										'• Liderou arquitetura de backend e plataforma desde o início para o PrintI, a principal plataforma B2B de impressão online do Brasil, evoluindo depois para o Payt, uma plataforma líder de checkout digital.\n• Projetou e implementou soluções SaaS escaláveis focadas em performance, confiabilidade e manutenibilidade, com a plataforma gerando R$ 11M+ em transações no primeiro ano.\n• Trabalhou próximo a stakeholders de negócio para traduzir requisitos complexos em soluções técnicas suportando crescimento rápido de negócios.\n• Estabeleceu fundamentos técnicos e arquitetura de sistema de longo prazo para e-commerce e processamento de pagamentos de alto tráfego.',
+								},
+								diwe: {
+									company: 'DIWE',
+									role: 'Engenheiro de Software Sênior',
+									period: 'Jun 2021 - Abr 2024',
+									location: 'Joinville, Santa Catarina, Brasil · Remoto',
+									displayPriority: 4,
+									description:
+										'• Liderou decisões técnicas para plataformas enterprise multi-marca, incluindo o Portal Parceiro St Gobain, uma plataforma de treinamento atendendo 300.000+ usuários ativos.\n• Projetou e implementou sistemas escaláveis para clientes enterprise (St Gobain, UNIMED, Quartzolit, Intelbras) focados em performance e manutenibilidade de longo prazo.\n• Trabalhou próximo a clientes e stakeholders internos para traduzir requisitos complexos de negócio em soluções técnicas robustas.\n• Melhorou escalabilidade e performance de sistemas para plataformas educacionais e de marketing de alto tráfego.',
 								},
 								unimar: {
 									company: 'Universidade de Marília',
-									role: 'Proprietário de Software (Engenheiro de Software CRM)',
+									role: 'Engenheiro de Software Sênior (Responsável Técnico / Software Owner)',
 									period: '2017 - Set 2023',
 									location: 'Marília, São Paulo, Brasil · Remoto',
+									displayPriority: 5,
 									description:
-										'Contratado pela equipe de coordenação para projetar, desenvolver e manter de ponta a ponta um CRM personalizado para gerenciar leads e matrículas de estudantes para cursos online. Trabalhei independentemente em desenvolvimento, manutenção contínua e melhorias contínuas, com o sistema eventualmente sendo usado por 90 campi de E-learning da Unimar em todo o Brasil até sua aquisição pela universidade. Simplifiquei processos através de automação, melhorando eficiência operacional, e forneci suporte e treinamento contínuos para garantir adoção completa pelos usuários.',
+										'• Liderou arquitetura e desenvolvimento end-to-end de sistema CRM personalizado para gerenciamento de matrículas de cursos online, implantado em 90 campi de E-learning no Brasil.\n• Projetou e implementou sistemas escaláveis focados em confiabilidade e manutenibilidade, suportando processos críticos de matrícula e gerenciamento de leads.\n• Trabalhou próximo a stakeholders da universidade para traduzir requisitos de matrícula e CRM em soluções técnicas robustas.\n• Melhorou eficiência operacional através de automação de sistemas, eventualmente levando à aquisição do sistema pela universidade.',
 								},
 								copySupply: {
 									company: 'Copy Supply',
-									role: 'Desenvolvedor de Software (ASP.NET MVC)',
+									role: 'Engenheiro de Software',
 									period: 'Dez 2017 - Out 2018',
-									location: 'São Paulo, São Paulo, Brasil · Presencial',
+									location: 'São Paulo, Brasil · Presencial',
+									displayPriority: 6,
 									description:
-										'Desenvolvi sistema CRM interno da equipe de vendas de ponta a ponta usando ASP.NET MVC, C#, Bootstrap, JavaScript e SQL Server. Implementei funcionalidades para gerenciamento de leads, rastreamento de clientes, visualização de pipeline de vendas e dashboards de relatórios. Trabalhei em ciclos de desenvolvimento contínuo com a equipe de vendas, coletando requisitos e iterando em funcionalidades. A solução melhorou eficiência de gerenciamento de clientes e simplificou processos internos, entregando uma ferramenta confiável e escalável alinhada com as necessidades do negócio.',
+										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
 								},
 								aliveIt: {
-									company: 'Alive it',
-									role: 'Desenvolvedor (PHP, C++, Firebird)',
+									company: 'Alive IT',
+									role: 'Engenheiro de Software',
 									period: '2014 - Dez 2017',
 									location: 'Marília, São Paulo, Brasil · Presencial',
+									displayPriority: 7,
 									description:
-										'Iniciei em suporte técnico e fiz transição para desenvolvimento de software. Desenvolvi sistemas de automação para postos de combustível usando PHP, Laravel, C++ e banco de dados Firebird. Construí aplicações para gerenciamento de estoque, relatórios de vendas e integração de ponto de venda. Contribuí para melhor eficiência operacional e confiabilidade de processos através de fluxos de trabalho automatizados e processamento de dados em tempo real.',
-								},
-								guess: {
-									company: 'Guess soluções em tecnologia',
-									role: 'Estagiário (Delphi)',
-									period: '2013 - 2014',
-									location: 'Marília, São Paulo, Brasil · Presencial',
-									description:
-										'Desenvolvi ferramentas de gerenciamento imobiliário durante estágio obrigatório da universidade, contribuindo para automação de processos e apoiando a equipe operacional.',
+										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
 								},
 								mastersel: {
 									company: 'Mastersel',
-									role: 'Desenvolvedor C++',
+									role: 'Engenheiro de Software',
 									period: '2010 - 2013',
 									location: 'Marília, São Paulo, Brasil · Presencial',
+									displayPriority: 8,
 									description:
-										'Desenvolvi aplicações de automação comercial em C++ e forneci suporte técnico a clientes, garantindo integração adequada de novos sistemas. Mantive e atualizei aplicações existentes, melhorando funcionalidade e performance, e resolvi problemas técnicos de forma rápida e eficaz.',
+										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
 								},
 							},
 						},

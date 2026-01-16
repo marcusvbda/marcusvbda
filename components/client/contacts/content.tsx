@@ -65,7 +65,7 @@ export default function Content({ content }: any) {
 							const Icon = method.icon;
 							return (
 								<Card
-									key={`card_${method.label}`}
+									key={`card_${method.label}_${index}`}
 									className="hover-lift animate-fade-in w-full sm:w-auto sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.33%-1rem)] lg:basis-[calc(25%-1.125rem)]"
 									style={{ animationDelay: `${index * 0.1}s` }}
 								>
@@ -78,7 +78,7 @@ export default function Content({ content }: any) {
 												<p className="font-semibold">{method.label}</p>
 												{method.href ? (
 													<Link
-														href={method.href as any}
+														href={method.href || ('#' as any)}
 														className="text-sm text-muted-foreground flex items-center gap-2 justify-center"
 														target={
 															method.href.startsWith('http')

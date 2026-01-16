@@ -109,7 +109,7 @@ export const CardItem = memo(
 		);
 
 		return (
-			<Link href="#" onClick={onClick}>
+			<a href="#" onClick={onClick}>
 				<Card
 					className={cn(
 						'relative h-18 max-h-18 md:h-24 md:max-h-24 cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-lg',
@@ -124,7 +124,7 @@ export const CardItem = memo(
 						{children && children}
 					</CardHeader>
 				</Card>
-			</Link>
+			</a>
 		);
 	}
 );

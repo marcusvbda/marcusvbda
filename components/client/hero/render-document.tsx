@@ -8,55 +8,117 @@ const styles = StyleSheet.create({
 	},
 	header: {
 		textAlign: 'center',
-		marginBottom: 20,
+		marginBottom: 15,
 	},
 	name: {
-		fontSize: 24,
+		fontSize: 22,
 		fontWeight: 'bold',
 	},
 	contactInfo: {
-		fontSize: 10,
+		fontSize: 9,
 		color: 'gray',
 	},
 	section: {
-		marginBottom: 20,
+		marginBottom: 12,
 	},
 	sectionTitle: {
-		fontSize: 14,
+		fontSize: 12,
 		fontWeight: 'bold',
 		textTransform: 'uppercase',
-		marginBottom: 10,
+		marginBottom: 6,
 	},
 	job: {
-		marginBottom: 10,
+		marginBottom: 8,
 	},
 	jobTitle: {
 		fontSize: 11,
 		fontWeight: 'bold',
 	},
 	jobCompany: {
-		fontSize: 10,
+		fontSize: 9,
 		fontWeight: 'bold',
 		color: '#333',
+		marginTop: 2,
 	},
 	jobPeriod: {
-		fontSize: 9,
+		fontSize: 8,
 		color: 'gray',
+		marginTop: 2,
 	},
 	jobDescription: {
-		fontSize: 10,
+		fontSize: 9,
+		marginTop: 4,
+		lineHeight: 1.4,
+	},
+	bulletPoint: {
+		fontSize: 9,
+		marginTop: 2,
+		lineHeight: 1.4,
 	},
 	skillCategory: {
-		marginTop: 5,
+		marginTop: 3,
 	},
 	skillLabel: {
-		fontSize: 11,
+		fontSize: 10,
 		fontWeight: 'bold',
 	},
 	skills: {
-		fontSize: 10,
+		fontSize: 9,
+	},
+	relocationNote: {
+		fontSize: 9,
+		fontStyle: 'italic',
+		color: 'gray',
+		marginTop: 10,
+		textAlign: 'center',
 	},
 });
+
+// Helper function to parse date from period string and return sortable date
+const parseExperienceDate = (period: string): number => {
+	if (!period) return 0;
+
+	// Handle "Present" or "Presente" - should come first (return high number)
+	const formattedPeriod = period.toLowerCase();
+	if (
+		formattedPeriod.includes('present') ||
+		formattedPeriod.includes('presente') ||
+		formattedPeriod.includes('current') ||
+		formattedPeriod.includes('atual')
+	) {
+		return 999999; // High number to sort first
+	}
+
+	// Extract year from formats like:
+	// "Nov 2023 - Present" -> 2023
+	// "Jan 2024 - Jul 2024" -> 2024
+	// "2017 - Sep 2023" -> 2017
+	// "2010 - 2013" -> 2010
+
+	const yearMatch = formattedPeriod.match(/(\d{4})/);
+	if (yearMatch) {
+		return parseInt(yearMatch[1], 10);
+	}
+
+	return 0;
+};
+
+// Helper function to sort experiences by displayPriority first, then by date (most recent first)
+const sortExperiencesByDate = (experiences: any[]): any[] => {
+	return [...experiences].sort((a, b) => {
+		// First sort by displayPriority (if exists), higher priority first
+		const priorityA = a.displayPriority ?? 999;
+		const priorityB = b.displayPriority ?? 999;
+		if (priorityA !== priorityB) {
+			return priorityA - priorityB; // Ascending: 1 comes before 2
+		}
+
+		// If priorities are equal, sort by date
+		const dateA = parseExperienceDate(a.period);
+		const dateB = parseExperienceDate(b.period);
+		return dateB - dateA; // Descending order (newest first)
+	});
+};
 
 export const RenderDocument = ({
 	about,
@@ -65,10 +127,17 @@ export const RenderDocument = ({
 	skills,
 	experience,
 	sections,
+	relocationNote,
+	language = 'en',
 }: any) => {
 	const skillsContent = skills?.categories?.valueJson || {};
 	const educationContent = education?.items?.valueJson || {};
 	const experienceContent = experience?.companies?.valueJson || {};
+
+	// Convert to array and sort by date (most recent first)
+	const sortedExperiences = sortExperiencesByDate(
+		Object.values(experienceContent)
+	);
 
 	return (
 		<Document>
@@ -85,18 +154,32 @@ export const RenderDocument = ({
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.summary}</Text>
-					<Text style={styles.jobDescription}>{about?.description?.value}</Text>
+					{about?.description?.value
+						?.split('\n')
+						.filter((line: string) => line.trim())
+						.map((line: string, idx: number) => (
+							<Text key={idx} style={styles.jobDescription}>
+								{line.trim()}
+							</Text>
+						))}
 				</View>
 				<View style={styles.section}>
 					<Text style={styles.sectionTitle}>{sections.experience}</Text>
-					{Object.values(experienceContent).map((job: any, index) => (
+					{sortedExperiences.map((job: any, index) => (
 						<View key={index} style={styles.job}>
 							<Text style={styles.jobTitle}>{job.role}</Text>
 							<Text style={styles.jobCompany}>
 								{job.company} | {job.location}
 							</Text>
 							<Text style={styles.jobPeriod}>{job.period}</Text>
-							<Text style={styles.jobDescription}>{job.description}</Text>
+							{job.description
+								?.split('\n')
+								.filter((line: string) => line.trim())
+								.map((line: string, idx: number) => (
+									<Text key={idx} style={styles.bulletPoint}>
+										{line.trim()}
+									</Text>
+								))}
 						</View>
 					))}
 				</View>
@@ -118,6 +201,11 @@ export const RenderDocument = ({
 						</View>
 					))}
 				</View>
+				{relocationNote && (
+					<View>
+						<Text style={styles.relocationNote}>{relocationNote}</Text>
+					</View>
+				)}
 			</Page>
 		</Document>
 	);

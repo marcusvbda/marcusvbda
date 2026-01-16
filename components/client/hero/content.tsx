@@ -111,6 +111,8 @@ export default function Content({ content }: any): ReactNode {
 											skills={skills}
 											experience={experience}
 											projects={projects}
+											language={language}
+											relocationNote={hero?.relocationNote?.value}
 											sections={{
 												summary: about?.title?.value,
 												experience: experience?.title?.value,

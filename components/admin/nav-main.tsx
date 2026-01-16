@@ -49,7 +49,7 @@ export function NavMain({
 					<Collapsible key={item.title} asChild defaultOpen={item.isActive}>
 						<SidebarMenuItem>
 							<SidebarMenuButton asChild tooltip={item.title}>
-								<Link
+								<a
 									href="#"
 									onClick={(e: any) => {
 										e.preventDefault();
@@ -59,7 +59,7 @@ export function NavMain({
 								>
 									<item.icon />
 									<span>{item.title}</span>
-								</Link>
+								</a>
 							</SidebarMenuButton>
 							{item.items?.length ? (
 								<>
