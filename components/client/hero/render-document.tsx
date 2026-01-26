@@ -201,7 +201,7 @@ export const RenderDocument = ({
 						</View>
 					))}
 				</View>
-				{relocationNote && language === 'en' && (
+				{relocationNote && (
 					<View>
 						<Text style={styles.relocationNote}>{relocationNote}</Text>
 					</View>

@@ -4,7 +4,6 @@ import Content from './content';
 
 export default function Wrapper() {
 	const { info, contact } = use(getComponentFields(['info', 'contact']));
-	console.log(info, contact);
 
 	return <Content content={{ info, contact }} />;
 }
