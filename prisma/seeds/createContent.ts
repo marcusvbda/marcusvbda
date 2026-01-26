@@ -172,7 +172,8 @@ const createHeroContent = async (prisma: any) => {
 						{
 							name: 'relocationNote',
 							language: 'en',
-							value: 'Open to relocation and long-term international opportunities.',
+							value:
+								'Open to relocation and long-term international opportunities.',
 						},
 						{
 							name: 'greeting',
@@ -219,11 +220,6 @@ const createHeroContent = async (prisma: any) => {
 							language: 'pt',
 							value:
 								'Sou Engenheiro de Software Sênior com mais de 15 anos de experiência em desenvolvimento e liderança de equipes, entregando produtos digitais escaláveis e de alta performance.',
-						},
-						{
-							name: 'relocationNote',
-							language: 'pt',
-							value: 'Aberto à realocação e a oportunidades internacionais de longo prazo.',
 						},
 					],
 				},
