@@ -692,6 +692,8 @@ const createExperiencesContent = async (prisma: any) => {
 									period: 'Nov 2023 - Present',
 									location: 'Rio de Janeiro, Brazil · Remote',
 									displayPriority: 1,
+									techStack:
+										'PHP, NextJS, Node.js, Laravel, TypesScript, NestJS, AlpineJS, MCP, Tailwind, N8N, OpenAI, MYSQL and Redis',
 									description:
 										"• Led backend and platform architecture decisions for Carteira, one of Latin America's largest investment portfolio platforms, supporting 1M+ users and high-volume financial transactions.\n• Designed and implemented scalable microservices architecture focused on performance, reliability, and long-term maintainability to support rapid platform growth.\n• Worked closely with product, business, and stakeholders to translate complex requirements into robust technical solutions.\n• Improved system performance by 60% through code optimization, caching strategies, and database query improvements.",
 								},
@@ -701,6 +703,8 @@ const createExperiencesContent = async (prisma: any) => {
 									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brazil · Remote',
 									displayPriority: 2,
+									techStack:
+										'PHP, AlpineJS, Node.js, Laravel, Tailwind, TypesScript, Mongo, MYSQL and Redis',
 									description:
 										"• Led backend architecture decisions for Vega Checkout, one of Brazil's leading payment platforms, processing millions of transactions monthly with 99.9% uptime.\n• Designed and implemented scalable payment gateway integrations with multiple providers (Stripe, PagSeguro, MercadoPago, and others) using REST APIs and webhook handlers.\n• Worked closely with product and business stakeholders to translate payment processing requirements into reliable, maintainable solutions.\n• Improved system stability and performance to handle critical financial transactions at scale.",
 								},
@@ -710,6 +714,8 @@ const createExperiencesContent = async (prisma: any) => {
 									period: 'Oct 2018 - Oct 2023',
 									location: 'São Paulo, Brazil · Remote',
 									displayPriority: 3,
+									techStack:
+										'PHP, Node.js, Laravel, Bootstrap, TypesScript, MYSQL and Vue.js',
 									description:
 										'• Led backend and platform architecture from the ground up for PrintI, the top B2B platform for online printing in Brazil, later evolving into Payt, a leading digital checkout platform.\n• Designed and implemented scalable SaaS solutions focused on performance, reliability, and maintainability, with the platform generating BRL 11M+ in transactions during the first year.\n• Worked closely with business stakeholders to translate complex requirements into technical solutions supporting rapid business growth.\n• Established technical foundations and long-term system architecture for high-traffic e-commerce and payment processing.',
 								},
@@ -718,6 +724,8 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Senior Software Engineer',
 									period: 'Jun 2021 - Apr 2024',
 									location: 'Joinville, Santa Catarina, Brazil · Remote',
+									techStack:
+										'PHP, Node.js, Laravel, Bootstrap, TypesScript, MYSQL and Vue.js',
 									displayPriority: 4,
 									description:
 										'• Led technical decisions for multi-brand enterprise platforms, including the St Gobain Partner Portal, a training platform serving 300,000+ active users.\n• Designed and implemented scalable systems for enterprise clients (St Gobain, UNIMED, Quartzolit, Intelbras) focused on performance and long-term maintainability.\n• Worked closely with clients and internal stakeholders to translate complex business requirements into robust technical solutions.\n• Improved system scalability and performance for high-traffic educational and marketing platforms.',
@@ -727,6 +735,7 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Senior Software Engineer (Software Owner)',
 									period: '2017 - Sep 2023',
 									location: 'Marília, São Paulo, Brazil · Remote',
+									techStack: 'PHP, Laravel, MYSQL and Vue.js',
 									displayPriority: 5,
 									description:
 										"• Led end-to-end architecture and development of a custom CRM system managing student enrollment for online courses, deployed across 90 E-learning campuses in Brazil.\n• Designed and implemented scalable systems focused on reliability and maintainability, supporting critical enrollment and lead management processes.\n• Worked closely with university stakeholders to translate enrollment and CRM requirements into robust technical solutions.\n• Improved operational efficiency through system automation, eventually leading to the system's acquisition by the university.",
@@ -736,6 +745,7 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Software Engineer',
 									period: 'Dec 2017 - Oct 2018',
 									location: 'São Paulo, Brazil · On-site',
+									techStack: 'ASP.NET MVC, SQL Server and Vue.js',
 									displayPriority: 6,
 									description:
 										'• Contributed to commercial automation and internal systems development.',
@@ -745,6 +755,7 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Software Engineer',
 									period: '2014 - Dec 2017',
 									location: 'Marília, São Paulo, Brazil · On-site',
+									techStack: 'PHP, Laravel, MYSQL and Vue.js',
 									displayPriority: 7,
 									description:
 										'• Contributed to commercial automation and internal systems development.',
@@ -754,6 +765,7 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Software Engineer',
 									period: '2010 - 2013',
 									location: 'Marília, São Paulo, Brazil · On-site',
+									techStack: 'Delphi, C++, Firebird',
 									displayPriority: 8,
 									description:
 										'• Contributed to commercial automation and internal systems development.',
@@ -784,6 +796,8 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Engenheiro de Software Sênior',
 									period: 'Nov 2023 - Presente',
 									location: 'Rio de Janeiro, Brasil · Remoto',
+									techStack:
+										'PHP, NextJS, Node.js, Laravel, TypesScript, NestJS, AlpineJS, MCP, Tailwind, N8N, OpenAI, MYSQL e Redis',
 									displayPriority: 1,
 									description:
 										'• Liderou decisões de arquitetura de backend e plataforma para a Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina, suportando 1M+ usuários e transações financeiras de alto volume.\n• Projetou e implementou arquitetura escalável de microserviços focada em performance, confiabilidade e manutenibilidade de longo prazo para suportar crescimento rápido da plataforma.\n• Trabalhou próximo a stakeholders de produto, negócios e equipes técnicas, traduzindo requisitos complexos em soluções técnicas robustas.\n• Melhorou performance do sistema em 60% através de otimização de código, estratégias de cache e melhorias em consultas de banco de dados.',
@@ -794,6 +808,8 @@ const createExperiencesContent = async (prisma: any) => {
 									period: 'Jan 2024 - Jul 2024',
 									location: 'Barueri, São Paulo, Brasil · Remoto',
 									displayPriority: 2,
+									techStack:
+										'PHP, AlpineJS, Node.js, Laravel, Tailwind, TypesScript, Mongo, MYSQL e Redis',
 									description:
 										'• Liderou decisões de arquitetura de backend para o Vega Checkout, uma das principais plataformas de pagamento do Brasil, processando milhões de transações mensais com 99.9% de uptime.\n• Projetou e implementou integrações escaláveis de gateway de pagamento com múltiplos provedores (Stripe, PagSeguro, MercadoPago e outros) usando REST APIs e handlers de webhook.\n• Trabalhou próximo a stakeholders de produto e negócios para traduzir requisitos de processamento de pagamentos em soluções confiáveis e manuteníveis.\n• Melhorou estabilidade e performance do sistema para lidar com transações financeiras críticas em escala.',
 								},
@@ -802,6 +818,8 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Engenheiro de Software Sênior',
 									period: 'Out 2018 - Out 2023',
 									location: 'São Paulo, Brasil · Remoto',
+									techStack:
+										'PHP, Node.js, Laravel, Bootstrap, TypesScript, MYSQL e Vue.js',
 									displayPriority: 3,
 									description:
 										'• Liderou arquitetura de backend e plataforma desde o início para o PrintI, a principal plataforma B2B de impressão online do Brasil, evoluindo depois para o Payt, uma plataforma líder de checkout digital.\n• Projetou e implementou soluções SaaS escaláveis focadas em performance, confiabilidade e manutenibilidade, com a plataforma gerando R$ 11M+ em transações no primeiro ano.\n• Trabalhou próximo a stakeholders de negócio para traduzir requisitos complexos em soluções técnicas suportando crescimento rápido de negócios.\n• Estabeleceu fundamentos técnicos e arquitetura de sistema de longo prazo para e-commerce e processamento de pagamentos de alto tráfego.',
@@ -812,6 +830,8 @@ const createExperiencesContent = async (prisma: any) => {
 									period: 'Jun 2021 - Abr 2024',
 									location: 'Joinville, Santa Catarina, Brasil · Remoto',
 									displayPriority: 4,
+									techStack:
+										'PHP, Node.js, Laravel, Bootstrap, TypesScript, MYSQL e Vue.js',
 									description:
 										'• Liderou decisões técnicas para plataformas enterprise multi-marca, incluindo o Portal Parceiro St Gobain, uma plataforma de treinamento atendendo 300.000+ usuários ativos.\n• Projetou e implementou sistemas escaláveis para clientes enterprise (St Gobain, UNIMED, Quartzolit, Intelbras) focados em performance e manutenibilidade de longo prazo.\n• Trabalhou próximo a clientes e stakeholders internos para traduzir requisitos complexos de negócio em soluções técnicas robustas.\n• Melhorou escalabilidade e performance de sistemas para plataformas educacionais e de marketing de alto tráfego.',
 								},
@@ -821,6 +841,7 @@ const createExperiencesContent = async (prisma: any) => {
 									period: '2017 - Set 2023',
 									location: 'Marília, São Paulo, Brasil · Remoto',
 									displayPriority: 5,
+									techStack: 'PHP, Laravel, MYSQL e Vue.js',
 									description:
 										'• Liderou arquitetura e desenvolvimento end-to-end de sistema CRM personalizado para gerenciamento de matrículas de cursos online, implantado em 90 campi de E-learning no Brasil.\n• Projetou e implementou sistemas escaláveis focados em confiabilidade e manutenibilidade, suportando processos críticos de matrícula e gerenciamento de leads.\n• Trabalhou próximo a stakeholders da universidade para traduzir requisitos de matrícula e CRM em soluções técnicas robustas.\n• Melhorou eficiência operacional através de automação de sistemas, eventualmente levando à aquisição do sistema pela universidade.',
 								},
@@ -829,6 +850,7 @@ const createExperiencesContent = async (prisma: any) => {
 									role: 'Engenheiro de Software',
 									period: 'Dez 2017 - Out 2018',
 									location: 'São Paulo, Brasil · Presencial',
+									techStack: 'ASP.NET MVC, SQL Server e Vue.js',
 									displayPriority: 6,
 									description:
 										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
@@ -839,6 +861,7 @@ const createExperiencesContent = async (prisma: any) => {
 									period: '2014 - Dez 2017',
 									location: 'Marília, São Paulo, Brasil · Presencial',
 									displayPriority: 7,
+									techStack: 'PHP, Laravel, MYSQL e Vue.js',
 									description:
 										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
 								},
@@ -848,6 +871,7 @@ const createExperiencesContent = async (prisma: any) => {
 									period: '2010 - 2013',
 									location: 'Marília, São Paulo, Brasil · Presencial',
 									displayPriority: 8,
+									techStack: 'Delphi, C++, Firebird',
 									description:
 										'• Contribuiu para automação comercial e desenvolvimento de sistemas internos.',
 								},

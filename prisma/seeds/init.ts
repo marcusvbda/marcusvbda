@@ -1,6 +1,11 @@
 const bcrypt = require('bcrypt');
 
 export default async function (prisma: any) {
+	// Set a longer statement timeout for TRUNCATE operations (5 minutes)
+	await prisma.$executeRawUnsafe(
+		`SET statement_timeout = '300s';`
+	);
+	
 	await prisma.$executeRawUnsafe(
 		`TRUNCATE TABLE "User" RESTART IDENTITY CASCADE`
 	);
