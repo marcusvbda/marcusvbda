@@ -14,11 +14,6 @@ export default function Content({ content }: any): ReactNode {
 	const { language } = useLanguage();
 	const hero = content?.hero?.[language];
 	const info = content?.info?.[language];
-	const about = content?.about?.[language];
-	const education = content?.education?.[language];
-	const skills = content?.skills?.[language];
-	const experience = content?.experience?.[language];
-	const projects = content?.projects?.[language];
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -101,42 +96,23 @@ export default function Content({ content }: any): ReactNode {
 								</Link>
 							</Button>
 							{client && (
-								<PDFDownloadLink
-									className="w-full"
-									document={
-										<RenderDocument
-											about={about}
-											info={info}
-											education={education}
-											skills={skills}
-											experience={experience}
-											projects={projects}
-											language={language}
-											relocationNote={hero?.relocationNote?.value || ''}
-											sections={{
-												summary: about?.title?.value,
-												experience: experience?.title?.value,
-												education: education?.title?.value,
-												skills: skills?.title?.value,
-											}}
-										/>
-									}
-									fileName={`${info?.name?.value} - ${language}`}
+								<Link
+									href={`/download-cv` as any}
+									target="_blank"
+									rel="noopener noreferrer"
 								>
-									{() => (
-										<Button
-											size="lg"
-											variant="outline"
-											asChild
-											className="bg-accent hover:bg-accent/90 w-full md:w-auto hover:text-white"
-										>
-											<span className="text-white">
-												<Download className="mr-2 h-4 w-4" />
-												{hero?.checkCv?.value}
-											</span>
-										</Button>
-									)}
-								</PDFDownloadLink>
+									<Button
+										size="lg"
+										variant="outline"
+										asChild
+										className="bg-accent hover:bg-accent/90 w-full md:w-auto hover:text-white"
+									>
+										<span className="text-white">
+											<Download className="mr-2 h-4 w-4" />
+											{hero?.checkCv?.value}
+										</span>
+									</Button>
+								</Link>
 							)}
 						</div>
 

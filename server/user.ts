@@ -1,7 +1,7 @@
 'use server';
 import { cookies } from 'next/headers';
 import crypto from 'crypto';
-import db from '@/lib/db'
+import db from '@/lib/db';
 import bcrypt from 'bcrypt';
 import { z } from 'zod';
 
