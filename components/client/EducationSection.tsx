@@ -13,38 +13,30 @@ const EDUCATION: Array<{
 	{
 		id: 'unimar',
 		titleKey: 'edu_unimar_title',
-		titleEn: 'Bachelor in Systems Analysis and Development',
+		titleEn: 'BSc in Systems Analysis and Development',
 		descKey: 'edu_unimar_description',
-		descEn: 'Universidade de Marília • Brazil, São Paulo • 2013 - 2016',
-	},
-	{
-		id: 'deepLearning',
-		titleKey: 'edu_deepLearning_title',
-		titleEn: 'Supervised Machine Learning: Regression and Classification',
-		descKey: 'edu_deepLearning_description',
-		descEn:
-			'DeepLearning.AI & Stanford University • Online • 2025 • Applied AI for automation, data workflows, and engineering productivity',
+		descEn: 'Universidade de Marília, Brazil.',
 	},
 	{
 		id: 'harvardX',
 		titleKey: 'edu_harvardX_title',
 		titleEn: "CS50's Introduction to Computer Science",
 		descKey: 'edu_harvardX_description',
-		descEn: 'Harvard University • Online • 2025',
+		descEn: 'Harvard University (2025).',
+	},
+	{
+		id: 'deepLearning',
+		titleKey: 'edu_deepLearning_title',
+		titleEn: 'Supervised Machine Learning',
+		descKey: 'edu_deepLearning_description',
+		descEn: 'Stanford Online / DeepLearning.AI (2025).',
 	},
 	{
 		id: 'futureLearning',
 		titleKey: 'edu_futureLearning_title',
-		titleEn: 'Advanced English Course',
+		titleEn: 'Advanced English',
 		descKey: 'edu_futureLearning_description',
-		descEn: 'Future Learning • Ireland • 2025',
-	},
-	{
-		id: 'times',
-		titleKey: 'edu_times_title',
-		titleEn: 'Professional English Course',
-		descKey: 'edu_times_description',
-		descEn: 'Times • Brazil • 2023 - 2024',
+		descEn: 'Future Learning Ireland (Dublin, 2025).',
 	},
 ];
 

@@ -14,31 +14,40 @@ const SKILLS_CATEGORIES: Array<{
 	{
 		id: 'backend',
 		labelKey: 'skills_backend_label',
-		labelEn: 'Backend & Platform',
-		skillsKey: null,
-		skillsEn: 'PHP, Node.js, Laravel, NestJS, PostgreSQL, Redis',
-	},
-	{
-		id: 'frontend',
-		labelKey: 'skills_frontend_label',
-		labelEn: 'Frontend (supporting)',
-		skillsKey: null,
-		skillsEn: 'React, Next.js, TypeScript, Tailwind CSS',
-	},
-	{
-		id: 'architecture',
-		labelKey: 'skills_architecture_label',
-		labelEn: 'Architecture & Systems',
-		skillsKey: 'skills_architecture_skills',
-		skillsEn:
-			'Distributed Systems, Microservices, REST APIs, System Design, Scalability, High-Availability Systems, Performance Optimization',
+		labelEn: 'Backend',
+		skillsKey: 'skills_backend_skills',
+		skillsEn: 'PHP 8+ (Laravel), Node.js (NestJS, Express), Python, Go.',
 	},
 	{
 		id: 'cloud',
 		labelKey: 'skills_cloud_label',
-		labelEn: 'Cloud & DevOps',
-		skillsKey: null,
-		skillsEn: 'AWS, Docker, CI/CD, Vercel',
+		labelEn: 'Cloud & Platform',
+		skillsKey: 'skills_cloud_skills',
+		skillsEn: 'AWS (EC2, S3, RDS, Lambda), Docker, CI/CD Pipelines, Microservices.',
+	},
+	{
+		id: 'data',
+		labelKey: 'skills_data_label',
+		labelEn: 'Data & Performance',
+		skillsKey: 'skills_data_skills',
+		skillsEn:
+			'PostgreSQL, Redis (Advanced Caching), Query Optimization, ElasticSearch.',
+	},
+	{
+		id: 'frontend',
+		labelKey: 'skills_frontend_label',
+		labelEn: 'Frontend & UI',
+		skillsKey: 'skills_frontend_skills',
+		skillsEn:
+			'React, Next.js, TypeScript, Tailwind CSS, State Management (Context API).',
+	},
+	{
+		id: 'ai',
+		labelKey: 'skills_ai_label',
+		labelEn: 'AI & Innovation',
+		skillsKey: 'skills_ai_skills',
+		skillsEn:
+			'LLM Integration (OpenAI API), Vector Databases, Behavioral Data Analysis.',
 	},
 ];
 
@@ -75,14 +84,18 @@ export default function Skills() {
 								</CardHeader>
 								<CardContent>
 									<div className="flex flex-wrap gap-2">
-										{skillsText.split(',').map((skill: string, j: number) => (
-											<Badge
-												key={`skill_${category.id}_${j}`}
-												variant="secondary"
-											>
-												{skill.trim()}
-											</Badge>
-										))}
+										{skillsText
+												.split(/[,·]/)
+												.map((s: string) => s.trim())
+												.filter(Boolean)
+												.map((skill: string, j: number) => (
+													<Badge
+														key={`skill_${category.id}_${j}`}
+														variant="secondary"
+													>
+														{skill}
+													</Badge>
+												))}
 									</div>
 								</CardContent>
 							</Card>

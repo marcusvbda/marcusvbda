@@ -23,6 +23,16 @@ const PROJECTS: Array<{
 	tech: string;
 }> = [
 	{
+		id: 'talentsieve',
+		image: '/companies/seive.jpeg',
+		titleKey: 'proj_talentsieve_title',
+		titleEn: 'TalentSieve (AI SaaS)',
+		descKey: 'proj_talentsieve_description',
+		descEn:
+			'AI Co-Pilot for Recruitment in compliance with EU AI Act and GDPR. Multimodal chat engine for candidate triage with automatic ROI dashboards. Infrastructure with NestJS, Next.js and AWS, focus on AI explainability ("Human-in-the-loop").',
+		tech: 'NestJS, Next.js, AWS, TypeScript',
+	},
+	{
 		id: 'investidor10',
 		image: '/companies/i10.jpeg',
 		titleKey: 'proj_investidor10_title',
@@ -190,43 +200,47 @@ export default function Projects() {
 					))}
 				</div>
 
-				{selectedProject && (() => {
-					const p = PROJECTS.find((x) => x.id === selectedProject);
-					if (!p) return null;
-					return (
-						<Dialog open onOpenChange={handleCloseModal}>
-							<DialogContent className="max-w-5xl">
-								<DialogHeader>
-									<DialogTitle className="text-2xl">
-										{t(p.titleKey, p.titleEn)}
-									</DialogTitle>
-									<DialogDescription asChild>
-										<div className="space-y-6 pt-4">
-											<div className="aspect-video overflow-hidden rounded-lg relative">
-												<Image
-													src={p.image}
-													alt={t(p.titleKey, p.titleEn)}
-													fill
-													className="object-cover"
-												/>
+				{selectedProject &&
+					(() => {
+						const p = PROJECTS.find((x) => x.id === selectedProject);
+						if (!p) return null;
+						return (
+							<Dialog open onOpenChange={handleCloseModal}>
+								<DialogContent className="max-w-5xl">
+									<DialogHeader>
+										<DialogTitle className="text-2xl">
+											{t(p.titleKey, p.titleEn)}
+										</DialogTitle>
+										<DialogDescription asChild>
+											<div className="space-y-6 pt-4">
+												<div className="aspect-video overflow-hidden rounded-lg relative">
+													<Image
+														src={p.image}
+														alt={t(p.titleKey, p.titleEn)}
+														fill
+														className="object-cover"
+													/>
+												</div>
+												<p className="text-muted-foreground leading-relaxed">
+													{t(p.descKey, p.descEn)}
+												</p>
+												<div className="flex flex-wrap gap-2">
+													{p.tech.split(', ').map((tech, i) => (
+														<Badge
+															key={`tech_${tech}_${i}`}
+															variant="secondary"
+														>
+															{tech}
+														</Badge>
+													))}
+												</div>
 											</div>
-											<p className="text-muted-foreground leading-relaxed">
-												{t(p.descKey, p.descEn)}
-											</p>
-											<div className="flex flex-wrap gap-2">
-												{p.tech.split(', ').map((tech, i) => (
-													<Badge key={`tech_${tech}_${i}`} variant="secondary">
-														{tech}
-													</Badge>
-												))}
-											</div>
-										</div>
-									</DialogDescription>
-								</DialogHeader>
-							</DialogContent>
-						</Dialog>
-					);
-				})()}
+										</DialogDescription>
+									</DialogHeader>
+								</DialogContent>
+							</Dialog>
+						);
+					})()}
 			</div>
 		</section>
 	);
