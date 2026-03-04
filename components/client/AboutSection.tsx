@@ -28,7 +28,7 @@ export default function About(): ReactNode {
 					<div className="md:col-span-4 animate-fade-in hidden md:block">
 						<Card className="overflow-hidden hover-lift">
 							<Image
-								src={'/assets/mac.png'}
+								src={'/assets/blue.png'}
 								alt="About me"
 								width={600}
 								height={600}
