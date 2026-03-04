@@ -10,13 +10,15 @@ import {
 
 type Language = 'en' | 'pt';
 
+import pt from '@/dictionaries/pt';
 interface LanguageContextType {
 	language: Language;
 	setLanguage: (lang: Language) => void;
+	t: any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
-	undefined
+	undefined,
 );
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
@@ -38,6 +40,13 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 		setLanguageState(lang);
 	};
 
+	const t = (text: string, fallback: any = null) => {
+		if (language === 'pt') {
+			return pt[text as keyof typeof pt] || fallback || text;
+		}
+		return fallback || text;
+	};
+
 	useEffect(() => {
 		setMounted(true);
 	}, []);
@@ -45,7 +54,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 	if (!mounted) return;
 
 	return (
-		<LanguageContext.Provider value={{ language, setLanguage }}>
+		<LanguageContext.Provider value={{ language, setLanguage, t }}>
 			{children}
 		</LanguageContext.Provider>
 	);
