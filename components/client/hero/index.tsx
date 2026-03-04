@@ -45,7 +45,7 @@ export default function Hero({ content }: any): ReactNode {
 						<p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
 							{t(
 								'bio',
-								"I'm a Senior Software Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
+								"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.",
 							)}
 						</p>
 

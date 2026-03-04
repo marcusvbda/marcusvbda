@@ -18,7 +18,7 @@ export default function About(): ReactNode {
 					<p className="text-lg text-muted-foreground">
 						{t(
 							'about',
-							"I'm a Senior Software Engineer with over 15 years of experience building and leading software development teams to deliver high-performance, scalable digital products.",
+							"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms.",
 						)}
 					</p>
 				</div>
@@ -44,7 +44,7 @@ export default function About(): ReactNode {
 					>
 						{t(
 							'aboutDescription',
-							'Senior Software Engineer with 15+ years of experience designing and scaling backend-heavy systems for fintech, SaaS, and high-traffic platforms.\n\nStrong focus on system architecture, scalability, performance, and reliability, with a track record of leading technical decisions impacting millions of users and high-volume financial transactions.\n\nExperienced in working closely with product and business stakeholders, translating complex requirements into robust, maintainable solutions. Recently applying AI as a practical engineering tool to enhance developer productivity and system automation.',
+							'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms.\n\nSpecialised in high-performance APIs, distributed systems, and cloud-native architectures, with a proven track record improving system performance, scaling platforms to millions of users, and reducing infrastructure costs through architecture and performance engineering.\n\nCore expertise across system architecture, high-traffic backend systems, performance engineering, microservices and distributed systems, cloud infrastructure (AWS), API design and scalability, and technical leadership and mentoring.\n\nBased in Dublin, Ireland and eligible to work in Ireland, including for the Critical Skills Employment Permit.',
 						)
 							.split('\n')
 							.map((x: string, key: number) => (

@@ -15,7 +15,7 @@ const EXPERIENCES: Array<{
 	locationKey?: string;
 	locationEn?: string;
 	descKey: string;
-	descEn: string;
+		descEn: string;
 }> = [
 	{
 		id: 'investidor10',
@@ -28,7 +28,7 @@ const EXPERIENCES: Array<{
 		locationEn: 'Remote (Based in Dublin)',
 		descKey: 'exp_investidor10_description',
 		descEn:
-			'• Performance Engineering: Optimised API throughput and database queries, achieving 60% latency reduction and significant cloud infrastructure cost savings through advanced Redis caching strategies.\n• Financial Systems: Architected and launched the new Income Tax system (IR 2024), implementing robust request-handling and State Management (Context API), resulting in 40% higher user retention in the module.\n• Scalability: Led backend evolution of the Carteira platform, supporting 1M+ users with high transactional data volume.',
+			'• Reduced API latency by 60% through advanced Redis caching strategies and database query optimisation.\n• Designed backend architecture improvements to support high-volume financial data processing.\n• Architected and launched the Income Tax system (IR 2024) with scalable request handling and state management.\n• Improved engagement in the tax module by 40% through performance and UX improvements.\n• Contributed to backend evolution of the Carteira investment platform, scaling infrastructure to support over 1M users.',
 	},
 	{
 		id: 'talentsieve',
@@ -41,7 +41,7 @@ const EXPERIENCES: Array<{
 		locationEn: 'Own Project',
 		descKey: 'exp_talentsieve_description',
 		descEn:
-			'• Architected an AI Co-Pilot for Recruitment in compliance with EU AI Act and GDPR.\n• Developed a multimodal chat engine for candidate triage that generates automatic ROI dashboards, reducing estimated time-to-hire by 70%.\n• Built full infrastructure using NestJS, Next.js and AWS, with focus on AI explainability ("Human-in-the-loop").',
+			'• Designed and built an AI-powered recruitment co-pilot focused on candidate triage and hiring analytics.\n• Architected a full-stack SaaS platform using NestJS, Next.js and AWS.\n• Developed a multimodal AI chat engine for candidate screening and workflow automation.\n• Built automated ROI and hiring performance dashboards.\n• Designed system architecture compliant with the EU AI Act and GDPR, including a human-in-the-loop explainability model.',
 	},
 	{
 		id: 'vega',
@@ -52,7 +52,7 @@ const EXPERIENCES: Array<{
 		periodEn: 'Jan 2020 – Oct 2023',
 		descKey: 'exp_vega_description',
 		descEn:
-			'• Developed high-conversion checkout engine processing millions of euros monthly.\n• Mentored team of 10+ developers, implementing rigorous Code Review and CI/CD standards, reducing production bugs by 35%.\n• Refactored legacy monolithic systems into scalable microservices using Laravel and AWS.',
+			'• Built and scaled a high-conversion checkout platform processing millions of euros monthly.\n• Designed and implemented scalable payment backend systems.\n• Led refactor of legacy monolithic systems into microservices architecture.\n• Mentored 10+ developers and established strong code review and CI/CD practices.\n• Reduced production incidents by 35% through improved engineering processes and reliability work.',
 	},
 	{
 		id: 'diwe',
@@ -63,7 +63,7 @@ const EXPERIENCES: Array<{
 		periodEn: 'Oct 2018 – Dec 2019',
 		descKey: 'exp_diwe_description',
 		descEn:
-			'• Lead developer of a University Management System, later acquired due to its operational efficiency and automated workflow engine.',
+			'• Lead developer of a University Management System later acquired due to its operational efficiency.\n• Designed backend architecture for automated academic workflows and scalable administrative modules.\n• Delivered performance improvements and system automation that significantly increased operational efficiency.',
 	},
 ];
 

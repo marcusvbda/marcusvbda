@@ -42,7 +42,7 @@ export default function ContactsSection() {
 			label: t('Phone', 'Phone'),
 			value: t(
 				'contactPhoneValue',
-				'+353-81-881-8967 (Ireland), +55 (14) 99676-6177 (Brazil)',
+				'+353 81 881 8967',
 			),
 			href: null,
 		},

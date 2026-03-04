@@ -11,6 +11,7 @@ import {
 type Language = 'en' | 'pt';
 
 import pt from '@/dictionaries/pt';
+import en from '@/dictionaries/en';
 interface LanguageContextType {
 	language: Language;
 	setLanguage: (lang: Language) => void;
@@ -41,10 +42,27 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 	};
 
 	const t = (text: string, fallback: any = null) => {
-		if (language === 'pt') {
-			return pt[text as keyof typeof pt] || fallback || text;
+		const dictionaries: Record<Language, Record<string, any>> = {
+			en,
+			pt,
+		};
+
+		const currentDict = dictionaries[language] || {};
+		const currentValue = currentDict[text];
+		if (currentValue !== undefined && currentValue !== null) {
+			return currentValue;
 		}
-		return fallback || text;
+
+		const enValue = dictionaries.en[text];
+		if (enValue !== undefined && enValue !== null) {
+			return enValue;
+		}
+
+		if (fallback !== null && fallback !== undefined) {
+			return fallback;
+		}
+
+		return text;
 	};
 
 	useEffect(() => {

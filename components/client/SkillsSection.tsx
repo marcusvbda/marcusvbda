@@ -16,14 +16,14 @@ const SKILLS_CATEGORIES: Array<{
 		labelKey: 'skills_backend_label',
 		labelEn: 'Backend',
 		skillsKey: 'skills_backend_skills',
-		skillsEn: 'PHP 8+ (Laravel), Node.js (NestJS, Express), Python, Go.',
+		skillsEn: 'PHP (Laravel), Node.js (NestJS, Express), Python, Go',
 	},
 	{
 		id: 'cloud',
 		labelKey: 'skills_cloud_label',
 		labelEn: 'Cloud & Platform',
 		skillsKey: 'skills_cloud_skills',
-		skillsEn: 'AWS (EC2, S3, RDS, Lambda), Docker, CI/CD Pipelines, Microservices.',
+		skillsEn: 'AWS (EC2, S3, RDS, Lambda), Docker, CI/CD Pipelines, Microservices',
 	},
 	{
 		id: 'data',
@@ -31,7 +31,7 @@ const SKILLS_CATEGORIES: Array<{
 		labelEn: 'Data & Performance',
 		skillsKey: 'skills_data_skills',
 		skillsEn:
-			'PostgreSQL, Redis (Advanced Caching), Query Optimization, ElasticSearch.',
+			'PostgreSQL, Redis (Advanced Caching), Query Optimisation, ElasticSearch',
 	},
 	{
 		id: 'frontend',
@@ -39,7 +39,7 @@ const SKILLS_CATEGORIES: Array<{
 		labelEn: 'Frontend & UI',
 		skillsKey: 'skills_frontend_skills',
 		skillsEn:
-			'React, Next.js, TypeScript, Tailwind CSS, State Management (Context API).',
+			'React, Next.js, TypeScript, TailwindCSS, State Management (Context API)',
 	},
 	{
 		id: 'ai',
@@ -47,7 +47,7 @@ const SKILLS_CATEGORIES: Array<{
 		labelEn: 'AI & Innovation',
 		skillsKey: 'skills_ai_skills',
 		skillsEn:
-			'LLM Integration (OpenAI API), Vector Databases, Behavioral Data Analysis.',
+			'LLM Integration (OpenAI APIs), Vector Databases, Behavioural Data Analysis',
 	},
 ];
 
