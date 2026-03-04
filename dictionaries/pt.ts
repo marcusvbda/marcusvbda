@@ -97,11 +97,11 @@ export default {
 	// education
 	edu_unimar_title: 'BSc em Análise e Desenvolvimento de Sistemas',
 	edu_unimar_description: 'Universidade de Marília, Brasil.',
-	edu_harvardX_title: "CS50's Introduction to Computer Science",
+	edu_harvardX_title: 'Introdução à Ciência da Computação (CS50)',
 	edu_harvardX_description: 'Harvard University (2025).',
-	edu_deepLearning_title: 'Supervised Machine Learning',
+	edu_deepLearning_title: 'Machine Learning Supervisionado',
 	edu_deepLearning_description: 'Stanford Online / DeepLearning.AI (2025).',
-	edu_futureLearning_title: 'Advanced English',
+	edu_futureLearning_title: 'Inglês Avançado',
 	edu_futureLearning_description: 'Future Learning Ireland (Dublin, 2025).',
 
 	// skills (TECHNICAL CORE do README)

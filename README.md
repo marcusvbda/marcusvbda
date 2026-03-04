@@ -7,9 +7,9 @@
 
 ### **EXECUTIVE SUMMARY**
 
-Senior Software Engineer com **15+ anos de experiência** na construção de arquiteturas financeiras de alta escala e plataformas SaaS. Especialista em **Backend Engineering (PHP/Laravel, Node.js/NestJS)** e **Cloud Scalability (AWS)**. Histórico comprovado de melhoria de performance de sistemas em **60%** e liderança técnica em plataformas com **+1M de utilizadores ativos**. Atualmente a desenvolver o **TalentSieve**, um motor de recrutamento impulsionado por IA focado em conformidade GDPR e ROI de contratação.
+Senior Software Engineer with **15+ years of experience** building high-scale financial architectures and SaaS platforms. Specialist in **Backend Engineering (PHP/Laravel, Node.js/NestJS)** and **Cloud Scalability (AWS)**. Proven track record of improving system performance by **60%** and leading technical delivery for platforms with **1M+ active users**. Currently building **TalentSieve**, an AI-powered recruitment engine focused on GDPR compliance and hiring ROI.
 
-**Status:** Residente em Dublin | **Full Working Rights (Critical Skills Eligible / Stamp 2)**.
+**Status:** Based in Dublin | **Full working rights (Critical Skills eligible / Stamp 2)**.
 
 ---
 
@@ -25,28 +25,33 @@ Senior Software Engineer com **15+ anos de experiência** na construção de arq
 
 ### **PROFESSIONAL EXPERIENCE**
 
-**Senior Software Engineer | Investidor10 (Fintech)** _Nov 2023 – Presente | Remote (Baseado em Dublin)_ \* **Performance Engineering:** Otimização de throughput de APIs e queries de base de dados, atingindo uma **redução de 60% na latência** e corte considerável em custos de infraestrutura cloud através de estratégias avançadas de cache com Redis.
+**Senior Software Engineer | Investidor10 (Fintech)** _Nov 2023 – Present | Remote (Based in Dublin)_
 
-- **Financial Systems:** Arquitetura e lançamento do novo sistema de **Imposto de Renda (IR 2024)**, implementando uma camada robusta de request-handling e State Management (Context API), resultando num aumento de 40% na retenção de utilizadores do módulo.
-- **Scalability:** Liderança da evolução backend da plataforma _Carteira_, suportando mais de **1 milhão de utilizadores** com alto volume de dados transacionais.
+- **Performance engineering:** Optimised API throughput and database queries, achieving a **60% latency reduction** and significantly reducing cloud infrastructure costs through advanced Redis caching strategies.
+- **Financial systems:** Designed and launched a new **Income Tax (IR 2024)** module with a robust request-handling layer and Context API-based state management, increasing user retention for the module by 40%.
+- **Scalability:** Led the backend evolution of the _Carteira_ platform, supporting **1M+ users** with a high volume of transactional data.
 
-**Founder & Lead Engineer | TalentSieve (AI SaaS)** _Jan 2025 – Presente | Projeto Próprio_ \* Arquitetura de um **AI Co-Pilot para Recrutamento** em conformidade com o EU AI Act e GDPR.
+**Founder & Lead Engineer | TalentSieve (AI SaaS)** _Jan 2025 – Present | Own project_
 
-- Desenvolvimento de um motor de chat multimodal para triagem de candidatos que gera dashboards automáticos de ROI, reduzindo o tempo de contratação estimado em 70%.
-- Construção de infraestrutura completa utilizando NestJS, Next.js e AWS, com foco em explicabilidade de IA ("Human-in-the-loop").
+- Architecting an **AI co-pilot for recruitment** compliant with the EU AI Act and GDPR.
+- Building a multimodal chat engine for candidate screening that generates automatic ROI dashboards, reducing estimated time-to-hire by 70%.
+- Designing and operating the full stack using NestJS, Next.js, and AWS with a strong focus on AI explainability and human-in-the-loop workflows.
 
-**Senior Software Engineer / Tech Lead | Vega Checkout / Payt** _Jan 2020 – Out 2023_ \* Desenvolvimento de motor de checkout de alta conversão processando milhões de euros mensalmente.
+**Senior Software Engineer / Tech Lead | Vega Checkout / Payt** _Jan 2020 – Oct 2023_
 
-- Mentoria de equipa com mais de 10 programadores, implementando padrões rigorosos de Code Review e CI/CD, reduzindo bugs em produção em 35%.
-- Refatoração de sistemas legados monolíticos para microserviços escaláveis utilizando Laravel e AWS.
+- Led the development of a high-conversion checkout engine processing millions of euros in transactions every month.
+- Mentored a team of 10+ engineers, enforcing rigorous code review and CI/CD standards that reduced production bugs by 35%.
+- Refactored legacy monolithic systems into scalable microservices using Laravel and AWS.
 
-**Senior Software Engineer | DIWE** _Out 2018 – Dez 2019_ \* Programador principal de um Sistema de Gestão Universitária, posteriormente adquirido devido à sua eficiência operacional e motor de fluxos automáticos.
+**Senior Software Engineer | DIWE** _Oct 2018 – Dec 2019_
+
+- Principal engineer for a University Management System that was later acquired due to its operational efficiency and powerful automation workflows.
 
 ---
 
 ### **EDUCATION & CERTIFICATIONS**
 
-- **BSc em Análise e Desenvolvimento de Sistemas** – Universidade de Marília, Brasil.
+- **BSc in Analysis and Systems Development** – Universidade de Marília, Brazil.
 - **CS50’s Introduction to Computer Science** – Harvard University (2025).
 - **Supervised Machine Learning** – Stanford Online / DeepLearning.AI (2025).
 - **Advanced English** – Future Learning Ireland (Dublin, 2025).
@@ -55,6 +60,6 @@ Senior Software Engineer com **15+ anos de experiência** na construção de arq
 
 ### **KEY ACHIEVEMENTS FOR RECRUITERS**
 
-- **Experiência em High-Traffic:** Gestão de plataformas com milhões de acessos mensais.
-- **Business Mindset:** Focado em ROI, métricas de performance e redução de custos operacionais.
-- **Disponibilidade Local:** Residente em Dublin, disponível para entrevistas técnicas imediatas.
+- **High-traffic experience:** Operated and evolved platforms with millions of monthly visits.
+- **Business mindset:** Focused on ROI, performance metrics, and reducing operational costs.
+- **Local availability:** Based in Dublin and available for immediate technical interviews.
