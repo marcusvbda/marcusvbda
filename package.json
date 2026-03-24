@@ -28,6 +28,7 @@
 		"clsx": "^2.1.1",
 		"crypto": "^1.0.1",
 		"dotenv": "^17.2.3",
+		"framer-motion": "^12.38.0",
 		"json-edit-react": "^1.29.0",
 		"lucide-react": "^0.553.0",
 		"next": "^16.0.7",

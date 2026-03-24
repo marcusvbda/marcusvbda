@@ -6,6 +6,35 @@ import { Button } from '@/components/ui/button';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion, type Variants } from 'framer-motion';
+
+const containerVariants: Variants = {
+	hidden: {},
+	visible: {
+		transition: {
+			staggerChildren: 0.12,
+		},
+	},
+};
+
+const itemVariants: Variants = {
+	hidden: { opacity: 0, y: 24 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.6, ease: 'easeOut' },
+	},
+};
+
+const imageVariants: Variants = {
+	hidden: { opacity: 0, x: 60, scale: 0.95 },
+	visible: {
+		opacity: 1,
+		x: 0,
+		scale: 1,
+		transition: { duration: 0.8, ease: 'easeOut', delay: 0.2 },
+	},
+};
 
 export default function Hero({ content }: any): ReactNode {
 	const { t } = useLanguage();
@@ -25,8 +54,13 @@ export default function Hero({ content }: any): ReactNode {
 			<div className="max-width-content w-full">
 				<div className="grid md:grid-cols-2 gap-12 items-center">
 					{/* Text Content */}
-					<div className="space-y-6 animate-fade-in">
-						<div className="space-y-2">
+					<motion.div
+						className="space-y-6"
+						variants={containerVariants}
+						initial="hidden"
+						animate="visible"
+					>
+						<motion.div className="space-y-2" variants={itemVariants}>
 							<p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
 								{t("Hi, I'm")}
 							</p>
@@ -40,16 +74,22 @@ export default function Hero({ content }: any): ReactNode {
 								<span className="inline-block w-2 h-2 bg-accent rounded-full animate-pulse" />
 								{t('location', 'Dublin, Ireland')}
 							</p>
-						</div>
+						</motion.div>
 
-						<p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+						<motion.p
+							className="text-lg text-muted-foreground leading-relaxed max-w-xl"
+							variants={itemVariants}
+						>
 							{t(
 								'bio',
 								"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.",
 							)}
-						</p>
+						</motion.p>
 
-						<div className="flex justify-center md:justify-start flex-wrap gap-4 pt-4">
+						<motion.div
+							className="flex justify-center md:justify-start flex-wrap gap-4 pt-4"
+							variants={itemVariants}
+						>
 							<Button
 								size="lg"
 								variant="outline"
@@ -106,9 +146,12 @@ export default function Hero({ content }: any): ReactNode {
 									</span>
 								</Button>
 							</Link>
-						</div>
+						</motion.div>
 
-						<div className="pt-8 animate-bounce flex justify-center md:justify-start">
+						<motion.div
+							className="pt-8 flex justify-center md:justify-start"
+							variants={itemVariants}
+						>
 							<Link
 								href="#about"
 								onClick={(e) => {
@@ -120,29 +163,42 @@ export default function Hero({ content }: any): ReactNode {
 								}}
 								className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
 							>
-								<ArrowDown className="h-4 w-4" />
+								<motion.span
+									animate={{ y: [0, 6, 0] }}
+									transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
+									className="inline-flex"
+								>
+									<ArrowDown className="h-4 w-4" />
+								</motion.span>
 								{t('Scroll down to explore')}
 							</Link>
-						</div>
-					</div>
+						</motion.div>
+					</motion.div>
 
 					{/* Profile Image */}
-					<div
-						className="relative animate-fade-in"
-						style={{ animationDelay: '0.2s' }}
+					<motion.div
+						className="relative"
+						variants={imageVariants}
+						initial="hidden"
+						animate="visible"
 					>
 						<div className="relative w-full max-w-md mx-auto hidden md:grid">
 							<div className="absolute inset-0 bg-linear-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl" />
-							<Image
-								src={'/assets/mac.png'}
-								alt="Marcus Vinicius Bassalobre de Assis"
-								width={400}
-								height={400}
-								priority
-								className="relative rounded-3xl object-cover w-full h-full shadow-2xl hover-lift"
-							/>
+							<motion.div
+								whileHover={{ scale: 1.03, y: -6 }}
+								transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+							>
+								<Image
+									src={'/assets/mac.png'}
+									alt="Marcus Vinicius Bassalobre de Assis"
+									width={400}
+									height={400}
+									priority
+									className="relative rounded-3xl object-cover w-full h-full shadow-2xl"
+								/>
+							</motion.div>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

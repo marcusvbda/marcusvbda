@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
 const PROJECTS: Array<{
 	id: string;
@@ -144,6 +145,23 @@ const PROJECTS: Array<{
 	},
 ];
 
+const containerVariants: Variants = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.08 },
+	},
+};
+
+const cardVariants: Variants = {
+	hidden: { opacity: 0, scale: 0.92, y: 24 },
+	visible: {
+		opacity: 1,
+		scale: 1,
+		y: 0,
+		transition: { duration: 0.5, ease: 'easeOut' },
+	},
+};
+
 export default function Projects() {
 	const { t } = useLanguage();
 	const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -155,92 +173,113 @@ export default function Projects() {
 	return (
 		<section id="projects" className="section-padding bg-muted/30">
 			<div className="max-width-content">
-				<div className="text-center mb-16 animate-fade-in">
+				<motion.div
+					className="text-center mb-16"
+					initial={{ opacity: 0, y: 32 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, amount: 0.3 }}
+					transition={{ duration: 0.6, ease: 'easeOut' }}
+				>
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						{t('Featured Projects', 'Featured Projects')}
 					</h2>
 					<p className="text-lg text-muted-foreground">
 						{t("What I've Built", "What I've Built")}
 					</p>
-				</div>
-				<div className="flex flex-wrap justify-center gap-8">
-					{PROJECTS.map((project, index) => (
-						<Card
-							key={project.id}
-							className="overflow-hidden hover-lift animate-fade-in cursor-pointer w-full md:w-auto md:basis-[calc(33.333%-1.34rem)]"
-							onClick={() => setSelectedProject(project.id)}
-							style={{ animationDelay: `${index * 0.1}s` }}
-						>
-							<div className="aspect-video overflow-hidden bg-muted relative">
-								<Image
-									src={project.image}
-									alt={t(project.titleKey, project.titleEn)}
-									fill
-									className="object-cover hover:scale-105 transition-transform duration-300"
-								/>
-							</div>
-							<CardHeader>
-								<CardTitle className="text-xl">
-									{t(project.titleKey, project.titleEn)}
-								</CardTitle>
-							</CardHeader>
-							<CardContent className="space-y-4">
-								<p className="text-muted-foreground leading-relaxed">
-									{t(project.descKey, project.descEn)}
-								</p>
-								<div className="flex flex-wrap gap-2">
-									{project.tech.split(', ').map((tech, i) => (
-										<Badge key={`tech_${tech}_${i}`} variant="secondary">
-											{tech}
-										</Badge>
-									))}
-								</div>
-							</CardContent>
-						</Card>
-					))}
-				</div>
+				</motion.div>
 
-				{selectedProject &&
-					(() => {
-						const p = PROJECTS.find((x) => x.id === selectedProject);
-						if (!p) return null;
-						return (
-							<Dialog open onOpenChange={handleCloseModal}>
-								<DialogContent className="max-w-5xl">
-									<DialogHeader>
-										<DialogTitle className="text-2xl">
-											{t(p.titleKey, p.titleEn)}
-										</DialogTitle>
-										<DialogDescription asChild>
-											<div className="space-y-6 pt-4">
-												<div className="aspect-video overflow-hidden rounded-lg relative">
-													<Image
-														src={p.image}
-														alt={t(p.titleKey, p.titleEn)}
-														fill
-														className="object-cover"
-													/>
+				<motion.div
+					className="flex flex-wrap justify-center gap-8"
+					variants={containerVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.05 }}
+				>
+					{PROJECTS.map((project) => (
+						<motion.div
+							key={project.id}
+							variants={cardVariants}
+							className="w-full md:w-auto md:basis-[calc(33.333%-1.34rem)]"
+							whileHover={{ scale: 1.03, y: -6 }}
+							transition={{ type: 'spring', stiffness: 220, damping: 20 }}
+						>
+							<Card
+								className="overflow-hidden cursor-pointer h-full"
+								onClick={() => setSelectedProject(project.id)}
+							>
+								<div className="aspect-video overflow-hidden bg-muted relative">
+									<Image
+										src={project.image}
+										alt={t(project.titleKey, project.titleEn)}
+										fill
+										className="object-cover transition-transform duration-500 hover:scale-110"
+									/>
+								</div>
+								<CardHeader>
+									<CardTitle className="text-xl">
+										{t(project.titleKey, project.titleEn)}
+									</CardTitle>
+								</CardHeader>
+								<CardContent className="space-y-4">
+									<p className="text-muted-foreground leading-relaxed">
+										{t(project.descKey, project.descEn)}
+									</p>
+									<div className="flex flex-wrap gap-2">
+										{project.tech.split(', ').map((tech, i) => (
+											<Badge key={`tech_${tech}_${i}`} variant="secondary">
+												{tech}
+											</Badge>
+										))}
+									</div>
+								</CardContent>
+							</Card>
+						</motion.div>
+					))}
+				</motion.div>
+
+				<AnimatePresence>
+					{selectedProject &&
+						(() => {
+							const p = PROJECTS.find((x) => x.id === selectedProject);
+							if (!p) return null;
+							return (
+								<Dialog open onOpenChange={handleCloseModal}>
+									<DialogContent className="max-w-5xl">
+										<DialogHeader>
+											<DialogTitle className="text-2xl">
+												{t(p.titleKey, p.titleEn)}
+											</DialogTitle>
+											<DialogDescription asChild>
+												<div className="space-y-6 pt-4">
+													<div className="aspect-video overflow-hidden rounded-lg relative">
+														<Image
+															src={p.image}
+															alt={t(p.titleKey, p.titleEn)}
+															fill
+															className="object-cover"
+														/>
+													</div>
+													<p className="text-muted-foreground leading-relaxed">
+														{t(p.descKey, p.descEn)}
+													</p>
+													<div className="flex flex-wrap gap-2">
+														{p.tech.split(', ').map((tech, i) => (
+															<Badge
+																key={`tech_${tech}_${i}`}
+																variant="secondary"
+															>
+																{tech}
+															</Badge>
+														))}
+													</div>
 												</div>
-												<p className="text-muted-foreground leading-relaxed">
-													{t(p.descKey, p.descEn)}
-												</p>
-												<div className="flex flex-wrap gap-2">
-													{p.tech.split(', ').map((tech, i) => (
-														<Badge
-															key={`tech_${tech}_${i}`}
-															variant="secondary"
-														>
-															{tech}
-														</Badge>
-													))}
-												</div>
-											</div>
-										</DialogDescription>
-									</DialogHeader>
-								</DialogContent>
-							</Dialog>
-						);
-					})()}
+											</DialogDescription>
+										</DialogHeader>
+									</DialogContent>
+								</Dialog>
+							);
+						})()}
+				</AnimatePresence>
 			</div>
 		</section>
 	);

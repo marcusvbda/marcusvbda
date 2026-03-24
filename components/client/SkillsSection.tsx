@@ -3,6 +3,7 @@
 import { useLanguage } from '@/contexts/language-context';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { motion, type Variants } from 'framer-motion';
 
 const SKILLS_CATEGORIES: Array<{
 	id: string;
@@ -51,57 +52,96 @@ const SKILLS_CATEGORIES: Array<{
 	},
 ];
 
+const containerVariants: Variants = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.1 },
+	},
+};
+
+const cardVariants: Variants = {
+	hidden: { opacity: 0, y: 30, scale: 0.95 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		scale: 1,
+		transition: { duration: 0.5, ease: 'easeOut' },
+	},
+};
+
+const badgeVariants: Variants = {
+	hidden: { opacity: 0, scale: 0.8 },
+	visible: { opacity: 1, scale: 1 },
+};
+
 export default function Skills() {
 	const { t } = useLanguage();
 
 	return (
 		<section id="skills" className="section-padding">
 			<div className="max-width-content">
-				<div className="text-center mb-16 animate-fade-in">
+				<motion.div
+					className="text-center mb-16"
+					initial={{ opacity: 0, y: 32 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, amount: 0.3 }}
+					transition={{ duration: 0.6, ease: 'easeOut' }}
+				>
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						{t('Skills & Technologies', 'Skills & Technologies')}
 					</h2>
 					<p className="text-lg text-muted-foreground">
 						{t('Technical Expertise', 'Technical Expertise')}
 					</p>
-				</div>
+				</motion.div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-					{SKILLS_CATEGORIES.map((category, i) => {
+				<motion.div
+					className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+					variants={containerVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.1 }}
+				>
+					{SKILLS_CATEGORIES.map((category) => {
 						const skillsText = category.skillsKey
 							? t(category.skillsKey, category.skillsEn)
 							: category.skillsEn;
 						return (
-							<Card
+							<motion.div
 								key={category.id}
-								className="hover-lift animate-fade-in"
-								style={{ animationDelay: `${i * 0.1}s` }}
+								variants={cardVariants}
+								whileHover={{ scale: 1.04, y: -5 }}
+								transition={{ type: 'spring', stiffness: 220, damping: 20 }}
 							>
-								<CardHeader>
-									<CardTitle className="flex items-center gap-2">
-										{t(category.labelKey, category.labelEn)}
-									</CardTitle>
-								</CardHeader>
-								<CardContent>
-									<div className="flex flex-wrap gap-2">
-										{skillsText
+								<Card className="h-full">
+									<CardHeader>
+										<CardTitle className="flex items-center gap-2">
+											{t(category.labelKey, category.labelEn)}
+										</CardTitle>
+									</CardHeader>
+									<CardContent>
+										<motion.div
+											className="flex flex-wrap gap-2"
+											variants={{ visible: { transition: { staggerChildren: 0.05 } } }}
+										>
+											{skillsText
 												.split(/[,·]/)
 												.map((s: string) => s.trim())
 												.filter(Boolean)
 												.map((skill: string, j: number) => (
-													<Badge
-														key={`skill_${category.id}_${j}`}
-														variant="secondary"
-													>
-														{skill}
-													</Badge>
+													<motion.div key={`skill_${category.id}_${j}`} variants={badgeVariants}>
+														<Badge variant="secondary">
+															{skill}
+														</Badge>
+													</motion.div>
 												))}
-									</div>
-								</CardContent>
-							</Card>
+										</motion.div>
+									</CardContent>
+								</Card>
+							</motion.div>
 						);
 					})}
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

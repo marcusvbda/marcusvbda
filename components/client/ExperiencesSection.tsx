@@ -4,6 +4,7 @@ import { Briefcase } from 'lucide-react';
 import { ReactNode } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/language-context';
+import { motion, type Variants } from 'framer-motion';
 
 const EXPERIENCES: Array<{
 	id: string;
@@ -67,58 +68,89 @@ const EXPERIENCES: Array<{
 	},
 ];
 
+const containerVariants: Variants = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.12 },
+	},
+};
+
+const cardVariants: Variants = {
+	hidden: { opacity: 0, y: 40 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 0.55, ease: 'easeOut' },
+	},
+};
+
 export default function Experiences(): ReactNode {
 	const { t } = useLanguage();
 
 	return (
 		<section id="experience" className="section-padding">
 			<div className="max-width-content">
-				<div className="text-center mb-16 animate-fade-in">
+				<motion.div
+					className="text-center mb-16"
+					initial={{ opacity: 0, y: 32 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, amount: 0.3 }}
+					transition={{ duration: 0.6, ease: 'easeOut' }}
+				>
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						{t('Experience')}
 					</h2>
 					<p className="text-lg text-muted-foreground">
 						{t('Career Journey', 'Career Journey')}
 					</p>
-				</div>
+				</motion.div>
 
-				<div className="space-y-8 grid">
-					{EXPERIENCES.map((exp, index) => (
-						<Card
-							key={`xp_${exp.id}`}
-							className="hover-lift animate-fade-in"
-							style={{ animationDelay: `${index * 0.1}s` }}
-						>
-							<CardHeader>
-								<div className="flex items-start justify-between gap-4">
-									<div className="space-y-1 flex-1">
-										<CardTitle className="text-2xl flex items-center gap-2">
-											<Briefcase className="h-5 w-5 text-accent" />
-											{exp.company}
-										</CardTitle>
-										<p className="text-lg font-semibold text-accent">
-											{t(exp.roleKey, exp.roleEn)}
+				<motion.div
+					className="space-y-8 grid"
+					variants={containerVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.1 }}
+				>
+					{EXPERIENCES.map((exp) => (
+						<motion.div key={`xp_${exp.id}`} variants={cardVariants}>
+							<motion.div
+								whileHover={{ scale: 1.01, y: -3 }}
+								transition={{ type: 'spring', stiffness: 250, damping: 22 }}
+							>
+								<Card>
+									<CardHeader>
+										<div className="flex items-start justify-between gap-4">
+											<div className="space-y-1 flex-1">
+												<CardTitle className="text-2xl flex items-center gap-2">
+													<Briefcase className="h-5 w-5 text-accent" />
+													{exp.company}
+												</CardTitle>
+												<p className="text-lg font-semibold text-accent">
+													{t(exp.roleKey, exp.roleEn)}
+												</p>
+												<p className="text-sm text-muted-foreground">
+													{t(exp.periodKey, exp.periodEn)}
+													{exp.locationKey && exp.locationEn && (
+														<>
+															{' · '}
+															{t(exp.locationKey, exp.locationEn)}
+														</>
+													)}
+												</p>
+											</div>
+										</div>
+									</CardHeader>
+									<CardContent className="space-y-4">
+										<p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+											{t(exp.descKey, exp.descEn)}
 										</p>
-										<p className="text-sm text-muted-foreground">
-											{t(exp.periodKey, exp.periodEn)}
-											{exp.locationKey && exp.locationEn && (
-												<>
-													{' · '}
-													{t(exp.locationKey, exp.locationEn)}
-												</>
-											)}
-										</p>
-									</div>
-								</div>
-							</CardHeader>
-							<CardContent className="space-y-4">
-								<p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-									{t(exp.descKey, exp.descEn)}
-								</p>
-							</CardContent>
-						</Card>
+									</CardContent>
+								</Card>
+							</motion.div>
+						</motion.div>
 					))}
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

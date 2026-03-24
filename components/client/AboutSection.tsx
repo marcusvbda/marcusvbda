@@ -4,6 +4,22 @@ import { ReactNode } from 'react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/language-context';
 import Image from 'next/image';
+import { motion, type Variants } from 'framer-motion';
+
+const sectionVariants: Variants = {
+	hidden: { opacity: 0, y: 32 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
+
+const imageVariants: Variants = {
+	hidden: { opacity: 0, x: -40 },
+	visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: 'easeOut', delay: 0.15 } },
+};
+
+const contentVariants: Variants = {
+	hidden: { opacity: 0, x: 40 },
+	visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: 'easeOut', delay: 0.25 } },
+};
 
 export default function About(): ReactNode {
 	const { t } = useLanguage();
@@ -11,7 +27,13 @@ export default function About(): ReactNode {
 	return (
 		<section id="about" className="section-padding bg-muted/30">
 			<div className="max-width-content">
-				<div className="text-center mb-16 animate-fade-in">
+				<motion.div
+					className="text-center mb-16"
+					variants={sectionVariants}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true, amount: 0.3 }}
+				>
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						{t('About me')}
 					</h2>
@@ -21,26 +43,37 @@ export default function About(): ReactNode {
 							"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms.",
 						)}
 					</p>
-				</div>
+				</motion.div>
 
-				<div className=" md:grid-cols-12 gap-12 items-center grid">
+				<div className="md:grid-cols-12 gap-12 items-center grid">
 					{/* Image */}
-					<div className="md:col-span-4 animate-fade-in hidden md:block">
-						<Card className="overflow-hidden hover-lift">
-							<Image
-								src={'/assets/blue.png'}
-								alt="About me"
-								width={600}
-								height={600}
-								className="w-full h-full object-cover"
-							/>
-						</Card>
-					</div>
+					<motion.div
+						className="md:col-span-4 hidden md:block"
+						variants={imageVariants}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, amount: 0.3 }}
+					>
+						<motion.div whileHover={{ scale: 1.03, y: -4 }} transition={{ type: 'spring', stiffness: 200, damping: 20 }}>
+							<Card className="overflow-hidden">
+								<Image
+									src={'/assets/blue.png'}
+									alt="About me"
+									width={600}
+									height={600}
+									className="w-full h-full object-cover"
+								/>
+							</Card>
+						</motion.div>
+					</motion.div>
 
 					{/* Content */}
-					<div
-						className="md:col-span-8 space-y-6 animate-fade-in"
-						style={{ animationDelay: '0.2s' }}
+					<motion.div
+						className="md:col-span-8 space-y-6"
+						variants={contentVariants}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, amount: 0.3 }}
 					>
 						{t(
 							'aboutDescription',
@@ -55,7 +88,7 @@ export default function About(): ReactNode {
 									{x}
 								</p>
 							))}
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

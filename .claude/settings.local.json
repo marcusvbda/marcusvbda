@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"animation\\\\|framer\\\\|motion\\\\|transition\\\\|animate\" /Users/mvbassalobre/Projects/marcusvbda --include=\"*.json\" --include=\"*.tsx\" --include=\"*.ts\" ! -path \"*/node_modules/*\" ! -path \"*/.next/*\")",
+      "Bash(grep:*)",
+      "Bash(yarn add:*)"
+    ]
+  }
+}

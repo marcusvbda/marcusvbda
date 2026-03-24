@@ -32,7 +32,7 @@ export default function GlobalContextProvider({
 		<QueryClientProvider client={queryClient}>
 			<ThemeProvider
 				attribute="class"
-				defaultTheme="light"
+				defaultTheme="dark"
 				disableTransitionOnChange
 			>
 				<LanguageProvider>

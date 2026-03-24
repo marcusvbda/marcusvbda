@@ -9,6 +9,7 @@ import { ThemeToggle } from './theme-toggle';
 import { LanguageSwitcher } from './language-switcher';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Content() {
 	const { t } = useLanguage();
@@ -40,7 +41,10 @@ export default function Content() {
 	};
 
 	return (
-		<nav
+		<motion.nav
+			initial={{ y: -64, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ duration: 0.5, ease: 'easeOut' }}
 			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md ${
 				isScrolled || isMobile
 					? `*:bg-background/95 ${
@@ -155,8 +159,15 @@ export default function Content() {
 				</div>
 
 				{/* Mobile Navigation */}
+				<AnimatePresence>
 				{isOpen && (
-					<div className="md:hidden pt-4 pb-2 animate-fade-in">
+					<motion.div
+						className="md:hidden pt-4 pb-2"
+						initial={{ opacity: 0, height: 0 }}
+						animate={{ opacity: 1, height: 'auto' }}
+						exit={{ opacity: 0, height: 0 }}
+						transition={{ duration: 0.25, ease: 'easeOut' }}
+					>
 						<div className="flex flex-col gap-4">
 							<Link
 								href="#about"
@@ -220,9 +231,10 @@ export default function Content() {
 							</Link>
 							<div className="border-t pt-4" />
 						</div>
-					</div>
+					</motion.div>
 				)}
+				</AnimatePresence>
 			</div>
-		</nav>
+		</motion.nav>
 	);
 }
