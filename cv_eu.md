@@ -1,123 +1,85 @@
-### Marcus Vinicius Bassalobre de Assis
+# Marcus Vinicius Bassalobre de Assis
 
-Senior Software Engineer
-
+**Senior Backend Engineer | Fintech & High-Scale Systems**  
 Dublin, Ireland  
-bassalobre.vinicius@gmail.com | +353 81 881 8967
+bassalobre.vinicius@gmail.com | +353 81 881 8967  
+[mvbassalobre.com](https://mvbassalobre.com) | [LinkedIn](https://linkedin.com/in/mvbassalobre) | [GitHub](https://github.com/marcusvbda)
 
-mvbassalobre.com  
-linkedin.com/in/mvbassalobre  
-github.com/marcusvbda
+## Summary
 
----
+I'm a Senior Backend Engineer with over 15 years of experience building and scaling backend systems, especially in fintech and high-traffic digital platforms.
 
-### PROFESSIONAL SUMMARY
+I've spent most of my career working on backend architecture, high-performance APIs, distributed systems, and AWS infrastructure. What I enjoy most is improving system performance, cutting infrastructure costs, and helping teams ship more reliable software.
 
-Senior Software Engineer with 15+ years of experience building and scaling backend systems for fintech, SaaS, and high-traffic digital platforms.
+I'm currently based in Dublin, Ireland, and I'm eligible to work here under the Critical Skills Employment Permit.
 
-Experienced in designing reliable APIs, improving system performance, and delivering scalable cloud-based solutions. Strong background working with distributed teams and leading technical improvements that increase system reliability, performance, and user engagement.
+## Experience
 
-Open to relocation to Canada and eligible for work visa sponsorship.
+### Senior Backend Engineer
 
----
+**Investidor10** (Fintech Platform) — Remote (based in Dublin)  
+_November 2023 – Present_  
+PHP, Laravel, Node.js, Redis, PostgreSQL
 
-### TECHNICAL SKILLS
+- Cut API latency by around 60% by introducing smart Redis caching and optimizing heavy database queries.
+- Helped redesign parts of the backend to handle large volumes of financial data more efficiently.
+- Led the development and launch of the 2024 Income Tax module, which significantly increased user engagement.
+- Contributed to the evolution of the Carteira investment platform, which now serves over 1 million users.
 
-**Backend Development**
-PHP (Laravel), Node.js (NestJS, Express), Python, Go
+### Lead Engineer – Side Project
 
-**Cloud & Infrastructure**
-AWS (EC2, S3, RDS, Lambda), Docker, CI/CD pipelines
+**TalentSieve** (AI-powered Recruitment Platform) — Independent Project  
+_January 2025 – Present_  
+NestJS, Next.js, AWS, TypeScript
 
-**Databases & Performance**
-PostgreSQL, MySQL, Redis, Query optimization, ElasticSearch
+- Built an AI-powered SaaS platform from scratch focused on candidate screening and hiring analytics.
+- Designed the full-stack architecture and implemented an automated chat engine to triage candidates early in the process.
+- Created analytics dashboards to track hiring performance and return on investment.
+- Made sure the whole system follows GDPR and the EU AI Act, always keeping a human in the loop for important decisions.
 
-**Frontend**
-React, Next.js, TypeScript, TailwindCSS
+### Senior Software Engineer / Tech Lead
 
-**AI & Data**
-LLM integration (OpenAI APIs), Vector databases, behavioural data analysis
+**Vega Checkout / Payt** (Fintech) — Brazil  
+_January 2020 – October 2023_  
+PHP, Laravel, Node.js, AWS, Docker
 
----
+- Developed the backend for a checkout platform that processed millions of euros in transactions every month.
+- Led the migration from a legacy monolith to a more scalable microservices architecture.
+- Mentored over 10 developers and introduced proper code reviews and stronger CI/CD practices.
+- Reduced production incidents by about 35% by focusing on reliability and better engineering standards.
 
-### PROFESSIONAL EXPERIENCE
+### Senior Software Engineer
 
-#### Senior Software Engineer
+**DIWE** — Rio de Janeiro, Brazil  
+_October 2018 – December 2019_  
+PHP, Laravel, MySQL
 
-**Investidor10 (Fintech Platform)**  
-Remote — Based in Dublin  
-Nov 2023 – Present
+- Served as the main developer for a university management platform that was later acquired thanks to its operational improvements.
+- Designed backend architecture for automated academic workflows and administrative processes.
+- Focused on making the system faster and more user-friendly for both students and university staff.
 
-- Improved API performance and reduced average latency by **60%** through Redis caching and database query optimisation.
-- Contributed to backend systems supporting **1M+ active users** on a financial analytics platform.
-- Designed and launched the **Income Tax module (IR 2024)**, improving user engagement and retention by **40%**.
-- Worked closely with product and frontend teams to deliver scalable backend services.
+## Education
 
-Tech: PHP, Laravel, Node.js, Redis, PostgreSQL
-
----
-
-#### Founder / Lead Engineer (Side Project)
-
-**TalentSieve – AI Recruitment SaaS**  
-Jan 2025 – Present
-
-- Built a recruitment automation platform powered by AI to support candidate screening and hiring analytics.
-- Designed backend and cloud infrastructure using **NestJS, Next.js and AWS**.
-- Developed an AI-driven chat system for candidate triage and workflow automation.
-- Implemented analytics dashboards to support hiring decision-making.
-
-Tech: NestJS, Next.js, TypeScript, AWS, LLM APIs
-
----
-
-#### Senior Software Engineer / Tech Lead
-
-**Vega Checkout / Payt (Fintech)**  
-Jan 2020 – Oct 2023
-
-- Developed backend services for an online checkout platform processing **millions of euros in transactions monthly**.
-- Led backend refactoring from legacy monolithic systems to **microservices architecture**.
-- Mentored a team of **10+ developers**, improving code quality and engineering practices.
-- Introduced CI/CD and structured code review processes, reducing production bugs by **35%**.
-
-Tech: PHP, Laravel, Node.js, AWS, Docker
-
----
-
-#### Senior Software Engineer
-
-**DIWE**  
-Rio de Janeiro, Brazil  
-Oct 2018 – Dec 2019
-
-- Lead developer of a university management platform used to automate academic workflows.
-- Designed backend systems for student management, scheduling, and administrative processes.
-- The platform was later acquired due to operational efficiency improvements.
-
-Tech: PHP, Laravel, MySQL
-
----
-
-### EDUCATION
-
-**BSc – Systems Analysis and Development**  
+**BSc in Systems Analysis and Development**  
 Universidade de Marília — Brazil
 
-**CS50 – Introduction to Computer Science**  
-Harvard University (2025)
+**Recent Courses**
 
-**Supervised Machine Learning**  
-Stanford Online / DeepLearning.AI (2025)
+- CS50 – Introduction to Computer Science (Harvard University, 2025)
+- Supervised Machine Learning (Stanford Online / DeepLearning.AI, 2025)
+- Advanced English (Future Learning Ireland — Dublin, 2025)
 
-**Advanced English**  
-Future Learning Ireland — Dublin (2025)
+## Skills & Technologies
 
----
+**Backend**  
+Laravel · Node.js · NestJS · PHP · Python · Go
 
-### ADDITIONAL INFORMATION
+**Cloud & Infrastructure**  
+AWS · Docker · CI/CD · Microservices
 
-- 15+ years of professional software development experience
-- Experience working with international remote teams
-- Background in fintech platforms and scalable backend systems
-- Open to relocation and opportunities in Canada
+**Databases & Performance**  
+PostgreSQL · Redis · Query Optimization · ElasticSearch
+
+**Frontend & Others**  
+React · Next.js · TypeScript · TailwindCSS  
+LLM Integration · OpenAI APIs · Vector Databases
