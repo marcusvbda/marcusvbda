@@ -5,7 +5,7 @@ const en: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Senior Backend Engineer | Fintech | High-Scale APIs',
+	cv_title: 'Senior Backend Engineer | Fintech & High-Scale Systems',
 
 	// navbar
 	About: 'About',
@@ -33,7 +33,7 @@ const en: Record<string, string> = {
 		'Senior Backend Engineer with 15+ years of experience designing and scaling high-traffic backend systems for fintech and SaaS platforms.',
 
 	aboutDescription:
-		'Senior Backend Engineer with 15+ years of experience designing and scaling backend systems for fintech, SaaS, and high-traffic digital platforms.\n\nSpecialised in backend architecture, high-performance APIs, distributed systems, and cloud infrastructure (AWS). Proven track record improving system performance, reducing infrastructure costs, and scaling platforms used by millions of users.\n\nStrong experience in performance engineering, microservices, and technical leadership, mentoring engineering teams and improving software delivery processes.\n\nBased in Dublin, Ireland and eligible to work in Ireland, including for the Critical Skills Employment Permit.',
+		"I'm a Senior Backend Engineer with over 15 years of experience building and scaling backend systems, especially in fintech and high-traffic digital platforms.\n\nI've spent most of my career working on backend architecture, high-performance APIs, distributed systems, and AWS infrastructure. What I enjoy most is improving system performance, cutting infrastructure costs, and helping teams ship more reliable software.\n\nI'm currently based in Dublin, Ireland, and I'm eligible to work here under the Critical Skills Employment Permit.",
 
 	// experience
 	'Career Journey': 'Career Journey',
@@ -41,36 +41,35 @@ const en: Record<string, string> = {
 
 	exp_investidor10_role: 'Senior Backend Engineer',
 	exp_investidor10_company: 'Investidor10 (Fintech Platform)',
-	exp_investidor10_period: 'Nov 2023 – Present',
-	exp_investidor10_location: 'Remote (Based in Dublin)',
+	exp_investidor10_period: 'November 2023 – Present',
+	exp_investidor10_location: 'Remote (based in Dublin)',
 
 	exp_investidor10_description:
-		'• Reduced API latency by 60% through Redis caching strategies and database query optimisation.\n• Designed backend improvements to support high-volume financial data processing.\n• Architected and launched the Income Tax system (IR 2024), improving module engagement by 40%.\n• Contributed to backend evolution of the Carteira investment platform supporting 1M+ users.\n• Improved overall system performance and scalability across financial data APIs.',
+		'• Cut API latency by around 60% by introducing smart Redis caching and optimizing heavy database queries.\n• Helped redesign parts of the backend to handle large volumes of financial data more efficiently.\n• Led the development and launch of the 2024 Income Tax module, which significantly increased user engagement.\n• Contributed to the evolution of the Carteira investment platform, which now serves over 1 million users.',
 
-	exp_talentsieve_role:
-		'Lead Engineer (AI Recruitment Platform – Side Project)',
-	exp_talentsieve_company: 'TalentSieve',
-	exp_talentsieve_period: 'Jan 2025 – Present',
+	exp_talentsieve_role: 'Lead Engineer – Side Project',
+	exp_talentsieve_company: 'TalentSieve (AI-powered Recruitment Platform)',
+	exp_talentsieve_period: 'January 2025 – Present',
 	exp_talentsieve_location: 'Independent Project',
 
 	exp_talentsieve_description:
-		'• Designed and built an AI-powered recruitment platform focused on candidate screening and hiring analytics.\n• Architected full-stack SaaS infrastructure using NestJS, Next.js and AWS.\n• Developed AI-driven chat engine for candidate triage and workflow automation.\n• Built analytics dashboards to track hiring performance and ROI.\n• Implemented architecture compliant with EU AI Act and GDPR with human-in-the-loop explainability.',
+		'• Built an AI-powered SaaS platform from scratch focused on candidate screening and hiring analytics.\n• Designed the full-stack architecture and implemented an automated chat engine to triage candidates early in the process.\n• Created analytics dashboards to track hiring performance and return on investment.\n• Made sure the whole system follows GDPR and the EU AI Act, always keeping a human in the loop for important decisions.',
 
 	exp_vega_role: 'Senior Software Engineer / Tech Lead',
 	exp_vega_company: 'Vega Checkout / Payt (Fintech)',
-	exp_vega_period: 'Jan 2020 – Oct 2023',
+	exp_vega_period: 'January 2020 – October 2023',
 	exp_vega_location: 'Brazil',
 
 	exp_vega_description:
-		'• Built backend systems for a checkout platform processing millions of euros in transactions monthly.\n• Led migration from legacy monolithic architecture to scalable microservices.\n• Mentored 10+ developers and introduced strong code review and CI/CD practices.\n• Reduced production incidents by 35% by improving reliability and engineering standards.\n• Improved checkout performance and platform stability for high-traffic ecommerce integrations.',
+		'• Developed the backend for a checkout platform that processed millions of euros in transactions every month.\n• Led the migration from a legacy monolith to a more scalable microservices architecture.\n• Mentored over 10 developers and introduced proper code reviews and stronger CI/CD practices.\n• Reduced production incidents by about 35% by focusing on reliability and better engineering standards.',
 
 	exp_diwe_role: 'Senior Software Engineer',
 	exp_diwe_company: 'DIWE',
-	exp_diwe_period: 'Oct 2018 – Dec 2019',
+	exp_diwe_period: 'October 2018 – December 2019',
 	exp_diwe_location: 'Rio de Janeiro, Brazil',
 
 	exp_diwe_description:
-		'• Lead developer of a university management platform later acquired due to operational efficiency.\n• Designed backend architecture for automated academic workflows.\n• Built scalable administrative and student management systems.\n• Delivered performance improvements and workflow automation.',
+		'• Served as the main developer for a university management platform that was later acquired thanks to its operational improvements.\n• Designed backend architecture for automated academic workflows and administrative processes.\n• Focused on making the system faster and more user-friendly for both students and university staff.',
 
 	exp_investidor10_techStack: 'PHP, Laravel, Node.js, Redis, PostgreSQL',
 	exp_talentsieve_techStack: 'NestJS, Next.js, AWS, TypeScript',
@@ -124,15 +123,12 @@ const en: Record<string, string> = {
 
 	skills_data_label: 'Databases & Performance',
 
-	skills_data_skills: 'PostgreSQL · Redis · Query Optimisation · ElasticSearch',
+	skills_data_skills: 'PostgreSQL · Redis · Query Optimization · ElasticSearch',
 
-	skills_frontend_label: 'Frontend',
+	skills_frontend_label: 'Frontend & Others',
 
-	skills_frontend_skills: 'React · Next.js · TypeScript · TailwindCSS',
-
-	skills_ai_label: 'AI & Data',
-
-	skills_ai_skills: 'LLM Integration · OpenAI APIs · Vector Databases',
+	skills_frontend_skills:
+		'React · Next.js · TypeScript · TailwindCSS · LLM Integration · OpenAI APIs · Vector Databases',
 
 	// key achievements
 	'Key Achievements': 'Key Achievements',

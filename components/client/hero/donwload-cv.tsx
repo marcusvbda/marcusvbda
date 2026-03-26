@@ -58,11 +58,6 @@ const SKILLS_PDF = [
 		labelKey: 'skills_frontend_label',
 		skillsKey: 'skills_frontend_skills',
 	},
-	{
-		id: 'ai',
-		labelKey: 'skills_ai_label',
-		skillsKey: 'skills_ai_skills',
-	},
 ];
 
 const EXPERIENCE_PDF = [
