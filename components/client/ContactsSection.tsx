@@ -58,10 +58,7 @@ export default function ContactsSection() {
 		{
 			icon: Phone,
 			label: t('Phone', 'Phone'),
-			value: t(
-				'contactPhoneValue',
-				'+353 81 881 8967',
-			),
+			value: t('contactPhoneValue', '+353 083 881 8967'),
 			href: null,
 		},
 	];
@@ -114,7 +111,11 @@ export default function ContactsSection() {
 												<motion.div
 													className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10"
 													whileHover={{ rotate: 10, scale: 1.15 }}
-													transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+													transition={{
+														type: 'spring',
+														stiffness: 300,
+														damping: 15,
+													}}
 												>
 													<Icon className="h-6 w-6 text-accent" />
 												</motion.div>

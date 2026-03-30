@@ -153,7 +153,7 @@ const en: Record<string, string> = {
 	Phone: 'Phone',
 
 	contactLocationValue: 'Dublin, Ireland',
-	contactPhoneValue: '+353 81 881 8967',
+	contactPhoneValue: '+353 083 881 8967',
 
 	// download CV
 	'Error generating PDF. Please try again.':
