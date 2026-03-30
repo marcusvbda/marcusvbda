@@ -159,7 +159,7 @@ export default {
 	Phone: 'Telefone',
 
 	contactLocationValue: 'Dublin, Irlanda',
-	contactPhoneValue: '+353 083 881 8967',
+	contactPhoneValue: '+55 14 99676-7967',
 
 	// download CV
 	'Error generating PDF. Please try again.':

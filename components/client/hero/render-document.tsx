@@ -134,7 +134,6 @@ export const RenderDocument = ({
 	experience,
 	sections,
 	relocationNote,
-	language = 'en',
 }: any) => {
 	const skillsContent = skills?.categories?.valueJson || {};
 	const educationContent = education?.items?.valueJson || {};
@@ -142,7 +141,7 @@ export const RenderDocument = ({
 
 	// Convert to array and sort by date (most recent first)
 	const sortedExperiences = sortExperiencesByDate(
-		Object.values(experienceContent)
+		Object.values(experienceContent),
 	);
 
 	return (

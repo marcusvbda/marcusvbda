@@ -2,7 +2,7 @@
 
 **Senior Backend Engineer | Fintech & High-Scale Systems**  
 Dublin, Ireland  
-bassalobre.vinicius@gmail.com | +353 81 881 8967  
+bassalobre.vinicius@gmail.com | +353 083 881 8967  
 [mvbassalobre.com](https://mvbassalobre.com) | [LinkedIn](https://linkedin.com/in/mvbassalobre) | [GitHub](https://github.com/marcusvbda)
 
 ## Summary
