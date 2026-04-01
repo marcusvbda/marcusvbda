@@ -5,7 +5,7 @@ export default {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Senior Backend Engineer | Fintech | APIs de Alta Escala',
+	cv_title: 'Senior Fullstack Engineer | Fintech | APIs de Alta Escala',
 
 	// navbar
 	About: 'Sobre',
@@ -19,7 +19,7 @@ export default {
 	"Hi, I'm": 'Olá, sou',
 	location: 'Dublin, Irlanda',
 
-	bio: 'Senior Backend Engineer com 15+ anos de experiência construindo e escalando plataformas fintech e SaaS de alto tráfego. Especialista em arquitetura backend, otimização de performance e infraestrutura cloud (AWS), com histórico comprovado em reduzir latência de sistemas, escalar plataformas para milhões de utilizadores e desenvolver APIs de alto volume com elevada confiabilidade.',
+	bio: 'Senior Fullstack Engineer com 15+ anos de experiência construindo e escalando plataformas fintech e SaaS de alto tráfego. Especialista em arquitetura backend, otimização de performance e infraestrutura cloud (AWS), com histórico comprovado em reduzir latência de sistemas, escalar plataformas para milhões de utilizadores e desenvolver APIs de alto volume com elevada confiabilidade.',
 
 	checkCv: 'Ver meu CV',
 	cta: 'Entre em contato',
@@ -30,7 +30,7 @@ export default {
 	Summary: 'Resumo',
 
 	about:
-		'Senior Backend Engineer com 15+ anos de experiência desenhando e escalando sistemas backend para fintechs e plataformas digitais de alto tráfego.',
+		'Senior Fullstack Engineer com 15+ anos de experiência desenhando e escalando sistemas backend para fintechs e plataformas digitais de alto tráfego.',
 
 	aboutDescription:
 		'Senior Backend Engineer com 15+ anos de experiência no desenvolvimento e escalabilidade de sistemas backend para fintechs, SaaS e plataformas digitais de alto tráfego.\n\nEspecialista em arquitetura backend, APIs de alta performance, sistemas distribuídos e infraestrutura cloud (AWS). Histórico comprovado em melhorar performance de sistemas, reduzir custos de infraestrutura e escalar plataformas utilizadas por milhões de utilizadores.\n\nExperiência sólida em engenharia de performance, arquitetura de microserviços e liderança técnica, incluindo mentoria de equipas de engenharia e melhoria de processos de desenvolvimento.\n\nResidente em Dublin, Irlanda, elegível para trabalhar no país, incluindo para o Critical Skills Employment Permit.',
@@ -39,7 +39,7 @@ export default {
 	'Career Journey': 'Jornada Profissional',
 	Present: 'Presente',
 
-	exp_investidor10_role: 'Senior Backend Engineer',
+	exp_investidor10_role: 'Senior Fullstack Engineer',
 	exp_investidor10_company: 'Investidor10 (Plataforma Fintech)',
 	exp_investidor10_period: 'Nov 2023 – Presente',
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
@@ -57,7 +57,7 @@ export default {
 	exp_talentsieve_description:
 		'• Desenvolvimento de uma plataforma de recrutamento com IA focada em triagem de candidatos e analytics de contratação.\n• Arquitetura da infraestrutura SaaS utilizando NestJS, Next.js e AWS.\n• Desenvolvimento de motor de chat com IA para automação de triagem de candidatos.\n• Criação de dashboards analíticos para acompanhar performance de contratação e ROI.\n• Implementação de arquitetura compatível com EU AI Act e GDPR com modelo de explicabilidade human-in-the-loop.',
 
-	exp_vega_role: 'Senior Software Engineer / Tech Lead',
+	exp_vega_role: 'Senior Fullstack Engineer / Tech Lead',
 	exp_vega_company: 'Vega Checkout / Payt (Fintech)',
 	exp_vega_period: 'Jan 2020 – Out 2023',
 	exp_vega_location: 'Brasil',
@@ -65,7 +65,7 @@ export default {
 	exp_vega_description:
 		'• Desenvolvimento de sistemas backend para plataforma de checkout processando milhões de euros em transações mensais.\n• Liderança da migração de arquitetura monolítica para microserviços escaláveis.\n• Mentoria de equipa com mais de 10 desenvolvedores e implementação de processos de Code Review e CI/CD.\n• Redução de incidentes em produção em 35% através de melhorias de confiabilidade.\n• Otimização de performance e estabilidade para integrações de ecommerce de alto tráfego.',
 
-	exp_diwe_role: 'Senior Software Engineer',
+	exp_diwe_role: 'Senior Fullstack Engineer',
 	exp_diwe_company: 'DIWE',
 	exp_diwe_period: 'Out 2018 – Dez 2019',
 	exp_diwe_location: 'Rio de Janeiro, Brasil',

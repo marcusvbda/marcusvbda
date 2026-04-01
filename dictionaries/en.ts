@@ -19,7 +19,7 @@ const en: Record<string, string> = {
 	"Hi, I'm": "Hi, I'm",
 	location: 'Dublin, Ireland',
 
-	bio: 'Senior Backend Engineer with 15+ years of experience building and scaling high-traffic fintech and SaaS platforms. Specialised in backend architecture, performance optimisation, and cloud infrastructure (AWS), with a proven track record reducing system latency, scaling platforms to millions of users, and delivering reliable high-volume APIs.',
+	bio: 'Senior Fullstack Engineer with 15+ years of experience building and scaling high-traffic fintech and SaaS platforms. Specialised in backend architecture, performance optimisation, and cloud infrastructure (AWS), with a proven track record reducing system latency, scaling platforms to millions of users, and delivering reliable high-volume APIs.',
 
 	checkCv: 'Check my CV',
 	cta: 'Get in touch',
@@ -30,10 +30,10 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'Senior Backend Engineer with 15+ years of experience designing and scaling high-traffic backend systems for fintech and SaaS platforms.',
+		'Senior Fullstack Engineer with 15+ years of experience designing and scaling high-traffic backend systems for fintech and SaaS platforms.',
 
 	aboutDescription:
-		"I'm a Senior Backend Engineer with over 15 years of experience building and scaling backend systems, especially in fintech and high-traffic digital platforms.\n\nI've spent most of my career working on backend architecture, high-performance APIs, distributed systems, and AWS infrastructure. What I enjoy most is improving system performance, cutting infrastructure costs, and helping teams ship more reliable software.\n\nI'm currently based in Dublin, Ireland, and I'm eligible to work here under the Critical Skills Employment Permit.",
+		"I'm a Senior Fullstack Engineer with over 15 years of experience building and scaling backend systems, especially in fintech and high-traffic digital platforms.\n\nI've spent most of my career working on backend architecture, high-performance APIs, distributed systems, and AWS infrastructure. What I enjoy most is improving system performance, cutting infrastructure costs, and helping teams ship more reliable software.\n\nI'm currently based in Dublin, Ireland, and I'm eligible to work here under the Critical Skills Employment Permit.",
 
 	// experience
 	'Career Journey': 'Career Journey',
