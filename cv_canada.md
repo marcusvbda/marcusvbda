@@ -49,7 +49,7 @@ Remote — Based in Dublin
 Nov 2023 – Present
 
 - Improved API performance and reduced average latency by **60%** through Redis caching and database query optimisation.
-- Contributed to backend systems supporting **1M+ active users** on a financial analytics platform.
+- Contributed to backend systems supporting **65K+ active users** on a financial analytics platform.
 - Designed and launched the **Income Tax module (IR 2024)**, improving user engagement and retention by **40%**.
 - Worked closely with product and frontend teams to deliver scalable backend services.
 

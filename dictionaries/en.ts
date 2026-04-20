@@ -45,7 +45,7 @@ const en: Record<string, string> = {
 	exp_investidor10_location: 'Remote (based in Dublin)',
 
 	exp_investidor10_description:
-		'• Cut API latency by around 60% by introducing smart Redis caching and optimizing heavy database queries.\n• Helped redesign parts of the backend to handle large volumes of financial data more efficiently.\n• Led the development and launch of the 2024 Income Tax module, which significantly increased user engagement.\n• Contributed to the evolution of the Carteira investment platform, which now serves over 1 million users.',
+		'• Cut API latency by around 60% by introducing smart Redis caching and optimizing heavy database queries.\n• Helped redesign parts of the backend to handle large volumes of financial data more efficiently.\n• Led the development and launch of the 2024 Income Tax module, which significantly increased user engagement.\n• Contributed to the evolution of the Carteira investment platform, which now serves over 65,000 users.',
 
 	exp_talentsieve_role: 'Lead Engineer – Side Project',
 	exp_talentsieve_company: 'TalentSieve (AI-powered Recruitment Platform)',
@@ -89,7 +89,7 @@ const en: Record<string, string> = {
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		'Backend architecture improvements and performance optimisation for one of Brazil’s largest investment research platforms serving 1M+ users. Implemented scalable APIs and improved system performance across financial data services.',
+		'Backend architecture improvements and performance optimisation for one of Brazil’s largest investment research platforms serving 65K+ users. Implemented scalable APIs and improved system performance across financial data services.',
 
 	proj_vega_title: 'Vega Checkout Platform',
 

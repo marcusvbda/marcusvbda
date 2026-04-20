@@ -24,7 +24,7 @@ PHP, Laravel, Node.js, Redis, PostgreSQL
 - Cut API latency by around 60% by introducing smart Redis caching and optimizing heavy database queries.
 - Helped redesign parts of the backend to handle large volumes of financial data more efficiently.
 - Led the development and launch of the 2024 Income Tax module, which significantly increased user engagement.
-- Contributed to the evolution of the Carteira investment platform, which now serves over 1 million users.
+- Contributed to the evolution of the Carteira investment platform, which now serves over 65,000 users.
 
 ### Lead Engineer – Side Project
 

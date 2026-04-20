@@ -45,7 +45,7 @@ export default {
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
 
 	exp_investidor10_description:
-		'• Redução de 60% na latência das APIs através de estratégias avançadas de cache com Redis e otimização de queries.\n• Desenvolvimento de melhorias de arquitetura backend para suportar grandes volumes de dados financeiros.\n• Arquitetura e lançamento do sistema de Imposto de Renda (IR 2024), aumentando o engajamento do módulo em 40%.\n• Evolução do backend da plataforma Carteira, suportando mais de 1 milhão de utilizadores.\n• Otimização de performance e escalabilidade das APIs financeiras da plataforma.',
+		'• Redução de 60% na latência das APIs através de estratégias avançadas de cache com Redis e otimização de queries.\n• Desenvolvimento de melhorias de arquitetura backend para suportar grandes volumes de dados financeiros.\n• Arquitetura e lançamento do sistema de Imposto de Renda (IR 2024), aumentando o engajamento do módulo em 40%.\n• Evolução do backend da plataforma Carteira, suportando mais de 65 mil utilizadores.\n• Otimização de performance e escalabilidade das APIs financeiras da plataforma.',
 
 	exp_talentsieve_role:
 		'Lead Engineer (Plataforma de Recrutamento com IA – Projeto Independente)',
@@ -91,7 +91,7 @@ export default {
 	proj_investidor10_title: 'Plataforma Investidor10',
 
 	proj_investidor10_description:
-		'Otimização da arquitetura backend e performance de uma das maiores plataformas de pesquisa de investimentos do Brasil, utilizada por mais de 1 milhão de investidores.',
+		'Otimização da arquitetura backend e performance de uma das maiores plataformas de pesquisa de investimentos do Brasil, utilizada por mais de 65 mil investidores.',
 
 	proj_vega_title: 'Plataforma Vega Checkout',
 
