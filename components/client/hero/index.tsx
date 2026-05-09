@@ -82,7 +82,7 @@ export default function Hero({ content }: any): ReactNode {
 						>
 							{t(
 								'bio',
-								"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.",
+								'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.',
 							)}
 						</motion.p>
 
@@ -165,7 +165,11 @@ export default function Hero({ content }: any): ReactNode {
 							>
 								<motion.span
 									animate={{ y: [0, 6, 0] }}
-									transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
+									transition={{
+										repeat: Infinity,
+										duration: 1.4,
+										ease: 'easeInOut',
+									}}
 									className="inline-flex"
 								>
 									<ArrowDown className="h-4 w-4" />
@@ -189,7 +193,7 @@ export default function Hero({ content }: any): ReactNode {
 								transition={{ type: 'spring', stiffness: 200, damping: 20 }}
 							>
 								<Image
-									src={'/assets/mac.png'}
+									src={'/assets/profile.jpeg'}
 									alt="Marcus Vinicius Bassalobre de Assis"
 									width={400}
 									height={400}
