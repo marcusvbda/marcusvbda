@@ -37,7 +37,7 @@ const imageVariants: Variants = {
 };
 
 export default function Hero({ content }: any): ReactNode {
-	const { t } = useLanguage();
+	const { t, language } = useLanguage();
 
 	const scrollToContact = () => {
 		const element = document.querySelector('#contact');
@@ -130,7 +130,7 @@ export default function Hero({ content }: any): ReactNode {
 								</Link>
 							</Button>
 							<Link
-								href={`/download-cv` as any}
+								href={`/api/download-cv?lang=${language}` as any}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
