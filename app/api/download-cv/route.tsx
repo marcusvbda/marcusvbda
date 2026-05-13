@@ -172,7 +172,7 @@ export async function GET(request: NextRequest) {
 	const langLabel = LANG_LABEL[safeLang] ?? safeLang.toUpperCase();
 	const filename = `Marcus Vinicius Bassalobre de Assis (${langLabel}).pdf`;
 
-	return new NextResponse(buffer, {
+	return new NextResponse(new Uint8Array(buffer), {
 		headers: {
 			'Content-Type': 'application/pdf',
 			'Content-Disposition': `attachment; filename="${filename}"`,
