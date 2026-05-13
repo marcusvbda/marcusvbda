@@ -193,7 +193,7 @@ export default function Hero({ content }: any): ReactNode {
 								transition={{ type: 'spring', stiffness: 200, damping: 20 }}
 							>
 								<Image
-									src={'/assets/profile.png'}
+									src={'/assets/photo.png'}
 									alt="Marcus Vinicius Bassalobre de Assis"
 									width={400}
 									height={400}

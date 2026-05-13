@@ -1,40 +1,34 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Senior Fullstack Engineer | Fintech & High-Scale Systems**
+**AI Senior Software Engineer | AI Orchestrator & Systems Architect | 15+ Anos de Experiência | Web, Mobile & Data Specialist**
 
 Dublin, Irlanda  
-bassalobre.vinicius@gmail.com | +55 14 99676-6177  
+bassalobre.vinicius@gmail.com | +353 083 881 8967  
 mvbassalobre.com | linkedin.com/in/mvbassalobre | github.com/marcusvbda
 
 ## Resumo Profissional
 
-Engenheiro Fullstack Sênior com mais de 15 anos de experiência na construção e escalabilidade de sistemas complexos, com ênfase em fintech e plataformas digitais de alto tráfego.
+Senior Software Engineer com foco em IA e mais de 15 anos de experiência na construção e escalabilidade de sistemas complexos, com ênfase em fintech e plataformas digitais de alto tráfego.
 
-Recentemente, liderei o desenvolvimento backend da **Carteira** na Investidor10, uma das maiores plataformas de portfólio de investimentos da América Latina, com mais de 65 mil investidores. Reduzi a latência das APIs em 60% e tive papel fundamental na criação do módulo de Declaração Anual de Imposto de Renda 2026, que aumentou significativamente o engajamento dos usuários.
+**Desenvolvimento AI-Driven:** Utilizo agentes de IA avançados e LLMs para acelerar refatoração, cobertura de testes e entrega de features, potencializando princípios SOLID e segurança.
 
-Apaixonado por arquitetura de software, otimização de performance, sistemas distribuídos e infraestrutura em nuvem. Focado em entregar soluções confiáveis, escaláveis e com bom custo-benefício. Atualmente morando em Dublin e elegível para trabalhar na Irlanda pelo Critical Skills Employment Permit.
+**Domínio Remoto:** Opero em ambientes 100% remotos há mais de 8 anos, dominando colaboração assíncrona, redução de reuniões desnecessárias e garantindo sucesso em engenharia distribuída.
+
+**Rigor Arquitetural:** Histórico comprovado em gerenciar sistemas distribuídos para 24K+ usuários ativos e otimizar infraestrutura crítica para garantir operação estável e confiável.
+
+Atualmente morando em Dublin e elegível para trabalhar na Irlanda pelo Critical Skills Employment Permit.
 
 ## Experiência Profissional
 
-### Senior Software Engineer
+### AI Senior Software Engineer
 
 **Investidor10** (Fintech) — Remoto (Dublin)  
 Novembro 2023 – Presente
 
-- Liderei o desenvolvimento backend da Carteira, plataforma que atende mais de 65 mil investidores.
-- Reduzi a latência das APIs em 60% com implementação de cache Redis e otimização de queries.
-- Arquitetura e entreguei o módulo de Declaração Anual de Imposto de Renda 2026, contribuindo para um aumento de 40% no engajamento dos usuários.
-- Melhorei a confiabilidade e performance de APIs críticas de dados financeiros.
-
-### Senior Software Engineer & Founder
-
-**TalentSieve** (Plataforma de Recrutamento com IA) — Projeto Independente  
-Janeiro 2025 – Presente
-
-- Projetei e desenvolvi do zero uma plataforma SaaS completa, incluindo backend, frontend, integração com IA e infraestrutura em nuvem.
-- Criei pipelines de triagem de candidatos e dashboards analíticos em tempo real utilizando LLMs.
-- Garanti conformidade com GDPR e EU AI Act.
-- Liderei decisões de produto e técnicas com foco em experiência do usuário e escalabilidade.
+- Liderança no desenvolvimento backend do Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina com 24K+ investidores.
+- Redução de 60% na latência das APIs com cache Redis e otimização de queries.
+- Arquitetura do módulo de Imposto de Renda, contribuindo para aumento de 40% no engajamento dos usuários.
+- Melhoria de confiabilidade e performance de APIs críticas de dados financeiros.
 
 ### Lead Product Manager (Voluntário)
 
@@ -47,64 +41,90 @@ Abril 2026 – Presente
 
 ### Senior Software Engineer
 
-**Vega Checkout / Payt** (Fintech) — Brasil  
-Outubro 2018 – Outubro 2023
+**Vega Checkout** — Barueri, São Paulo, Brasil (Remoto)  
+Janeiro 2024 – Julho 2025
 
-- Desenvolvi e mantive serviços backend que processam milhões de euros em transações mensais.
-- Liderei a migração de arquitetura monolítica legada para microserviços escaláveis.
-- Mentorei mais de 10 desenvolvedores e implementei práticas fortes de code review e CI/CD.
-- Reduzi incidentes em produção em 35% com melhoria de padrões de engenharia.
+- Atuação em sistemas backend para plataformas de ecommerce e fintech de alto volume, com foco em desenvolvimento de APIs e escalabilidade.
+- Desenvolvimento e manutenção de serviços backend processando milhões de euros mensalmente.
+- Liderança na migração de arquitetura monolítica legada para microserviços escaláveis.
+- Mentoria de equipe de 10+ desenvolvedores e estabelecimento de práticas robustas de code review.
+- Redução de incidentes em produção em 35%.
 
 ### Senior Software Engineer
 
-**DIWE** — Joinville, Brasil (Remoto)  
-Junho 2021 – Julho 2024
+**DIWE** — Joinville, Santa Catarina, Brasil (Remoto)  
+Junho 2021 – Abril 2024
 
-- Liderei o desenvolvimento técnico de uma plataforma de gestão universitária.
-- Projetei a arquitetura backend para agendamento automático de alunos e processos administrativos.
-- Entreguei módulos escaláveis que aumentaram a eficiência de diversos departamentos.
+- Liderança no desenvolvimento backend de uma plataforma de gestão universitária para automatizar fluxos acadêmicos e administrativos.
+- Desenvolvimento de arquitetura backend para automação de workflows acadêmicos e gestão administrativa.
+- Módulos escaláveis para gestão de alunos, agendamentos e processos administrativos.
+- Colaboração com equipes multidisciplinares para entregar software empresarial confiável.
+
+### Software Engineer
+
+**Otimize / Payt** — São Paulo, Brasil (Remoto)  
+Outubro 2018 – Outubro 2023
+
+- Membro da equipe de engenharia responsável pela plataforma Vega Checkout, processando milhões de euros em transações de ecommerce.
+- Contribuição para a evolução da infraestrutura de checkout, com foco em escalabilidade, confiabilidade e performance.
+- Construção de APIs e integrações habilitando integrações escaláveis de ecommerce.
+- Melhorias arquiteturais da plataforma de checkout.
 
 ### Software Owner – CRM Fullstack Developer
 
 **Universidade de Marília** — Marília, Brasil  
 2017 – Setembro 2023
 
-- Fui responsável pelo ciclo completo de múltiplas plataformas web e sistemas CRM.
+- Responsável pelo ciclo completo de múltiplas plataformas web e sistemas CRM.
 - Projetei arquitetura, APIs backend, bancos de dados e interfaces para o usuário.
-- Entreguei soluções enterprise para alunos e stakeholders institucionais.
+- Entregue soluções enterprise para alunos e stakeholders institucionais.
 
 ### Software Developer
 
 **Copy Supply** — São Paulo, Brasil  
 Dezembro 2017 – Outubro 2018
 
-- Desenvolvi plataformas web e aplicações enterprise com foco em backend e bancos de dados.
+- Desenvolvimento de plataformas web e aplicações enterprise com foco em backend e bancos de dados.
 
-### Software Developer
+### Developer
 
-**Alive it** — São Paulo, Brasil  
+**alive it** — Marília, São Paulo, Brasil  
 2014 – Dezembro 2017
 
-- Desenvolvi sistemas CRM e plataformas web para diversas indústrias, com ênfase em backend e APIs.
+- Desenvolvimento de sistemas CRM e plataformas web para diversas indústrias, com ênfase em backend e APIs.
+
+### Estagiário de Engenharia de Software
+
+**Guess Soluções em Tecnologia** — Marília, Brasil  
+2013 – 2014
+
+- Primeiros passos em tecnologia e desenvolvimento de software.
+
+### Desenvolvedor C++
+
+**Mastersel** — Marília, Brasil  
+2010 – 2013
+
+- Desenvolvimento inicial de aplicações empresariais e sistemas de software.
 
 ## Formação Acadêmica
 
-- **Bacharelado em Análise e Desenvolvimento de Sistemas**  
-  Universidade de Marília, Brasil
+- **Bacharelado em Análise e Desenvolvimento de Sistemas, Tecnologia da Informação**  
+  Universidade de Marília, Brasil (2012 – 2016)
 
-- **CS50 – Introduction to Computer Science**  
+- **CS50 – Introdução à Ciência da Computação**  
   Harvard University (2025)
 
-- **Supervised Machine Learning**  
+- **Machine Learning Supervisionado: Regressão e Classificação**  
   Stanford Online / DeepLearning.AI (2025)
 
-- **Advanced English**  
+- **Inglês Avançado**  
   Future Learning Ireland, Dublin (2025)
 
 ## Habilidades e Tecnologias
 
 **Backend:** Laravel, NestJS, Node.js, PHP, Python, Go  
-**Frontend:** React, Next.js, TypeScript, Tailwind CSS  
-**Cloud & Infraestrutura:** AWS, Docker, CI/CD, Microserviços  
-**Bancos de Dados & Performance:** PostgreSQL, Redis, Elasticsearch, Otimização de Queries  
-**Outros:** Integração com LLMs (OpenAI), Vector Databases, GDPR & EU AI Act
+**Frontend:** React, Next.js, Vue.js, TypeScript, Tailwind CSS, AlpineJS  
+**Cloud & Infraestrutura:** AWS, Docker, CI/CD, Microserviços, Supabase, Firebase  
+**Bancos de Dados & Performance:** PostgreSQL, Redis, Elasticsearch, Firebird, Otimização de Queries  
+**IA & Dados:** Integração com LLMs, OpenAI APIs, Vector Databases, AI Agents

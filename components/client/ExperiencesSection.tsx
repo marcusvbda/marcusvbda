@@ -22,14 +22,14 @@ const EXPERIENCES: Array<{
 		id: 'investidor10',
 		company: 'Investidor10 (Fintech)',
 		roleKey: 'exp_investidor10_role',
-		roleEn: 'Senior Software Engineer',
+		roleEn: 'AI Senior Software Engineer',
 		periodKey: 'exp_investidor10_period',
 		periodEn: 'Nov 2023 – Present',
 		locationKey: 'exp_investidor10_location',
 		locationEn: 'Remote (Based in Dublin)',
 		descKey: 'exp_investidor10_description',
 		descEn:
-			"• Led backend development of Carteira, one of Latin America's largest investment portfolio platforms serving 65K+ investors.\n• Reduced API latency by 60% through Redis caching and query optimisation.\n• Architected the 2026 Annual Income Tax Return module improving user engagement by 40%.\n• Improved reliability and performance of critical financial data APIs.",
+			"• Led backend development of Carteira, one of Latin America's largest investment portfolio platforms serving 24K+ investors.\n• Reduced API latency by 60% through Redis caching and query optimisation.\n• Architected the Income Tax module improving user engagement by 40%.\n• Improved reliability and performance of critical financial data APIs.",
 	},
 	{
 		id: 'talentsieve',
@@ -59,16 +59,16 @@ const EXPERIENCES: Array<{
 	},
 	{
 		id: 'vega',
-		company: 'Vega Checkout / Payt (Otimize)',
+		company: 'Vega Checkout',
 		roleKey: 'exp_vega_role',
-		roleEn: 'Senior Software Engineer / Tech Lead',
+		roleEn: 'Senior Software Engineer',
 		periodKey: 'exp_vega_period',
-		periodEn: 'Oct 2018 – Oct 2023',
+		periodEn: 'Jan 2024 – Jul 2025',
 		locationKey: 'exp_vega_location',
-		locationEn: 'Brazil',
+		locationEn: 'Barueri, São Paulo, Brazil (Remote)',
 		descKey: 'exp_vega_description',
 		descEn:
-			'• Built and maintained backend services supporting high-volume fintech payment transactions processing millions of euros monthly.\n• Led migration from legacy monolithic architecture to scalable microservices.\n• Mentored 10+ developers and established strong code review and CI/CD practices.\n• Reduced production incidents by 35% through improved reliability and engineering standards.\n• Collaborated with product and engineering teams to deliver scalable checkout and analytics solutions.',
+			'• Worked on backend systems for high-volume ecommerce and fintech platforms, focusing on API development and system scalability.\n• Built and maintained backend services supporting high-volume payment transactions processing millions of euros monthly.\n• Led migration from legacy monolithic architecture to scalable microservices.\n• Mentored a team of 10+ developers and established strong code review practices.\n• Improved system reliability and reduced production incidents by 35%.\n• Worked closely with product and engineering teams to deliver scalable checkout and analytics solutions.',
 	},
 	{
 		id: 'diwe',
@@ -76,12 +76,25 @@ const EXPERIENCES: Array<{
 		roleKey: 'exp_diwe_role',
 		roleEn: 'Senior Software Engineer',
 		periodKey: 'exp_diwe_period',
-		periodEn: 'Jun 2021 – Jul 2024',
+		periodEn: 'Jun 2021 – Apr 2024',
 		locationKey: 'exp_diwe_location',
-		locationEn: 'Joinville, Brazil (Remote)',
+		locationEn: 'Joinville, Santa Catarina, Brazil (Remote)',
 		descKey: 'exp_diwe_description',
 		descEn:
-			'• Lead engineer responsible for a university management platform, significantly improving academic and administrative workflows.\n• Designed backend architecture for automated student scheduling and administrative management.\n• Built scalable modules for student and institutional operations, improving efficiency across departments.\n• Collaborated with cross-functional teams to deliver reliable enterprise software serving thousands of users.',
+			'• Led backend development of a university management platform designed to automate academic and administrative workflows.\n• Designed backend architecture for academic workflow automation and administrative management.\n• Built scalable modules for student, scheduling, and administrative management.\n• Implemented system improvements that increased operational efficiency.\n• Collaborated with cross-functional teams to deliver reliable enterprise software.',
+	},
+	{
+		id: 'otimize',
+		company: 'Otimize / Payt',
+		roleKey: 'exp_otimize_role',
+		roleEn: 'Software Engineer',
+		periodKey: 'exp_otimize_period',
+		periodEn: 'Oct 2018 – Oct 2023',
+		locationKey: 'exp_otimize_location',
+		locationEn: 'São Paulo, Brazil (Remote)',
+		descKey: 'exp_otimize_description',
+		descEn:
+			'• Part of the engineering team responsible for Vega Checkout, a high-performance fintech platform processing millions of euros in ecommerce transactions.\n• Contributed to the evolution of the checkout infrastructure, focusing on backend scalability, reliability, and performance improvements.\n• Built APIs and integrations enabling scalable ecommerce integrations.\n• Contributed to architectural improvements of the checkout platform.\n• Collaborated with cross-functional teams delivering fintech infrastructure at scale.',
 	},
 	{
 		id: 'unimar',
@@ -136,7 +149,7 @@ const EXPERIENCES: Array<{
 	},
 	{
 		id: 'masterel',
-		company: 'Masterel',
+		company: 'Mastersel',
 		roleKey: 'exp_masterel_role',
 		roleEn: 'C++ Developer',
 		periodKey: 'exp_masterel_period',
@@ -155,6 +168,7 @@ const RECENT_IDS = new Set([
 	'bria',
 	'vega',
 	'diwe',
+	'otimize',
 ]);
 
 const containerVariants: Variants = {

@@ -5,7 +5,7 @@ export default {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Senior Fullstack Engineer | Fintech | Sistemas de Alta Escala',
+	cv_title: 'AI Senior Software Engineer | AI Orchestrator & Systems Architect | 15+ Anos de Experiência',
 
 	// navbar
 	About: 'Sobre',
@@ -19,7 +19,7 @@ export default {
 	"Hi, I'm": 'Olá, sou',
 	location: 'Dublin, Irlanda',
 
-	bio: 'Senior Fullstack Engineer com 15+ anos de experiência construindo e escalando plataformas fintech e SaaS de alto tráfego. Liderou o desenvolvimento backend de uma das maiores plataformas de investimentos da América Latina com 65K+ investidores. Histórico comprovado em performance, escalabilidade e confiabilidade em backend, frontend e cloud.',
+	bio: 'Senior Software Engineer com foco em IA e 15+ anos de experiência construindo e escalando plataformas fintech e SaaS de alto tráfego. Liderou o desenvolvimento backend de uma das maiores plataformas de investimentos da América Latina com 24K+ investidores. Histórico comprovado em desenvolvimento AI-driven, sistemas distribuídos e arquitetura cloud.',
 
 	checkCv: 'Ver meu CV',
 	cta: 'Entre em contato',
@@ -30,22 +30,22 @@ export default {
 	Summary: 'Resumo',
 
 	about:
-		'Senior Fullstack Engineer com 15+ anos de experiência desenhando e escalando sistemas complexos para fintechs e plataformas digitais de alto tráfego.',
+		'Senior Software Engineer com foco em IA e 15+ anos de experiência desenhando e escalando sistemas complexos para fintechs e plataformas digitais de alto tráfego.',
 
 	aboutDescription:
-		'Senior Fullstack Engineer com mais de 15 anos de experiência desenvolvendo e escalando sistemas complexos em backend, frontend e cloud, especialmente em fintechs e plataformas digitais de alto tráfego.\n\nLiderei o desenvolvimento backend do Carteira by Investidor10, uma das maiores plataformas de portfólio de investimentos da América Latina com 65K+ investidores — reduzindo a latência das APIs em 60% e aumentando o engajamento em 40% com o módulo de IR 2026.\n\nAo longo da carreira, atuei com arquitetura de software, APIs de alta performance, sistemas distribuídos, bases de dados, infraestrutura cloud e aplicações orientadas ao utilizador. Tenho forte foco em performance, redução de custos de infraestrutura e entrega de produtos escaláveis e confiáveis.\n\nAtualmente baseado em Dublin, Irlanda, com permissão de trabalho através do Critical Skills Employment Permit.',
+		'Desenvolvimento AI-Driven: Utilizo agentes de IA avançados e LLMs para acelerar refatoração, cobertura de testes e entrega de features, potencializando princípios SOLID e segurança.\n\nDomínio Remoto: Opero em ambientes 100% remotos há mais de 8 anos, dominando colaboração assíncrona, redução de reuniões desnecessárias e garantindo sucesso em engenharia distribuída.\n\nRigor Arquitetural: Histórico comprovado em gerenciar sistemas distribuídos para 24K+ usuários ativos e otimizar infraestrutura crítica para garantir operação estável e confiável.\n\nBaseado em Dublin, estou buscando ativamente oportunidades em tecnologia que abrangem desde o design de banco de dados até arquitetura cloud.',
 
 	// experience
 	'Career Journey': 'Jornada Profissional',
 	Present: 'Presente',
 
-	exp_investidor10_role: 'Senior Software Engineer',
+	exp_investidor10_role: 'AI Senior Software Engineer',
 	exp_investidor10_company: 'Investidor10 (Plataforma Fintech)',
 	exp_investidor10_period: 'Nov 2023 – Presente',
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
 
 	exp_investidor10_description:
-		'• Liderança no desenvolvimento backend do Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina com 65K+ investidores.\n• Redução de 60% na latência das APIs através de cache Redis e otimização de queries.\n• Arquitetura do módulo de Imposto de Renda 2026, aumentando o engajamento dos utilizadores em 40%.\n• Melhoria de confiabilidade e performance das APIs críticas de dados financeiros.',
+		'• Liderança no desenvolvimento backend do Carteira, uma das maiores plataformas de portfólio de investimentos da América Latina com 24K+ investidores.\n• Redução de 60% na latência das APIs através de cache Redis e otimização de queries.\n• Arquitetura do módulo de Imposto de Renda, aumentando o engajamento dos utilizadores em 40%.\n• Melhoria de confiabilidade e performance das APIs críticas de dados financeiros.',
 
 	exp_talentsieve_role: 'Senior Software Engineer – Founder',
 	exp_talentsieve_company: 'TalentSieve',
@@ -55,25 +55,6 @@ export default {
 	exp_talentsieve_description:
 		'• Desenvolvimento de uma plataforma SaaS completa envolvendo backend, frontend, IA e infraestrutura cloud.\n• Definição e implementação da arquitetura do sistema, incluindo pipelines de triagem e dashboards analíticos.\n• Construção de workflows com LLMs garantindo conformidade com GDPR e EU AI Act.\n• Liderança de decisões de produto com foco em experiência do utilizador, automação e escalabilidade.',
 
-	exp_vega_role: 'Senior Software Engineer',
-	exp_vega_company: 'Vega Checkout / Payt (Fintech)',
-	exp_vega_period: 'Out 2018 – Out 2023',
-	exp_vega_location: 'Brasil',
-
-	exp_vega_description:
-		'• Desenvolvimento e manutenção de serviços backend suportando transações fintech de alto volume, processando milhões de euros mensalmente.\n• Liderança na migração de arquitetura monolítica legada para microserviços escaláveis.\n• Mentoria de 10+ engenheiros e estabelecimento de práticas robustas de code review e CI/CD.\n• Redução de incidentes em produção em 35% através de melhorias de confiabilidade e standards de engenharia.\n• Colaboração com equipas de produto e engenharia para entregar soluções escaláveis de checkout e analytics.',
-
-	exp_diwe_role: 'Senior Software Engineer',
-	exp_diwe_company: 'DIWE',
-	exp_diwe_period: 'Jun 2021 – Jul 2024',
-	exp_diwe_location: 'Joinville, Brasil (Remoto)',
-
-	exp_diwe_description:
-		'• Engenheiro principal responsável por uma plataforma de gestão universitária, melhorando significativamente workflows académicos e administrativos.\n• Desenvolvimento de arquitetura backend para agendamento académico automatizado e gestão administrativa.\n• Módulos escaláveis para operações estudantis e institucionais, melhorando a eficiência em múltiplos departamentos.\n• Colaboração com equipas multidisciplinares para entregar software empresarial confiável para milhares de utilizadores.',
-
-	exp_investidor10_techStack: 'PHP, Laravel, React, NestJS, Redis, PostgreSQL',
-	exp_talentsieve_techStack: 'NestJS, Next.js, AWS, TypeScript',
-
 	exp_bria_role: 'Lead Product Manager (Voluntário)',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
 	exp_bria_period: 'Abril 2026 – Presente',
@@ -81,8 +62,39 @@ export default {
 	exp_bria_description:
 		'• Definição de estratégia de produto e alinhamento de stakeholders para iniciativas digitais da comunidade brasileira na Irlanda.\n• Coordenação de equipas multidisciplinares na priorização de features, UX e entrega de soluções com impacto comunitário.\n• Conexão entre produto e tecnologia para impulsionar o engajamento e a experiência digital da comunidade.',
 	exp_bria_techStack: 'Product Strategy, Agile, Digital Products',
-	exp_vega_techStack: 'PHP, Laravel, Node.js, AWS, Docker',
+
+	exp_vega_role: 'Senior Software Engineer',
+	exp_vega_company: 'Vega Checkout',
+	exp_vega_period: 'Jan 2024 – Jul 2025',
+	exp_vega_location: 'Barueri, São Paulo, Brasil (Remoto)',
+
+	exp_vega_description:
+		'• Atuação em sistemas backend para plataformas de ecommerce e fintech de alto volume, com foco em desenvolvimento de APIs e escalabilidade.\n• Desenvolvimento e manutenção de serviços backend processando milhões de euros mensalmente.\n• Liderança na migração de arquitetura monolítica legada para microserviços escaláveis.\n• Mentoria de equipe de 10+ desenvolvedores e estabelecimento de práticas robustas de code review.\n• Redução de incidentes em produção em 35% e colaboração com produto para soluções escaláveis.',
+
+	exp_vega_techStack: 'PHP, Laravel, AlpineJS, Node.js, AWS, Docker',
+
+	exp_otimize_role: 'Software Engineer',
+	exp_otimize_company: 'Otimize / Payt',
+	exp_otimize_period: 'Out 2018 – Out 2023',
+	exp_otimize_location: 'São Paulo, Brasil (Remoto)',
+
+	exp_otimize_description:
+		'• Membro da equipe de engenharia responsável pela plataforma Vega Checkout, processando milhões de euros em transações de ecommerce.\n• Desenvolvimento de serviços backend suportando transações de alto volume.\n• Construção de APIs e integrações habilitando integrações escaláveis de ecommerce.\n• Contribuição para melhorias arquiteturais da plataforma de checkout.\n• Colaboração com equipes multidisciplinares na entrega de infraestrutura fintech em escala.',
+
+	exp_otimize_techStack: 'PHP, Laravel, Node.js, AWS, Docker',
+
+	exp_diwe_role: 'Senior Software Engineer',
+	exp_diwe_company: 'DIWE',
+	exp_diwe_period: 'Jun 2021 – Abr 2024',
+	exp_diwe_location: 'Joinville, Santa Catarina, Brasil (Remoto)',
+
+	exp_diwe_description:
+		'• Liderança no desenvolvimento backend de uma plataforma de gestão universitária para automatizar fluxos acadêmicos e administrativos.\n• Desenvolvimento de arquitetura backend para automação de fluxos acadêmicos e gestão administrativa.\n• Módulos escaláveis para gestão de alunos, agendamentos e processos administrativos.\n• Implementação de melhorias que aumentaram a eficiência operacional.\n• Colaboração com equipes multidisciplinares para entregar software empresarial confiável.',
+
 	exp_diwe_techStack: 'Node.js, PHP, Laravel',
+
+	exp_investidor10_techStack: 'PHP, Laravel, React, NestJS, Redis, PostgreSQL',
+	exp_talentsieve_techStack: 'NestJS, Next.js, AWS, TypeScript',
 
 	exp_unimar_role: 'Software Owner — CRM Fullstack Developer',
 	exp_unimar_company: 'Universidade de Marília',
@@ -103,7 +115,7 @@ export default {
 	exp_aliveit_role: 'Developer',
 	exp_aliveit_company: 'alive it',
 	exp_aliveit_period: '2014 – Dezembro 2017',
-	exp_aliveit_location: 'São Paulo, Brasil',
+	exp_aliveit_location: 'Marília, São Paulo, Brasil',
 	exp_aliveit_description:
 		'• Desenvolvimento de plataformas web, sistemas CRM e aplicações empresariais em múltiplas indústrias.\n• Foco em desenvolvimento backend, APIs e sistemas orientados a bases de dados.',
 	exp_aliveit_techStack: 'PHP, C++, Firebird',
@@ -117,7 +129,7 @@ export default {
 	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'Desenvolvedor C++',
-	exp_masterel_company: 'Masterel',
+	exp_masterel_company: 'Mastersel',
 	exp_masterel_period: '2010 – 2013',
 	exp_masterel_location: 'Marília, Brasil',
 	exp_masterel_description:
@@ -137,7 +149,7 @@ export default {
 	proj_investidor10_title: 'Plataforma Investidor10',
 
 	proj_investidor10_description:
-		'Evolução da arquitetura da plataforma e otimização de performance para uma das maiores plataformas de pesquisa de investimentos do Brasil, com mais de 65 mil utilizadores.',
+		'Evolução da arquitetura da plataforma e otimização de performance para uma das maiores plataformas de pesquisa de investimentos do Brasil, com mais de 24 mil utilizadores.',
 
 	proj_vega_title: 'Plataforma Vega Checkout',
 
@@ -167,20 +179,20 @@ export default {
 
 	skills_cloud_label: 'Cloud & Infraestrutura',
 
-	skills_cloud_skills: 'AWS · Docker · CI/CD · Microserviços',
+	skills_cloud_skills: 'AWS · Docker · CI/CD · Microserviços · Supabase · Firebase',
 
 	skills_data_label: 'Bases de Dados & Performance',
 
 	skills_data_skills:
-		'PostgreSQL · Redis · Otimização de Queries · ElasticSearch',
+		'PostgreSQL · Redis · Otimização de Queries · ElasticSearch · Firebird',
 
 	skills_frontend_label: 'Frontend',
 
-	skills_frontend_skills: 'React · Next.js · TypeScript · TailwindCSS',
+	skills_frontend_skills: 'React · Next.js · Vue.js · TypeScript · TailwindCSS · AlpineJS',
 
 	skills_ai_label: 'IA & Dados',
 
-	skills_ai_skills: 'LLM Integration · OpenAI APIs · Vector Databases',
+	skills_ai_skills: 'LLM Integration · OpenAI APIs · Vector Databases · AI Agents',
 
 	'Earlier Experience': 'Experiências Anteriores',
 
@@ -191,7 +203,7 @@ export default {
 		'Experiência em plataformas de alto tráfego utilizadas por milhões de utilizadores.',
 
 	achievements_business_mindset:
-		'Forte foco em otimização de performance, confiabilidade de sistemas e redução de custos de infraestrutura.',
+		'Forte foco em desenvolvimento AI-driven, otimização de performance, confiabilidade de sistemas e redução de custos de infraestrutura.',
 
 	achievements_availability:
 		'Residente em Dublin e disponível para entrevistas técnicas.',

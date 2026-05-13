@@ -1,6 +1,6 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Senior Fullstack Engineer | Fintech & High-Scale Systems**
+**AI Senior Software Engineer | AI Orchestrator & Systems Architect | 15+ Years Experience | Web, Mobile & Data Specialist**
 
 Dublin, Ireland  
 bassalobre.vinicius@gmail.com | +353 083 881 8967  
@@ -8,33 +8,27 @@ mvbassalobre.com | linkedin.com/in/mvbassalobre | github.com/marcusvbda
 
 ## Professional Summary
 
-Senior Fullstack Engineer with over 15 years of experience building and scaling complex backend and frontend systems, with strong expertise in fintech and high-traffic digital platforms.
+AI-First Senior Software Engineer with over 15 years of experience building and scaling complex backend and frontend systems, with strong expertise in fintech and high-traffic digital platforms.
 
-I recently led the backend development of **Carteira** at Investidor10, one of Latin America’s largest investment portfolio platforms serving 65K+ investors. I reduced API latency by 60% and played a key role in the 2026 Annual Income Tax Return module, which significantly boosted user engagement.
+**AI Driven Development:** I leverage advanced AI agents and LLMs to accelerate refactoring, test coverage, and feature delivery, compounding on SOLID principles and security.
 
-Passionate about software architecture, performance optimisation, distributed systems and cloud infrastructure. Focused on delivering reliable, scalable and cost-effective solutions. Currently based in Dublin and eligible to work in Ireland under the Critical Skills Employment Permit.
+**Remote Mastery:** I have operated in 100% remote environments for over 8 years, mastering asynchronous collaboration, reducing meeting overhead, and ensuring distributed engineering success.
+
+**Architectural Rigor:** Proven track record in managing distributed systems for 24K+ active users and optimising critical infrastructure to ensure stable and reliable operation.
+
+Currently based in Dublin and eligible to work in Ireland under the Critical Skills Employment Permit.
 
 ## Professional Experience
 
-### Senior Software Engineer
+### AI Senior Software Engineer
 
 **Investidor10** (Fintech) — Remote (Dublin)  
 November 2023 – Present
 
-- Led backend development of Carteira, a major investment portfolio platform serving over 65,000 investors.
+- Led backend development of Carteira, one of Latin America's largest investment portfolio platforms serving 24K+ investors.
 - Reduced API latency by 60% through Redis caching and database query optimisation.
-- Architected and delivered the 2026 Annual Income Tax Return module, contributing to a 40% increase in user engagement.
+- Architected the Income Tax module, contributing to a 40% increase in user engagement.
 - Improved reliability and performance of critical financial data APIs.
-
-### Senior Software Engineer & Founder
-
-**TalentSieve** (AI-powered Recruitment Platform) — Independent Project  
-January 2025 – Present
-
-- Designed and built a complete SaaS platform from scratch, including backend, frontend, AI integration and cloud infrastructure.
-- Developed candidate screening pipelines and real-time analytics dashboards using LLMs.
-- Ensured compliance with GDPR and the EU AI Act.
-- Led product and technical decisions focusing on user experience and scalability.
 
 ### Lead Product Manager (Volunteer)
 
@@ -47,22 +41,34 @@ April 2026 – Present
 
 ### Senior Software Engineer
 
-**Vega Checkout / Payt** (Fintech) — Brazil  
-October 2018 – October 2023
+**Vega Checkout** — Barueri, São Paulo, Brazil (Remote)  
+January 2024 – July 2025
 
-- Built and maintained backend services processing millions of euros in payment transactions monthly.
+- Worked on backend systems for high-volume ecommerce and fintech platforms, focusing on API development and system scalability.
+- Built and maintained backend services supporting high-volume payment transactions processing millions of euros monthly.
 - Led migration from legacy monolithic architecture to scalable microservices.
-- Mentored 10+ developers and established strong code review and CI/CD practices.
-- Reduced production incidents by 35% through improved engineering standards and reliability.
+- Mentored a team of 10+ developers and established strong code review practices.
+- Improved system reliability and reduced production incidents by 35%.
 
 ### Senior Software Engineer
 
-**DIWE** — Joinville, Brazil (Remote)  
-June 2021 – July 2024
+**DIWE** — Joinville, Santa Catarina, Brazil (Remote)  
+June 2021 – April 2024
 
-- Led technical development of a university management platform.
-- Designed backend architecture for automated student scheduling and administrative processes.
-- Delivered scalable modules that improved efficiency across academic and institutional departments.
+- Led backend development of a university management platform designed to automate academic and administrative workflows.
+- Designed backend architecture for academic workflow automation and administrative management.
+- Built scalable modules for student, scheduling, and administrative management improving operational efficiency.
+- Collaborated with cross-functional teams to deliver reliable enterprise software.
+
+### Software Engineer
+
+**Otimize / Payt** — São Paulo, Brazil (Remote)  
+October 2018 – October 2023
+
+- Part of the engineering team responsible for Vega Checkout, a high-performance fintech platform processing millions of euros in ecommerce transactions.
+- Contributed to the evolution of the checkout infrastructure, focusing on backend scalability, reliability, and performance improvements.
+- Built APIs and integrations enabling scalable ecommerce integrations.
+- Contributed to architectural improvements of the checkout platform.
 
 ### Software Owner – CRM Fullstack Developer
 
@@ -80,22 +86,36 @@ December 2017 – October 2018
 
 - Developed web platforms and enterprise applications with focus on backend and database systems.
 
-### Software Developer
+### Developer
 
-**Alive it** — São Paulo, Brazil  
+**alive it** — Marília, São Paulo, Brazil  
 2014 – December 2017
 
 - Built CRM systems and web platforms for multiple industries, focusing on backend development and APIs.
 
+### Software Engineering Intern
+
+**Guess Soluções em Tecnologia** — Marília, Brazil  
+2013 – 2014
+
+- Early career experience in technology and software development.
+
+### C++ Developer
+
+**Mastersel** — Marília, Brazil  
+2010 – 2013
+
+- Early career development of enterprise applications and software systems.
+
 ## Education
 
-- **BSc in Systems Analysis and Development**  
-  Universidade de Marília, Brazil
+- **BSc in Systems Analysis and Development, Information Technology**  
+  Universidade de Marília, Brazil (2012 – 2016)
 
 - **CS50 – Introduction to Computer Science**  
   Harvard University (2025)
 
-- **Supervised Machine Learning**  
+- **Supervised Machine Learning: Regression and Classification**  
   Stanford Online / DeepLearning.AI (2025)
 
 - **Advanced English**  
@@ -104,7 +124,7 @@ December 2017 – October 2018
 ## Skills & Technologies
 
 **Backend:** Laravel, NestJS, Node.js, PHP, Python, Go  
-**Frontend:** React, Next.js, TypeScript, Tailwind CSS  
-**Cloud & Infrastructure:** AWS, Docker, CI/CD, Microservices  
-**Databases & Performance:** PostgreSQL, Redis, Elasticsearch, Query Optimisation  
-**Others:** LLM Integration (OpenAI), Vector Databases, GDPR & EU AI Act
+**Frontend:** React, Next.js, Vue.js, TypeScript, Tailwind CSS, AlpineJS  
+**Cloud & Infrastructure:** AWS, Docker, CI/CD, Microservices, Supabase, Firebase  
+**Databases & Performance:** PostgreSQL, Redis, Elasticsearch, Firebird, Query Optimisation  
+**AI & Data:** LLM Integration, OpenAI APIs, Vector Databases, AI Agents
