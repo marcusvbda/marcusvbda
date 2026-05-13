@@ -149,7 +149,7 @@ const en: Record<string, string> = {
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		'Platform architecture improvements and performance optimisation for one of Brazil's largest investment research platforms serving 24K+ users. Delivered scalable systems and improved performance across financial data services.',
+		"Platform architecture improvements and performance optimisation for one of Brazil's largest investment research platforms serving 24K+ users. Delivered scalable systems and improved performance across financial data services.",
 
 	proj_vega_title: 'Vega Checkout Platform',
 
