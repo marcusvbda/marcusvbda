@@ -1,130 +1,108 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**AI Senior Software Engineer | AI Orchestrator & Systems Architect | 15+ Years Experience | Web, Mobile & Data Specialist**
+**Senior AI-First Software Engineer | Software Architect**
 
-Dublin, Ireland  
-bassalobre.vinicius@gmail.com | +353 083 881 8967  
-mvbassalobre.com | linkedin.com/in/mvbassalobre | github.com/marcusvbda
+Dublin, Ireland | +353 083 881 8967 | bassalobre.vinicius@gmail.com
+linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
+
+---
 
 ## Professional Summary
 
-AI-First Senior Software Engineer with over 15 years of experience building and scaling complex backend and frontend systems, with strong expertise in fintech and high-traffic digital platforms.
+Senior Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, improve code quality, and raise engineering productivity. Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software. Currently based in Dublin, Ireland, and eligible to work under the Critical Skills Employment Permit.
 
-**AI Driven Development:** I leverage advanced AI agents and LLMs to accelerate refactoring, test coverage, and feature delivery, compounding on SOLID principles and security.
+---
 
-**Remote Mastery:** I have operated in 100% remote environments for over 8 years, mastering asynchronous collaboration, reducing meeting overhead, and ensuring distributed engineering success.
+## Core Skills
 
-**Architectural Rigor:** Proven track record in managing distributed systems for 24K+ active users and optimising critical infrastructure to ensure stable and reliable operation.
+**Backend:** Laravel, Node.js, NestJS, PHP, Python, Java
+**Frontend:** React, Next.js, Vue.js, Nuxt.js, TypeScript, Tailwind CSS, Alpine.js, Livewire
+**Cloud & Infrastructure:** AWS, Vercel, Docker, CI/CD, GitFlow, Microservices, Redis, Supabase
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis
+**AI & LLMs:** LLM Orchestration, Cursor, Claude Code, GitHub Copilot, OpenAI APIs, AI-First Development
+**Architecture & Practices:** Distributed Systems, Offline-First Architecture, Event-Driven Systems, Queue-Based Workflows, REST APIs, Anti-Fraud Systems, Payment Gateway Integration, Code Review, Technical Leadership, Agile
 
-Currently based in Dublin and eligible to work in Ireland under the Critical Skills Employment Permit.
+---
 
 ## Professional Experience
 
-### AI Senior Software Engineer
+### Senior AI-First Software Engineer
 
-**Investidor10** (Fintech) — Remote (Dublin)  
-November 2023 – Present
+**Investidor10** — Remote | November 2023 – Present
 
-- Led backend development of Carteira, one of Latin America's largest investment portfolio platforms serving 24K+ investors.
-- Reduced API latency by 60% through Redis caching and database query optimisation.
-- Architected the Income Tax module, contributing to a 40% increase in user engagement.
-- Improved reliability and performance of critical financial data APIs.
-
-### Lead Product Manager (Volunteer)
-
-**BRIA – Brazil Ireland Association** — Dublin, Ireland  
-April 2026 – Present
-
-- Define product strategy and digital initiatives to support the Brazilian community in Ireland.
-- Lead feature prioritisation, UX improvements and delivery of community solutions.
-- Bridge product vision and technology to increase engagement and user experience.
+- Led the modernisation and migration of one of the company's most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.
+- Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.
+- Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.
+- Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.
+- Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.
+- **Stack:** Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow, LLM Orchestration
 
 ### Senior Software Engineer
 
-**Vega Checkout** — Barueri, São Paulo, Brazil (Remote)  
-January 2024 – July 2025
+**Vega Checkout** — Remote | January 2024 – July 2025
 
-- Worked on backend systems for high-volume ecommerce and fintech platforms, focusing on API development and system scalability.
-- Built and maintained backend services supporting high-volume payment transactions processing millions of euros monthly.
-- Led migration from legacy monolithic architecture to scalable microservices.
-- Mentored a team of 10+ developers and established strong code review practices.
-- Improved system reliability and reduced production incidents by 35%.
+- Maintained and optimised scalable, resilient payment flows integrated with multiple market-leading payment gateways for high-volume e-commerce operations.
+- Improved transaction reliability and overall platform stability under peak traffic scenarios.
+- Supported engineering team growth through rigorous code reviews, best practice dissemination, and individual mentorship.
+- Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.
+- **Stack:** Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow
 
-### Senior Software Engineer
+### Volunteer Technology Project Manager
 
-**DIWE** — Joinville, Santa Catarina, Brazil (Remote)  
-June 2021 – April 2024
+**Brazil Ireland Association (BRIA)** — Dublin, Ireland | January 2026 – Present
 
-- Led backend development of a university management platform designed to automate academic and administrative workflows.
-- Designed backend architecture for academic workflow automation and administrative management.
-- Built scalable modules for student, scheduling, and administrative management improving operational efficiency.
-- Collaborated with cross-functional teams to deliver reliable enterprise software.
+- Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.
+- Supports technical planning, product roadmap organisation, and technology delivery execution.
+- Mentors volunteer developers, guiding architectural decisions and engineering best practices.
+- **Stack:** Vercel, Product Planning, Technical Mentorship
 
-### Software Engineer
+### Senior Full Stack Software Engineer
 
-**Otimize / Payt** — São Paulo, Brazil (Remote)  
-October 2018 – October 2023
+**Diwe** — Remote | June 2021 – April 2024
 
-- Part of the engineering team responsible for Vega Checkout, a high-performance fintech platform processing millions of euros in ecommerce transactions.
-- Contributed to the evolution of the checkout infrastructure, focusing on backend scalability, reliability, and performance improvements.
-- Built APIs and integrations enabling scalable ecommerce integrations.
-- Contributed to architectural improvements of the checkout platform.
+- Delivered scalable enterprise systems for major corporations including Gerdau, Unimed, and Saint-Gobain across healthcare and heavy industry sectors.
+- Operated across multiple technical ecosystems (PHP, Node.js, Java, TypeScript, Python), navigating stack diversity with confidence and adaptability.
+- Actively contributed to corporate architecture discussions and the planning of new modules and microservices.
+- **Stack:** Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL
 
-### Software Owner – CRM Fullstack Developer
+### Senior Software Engineer / Tech Lead
 
-**Universidade de Marília** — Marília, Brazil  
-2017 – September 2023
+**Payt (formerly Otimize)** — Remote | October 2018 – October 2023
 
-- Owned the full software lifecycle of multiple web platforms and CRM systems.
-- Designed architecture, backend APIs, databases and user-facing features.
-- Delivered enterprise solutions serving students and institutional stakeholders.
+- Joined as the company's first software engineer, solely responsible for defining the engineering foundations and initial platform architecture from zero.
+- Built and scaled payment and e-commerce platforms from the ground up, which grew to process millions in monthly transactions.
+- Designed and implemented robust anti-fraud systems, webhook-based architectures, queue systems, and asynchronous processing workflows.
+- Architected scalable microservices and complex, secure integrations with multiple payment gateways.
+- Provided technical leadership and mentored the development team as the engineering organisation scaled.
+- **Stack:** Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase
 
-### Software Developer
+---
 
-**Copy Supply** — São Paulo, Brazil  
-December 2017 – October 2018
+## Previous Experience
 
-- Developed web platforms and enterprise applications with focus on backend and database systems.
+- **Full Stack Developer** — Copy Supply | 2017 – 2018 (ASP.NET, Full Stack Development)
+- **Full Stack Developer** — Alive IT | 2014 – 2017 (PHP, C++, Web Development)
+- **Delphi Developer Intern** — Guess Soluções e Tecnologia | 2013 – 2014
+- **C++ Developer** — Mastersel | 2010 – 2013
 
-### Developer
-
-**alive it** — Marília, São Paulo, Brazil  
-2014 – December 2017
-
-- Built CRM systems and web platforms for multiple industries, focusing on backend development and APIs.
-
-### Software Engineering Intern
-
-**Guess Soluções em Tecnologia** — Marília, Brazil  
-2013 – 2014
-
-- Early career experience in technology and software development.
-
-### C++ Developer
-
-**Mastersel** — Marília, Brazil  
-2010 – 2013
-
-- Early career development of enterprise applications and software systems.
+---
 
 ## Education
 
-- **BSc in Systems Analysis and Development, Information Technology**  
-  Universidade de Marília, Brazil (2012 – 2016)
+**Technologist Degree in Systems Analysis and Development**
+Universidade de Marília (UNIMAR), Brazil | 2016
 
-- **CS50 – Introduction to Computer Science**  
-  Harvard University (2025)
+---
 
-- **Supervised Machine Learning: Regression and Classification**  
-  Stanford Online / DeepLearning.AI (2025)
+## Certifications
 
-- **Advanced English**  
-  Future Learning Ireland, Dublin (2025)
+- **Harvard University CS50:** Introduction to Artificial Intelligence with Python
+- **Stanford University:** Supervised Machine Learning — Regression and Classification
+- **English for Career Development Programme:** Certified C1 Advanced Level
 
-## Skills & Technologies
+---
 
-**Backend:** Laravel, NestJS, Node.js, PHP, Python, Go  
-**Frontend:** React, Next.js, Vue.js, TypeScript, Tailwind CSS, AlpineJS  
-**Cloud & Infrastructure:** AWS, Docker, CI/CD, Microservices, Supabase, Firebase  
-**Databases & Performance:** PostgreSQL, Redis, Elasticsearch, Firebird, Query Optimisation  
-**AI & Data:** LLM Integration, OpenAI APIs, Vector Databases, AI Agents
+## Languages
+
+- **Portuguese:** Native
+- **English:** C1 — Professional Working Proficiency

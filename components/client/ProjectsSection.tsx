@@ -24,34 +24,24 @@ const PROJECTS: Array<{
 	tech: string;
 }> = [
 	{
-		id: 'talentsieve',
-		image: '/companies/seive.jpeg',
-		titleKey: 'proj_talentsieve_title',
-		titleEn: 'TalentSieve (AI SaaS)',
-		descKey: 'proj_talentsieve_description',
-		descEn:
-			'AI Co-Pilot for Recruitment in compliance with EU AI Act and GDPR. Multimodal chat engine for candidate triage with automatic ROI dashboards. Infrastructure with NestJS, Next.js and AWS, focus on AI explainability ("Human-in-the-loop").',
-		tech: 'NestJS, Next.js, AWS, TypeScript',
-	},
-	{
 		id: 'investidor10',
 		image: '/companies/i10.jpeg',
 		titleKey: 'proj_investidor10_title',
 		titleEn: 'Investidor10 Platform',
 		descKey: 'proj_investidor10_description',
 		descEn:
-			"Complete redesign and rebuild of Brazil's leading investment research platform. Implemented modern architecture with SSR, optimized performance achieving 95+ Lighthouse scores, and built a comprehensive design system.",
-		tech: 'React, Next.js, TypeScript, Tailwind CSS, Vercel',
+			"Architecture modernisation and performance optimisation for one of Brazil's largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.",
+		tech: 'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL',
 	},
 	{
 		id: 'vega',
 		image: '/companies/vega.jpeg',
 		titleKey: 'proj_vega_title',
-		titleEn: 'Vega Checkout Analytics',
+		titleEn: 'Vega Checkout Platform',
 		descKey: 'proj_vega_description',
 		descEn:
-			'Real-time analytics dashboard for e-commerce conversion tracking. Features advanced data visualization, funnel analysis, and automated reporting with sub-second query performance.',
-		tech: 'React, TypeScript, Laravel, PostgreSQL, Chart.js',
+			'Fintech checkout system designed to process high-volume e-commerce transactions with high reliability, scalability, and optimised user experience. Built with resilient payment gateway integrations and performance-first architecture.',
+		tech: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL',
 	},
 	{
 		id: 'intelbras',

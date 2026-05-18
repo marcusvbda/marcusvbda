@@ -5,7 +5,7 @@ const en: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'AI Senior Software Engineer | AI Orchestrator & Systems Architect | 15+ Years Experience',
+	cv_title: 'Senior AI-First Software Engineer | Software Architect',
 
 	// navbar
 	About: 'About',
@@ -19,7 +19,7 @@ const en: Record<string, string> = {
 	"Hi, I'm": "Hi, I'm",
 	location: 'Dublin, Ireland',
 
-	bio: 'AI-First Senior Software Engineer with 15+ years of experience building and scaling high-traffic fintech and SaaS platforms. Led backend development of one of Latin America\'s largest investment platforms serving 24K+ investors. Strong track record in AI-driven development, distributed systems, and cloud architecture.',
+	bio: 'Senior AI-First Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration to accelerate delivery and raise engineering productivity.',
 
 	checkCv: 'Check my CV',
 	cta: 'Get in touch',
@@ -30,97 +30,83 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'AI-First Senior Software Engineer with 15+ years of experience designing and scaling high-traffic systems for fintech and SaaS platforms.',
+		'Senior AI-First Software Engineer with 13+ years of experience designing and scaling high-availability systems for fintech, e-commerce, and enterprise platforms.',
 
 	aboutDescription:
-		"AI Driven Development: I leverage advanced AI agents and LLMs to accelerate refactoring, test coverage, and feature delivery, compounding on SOLID principles and security.\n\nRemote Mastery: I have operated in 100% remote environments for over 8 years, mastering asynchronous collaboration, reducing meeting overhead, and ensuring distributed engineering success.\n\nArchitectural Rigor: Proven track record in managing distributed systems for 24K+ active users and optimising critical infrastructure to ensure stable and reliable operation.\n\nBased in Dublin, I'm actively looking for opportunities in technology that takes ownership from database design to cloud architecture.",
+		"AI-First Development: I leverage advanced AI agents and LLMs (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, optimise code quality, and raise engineering productivity across the full stack.\n\nRemote Mastery: I have operated in fully remote environments for over 6 years, mastering asynchronous collaboration and ensuring distributed engineering success.\n\nArchitectural Rigor: Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software.\n\nCurrently based in Dublin and eligible to work in Ireland under the Critical Skills Employment Permit.",
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_investidor10_role: 'AI Senior Software Engineer',
-	exp_investidor10_company: 'Investidor10 (Fintech Platform)',
+	exp_investidor10_role: 'Senior AI-First Software Engineer',
+	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'November 2023 – Present',
-	exp_investidor10_location: 'Remote (based in Dublin)',
+	exp_investidor10_location: 'Remote (Based in Dublin)',
 
 	exp_investidor10_description:
-		'• Led backend development of Carteira, one of Latin America\'s largest investment portfolio platforms serving 24K+ investors.\n• Reduced API latency by 60% through Redis caching and query optimisation.\n• Architected the Income Tax module improving user engagement by 40%.\n• Improved reliability and performance of critical financial data APIs.',
+		'• Led the modernisation and migration of one of the company\'s most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.\n• Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.\n• Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.\n• Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.\n• Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.',
 
-	exp_talentsieve_role: 'Senior Software Engineer – Founder',
-	exp_talentsieve_company: 'TalentSieve (AI-powered Recruitment Platform)',
-	exp_talentsieve_period: 'January 2025 – Present',
-	exp_talentsieve_location: 'Independent Project',
+	exp_investidor10_techStack:
+		'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow',
 
-	exp_talentsieve_description:
-		'• Built an end-to-end SaaS platform covering backend, frontend, AI integration, and cloud infrastructure.\n• Designed and implemented system architecture, including candidate screening pipelines and real-time analytics dashboards.\n• Developed AI-driven workflows using LLMs while ensuring compliance with GDPR and the EU AI Act.\n• Led product design decisions, focusing on user experience, automation, and scalable architecture.',
-
-	exp_bria_role: 'Lead Product Manager (Volunteer)',
+	exp_bria_role: 'Volunteer Technology Project Manager',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
-	exp_bria_period: 'April 2026 – Present',
+	exp_bria_period: 'January 2026 – Present',
 	exp_bria_location: 'Dublin, Ireland',
 	exp_bria_description:
-		'• Defining product strategy and stakeholder alignment for digital initiatives supporting the Brazilian community in Ireland.\n• Guiding cross-functional teams on feature prioritisation, UX improvements, and delivery of community solutions.\n• Bridging product thinking and technology to drive community engagement and digital experience.',
-	exp_bria_techStack: 'Product Strategy, Agile, Digital Products',
+		'• Coordinates the development and maintenance of the association\'s websites, landing pages, and digital platforms.\n• Supports technical planning, product roadmap organisation, and technology delivery execution.\n• Mentors volunteer developers, guiding architectural decisions and engineering best practices.',
+	exp_bria_techStack: 'Vercel, Product Planning, Technical Mentorship',
 
 	exp_vega_role: 'Senior Software Engineer',
 	exp_vega_company: 'Vega Checkout',
 	exp_vega_period: 'January 2024 – July 2025',
-	exp_vega_location: 'Barueri, São Paulo, Brazil (Remote)',
+	exp_vega_location: 'Remote',
 
 	exp_vega_description:
-		'• Worked on backend systems for high-volume ecommerce and fintech platforms, focusing on API development and system scalability.\n• Built and maintained backend services supporting high-volume payment transactions processing millions of euros monthly.\n• Led migration from legacy monolithic architecture to scalable microservices.\n• Mentored a team of 10+ developers and established strong code review practices.\n• Improved system reliability and reduced production incidents by 35%.\n• Worked closely with product and engineering teams to deliver scalable checkout and analytics solutions.',
+		'• Maintained and optimised scalable, resilient payment flows integrated with multiple market-leading payment gateways for high-volume e-commerce operations.\n• Improved transaction reliability and overall platform stability under peak traffic scenarios.\n• Supported engineering team growth through rigorous code reviews, best practice dissemination, and individual mentorship.\n• Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.',
 
-	exp_vega_techStack: 'PHP, Laravel, AlpineJS, Node.js, AWS, Docker',
+	exp_vega_techStack: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow',
 
-	exp_otimize_role: 'Software Engineer',
-	exp_otimize_company: 'Otimize / Payt',
+	exp_otimize_role: 'Senior Software Engineer / Tech Lead',
+	exp_otimize_company: 'Payt (formerly Otimize)',
 	exp_otimize_period: 'October 2018 – October 2023',
-	exp_otimize_location: 'São Paulo, Brazil (Remote)',
+	exp_otimize_location: 'Remote',
 
 	exp_otimize_description:
-		'• Part of the engineering team responsible for Vega Checkout, a high-performance fintech platform processing millions of euros in ecommerce transactions.\n• Developed backend services supporting high-volume payment transactions.\n• Built APIs and integrations enabling scalable ecommerce integrations.\n• Contributed to architectural improvements of the checkout platform.\n• Collaborated with cross-functional teams delivering fintech infrastructure at scale.',
+		'• Joined as the company\'s first software engineer, solely responsible for defining the engineering foundations and initial platform architecture from zero.\n• Built and scaled payment and e-commerce platforms from the ground up, which grew to process millions in monthly transactions.\n• Designed and implemented robust anti-fraud systems, webhook-based architectures, queue systems, and asynchronous processing workflows.\n• Architected scalable microservices and complex, secure integrations with multiple payment gateways.\n• Provided technical leadership and mentored the development team as the engineering organisation scaled.',
 
-	exp_otimize_techStack: 'PHP, Laravel, Node.js, AWS, Docker',
+	exp_otimize_techStack:
+		'Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase',
 
-	exp_diwe_role: 'Senior Software Engineer',
+	exp_diwe_role: 'Senior Full Stack Software Engineer',
 	exp_diwe_company: 'DIWE',
 	exp_diwe_period: 'June 2021 – April 2024',
-	exp_diwe_location: 'Joinville, Santa Catarina, Brazil (Remote)',
+	exp_diwe_location: 'Remote',
 
 	exp_diwe_description:
-		'• Led backend development of a university management platform designed to automate academic and administrative workflows.\n• Designed backend architecture for academic workflow automation and administrative management.\n• Built scalable modules for student, scheduling, and administrative management.\n• Implemented system improvements that increased operational efficiency.\n• Collaborated with cross-functional teams to deliver reliable enterprise software.',
+		'• Delivered scalable enterprise systems for major corporations including Gerdau, Unimed, and Saint-Gobain across healthcare and heavy industry sectors.\n• Operated across multiple technical ecosystems (PHP, Node.js, Java, TypeScript, Python), navigating stack diversity with confidence and adaptability.\n• Actively contributed to corporate architecture discussions and the planning of new modules and microservices.',
 
-	exp_diwe_techStack: 'Node.js, PHP, Laravel',
+	exp_diwe_techStack:
+		'Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL',
 
-	exp_investidor10_techStack: 'PHP, Laravel, React, NestJS, Redis, PostgreSQL',
-	exp_talentsieve_techStack: 'NestJS, Next.js, AWS, TypeScript',
-
-	exp_unimar_role: 'Software Owner — CRM Fullstack Developer',
-	exp_unimar_company: 'Universidade de Marília',
-	exp_unimar_period: '2017 – September 2023',
-	exp_unimar_location: 'Marília, Brazil',
-	exp_unimar_description:
-		'• Built and maintained web platforms, CRM systems and enterprise applications across multiple industries.\n• Owned the full software lifecycle: architecture, backend APIs, database design, and user-facing features.\n• Delivered fullstack solutions serving students and institutional stakeholders.',
-	exp_unimar_techStack: 'PHP, Laravel, JavaScript, MySQL',
-
-	exp_copysupply_role: 'Software Developer',
+	exp_copysupply_role: 'Full Stack Developer',
 	exp_copysupply_company: 'Copy Supply',
-	exp_copysupply_period: 'December 2017 – October 2018',
+	exp_copysupply_period: '2017 – 2018',
 	exp_copysupply_location: 'São Paulo, Brazil',
 	exp_copysupply_description:
-		'• Built web platforms and enterprise applications focused on backend development and database-driven systems.',
-	exp_copysupply_techStack: 'ASP.NET MVC, C#',
+		'• Built web platforms and enterprise applications focused on full stack development and database-driven systems.',
+	exp_copysupply_techStack: 'ASP.NET, Full Stack Development',
 
-	exp_aliveit_role: 'Developer',
-	exp_aliveit_company: 'alive it',
-	exp_aliveit_period: '2014 – December 2017',
+	exp_aliveit_role: 'Full Stack Developer',
+	exp_aliveit_company: 'Alive IT',
+	exp_aliveit_period: '2014 – 2017',
 	exp_aliveit_location: 'Marília, São Paulo, Brazil',
 	exp_aliveit_description:
-		'• Built web platforms, CRM systems and enterprise applications across multiple industries.\n• Focused on backend development, APIs and database-driven systems.',
-	exp_aliveit_techStack: 'PHP, C++, Firebird',
+		'• Built web platforms, CRM systems and enterprise applications across multiple industries.\n• Focused on full stack development, APIs and database-driven systems.',
+	exp_aliveit_techStack: 'PHP, C++, Web Development',
 
-	exp_guess_role: 'Software Engineering Intern',
+	exp_guess_role: 'Delphi Developer Intern',
 	exp_guess_company: 'Guess Soluções em Tecnologia',
 	exp_guess_period: '2013 – 2014',
 	exp_guess_location: 'Marília, Brazil',
@@ -141,54 +127,49 @@ const en: Record<string, string> = {
 	"What I've Built": "What I've Built",
 	'View Project': 'View Project',
 
-	proj_talentsieve_title: 'TalentSieve AI Platform',
-
-	proj_talentsieve_description:
-		'AI-powered recruitment platform designed to automate candidate screening and hiring workflows. Built using NestJS, Next.js and AWS with LLM integration, analytics dashboards and human-in-the-loop explainability aligned with EU AI Act and GDPR.',
-
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		"Platform architecture improvements and performance optimisation for one of Brazil's largest investment research platforms serving 24K+ users. Delivered scalable systems and improved performance across financial data services.",
+		'Architecture modernisation and performance optimisation for one of Brazil\'s largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.',
 
 	proj_vega_title: 'Vega Checkout Platform',
 
 	proj_vega_description:
-		'Fintech checkout system designed to process high-volume ecommerce transactions with high reliability, scalability, and optimised user experience.',
+		'Fintech checkout system designed to process high-volume e-commerce transactions with high reliability, scalability, and optimised user experience. Built with resilient payment gateway integrations and performance-first architecture.',
 
 	// education
-	edu_unimar_title: 'BSc in Systems Analysis and Development',
-	edu_unimar_description: 'Universidade de Marília — Brazil',
+	edu_unimar_title: 'Technologist Degree in Systems Analysis and Development',
+	edu_unimar_description: 'Universidade de Marília (UNIMAR) — Brazil (2016)',
 
-	edu_harvardX_title: 'CS50 – Introduction to Computer Science',
+	edu_harvardX_title: 'CS50 – Introduction to Artificial Intelligence with Python',
 	edu_harvardX_description: 'Harvard University (2025)',
 
-	edu_deepLearning_title: 'Supervised Machine Learning',
-	edu_deepLearning_description: 'Stanford Online / DeepLearning.AI (2025)',
+	edu_deepLearning_title: 'Supervised Machine Learning — Regression and Classification',
+	edu_deepLearning_description: 'Stanford University / DeepLearning.AI (2025)',
 
-	edu_futureLearning_title: 'Advanced English',
-	edu_futureLearning_description: 'Future Learning Ireland — Dublin (2025)',
+	edu_futureLearning_title: 'English for Career Development Programme',
+	edu_futureLearning_description: 'C1 Advanced Level Certified (2025)',
 
 	// skills
 	'Skills & Technologies': 'Skills & Technologies',
 	'Technical Expertise': 'Technical Expertise',
 
 	skills_backend_label: 'Backend',
-
-	skills_backend_skills: 'Laravel · Node.js · NestJS · PHP · Python · Go',
+	skills_backend_skills: 'Laravel · Node.js · NestJS · PHP · Python · Java',
 
 	skills_cloud_label: 'Cloud & Infrastructure',
-
-	skills_cloud_skills: 'AWS · Docker · CI/CD · Microservices · Supabase · Firebase',
+	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Microservices · Redis · Supabase',
 
 	skills_data_label: 'Databases & Performance',
+	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
 
-	skills_data_skills: 'PostgreSQL · Redis · Query Optimization · ElasticSearch · Firebird',
-
-	skills_frontend_label: 'Frontend & Others',
-
+	skills_frontend_label: 'Frontend',
 	skills_frontend_skills:
-		'React · Next.js · Vue.js · TypeScript · TailwindCSS · AlpineJS · LLM Integration · OpenAI APIs · Vector Databases',
+		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
+
+	skills_ai_label: 'AI & LLMs',
+	skills_ai_skills:
+		'LLM Orchestration · Cursor · Claude Code · GitHub Copilot · OpenAI APIs · AI-First Development',
 
 	'Earlier Experience': 'Earlier Experience',
 
@@ -196,13 +177,13 @@ const en: Record<string, string> = {
 	'Key Achievements': 'Key Achievements',
 
 	achievements_high_traffic:
-		'Experience building and scaling high-traffic platforms used by millions of users.',
+		'Experience building and scaling high-traffic platforms processing millions of transactions for thousands of simultaneous users.',
 
 	achievements_business_mindset:
-		'Strong focus on AI-driven development, performance optimisation, system reliability and infrastructure cost reduction.',
+		'Strong focus on AI-First development, performance optimisation, system reliability, and distributed architecture.',
 
 	achievements_availability:
-		'Based in Dublin and available for technical interviews.',
+		'Based in Dublin and available for technical interviews under the Critical Skills Employment Permit.',
 
 	// contact
 	'Get in Touch': 'Get in Touch',
