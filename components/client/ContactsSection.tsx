@@ -32,30 +32,35 @@ export default function ContactsSection() {
 
 	const contactMethods = [
 		{
+			id: 'email',
 			icon: Mail,
 			label: t('Email', 'Email'),
 			value: EMAIL,
 			href: `mailto:${EMAIL}`,
 		},
 		{
+			id: 'linkedin',
 			icon: Linkedin,
 			label: 'Linkedin',
 			value: 'mvbassalobre',
 			href: LINKEDIN_URL,
 		},
 		{
+			id: 'location',
 			icon: MapPin,
 			label: t('Location', 'Location'),
 			value: t('contactLocationValue', 'Dublin, Ireland'),
 			href: null,
 		},
 		{
+			id: 'github',
 			icon: Github,
 			label: 'Github',
 			value: 'marcusvbda',
 			href: GITHUB_URL,
 		},
 		{
+			id: 'phone',
 			icon: Phone,
 			label: t('Phone', 'Phone'),
 			value: t('contactPhoneValue', '+353 083 881 8967'),
@@ -99,7 +104,7 @@ export default function ContactsSection() {
 							const Icon = method.icon;
 							return (
 								<motion.div
-									key={`card_${method.label}`}
+									key={method.id}
 									variants={cardVariants}
 									whileHover={{ scale: 1.06, y: -6 }}
 									transition={{ type: 'spring', stiffness: 220, damping: 18 }}
@@ -140,7 +145,7 @@ export default function ContactsSection() {
 																.split(',')
 																.map((x: string, i: number) => (
 																	<p
-																		key={`method_${method.label}_${i}`}
+																		key={`method_${method.id}_${i}`}
 																		className="text-sm text-muted-foreground"
 																	>
 																		{x}
