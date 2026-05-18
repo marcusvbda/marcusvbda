@@ -5,13 +5,9 @@
 Dublin, Ireland | +353 083 881 8967 | bassalobre.vinicius@gmail.com
 linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
----
-
 ## Professional Summary
 
 Senior Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, improve code quality, and raise engineering productivity. Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software. Currently based in Dublin, Ireland, and eligible to work under the Critical Skills Employment Permit.
-
----
 
 ## Core Skills
 
@@ -21,8 +17,6 @@ Senior Software Engineer with 13+ years of experience designing, modernising, an
 **Databases:** PostgreSQL, MySQL, MongoDB, Redis
 **AI & LLMs:** LLM Orchestration, Cursor, Claude Code, GitHub Copilot, OpenAI APIs, AI-First Development
 **Architecture & Practices:** Distributed Systems, Offline-First Architecture, Event-Driven Systems, Queue-Based Workflows, REST APIs, Anti-Fraud Systems, Payment Gateway Integration, Code Review, Technical Leadership, Agile
-
----
 
 ## Professional Experience
 
@@ -76,8 +70,6 @@ Senior Software Engineer with 13+ years of experience designing, modernising, an
 - Provided technical leadership and mentored the development team as the engineering organisation scaled.
 - **Stack:** Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase
 
----
-
 ## Previous Experience
 
 - **Full Stack Developer** — Copy Supply | 2017 – 2018 (ASP.NET, Full Stack Development)
@@ -85,22 +77,16 @@ Senior Software Engineer with 13+ years of experience designing, modernising, an
 - **Delphi Developer Intern** — Guess Soluções e Tecnologia | 2013 – 2014
 - **C++ Developer** — Mastersel | 2010 – 2013
 
----
-
 ## Education
 
 **Technologist Degree in Systems Analysis and Development**
 Universidade de Marília (UNIMAR), Brazil | 2016
-
----
 
 ## Certifications
 
 - **Harvard University CS50:** Introduction to Artificial Intelligence with Python
 - **Stanford University:** Supervised Machine Learning — Regression and Classification
 - **English for Career Development Programme:** Certified C1 Advanced Level
-
----
 
 ## Languages
 

@@ -2,16 +2,12 @@
 
 **Senior AI-First Software Engineer | Arquiteto de Software**
 
-Dublin, Irlanda | +353 083 881 8967 | bassalobre.vinicius@gmail.com
+Dublin, Irlanda | +55 14 99676 6177 | bassalobre.vinicius@gmail.com
 linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
-
----
 
 ## Resumo Profissional
 
 Senior Software Engineer com mais de 13 anos de experiência projetando, modernizando e escalando sistemas financeiros, plataformas de e-commerce e aplicações web de alta disponibilidade. Especialista na cultura AI-First, combinando sólida fundamentação em arquitetura de software com a orquestração avançada de LLMs (Cursor, Claude Code, GitHub Copilot) para acelerar entregas, otimizar a qualidade do código e elevar a produtividade da engenharia. Histórico comprovado em liderança técnica, tomada de decisões arquiteturais e mentoria de desenvolvedores, com mais de 6 anos em ambientes totalmente remotos. Atualmente baseado em Dublin, Irlanda, e elegível para trabalhar pelo Critical Skills Employment Permit.
-
----
 
 ## Competências Principais
 
@@ -21,8 +17,6 @@ Senior Software Engineer com mais de 13 anos de experiência projetando, moderni
 **Bancos de Dados:** PostgreSQL, MySQL, MongoDB, Redis
 **IA & LLMs:** Orquestração de LLMs, Cursor, Claude Code, GitHub Copilot, OpenAI APIs, Desenvolvimento AI-First
 **Arquitetura & Práticas:** Sistemas Distribuídos, Arquitetura Offline-First, Event-Driven Systems, Filas Assíncronas, REST APIs, Sistemas Antifraude, Integração com Gateways de Pagamento, Code Review, Liderança Técnica, Agile
-
----
 
 ## Experiência Profissional
 
@@ -76,8 +70,6 @@ Senior Software Engineer com mais de 13 anos de experiência projetando, moderni
 - Liderou tecnicamente e mentorou o time de desenvolvimento à medida que a equipe de engenharia expandia.
 - **Stack:** Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase
 
----
-
 ## Experiência Anterior
 
 - **Full Stack Developer** — Copy Supply | 2017 – 2018 (ASP.NET, Desenvolvimento Full Stack)
@@ -85,22 +77,16 @@ Senior Software Engineer com mais de 13 anos de experiência projetando, moderni
 - **Estagiário Desenvolvedor Delphi** — Guess Soluções e Tecnologia | 2013 – 2014
 - **Desenvolvedor C++** — Mastersel | 2010 – 2013
 
----
-
 ## Formação Acadêmica
 
 **Tecnólogo em Análise e Desenvolvimento de Sistemas**
 Universidade de Marília (UNIMAR), Brasil | 2016
-
----
 
 ## Certificações
 
 - **Harvard University CS50:** Introduction to Artificial Intelligence with Python
 - **Stanford University:** Supervised Machine Learning — Regression and Classification
 - **English for Career Development Programme:** Nível Avançado C1 Certificado
-
----
 
 ## Idiomas
 
