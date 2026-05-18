@@ -5,10 +5,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { join } from 'path';
 import React from 'react';
 
-const LANG_LABEL: Record<string, string> = {
-	en: 'English',
-	pt: 'Português',
-};
 
 type Segment = { bold: boolean; text: string };
 
@@ -169,8 +165,7 @@ export async function GET(request: NextRequest) {
 
 	const nodes = parseMarkdown(content);
 	const buffer = await renderToBuffer(<CVDocument nodes={nodes} />);
-	const langLabel = LANG_LABEL[safeLang] ?? safeLang.toUpperCase();
-	const filename = `Marcus Vinicius Bassalobre de Assis (${langLabel}).pdf`;
+	const filename = `Marcus_Vinicius_Bassalobre_Senior_AI_Engineer_${safeLang.toUpperCase()}.pdf`;
 
 	return new NextResponse(new Uint8Array(buffer), {
 		headers: {

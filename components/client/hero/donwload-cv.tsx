@@ -257,7 +257,7 @@ export default function DownloadCV() {
 
 	useEffect(() => {
 		if (!instance.blob || instance.loading || instance.error) return;
-		const fileName = `${t('info_name')} - ${language}.pdf`;
+		const fileName = `Marcus_Vinicius_Bassalobre_Senior_AI_Engineer_${language.toUpperCase()}.pdf`;
 		const url = URL.createObjectURL(instance.blob);
 		const link = document.createElement('a');
 		link.href = url;
