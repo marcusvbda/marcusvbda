@@ -1,123 +1,94 @@
-### Marcus Vinicius Bassalobre de Assis
+# Marcus Vinicius Bassalobre de Assis
 
-Senior Software Engineer
+**Senior AI-First Software Engineer | Software Architect**
 
-Dublin, Ireland  
-bassalobre.vinicius@gmail.com | +353 83 881 8967
+Dublin, Ireland | +353 083 881 8967 | bassalobre.vinicius@gmail.com
+linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
-mvbassalobre.com  
-linkedin.com/in/mvbassalobre  
-github.com/marcusvbda
+## Professional Summary
 
----
+Senior Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, improve code quality, and raise engineering productivity. Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software. Currently based in Dublin, Ireland, and eligible to work under the Critical Skills Employment Permit.
 
-### PROFESSIONAL SUMMARY
+## Core Skills
 
-Senior Software Engineer with 15+ years of experience building and scaling backend systems for fintech, SaaS, and high-traffic digital platforms.
+**Backend:** Laravel, Node.js, NestJS, PHP, Python, Java
+**Frontend:** React, Next.js, Vue.js, Nuxt.js, TypeScript, Tailwind CSS, Alpine.js, Livewire
+**Cloud & Infrastructure:** AWS, Vercel, Docker, CI/CD, GitFlow, Microservices, Redis, Supabase
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis
+**AI & LLMs:** LLM Orchestration, Cursor, Claude Code, GitHub Copilot, OpenAI APIs, AI-First Development
+**Architecture & Practices:** Distributed Systems, Offline-First Architecture, Event-Driven Systems, Queue-Based Workflows, REST APIs, Anti-Fraud Systems, Payment Gateway Integration, Code Review, Technical Leadership, Agile
 
-Experienced in designing reliable APIs, improving system performance, and delivering scalable cloud-based solutions. Strong background working with distributed teams and leading technical improvements that increase system reliability, performance, and user engagement.
+## Professional Experience
 
-Open to relocation to Canada and eligible for work visa sponsorship.
+### Senior AI-First Software Engineer
 
----
+**Investidor10** — Remote | November 2023 – Present
 
-### TECHNICAL SKILLS
+- Led the modernisation and migration of one of the company's most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.
+- Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.
+- Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.
+- Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.
+- Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.
+- **Stack:** Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow, LLM Orchestration
 
-**Backend Development**
-PHP (Laravel), Node.js (NestJS, Express), Python, Go
+### Senior Software Engineer
 
-**Cloud & Infrastructure**
-AWS (EC2, S3, RDS, Lambda), Docker, CI/CD pipelines
+**Vega Checkout** — Remote | January 2024 – July 2025
 
-**Databases & Performance**
-PostgreSQL, MySQL, Redis, Query optimization, ElasticSearch
+- Maintained and optimised scalable, resilient payment flows integrated with multiple market-leading payment gateways for high-volume e-commerce operations.
+- Improved transaction reliability and overall platform stability under peak traffic scenarios.
+- Supported engineering team growth through rigorous code reviews, best practice dissemination, and individual mentorship.
+- Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.
+- **Stack:** Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow
 
-**Frontend**
-React, Next.js, TypeScript, TailwindCSS
+### Volunteer Technology Project Manager
 
-**AI & Data**
-LLM integration (OpenAI APIs), Vector databases, behavioural data analysis
+**Brazil Ireland Association (BRIA)** — Dublin, Ireland | January 2026 – Present
 
----
+- Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.
+- Supports technical planning, product roadmap organisation, and technology delivery execution.
+- Mentors volunteer developers, guiding architectural decisions and engineering best practices.
+- **Stack:** Vercel, Product Planning, Technical Mentorship
 
-### PROFESSIONAL EXPERIENCE
+### Senior Full Stack Software Engineer
 
-#### Senior Software Engineer
+**Diwe** — Remote | June 2021 – April 2024
 
-**Investidor10 (Fintech Platform)**  
-Remote — Based in Dublin  
-Nov 2023 – Present
+- Delivered scalable enterprise systems for major corporations including Gerdau, Unimed, and Saint-Gobain across healthcare and heavy industry sectors.
+- Operated across multiple technical ecosystems (PHP, Node.js, Java, TypeScript, Python), navigating stack diversity with confidence and adaptability.
+- Actively contributed to corporate architecture discussions and the planning of new modules and microservices.
+- **Stack:** Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL
 
-- Improved API performance and reduced average latency by **60%** through Redis caching and database query optimisation.
-- Contributed to backend systems supporting **65K+ active users** on a financial analytics platform.
-- Designed and launched the **Income Tax module (IR 2024)**, improving user engagement and retention by **40%**.
-- Worked closely with product and frontend teams to deliver scalable backend services.
+### Senior Software Engineer / Tech Lead
 
-Tech: PHP, Laravel, Node.js, Redis, PostgreSQL
+**Payt (formerly Otimize)** — Remote | October 2018 – October 2023
 
----
+- Joined as the company's first software engineer, solely responsible for defining the engineering foundations and initial platform architecture from zero.
+- Built and scaled payment and e-commerce platforms from the ground up, which grew to process millions in monthly transactions.
+- Designed and implemented robust anti-fraud systems, webhook-based architectures, queue systems, and asynchronous processing workflows.
+- Architected scalable microservices and complex, secure integrations with multiple payment gateways.
+- Provided technical leadership and mentored the development team as the engineering organisation scaled.
+- **Stack:** Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase
 
-#### Founder / Lead Engineer (Side Project)
+## Previous Experience
 
-**TalentSieve – AI Recruitment SaaS**  
-Jan 2025 – Present
+- **Full Stack Developer** — Copy Supply | 2017 – 2018 (ASP.NET, Full Stack Development)
+- **Full Stack Developer** — Alive IT | 2014 – 2017 (PHP, C++, Web Development)
+- **Delphi Developer Intern** — Guess Soluções e Tecnologia | 2013 – 2014
+- **C++ Developer** — Mastersel | 2010 – 2013
 
-- Built a recruitment automation platform powered by AI to support candidate screening and hiring analytics.
-- Designed backend and cloud infrastructure using **NestJS, Next.js and AWS**.
-- Developed an AI-driven chat system for candidate triage and workflow automation.
-- Implemented analytics dashboards to support hiring decision-making.
+## Education
 
-Tech: NestJS, Next.js, TypeScript, AWS, LLM APIs
+**Technologist Degree in Systems Analysis and Development**
+Universidade de Marília (UNIMAR), Brazil | 2016
 
----
+## Certifications
 
-#### Senior Software Engineer / Tech Lead
+- **Harvard University CS50:** Introduction to Artificial Intelligence with Python
+- **Stanford University:** Supervised Machine Learning — Regression and Classification
+- **English for Career Development Programme:** Certified C1 Advanced Level
 
-**Vega Checkout / Payt (Fintech)**  
-Jan 2020 – Oct 2023
+## Languages
 
-- Developed backend services for an online checkout platform processing **millions of euros in transactions monthly**.
-- Led backend refactoring from legacy monolithic systems to **microservices architecture**.
-- Mentored a team of **10+ developers**, improving code quality and engineering practices.
-- Introduced CI/CD and structured code review processes, reducing production bugs by **35%**.
-
-Tech: PHP, Laravel, Node.js, AWS, Docker
-
----
-
-#### Senior Software Engineer
-
-**DIWE**  
-Rio de Janeiro, Brazil  
-Oct 2018 – Dec 2019
-
-- Lead developer of a university management platform used to automate academic workflows.
-- Designed backend systems for student management, scheduling, and administrative processes.
-- The platform was later acquired due to operational efficiency improvements.
-
-Tech: PHP, Laravel, MySQL
-
----
-
-### EDUCATION
-
-**BSc – Systems Analysis and Development**  
-Universidade de Marília — Brazil
-
-**CS50 – Introduction to Computer Science**  
-Harvard University (2025)
-
-**Supervised Machine Learning**  
-Stanford Online / DeepLearning.AI (2025)
-
-**Advanced English**  
-Future Learning Ireland — Dublin (2025)
-
----
-
-### ADDITIONAL INFORMATION
-
-- 15+ years of professional software development experience
-- Experience working with international remote teams
-- Background in fintech platforms and scalable backend systems
-- Open to relocation and opportunities in Canada
+- **Portuguese:** Native
+- **English:** C1 — Professional Working Proficiency
