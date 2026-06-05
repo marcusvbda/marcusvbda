@@ -13,26 +13,18 @@ const SKILLS_CATEGORIES: Array<{
 	skillsEn: string;
 }> = [
 	{
+		id: 'arch',
+		labelKey: 'skills_arch_label',
+		labelEn: 'Architecture & Leadership',
+		skillsKey: 'skills_arch_skills',
+		skillsEn: 'Software Architecture · Distributed Systems · Payments · Microservices · Technical Leadership · System Design',
+	},
+	{
 		id: 'backend',
 		labelKey: 'skills_backend_label',
 		labelEn: 'Backend',
 		skillsKey: 'skills_backend_skills',
-		skillsEn: 'PHP (Laravel), Node.js (NestJS, Express), Python, Go',
-	},
-	{
-		id: 'cloud',
-		labelKey: 'skills_cloud_label',
-		labelEn: 'Cloud & Platform',
-		skillsKey: 'skills_cloud_skills',
-		skillsEn: 'AWS (EC2, S3, RDS, Lambda), Docker, CI/CD Pipelines, Microservices',
-	},
-	{
-		id: 'data',
-		labelKey: 'skills_data_label',
-		labelEn: 'Data & Performance',
-		skillsKey: 'skills_data_skills',
-		skillsEn:
-			'PostgreSQL, Redis (Advanced Caching), Query Optimisation, ElasticSearch',
+		skillsEn: 'Laravel · Node.js · NestJS · PHP · Python · Java',
 	},
 	{
 		id: 'frontend',
@@ -40,15 +32,30 @@ const SKILLS_CATEGORIES: Array<{
 		labelEn: 'Frontend & UI',
 		skillsKey: 'skills_frontend_skills',
 		skillsEn:
-			'React, Next.js, TypeScript, TailwindCSS, State Management (Context API)',
+			'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
+	},
+	{
+		id: 'data',
+		labelKey: 'skills_data_label',
+		labelEn: 'Databases & Performance',
+		skillsKey: 'skills_data_skills',
+		skillsEn:
+			'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
+	},
+	{
+		id: 'cloud',
+		labelKey: 'skills_cloud_label',
+		labelEn: 'Cloud & Infrastructure',
+		skillsKey: 'skills_cloud_skills',
+		skillsEn: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
 	},
 	{
 		id: 'ai',
 		labelKey: 'skills_ai_label',
-		labelEn: 'AI & Innovation',
+		labelEn: 'AI-Assisted Development',
 		skillsKey: 'skills_ai_skills',
 		skillsEn:
-			'LLM Integration (OpenAI APIs), Vector Databases, Behavioural Data Analysis',
+			'Cursor · Claude Code · GitHub Copilot · OpenAI APIs · LLM Integration',
 	},
 ];
 

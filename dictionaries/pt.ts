@@ -5,7 +5,7 @@ export default {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Senior AI-First Software Engineer | Arquiteto de Software',
+	cv_title: 'Engenheiro de Software Sênior | Arquiteto de Software',
 
 	// navbar
 	About: 'Sobre',
@@ -19,7 +19,7 @@ export default {
 	"Hi, I'm": 'Olá, sou',
 	location: 'Dublin, Irlanda',
 
-	bio: 'Senior AI-First Software Engineer com mais de 13 anos de experiência projetando, modernizando e escalando sistemas financeiros, plataformas de e-commerce e aplicações web de alta disponibilidade. Especialista na cultura AI-First, combinando arquitetura de software com orquestração avançada de LLMs para acelerar entregas e elevar a produtividade da engenharia.',
+	bio: 'Engenheiro de Software Sênior e Arquiteto de Software com mais de 13 anos de experiência projetando, modernizando e escalando sistemas financeiros, plataformas de pagamentos e aplicações distribuídas de alta disponibilidade. Expertise em arquitetura backend, liderança técnica e entrega full stack em ambientes fintech e corporativos.',
 
 	checkCv: 'Ver meu CV',
 	cta: 'Entre em contato',
@@ -30,16 +30,16 @@ export default {
 	Summary: 'Resumo',
 
 	about:
-		'Senior AI-First Software Engineer com mais de 13 anos de experiência projetando e escalando sistemas de alta disponibilidade para fintechs, e-commerce e plataformas corporativas.',
+		'Engenheiro de Software Sênior e Arquiteto de Software com mais de 13 anos de experiência projetando e escalando sistemas de alta disponibilidade para fintechs, pagamentos e plataformas corporativas.',
 
 	aboutDescription:
-		'Desenvolvimento AI-First: Utilizo agentes de IA avançados e LLMs (Cursor, Claude Code, GitHub Copilot) para acelerar entregas, otimizar a qualidade do código e elevar a produtividade da engenharia em todo o stack.\n\nDomínio Remoto: Opero em ambientes 100% remotos há mais de 6 anos, dominando colaboração assíncrona e garantindo sucesso em engenharia distribuída.\n\nRigor Arquitetural: Histórico comprovado em liderança técnica, tomada de decisões arquiteturais e mentoria de desenvolvedores em fintechs, pagamentos e software corporativo.\n\nAtualmente baseado em Dublin e elegível para trabalhar na Irlanda pelo Critical Skills Employment Permit.',
+		'Profundidade Arquitetural: Histórico comprovado em liderança técnica, tomada de decisões arquiteturais e definição de bases de engenharia em fintechs, pagamentos e software corporativo.\n\nEntrega Full Stack: Mais de 13 anos de experiência prática em backend, frontend e infraestrutura — de sistemas distribuídos e pipelines de pagamento a liderança de equipes em projetos complexos de modernização.\n\nDesenvolvimento Assistido por IA: Utilizo ferramentas de IA (Cursor, Claude Code, GitHub Copilot) como multiplicadores de produtividade e qualidade para acelerar entregas e reduzir overhead.\n\nRemoto & Global: Mais de 6 anos operando 100% remoto, incluindo relocação para Dublin. Atualmente elegível para trabalhar na Irlanda pelo Critical Skills Employment Permit.',
 
 	// experience
 	'Career Journey': 'Jornada Profissional',
 	Present: 'Presente',
 
-	exp_investidor10_role: 'Senior AI-First Software Engineer',
+	exp_investidor10_role: 'Senior Software Engineer',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'Nov 2023 – Presente',
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
@@ -154,22 +154,26 @@ export default {
 	'Skills & Technologies': 'Habilidades & Tecnologias',
 	'Technical Expertise': 'Expertise Técnica',
 
+	skills_arch_label: 'Arquitetura & Liderança',
+	skills_arch_skills:
+		'Arquitetura de Software · Sistemas Distribuídos · Pagamentos · Microsserviços · Liderança Técnica · Design de Sistemas',
+
 	skills_backend_label: 'Backend',
 	skills_backend_skills: 'Laravel · Node.js · NestJS · PHP · Python · Java',
-
-	skills_cloud_label: 'Cloud & Infraestrutura',
-	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Microsserviços · Redis · Supabase',
-
-	skills_data_label: 'Bancos de Dados & Performance',
-	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Otimização de Queries',
 
 	skills_frontend_label: 'Frontend',
 	skills_frontend_skills:
 		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
 
-	skills_ai_label: 'IA & LLMs',
+	skills_data_label: 'Bancos de Dados & Performance',
+	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Otimização de Queries',
+
+	skills_cloud_label: 'Cloud & Infraestrutura',
+	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+
+	skills_ai_label: 'Desenvolvimento Assistido por IA',
 	skills_ai_skills:
-		'Orquestração de LLMs · Cursor · Claude Code · GitHub Copilot · OpenAI APIs · Desenvolvimento AI-First',
+		'Cursor · Claude Code · GitHub Copilot · OpenAI APIs · Integração com LLMs',
 
 	'Earlier Experience': 'Experiências Anteriores',
 
@@ -180,7 +184,7 @@ export default {
 		'Experiência em plataformas de alto tráfego processando milhões de transações para milhares de usuários simultâneos.',
 
 	achievements_business_mindset:
-		'Forte foco em desenvolvimento AI-First, otimização de performance, confiabilidade de sistemas e arquitetura distribuída.',
+		'Forte foco em arquitetura de software, confiabilidade de sistemas, sistemas distribuídos e otimização de performance em plataformas fintech e corporativas.',
 
 	achievements_availability:
 		'Residente em Dublin e disponível para entrevistas técnicas pelo Critical Skills Employment Permit.',

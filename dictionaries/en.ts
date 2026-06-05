@@ -5,7 +5,7 @@ const en: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Senior AI-First Software Engineer | Software Architect',
+	cv_title: 'Senior Software Engineer | Software Architect',
 
 	// navbar
 	About: 'About',
@@ -19,7 +19,7 @@ const en: Record<string, string> = {
 	"Hi, I'm": "Hi, I'm",
 	location: 'Dublin, Ireland',
 
-	bio: 'Senior AI-First Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration to accelerate delivery and raise engineering productivity.',
+	bio: 'Senior Software Engineer and Software Architect with 13+ years of experience designing, modernising, and scaling financial systems, payment platforms, and high-availability distributed applications. Deep expertise in backend architecture, technical leadership, and full stack delivery across fintech and enterprise environments.',
 
 	checkCv: 'Check my CV',
 	cta: 'Get in touch',
@@ -30,16 +30,16 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'Senior AI-First Software Engineer with 13+ years of experience designing and scaling high-availability systems for fintech, e-commerce, and enterprise platforms.',
+		'Senior Software Engineer and Software Architect with 13+ years of experience designing and scaling high-availability systems for fintech, payments, and enterprise platforms.',
 
 	aboutDescription:
-		"AI-First Development: I leverage advanced AI agents and LLMs (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, optimise code quality, and raise engineering productivity across the full stack.\n\nRemote Mastery: I have operated in fully remote environments for over 6 years, mastering asynchronous collaboration and ensuring distributed engineering success.\n\nArchitectural Rigor: Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software.\n\nCurrently based in Dublin and eligible to work in Ireland under the Critical Skills Employment Permit.",
+		"Architectural Depth: Proven track record in technical leadership, architectural decision-making, and defining engineering foundations across fintech, payments, and enterprise software.\n\nFull Stack Delivery: 13+ years of hands-on experience across backend, frontend, and infrastructure — from distributed systems and payment pipelines to leading teams through complex modernisation projects.\n\nAI-Assisted Development: I use AI tools (Cursor, Claude Code, GitHub Copilot) as productivity and quality multipliers to accelerate delivery and reduce engineering overhead.\n\nRemote & Global: Over 6 years operating fully remote, including relocation to Dublin. Currently eligible to work in Ireland under the Critical Skills Employment Permit.",
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_investidor10_role: 'Senior AI-First Software Engineer',
+	exp_investidor10_role: 'Senior Software Engineer',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'November 2023 – Present',
 	exp_investidor10_location: 'Remote (Based in Dublin)',
@@ -154,22 +154,26 @@ const en: Record<string, string> = {
 	'Skills & Technologies': 'Skills & Technologies',
 	'Technical Expertise': 'Technical Expertise',
 
+	skills_arch_label: 'Architecture & Leadership',
+	skills_arch_skills:
+		'Software Architecture · Distributed Systems · Payments · Microservices · Technical Leadership · System Design',
+
 	skills_backend_label: 'Backend',
 	skills_backend_skills: 'Laravel · Node.js · NestJS · PHP · Python · Java',
-
-	skills_cloud_label: 'Cloud & Infrastructure',
-	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Microservices · Redis · Supabase',
-
-	skills_data_label: 'Databases & Performance',
-	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
 
 	skills_frontend_label: 'Frontend',
 	skills_frontend_skills:
 		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
 
-	skills_ai_label: 'AI & LLMs',
+	skills_data_label: 'Databases & Performance',
+	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
+
+	skills_cloud_label: 'Cloud & Infrastructure',
+	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+
+	skills_ai_label: 'AI-Assisted Development',
 	skills_ai_skills:
-		'LLM Orchestration · Cursor · Claude Code · GitHub Copilot · OpenAI APIs · AI-First Development',
+		'Cursor · Claude Code · GitHub Copilot · OpenAI APIs · LLM Integration',
 
 	'Earlier Experience': 'Earlier Experience',
 
@@ -180,7 +184,7 @@ const en: Record<string, string> = {
 		'Experience building and scaling high-traffic platforms processing millions of transactions for thousands of simultaneous users.',
 
 	achievements_business_mindset:
-		'Strong focus on AI-First development, performance optimisation, system reliability, and distributed architecture.',
+		'Strong focus on software architecture, system reliability, distributed systems, and performance optimisation across fintech and enterprise platforms.',
 
 	achievements_availability:
 		'Based in Dublin and available for technical interviews under the Critical Skills Employment Permit.',

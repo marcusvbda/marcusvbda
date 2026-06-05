@@ -5,7 +5,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { join } from 'path';
 import React from 'react';
 
-
 type Segment = { bold: boolean; text: string };
 
 type Node =
@@ -158,14 +157,17 @@ export async function GET(request: NextRequest) {
 
 	let content: string;
 	try {
-		content = readFileSync(join(process.cwd(), 'cvs', `${safeLang}.md`), 'utf-8');
+		content = readFileSync(
+			join(process.cwd(), 'cvs', `${safeLang}.md`),
+			'utf-8',
+		);
 	} catch {
 		return NextResponse.json({ error: 'CV file not found' }, { status: 404 });
 	}
 
 	const nodes = parseMarkdown(content);
 	const buffer = await renderToBuffer(<CVDocument nodes={nodes} />);
-	const filename = `Marcus_Vinicius_Bassalobre_Senior_AI_Engineer_${safeLang.toUpperCase()}.pdf`;
+	const filename = `Marcus_Vinicius_Bassalobre_Senior_Software_Engineer_${safeLang.toUpperCase()}.pdf`;
 
 	return new NextResponse(new Uint8Array(buffer), {
 		headers: {
