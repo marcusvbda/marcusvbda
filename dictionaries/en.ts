@@ -33,40 +33,40 @@ const en: Record<string, string> = {
 		'Senior Software Engineer and Software Architect with 13+ years of experience designing and scaling high-availability systems for fintech, payments, and enterprise platforms.',
 
 	aboutDescription:
-		"Architectural Depth: Proven track record in technical leadership, architectural decision-making, and defining engineering foundations across fintech, payments, and enterprise software.\n\nFull Stack Delivery: 13+ years of hands-on experience across backend, frontend, and infrastructure — from distributed systems and payment pipelines to leading teams through complex modernisation projects.\n\nAI-Assisted Development: I use AI tools (Cursor, Claude Code, GitHub Copilot) as productivity and quality multipliers to accelerate delivery and reduce engineering overhead.\n\nRemote & Global: Over 6 years operating fully remote, including relocation to Dublin. Currently eligible to work in Ireland under the Critical Skills Employment Permit.",
+		'Architectural Depth: Proven track record in technical leadership, architectural decision-making, and defining engineering foundations across fintech, payments, and enterprise software.\n\nFull Stack Delivery: 13+ years of hands-on experience across backend, frontend, and infrastructure — from distributed systems and payment pipelines to leading teams through complex modernisation projects.\n\nAI-Assisted Development: I use AI tools (Cursor, Claude Code, GitHub Copilot) as productivity and quality multipliers to accelerate delivery and reduce engineering overhead.\n\nRemote & Global: Over 6 years operating fully remote, including relocation to Dublin. Currently eligible to work in Ireland under the Critical Skills Employment Permit.',
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_investidor10_role: 'Senior Software Engineer',
+	exp_investidor10_role: 'Senior Software Engineer — Technical Reference',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'November 2023 – Present',
 	exp_investidor10_location: 'Remote (Based in Dublin)',
 
 	exp_investidor10_description:
-		'• Led the modernisation and migration of one of the company\'s most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.\n• Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.\n• Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.\n• Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.\n• Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.',
+		"• Sole engineer responsible for Carteira, the platform's flagship portfolio product serving 24,000+ active users across free and paid tiers.\n• Led the full re-architecture of Carteira from a Laravel monolith into a standalone React 19 + Next.js + React Native offline-first application, delivering ~75% reduction in page load time and ~60% reduction in API latency through Redis caching and query optimisation.\n• Achieved ~80% reduction in redundant API requests via React Query client-side caching and ~52% increase in free-to-paid conversions within 6 months of release.\n• Designed and shipped the Income Tax module, increasing user engagement by ~40%.\n• Serves as senior technical reference for the Carteira team, owning architecture decisions, leading code reviews, and mentoring engineers.",
 
 	exp_investidor10_techStack:
-		'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow',
+		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, MongoDB, MySQL, Redis, AWS, Vercel, Supabase',
 
 	exp_bria_role: 'Volunteer Technology Project Manager',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
 	exp_bria_period: 'January 2026 – Present',
 	exp_bria_location: 'Dublin, Ireland',
 	exp_bria_description:
-		'• Coordinates the development and maintenance of the association\'s websites, landing pages, and digital platforms.\n• Supports technical planning, product roadmap organisation, and technology delivery execution.\n• Mentors volunteer developers, guiding architectural decisions and engineering best practices.',
+		"• Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.\n• Supports technical planning, product roadmap organisation, and technology delivery execution.\n• Mentors volunteer developers, guiding architectural decisions and engineering best practices.",
 	exp_bria_techStack: 'Vercel, Product Planning, Technical Mentorship',
 
-	exp_vega_role: 'Senior Software Engineer',
+	exp_vega_role: 'Senior Full Stack Engineer (Part-Time Contract)',
 	exp_vega_company: 'Vega Checkout',
 	exp_vega_period: 'January 2024 – July 2025',
 	exp_vega_location: 'Remote',
 
 	exp_vega_description:
-		'• Maintained and optimised scalable, resilient payment flows integrated with multiple market-leading payment gateways for high-volume e-commerce operations.\n• Improved transaction reliability and overall platform stability under peak traffic scenarios.\n• Supported engineering team growth through rigorous code reviews, best practice dissemination, and individual mentorship.\n• Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.',
+		'• Maintained and optimised high-volume payment flows integrated with multiple payment gateways, improving reliability and platform stability.\n• Supported code quality through peer reviews and architectural improvements.',
 
-	exp_vega_techStack: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow',
+	exp_vega_techStack: 'PHP, Laravel, Tailwind CSS, MySQL',
 
 	exp_otimize_role: 'Senior Software Engineer / Tech Lead',
 	exp_otimize_company: 'Payt (formerly Otimize)',
@@ -74,10 +74,10 @@ const en: Record<string, string> = {
 	exp_otimize_location: 'Remote',
 
 	exp_otimize_description:
-		'• Joined as the company\'s first software engineer, solely responsible for defining the engineering foundations and initial platform architecture from zero.\n• Built and scaled payment and e-commerce platforms from the ground up, which grew to process millions in monthly transactions.\n• Designed and implemented robust anti-fraud systems, webhook-based architectures, queue systems, and asynchronous processing workflows.\n• Architected scalable microservices and complex, secure integrations with multiple payment gateways.\n• Provided technical leadership and mentored the development team as the engineering organisation scaled.',
+		'• First engineer hired — designed and built the entire platform architecture from scratch, then grew and led the engineering team to 4 engineers.\n• Built payment processing systems with anti-fraud workflows, queue-based transaction handling, and webhook-driven flows integrated across multiple payment gateways.\n• Scaled the platform to process roughly €800K/month in regular transaction volume, peaking at ~€6.5M/month across all merchants.\n• Set technical direction, ran code reviews, and mentored engineers as the company scaled.',
 
 	exp_otimize_techStack:
-		'Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase',
+		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
 
 	exp_diwe_role: 'Senior Full Stack Software Engineer',
 	exp_diwe_company: 'DIWE',
@@ -85,10 +85,10 @@ const en: Record<string, string> = {
 	exp_diwe_location: 'Remote',
 
 	exp_diwe_description:
-		'• Delivered scalable enterprise systems for major corporations including Gerdau, Unimed, and Saint-Gobain across healthcare and heavy industry sectors.\n• Operated across multiple technical ecosystems (PHP, Node.js, Java, TypeScript, Python), navigating stack diversity with confidence and adaptability.\n• Actively contributed to corporate architecture discussions and the planning of new modules and microservices.',
+		'• Delivered enterprise software for major clients including Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, and industrial sectors.\n• Built a training and certification platform for the civil construction industry with structured courses, assessments, and automatically issued digital certificates.\n• Contributed to architecture decisions and system design across multiple concurrent projects.',
 
 	exp_diwe_techStack:
-		'Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL',
+		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
 
 	exp_copysupply_role: 'Full Stack Developer',
 	exp_copysupply_company: 'Copy Supply',
@@ -130,7 +130,7 @@ const en: Record<string, string> = {
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		'Architecture modernisation and performance optimisation for one of Brazil\'s largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.',
+		"Architecture modernisation and performance optimisation for one of Brazil's largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.",
 
 	proj_vega_title: 'Vega Checkout Platform',
 
@@ -141,10 +141,12 @@ const en: Record<string, string> = {
 	edu_unimar_title: 'Technologist Degree in Systems Analysis and Development',
 	edu_unimar_description: 'Universidade de Marília (UNIMAR) — Brazil (2016)',
 
-	edu_harvardX_title: 'CS50 – Introduction to Artificial Intelligence with Python',
+	edu_harvardX_title:
+		'CS50 – Introduction to Artificial Intelligence with Python',
 	edu_harvardX_description: 'Harvard University (2025)',
 
-	edu_deepLearning_title: 'Supervised Machine Learning — Regression and Classification',
+	edu_deepLearning_title:
+		'Supervised Machine Learning — Regression and Classification',
 	edu_deepLearning_description: 'Stanford University / DeepLearning.AI (2025)',
 
 	edu_futureLearning_title: 'English for Career Development Programme',
@@ -166,10 +168,12 @@ const en: Record<string, string> = {
 		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
 
 	skills_data_label: 'Databases & Performance',
-	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
+	skills_data_skills:
+		'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
 
 	skills_cloud_label: 'Cloud & Infrastructure',
-	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+	skills_cloud_skills:
+		'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
 
 	skills_ai_label: 'AI-Assisted Development',
 	skills_ai_skills:

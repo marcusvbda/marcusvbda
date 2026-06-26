@@ -39,16 +39,16 @@ export default {
 	'Career Journey': 'Jornada Profissional',
 	Present: 'Presente',
 
-	exp_investidor10_role: 'Senior Software Engineer',
+	exp_investidor10_role: 'Senior Software Engineer — Referência Técnica',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'Nov 2023 – Presente',
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
 
 	exp_investidor10_description:
-		'• Liderou a modernização e migração de um dos produtos financeiros mais importantes da empresa, transformando um monólito Laravel em uma arquitetura moderna offline-first utilizando Next.js.\n• Definiu estratégias de caching, sincronização de dados e fluxos offline-first para melhorar significativamente a experiência do usuário em uma plataforma de alto tráfego com milhares de usuários simultâneos.\n• Implementou microsserviços escaláveis, sistemas de filas e mensageria, pipelines de dados em tempo real e workflows avançados de otimização de performance.\n• Contribuiu diretamente para um aumento de aproximadamente 15% na conversão de usuários pagos após o lançamento da nova experiência de portfólio.\n• Maximizou a eficiência do time por meio de fluxos de engenharia assistidos por IA (Cursor e LLMs), reduzindo o tempo de entrega e mitigando erros humanos.',
+		'• Único engenheiro responsável pela Carteira, o principal produto de portfólio da plataforma, atendendo mais de 24 mil usuários ativos entre os planos gratuito e pago.\n• Liderou a re-arquitetura completa da Carteira, de um monólito Laravel para uma aplicação standalone offline-first com React 19, Next.js e React Native, entregando ~75% de redução no tempo de carregamento de páginas e ~60% de redução na latência das APIs via cache Redis e otimização de queries.\n• Alcançou ~80% de redução em requisições redundantes de API via cache client-side com React Query e ~52% de aumento na conversão de gratuito para pago em 6 meses após o lançamento.\n• Projetou e entregou o módulo de Imposto de Renda, aumentando o engajamento dos usuários em ~40%.\n• Atua como referência técnica sênior no time da Carteira, sendo responsável pelas decisões de arquitetura, revisões de código e mentoria de engenheiros.',
 
 	exp_investidor10_techStack:
-		'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow',
+		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, MongoDB, MySQL, Redis, AWS, Vercel, Supabase',
 
 	exp_bria_role: 'Volunteer Technology Project Manager',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
@@ -58,15 +58,15 @@ export default {
 		'• Coordena o desenvolvimento e a manutenção de websites, landing pages e plataformas digitais da associação.\n• Apoia o planejamento técnico, a organização do roadmap de produtos e a execução das entregas de tecnologia.\n• Atua como mentor técnico para desenvolvedores voluntários, direcionando escolhas arquiteturais e boas práticas de código.',
 	exp_bria_techStack: 'Vercel, Planejamento de Produto, Mentoria Técnica',
 
-	exp_vega_role: 'Senior Software Engineer',
+	exp_vega_role: 'Engenheiro Full Stack Sênior (Contrato Part-Time)',
 	exp_vega_company: 'Vega Checkout',
 	exp_vega_period: 'Jan 2024 – Jul 2025',
 	exp_vega_location: 'Remoto',
 
 	exp_vega_description:
-		'• Manteve e otimizou fluxos de pagamento escaláveis e resilientes, integrados a múltiplos gateways de pagamento líderes de mercado para operações de e-commerce de alto volume.\n• Melhorou a confiabilidade das transações e a estabilidade geral da plataforma em cenários de picos de tráfego.\n• Apoiou o crescimento técnico da equipe por meio de revisões de código rigorosas, disseminação de boas práticas e mentoria individual.\n• Desenvolveu aplicações robustas em Laravel para o ecossistema de e-commerce e pipelines de automação de marketing digital.',
+		'• Manteve e otimizou fluxos de pagamento de alto volume integrados a múltiplos gateways de pagamento, melhorando a confiabilidade e a estabilidade da plataforma.\n• Apoiou a qualidade do código por meio de revisões técnicas e melhorias arquiteturais.',
 
-	exp_vega_techStack: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow',
+	exp_vega_techStack: 'PHP, Laravel, Tailwind CSS, MySQL',
 
 	exp_otimize_role: 'Senior Software Engineer / Tech Lead',
 	exp_otimize_company: 'Payt (anteriormente Otimize)',
@@ -74,10 +74,10 @@ export default {
 	exp_otimize_location: 'Remoto',
 
 	exp_otimize_description:
-		'• Primeiro engenheiro de software contratado pela empresa, responsável direto por definir as bases da engenharia e a arquitetura inicial da plataforma do zero.\n• Construiu e escalou plataformas de pagamento e e-commerce do absoluto zero, que passaram a processar milhões em transações mensais.\n• Projetou e implementou sistemas robustos antifraude, arquiteturas baseadas em webhooks, sistemas de filas e workflows assíncronos.\n• Desenhou microsserviços escaláveis e integrações complexas e seguras com diversos gateways de pagamento.\n• Liderou tecnicamente e mentorou o time de desenvolvimento à medida que a equipe de engenharia expandia.',
+		'• Primeiro engenheiro contratado — projetou e construiu toda a arquitetura da plataforma do zero, depois expandiu e liderou o time de engenharia até 4 engenheiros.\n• Construiu sistemas de processamento de pagamentos com fluxos antifraude, processamento de transações baseado em filas e fluxos orientados a webhooks integrados a múltiplos gateways de pagamento.\n• Escalou a plataforma para processar aproximadamente €800K/mês em volume regular de transações, com pico de ~€6,5M/mês no total de lojistas.\n• Definiu a direção técnica, conduzindo revisões de código e mentoria de engenheiros à medida que a empresa crescia.',
 
 	exp_otimize_techStack:
-		'Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase',
+		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
 
 	exp_diwe_role: 'Senior Full Stack Software Engineer',
 	exp_diwe_company: 'DIWE',
@@ -85,10 +85,10 @@ export default {
 	exp_diwe_location: 'Remoto',
 
 	exp_diwe_description:
-		'• Entregou sistemas corporativos escaláveis para grandes empresas como Gerdau, Unimed e Saint-Gobain nos setores de saúde e indústria de base.\n• Atuou de forma poliglota em múltiplos ecossistemas técnicos (PHP, Node.js, Java, TypeScript, Python), navegando com fluidez entre diferentes stacks.\n• Participou ativamente de discussões de arquitetura corporativa e planejamento de novos módulos e microsserviços.',
+		'• Entregou software corporativo para clientes como Gerdau, Unimed, Saint-Gobain e Intelbras nos setores de saúde, manufatura e indústria.\n• Construiu uma plataforma de treinamento e certificação para a indústria da construção civil com cursos estruturados, avaliações e emissão automática de certificados digitais.\n• Contribuiu para decisões de arquitetura e design de sistemas em múltiplos projetos simultâneos.',
 
 	exp_diwe_techStack:
-		'Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL',
+		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
 
 	exp_copysupply_role: 'Full Stack Developer',
 	exp_copysupply_company: 'Copy Supply',
@@ -141,10 +141,12 @@ export default {
 	edu_unimar_title: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
 	edu_unimar_description: 'Universidade de Marília (UNIMAR) — Brasil (2016)',
 
-	edu_harvardX_title: 'CS50 – Introduction to Artificial Intelligence with Python',
+	edu_harvardX_title:
+		'CS50 – Introduction to Artificial Intelligence with Python',
 	edu_harvardX_description: 'Harvard University (2025)',
 
-	edu_deepLearning_title: 'Machine Learning Supervisionado — Regressão e Classificação',
+	edu_deepLearning_title:
+		'Machine Learning Supervisionado — Regressão e Classificação',
 	edu_deepLearning_description: 'Stanford University / DeepLearning.AI (2025)',
 
 	edu_futureLearning_title: 'English for Career Development Programme',
@@ -166,10 +168,12 @@ export default {
 		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
 
 	skills_data_label: 'Bancos de Dados & Performance',
-	skills_data_skills: 'PostgreSQL · MySQL · MongoDB · Redis · Otimização de Queries',
+	skills_data_skills:
+		'PostgreSQL · MySQL · MongoDB · Redis · Otimização de Queries',
 
 	skills_cloud_label: 'Cloud & Infraestrutura',
-	skills_cloud_skills: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+	skills_cloud_skills:
+		'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
 
 	skills_ai_label: 'Desenvolvimento Assistido por IA',
 	skills_ai_skills:
@@ -200,7 +204,7 @@ export default {
 	Phone: 'Telefone',
 
 	contactLocationValue: 'Dublin, Irlanda',
-	contactPhoneValue: '+55 14 99676 6177',
+	contactPhoneValue: '+353 083 881 8967',
 
 	// download CV
 	'Error generating PDF. Please try again.':

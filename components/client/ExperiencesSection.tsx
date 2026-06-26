@@ -136,13 +136,7 @@ const EXPERIENCES: Array<{
 	},
 ];
 
-const RECENT_IDS = new Set([
-	'investidor10',
-	'bria',
-	'vega',
-	'diwe',
-	'otimize',
-]);
+const RECENT_IDS = new Set(['investidor10', 'bria', 'vega', 'diwe', 'otimize']);
 
 const containerVariants: Variants = {
 	hidden: {},
