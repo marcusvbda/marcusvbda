@@ -72,16 +72,6 @@ const EXPERIENCE_PDF = [
 		displayPriority: 1,
 	},
 	{
-		id: 'talentsieve',
-		companyKey: 'exp_talentsieve_company',
-		roleKey: 'exp_talentsieve_role',
-		periodKey: 'exp_talentsieve_period',
-		locationKey: 'exp_talentsieve_location',
-		techStackKey: 'exp_talentsieve_techStack',
-		descKey: 'exp_talentsieve_description',
-		displayPriority: 2,
-	},
-	{
 		id: 'bria',
 		companyKey: 'exp_bria_company',
 		roleKey: 'exp_bria_role',
@@ -89,7 +79,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_bria_location',
 		techStackKey: 'exp_bria_techStack',
 		descKey: 'exp_bria_description',
-		displayPriority: 3,
+		displayPriority: 2,
 	},
 	{
 		id: 'vega',
@@ -99,7 +89,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_vega_location',
 		techStackKey: 'exp_vega_techStack',
 		descKey: 'exp_vega_description',
-		displayPriority: 4,
+		displayPriority: 3,
 	},
 	{
 		id: 'diwe',
@@ -109,17 +99,17 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_diwe_location',
 		techStackKey: 'exp_diwe_techStack',
 		descKey: 'exp_diwe_description',
-		displayPriority: 5,
+		displayPriority: 4,
 	},
 	{
-		id: 'unimar',
-		companyKey: 'exp_unimar_company',
-		roleKey: 'exp_unimar_role',
-		periodKey: 'exp_unimar_period',
-		locationKey: 'exp_unimar_location',
-		techStackKey: 'exp_unimar_techStack',
-		descKey: 'exp_unimar_description',
-		displayPriority: 6,
+		id: 'otimize',
+		companyKey: 'exp_otimize_company',
+		roleKey: 'exp_otimize_role',
+		periodKey: 'exp_otimize_period',
+		locationKey: 'exp_otimize_location',
+		techStackKey: 'exp_otimize_techStack',
+		descKey: 'exp_otimize_description',
+		displayPriority: 5,
 	},
 	{
 		id: 'copysupply',
@@ -129,7 +119,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_copysupply_location',
 		techStackKey: 'exp_copysupply_techStack',
 		descKey: 'exp_copysupply_description',
-		displayPriority: 7,
+		displayPriority: 6,
 	},
 	{
 		id: 'aliveit',
@@ -139,7 +129,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_aliveit_location',
 		techStackKey: 'exp_aliveit_techStack',
 		descKey: 'exp_aliveit_description',
-		displayPriority: 8,
+		displayPriority: 7,
 	},
 	{
 		id: 'guess',
@@ -149,7 +139,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_guess_location',
 		techStackKey: 'exp_guess_techStack',
 		descKey: 'exp_guess_description',
-		displayPriority: 9,
+		displayPriority: 8,
 	},
 	{
 		id: 'masterel',
@@ -159,7 +149,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_masterel_location',
 		techStackKey: 'exp_masterel_techStack',
 		descKey: 'exp_masterel_description',
-		displayPriority: 10,
+		displayPriority: 9,
 	},
 ];
 

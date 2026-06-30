@@ -19,19 +19,6 @@ const EXPERIENCES: Array<{
 	descEn: string;
 }> = [
 	{
-		id: 'investidor10',
-		company: 'Investidor10',
-		roleKey: 'exp_investidor10_role',
-		roleEn: 'Senior AI-First Software Engineer',
-		periodKey: 'exp_investidor10_period',
-		periodEn: 'Nov 2023 – Present',
-		locationKey: 'exp_investidor10_location',
-		locationEn: 'Remote (Based in Dublin)',
-		descKey: 'exp_investidor10_description',
-		descEn:
-			"• Led the modernisation and migration of one of the company's most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.\n• Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.\n• Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.\n• Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.\n• Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.",
-	},
-	{
 		id: 'bria',
 		company: 'BRIA – Brazil Ireland Association',
 		roleKey: 'exp_bria_role',
@@ -43,6 +30,19 @@ const EXPERIENCES: Array<{
 		descKey: 'exp_bria_description',
 		descEn:
 			"• Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.\n• Supports technical planning, product roadmap organisation, and technology delivery execution.\n• Mentors volunteer developers, guiding architectural decisions and engineering best practices.",
+	},
+	{
+		id: 'investidor10',
+		company: 'Investidor10',
+		roleKey: 'exp_investidor10_role',
+		roleEn: 'Senior AI-First Software Engineer',
+		periodKey: 'exp_investidor10_period',
+		periodEn: 'Nov 2023 – Present',
+		locationKey: 'exp_investidor10_location',
+		locationEn: 'Remote (Based in Dublin)',
+		descKey: 'exp_investidor10_description',
+		descEn:
+			"• Led the modernisation and migration of one of the company's most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.\n• Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.\n• Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.\n• Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.\n• Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.",
 	},
 	{
 		id: 'vega',

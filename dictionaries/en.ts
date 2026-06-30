@@ -19,7 +19,7 @@ const en: Record<string, string> = {
 	"Hi, I'm": "Hi, I'm",
 	location: 'Dublin, Ireland',
 
-	bio: 'Senior Software Engineer and Software Architect with 13+ years of experience designing, modernising, and scaling financial systems, payment platforms, and high-availability distributed applications. Deep expertise in backend architecture, technical leadership, and full stack delivery across fintech and enterprise environments.',
+	bio: "I'm a software engineer with 13+ years of experience, most of it spent on fintech and payment platforms where uptime and correctness actually matter. I design backend architecture, lead technical decisions, and still write code daily — across the full stack.",
 
 	checkCv: 'Check my CV',
 	cta: 'Get in touch',
@@ -30,10 +30,10 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'Senior Software Engineer and Software Architect with 13+ years of experience designing and scaling high-availability systems for fintech, payments, and enterprise platforms.',
+		'I build and rebuild systems that need to stay up: fintech platforms, payment pipelines, high-traffic applications. Most of my career has been spent as the engineer who ends up owning architecture decisions, not just executing them.',
 
 	aboutDescription:
-		'Architectural Depth: Proven track record in technical leadership, architectural decision-making, and defining engineering foundations across fintech, payments, and enterprise software.\n\nFull Stack Delivery: 13+ years of hands-on experience across backend, frontend, and infrastructure — from distributed systems and payment pipelines to leading teams through complex modernisation projects.\n\nAI-Assisted Development: I use AI tools (Cursor, Claude Code, GitHub Copilot) as productivity and quality multipliers to accelerate delivery and reduce engineering overhead.\n\nRemote & Global: Over 6 years operating fully remote, including relocation to Dublin. Currently eligible to work in Ireland under the Critical Skills Employment Permit.',
+		"Architecture & Technical Leadership: I've been the first engineer, the sole engineer, or the technical reference on most teams I've worked with — which means architecture decisions, code reviews, and mentoring have been part of the job, not extras.\n\nFull Stack, by necessity: 13+ years across backend, frontend, and infrastructure. I've worked on distributed systems and payment processing as much as on React interfaces — usually on the same project.\n\nAI tools as part of the workflow: I use Claude Code, Cursor, and GitHub Copilot daily, the same way I'd use any other tool that makes the work faster without lowering the bar.\n\nRemote, for real: 6+ years working fully remote, including relocating to Dublin. Eligible to work in Ireland under the Critical Skills Employment Permit.",
 
 	// experience
 	'Career Journey': 'Career Journey',
@@ -45,7 +45,7 @@ const en: Record<string, string> = {
 	exp_investidor10_location: 'Remote (Based in Dublin)',
 
 	exp_investidor10_description:
-		"• Sole engineer responsible for Carteira, the platform's flagship portfolio product serving 24,000+ active users across free and paid tiers.\n• Led the full re-architecture of Carteira from a Laravel monolith into a standalone React 19 + Next.js + React Native offline-first application, delivering ~75% reduction in page load time and ~60% reduction in API latency through Redis caching and query optimisation.\n• Achieved ~80% reduction in redundant API requests via React Query client-side caching and ~52% increase in free-to-paid conversions within 6 months of release.\n• Designed and shipped the Income Tax module, increasing user engagement by ~40%.\n• Serves as senior technical reference for the Carteira team, owning architecture decisions, leading code reviews, and mentoring engineers.",
+		"• Sole engineer on Carteira, the platform's flagship portfolio product, used by 24,000+ active subscribers across free and paid tiers.\n• Re-architected Carteira from a Laravel monolith into a standalone React 19 + Next.js + React Native offline-first application — page loads went from noticeably slow to near-instant, and API latency dropped enough that Redis caching paid for itself within weeks.\n• Rebuilt client-side data fetching around React Query, cutting redundant API calls dramatically and contributing to a meaningful jump in free-to-paid conversions after launch.\n• Designed and shipped the Income Tax module from scratch, now one of the most-used features during tax season.\n• Acts as the technical reference for the Carteira team: architecture calls, code reviews, mentoring.",
 
 	exp_investidor10_techStack:
 		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, MongoDB, MySQL, Redis, AWS, Vercel, Supabase',
@@ -55,7 +55,7 @@ const en: Record<string, string> = {
 	exp_bria_period: 'January 2026 – Present',
 	exp_bria_location: 'Dublin, Ireland',
 	exp_bria_description:
-		"• Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.\n• Supports technical planning, product roadmap organisation, and technology delivery execution.\n• Mentors volunteer developers, guiding architectural decisions and engineering best practices.",
+		"• Coordinate development and maintenance of the association's websites and digital platforms.\n• Handle technical planning and roadmap organisation for ongoing projects.\n• Mentor volunteer developers on architecture and engineering practices.",
 	exp_bria_techStack: 'Vercel, Product Planning, Technical Mentorship',
 
 	exp_vega_role: 'Senior Full Stack Engineer (Part-Time Contract)',
@@ -64,7 +64,7 @@ const en: Record<string, string> = {
 	exp_vega_location: 'Remote',
 
 	exp_vega_description:
-		'• Maintained and optimised high-volume payment flows integrated with multiple payment gateways, improving reliability and platform stability.\n• Supported code quality through peer reviews and architectural improvements.',
+		'• Maintained and improved high-volume payment flows across multiple payment gateways, with a focus on reliability and platform stability.\n• Supported code quality through peer reviews and ongoing architectural cleanup.',
 
 	exp_vega_techStack: 'PHP, Laravel, Tailwind CSS, MySQL',
 
@@ -74,7 +74,7 @@ const en: Record<string, string> = {
 	exp_otimize_location: 'Remote',
 
 	exp_otimize_description:
-		'• First engineer hired — designed and built the entire platform architecture from scratch, then grew and led the engineering team to 4 engineers.\n• Built payment processing systems with anti-fraud workflows, queue-based transaction handling, and webhook-driven flows integrated across multiple payment gateways.\n• Scaled the platform to process roughly €800K/month in regular transaction volume, peaking at ~€6.5M/month across all merchants.\n• Set technical direction, ran code reviews, and mentored engineers as the company scaled.',
+		'• First engineer hired. Designed the platform architecture from a blank slate, then grew and led the engineering team to 4 people.\n• Built the payment processing core: anti-fraud workflows, queue-based transaction handling, and webhook integrations across several payment gateways.\n• Scaled the platform from handling a few transactions a month to processing around €800K/month in regular volume, with peaks near €6.5M/month across all merchants.\n• Set technical direction for the team, ran code reviews, and mentored engineers as the company grew.',
 
 	exp_otimize_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
@@ -85,7 +85,7 @@ const en: Record<string, string> = {
 	exp_diwe_location: 'Remote',
 
 	exp_diwe_description:
-		'• Delivered enterprise software for major clients including Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, and industrial sectors.\n• Built a training and certification platform for the civil construction industry with structured courses, assessments, and automatically issued digital certificates.\n• Contributed to architecture decisions and system design across multiple concurrent projects.',
+		'• Delivered software for enterprise clients including Gerdau, Unimed, Saint-Gobain, and Intelbras, spanning healthcare, manufacturing, and industrial sectors.\n• Built a training and certification platform for the civil construction industry, with courses, assessments, and automatic digital certificate issuance.\n• Worked on architecture and system design across several concurrent projects.',
 
 	exp_diwe_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
@@ -95,7 +95,7 @@ const en: Record<string, string> = {
 	exp_copysupply_period: '2017 – 2018',
 	exp_copysupply_location: 'São Paulo, Brazil',
 	exp_copysupply_description:
-		'• Built web platforms and enterprise applications focused on full stack development and database-driven systems.',
+		'• Built web platforms and enterprise applications, mostly focused on full stack development and database-driven systems.',
 	exp_copysupply_techStack: 'ASP.NET, Full Stack Development',
 
 	exp_aliveit_role: 'Full Stack Developer',
@@ -103,15 +103,14 @@ const en: Record<string, string> = {
 	exp_aliveit_period: '2014 – 2017',
 	exp_aliveit_location: 'Marília, São Paulo, Brazil',
 	exp_aliveit_description:
-		'• Built web platforms, CRM systems and enterprise applications across multiple industries.\n• Focused on full stack development, APIs and database-driven systems.',
+		'• Built web platforms, CRM systems, and enterprise applications across different industries.\n• Worked across full stack development, APIs, and database-driven systems.',
 	exp_aliveit_techStack: 'PHP, C++, Web Development',
 
 	exp_guess_role: 'Delphi Developer Intern',
 	exp_guess_company: 'Guess Soluções em Tecnologia',
 	exp_guess_period: '2013 – 2014',
 	exp_guess_location: 'Marília, Brazil',
-	exp_guess_description:
-		'• Early career experience in technology and software development.',
+	exp_guess_description: '• First real experience in software development.',
 	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'C++ Developer',
@@ -119,7 +118,7 @@ const en: Record<string, string> = {
 	exp_masterel_period: '2010 – 2013',
 	exp_masterel_location: 'Marília, Brazil',
 	exp_masterel_description:
-		'• Early career development of enterprise applications and software systems.',
+		'• Early career work building enterprise applications and internal software systems.',
 	exp_masterel_techStack: 'C++',
 
 	// projects
@@ -130,12 +129,12 @@ const en: Record<string, string> = {
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		"Architecture modernisation and performance optimisation for one of Brazil's largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.",
+		"Architecture modernisation for one of Brazil's largest investment research platforms. Led the migration from a Laravel monolith to an offline-first Next.js architecture — the kind of rebuild you do while the plane is still flying, with real users on it the whole time.",
 
 	proj_vega_title: 'Vega Checkout Platform',
 
 	proj_vega_description:
-		'Fintech checkout system designed to process high-volume e-commerce transactions with high reliability, scalability, and optimised user experience. Built with resilient payment gateway integrations and performance-first architecture.',
+		'A fintech checkout system built to handle high-volume e-commerce transactions reliably. The work was mostly about resilient payment gateway integrations and making sure things kept working when traffic spiked.',
 
 	// education
 	edu_unimar_title: 'Technologist Degree in Systems Analysis and Development',
@@ -185,20 +184,20 @@ const en: Record<string, string> = {
 	'Key Achievements': 'Key Achievements',
 
 	achievements_high_traffic:
-		'Experience building and scaling high-traffic platforms processing millions of transactions for thousands of simultaneous users.',
+		'Built and scaled platforms handling real transaction volume and concurrent users — not in theory, in production, with money moving through them.',
 
 	achievements_business_mindset:
-		'Strong focus on software architecture, system reliability, distributed systems, and performance optimisation across fintech and enterprise platforms.',
+		'Comfortable owning architecture end-to-end: the kind of decisions that are hard to undo once a system is live.',
 
 	achievements_availability:
-		'Based in Dublin and available for technical interviews under the Critical Skills Employment Permit.',
+		'Based in Dublin, available for interviews, eligible to work in Ireland under the Critical Skills Employment Permit.',
 
 	// contact
 	'Get in Touch': 'Get in Touch',
 	"Let's Build Something Great": "Let's Build Something Great",
 
 	contactDescription:
-		"I'm always open to discussing software engineering challenges, fintech platforms, and scalable system architecture.",
+		'Open to conversations about engineering roles, fintech systems, or architecture problems worth solving. Reach out — I usually reply quickly.',
 
 	Location: 'Location',
 	Phone: 'Phone',
