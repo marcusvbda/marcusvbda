@@ -73,7 +73,7 @@ Enterprise software consultancy delivering solutions for large Brazilian organis
 FinTech startup providing payment processing infrastructure.
 
 - Built the company's payment platform from the ground up as the first engineering hire, establishing the architecture that supported the company's growth.
-- Scaled the platform from MVP to **approximately €6.5M in peak monthly transaction volume** by designing a highly scalable payment infrastructure.
+- Scaled the platform from MVP to **approximately R$6.5M in peak monthly transaction volume** by designing a highly scalable payment infrastructure.
 - Designed resilient payment processing, anti-fraud workflows, asynchronous queues, and webhook integrations supporting multiple payment providers.
 - Grew the engineering team from one to four developers by hiring, mentoring, defining engineering standards, and leading technical direction.
 - Partnered directly with founders to shape product strategy, architecture, and engineering processes during the company's rapid growth.

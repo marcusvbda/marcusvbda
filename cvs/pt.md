@@ -77,7 +77,7 @@ Startup de fintech fornecendo infraestrutura de processamento de pagamentos para
 
 - Primeiro engenheiro contratado — projetou e construiu toda a arquitetura da plataforma do zero, depois formou e liderou um time de 4 engenheiros.
 - Construiu o núcleo de processamento de pagamentos: fluxos antifraude, processamento de transações via filas e integrações via webhook com múltiplos gateways de pagamento.
-- Escalou a plataforma de um volume inicial baixo de transações para aproximadamente €800 mil/mês em volume regular, com picos próximos a €6,5 milhões/mês considerando todos os comerciantes.
+- Escalou a plataforma de um volume inicial baixo de transações para aproximadamente R$800 mil/mês em volume regular, com picos próximos a R$6,5 milhões/mês considerando todos os comerciantes.
 - Definiu a direção técnica, conduziu code reviews e fez mentoria de engenheiros conforme a empresa crescia.
 
 Stack: TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase

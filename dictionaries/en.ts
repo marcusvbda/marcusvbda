@@ -74,7 +74,7 @@ const en: Record<string, string> = {
 	exp_otimize_location: 'Remote',
 
 	exp_otimize_description:
-		'• First engineer hired. Designed the platform architecture from a blank slate, then grew and led the engineering team to 4 people.\n• Built the payment processing core: anti-fraud workflows, queue-based transaction handling, and webhook integrations across several payment gateways.\n• Scaled the platform from handling a few transactions a month to processing around €800K/month in regular volume, with peaks near €6.5M/month across all merchants.\n• Set technical direction for the team, ran code reviews, and mentored engineers as the company grew.',
+		'• First engineer hired. Designed the platform architecture from a blank slate, then grew and led the engineering team to 4 people.\n• Built the payment processing core: anti-fraud workflows, queue-based transaction handling, and webhook integrations across several payment gateways.\n• Scaled the platform from handling a few transactions a month to processing around R$800K/month in regular volume, with peaks near R$6.5M/month across all merchants.\n• Set technical direction for the team, ran code reviews, and mentored engineers as the company grew.',
 
 	exp_otimize_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',

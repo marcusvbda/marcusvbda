@@ -29,7 +29,8 @@ const pt: Record<string, string> = {
 	'About me': 'Sobre mim',
 	Summary: 'Resumo',
 
-	about: 'Construo e reconstruo sistemas que precisam ficar no ar: plataformas fintech, pipelines de pagamento, aplicações de alto tráfego. A maior parte da minha carreira foi como o engenheiro que acaba sendo o dono das decisões de arquitetura, não apenas executando-as.',
+	about:
+		'Construo e reconstruo sistemas que precisam ficar no ar: plataformas fintech, pipelines de pagamento, aplicações de alto tráfego. A maior parte da minha carreira foi como o engenheiro que acaba sendo o dono das decisões de arquitetura, não apenas executando-as.',
 
 	aboutDescription:
 		'Arquitetura & Liderança Técnica: Fui o primeiro engenheiro, o único engenheiro ou a referência técnica na maioria dos times em que trabalhei — o que significa que decisões de arquitetura, revisões de código e mentoria fazem parte do trabalho, não são extras.\n\nFull Stack, por necessidade: 13+ anos entre backend, frontend e infraestrutura. Trabalhei em sistemas distribuídos e processamento de pagamentos tanto quanto em interfaces React — geralmente no mesmo projeto.\n\nFerramentas de IA como parte do fluxo: Uso Claude Code, Cursor e GitHub Copilot diariamente, da mesma forma que usaria qualquer outra ferramenta que acelere o trabalho sem baixar a barra.\n\nRemoto, de verdade: 6+ anos trabalhando 100% remoto, incluindo relocação para Dublin. Elegível para trabalhar na Irlanda pelo Critical Skills Employment Permit.',
@@ -73,7 +74,7 @@ const pt: Record<string, string> = {
 	exp_otimize_location: 'Remoto',
 
 	exp_otimize_description:
-		'• Primeiro engenheiro contratado. Projetou a arquitetura da plataforma do zero, depois cresceu e liderou o time de engenharia até 4 pessoas.\n• Construiu o núcleo de processamento de pagamentos: fluxos antifraude, processamento de transações baseado em filas e integrações webhook em múltiplos gateways de pagamento.\n• Escalou a plataforma de poucos pedidos por mês para processar cerca de €800K/mês em volume regular, com picos de ~€6,5M/mês no total de lojistas.\n• Definiu a direção técnica do time, conduziu revisões de código e mentorou engenheiros à medida que a empresa crescia.',
+		'• Primeiro engenheiro contratado. Projetou a arquitetura da plataforma do zero, depois cresceu e liderou o time de engenharia até 4 pessoas.\n• Construiu o núcleo de processamento de pagamentos: fluxos antifraude, processamento de transações baseado em filas e integrações webhook em múltiplos gateways de pagamento.\n• Escalou a plataforma de poucos pedidos por mês para processar cerca de R$800K/mês em volume regular, com picos de ~R$6,5M/mês no total de lojistas.\n• Definiu a direção técnica do time, conduziu revisões de código e mentorou engenheiros à medida que a empresa crescia.',
 
 	exp_otimize_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
@@ -109,7 +110,8 @@ const pt: Record<string, string> = {
 	exp_guess_company: 'Guess Soluções em Tecnologia',
 	exp_guess_period: '2013 – 2014',
 	exp_guess_location: 'Marília, Brasil',
-	exp_guess_description: '• Primeira experiência real em desenvolvimento de software.',
+	exp_guess_description:
+		'• Primeira experiência real em desenvolvimento de software.',
 	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'Desenvolvedor C++',
@@ -146,7 +148,8 @@ const pt: Record<string, string> = {
 		'Machine Learning Supervisionado — Regressão e Classificação',
 	edu_deepLearning_description: 'Stanford University / DeepLearning.AI (2025)',
 
-	edu_futureLearning_title: 'Programa de Inglês para Desenvolvimento de Carreira',
+	edu_futureLearning_title:
+		'Programa de Inglês para Desenvolvimento de Carreira',
 	edu_futureLearning_description: 'Nível Avançado C1 Certificado (2025)',
 
 	// skills
