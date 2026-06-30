@@ -28,9 +28,9 @@ Senior Software Engineer with 13+ years building scalable backend systems, payme
 
 **AI Engineering:** Claude, Cursor, Codex, OpenAI APIs, LLM-Assisted Development
 
-# Professional Experience
+## Professional Experience
 
-## Senior Software Engineer
+### Senior Software Engineer
 
 **Investidor10** | Remote | November 2023 - Present
 
@@ -42,21 +42,21 @@ One of Latin America's largest investment platforms, serving hundreds of thousan
 - Provide technical leadership across the engineering team by defining architecture, conducting code reviews, mentoring engineers, and driving technical decisions.
 - Own the technical direction of the company's flagship portfolio product supporting more than **24,000 active users**.
 
-## Technical Project Lead (Volunteer)
+### Technical Project Lead (Volunteer)
 
 **Brazil Ireland Association (BRIA)** | Dublin, Ireland | January 2026 - Present
 
 - Lead the technical direction of digital initiatives supporting the Brazilian community in Ireland.
 - Mentor volunteer developers and guide architecture decisions across multiple digital platforms.
 
-## Senior Full Stack Engineer (Part-Time Contract)
+### Senior Full Stack Engineer (Part-Time Contract)
 
 **Vega Checkout** | Remote | January 2024 - July 2025
 
 - Improved payment platform reliability by redesigning gateway integrations and high-volume transaction processing.
 - Reduced technical debt and increased long-term maintainability through architectural improvements, code reviews, and engineering best practices.
 
-## Senior Full Stack Engineer
+### Senior Full Stack Engineer
 
 **Diwe** | Remote | June 2021 - April 2024
 
@@ -66,7 +66,7 @@ Enterprise software consultancy delivering solutions for large Brazilian organis
 - Designed and built a learning management platform supporting online courses, automated assessments, and digital certificate generation.
 - Influenced software architecture and technical decisions across multiple enterprise projects, improving consistency, maintainability, and long-term scalability.
 
-## Tech Lead & Founding Engineer
+### Tech Lead & Founding Engineer
 
 **Payt (formerly Otimize)** | Remote | October 2018 - October 2023
 
@@ -78,14 +78,14 @@ FinTech startup providing payment processing infrastructure.
 - Grew the engineering team from one to four developers by hiring, mentoring, defining engineering standards, and leading technical direction.
 - Partnered directly with founders to shape product strategy, architecture, and engineering processes during the company's rapid growth.
 
-# Earlier Experience
+### Earlier Experience
 
 - Full Stack Developer | Copy Supply | 2017 - 2018
 - Full Stack Developer | Alive IT | 2014 - 2017
 - Delphi Developer (Intern) | Guess Soluções e Tecnologia | 2013 - 2014
 - C++ Developer | Mastersel | 2010 - 2013
 
-# Education
+## Education
 
 **Technologist Degree in Systems Analysis and Development**
 
@@ -93,13 +93,13 @@ Universidade de Marília (UNIMAR), Brazil
 
 Graduated 2016
 
-# Certifications
+## Certifications
 
 - C1 Advanced English Certificate, Future Learning Ireland
 - Machine Learning: Regression and Classification, Stanford University (Coursera)
 - CS50: Introduction to Artificial Intelligence with Python, Harvard University (edX)
 
-# Languages
+## Languages
 
 **Portuguese:** Native
 
