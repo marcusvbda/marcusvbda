@@ -42,17 +42,19 @@ One of Latin America's largest investment platforms, serving hundreds of thousan
 - Provide technical leadership across the engineering team by defining architecture, conducting code reviews, mentoring engineers, and driving technical decisions.
 - Own the technical direction of the company's flagship portfolio product supporting more than **24,000 active users**.
 
-## Tech Lead & Founding Engineer
+## Technical Project Lead (Volunteer)
 
-**Payt (formerly Otimize)** | Remote | October 2018 - October 2023
+**Brazil Ireland Association (BRIA)** | Dublin, Ireland | January 2026 - Present
 
-FinTech startup providing payment processing infrastructure.
+- Lead the technical direction of digital initiatives supporting the Brazilian community in Ireland.
+- Mentor volunteer developers and guide architecture decisions across multiple digital platforms.
 
-- Built the company's payment platform from the ground up as the first engineering hire, establishing the architecture that supported the company's growth.
-- Scaled the platform from MVP to **approximately €6.5M in peak monthly transaction volume** by designing a highly scalable payment infrastructure.
-- Designed resilient payment processing, anti-fraud workflows, asynchronous queues, and webhook integrations supporting multiple payment providers.
-- Grew the engineering team from one to four developers by hiring, mentoring, defining engineering standards, and leading technical direction.
-- Partnered directly with founders to shape product strategy, architecture, and engineering processes during the company's rapid growth.
+## Senior Full Stack Engineer (Part-Time Contract)
+
+**Vega Checkout** | Remote | January 2024 - July 2025
+
+- Improved payment platform reliability by redesigning gateway integrations and high-volume transaction processing.
+- Reduced technical debt and increased long-term maintainability through architectural improvements, code reviews, and engineering best practices.
 
 ## Senior Full Stack Engineer
 
@@ -64,19 +66,17 @@ Enterprise software consultancy delivering solutions for large Brazilian organis
 - Designed and built a learning management platform supporting online courses, automated assessments, and digital certificate generation.
 - Influenced software architecture and technical decisions across multiple enterprise projects, improving consistency, maintainability, and long-term scalability.
 
-## Senior Full Stack Engineer (Part-Time Contract)
+## Tech Lead & Founding Engineer
 
-**Vega Checkout** | Remote | January 2024 - July 2025
+**Payt (formerly Otimize)** | Remote | October 2018 - October 2023
 
-- Improved payment platform reliability by redesigning gateway integrations and high-volume transaction processing.
-- Reduced technical debt and increased long-term maintainability through architectural improvements, code reviews, and engineering best practices.
+FinTech startup providing payment processing infrastructure.
 
-## Technical Project Lead (Volunteer)
-
-**Brazil Ireland Association (BRIA)** | Dublin, Ireland | January 2026 - Present
-
-- Lead the technical direction of digital initiatives supporting the Brazilian community in Ireland.
-- Mentor volunteer developers and guide architecture decisions across multiple digital platforms.
+- Built the company's payment platform from the ground up as the first engineering hire, establishing the architecture that supported the company's growth.
+- Scaled the platform from MVP to **approximately €6.5M in peak monthly transaction volume** by designing a highly scalable payment infrastructure.
+- Designed resilient payment processing, anti-fraud workflows, asynchronous queues, and webhook integrations supporting multiple payment providers.
+- Grew the engineering team from one to four developers by hiring, mentoring, defining engineering standards, and leading technical direction.
+- Partnered directly with founders to shape product strategy, architecture, and engineering processes during the company's rapid growth.
 
 # Earlier Experience
 
