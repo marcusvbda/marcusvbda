@@ -8,7 +8,7 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Summary
 
-Software engineer with 13 years of experience, most of it in fintech: payment infrastructure, anti-fraud, and investment platforms. Currently the lead engineer on the flagship portfolio product at Investidor10, one of Latin America's largest investment platforms, where I own architecture end to end for a product with 24,000+ active users. Before that, I was the first engineering hire at a payments startup and scaled it to R$6.5M in monthly transaction volume. Day-to-day stack: TypeScript, React, Next.js, Node.js/NestJS. Already living in Dublin — hiring me requires a Critical Skills Employment Permit but no relocation, no entry visa, and no waiting.
+Software engineer with 13 years of experience, most of it in fintech: payment infrastructure, anti-fraud, and investment platforms. Currently the lead engineer on the flagship portfolio product at Investidor10, one of Latin America's largest investment platforms, where I own architecture end to end for a product with 24,000+ active users. Before that, I was the first engineering hire at a payments startup and scaled it to R$6.5M in monthly transaction volume. Day-to-day stack: TypeScript, React, Next.js, Node.js/NestJS. Already living in Dublin
 
 ## Core Skills
 
