@@ -8,7 +8,7 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Summary
 
-Software engineer with 13 years of experience, most of it in fintech: payment infrastructure, anti-fraud, and investment platforms. Currently the lead engineer on the flagship portfolio product at Investidor10, one of Latin America's largest investment platforms, where I own architecture end to end for a product with 24,000+ active users. Before that, I was the first engineering hire at a payments startup and scaled it to R$6.5M in monthly transaction volume. Day-to-day stack: TypeScript, React, Next.js, Node.js/NestJS. Already living in Dublin
+Software engineer with 13 years of experience, most of it in fintech: payment infrastructure, anti-fraud, and investment platforms. Currently the lead engineer on the flagship portfolio product at Investidor10, one of Latin America's largest investment platforms, where I own architecture end to end for a product with 24,000+ active users. Before that, I was the first engineering hire at a payments startup and scaled it to R$6.5M in monthly transaction volume. Day-to-day stack: TypeScript, React, Next.js, Node.js/NestJS. Already based in Dublin, Ireland.
 
 ## Core Skills
 
@@ -33,7 +33,7 @@ Remote (contract) | November 2023 – Present
 Investment platform serving hundreds of thousands of investors across Latin America. Sole engineer responsible for the flagship portfolio product (24,000+ active users).
 
 - Led the migration of the main product from a Laravel monolith to React 19 / Next.js with a React Native offline-first mobile app, cutting API latency and unblocking the mobile roadmap.
-- Rebuilt the data layer around React Query, which cut redundant API traffic significantly and made the premium experience noticeably faster — a factor in premium subscription growth that quarter.
+- Rebuilt the data layer around TanStack Query, which cut redundant API traffic significantly and made the premium experience noticeably faster — a factor in premium subscription growth that quarter.
 - Designed and shipped the Income Tax product for Brazil's annual tax season; it became one of the most used features on the platform within its first season.
 - Set the technical direction for the team: architecture decisions, code review standards, and mentoring.
 
