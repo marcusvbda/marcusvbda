@@ -2,7 +2,7 @@
 
 **Senior Software Engineer**
 
-Dublin, Ireland | +353 83 881 8967 | [bassalobre.vinicius@gmail.com](mailto:bassalobre.vinicius@gmail.com)
+Dublin, Ireland | +353 83 881 8967 | bassalobre.vinicius@gmail.com
 
 linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
