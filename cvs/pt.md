@@ -1,6 +1,6 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Engenheiro de Software Sênior**
+**Senior Software Engineer**
 
 Dublin, Irlanda | +55 15 99676 6177 | bassalobre.vinicius@gmail.com
 
@@ -8,92 +8,95 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Resumo
 
-Engenheiro de software com 13 anos de experiência, a maior parte em fintech: infraestrutura de pagamentos, antifraude e plataformas de investimento. Atualmente sou o engenheiro responsável pelo produto principal de carteira do Investidor10, uma das maiores plataformas de investimento da América Latina, onde cuido da arquitetura de ponta a ponta de um produto com mais de 24.000 usuários ativos. Antes disso, fui o primeiro engenheiro contratado de uma startup de pagamentos e a escalei até R$6,5M em volume mensal de transações. Stack do dia a dia: TypeScript, React, Next.js, Node.js/NestJS. Resido em Dublin, Irlanda, com total disponibilidade para trabalho remoto.
+Senior Software Engineer com 13 anos de experiência construindo produtos de fintech, pagamentos, antifraude e investimentos. Atualmente lidero, como engenheiro principal, o produto de carteira do Investidor10, atendendo mais de 24.000 usuários ativos. Anteriormente, fui o primeiro engenheiro contratado de uma startup de pagamentos, onde construí a plataforma principal e ajudei a escalá-la até R$6,5M em volume mensal de transações.
 
-## Competências
+Tenho maior domínio em TypeScript, React, Next.js, Node.js, NestJS e Laravel. Confortável liderando arquitetura, entregando funcionalidades de produto de ponta a ponta, melhorando sistemas legados e mentorando outros engenheiros. Baseado em Dublin, Irlanda.
+
+## Competências Principais
 
 **Linguagens:** TypeScript, JavaScript, PHP, Python
 
 **Frontend:** React, Next.js, React Native, TanStack Query, Vue.js, Tailwind CSS
 
-**Backend:** Node.js, NestJS, Laravel, design de APIs REST, microsserviços, arquitetura orientada a eventos e filas
+**Backend:** Node.js, NestJS, Laravel, design de APIs REST, microsserviços, sistemas orientados a eventos, sistemas baseados em filas
 
-**Bancos de dados:** PostgreSQL, MySQL, MongoDB, Redis
+**Bancos de Dados:** PostgreSQL, MySQL, MongoDB, Redis
 
-**Cloud & DevOps:** AWS, Docker, CI/CD com GitHub Actions, Vercel, Supabase
+**Cloud & DevOps:** AWS, Docker, GitHub Actions, Vercel, Supabase
 
-**Domínio:** processamento de pagamentos, antifraude, produtos de imposto de renda, aplicações offline-first (web e mobile), integração com LLMs (APIs da OpenAI e Anthropic)
+**Domínio:** processamento de pagamentos, antifraude, plataformas de investimento, produtos tributários, aplicações offline-first, integrações com APIs da OpenAI e Anthropic
 
 ## Experiência Profissional
 
-### Engenheiro de Software Sênior — Investidor10
+### Senior Software Engineer, Investidor10
 
-Remoto (PJ) | Novembro 2023 – Atual
+Remoto, contrato | Novembro 2023 - Atual
 
-Plataforma de investimentos que atende centenas de milhares de investidores na América Latina. Engenheiro responsável pelo produto principal de carteira (mais de 24.000 usuários ativos).
+Plataforma de investimentos usada por investidores em toda a América Latina. Engenheiro principal responsável pelo produto de carteira, com mais de 24.000 usuários ativos.
 
-- Liderei a migração do produto principal de um monolito Laravel para React 19 / Next.js com app mobile offline-first em React Native, reduzindo a latência das APIs e destravando o roadmap mobile.
-- Reconstruí a camada de dados em torno do React Query, cortando tráfego redundante de API e deixando a experiência premium visivelmente mais rápida — um dos fatores no crescimento de assinaturas premium naquele trimestre.
-- Projetei e entreguei o produto de Imposto de Renda para a temporada anual de declaração; tornou-se uma das funcionalidades mais usadas da plataforma já na primeira temporada.
-- Defino a direção técnica do time: decisões de arquitetura, padrões de code review e mentoria.
+- Liderei a migração do produto de carteira de um monólito Laravel para React 19, Next.js e um aplicativo mobile offline-first em React Native.
+- Aprimorei a camada de dados do frontend com TanStack Query, reduzindo chamadas redundantes de API e tornando o produto mais rápido para usuários premium.
+- Projetei e entreguei o produto de Imposto de Renda para a temporada anual de declaração no Brasil, que se tornou uma das funcionalidades mais usadas da plataforma já em sua primeira temporada.
+- Responsável pelas decisões de arquitetura, revisão de trechos críticos de código e mentoria de engenheiros que atuam nos produtos de carteira e de imposto de renda.
 
-### Engenheiro Full Stack Sênior — Vega Checkout
+### Senior Full Stack Engineer, Vega Checkout
 
-Remoto (contrato part-time) | Janeiro 2024 – Julho 2025
+Remoto, contrato part-time | Janeiro 2024 - Julho 2025
 
 Plataforma de checkout e pagamentos.
 
-- Redesenhei as integrações com gateways de pagamento para suportar picos de alto volume de transações sem intervenção manual, reduzindo incidentes de pagamentos falhos.
-- Introduzi práticas de code review e refatorei as partes mais frágeis do pipeline de transações, que o time mantém até hoje.
+- Redesenhei as integrações com gateways de pagamento para suportar picos de transações com menos intervenção manual.
+- Reduzi incidentes de pagamentos falhos aprimorando fluxos de retentativa, integrações com provedores e o tratamento de transações.
+- Introduzi práticas de code review e refatorei partes frágeis do pipeline de transações.
 
-### Engenheiro Full Stack Sênior — Diwe
+### Senior Full Stack Engineer, Diwe
 
-Remoto | Junho 2021 – Abril 2024
+Remoto | Junho 2021 - Abril 2024
 
-Consultoria de software enterprise para grandes organizações brasileiras.
+Consultoria de software enterprise atendendo grandes organizações brasileiras.
 
 - Construí e entreguei software para Gerdau, Unimed, Saint-Gobain e Intelbras, nos setores de saúde, manufatura e indústria.
-- Projetei do zero uma plataforma de gestão de aprendizagem (LMS): cursos online, avaliações automatizadas e geração de certificados digitais, em produção até hoje.
-- Atuei como referência técnica em vários projetos simultâneos de clientes, mantendo a arquitetura consistente entre os times.
+- Projetei e desenvolvi do zero uma plataforma de gestão de aprendizagem (LMS), incluindo cursos online, avaliações automatizadas e geração de certificados digitais.
+- Atuei como referência técnica em múltiplos projetos de clientes, ajudando a manter a consistência de arquitetura e qualidade de implementação entre os times.
 
-### Tech Lead & Engenheiro Fundador — Payt (antiga Otimize)
+### Tech Lead and Founding Engineer, Payt
 
-Remoto | Outubro 2018 – Outubro 2023
+Remoto | Outubro 2018 - Outubro 2023
 
-Startup de fintech de infraestrutura de processamento de pagamentos.
+Startup fintech focada em infraestrutura de processamento de pagamentos.
 
-- Primeiro engenheiro contratado. Projetei e construí a plataforma de pagamentos do zero: processamento, retentativas, integrações via webhook com múltiplos provedores e arquitetura de filas assíncronas.
-- Escalei a plataforma do MVP até aproximadamente R$6,5M em pico de volume mensal de transações.
-- Construí o fluxo de antifraude que rodava em cada transação.
-- Contratei e fiz o time de engenharia crescer de um (eu) para quatro desenvolvedores, trabalhando diretamente com os fundadores na estratégia técnica e de produto durante a fase de crescimento.
+- Primeiro engenheiro contratado. Construí a plataforma de pagamentos do zero, incluindo fluxos de processamento, retentativas, webhooks, integrações com provedores e arquitetura de filas assíncronas.
+- Escalei a plataforma de MVP até aproximadamente R$6,5M em pico de volume mensal de transações.
+- Construí o fluxo de antifraude usado para avaliar transações.
+- Ajudei a crescer o time de engenharia de um para quatro engenheiros, trabalhando diretamente com os fundadores em decisões de produto e técnicas.
 
 ### Experiências Anteriores
 
-- Desenvolvedor Full Stack — Copy Supply | 2017 – 2018
-- Desenvolvedor Full Stack — Alive IT | 2014 – 2017
-- Desenvolvedor Delphi (Estágio) — Guess Soluções e Tecnologia | 2013 – 2014
-- Desenvolvedor C++ — Mastersel | 2010 – 2013
+- Full Stack Developer, Copy Supply | 2017 - 2018
+- Full Stack Developer, Alive IT | 2014 - 2017
+- Delphi Developer Intern, Guess Soluções e Tecnologia | 2013 - 2014
+- C++ Developer, Mastersel | 2010 - 2013
 
 ## Voluntariado
 
-### Líder Técnico de Projetos — Brazil Ireland Association (BRIA)
+### Technical Project Lead, Brazil Ireland Association (BRIA)
 
-Dublin, Irlanda | Janeiro 2026 – Atual
+Dublin, Irlanda | Janeiro 2026 - Atual
 
-Lidero a frente técnica das iniciativas digitais da associação para a comunidade brasileira na Irlanda; oriento desenvolvedores voluntários e guio as decisões de arquitetura das plataformas.
+Lidero iniciativas técnicas para a comunidade brasileira na Irlanda, mentoro desenvolvedores voluntários e guio a arquitetura das plataformas digitais da associação.
 
 ## Formação
 
 **Tecnólogo em Análise e Desenvolvimento de Sistemas**
-
-Universidade de Marília (UNIMAR) — 2016
+Universidade de Marília (UNIMAR), Brasil | 2016
 
 ## Certificações
 
-- Certificado de Inglês C1 Advanced — Future Learning Ireland
-- Machine Learning: Regression and Classification — Stanford University (Coursera)
-- CS50: Introduction to Artificial Intelligence with Python — Harvard University (edX)
+- C1 Advanced English Certificate, Future Learning Ireland
+- Machine Learning: Regression and Classification, Stanford University, Coursera
+- CS50: Introduction to Artificial Intelligence with Python, Harvard University, edX
 
 ## Idiomas
 
-**Português:** nativo | **Inglês:** C1 Advanced (certificado)
+**Português:** Nativo
+**Inglês:** C1 Advanced, certificado
