@@ -133,6 +133,16 @@ const PROJECTS: Array<{
 			'Institutional and service portal developed for Unimed São José do Rio Preto. Centralizes information for clients, healthcare professionals, and partners, offering online services, plan details, and an optimized user experience for accessibility and reliability.',
 		tech: 'Next.js, React, TypeScript, Node.js, AWS',
 	},
+	{
+		id: 'bria',
+		image: '/companies/bria.png',
+		titleKey: 'proj_bria_title',
+		titleEn: 'BRIA - Brazil Ireland Association',
+		descKey: 'proj_bria_description',
+		descEn:
+			"Multilingual institutional website for the Brazil-Ireland Association, built with Next.js and Strapi. I led the technical implementation and architecture, creating a responsive, SEO-friendly experience with dynamic content that the team can manage without code. The platform provides a scalable foundation for the association's events, partners, media, and community initiatives.",
+		tech: 'Next.js, Render, Supabase, Tailwind CSS',
+	},
 ];
 
 const containerVariants: Variants = {
