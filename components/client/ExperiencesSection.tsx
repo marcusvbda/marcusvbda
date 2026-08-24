@@ -22,7 +22,7 @@ const EXPERIENCES: Array<{
 		id: 'bria',
 		company: 'BRIA – Brazil Ireland Association',
 		roleKey: 'exp_bria_role',
-		roleEn: 'Volunteer Technology Project Manager',
+		roleEn: 'Technical Lead & Product Engineer',
 		periodKey: 'exp_bria_period',
 		periodEn: 'Jan 2026 – Present',
 		locationKey: 'exp_bria_location',

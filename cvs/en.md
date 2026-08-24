@@ -79,11 +79,11 @@ Fintech startup focused on payment processing infrastructure.
 
 ## Volunteering
 
-### Technical Project Lead, Brazil Ireland Association (BRIA)
+### Technical Lead & Product Engineer, Brazil Ireland Association (BRIA)
 
 Dublin, Ireland | January 2026 - Present
 
-Lead technical initiatives for the Brazilian community in Ireland, mentor volunteer developers, and guide architecture across the association’s digital platforms.
+Leading the development of BRIA's digital products and technical initiatives, combining hands-on software engineering, product development, and technical strategy.
 
 ## Education
 

@@ -41,14 +41,16 @@ Senior Software Engineer with 13+ years of experience designing, modernising, an
 - Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.
 - **Stack:** Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow
 
-### Volunteer Technology Project Manager
+### Technical Lead & Product Engineer
 
 **Brazil Ireland Association (BRIA)** — Dublin, Ireland | January 2026 – Present
 
-- Coordinates the development and maintenance of the association's websites, landing pages, and digital platforms.
-- Supports technical planning, product roadmap organisation, and technology delivery execution.
-- Mentors volunteer developers, guiding architectural decisions and engineering best practices.
-- **Stack:** Vercel, Product Planning, Technical Mentorship
+– Design, develop, and maintain BRIA's website and digital platforms end-to-end
+– Build internal products and tools to support the organization's operations and community initiatives
+– Lead technical architecture, technology decisions, and product development
+– Work directly with stakeholders to identify problems, define requirements, and turn ideas into functional products
+– Develop and validate new SaaS products in collaboration with BRIA, using the organization as an early adopter and product incubation environment
+– Iterate on product workflows, requirements, and business models based on real-world usage and stakeholder feedback
 
 ### Senior Full Stack Software Engineer
 

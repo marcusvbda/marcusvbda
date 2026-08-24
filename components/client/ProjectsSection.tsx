@@ -33,6 +33,27 @@ const PROJECTS: Array<{
 			"Architecture modernisation and performance optimisation for one of Brazil's largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.",
 		tech: 'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL',
 	},
+
+	{
+		id: 'bria',
+		image: '/companies/bria.png',
+		titleKey: 'proj_bria_title',
+		titleEn: 'BRIA - Brazil Ireland Association',
+		descKey: 'proj_bria_description',
+		descEn:
+			"Multilingual institutional website for the Brazil-Ireland Association, built with Next.js and Strapi. I led the technical implementation and architecture, creating a responsive, SEO-friendly experience with dynamic content that the team can manage without code. The platform provides a scalable foundation for the association's events, partners, media, and community initiatives.",
+		tech: 'Next.js, Render, Supabase, Tailwind CSS',
+	},
+	{
+		id: 'divercity',
+		image: '/companies/divercity.png',
+		titleKey: 'proj_divercity_title',
+		titleEn: 'Divercity Park',
+		descKey: 'proj_divercity_description',
+		descEn:
+			"Institutional website for a children's entertainment venue located in a shopping mall. Showcases attractions, events, pricing, and contact information with a playful and family-friendly design focused on accessibility and visual appeal.",
+		tech: 'WordPress, Tailwind CSS, MySQL, PHP',
+	},
 	{
 		id: 'vega',
 		image: '/companies/vega.jpeg',
@@ -63,16 +84,7 @@ const PROJECTS: Array<{
 			'B2B marketplace and learning platform connecting construction professionals. Built course management system, certification tracking, and professional networking features serving 300k+ users.',
 		tech: 'React, WordPress, Laravel, MySQL, Redis, Docker',
 	},
-	{
-		id: 'divercity',
-		image: '/companies/divercity.png',
-		titleKey: 'proj_divercity_title',
-		titleEn: 'Divercity Park',
-		descKey: 'proj_divercity_description',
-		descEn:
-			"Institutional website for a children's entertainment venue located in a shopping mall. Showcases attractions, events, pricing, and contact information with a playful and family-friendly design focused on accessibility and visual appeal.",
-		tech: 'WordPress, Tailwind CSS, MySQL, PHP',
-	},
+
 	{
 		id: 'tom',
 		image: '/companies/tom.png',
@@ -133,16 +145,7 @@ const PROJECTS: Array<{
 			'Institutional and service portal developed for Unimed São José do Rio Preto. Centralizes information for clients, healthcare professionals, and partners, offering online services, plan details, and an optimized user experience for accessibility and reliability.',
 		tech: 'Next.js, React, TypeScript, Node.js, AWS',
 	},
-	{
-		id: 'bria',
-		image: '/companies/bria.png',
-		titleKey: 'proj_bria_title',
-		titleEn: 'BRIA - Brazil Ireland Association',
-		descKey: 'proj_bria_description',
-		descEn:
-			"Multilingual institutional website for the Brazil-Ireland Association, built with Next.js and Strapi. I led the technical implementation and architecture, creating a responsive, SEO-friendly experience with dynamic content that the team can manage without code. The platform provides a scalable foundation for the association's events, partners, media, and community initiatives.",
-		tech: 'Next.js, Render, Supabase, Tailwind CSS',
-	},
+	,
 ];
 
 const containerVariants: Variants = {
