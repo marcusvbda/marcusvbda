@@ -111,16 +111,14 @@ const en: Record<string, string> = {
 	exp_guess_company: 'Guess Soluções em Tecnologia',
 	exp_guess_period: '2013 – 2014',
 	exp_guess_location: 'Marília, Brazil',
-	exp_guess_description:
-		'• Built and maintained Delphi applications.',
+	exp_guess_description: '• Built and maintained Delphi applications.',
 	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'C++ Developer',
 	exp_masterel_company: 'Mastersel',
 	exp_masterel_period: '2010 – 2013',
 	exp_masterel_location: 'Marília, Brazil',
-	exp_masterel_description:
-		'• Built and maintained internal C++ applications.',
+	exp_masterel_description: '• Built and maintained internal C++ applications.',
 	exp_masterel_techStack: 'C++',
 
 	// projects
@@ -255,7 +253,7 @@ const en: Record<string, string> = {
 	Phone: 'Phone',
 
 	contactLocationValue: 'Dublin, Ireland',
-	contactPhoneValue: '+353 083 881 8967',
+	contactPhoneValue: '+353 83 881 8967',
 
 	// download CV
 	'Error generating PDF. Please try again.':

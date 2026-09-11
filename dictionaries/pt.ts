@@ -111,8 +111,7 @@ const ptBR: Record<string, string> = {
 	exp_guess_company: 'Guess Soluções em Tecnologia',
 	exp_guess_period: '2013 – 2014',
 	exp_guess_location: 'Marília, Brasil',
-	exp_guess_description:
-		'• Desenvolvi e mantive aplicações em Delphi.',
+	exp_guess_description: '• Desenvolvi e mantive aplicações em Delphi.',
 	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'Desenvolvedor C++',
@@ -255,7 +254,7 @@ const ptBR: Record<string, string> = {
 	Phone: 'Telefone',
 
 	contactLocationValue: 'Dublin, Irlanda',
-	contactPhoneValue: '+353 083 881 8967',
+	contactPhoneValue: '+55 14 99676 6177',
 
 	// download CV
 	'Error generating PDF. Please try again.':

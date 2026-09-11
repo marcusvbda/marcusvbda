@@ -63,7 +63,7 @@ export default function ContactsSection() {
 			id: 'phone',
 			icon: Phone,
 			label: t('Phone', 'Phone'),
-			value: t('contactPhoneValue', '+353 083 881 8967'),
+			value: t('contactPhoneValue', '+353 83 881 8967'),
 			href: null,
 		},
 	];
