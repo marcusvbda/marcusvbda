@@ -18,19 +18,14 @@ const PROJECTS: Array<{
 	id: string;
 	image: string;
 	titleKey: string;
-	titleEn: string;
 	descKey: string;
-	descEn: string;
 	tech: string;
 }> = [
 	{
 		id: 'investidor10',
 		image: '/companies/i10.jpeg',
 		titleKey: 'proj_investidor10_title',
-		titleEn: 'Investidor10 Platform',
 		descKey: 'proj_investidor10_description',
-		descEn:
-			"Architecture modernisation and performance optimisation for one of Brazil's largest investment research platforms. Led migration from a Laravel monolith to an offline-first Next.js architecture, delivering scalable systems and improved user experience for a high-traffic financial platform.",
 		tech: 'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL',
 	},
 
@@ -38,50 +33,35 @@ const PROJECTS: Array<{
 		id: 'bria',
 		image: '/companies/bria.png',
 		titleKey: 'proj_bria_title',
-		titleEn: 'BRIA - Brazil Ireland Association',
 		descKey: 'proj_bria_description',
-		descEn:
-			"Multilingual institutional website for the Brazil-Ireland Association, built with Next.js and Strapi. I led the technical implementation and architecture, creating a responsive, SEO-friendly experience with dynamic content that the team can manage without code. The platform provides a scalable foundation for the association's events, partners, media, and community initiatives.",
 		tech: 'Next.js, Render, Supabase, Tailwind CSS',
 	},
 	{
 		id: 'divercity',
 		image: '/companies/divercity.png',
 		titleKey: 'proj_divercity_title',
-		titleEn: 'Divercity Park',
 		descKey: 'proj_divercity_description',
-		descEn:
-			"Institutional website for a children's entertainment venue located in a shopping mall. Showcases attractions, events, pricing, and contact information with a playful and family-friendly design focused on accessibility and visual appeal.",
 		tech: 'WordPress, Tailwind CSS, MySQL, PHP',
 	},
 	{
 		id: 'vega',
 		image: '/companies/vega.jpeg',
 		titleKey: 'proj_vega_title',
-		titleEn: 'Vega Checkout Platform',
 		descKey: 'proj_vega_description',
-		descEn:
-			'Fintech checkout system designed to process high-volume e-commerce transactions with high reliability, scalability, and optimised user experience. Built with resilient payment gateway integrations and performance-first architecture.',
 		tech: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL',
 	},
 	{
 		id: 'intelbras',
 		image: '/companies/intelbras.jpeg',
 		titleKey: 'proj_intelbras_title',
-		titleEn: 'Intelbras Solar Platform',
 		descKey: 'proj_intelbras_description',
-		descEn:
-			'Educational and sales platform for renewable energy solutions. Created interactive tools for solar panel sizing, ROI calculations, and lead generation with seamless CRM integration.',
 		tech: 'React, Node.js, MongoDB, AWS',
 	},
 	{
 		id: 'parceiro',
 		image: '/companies/pdc.jpeg',
 		titleKey: 'proj_parceiro_title',
-		titleEn: 'Parceiro da Construção',
 		descKey: 'proj_parceiro_description',
-		descEn:
-			'B2B marketplace and learning platform connecting construction professionals. Built course management system, certification tracking, and professional networking features serving 300k+ users.',
 		tech: 'React, WordPress, Laravel, MySQL, Redis, Docker',
 	},
 
@@ -89,63 +69,44 @@ const PROJECTS: Array<{
 		id: 'tom',
 		image: '/companies/tom.png',
 		titleKey: 'proj_tom_title',
-		titleEn: 'Tom Incorporadora Platform',
 		descKey: 'proj_tom_description',
-		descEn:
-			'Administrative web app developed for a real estate company to manage client interactions and project information. Includes dashboards, document management, and communication tools designed for efficiency and usability.',
 		tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 	},
 	{
 		id: 'inteligenzia',
 		image: '/companies/inteligenzia.png',
 		titleKey: 'proj_inteligenzia_title',
-		titleEn: 'Inteligenzia Client Portal',
 		descKey: 'proj_inteligenzia_description',
-		descEn:
-			'Client portal developed for Inteligenzia, the leading B2B marketing agency in Brazil and Latin America. Designed to centralize project management, performance reports, and communication between clients and the agency, improving transparency and collaboration.',
 		tech: 'Laravel, FilamentPHP, MySQL, Tailwind CSS',
 	},
 	{
 		id: 'mudascarvalho',
 		image: '/companies/mudas.png',
 		titleKey: 'proj_mudascarvalho_title',
-		titleEn: 'Mudas Carvalho Website',
 		descKey: 'proj_mudascarvalho_description',
-		descEn:
-			"Institutional website for a family-owned plant nursery located in the countryside of São Paulo. Highlights the company's history, available seedlings, and sustainable cultivation practices through a clean, nature-inspired design.",
 		tech: 'Next.js, React, TypeScript, Tailwind CSS, Vercel',
 	},
 	{
 		id: 'orazelo',
 		image: '/companies/orazelo.png',
 		titleKey: 'proj_orazelo_title',
-		titleEn: 'Orazelo App',
 		descKey: 'proj_orazelo_description',
-		descEn:
-			'Mental health and self-knowledge app developed for Christians, available on Google Play and the App Store. The platform offers guided reflections, spiritual content, and personal growth tools, combining faith-based insights with modern UX design.',
 		tech: 'React Native, TypeScript, Node.js, Firebase',
 	},
 	{
 		id: 'rh99',
 		image: '/companies/rh99.png',
 		titleKey: 'proj_rh99_title',
-		titleEn: 'RH99 Platform',
 		descKey: 'proj_rh99_description',
-		descEn:
-			'Professional social network connecting HR specialists and managers. Designed to foster collaboration, knowledge sharing, and recruitment opportunities through interactive profiles, posts, and discussion features.',
 		tech: 'Nuxt.js, Vue.js, TypeScript',
 	},
 	{
 		id: 'unimed',
 		image: '/companies/unimed.png',
 		titleKey: 'proj_unimed_title',
-		titleEn: 'Unimed SJRP Portal',
 		descKey: 'proj_unimed_description',
-		descEn:
-			'Institutional and service portal developed for Unimed São José do Rio Preto. Centralizes information for clients, healthcare professionals, and partners, offering online services, plan details, and an optimized user experience for accessibility and reliability.',
 		tech: 'Next.js, React, TypeScript, Node.js, AWS',
 	},
-	,
 ];
 
 const containerVariants: Variants = {
@@ -213,19 +174,19 @@ export default function Projects() {
 								<div className="aspect-video overflow-hidden bg-muted relative">
 									<Image
 										src={project.image}
-										alt={t(project.titleKey, project.titleEn)}
+										alt={t(project.titleKey)}
 										fill
 										className="object-cover transition-transform duration-500 hover:scale-110"
 									/>
 								</div>
 								<CardHeader>
 									<CardTitle className="text-xl">
-										{t(project.titleKey, project.titleEn)}
+										{t(project.titleKey)}
 									</CardTitle>
 								</CardHeader>
 								<CardContent className="space-y-4">
 									<p className="text-muted-foreground leading-relaxed">
-										{t(project.descKey, project.descEn)}
+										{t(project.descKey)}
 									</p>
 									<div className="flex flex-wrap gap-2">
 										{project.tech.split(', ').map((tech, i) => (
@@ -250,20 +211,20 @@ export default function Projects() {
 									<DialogContent className="max-w-5xl">
 										<DialogHeader>
 											<DialogTitle className="text-2xl">
-												{t(p.titleKey, p.titleEn)}
+												{t(p.titleKey)}
 											</DialogTitle>
 											<DialogDescription asChild>
 												<div className="space-y-6 pt-4">
 													<div className="aspect-video overflow-hidden rounded-lg relative">
 														<Image
 															src={p.image}
-															alt={t(p.titleKey, p.titleEn)}
+															alt={t(p.titleKey)}
 															fill
 															className="object-cover"
 														/>
 													</div>
 													<p className="text-muted-foreground leading-relaxed">
-														{t(p.descKey, p.descEn)}
+														{t(p.descKey)}
 													</p>
 													<div className="flex flex-wrap gap-2">
 														{p.tech.split(', ').map((tech, i) => (

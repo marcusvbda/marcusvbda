@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
 		fontFamily: 'Helvetica',
 		fontSize: 9.5,
 		color: '#111111',
-		lineHeight: 1.5,
+		lineHeight: 1.3,
 	},
 	h1: {
 		fontSize: 20,
 		fontFamily: 'Helvetica-Bold',
-		marginBottom: 2,
+		marginBottom: 4,
 		color: '#000000',
 	},
 	h2: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 		fontFamily: 'Helvetica-Bold',
 	},
 	blank: {
-		marginBottom: 4,
+		marginBottom: 1,
 	},
 });
 
@@ -167,7 +167,7 @@ export async function GET(request: NextRequest) {
 
 	const nodes = parseMarkdown(content);
 	const buffer = await renderToBuffer(<CVDocument nodes={nodes} />);
-	const filename = `Marcus_Vinicius_Bassalobre_Senior_Software_Engineer_${safeLang.toUpperCase()}.pdf`;
+	const filename = `Marcus_Vinicius_Bassalobre_Software_Engineer_${safeLang.toUpperCase()}.pdf`;
 
 	return new NextResponse(new Uint8Array(buffer), {
 		headers: {

@@ -1,6 +1,6 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Senior Software Engineer**
+**Software Engineer | Full Stack Developer**
 
 Dublin, Ireland | +353 83 881 8967 | bassalobre.vinicius@gmail.com
 
@@ -8,9 +8,11 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Summary
 
-Senior Software Engineer with 13 years of experience building fintech, payments, anti-fraud, and investment products. Currently lead engineer for the main portfolio product at Investidor10, serving 24,000+ active users. Previously, first engineering hire at a payments startup, where I built the core platform and helped scale it to R$6.5M in monthly transaction volume.
+I build frontend and backend systems for fintech, payments, investment products, and internal business tools.
 
-Strongest in TypeScript, React, Next.js, Node.js, NestJS, and Laravel. Comfortable owning architecture, shipping product features end to end, improving legacy systems, and mentoring other engineers. Based in Dublin, Ireland.
+My main stack is TypeScript, React, Next.js, Node.js, NestJS, Laravel, and PHP. Recent work includes migrating an investment portfolio product from Laravel to React, Next.js, and React Native, improving payment retry flows, and integrating third-party APIs.
+
+I am based in Dublin, Ireland, and open to remote software engineering roles across full stack, backend, and frontend development.
 
 ## Core Skills
 
@@ -18,57 +20,56 @@ Strongest in TypeScript, React, Next.js, Node.js, NestJS, and Laravel. Comfortab
 
 **Frontend:** React, Next.js, React Native, TanStack Query, Vue.js, Tailwind CSS
 
-**Backend:** Node.js, NestJS, Laravel, REST API design, microservices, event-driven systems, queue-based systems
+**Backend:** Node.js, NestJS, Laravel, REST APIs, microservices, event-driven systems, queue-based systems
 
 **Databases:** PostgreSQL, MySQL, MongoDB, Redis
 
 **Cloud & DevOps:** AWS, Docker, GitHub Actions, Vercel, Supabase
 
-**Domain:** payment processing, anti-fraud, investment platforms, tax products, offline-first apps, OpenAI and Anthropic API integrations
+**Additional Experience:** payment processing, anti-fraud systems, investment platforms, tax products, offline-first applications, OpenAI and Anthropic API integrations
 
 ## Professional Experience
 
-### Senior Software Engineer, Investidor10
+### Software Engineer, Investidor10
 
 Remote, contract | November 2023 - Present
 
-Investment platform used by investors across Latin America. Lead engineer responsible for the main portfolio product, with 24,000+ active users.
+Investment platform used by investors across Latin America.
 
-- Led the migration of the portfolio product from a Laravel monolith to React 19, Next.js, and a React Native offline-first mobile app.
-- Improved the frontend data layer with TanStack Query, reducing redundant API calls and making the product faster for premium users.
-- Designed and shipped the Income Tax product for Brazil’s annual tax season, which became one of the platform’s most used features in its first season.
-- Own architecture decisions, review critical code paths, and mentor engineers working across the portfolio and tax products.
+- Develop and maintain the main portfolio product used by more than 24,000 active users.
+- Contributed to the migration of the portfolio product from a Laravel monolith to React 19, Next.js, and a React Native offline-first mobile application.
+- Reworked frontend data fetching with TanStack Query to reduce redundant API calls.
+- Designed and developed the Income Tax product for Brazil's annual tax season.
 
-### Senior Full Stack Engineer, Vega Checkout
+### Full Stack Engineer, Vega Checkout
 
 Remote, part-time contract | January 2024 - July 2025
 
 Checkout and payments platform.
 
-- Redesigned payment gateway integrations to handle transaction spikes with less manual intervention.
-- Reduced failed-payment incidents by improving retry flows, provider integrations, and transaction handling.
-- Introduced code review practices and refactored fragile parts of the transaction pipeline.
+- Developed and maintained integrations with multiple payment gateways.
+- Improved retry logic and transaction handling to reduce failed payments.
+- Refactored transaction pipeline code and reviewed changes with the team.
 
-### Senior Full Stack Engineer, Diwe
+### Full Stack Engineer, Diwe
 
 Remote | June 2021 - April 2024
 
-Enterprise software consultancy serving large Brazilian organisations.
+Enterprise software consultancy serving Brazilian organisations.
 
-- Built and shipped software for Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, and industrial sectors.
-- Designed and developed a learning management platform from scratch, including online courses, automated assessments, and digital certificate generation.
-- Worked as a technical reference across multiple client projects, helping keep architecture and implementation quality consistent between teams.
+- Built software for Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, education, and industrial projects.
+- Designed and developed a learning management platform with online courses, automated assessments, and digital certificates.
 
-### Tech Lead and Founding Engineer, Payt
+### Full Stack Engineer, Payt
 
 Remote | October 2018 - October 2023
 
 Fintech startup focused on payment processing infrastructure.
 
-- First engineering hire. Built the payment platform from zero, including processing flows, retries, webhooks, provider integrations, and async queue architecture.
-- Scaled the platform from MVP to roughly R$6.5M in peak monthly transaction volume.
-- Built the anti-fraud workflow used to evaluate transactions.
-- Helped grow the engineering team from one to four engineers while working directly with the founders on product and technical decisions.
+- Developed the core payment platform, including processing flows, retries, webhooks, provider integrations, and asynchronous queues.
+- Helped scale the platform from MVP to approximately R$6.5M in peak monthly transaction volume.
+- Developed anti-fraud workflows used to evaluate transactions.
+- Worked with the founders and engineering team to define and ship product features.
 
 ### Earlier Experience
 
@@ -79,15 +80,19 @@ Fintech startup focused on payment processing infrastructure.
 
 ## Volunteering
 
-### Technical Lead & Product Engineer, Brazil Ireland Association (BRIA)
+### Software Engineer & Product Developer, Brazil Ireland Association (BRIA)
 
 Dublin, Ireland | January 2026 - Present
 
-Leading the development of BRIA's digital products and technical initiatives, combining hands-on software engineering, product development, and technical strategy.
+I build BRIA's website and internal tools for its operations and community programmes.
+
+- Develop and maintain the organisation's website and digital platforms.
+- Turn requests from the association team into website features and internal tools.
 
 ## Education
 
-**Technologist Degree in Systems Analysis and Development**
+**Systems Analysis and Development**
+
 Universidade de Marília (UNIMAR), Brazil | 2016
 
 ## Certifications
@@ -99,4 +104,5 @@ Universidade de Marília (UNIMAR), Brazil | 2016
 ## Languages
 
 **Portuguese:** Native
+
 **English:** C1 Advanced, certified
