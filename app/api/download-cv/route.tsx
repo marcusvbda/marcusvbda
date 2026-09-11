@@ -125,7 +125,7 @@ function CVDocument({ nodes }: { nodes: Node[] }) {
 					}
 					if (node.type === 'h3') {
 						return (
-							<Text key={i} style={styles.h3}>
+							<Text key={i} style={styles.h3} minPresenceAhead={60}>
 								{node.text}
 							</Text>
 						);
