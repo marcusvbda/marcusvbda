@@ -19,9 +19,12 @@ const ptBR: Record<string, string> = {
 	"Hi, I'm": 'Olá, eu sou',
 	location: 'Dublin, Irlanda',
 
-	bio: 'Desenvolvo sistemas frontend e backend para produtos de fintech, pagamentos e investimentos com TypeScript, React, Next.js, Node.js, NestJS e Laravel.',
+	bio: 'Desenvolvo produtos de pagamentos, fintech e investimentos com TypeScript, React, Next.js, Node.js, NestJS e Laravel. Ajudei a escalar uma plataforma de pagamentos até R$6,5 milhões por mês e lidero a parte técnica de um produto de carteira com 24.000+ usuários por dia.',
 
 	checkCv: 'Ver meu currículo',
+	cv_variant_fullstack: 'Full stack',
+	cv_variant_backend: 'Backend / pagamentos',
+	cv_variant_frontend: 'Frontend / React',
 	cta: 'Entre em contato',
 	'Scroll down to explore': 'Role para explorar',
 
@@ -30,25 +33,25 @@ const ptBR: Record<string, string> = {
 	Summary: 'Resumo',
 
 	about:
-		'Desenvolvo aplicações web e ferramentas internas, do frontend e das APIs ao banco de dados e deploy. Meus projetos recentes incluem fluxos de pagamento, produtos de investimento e software corporativo.',
+		'Engenheiro de software focado em pagamentos, fintech e sistemas de alto volume. Atuo de ponta a ponta: frontend, APIs, filas e bancos de dados.',
 
 	aboutDescription:
-		'Nos projetos recentes, entreguei funcionalidades de pagamentos, tributação e investimentos, da interface e das APIs às mudanças no banco de dados e à produção.\n\nTrabalhei em fluxos de retry de pagamentos, carteiras de investimento, ferramentas de imposto de renda, aplicações corporativas e sistemas internos.\n\nTrabalho principalmente com TypeScript, React, Next.js, Node.js, NestJS, Laravel e PHP. Também uso Claude Code, Cursor e GitHub Copilot no desenvolvimento.\n\nMoro em Dublin, Irlanda, e estou aberto a vagas remotas de engenharia de software com atuação full stack, backend ou frontend.',
+		'Construí a plataforma principal de pagamentos da Payt, em um time de cinco desenvolvedores, e ajudei a levá-la do MVP a aproximadamente R$6,5 milhões em volume mensal no pico. Isso incluiu processamento de transações, retries, webhooks, integrações com provedores, filas assíncronas e fluxos antifraude.\n\nNo Investidor10 sou líder técnico e desenvolvedor da Carteira, produto que atende mais de 24.000 usuários por dia. Ela roda atualizações em tempo real via WebSockets, com cache e Redis, e usa IA e MCP para bots e insights inteligentes. Também participei da migração de um monólito Laravel para React 19, Next.js e um app React Native offline-first, e desenvolvi o produto de Imposto de Renda para o período anual de declaração no Brasil.\n\nTrabalho principalmente com TypeScript, React, Next.js, Node.js, NestJS, Laravel e PHP. Também uso Claude Code, Cursor e GitHub Copilot no desenvolvimento.\n\nMoro em Dublin, Irlanda, e estou aberto a vagas remotas de engenharia de software com atuação full stack, backend ou frontend.',
 
 	// experience
 	'Career Journey': 'Trajetória Profissional',
 	Present: 'Atual',
 
-	exp_investidor10_role: 'Engenheiro de Software',
+	exp_investidor10_role: 'Líder Técnico e Engenheiro de Software (Contrato)',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'Novembro de 2023 – Atual',
 	exp_investidor10_location: 'Remoto (Baseado em Dublin)',
 
 	exp_investidor10_description:
-		'• Desenvolvo e mantenho a Carteira, principal produto de portfólio da plataforma, utilizado por mais de 24.000 usuários ativos entre planos gratuitos e pagos.\n• Participei da migração da Carteira de um monólito Laravel para React 19, Next.js e uma aplicação React Native offline-first.\n• Reestruturei o carregamento de dados no cliente com React Query para reduzir chamadas redundantes de API.\n• Desenvolvi o módulo de Imposto de Renda para o período anual de declaração no Brasil.',
+		'• Líder técnico e desenvolvedor da Carteira, principal produto de carteira da plataforma, que atende mais de 24.000 usuários por dia.\n• Construí atualizações em tempo real com WebSockets, cache e Redis.\n• Integrei IA e MCP para alimentar bots e insights inteligentes.\n• Participei da migração da Carteira de um monólito Laravel para React 19, Next.js e um app React Native offline-first.\n• Projetei e desenvolvi o produto de Imposto de Renda para o período anual de declaração no Brasil.',
 
 	exp_investidor10_techStack:
-		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, MongoDB, MySQL, Redis, AWS, Vercel, Supabase',
+		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, WebSockets, Redis, MongoDB, MySQL, AWS, Vercel, Supabase, MCP',
 
 	exp_bria_role: 'Engenheiro de Software & Desenvolvedor de Produto',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
@@ -65,28 +68,28 @@ const ptBR: Record<string, string> = {
 	exp_vega_location: 'Remoto',
 
 	exp_vega_description:
-		'• Desenvolvi e mantive integrações com múltiplos gateways de pagamento.\n• Melhorei a lógica de retry e o tratamento de transações para reduzir falhas de pagamento.\n• Refatorei o pipeline de transações e revisei alterações com o time.',
+		'• Concluí a migração do sistema legado de checkout em ASP.NET MVC para Laravel e Alpine.js após a aquisição pela Monetizze. Saí antes do lançamento oficial em produção.\n• Migrei a camada de gateways de pagamento configuráveis por cliente, com mais de 50 opções de gateway.',
 
-	exp_vega_techStack: 'PHP, Laravel, Tailwind CSS, MySQL',
+	exp_vega_techStack: 'PHP, Laravel, Alpine.js, Livewire, Tailwind CSS, MySQL',
 
-	exp_otimize_role: 'Desenvolvedor Full Stack',
+	exp_otimize_role: 'Desenvolvedor Full Stack (Contrato)',
 	exp_otimize_company: 'Payt (anteriormente Otimize)',
 	exp_otimize_period: 'Outubro de 2018 – Outubro de 2023',
 	exp_otimize_location: 'Remoto',
 
 	exp_otimize_description:
-		'• Desenvolvi a plataforma principal de pagamentos, incluindo processamento de transações, retries, webhooks, integrações com provedores e filas assíncronas.\n• Construí fluxos antifraude e integrações com gateways de pagamento utilizadas em produção.\n• Ajudei a escalar a plataforma desde o MVP até cerca de R$800 mil/mês em volume recorrente, com picos próximos de R$6,5 milhões/mês considerando todos os lojistas.\n• Trabalhei com os fundadores e o time de engenharia para definir e entregar funcionalidades do produto.',
+		'• Desenvolvi a plataforma principal de pagamentos em um time de cinco desenvolvedores: processamento de transações, retries, webhooks, integrações com provedores e filas assíncronas.\n• Ajudei a escalar a plataforma desde o MVP até aproximadamente R$6,5 milhões em volume mensal de transações no pico.\n• Construí fluxos antifraude que, em conjunto com o processo de pós-venda e suporte da empresa, reduziram em mais de 60% os casos de fraude e chargeback.\n• Trabalhei com os fundadores e o time de engenharia para definir e entregar funcionalidades do produto.',
 
 	exp_otimize_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
 
-	exp_diwe_role: 'Engenheiro de Software Full Stack',
+	exp_diwe_role: 'Desenvolvedor Full Stack (Contrato)',
 	exp_diwe_company: 'DIWE',
 	exp_diwe_period: 'Junho de 2021 – Abril de 2024',
 	exp_diwe_location: 'Remoto',
 
 	exp_diwe_description:
-		'• Desenvolvi software para Gerdau, Unimed, Saint-Gobain e Intelbras em projetos de saúde, manufatura, educação e indústria.\n• Construí uma plataforma de treinamento e certificação para a construção civil com cursos, avaliações e emissão automática de certificados digitais.',
+		'• Entreguei mais de 10 projetos para grandes clientes, incluindo Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco e Intelbras.\n• Projetei e desenvolvi o Parceiro da Construção, plataforma de treinamento e certificação para a construção civil com cursos online, avaliações automatizadas, certificados digitais e cerca de 1.500 usuários ativos.',
 
 	exp_diwe_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
@@ -130,7 +133,7 @@ const ptBR: Record<string, string> = {
 	proj_investidor10_title: 'Plataforma Investidor10',
 
 	proj_investidor10_description:
-		'Trabalhei na modernização do produto de carteira do Investidor10 enquanto ele continuava disponível para os usuários. A migração levou o produto de um monólito Laravel para React, Next.js e React Native.',
+		'Líder técnico e desenvolvedor da Carteira, produto de carteira do Investidor10: atualizações em tempo real, cache e insights com IA. Participei da migração de um monólito Laravel para React, Next.js e React Native sem tirar o produto do ar para os usuários.',
 
 	proj_bria_title: 'BRIA - Associação Brasil Irlanda',
 
@@ -145,7 +148,7 @@ const ptBR: Record<string, string> = {
 	proj_vega_title: 'Plataforma Vega Checkout',
 
 	proj_vega_description:
-		'Trabalhei em uma plataforma de checkout para e-commerce com integrações de gateways de pagamento, lógica de retry e processamento de transações.',
+		'Migrei uma plataforma de checkout de ASP.NET MVC para Laravel e Alpine.js após a aquisição pela Monetizze, incluindo gateways de pagamento configuráveis por cliente com mais de 50 opções.',
 
 	proj_intelbras_title: 'Plataforma Solar Intelbras',
 
@@ -155,7 +158,7 @@ const ptBR: Record<string, string> = {
 	proj_parceiro_title: 'Parceiro da Construção',
 
 	proj_parceiro_description:
-		'Desenvolvi gestão de cursos, acompanhamento de certificados e recursos de networking para uma plataforma B2B utilizada por mais de 300 mil profissionais da construção civil.',
+		'Desenvolvi gestão de cursos, acompanhamento de certificados e recursos de networking para uma plataforma B2B de treinamento para profissionais da construção civil, com cerca de 1.500 usuários ativos.',
 
 	proj_tom_title: 'Plataforma Tom Incorporadora',
 
@@ -235,10 +238,10 @@ const ptBR: Record<string, string> = {
 	'Key Achievements': 'Principais Resultados',
 
 	achievements_high_traffic:
-		'Desenvolvi e mantive um produto de investimentos utilizado por mais de 24.000 usuários ativos e sistemas de pagamento que chegaram a R$6,5 milhões em volume mensal no pico.',
+		'Lidero a parte técnica de um produto de investimentos que atende 24.000+ usuários por dia e ajudei a escalar uma plataforma de pagamentos até aproximadamente R$6,5 milhões em volume mensal no pico.',
 
 	achievements_business_mindset:
-		'Entreguei ferramentas tributárias, fluxos de pagamento e funcionalidades de investimento atuando em interfaces, APIs, bancos de dados e infraestrutura.',
+		'Construí fluxos antifraude que, junto com o processo de pós-venda e suporte da empresa, reduziram em mais de 60% os casos de fraude e chargeback.',
 
 	achievements_availability:
 		'Baseado em Dublin, Irlanda, e aberto a oportunidades remotas em engenharia de software.',

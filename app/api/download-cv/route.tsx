@@ -45,24 +45,25 @@ function parseMarkdown(content: string): Node[] {
 
 const styles = StyleSheet.create({
 	page: {
-		paddingVertical: 48,
-		paddingHorizontal: 52,
+		paddingVertical: 24,
+		paddingHorizontal: 40,
 		fontFamily: 'Helvetica',
-		fontSize: 9.5,
+		fontSize: 9,
 		color: '#111111',
-		lineHeight: 1.3,
+		lineHeight: 1.25,
 	},
 	h1: {
 		fontSize: 20,
 		fontFamily: 'Helvetica-Bold',
+		lineHeight: 1.4,
 		marginBottom: 4,
 		color: '#000000',
 	},
 	h2: {
 		fontSize: 11,
 		fontFamily: 'Helvetica-Bold',
-		marginTop: 16,
-		marginBottom: 5,
+		marginTop: 7,
+		marginBottom: 3,
 		paddingBottom: 3,
 		borderBottomWidth: 0.75,
 		borderBottomColor: '#bbbbbb',
@@ -73,8 +74,8 @@ const styles = StyleSheet.create({
 	h3: {
 		fontSize: 10.5,
 		fontFamily: 'Helvetica-Bold',
-		marginTop: 8,
-		marginBottom: 2,
+		marginTop: 5,
+		marginBottom: 1,
 		color: '#333333',
 	},
 	paragraph: {
@@ -100,7 +101,7 @@ function renderSegments(segments: Segment[]) {
 			</Text>
 		) : (
 			<Text key={i}>{seg.text}</Text>
-		),
+		)
 	);
 }
 
@@ -154,12 +155,15 @@ function CVDocument({ nodes }: { nodes: Node[] }) {
 export async function GET(request: NextRequest) {
 	const lang = request.nextUrl.searchParams.get('lang') ?? 'en';
 	const safeLang = ['en', 'pt'].includes(lang) ? lang : 'en';
+	const variant = request.nextUrl.searchParams.get('variant') ?? '';
+	const safeVariant = ['backend', 'frontend'].includes(variant) ? variant : '';
+	const baseName = safeVariant ? `${safeLang}-${safeVariant}` : safeLang;
 
 	let content: string;
 	try {
 		content = readFileSync(
-			join(process.cwd(), 'cvs', `${safeLang}.md`),
-			'utf-8',
+			join(process.cwd(), 'cvs', `${baseName}.md`),
+			'utf-8'
 		);
 	} catch {
 		return NextResponse.json({ error: 'CV file not found' }, { status: 404 });
@@ -167,7 +171,8 @@ export async function GET(request: NextRequest) {
 
 	const nodes = parseMarkdown(content);
 	const buffer = await renderToBuffer(<CVDocument nodes={nodes} />);
-	const filename = `Marcus_Vinicius_Bassalobre_Software_Engineer_${safeLang.toUpperCase()}.pdf`;
+	const suffix = safeVariant ? `_${safeVariant}` : '';
+	const filename = `Marcus_Vinicius_Bassalobre_Software_Engineer_${safeLang.toUpperCase()}${suffix}.pdf`;
 
 	return new NextResponse(new Uint8Array(buffer), {
 		headers: {

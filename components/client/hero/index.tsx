@@ -1,12 +1,46 @@
 'use client';
 
-import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
+import {
+	ArrowDown,
+	ChevronDown,
+	Mail,
+	Linkedin,
+	Github,
+	Download,
+} from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 import { Button } from '@/components/ui/button';
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, type Variants } from 'framer-motion';
+
+const CV_VARIANTS = [
+	{
+		id: 'fullstack',
+		query: '',
+		labelKey: 'cv_variant_fullstack',
+		labelEn: 'Full stack',
+	},
+	{
+		id: 'backend',
+		query: '&variant=backend',
+		labelKey: 'cv_variant_backend',
+		labelEn: 'Backend / payments',
+	},
+	{
+		id: 'frontend',
+		query: '&variant=frontend',
+		labelKey: 'cv_variant_frontend',
+		labelEn: 'Frontend / React',
+	},
+];
 
 const containerVariants: Variants = {
 	hidden: {},
@@ -82,7 +116,7 @@ export default function Hero({ content }: any): ReactNode {
 						>
 							{t(
 								'bio',
-								'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.',
+								'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.'
 							)}
 						</motion.p>
 
@@ -129,23 +163,32 @@ export default function Hero({ content }: any): ReactNode {
 									Github
 								</Link>
 							</Button>
-							<Link
-								href={`/api/download-cv?lang=${language}` as any}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Button
-									size="lg"
-									variant="outline"
-									asChild
-									className="bg-accent hover:bg-accent/90 w-full md:w-auto hover:text-white"
-								>
-									<span className="text-white">
+							<DropdownMenu>
+								<DropdownMenuTrigger asChild>
+									<Button
+										size="lg"
+										variant="outline"
+										className="bg-accent hover:bg-accent/90 w-full md:w-auto text-white hover:text-white"
+									>
 										<Download className="mr-2 h-4 w-4" />
 										{t('checkCv', 'Check my CV')}
-									</span>
-								</Button>
-							</Link>
+										<ChevronDown className="ml-2 h-4 w-4" />
+									</Button>
+								</DropdownMenuTrigger>
+								<DropdownMenuContent align="start">
+									{CV_VARIANTS.map((variant) => (
+										<DropdownMenuItem key={variant.id} asChild>
+											<a
+												href={`/api/download-cv?lang=${language}${variant.query}`}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												{t(variant.labelKey, variant.labelEn)}
+											</a>
+										</DropdownMenuItem>
+									))}
+								</DropdownMenuContent>
+							</DropdownMenu>
 						</motion.div>
 
 						<motion.div

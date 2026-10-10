@@ -8,11 +8,11 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Summary
 
-I build frontend and backend systems for fintech, payments, investment products, and internal business tools.
+Full stack engineer building payment, fintech, and investment products end to end, from React and Next.js to Node.js, NestJS, and Laravel.
 
-My main stack is TypeScript, React, Next.js, Node.js, NestJS, Laravel, and PHP. Recent work includes migrating an investment portfolio product from Laravel to React, Next.js, and React Native, improving payment retry flows, and integrating third-party APIs.
+Technical lead on Investidor10's Carteira portfolio product (24,000+ daily users), with real-time updates, caching, and AI integrations. Helped scale Payt's payment platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.
 
-I am based in Dublin, Ireland, and open to remote software engineering roles across full stack, backend, and frontend development.
+Based in Dublin, Ireland. Open to remote software engineering roles.
 
 ## Core Skills
 
@@ -20,89 +20,53 @@ I am based in Dublin, Ireland, and open to remote software engineering roles acr
 
 **Frontend:** React, Next.js, React Native, TanStack Query, Vue.js, Tailwind CSS
 
-**Backend:** Node.js, NestJS, Laravel, REST APIs, microservices, event-driven systems, queue-based systems
+**Backend:** Node.js, NestJS, Laravel, REST APIs, microservices, event-driven and queue-based systems
 
-**Databases:** PostgreSQL, MySQL, MongoDB, Redis
-
-**Cloud & DevOps:** AWS, Docker, GitHub Actions, Vercel, Supabase
-
-**Additional Experience:** payment processing, anti-fraud systems, investment platforms, tax products, offline-first applications, OpenAI and Anthropic API integrations
+**Data & Cloud:** PostgreSQL, MySQL, MongoDB, Redis, AWS, Docker, GitHub Actions, Vercel, Supabase, OpenAI and Anthropic APIs
 
 ## Professional Experience
 
-### Software Engineer, Investidor10
+All four roles below were contract engagements; several ran concurrently.
 
-Remote, contract | November 2023 - Present
+### Technical Lead & Software Engineer, Investidor10
 
-Investment platform used by investors across Latin America.
+Remote, contract | November 2023 - Present | Investment platform used by investors across Latin America
 
-- Develop and maintain the main portfolio product used by more than 24,000 active users.
-- Contributed to the migration of the portfolio product from a Laravel monolith to React 19, Next.js, and a React Native offline-first mobile application.
-- Reworked frontend data fetching with TanStack Query to reduce redundant API calls.
+- Technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily.
+- Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.
+- Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.
 - Designed and developed the Income Tax product for Brazil's annual tax season.
-
-### Full Stack Engineer, Vega Checkout
-
-Remote, part-time contract | January 2024 - July 2025
-
-Checkout and payments platform.
-
-- Developed and maintained integrations with multiple payment gateways.
-- Improved retry logic and transaction handling to reduce failed payments.
-- Refactored transaction pipeline code and reviewed changes with the team.
-
-### Full Stack Engineer, Diwe
-
-Remote | June 2021 - April 2024
-
-Enterprise software consultancy serving Brazilian organisations.
-
-- Built software for Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, education, and industrial projects.
-- Designed and developed a learning management platform with online courses, automated assessments, and digital certificates.
 
 ### Full Stack Engineer, Payt
 
-Remote | October 2018 - October 2023
+Remote, contract | October 2018 - October 2023 | Fintech startup focused on payment processing infrastructure
 
-Fintech startup focused on payment processing infrastructure.
+- Developed the core payment platform in a team of five developers: transaction processing, retries, webhooks, provider integrations, and asynchronous queues.
+- Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.
+- Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.
 
-- Developed the core payment platform, including processing flows, retries, webhooks, provider integrations, and asynchronous queues.
-- Helped scale the platform from MVP to approximately R$6.5M in peak monthly transaction volume.
-- Developed anti-fraud workflows used to evaluate transactions.
-- Worked with the founders and engineering team to define and ship product features.
+### Full Stack Engineer, Vega Checkout
 
-### Earlier Experience
+Remote, part-time contract | January 2024 - July 2025 | Checkout and payments platform, acquired by Monetizze
 
-- Full Stack Developer, Copy Supply | 2017 - 2018
-- Full Stack Developer, Alive IT | 2014 - 2017
-- Delphi Developer Intern, Guess Soluções e Tecnologia | 2013 - 2014
-- C++ Developer, Mastersel | 2010 - 2013
+- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition; left before the official production release.
+- Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.
 
-## Volunteering
+### Full Stack Engineer, Diwe
 
-### Software Engineer & Product Developer, Brazil Ireland Association (BRIA)
+Remote, contract | June 2021 - April 2024 | Enterprise software consultancy serving Brazilian organisations
 
-Dublin, Ireland | January 2026 - Present
+- Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.
+- Designed and developed Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.
 
-I build BRIA's website and internal tools for its operations and community programmes.
+**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | Delphi Developer Intern, Guess Soluções e Tecnologia (2013 - 2014) | C++ Developer, Mastersel (2010 - 2013)
 
-- Develop and maintain the organisation's website and digital platforms.
-- Turn requests from the association team into website features and internal tools.
+**Volunteering:** Software Engineer & Product Developer, Brazil Ireland Association (BRIA), Dublin, Ireland | January 2026 - Present | Build and maintain BRIA's website and internal tools for its operations and community programmes.
 
-## Education
+## Education & Certifications
 
-**Systems Analysis and Development**
+**Education:** Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2016
 
-Universidade de Marília (UNIMAR), Brazil | 2016
+**Certifications:** C1 Advanced English (Future Learning Ireland) | Machine Learning: Regression and Classification (Stanford, Coursera) | CS50 AI with Python (Harvard, edX)
 
-## Certifications
-
-- C1 Advanced English Certificate, Future Learning Ireland
-- Machine Learning: Regression and Classification, Stanford University, Coursera
-- CS50: Introduction to Artificial Intelligence with Python, Harvard University, edX
-
-## Languages
-
-**Portuguese:** Native
-
-**English:** C1 Advanced, certified
+**Languages:** Portuguese (native), English (C1 Advanced, certified)

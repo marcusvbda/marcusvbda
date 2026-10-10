@@ -79,7 +79,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_bria_location',
 		techStackKey: 'exp_bria_techStack',
 		descKey: 'exp_bria_description',
-		displayPriority: 2,
+		displayPriority: 5,
 	},
 	{
 		id: 'vega',
@@ -109,7 +109,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_otimize_location',
 		techStackKey: 'exp_otimize_techStack',
 		descKey: 'exp_otimize_description',
-		displayPriority: 5,
+		displayPriority: 2,
 	},
 	{
 		id: 'copysupply',

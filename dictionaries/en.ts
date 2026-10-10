@@ -19,9 +19,12 @@ const en: Record<string, string> = {
 	"Hi, I'm": "Hi, I'm",
 	location: 'Dublin, Ireland',
 
-	bio: 'I build frontend and backend systems for fintech, payment, and investment products with TypeScript, React, Next.js, Node.js, NestJS, and Laravel.',
+	bio: 'I build payment, fintech, and investment products with TypeScript, React, Next.js, Node.js, NestJS, and Laravel. I helped scale a payments platform to R$6.5M (~US$1.3M) a month and lead the technical side of a portfolio product with 24,000+ daily users.',
 
 	checkCv: 'Check my CV',
+	cv_variant_fullstack: 'Full stack',
+	cv_variant_backend: 'Backend / payments',
+	cv_variant_frontend: 'Frontend / React',
 	cta: 'Get in touch',
 	'Scroll down to explore': 'Scroll down to explore',
 
@@ -30,25 +33,25 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'I build web applications and internal tools, from frontend and APIs to databases and deployment. My recent work includes payment flows, investment products, and enterprise software.',
+		'Software engineer focused on payments, fintech, and high-volume systems. I work across frontend, APIs, queues, and databases.',
 
 	aboutDescription:
-		"On recent projects, I've taken payment, tax, and investment features from UI work through APIs and database changes to production.\n\nI've worked on payment retry flows, investment portfolios, income tax tools, enterprise applications, and internal systems.\n\nI work mainly with TypeScript, React, Next.js, Node.js, NestJS, Laravel, and PHP. I also use Claude Code, Cursor, and GitHub Copilot in my development workflow.\n\nI'm based in Dublin, Ireland, and open to remote software engineering roles across full stack, backend, and frontend development.",
+		"I built the core payment platform at Payt, a five-developer team, and helped it grow from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume. It covered transaction processing, retries, webhooks, provider integrations, asynchronous queues, and anti-fraud workflows.\n\nAt Investidor10 I am technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily. It runs real-time updates over WebSockets with caching and Redis, and uses AI and MCP for bots and intelligent insights. I also contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app, and built the Income Tax product for Brazil's annual tax season.\n\nI work mainly with TypeScript, React, Next.js, Node.js, NestJS, Laravel, and PHP. I also use Claude Code, Cursor, and GitHub Copilot in my development workflow.\n\nI'm based in Dublin, Ireland, and open to remote software engineering roles across full stack, backend, and frontend development.",
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_investidor10_role: 'Software Engineer',
+	exp_investidor10_role: 'Technical Lead & Software Engineer (Contract)',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'November 2023 – Present',
 	exp_investidor10_location: 'Remote (Based in Dublin)',
 
 	exp_investidor10_description:
-		"• Develop and maintain Carteira, the platform's main portfolio product, used by 24,000+ active users across free and paid tiers.\n• Contributed to the migration of Carteira from a Laravel monolith to React 19, Next.js, and a React Native offline-first application.\n• Reworked client-side data fetching with React Query to reduce redundant API calls.\n• Designed and developed the Income Tax module for Brazil's annual tax season.",
+		"• Technical lead and developer of Carteira, the platform's main portfolio product, serving 24,000+ users daily.\n• Built real-time updates with WebSockets, caching, and Redis.\n• Integrated AI and MCP to power bots and intelligent insights.\n• Contributed to the migration of Carteira from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.\n• Designed and developed the Income Tax product for Brazil's annual tax season.",
 
 	exp_investidor10_techStack:
-		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, MongoDB, MySQL, Redis, AWS, Vercel, Supabase',
+		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, WebSockets, Redis, MongoDB, MySQL, AWS, Vercel, Supabase, MCP',
 
 	exp_bria_role: 'Software Engineer & Product Developer',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
@@ -65,28 +68,28 @@ const en: Record<string, string> = {
 	exp_vega_location: 'Remote',
 
 	exp_vega_description:
-		'• Developed and maintained integrations with multiple payment gateways.\n• Improved retry logic and transaction handling to reduce failed payments.\n• Refactored transaction pipeline code and reviewed changes with the team.',
+		"• Completed the migration of the legacy ASP.NET MVC checkout system to Laravel and Alpine.js after the company's acquisition by Monetizze. Left before the official production release.\n• Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.",
 
-	exp_vega_techStack: 'PHP, Laravel, Tailwind CSS, MySQL',
+	exp_vega_techStack: 'PHP, Laravel, Alpine.js, Livewire, Tailwind CSS, MySQL',
 
-	exp_otimize_role: 'Full Stack Engineer',
+	exp_otimize_role: 'Full Stack Engineer (Contract)',
 	exp_otimize_company: 'Payt (formerly Otimize)',
 	exp_otimize_period: 'October 2018 – October 2023',
 	exp_otimize_location: 'Remote',
 
 	exp_otimize_description:
-		'• Developed the core payment platform, including transaction processing, retries, webhooks, provider integrations, and asynchronous queues.\n• Built anti-fraud workflows and payment gateway integrations used in production.\n• Helped scale the platform from MVP to around R$800K/month in regular transaction volume, with peaks near R$6.5M/month across all merchants.\n• Worked with the founders and engineering team to define and ship product features.',
+		"• Developed the core payment platform in a team of five developers: transaction processing, retries, webhooks, provider integrations, and asynchronous queues.\n• Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.\n• Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.\n• Worked with the founders and engineering team to define and ship product features.",
 
 	exp_otimize_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
 
-	exp_diwe_role: 'Full Stack Software Engineer',
+	exp_diwe_role: 'Full Stack Engineer (Contract)',
 	exp_diwe_company: 'DIWE',
 	exp_diwe_period: 'June 2021 – April 2024',
 	exp_diwe_location: 'Remote',
 
 	exp_diwe_description:
-		'• Built software for Gerdau, Unimed, Saint-Gobain, and Intelbras across healthcare, manufacturing, education, and industrial projects.\n• Built a training and certification platform for the construction industry with courses, assessments, and automatic digital certificates.',
+		'• Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.\n• Designed and developed Parceiro da Construção, a training and certification platform for the construction industry with online courses, automated assessments, digital certificates, and about 1,500 active users.',
 
 	exp_diwe_techStack:
 		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
@@ -129,7 +132,7 @@ const en: Record<string, string> = {
 	proj_investidor10_title: 'Investidor10 Platform',
 
 	proj_investidor10_description:
-		'Worked on modernising the Investidor10 portfolio product while it remained available to existing users. The migration moved it from a Laravel monolith to React, Next.js, and React Native.',
+		'Technical lead and developer of Carteira, the Investidor10 portfolio product: real-time updates, caching, and AI-powered insights. Contributed to its migration from a Laravel monolith to React, Next.js, and React Native while it stayed available to existing users.',
 
 	proj_bria_title: 'BRIA - Brazil Ireland Association',
 
@@ -144,7 +147,7 @@ const en: Record<string, string> = {
 	proj_vega_title: 'Vega Checkout Platform',
 
 	proj_vega_description:
-		'Worked on an e-commerce checkout platform with payment gateway integrations, retry logic, and transaction processing.',
+		'Migrated a checkout platform from ASP.NET MVC to Laravel and Alpine.js after its acquisition by Monetizze, including per-client configurable payment gateways with 50+ options.',
 
 	proj_intelbras_title: 'Intelbras Solar Platform',
 
@@ -154,7 +157,7 @@ const en: Record<string, string> = {
 	proj_parceiro_title: 'Parceiro da Construção',
 
 	proj_parceiro_description:
-		'Built course management, certificate tracking, and networking features for a B2B platform used by more than 300,000 construction professionals.',
+		'Built course management, certificate tracking, and networking features for a B2B training platform for construction professionals, with about 1,500 active users.',
 
 	proj_tom_title: 'Tom Incorporadora Platform',
 
@@ -234,10 +237,10 @@ const en: Record<string, string> = {
 	'Key Achievements': 'Key Achievements',
 
 	achievements_high_traffic:
-		'Built and maintained an investment product used by 24,000+ active users and payment systems that reached R$6.5M in peak monthly volume.',
+		'Lead the technical side of an investment product serving 24,000+ users daily, and helped scale a payments platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.',
 
 	achievements_business_mindset:
-		'Delivered tax tools, payment flows, and investment features across UI, APIs, databases, and infrastructure.',
+		"Built anti-fraud workflows that, with the company's post-sale and support process, cut fraud and chargeback cases by more than 60%.",
 
 	achievements_availability:
 		'Based in Dublin, Ireland and open to remote software engineering opportunities.',
