@@ -1,96 +1,72 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Senior AI-First Software Engineer | Software Architect**
+**Software Engineer | Full Stack Developer**
 
-Dublin, Ireland | +353 083 881 8967 | bassalobre.vinicius@gmail.com
+Dublin, Ireland | +353 83 881 8967 | bassalobre.vinicius@gmail.com
+
 linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
-## Professional Summary
+## Summary
 
-Senior Software Engineer with 13+ years of experience designing, modernising, and scaling financial systems, e-commerce platforms, and high-availability web applications. Specialist in AI-First engineering culture, combining deep software architecture expertise with advanced LLM orchestration (Cursor, Claude Code, GitHub Copilot) to accelerate delivery, improve code quality, and raise engineering productivity. Proven track record in technical leadership, architectural decision-making, and developer mentorship across fintech, payments, and enterprise software. Currently based in Dublin, Ireland, and eligible to work under the Critical Skills Employment Permit.
+Full stack engineer building payment, fintech, and investment products end to end, from React and Next.js to Node.js, NestJS, and Laravel.
+
+Technical lead on Investidor10's Carteira portfolio product (24,000+ daily users), with real-time updates, caching, and AI integrations. Helped scale Payt's payment platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.
+
+Based in Dublin, Ireland. Open to remote software engineering roles.
 
 ## Core Skills
 
-**Backend:** Laravel, Node.js, NestJS, PHP, Python, Java
-**Frontend:** React, Next.js, Vue.js, Nuxt.js, TypeScript, Tailwind CSS, Alpine.js, Livewire
-**Cloud & Infrastructure:** AWS, Vercel, Docker, CI/CD, GitFlow, Microservices, Redis, Supabase
-**Databases:** PostgreSQL, MySQL, MongoDB, Redis
-**AI & LLMs:** LLM Orchestration, Cursor, Claude Code, GitHub Copilot, OpenAI APIs, AI-First Development
-**Architecture & Practices:** Distributed Systems, Offline-First Architecture, Event-Driven Systems, Queue-Based Workflows, REST APIs, Anti-Fraud Systems, Payment Gateway Integration, Code Review, Technical Leadership, Agile
+**Languages:** TypeScript, JavaScript, PHP, Python
+
+**Frontend:** React, Next.js, React Native, TanStack Query, Vue.js, Tailwind CSS
+
+**Backend:** Node.js, NestJS, Laravel, REST APIs, microservices, event-driven and queue-based systems
+
+**Data & Cloud:** PostgreSQL, MySQL, MongoDB, Redis, AWS, Docker, GitHub Actions, Vercel, Supabase, OpenAI and Anthropic APIs
 
 ## Professional Experience
 
-### Senior AI-First Software Engineer
+All four roles below were contract engagements; several ran concurrently.
 
-**Investidor10** — Remote | November 2023 – Present
+### Technical Lead & Software Engineer, Investidor10
 
-- Led the modernisation and migration of one of the company's most critical financial products, transforming a Laravel monolith into a modern offline-first architecture using Next.js.
-- Defined caching strategies, data synchronisation, and offline-first workflows to significantly improve user experience on a high-traffic investment platform serving thousands of simultaneous users.
-- Architected and implemented scalable microservices, queue-based messaging systems, real-time data pipelines, and advanced performance optimisation workflows.
-- Contributed directly to an approximately 15% increase in paid user conversion following the launch of the redesigned portfolio experience.
-- Maximised team efficiency through practical AI-assisted engineering workflows using Cursor and LLMs, reducing delivery time and mitigating human error.
-- **Stack:** Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL, CI/CD, GitFlow, LLM Orchestration
+Remote, contract | November 2023 - Present | Investment platform used by investors across Latin America
 
-### Senior Software Engineer
+- Technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily.
+- Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.
+- Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.
+- Designed and developed the Income Tax product for Brazil's annual tax season.
 
-**Vega Checkout** — Remote | January 2024 – July 2025
+### Full Stack Engineer, Payt
 
-- Maintained and optimised scalable, resilient payment flows integrated with multiple market-leading payment gateways for high-volume e-commerce operations.
-- Improved transaction reliability and overall platform stability under peak traffic scenarios.
-- Supported engineering team growth through rigorous code reviews, best practice dissemination, and individual mentorship.
-- Developed robust Laravel applications for the e-commerce ecosystem and digital marketing automation pipelines.
-- **Stack:** Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL, GitFlow
+Remote, contract | October 2018 - October 2023 | Fintech startup focused on payment processing infrastructure
 
-### Technical Lead & Product Engineer
+- Developed the core payment platform in a team of five developers: transaction processing, retries, webhooks, provider integrations, and asynchronous queues.
+- Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.
+- Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.
 
-**Brazil Ireland Association (BRIA)** — Dublin, Ireland | January 2026 – Present
+### Full Stack Engineer, Vega Checkout
 
-– Design, develop, and maintain BRIA's website and digital platforms end-to-end
-– Build internal products and tools to support the organization's operations and community initiatives
-– Lead technical architecture, technology decisions, and product development
-– Work directly with stakeholders to identify problems, define requirements, and turn ideas into functional products
-– Develop and validate new SaaS products in collaboration with BRIA, using the organization as an early adopter and product incubation environment
-– Iterate on product workflows, requirements, and business models based on real-world usage and stakeholder feedback
+Remote, part-time contract | January 2024 - July 2025 | Checkout and payments platform, acquired by Monetizze
 
-### Senior Full Stack Software Engineer
+- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition; left before the official production release.
+- Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.
 
-**Diwe** — Remote | June 2021 – April 2024
+### Full Stack Engineer, Diwe
 
-- Delivered scalable enterprise systems for major corporations including Gerdau, Unimed, and Saint-Gobain across healthcare and heavy industry sectors.
-- Operated across multiple technical ecosystems (PHP, Node.js, Java, TypeScript, Python), navigating stack diversity with confidence and adaptability.
-- Actively contributed to corporate architecture discussions and the planning of new modules and microservices.
-- **Stack:** Laravel, Node.js, NestJS, Vue.js, Nuxt.js, TypeScript, Python, Java, AWS, MongoDB, PostgreSQL
+Remote, contract | June 2021 - April 2024 | Enterprise software consultancy serving Brazilian organisations
 
-### Senior Software Engineer / Tech Lead
+- Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.
+- Designed and developed Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.
 
-**Payt (formerly Otimize)** — Remote | October 2018 – October 2023
+**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | Delphi Developer Intern, Guess Soluções e Tecnologia (2013 - 2014) | C++ Developer, Mastersel (2010 - 2013)
 
-- Joined as the company's first software engineer, solely responsible for defining the engineering foundations and initial platform architecture from zero.
-- Built and scaled payment and e-commerce platforms from the ground up, which grew to process millions in monthly transactions.
-- Designed and implemented robust anti-fraud systems, webhook-based architectures, queue systems, and asynchronous processing workflows.
-- Architected scalable microservices and complex, secure integrations with multiple payment gateways.
-- Provided technical leadership and mentored the development team as the engineering organisation scaled.
-- **Stack:** Laravel, Vue.js, Nuxt.js, Node.js, NestJS, Python, MongoDB, PostgreSQL, Redis, Supabase
+**Volunteering:** Software Engineer & Product Developer, Brazil Ireland Association (BRIA), Dublin, Ireland | January 2026 - Present | Build and maintain BRIA's website and internal tools for its operations and community programmes.
 
-## Previous Experience
+## Education & Certifications
 
-- **Full Stack Developer** — Copy Supply | 2017 – 2018 (ASP.NET, Full Stack Development)
-- **Full Stack Developer** — Alive IT | 2014 – 2017 (PHP, C++, Web Development)
-- **Delphi Developer Intern** — Guess Soluções e Tecnologia | 2013 – 2014
-- **C++ Developer** — Mastersel | 2010 – 2013
+**Education:** Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2016
 
-## Education
+**Certifications:** C1 Advanced English (Future Learning Ireland) | Machine Learning: Regression and Classification (Stanford, Coursera) | CS50 AI with Python (Harvard, edX)
 
-**Technologist Degree in Systems Analysis and Development**
-Universidade de Marília (UNIMAR), Brazil | 2016
-
-## Certifications
-
-- **Harvard University CS50:** Introduction to Artificial Intelligence with Python
-- **Stanford University:** Supervised Machine Learning — Regression and Classification
-- **English for Career Development Programme:** Certified C1 Advanced Level
-
-## Languages
-
-- **Portuguese:** Native
-- **English:** C1 — Professional Working Proficiency
+**Languages:** Portuguese (native), English (C1 Advanced, certified)
