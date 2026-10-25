@@ -5,7 +5,7 @@ const en: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Software Engineer | Full Stack Developer',
+	cv_title: 'Full Stack Engineer | AI Agents',
 
 	// navbar
 	About: 'About',
@@ -17,9 +17,10 @@ const en: Record<string, string> = {
 
 	// hero
 	"Hi, I'm": "Hi, I'm",
+	hero_role: 'Full Stack Engineer building AI agents',
 	location: 'Dublin, Ireland',
 
-	bio: 'I build payment, fintech, and investment products with TypeScript, React, Next.js, Node.js, NestJS, and Laravel. I helped scale a payments platform to R$6.5M (~US$1.3M) a month and lead the technical side of a portfolio product with 24,000+ daily users.',
+	bio: 'Full stack engineer with 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production. Lead developer of Carteira at Investidor10 (24,000+ daily users) and founder of Gravity Labs.',
 
 	checkCv: 'Check my CV',
 	cv_variant_fullstack: 'Full stack',
@@ -33,121 +34,128 @@ const en: Record<string, string> = {
 	Summary: 'Summary',
 
 	about:
-		'Software engineer focused on payments, fintech, and high-volume systems. I work across frontend, APIs, queues, and databases.',
+		'Full stack engineer building payment, fintech, and investment products end to end, and AI agents that run in production.',
 
 	aboutDescription:
-		"I built the core payment platform at Payt, a five-developer team, and helped it grow from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume. It covered transaction processing, retries, webhooks, provider integrations, asynchronous queues, and anti-fraud workflows.\n\nAt Investidor10 I am technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily. It runs real-time updates over WebSockets with caching and Redis, and uses AI and MCP for bots and intelligent insights. I also contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app, and built the Income Tax product for Brazil's annual tax season.\n\nI work mainly with TypeScript, React, Next.js, Node.js, NestJS, Laravel, and PHP. I also use Claude Code, Cursor, and GitHub Copilot in my development workflow.\n\nI'm based in Dublin, Ireland, and open to remote software engineering roles across full stack, backend, and frontend development.",
+		"I have 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production. At Gravity Labs, an independent studio I founded, I build AI agents and web products for small businesses. For Divercity Park I designed and run a WhatsApp AI agent that answers customers and quotes parties with live prices from the park's API, hands conversations to staff with a summary when it can't answer, and turns unanswered questions into a FAQ the team completes.\n\nAt Investidor10 I am lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily. I am the most senior engineer on the product and the technical reference for architecture decisions and code review. I built its real-time updates (WebSockets, Redis) and AI/MCP integrations, contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app, and designed the Income Tax product for Brazil's annual tax season.\n\nBefore that I worked on Payt's core payment platform, scaling it from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume, with anti-fraud workflows that cut fraud and chargebacks by more than 60%. I also built a 50+ provider payment gateway layer at Vega Checkout and delivered 10+ enterprise projects at Diwe for clients such as Unimed, Gerdau, Saint-Gobain, Adidas, and Intelbras.\n\nI work with spec-driven development and AI coding agents (Claude Code) for planning, implementation, and review. My stack is TypeScript, PHP, Python, React, Next.js, React Native, Node.js, NestJS, Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, n8n, the OpenAI and Anthropic APIs, and MCP.\n\nI work as an independent contractor (B2B invoicing), which is why some engagements overlap. I'm based in Dublin, Ireland, and available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap.",
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_investidor10_role: 'Technical Lead & Software Engineer (Contract)',
+	exp_gravitylabs_role: 'Founder & AI Engineer',
+	exp_gravitylabs_company: 'Gravity Labs',
+	exp_gravitylabs_period: 'March 2024 – Present',
+	exp_gravitylabs_description:
+		"• Independent studio building AI agents and web products for small businesses.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
+	exp_gravitylabs_techStack:
+		'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
+
+	exp_investidor10_role: 'Senior Full Stack Engineer',
 	exp_investidor10_company: 'Investidor10',
 	exp_investidor10_period: 'November 2023 – Present',
-	exp_investidor10_location: 'Remote (Based in Dublin)',
+	exp_investidor10_location: 'Rio de Janeiro, Brazil',
 
 	exp_investidor10_description:
-		"• Technical lead and developer of Carteira, the platform's main portfolio product, serving 24,000+ users daily.\n• Built real-time updates with WebSockets, caching, and Redis.\n• Integrated AI and MCP to power bots and intelligent insights.\n• Contributed to the migration of Carteira from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.\n• Designed and developed the Income Tax product for Brazil's annual tax season.",
+		"• Lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily. Most senior engineer on the product: technical reference for architecture decisions and code review.\n• Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.\n• Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.\n• Designed and developed the Income Tax product for Brazil's annual tax season.",
 
 	exp_investidor10_techStack:
-		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, PHP, WebSockets, Redis, MongoDB, MySQL, AWS, Vercel, Supabase, MCP',
+		'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, Redis, WebSockets, MCP, OpenAI/Anthropic APIs',
 
 	exp_bria_role: 'Software Engineer & Product Developer',
 	exp_bria_company: 'BRIA – Brazil Ireland Association',
 	exp_bria_period: 'January 2026 – Present',
 	exp_bria_location: 'Dublin, Ireland',
 	exp_bria_description:
-		"• Develop and maintain the association's websites and digital platforms.\n• Build internal tools for its operations and community programmes.\n• Turn requests from the association team into website features and internal tools.",
-	exp_bria_techStack:
-		'React, Next.js, Vercel, Product Development, Technical Planning',
+		"• Software engineer and product developer for BRIA's website and internal tools, supporting its operations and community programmes.\n• Built the multilingual institutional website with Next.js and Strapi: responsive, SEO-friendly, with content the team manages without code.\n• Build internal tools and integrations for the association's operations and community initiatives.\n• Work directly with stakeholders to turn requirements into working software and iterate on real usage and feedback.",
+	exp_bria_techStack: 'Next.js, Strapi',
 
-	exp_vega_role: 'Full Stack Engineer (Part-Time Contract)',
+	exp_vega_role: 'Full Stack Engineer',
 	exp_vega_company: 'Vega Checkout',
 	exp_vega_period: 'January 2024 – July 2025',
-	exp_vega_location: 'Remote',
+	exp_vega_location: 'Barueri, São Paulo, Brazil',
 
 	exp_vega_description:
-		"• Completed the migration of the legacy ASP.NET MVC checkout system to Laravel and Alpine.js after the company's acquisition by Monetizze. Left before the official production release.\n• Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.",
+		'• Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the acquisition by Monetizze.\n• Migrated the per-client configurable payment gateway layer, covering 50+ gateway options.\n• Maintained high-volume payment flows and integrations with multiple gateways, focusing on transaction reliability and platform stability.',
 
-	exp_vega_techStack: 'PHP, Laravel, Alpine.js, Livewire, Tailwind CSS, MySQL',
+	exp_vega_techStack:
+		'Laravel, Alpine.js, PHP, payment gateway integrations',
 
-	exp_otimize_role: 'Full Stack Engineer (Contract)',
-	exp_otimize_company: 'Payt (formerly Otimize)',
+	exp_otimize_role: 'Full Stack Engineer',
+	exp_otimize_company: 'Otimize / Payt',
 	exp_otimize_period: 'October 2018 – October 2023',
-	exp_otimize_location: 'Remote',
+	exp_otimize_location: 'São Paulo, Brazil',
 
 	exp_otimize_description:
-		"• Developed the core payment platform in a team of five developers: transaction processing, retries, webhooks, provider integrations, and asynchronous queues.\n• Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.\n• Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.\n• Worked with the founders and engineering team to define and ship product features.",
+		'• Full stack engineer on the core payment platform of a fintech startup, in a team of five developers.\n• Built transaction processing, retries, webhooks, payment provider integrations, and asynchronous queues.\n• Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.\n• Built anti-fraud workflows that, together with the post-sale and support process, cut fraud and chargeback cases by more than 60%.\n• Worked on microservices, APIs, and event-driven systems for high-volume transaction processing.',
 
-	exp_otimize_techStack:
-		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, React Native, MongoDB, PostgreSQL, Redis, Supabase',
-
-	exp_diwe_role: 'Full Stack Engineer (Contract)',
+	exp_diwe_role: 'Full Stack Engineer',
 	exp_diwe_company: 'DIWE',
 	exp_diwe_period: 'June 2021 – April 2024',
-	exp_diwe_location: 'Remote',
+	exp_diwe_location: 'Joinville, Santa Catarina, Brazil',
 
 	exp_diwe_description:
-		'• Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.\n• Designed and developed Parceiro da Construção, a training and certification platform for the construction industry with online courses, automated assessments, digital certificates, and about 1,500 active users.',
+		'• Full stack engineer at an enterprise software consultancy serving large Brazilian organisations.\n• Delivered 10+ projects for clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.\n• Designed and built Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.\n• Contributed to architecture and system design decisions across multiple technology stacks.',
 
-	exp_diwe_techStack:
-		'TypeScript, Node.js, NestJS, PHP, Laravel, Vue.js, Nuxt.js, Java, Python, MongoDB, PostgreSQL, AWS',
+	exp_umar_role: 'Software Owner (CRM Full Stack Developer)',
+	exp_umar_company: 'Universidade de Marília',
+	exp_umar_period: 'October 2017 – September 2023',
+	exp_umar_location: 'Marília, São Paulo, Brazil',
 
-	exp_copysupply_role: 'Full Stack Developer',
+	exp_copysupply_role: 'Software Developer (ASP.NET MVC)',
 	exp_copysupply_company: 'Copy Supply',
-	exp_copysupply_period: '2017 – 2018',
+	exp_copysupply_period: 'December 2017 – October 2018',
 	exp_copysupply_location: 'São Paulo, Brazil',
-	exp_copysupply_description:
-		'• Built ASP.NET web applications backed by databases.',
-	exp_copysupply_techStack: 'ASP.NET, Full Stack Development',
 
-	exp_aliveit_role: 'Full Stack Developer',
-	exp_aliveit_company: 'Alive IT',
-	exp_aliveit_period: '2014 – 2017',
+	exp_aliveit_role: 'Developer (PHP, C++, Firebird)',
+	exp_aliveit_company: 'alive it',
+	exp_aliveit_period: 'October 2014 – December 2017',
 	exp_aliveit_location: 'Marília, São Paulo, Brazil',
-	exp_aliveit_description:
-		'• Built web applications and CRM systems with PHP and C++.',
-	exp_aliveit_techStack: 'PHP, C++, Web Development',
-
-	exp_guess_role: 'Delphi Developer Intern',
-	exp_guess_company: 'Guess Soluções em Tecnologia',
-	exp_guess_period: '2013 – 2014',
-	exp_guess_location: 'Marília, Brazil',
-	exp_guess_description: '• Built and maintained Delphi applications.',
-	exp_guess_techStack: 'Delphi',
 
 	exp_masterel_role: 'C++ Developer',
 	exp_masterel_company: 'Mastersel',
-	exp_masterel_period: '2010 – 2013',
-	exp_masterel_location: 'Marília, Brazil',
-	exp_masterel_description: '• Built and maintained internal C++ applications.',
-	exp_masterel_techStack: 'C++',
+	exp_masterel_period: 'October 2010 – October 2013',
+	exp_masterel_location: 'Marília, São Paulo, Brazil',
 
 	// projects
 	'Featured Projects': 'Featured Projects',
 	"What I've Built": "What I've Built",
 	'View Project': 'View Project',
 
-	proj_investidor10_title: 'Investidor10 Platform',
+	proj_gravitylabs_title: 'Gravity Labs',
 
-	proj_investidor10_description:
-		'Technical lead and developer of Carteira, the Investidor10 portfolio product: real-time updates, caching, and AI-powered insights. Contributed to its migration from a Laravel monolith to React, Next.js, and React Native while it stayed available to existing users.',
-
-	proj_bria_title: 'BRIA - Brazil Ireland Association',
-
-	proj_bria_description:
-		"Built BRIA's multilingual website with Next.js and Strapi. I led the technical implementation, including the responsive frontend, SEO, and editable content for events, partners, media, and community programmes.",
+	proj_gravitylabs_description:
+		'Independent studio building AI agents and web products for small businesses.',
 
 	proj_divercity_title: 'Divercity Park',
 
 	proj_divercity_description:
-		"Built the website for a children's entertainment venue in a shopping centre. It lists attractions, events, prices, and contact details in a visual style designed for families.",
+		"WhatsApp AI agent in production that answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop. Also built the park's website with digital party-contract signing and advance tickets with QR validation.",
+
+	proj_talentlabs_title: 'Talent Labs',
+
+	proj_talentlabs_description:
+		"In closed beta. Job-search platform for candidates: collects job postings from multiple sources, uses an LLM to extract structured data from each posting (stack, seniority, location, remote), finds the company's recruiting contact, and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.",
+
+	proj_trakk_title: 'Trakk',
+
+	proj_trakk_description:
+		'Personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Deployed and in daily use.',
+
+	proj_investidor10_title: 'Investidor10 Platform',
+
+	proj_investidor10_description:
+		'Lead developer and owner of Carteira, the Investidor10 portfolio product serving 24,000+ users daily: real-time updates (WebSockets, caching, Redis) and AI/MCP integrations. Contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.',
+
+	proj_bria_title: 'BRIA - Brazil Ireland Association',
+
+	proj_bria_description:
+		"Built BRIA's multilingual institutional website with Next.js and Strapi: responsive, SEO-friendly, with content the team manages without code.",
 
 	proj_vega_title: 'Vega Checkout Platform',
 
 	proj_vega_description:
-		'Migrated a checkout platform from ASP.NET MVC to Laravel and Alpine.js after its acquisition by Monetizze, including per-client configurable payment gateways with 50+ options.',
+		'Completed the migration of a checkout platform from ASP.NET MVC to Laravel and Alpine.js after its acquisition by Monetizze, and migrated its per-client configurable payment gateway layer, covering 50+ gateway options.',
 
 	proj_intelbras_title: 'Intelbras Solar Platform',
 
@@ -157,7 +165,7 @@ const en: Record<string, string> = {
 	proj_parceiro_title: 'Parceiro da Construção',
 
 	proj_parceiro_description:
-		'Built course management, certificate tracking, and networking features for a B2B training platform for construction professionals, with about 1,500 active users.',
+		'Designed and built a training and certification platform for the construction industry: online courses, automated assessments, and digital certificates, with about 1,500 active users.',
 
 	proj_tom_title: 'Tom Incorporadora Platform',
 
@@ -191,18 +199,20 @@ const en: Record<string, string> = {
 
 	// education
 	edu_unimar_title: 'Technologist Degree in Systems Analysis and Development',
-	edu_unimar_description: 'Universidade de Marília (UNIMAR) — Brazil (2016)',
+	edu_unimar_description:
+		'Universidade de Marília (UNIMAR) — Brazil (January 2013 – December 2016)',
 
 	edu_harvardX_title:
-		'CS50 – Introduction to Artificial Intelligence with Python',
-	edu_harvardX_description: 'Harvard University (2025)',
+		"CS50's Introduction to Artificial Intelligence with Python",
+	edu_harvardX_description: 'Harvard University (February – April 2025)',
 
 	edu_deepLearning_title:
-		'Supervised Machine Learning — Regression and Classification',
-	edu_deepLearning_description: 'Stanford University / DeepLearning.AI (2025)',
+		'Supervised Machine Learning: Regression and Classification',
+	edu_deepLearning_description: 'Stanford University / DeepLearning.AI',
 
-	edu_futureLearning_title: 'English for Career Development Programme',
-	edu_futureLearning_description: 'C1 Advanced Level Certified (2025)',
+	edu_futureLearning_title: 'English for Career Development, C1 level',
+	edu_futureLearning_description:
+		'Future Learning — 25 weeks (March 2025 – July 2026)',
 
 	// skills
 	'Skills & Technologies': 'Skills & Technologies',
@@ -210,26 +220,24 @@ const en: Record<string, string> = {
 
 	skills_arch_label: 'Software Engineering',
 	skills_arch_skills:
-		'REST APIs · Microservices · Distributed Systems · Payments · System Design · Event-Driven Systems',
+		'REST APIs · Microservices · Event-Driven Systems · Asynchronous Queues · Payments · WebSockets · System Design',
 
 	skills_backend_label: 'Backend',
-	skills_backend_skills: 'Laravel · Node.js · NestJS · PHP · Python · Java',
+	skills_backend_skills: 'Node.js · NestJS · Laravel · PHP · Python · Strapi',
 
 	skills_frontend_label: 'Frontend',
 	skills_frontend_skills:
-		'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
+		'React · Next.js · React Native · TypeScript · Alpine.js',
 
-	skills_data_label: 'Databases & Performance',
-	skills_data_skills:
-		'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
+	skills_data_label: 'Databases & Caching',
+	skills_data_skills: 'PostgreSQL · MySQL · Redis',
 
 	skills_cloud_label: 'Cloud & Infrastructure',
-	skills_cloud_skills:
-		'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+	skills_cloud_skills: 'AWS · Docker · Vercel · Supabase · Bitbucket',
 
-	skills_ai_label: 'AI-Assisted Development',
+	skills_ai_label: 'AI Agents & LLMs',
 	skills_ai_skills:
-		'Cursor · Claude Code · GitHub Copilot · OpenAI APIs · LLM Integration',
+		'LLMs · OpenAI API · Anthropic API · MCP · n8n · WAHA · Claude Code',
 
 	'Earlier Experience': 'Earlier Experience',
 
@@ -237,20 +245,20 @@ const en: Record<string, string> = {
 	'Key Achievements': 'Key Achievements',
 
 	achievements_high_traffic:
-		'Lead the technical side of an investment product serving 24,000+ users daily, and helped scale a payments platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.',
+		'Lead developer of an investment product serving 24,000+ users daily, and helped scale a payments platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.',
 
 	achievements_business_mindset:
 		"Built anti-fraud workflows that, with the company's post-sale and support process, cut fraud and chargeback cases by more than 60%.",
 
 	achievements_availability:
-		'Based in Dublin, Ireland and open to remote software engineering opportunities.',
+		'Based in Dublin, Ireland. Available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap.',
 
 	// contact
 	'Get in Touch': 'Get in Touch',
 	"Let's Build Something Great": "Let's work together",
 
 	contactDescription:
-		'If you are hiring for a remote full stack, backend, or frontend engineering role, get in touch.',
+		'Available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap. Get in touch.',
 
 	Location: 'Location',
 	Phone: 'Phone',

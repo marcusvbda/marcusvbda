@@ -14,30 +14,30 @@ const EDUCATION: Array<{
 	{
 		id: 'unimar',
 		titleKey: 'edu_unimar_title',
-		titleEn: 'BSc in Systems Analysis and Development',
+		titleEn: 'Technologist Degree in Systems Analysis and Development',
 		descKey: 'edu_unimar_description',
-		descEn: 'Universidade de Marília, Brazil.',
+		descEn: 'Universidade de Marília (UNIMAR) — Brazil (January 2013 – December 2016)',
 	},
 	{
 		id: 'harvardX',
 		titleKey: 'edu_harvardX_title',
-		titleEn: "CS50's Introduction to Computer Science",
+		titleEn: "CS50's Introduction to Artificial Intelligence with Python",
 		descKey: 'edu_harvardX_description',
-		descEn: 'Harvard University (2025).',
+		descEn: 'Harvard University (February – April 2025)',
 	},
 	{
 		id: 'deepLearning',
 		titleKey: 'edu_deepLearning_title',
-		titleEn: 'Supervised Machine Learning',
+		titleEn: 'Supervised Machine Learning: Regression and Classification',
 		descKey: 'edu_deepLearning_description',
-		descEn: 'Stanford Online / DeepLearning.AI (2025).',
+		descEn: 'Stanford University / DeepLearning.AI',
 	},
 	{
 		id: 'futureLearning',
 		titleKey: 'edu_futureLearning_title',
-		titleEn: 'Advanced English',
+		titleEn: 'English for Career Development, C1 level',
 		descKey: 'edu_futureLearning_description',
-		descEn: 'Future Learning Ireland (Dublin, 2025).',
+		descEn: 'Future Learning — 25 weeks (March 2025 – July 2026)',
 	},
 ];
 

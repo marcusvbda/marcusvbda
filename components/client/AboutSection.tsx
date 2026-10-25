@@ -40,7 +40,7 @@ export default function About(): ReactNode {
 					<p className="text-lg text-muted-foreground">
 						{t(
 							'about',
-							"Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms.",
+							'Full stack engineer building payment, fintech, and investment products end to end, and AI agents that run in production.',
 						)}
 					</p>
 				</motion.div>
@@ -77,7 +77,7 @@ export default function About(): ReactNode {
 					>
 						{t(
 							'aboutDescription',
-							'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms.\n\nSpecialised in high-performance APIs, distributed systems, and cloud-native architectures, with a proven track record improving system performance, scaling platforms to millions of users, and reducing infrastructure costs through architecture and performance engineering.\n\nCore expertise across system architecture, high-traffic backend systems, performance engineering, microservices and distributed systems, cloud infrastructure (AWS), API design and scalability, and technical leadership and mentoring.\n\nBased in Dublin, Ireland and eligible to work in Ireland, including for the Critical Skills Employment Permit.',
+							'Full stack engineer with 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production.',
 						)
 							.split('\n')
 							.map((x: string, key: number) => (

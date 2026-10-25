@@ -15,60 +15,32 @@ const EXPERIENCES: Array<{
 	periodEn: string;
 	locationKey?: string;
 	locationEn?: string;
-	descKey: string;
-	descEn: string;
+	descKey?: string;
+	descEn?: string;
 }> = [
+	{
+		id: 'gravitylabs',
+		company: 'Gravity Labs',
+		roleKey: 'exp_gravitylabs_role',
+		roleEn: 'Founder & AI Engineer',
+		periodKey: 'exp_gravitylabs_period',
+		periodEn: 'March 2024 – Present',
+		descKey: 'exp_gravitylabs_description',
+		descEn:
+			"• Independent studio building AI agents and web products for small businesses.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
+	},
 	{
 		id: 'investidor10',
 		company: 'Investidor10',
 		roleKey: 'exp_investidor10_role',
-		roleEn: 'Technical Lead & Software Engineer (Contract)',
+		roleEn: 'Senior Full Stack Engineer',
 		periodKey: 'exp_investidor10_period',
-		periodEn: 'Nov 2023 – Present',
+		periodEn: 'November 2023 – Present',
 		locationKey: 'exp_investidor10_location',
-		locationEn: 'Remote (Based in Dublin)',
+		locationEn: 'Rio de Janeiro, Brazil',
 		descKey: 'exp_investidor10_description',
 		descEn:
-			"• Technical lead and developer of Carteira, the platform's main portfolio product, serving 24,000+ users daily.\n• Built real-time updates with WebSockets, caching, and Redis.\n• Integrated AI and MCP to power bots and intelligent insights.\n• Contributed to the migration of Carteira from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.\n• Designed and developed the Income Tax product for Brazil's annual tax season.",
-	},
-	{
-		id: 'otimize',
-		company: 'Payt (formerly Otimize)',
-		roleKey: 'exp_otimize_role',
-		roleEn: 'Full Stack Engineer (Contract)',
-		periodKey: 'exp_otimize_period',
-		periodEn: 'Oct 2018 – Oct 2023',
-		locationKey: 'exp_otimize_location',
-		locationEn: 'Remote',
-		descKey: 'exp_otimize_description',
-		descEn:
-			"• Developed the core payment platform in a team of five developers: transaction processing, retries, webhooks, provider integrations, and asynchronous queues.\n• Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.\n• Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.\n• Worked with the founders and engineering team to define and ship product features.",
-	},
-	{
-		id: 'vega',
-		company: 'Vega Checkout',
-		roleKey: 'exp_vega_role',
-		roleEn: 'Full Stack Engineer (Part-Time Contract)',
-		periodKey: 'exp_vega_period',
-		periodEn: 'Jan 2024 – Jul 2025',
-		locationKey: 'exp_vega_location',
-		locationEn: 'Remote',
-		descKey: 'exp_vega_description',
-		descEn:
-			"• Completed the migration of the legacy ASP.NET MVC checkout system to Laravel and Alpine.js after the company's acquisition by Monetizze. Left before the official production release.\n• Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.",
-	},
-	{
-		id: 'diwe',
-		company: 'DIWE',
-		roleKey: 'exp_diwe_role',
-		roleEn: 'Full Stack Engineer (Contract)',
-		periodKey: 'exp_diwe_period',
-		periodEn: 'Jun 2021 – Apr 2024',
-		locationKey: 'exp_diwe_location',
-		locationEn: 'Remote',
-		descKey: 'exp_diwe_description',
-		descEn:
-			'• Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, and Intelbras.\n• Designed and developed Parceiro da Construção, a training and certification platform for the construction industry with online courses, automated assessments, digital certificates, and about 1,500 active users.',
+			"• Lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily. Most senior engineer on the product: technical reference for architecture decisions and code review.\n• Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.\n• Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.\n• Designed and developed the Income Tax product for Brazil's annual tax season.",
 	},
 	{
 		id: 'bria',
@@ -76,50 +48,81 @@ const EXPERIENCES: Array<{
 		roleKey: 'exp_bria_role',
 		roleEn: 'Software Engineer & Product Developer',
 		periodKey: 'exp_bria_period',
-		periodEn: 'Jan 2026 – Present',
+		periodEn: 'January 2026 – Present',
 		locationKey: 'exp_bria_location',
 		locationEn: 'Dublin, Ireland',
 		descKey: 'exp_bria_description',
 		descEn:
-			"• Develop and maintain the association's websites and digital platforms.\n• Build internal tools for its operations and community programmes.\n• Turn requests from the association team into website features and internal tools.",
+			"• Software engineer and product developer for BRIA's website and internal tools, supporting its operations and community programmes.\n• Built the multilingual institutional website with Next.js and Strapi: responsive, SEO-friendly, with content the team manages without code.\n• Build internal tools and integrations for the association's operations and community initiatives.\n• Work directly with stakeholders to turn requirements into working software and iterate on real usage and feedback.",
+	},
+	{
+		id: 'vega',
+		company: 'Vega Checkout',
+		roleKey: 'exp_vega_role',
+		roleEn: 'Full Stack Engineer',
+		periodKey: 'exp_vega_period',
+		periodEn: 'January 2024 – July 2025',
+		locationKey: 'exp_vega_location',
+		locationEn: 'Barueri, São Paulo, Brazil',
+		descKey: 'exp_vega_description',
+		descEn:
+			'• Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the acquisition by Monetizze.\n• Migrated the per-client configurable payment gateway layer, covering 50+ gateway options.\n• Maintained high-volume payment flows and integrations with multiple gateways, focusing on transaction reliability and platform stability.',
+	},
+	{
+		id: 'diwe',
+		company: 'DIWE',
+		roleKey: 'exp_diwe_role',
+		roleEn: 'Full Stack Engineer',
+		periodKey: 'exp_diwe_period',
+		periodEn: 'June 2021 – April 2024',
+		locationKey: 'exp_diwe_location',
+		locationEn: 'Joinville, Santa Catarina, Brazil',
+		descKey: 'exp_diwe_description',
+		descEn:
+			'• Full stack engineer at an enterprise software consultancy serving large Brazilian organisations.\n• Delivered 10+ projects for clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.\n• Designed and built Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.\n• Contributed to architecture and system design decisions across multiple technology stacks.',
+	},
+	{
+		id: 'otimize',
+		company: 'Otimize / Payt',
+		roleKey: 'exp_otimize_role',
+		roleEn: 'Full Stack Engineer',
+		periodKey: 'exp_otimize_period',
+		periodEn: 'October 2018 – October 2023',
+		locationKey: 'exp_otimize_location',
+		locationEn: 'São Paulo, Brazil',
+		descKey: 'exp_otimize_description',
+		descEn:
+			'• Full stack engineer on the core payment platform of a fintech startup, in a team of five developers.\n• Built transaction processing, retries, webhooks, payment provider integrations, and asynchronous queues.\n• Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.\n• Built anti-fraud workflows that, together with the post-sale and support process, cut fraud and chargeback cases by more than 60%.\n• Worked on microservices, APIs, and event-driven systems for high-volume transaction processing.',
+	},
+	{
+		id: 'umar',
+		company: 'Universidade de Marília',
+		roleKey: 'exp_umar_role',
+		roleEn: 'Software Owner (CRM Full Stack Developer)',
+		periodKey: 'exp_umar_period',
+		periodEn: 'October 2017 – September 2023',
+		locationKey: 'exp_umar_location',
+		locationEn: 'Marília, São Paulo, Brazil',
 	},
 	{
 		id: 'copysupply',
 		company: 'Copy Supply',
 		roleKey: 'exp_copysupply_role',
-		roleEn: 'Full Stack Developer',
+		roleEn: 'Software Developer (ASP.NET MVC)',
 		periodKey: 'exp_copysupply_period',
-		periodEn: '2017 – 2018',
+		periodEn: 'December 2017 – October 2018',
 		locationKey: 'exp_copysupply_location',
 		locationEn: 'São Paulo, Brazil',
-		descKey: 'exp_copysupply_description',
-		descEn:
-			'• Built web platforms and enterprise applications focused on full stack development and database-driven systems.',
 	},
 	{
 		id: 'aliveit',
-		company: 'Alive IT',
+		company: 'alive it',
 		roleKey: 'exp_aliveit_role',
-		roleEn: 'Full Stack Developer',
+		roleEn: 'Developer (PHP, C++, Firebird)',
 		periodKey: 'exp_aliveit_period',
-		periodEn: '2014 – 2017',
+		periodEn: 'October 2014 – December 2017',
 		locationKey: 'exp_aliveit_location',
 		locationEn: 'Marília, São Paulo, Brazil',
-		descKey: 'exp_aliveit_description',
-		descEn:
-			'• Built web platforms, CRM systems and enterprise applications across multiple industries.\n• Focused on full stack development, APIs and database-driven systems.',
-	},
-	{
-		id: 'guess',
-		company: 'Guess Soluções em Tecnologia',
-		roleKey: 'exp_guess_role',
-		roleEn: 'Delphi Developer Intern',
-		periodKey: 'exp_guess_period',
-		periodEn: '2013 – 2014',
-		locationKey: 'exp_guess_location',
-		locationEn: 'Marília, Brazil',
-		descKey: 'exp_guess_description',
-		descEn: '• Early career experience in technology and software development.',
 	},
 	{
 		id: 'masterel',
@@ -127,16 +130,20 @@ const EXPERIENCES: Array<{
 		roleKey: 'exp_masterel_role',
 		roleEn: 'C++ Developer',
 		periodKey: 'exp_masterel_period',
-		periodEn: '2010 – 2013',
+		periodEn: 'October 2010 – October 2013',
 		locationKey: 'exp_masterel_location',
-		locationEn: 'Marília, Brazil',
-		descKey: 'exp_masterel_description',
-		descEn:
-			'• Early career development of enterprise applications and software systems.',
+		locationEn: 'Marília, São Paulo, Brazil',
 	},
 ];
 
-const RECENT_IDS = new Set(['investidor10', 'bria', 'vega', 'diwe', 'otimize']);
+const RECENT_IDS = new Set([
+	'gravitylabs',
+	'investidor10',
+	'bria',
+	'vega',
+	'diwe',
+	'otimize',
+]);
 
 const containerVariants: Variants = {
 	hidden: {},
@@ -226,7 +233,7 @@ export default function Experiences(): ReactNode {
 									</CardHeader>
 									<CardContent className="space-y-4">
 										<p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-											{t(exp.descKey, exp.descEn)}
+											{exp.descKey && t(exp.descKey, exp.descEn)}
 										</p>
 									</CardContent>
 								</Card>

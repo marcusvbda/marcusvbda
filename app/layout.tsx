@@ -29,13 +29,13 @@ export const viewport = {
 
 export async function generateMetadata(): Promise<Metadata> {
 	const title = 'Marcus Vinicius Bassalobre de Assis';
-	const description = 'Software Engineer';
+	const description = 'Full Stack Engineer building AI agents';
 
 	return {
 		title,
 		description,
 		keywords:
-			'Software engineer, Fullstack, senior developer, React, Next.js, Laravel, TypeScript, Dublin, software architect',
+			'Full stack engineer, AI agents, LLM, MCP, React, Next.js, Laravel, TypeScript, Dublin',
 		authors: [{ name: title }],
 		openGraph: {
 			title: `${title} - ${description}`,

@@ -102,7 +102,7 @@ export default function Hero({ content }: any): ReactNode {
 								Marcus Vinicius Bassalobre de Assis
 							</h1>
 							<h2 className="text-2xl md:text-3xl font-semibold text-accent">
-								Senior Software Engineer
+								{t('hero_role', 'Full Stack Engineer building AI agents')}
 							</h2>
 							<p className="text-sm text-muted-foreground flex items-center gap-2">
 								<span className="inline-block w-2 h-2 bg-accent rounded-full animate-pulse" />
@@ -116,7 +116,7 @@ export default function Hero({ content }: any): ReactNode {
 						>
 							{t(
 								'bio',
-								'Senior Software Engineer with 15+ years of experience designing, scaling, and optimising backend systems for fintech, SaaS, and high-traffic platforms, with a strong focus on high-performance APIs, distributed systems, and cloud-native architectures.'
+								'Full stack engineer with 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production.'
 							)}
 						</motion.p>
 

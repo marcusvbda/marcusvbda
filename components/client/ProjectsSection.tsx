@@ -11,6 +11,8 @@ import {
 	DialogDescription,
 } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
@@ -20,35 +22,57 @@ const PROJECTS: Array<{
 	titleKey: string;
 	descKey: string;
 	tech: string;
+	url?: string;
 }> = [
 	{
-		id: 'investidor10',
-		image: '/companies/i10.jpeg',
-		titleKey: 'proj_investidor10_title',
-		descKey: 'proj_investidor10_description',
-		tech: 'Laravel, React, Next.js, TypeScript, Tailwind CSS, AWS, Redis, Vercel, MySQL',
-	},
-
-	{
-		id: 'bria',
-		image: '/companies/bria.png',
-		titleKey: 'proj_bria_title',
-		descKey: 'proj_bria_description',
-		tech: 'Next.js, Render, Supabase, Tailwind CSS',
+		id: 'gravitylabs',
+		image: '/companies/gravitylabs.png',
+		titleKey: 'proj_gravitylabs_title',
+		descKey: 'proj_gravitylabs_description',
+		tech: 'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase',
+		url: 'https://www.gravitylabs.com.br/',
 	},
 	{
 		id: 'divercity',
 		image: '/companies/divercity.png',
 		titleKey: 'proj_divercity_title',
 		descKey: 'proj_divercity_description',
-		tech: 'WordPress, Tailwind CSS, MySQL, PHP',
+		tech: 'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
+	},
+	{
+		id: 'talentlabs',
+		image: '/companies/talentlabs.png',
+		titleKey: 'proj_talentlabs_title',
+		descKey: 'proj_talentlabs_description',
+		tech: 'Laravel, Filament, Reverb, Queues, OpenAI',
+	},
+	{
+		id: 'trakk',
+		image: '/companies/trakk.png',
+		titleKey: 'proj_trakk_title',
+		descKey: 'proj_trakk_description',
+		tech: 'Laravel, React, Inertia, PostgreSQL, MCP',
+	},
+	{
+		id: 'investidor10',
+		image: '/companies/i10.jpeg',
+		titleKey: 'proj_investidor10_title',
+		descKey: 'proj_investidor10_description',
+		tech: 'TypeScript, React 19, Next.js, React Native, Node.js, Laravel, Redis, WebSockets, MCP',
+	},
+	{
+		id: 'bria',
+		image: '/companies/bria.png',
+		titleKey: 'proj_bria_title',
+		descKey: 'proj_bria_description',
+		tech: 'Next.js, Strapi',
 	},
 	{
 		id: 'vega',
 		image: '/companies/vega.jpeg',
 		titleKey: 'proj_vega_title',
 		descKey: 'proj_vega_description',
-		tech: 'Laravel, PHP, Alpine.js, Livewire, Tailwind CSS, MySQL',
+		tech: 'Laravel, PHP, Alpine.js',
 	},
 	{
 		id: 'intelbras',
@@ -236,6 +260,18 @@ export default function Projects() {
 															</Badge>
 														))}
 													</div>
+													{p.url && (
+														<Button asChild size="sm">
+															<a
+																href={p.url}
+																target="_blank"
+																rel="noopener noreferrer"
+															>
+																<ExternalLink className="mr-2 h-4 w-4" />
+																{t('View Project')}
+															</a>
+														</Button>
+													)}
 												</div>
 											</DialogDescription>
 										</DialogHeader>

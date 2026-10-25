@@ -10,7 +10,7 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 Backend engineer focused on payments and fintech systems: transaction processing, retries, webhooks, asynchronous queues, provider integrations, and anti-fraud.
 
-Built Payt's core payment platform, which grew from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume, and worked on multi-gateway checkout at Vega. Technical lead on Investidor10's Carteira portfolio product (24,000+ daily users).
+Built Payt's core payment platform, which grew from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume, and worked on multi-gateway checkout at Vega. Lead developer of Investidor10's Carteira portfolio product (24,000+ daily users).
 
 Based in Dublin, Ireland. Open to remote backend engineering roles.
 
@@ -26,7 +26,7 @@ Based in Dublin, Ireland. Open to remote backend engineering roles.
 
 ## Professional Experience
 
-All four roles below were contract engagements; several ran concurrently.
+I work as an independent contractor (B2B); several engagements below ran concurrently.
 
 ### Full Stack Engineer, Payt
 
@@ -36,11 +36,11 @@ Remote, contract | October 2018 - October 2023 | Fintech startup focused on paym
 - Built anti-fraud workflows; together with the company's post-sale and support process, they cut fraud and chargeback cases by more than 60%.
 - Helped scale the platform from MVP to approximately R$6.5M (~US$1.3M) in peak monthly transaction volume.
 
-### Technical Lead & Software Engineer, Investidor10
+### Senior Full Stack Engineer, Investidor10
 
 Remote, contract | November 2023 - Present | Investment platform used by investors across Latin America
 
-- Technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily.
+- Lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily; most senior engineer on the product and technical reference for architecture decisions and code review.
 - Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.
 - Designed and developed the Income Tax product for Brazil's annual tax season.
 - Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.
@@ -50,7 +50,7 @@ Remote, contract | November 2023 - Present | Investment platform used by investo
 Remote, part-time contract | January 2024 - July 2025 | Checkout and payments platform, acquired by Monetizze
 
 - Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.
-- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition; left before the official production release.
+- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition.
 
 ### Full Stack Engineer, Diwe
 
@@ -59,14 +59,14 @@ Remote, contract | June 2021 - April 2024 | Enterprise software consultancy serv
 - Designed and developed Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.
 - Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.
 
-**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | Delphi Developer Intern, Guess Soluções e Tecnologia (2013 - 2014) | C++ Developer, Mastersel (2010 - 2013)
+**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | C++ Developer, Mastersel (2010 - 2013)
 
 **Volunteering:** Software Engineer & Product Developer, Brazil Ireland Association (BRIA), Dublin, Ireland | January 2026 - Present | Build and maintain BRIA's website and internal tools for its operations and community programmes.
 
 ## Education & Certifications
 
-**Education:** Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2016
+**Education:** Technologist Degree (Tecnólogo) in Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2013 - 2016
 
-**Certifications:** C1 Advanced English (Future Learning Ireland) | Machine Learning: Regression and Classification (Stanford, Coursera) | CS50 AI with Python (Harvard, edX)
+**Certifications:** Supervised Machine Learning: Regression and Classification (DeepLearning.AI & Stanford, Coursera) | CS50's Introduction to AI with Python (Harvard, edX) | English for Career Development, C1 level, 2 × 25 weeks (Future Learning Dublin)
 
-**Languages:** Portuguese (native), English (C1 Advanced, certified)
+**Languages:** Portuguese (native), English (full professional; C1-level coursework in Dublin)

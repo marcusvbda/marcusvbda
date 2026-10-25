@@ -10,30 +10,30 @@ const EDUCATION_PDF = [
 	{
 		id: 'unimar',
 		titleKey: 'edu_unimar_title',
-		titleEn: 'BSc in Systems Analysis and Development',
+		titleEn: 'Technologist Degree in Systems Analysis and Development',
 		descKey: 'edu_unimar_description',
-		descEn: 'Universidade de Marília, Brazil.',
+		descEn: 'Universidade de Marília (UNIMAR) — Brazil (January 2013 – December 2016)',
 	},
 	{
 		id: 'harvardX',
 		titleKey: 'edu_harvardX_title',
-		titleEn: "CS50's Introduction to Computer Science",
+		titleEn: "CS50's Introduction to Artificial Intelligence with Python",
 		descKey: 'edu_harvardX_description',
-		descEn: 'Harvard University (2025).',
+		descEn: 'Harvard University (February – April 2025)',
 	},
 	{
 		id: 'deepLearning',
 		titleKey: 'edu_deepLearning_title',
-		titleEn: 'Supervised Machine Learning',
+		titleEn: 'Supervised Machine Learning: Regression and Classification',
 		descKey: 'edu_deepLearning_description',
-		descEn: 'Stanford Online / DeepLearning.AI (2025).',
+		descEn: 'Stanford University / DeepLearning.AI',
 	},
 	{
 		id: 'futureLearning',
 		titleKey: 'edu_futureLearning_title',
-		titleEn: 'Advanced English',
+		titleEn: 'English for Career Development, C1 level',
 		descKey: 'edu_futureLearning_description',
-		descEn: 'Future Learning Ireland (Dublin, 2025).',
+		descEn: 'Future Learning — 25 weeks (March 2025 – July 2026)',
 	},
 ];
 
@@ -44,9 +44,14 @@ const SKILLS_PDF = [
 		skillsKey: 'skills_backend_skills',
 	},
 	{
-		id: 'cloud',
-		labelKey: 'skills_cloud_label',
-		skillsKey: 'skills_cloud_skills',
+		id: 'frontend',
+		labelKey: 'skills_frontend_label',
+		skillsKey: 'skills_frontend_skills',
+	},
+	{
+		id: 'ai',
+		labelKey: 'skills_ai_label',
+		skillsKey: 'skills_ai_skills',
 	},
 	{
 		id: 'data',
@@ -54,13 +59,31 @@ const SKILLS_PDF = [
 		skillsKey: 'skills_data_skills',
 	},
 	{
-		id: 'frontend',
-		labelKey: 'skills_frontend_label',
-		skillsKey: 'skills_frontend_skills',
+		id: 'cloud',
+		labelKey: 'skills_cloud_label',
+		skillsKey: 'skills_cloud_skills',
 	},
 ];
 
-const EXPERIENCE_PDF = [
+const EXPERIENCE_PDF: Array<{
+	id: string;
+	companyKey: string;
+	roleKey: string;
+	periodKey: string;
+	locationKey?: string;
+	techStackKey?: string;
+	descKey?: string;
+	displayPriority: number;
+}> = [
+	{
+		id: 'gravitylabs',
+		companyKey: 'exp_gravitylabs_company',
+		roleKey: 'exp_gravitylabs_role',
+		periodKey: 'exp_gravitylabs_period',
+		techStackKey: 'exp_gravitylabs_techStack',
+		descKey: 'exp_gravitylabs_description',
+		displayPriority: 1,
+	},
 	{
 		id: 'investidor10',
 		companyKey: 'exp_investidor10_company',
@@ -69,7 +92,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_investidor10_location',
 		techStackKey: 'exp_investidor10_techStack',
 		descKey: 'exp_investidor10_description',
-		displayPriority: 1,
+		displayPriority: 2,
 	},
 	{
 		id: 'bria',
@@ -79,7 +102,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_bria_location',
 		techStackKey: 'exp_bria_techStack',
 		descKey: 'exp_bria_description',
-		displayPriority: 5,
+		displayPriority: 3,
 	},
 	{
 		id: 'vega',
@@ -89,7 +112,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_vega_location',
 		techStackKey: 'exp_vega_techStack',
 		descKey: 'exp_vega_description',
-		displayPriority: 3,
+		displayPriority: 4,
 	},
 	{
 		id: 'diwe',
@@ -99,7 +122,7 @@ const EXPERIENCE_PDF = [
 		locationKey: 'exp_diwe_location',
 		techStackKey: 'exp_diwe_techStack',
 		descKey: 'exp_diwe_description',
-		displayPriority: 4,
+		displayPriority: 5,
 	},
 	{
 		id: 'otimize',
@@ -107,9 +130,16 @@ const EXPERIENCE_PDF = [
 		roleKey: 'exp_otimize_role',
 		periodKey: 'exp_otimize_period',
 		locationKey: 'exp_otimize_location',
-		techStackKey: 'exp_otimize_techStack',
 		descKey: 'exp_otimize_description',
-		displayPriority: 2,
+		displayPriority: 6,
+	},
+	{
+		id: 'umar',
+		companyKey: 'exp_umar_company',
+		roleKey: 'exp_umar_role',
+		periodKey: 'exp_umar_period',
+		locationKey: 'exp_umar_location',
+		displayPriority: 7,
 	},
 	{
 		id: 'copysupply',
@@ -117,9 +147,7 @@ const EXPERIENCE_PDF = [
 		roleKey: 'exp_copysupply_role',
 		periodKey: 'exp_copysupply_period',
 		locationKey: 'exp_copysupply_location',
-		techStackKey: 'exp_copysupply_techStack',
-		descKey: 'exp_copysupply_description',
-		displayPriority: 6,
+		displayPriority: 8,
 	},
 	{
 		id: 'aliveit',
@@ -127,19 +155,7 @@ const EXPERIENCE_PDF = [
 		roleKey: 'exp_aliveit_role',
 		periodKey: 'exp_aliveit_period',
 		locationKey: 'exp_aliveit_location',
-		techStackKey: 'exp_aliveit_techStack',
-		descKey: 'exp_aliveit_description',
-		displayPriority: 7,
-	},
-	{
-		id: 'guess',
-		companyKey: 'exp_guess_company',
-		roleKey: 'exp_guess_role',
-		periodKey: 'exp_guess_period',
-		locationKey: 'exp_guess_location',
-		techStackKey: 'exp_guess_techStack',
-		descKey: 'exp_guess_description',
-		displayPriority: 8,
+		displayPriority: 9,
 	},
 	{
 		id: 'masterel',
@@ -147,9 +163,7 @@ const EXPERIENCE_PDF = [
 		roleKey: 'exp_masterel_role',
 		periodKey: 'exp_masterel_period',
 		locationKey: 'exp_masterel_location',
-		techStackKey: 'exp_masterel_techStack',
-		descKey: 'exp_masterel_description',
-		displayPriority: 9,
+		displayPriority: 10,
 	},
 ];
 
@@ -177,7 +191,7 @@ function buildPdfPayload(t: (key: string, fallback?: any) => string) {
 					e.id,
 					{
 						title: t(e.titleKey),
-						description: t(e.descKey),
+						description: e.descKey ? t(e.descKey) : '',
 					},
 				]),
 			),
@@ -206,8 +220,8 @@ function buildPdfPayload(t: (key: string, fallback?: any) => string) {
 						role: t(e.roleKey),
 						period: t(e.periodKey),
 						location: e.locationKey ? t(e.locationKey) : '',
-						techStack: t(e.techStackKey),
-						description: t(e.descKey),
+						techStack: e.techStackKey ? t(e.techStackKey) : '',
+						description: e.descKey ? t(e.descKey) : '',
 						displayPriority: e.displayPriority,
 					},
 				]),

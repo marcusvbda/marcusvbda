@@ -1,6 +1,6 @@
 # Marcus Vinicius Bassalobre de Assis
 
-**Software Engineer | Full Stack Developer**
+**Full Stack Engineer | AI Agents**
 
 Dublin, Ireland | +353 83 881 8967 | bassalobre.vinicius@gmail.com
 
@@ -8,11 +8,11 @@ linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
 ## Summary
 
-Full stack engineer building payment, fintech, and investment products end to end, from React and Next.js to Node.js, NestJS, and Laravel.
+Full stack engineer with 13+ years building payment, fintech and investment products end to end, from React and Next.js to Node.js, NestJS and Laravel, and today AI agents that run in production.
 
-Technical lead on Investidor10's Carteira portfolio product (24,000+ daily users), with real-time updates, caching, and AI integrations. Helped scale Payt's payment platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.
+Lead developer of Investidor10's Carteira portfolio product (24,000+ daily users), with real-time updates, caching and AI/MCP integrations. Helped scale Payt's payment platform to approximately R$6.5M (~US$1.3M) in peak monthly volume.
 
-Based in Dublin, Ireland. Open to remote software engineering roles.
+Available for remote contract work (B2B invoicing), part-time or full-time, with European, Canadian and Brazilian time-zone overlap.
 
 ## Core Skills
 
@@ -22,17 +22,26 @@ Based in Dublin, Ireland. Open to remote software engineering roles.
 
 **Backend:** Node.js, NestJS, Laravel, REST APIs, microservices, event-driven and queue-based systems
 
-**Data & Cloud:** PostgreSQL, MySQL, MongoDB, Redis, AWS, Docker, GitHub Actions, Vercel, Supabase, OpenAI and Anthropic APIs
+**AI:** LLM agents, tool calling, MCP, n8n, OpenAI and Anthropic APIs
+
+**Data & Cloud:** PostgreSQL, MySQL, MongoDB, Redis, AWS, Docker, GitHub Actions, Vercel, Supabase
 
 ## Professional Experience
 
-All four roles below were contract engagements; several ran concurrently.
+I work as an independent contractor (B2B); several engagements below ran concurrently.
 
-### Technical Lead & Software Engineer, Investidor10
+### Founder & AI Engineer, Gravity Labs
+
+Remote, self-employed | March 2024 - Present | Independent studio building AI agents and web products for small businesses
+
+- Divercity Park: designed and run a WhatsApp AI agent in production (n8n, WAHA, OpenAI, PostgreSQL). It answers prices, hours and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.
+- Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.
+
+### Senior Full Stack Engineer, Investidor10
 
 Remote, contract | November 2023 - Present | Investment platform used by investors across Latin America
 
-- Technical lead and developer of Carteira, the portfolio product serving 24,000+ users daily.
+- Lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily; most senior engineer on the product and technical reference for architecture decisions and code review.
 - Built real-time updates (WebSockets, caching, Redis) and AI/MCP integrations for bots and intelligent insights.
 - Contributed to the migration of the product from a Laravel monolith to React 19, Next.js, and an offline-first React Native app.
 - Designed and developed the Income Tax product for Brazil's annual tax season.
@@ -49,7 +58,7 @@ Remote, contract | October 2018 - October 2023 | Fintech startup focused on paym
 
 Remote, part-time contract | January 2024 - July 2025 | Checkout and payments platform, acquired by Monetizze
 
-- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition; left before the official production release.
+- Completed the migration of the legacy ASP.NET MVC system to Laravel and Alpine.js after the Monetizze acquisition.
 - Migrated the per-client configurable payment gateway layer, with more than 50 gateway options.
 
 ### Full Stack Engineer, Diwe
@@ -59,14 +68,18 @@ Remote, contract | June 2021 - April 2024 | Enterprise software consultancy serv
 - Delivered more than 10 projects for large clients including Unimed, Sonex, Quartzolit, Gerdau, Saint-Gobain, Adidas, Construtora Planeta, Branco, and Intelbras.
 - Designed and developed Parceiro da Construção, a training and certification platform for the construction industry (online courses, automated assessments, digital certificates) with about 1,500 active users.
 
-**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | Delphi Developer Intern, Guess Soluções e Tecnologia (2013 - 2014) | C++ Developer, Mastersel (2010 - 2013)
+**Earlier experience:** Full Stack Developer, Copy Supply (2017 - 2018) | Full Stack Developer, Alive IT (2014 - 2017) | C++ Developer, Mastersel (2010 - 2013)
 
 **Volunteering:** Software Engineer & Product Developer, Brazil Ireland Association (BRIA), Dublin, Ireland | January 2026 - Present | Build and maintain BRIA's website and internal tools for its operations and community programmes.
 
+## Projects
+
+- **Trakk:** personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Laravel, React/Inertia, PostgreSQL. Deployed and in daily use.
+
 ## Education & Certifications
 
-**Education:** Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2016
+**Education:** Technologist Degree (Tecnólogo) in Systems Analysis and Development, Universidade de Marília (UNIMAR), Brazil | 2013 - 2016
 
-**Certifications:** C1 Advanced English (Future Learning Ireland) | Machine Learning: Regression and Classification (Stanford, Coursera) | CS50 AI with Python (Harvard, edX)
+**Certifications:** Supervised Machine Learning: Regression and Classification (DeepLearning.AI & Stanford, Coursera) | CS50's Introduction to AI with Python (Harvard, edX) | English for Career Development, C1 level, 2 × 25 weeks (Future Learning Dublin)
 
-**Languages:** Portuguese (native), English (C1 Advanced, certified)
+**Languages:** Portuguese (native), English (full professional; C1-level coursework in Dublin)

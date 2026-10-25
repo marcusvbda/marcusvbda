@@ -15,47 +15,46 @@ const SKILLS_CATEGORIES: Array<{
 	{
 		id: 'arch',
 		labelKey: 'skills_arch_label',
-		labelEn: 'Architecture & Leadership',
+		labelEn: 'Software Engineering',
 		skillsKey: 'skills_arch_skills',
-		skillsEn: 'Software Architecture · Distributed Systems · Payments · Microservices · Technical Leadership · System Design',
+		skillsEn:
+			'REST APIs · Microservices · Event-Driven Systems · Asynchronous Queues · Payments · WebSockets · System Design',
 	},
 	{
 		id: 'backend',
 		labelKey: 'skills_backend_label',
 		labelEn: 'Backend',
 		skillsKey: 'skills_backend_skills',
-		skillsEn: 'Laravel · Node.js · NestJS · PHP · Python · Java',
+		skillsEn: 'Node.js · NestJS · Laravel · PHP · Python · Strapi',
 	},
 	{
 		id: 'frontend',
 		labelKey: 'skills_frontend_label',
-		labelEn: 'Frontend & UI',
+		labelEn: 'Frontend',
 		skillsKey: 'skills_frontend_skills',
-		skillsEn:
-			'React · Next.js · Vue.js · Nuxt.js · TypeScript · Tailwind CSS · Alpine.js · Livewire',
+		skillsEn: 'React · Next.js · React Native · TypeScript · Alpine.js',
 	},
 	{
 		id: 'data',
 		labelKey: 'skills_data_label',
-		labelEn: 'Databases & Performance',
+		labelEn: 'Databases & Caching',
 		skillsKey: 'skills_data_skills',
-		skillsEn:
-			'PostgreSQL · MySQL · MongoDB · Redis · Query Optimisation',
+		skillsEn: 'PostgreSQL · MySQL · Redis',
 	},
 	{
 		id: 'cloud',
 		labelKey: 'skills_cloud_label',
 		labelEn: 'Cloud & Infrastructure',
 		skillsKey: 'skills_cloud_skills',
-		skillsEn: 'AWS · Vercel · Docker · CI/CD · GitFlow · Redis · Supabase',
+		skillsEn: 'AWS · Docker · Vercel · Supabase · Bitbucket',
 	},
 	{
 		id: 'ai',
 		labelKey: 'skills_ai_label',
-		labelEn: 'AI-Assisted Development',
+		labelEn: 'AI Agents & LLMs',
 		skillsKey: 'skills_ai_skills',
 		skillsEn:
-			'Cursor · Claude Code · GitHub Copilot · OpenAI APIs · LLM Integration',
+			'LLMs · OpenAI API · Anthropic API · MCP · n8n · WAHA · Claude Code',
 	},
 ];
 

@@ -173,9 +173,11 @@ export const RenderDocument = ({
 					{sortedExperiences.map((job: any, index) => (
 						<View key={index} style={styles.job}>
 							<Text style={styles.jobTitle}>{job.role}</Text>
-							<Text style={styles.techStack}>{job.techStack}</Text>
+							{job.techStack && (
+								<Text style={styles.techStack}>{job.techStack}</Text>
+							)}
 							<Text style={styles.jobCompany}>
-								{job.company} | {job.location}
+								{job.location ? `${job.company} | ${job.location}` : job.company}
 							</Text>
 							<Text style={styles.jobPeriod}>{job.period}</Text>
 							{job.description
