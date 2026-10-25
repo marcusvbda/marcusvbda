@@ -32,10 +32,12 @@ Trabalho como prestador de serviços (PJ); vários dos contratos abaixo foram si
 
 ### Fundador e Engenheiro de IA, Gravity Labs
 
-Remoto, empresa própria | Março de 2024 - Atual | Estúdio que desenvolve agentes de IA e produtos web para pequenas empresas
+Remoto, empresa própria | Março de 2024 - Atual | Consultoria de tecnologia e IA que ajuda empresas a melhorar seus produtos e processos, entregando o que cada cliente precisa, da estratégia ao software em funcionamento
 
-- Divercity Park: criei e opero um agente de IA no WhatsApp em produção (n8n, WAHA, OpenAI, PostgreSQL). Ele responde preços, horários e dúvidas de festas com dados em tempo real da API do parque, segue regras rígidas de preço, passa a conversa para a equipe com um resumo quando não sabe responder e registra as perguntas sem resposta num FAQ que a equipe completa.
-- Desenvolvi o site do parque (Next.js, Supabase, Vercel), com assinatura digital de contrato de festa e venda antecipada de ingressos com validação por QR code.
+- Desenvolvimento de software sob medida: plataformas web, ferramentas internas e integrações, com a stack escolhida conforme cada projeto.
+- Automação com IA e agentes: fluxos que reduzem trabalho manual e agentes de atendimento no WhatsApp e em outros canais pela API da Meta, construídos com n8n, Claude e a API da OpenAI.
+- Social media e presença digital: conteúdo, perfis e identidade de marca para que as empresas sejam encontradas e lembradas.
+- Consultoria de IA e tecnologia: onde a IA realmente economiza tempo e dinheiro no negócio, quais ferramentas adotar e como colocá-las na rotina da operação.
 
 ### Engenheiro Full Stack Sênior, Investidor10
 

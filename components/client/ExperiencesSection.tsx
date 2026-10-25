@@ -27,7 +27,7 @@ const EXPERIENCES: Array<{
 		periodEn: 'March 2024 – Present',
 		descKey: 'exp_gravitylabs_description',
 		descEn:
-			"• Independent studio building AI agents and web products for small businesses.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
+			'• Technology and AI consultancy helping businesses improve their products and processes, delivering what each client needs, from strategy to working software.\n• Custom software development: web platforms, internal tools and integrations, with the stack chosen to fit each project.\n• AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude and the OpenAI API.\n• Social media and digital presence: content, profiles and brand identity so businesses get found and remembered.\n• AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.',
 	},
 	{
 		id: 'investidor10',

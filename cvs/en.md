@@ -32,10 +32,12 @@ I work as an independent contractor (B2B); several engagements below ran concurr
 
 ### Founder & AI Engineer, Gravity Labs
 
-Remote, self-employed | March 2024 - Present | Independent studio building AI agents and web products for small businesses
+Remote, self-employed | March 2024 - Present | Technology and AI consultancy helping businesses improve their products and processes, delivering what each client needs, from strategy to working software
 
-- Divercity Park: designed and run a WhatsApp AI agent in production (n8n, WAHA, OpenAI, PostgreSQL). It answers prices, hours and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.
-- Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.
+- Custom software development: web platforms, internal tools and integrations, with the stack chosen to fit each project.
+- AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude and the OpenAI API.
+- Social media and digital presence: content, profiles and brand identity so businesses get found and remembered.
+- AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.
 
 ### Senior Full Stack Engineer, Investidor10
 

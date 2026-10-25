@@ -29,7 +29,7 @@ const PROJECTS: Array<{
 		image: '/companies/gravitylabs.png',
 		titleKey: 'proj_gravitylabs_title',
 		descKey: 'proj_gravitylabs_description',
-		tech: 'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase',
+		tech: 'Software Development, AI Automation, Social Media, AI Consulting',
 		url: 'https://www.gravitylabs.com.br/',
 	},
 	{
@@ -38,6 +38,7 @@ const PROJECTS: Array<{
 		titleKey: 'proj_divercity_title',
 		descKey: 'proj_divercity_description',
 		tech: 'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
+		url: 'https://www.divercitypark.com.br/',
 	},
 	{
 		id: 'talentlabs',
@@ -66,6 +67,7 @@ const PROJECTS: Array<{
 		titleKey: 'proj_bria_title',
 		descKey: 'proj_bria_description',
 		tech: 'Next.js, Strapi',
+		url: 'https://www.brazilirelandassociation.org/en',
 	},
 	{
 		id: 'vega',
