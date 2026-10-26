@@ -5,7 +5,7 @@ const en: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Full Stack Engineer | AI Agents',
+	cv_title: 'Senior Product Engineer | Full Stack & AI Agents',
 
 	// navbar
 	About: 'About',
@@ -23,9 +23,6 @@ const en: Record<string, string> = {
 	bio: 'Full stack engineer with 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production. Lead developer of Carteira at Investidor10 (24,000+ daily users) and founder of Gravity Labs.',
 
 	checkCv: 'Check my CV',
-	cv_variant_fullstack: 'Full stack',
-	cv_variant_backend: 'Backend / payments',
-	cv_variant_frontend: 'Frontend / React',
 	cta: 'Get in touch',
 	'Scroll down to explore': 'Scroll down to explore',
 
@@ -37,17 +34,17 @@ const en: Record<string, string> = {
 		'Full stack engineer building payment, fintech, and investment products end to end, and AI agents that run in production.',
 
 	aboutDescription:
-		"I have 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production. At Gravity Labs, an independent studio I founded, I build AI agents and web products for small businesses. For Divercity Park I designed and run a WhatsApp AI agent that answers customers and quotes parties with live prices from the park's API, hands conversations to staff with a summary when it can't answer, and turns unanswered questions into a FAQ the team completes.\n\nAt Investidor10 I am lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily. I am the most senior engineer on the product and the technical reference for architecture decisions and code review. I built its real-time updates (WebSockets, Redis) and AI/MCP integrations, contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app, and designed the Income Tax product for Brazil's annual tax season.\n\nBefore that I worked on Payt's core payment platform, scaling it from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume, with anti-fraud workflows that cut fraud and chargebacks by more than 60%. I also built a 50+ provider payment gateway layer at Vega Checkout and delivered 10+ enterprise projects at Diwe for clients such as Unimed, Gerdau, Saint-Gobain, Adidas, and Intelbras.\n\nI work with spec-driven development and AI coding agents (Claude Code) for planning, implementation, and review. My stack is TypeScript, PHP, Python, React, Next.js, React Native, Node.js, NestJS, Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, n8n, the OpenAI and Anthropic APIs, and MCP.\n\nI work as an independent contractor (B2B invoicing), which is why some engagements overlap. I'm based in Dublin, Ireland, and available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap.",
+		"I have 13+ years building payment, fintech, and investment products end to end, and today AI agents that run in production. At Gravity Labs, a technology and AI consultancy I founded, I build custom software and AI agents for businesses, from strategy to working software. For Divercity Park I designed and run a WhatsApp AI agent that answers customers and quotes parties with live prices from the park's API, hands conversations to staff with a summary when it can't answer, and turns unanswered questions into a FAQ the team completes.\n\nAt Investidor10 I am lead developer and owner of Carteira, the portfolio product serving 24,000+ users daily. I am the most senior engineer on the product and the technical reference for architecture decisions and code review. I built its real-time updates (WebSockets, Redis) and AI/MCP integrations, contributed to its migration from a Laravel monolith to React 19, Next.js, and an offline-first React Native app, and designed the Income Tax product for Brazil's annual tax season.\n\nBefore that I worked on Payt's core payment platform, scaling it from MVP to approximately R$6.5M (~US$1.3M) in peak monthly volume, with anti-fraud workflows that cut fraud and chargebacks by more than 60%. I also built a 50+ provider payment gateway layer at Vega Checkout and delivered 10+ enterprise projects at Diwe for clients such as Unimed, Gerdau, Saint-Gobain, Adidas, and Intelbras.\n\nI work with spec-driven development and AI coding agents (Claude Code) for planning, implementation, and review. My stack is TypeScript, PHP, Python, React, Next.js, React Native, Node.js, NestJS, Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, n8n, the OpenAI and Anthropic APIs, and MCP.\n\nI work as an independent contractor (B2B invoicing), which is why some engagements overlap. I'm based in Dublin, Ireland, and available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap.",
 
 	// experience
 	'Career Journey': 'Career Journey',
 	Present: 'Present',
 
-	exp_gravitylabs_role: 'Founder & AI Engineer',
+	exp_gravitylabs_role: 'Founder & CTO',
 	exp_gravitylabs_company: 'Gravity Labs',
 	exp_gravitylabs_period: 'March 2024 – Present',
 	exp_gravitylabs_description:
-		"• Independent studio building AI agents and web products for small businesses.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
+		"• Technology and AI consultancy helping businesses improve their products and processes, from strategy to working software.\n• Custom software development: web platforms, internal tools, and integrations, with the stack chosen to fit each project.\n• AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude, and the OpenAI API.\n• Social media and digital presence: content, profiles, and brand identity so businesses get found and remembered.\n• AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
 	exp_gravitylabs_techStack:
 		'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
 
@@ -125,7 +122,7 @@ const en: Record<string, string> = {
 	proj_gravitylabs_title: 'Gravity Labs',
 
 	proj_gravitylabs_description:
-		'Independent studio building AI agents and web products for small businesses.',
+		'Technology and AI consultancy building custom software, AI automation, and agents for businesses, from strategy to working software.',
 
 	proj_divercity_title: 'Divercity Park',
 

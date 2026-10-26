@@ -155,14 +155,11 @@ function CVDocument({ nodes }: { nodes: Node[] }) {
 export async function GET(request: NextRequest) {
 	const lang = request.nextUrl.searchParams.get('lang') ?? 'en';
 	const safeLang = ['en', 'pt'].includes(lang) ? lang : 'en';
-	const variant = request.nextUrl.searchParams.get('variant') ?? '';
-	const safeVariant = ['backend', 'frontend'].includes(variant) ? variant : '';
-	const baseName = safeVariant ? `${safeLang}-${safeVariant}` : safeLang;
 
 	let content: string;
 	try {
 		content = readFileSync(
-			join(process.cwd(), 'cvs', `${baseName}.md`),
+			join(process.cwd(), 'cvs', `${safeLang}.md`),
 			'utf-8'
 		);
 	} catch {
@@ -171,8 +168,7 @@ export async function GET(request: NextRequest) {
 
 	const nodes = parseMarkdown(content);
 	const buffer = await renderToBuffer(<CVDocument nodes={nodes} />);
-	const suffix = safeVariant ? `_${safeVariant}` : '';
-	const filename = `Marcus_Vinicius_Bassalobre_Software_Engineer_${safeLang.toUpperCase()}${suffix}.pdf`;
+	const filename = `Marcus_Vinicius_Bassalobre_Software_Engineer_${safeLang.toUpperCase()}.pdf`;
 
 	return new NextResponse(new Uint8Array(buffer), {
 		headers: {

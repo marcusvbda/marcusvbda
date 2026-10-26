@@ -1,46 +1,12 @@
 'use client';
 
-import {
-	ArrowDown,
-	ChevronDown,
-	Mail,
-	Linkedin,
-	Github,
-	Download,
-} from 'lucide-react';
+import { ArrowDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
 import { Button } from '@/components/ui/button';
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, type Variants } from 'framer-motion';
-
-const CV_VARIANTS = [
-	{
-		id: 'fullstack',
-		query: '',
-		labelKey: 'cv_variant_fullstack',
-		labelEn: 'Full stack',
-	},
-	{
-		id: 'backend',
-		query: '&variant=backend',
-		labelKey: 'cv_variant_backend',
-		labelEn: 'Backend / payments',
-	},
-	{
-		id: 'frontend',
-		query: '&variant=frontend',
-		labelKey: 'cv_variant_frontend',
-		labelEn: 'Frontend / React',
-	},
-];
 
 const containerVariants: Variants = {
 	hidden: {},
@@ -163,32 +129,21 @@ export default function Hero({ content }: any): ReactNode {
 									Github
 								</Link>
 							</Button>
-							<DropdownMenu>
-								<DropdownMenuTrigger asChild>
-									<Button
-										size="lg"
-										variant="outline"
-										className="bg-accent hover:bg-accent/90 w-full md:w-auto text-white hover:text-white"
-									>
-										<Download className="mr-2 h-4 w-4" />
-										{t('checkCv', 'Check my CV')}
-										<ChevronDown className="ml-2 h-4 w-4" />
-									</Button>
-								</DropdownMenuTrigger>
-								<DropdownMenuContent align="start">
-									{CV_VARIANTS.map((variant) => (
-										<DropdownMenuItem key={variant.id} asChild>
-											<a
-												href={`/api/download-cv?lang=${language}${variant.query}`}
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												{t(variant.labelKey, variant.labelEn)}
-											</a>
-										</DropdownMenuItem>
-									))}
-								</DropdownMenuContent>
-							</DropdownMenu>
+							<Button
+								size="lg"
+								variant="outline"
+								asChild
+								className="bg-accent hover:bg-accent/90 w-full md:w-auto text-white hover:text-white"
+							>
+								<a
+									href={`/api/download-cv?lang=${language}`}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Download className="mr-2 h-4 w-4" />
+									{t('checkCv', 'Check my CV')}
+								</a>
+							</Button>
 						</motion.div>
 
 						<motion.div

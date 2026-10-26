@@ -5,7 +5,7 @@ const ptBR: Record<string, string> = {
 	info_site: 'mvbassalobre.com',
 	info_linkedin: 'linkedin.com/in/mvbassalobre',
 	info_github: 'github.com/marcusvbda',
-	cv_title: 'Engenheiro Full Stack | Agentes de IA',
+	cv_title: 'Engenheiro de Produto Sênior | Full Stack e Agentes de IA',
 
 	// navbar
 	About: 'Sobre',
@@ -23,9 +23,6 @@ const ptBR: Record<string, string> = {
 	bio: 'Engenheiro full stack com mais de 13 anos construindo produtos de pagamentos, fintech e investimentos de ponta a ponta e, hoje, agentes de IA que rodam em produção. Desenvolvedor líder da Carteira no Investidor10 (24.000+ usuários por dia) e fundador da Gravity Labs.',
 
 	checkCv: 'Ver meu currículo',
-	cv_variant_fullstack: 'Full stack',
-	cv_variant_backend: 'Backend / pagamentos',
-	cv_variant_frontend: 'Frontend / React',
 	cta: 'Entre em contato',
 	'Scroll down to explore': 'Role para explorar',
 
@@ -37,17 +34,17 @@ const ptBR: Record<string, string> = {
 		'Engenheiro full stack construindo produtos de pagamentos, fintech e investimentos de ponta a ponta, e agentes de IA que rodam em produção.',
 
 	aboutDescription:
-		'Tenho mais de 13 anos construindo produtos de pagamentos, fintech e investimentos de ponta a ponta e, hoje, agentes de IA que rodam em produção. Na Gravity Labs, estúdio independente que fundei, construo agentes de IA e produtos web para pequenos negócios. Para o Divercity Park projetei e mantenho um agente de IA no WhatsApp que atende clientes e cota festas com preços atualizados da API do parque, repassa a conversa para a equipe com um resumo quando não sabe responder e transforma perguntas sem resposta em um FAQ que a equipe completa.\n\nNo Investidor10 sou desenvolvedor líder e responsável pela Carteira, produto de carteira que atende mais de 24.000 usuários por dia. Sou o engenheiro mais sênior do produto e a referência técnica para decisões de arquitetura e code review. Construí as atualizações em tempo real (WebSockets, Redis) e as integrações de IA/MCP, participei da migração de um monólito Laravel para React 19, Next.js e um app React Native offline-first, e projetei o produto de Imposto de Renda para o período anual de declaração no Brasil.\n\nAntes disso, trabalhei na plataforma principal de pagamentos da Payt, escalando-a do MVP a aproximadamente R$6,5 milhões (~US$1,3 milhão) em volume mensal no pico, com fluxos antifraude que reduziram em mais de 60% as fraudes e os chargebacks. Também construí uma camada de gateways de pagamento com mais de 50 provedores na Vega Checkout e entreguei mais de 10 projetos corporativos na Diwe para clientes como Unimed, Gerdau, Saint-Gobain, Adidas e Intelbras.\n\nTrabalho com desenvolvimento orientado a especificações e agentes de código com IA (Claude Code) para planejamento, implementação e revisão. Minha stack é TypeScript, PHP, Python, React, Next.js, React Native, Node.js, NestJS, Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, n8n, as APIs da OpenAI e da Anthropic e MCP.\n\nAtuo como pessoa jurídica (B2B), por isso alguns vínculos ocorreram em paralelo. Moro em Dublin, Irlanda, e estou disponível para contratos remotos, meio período ou período integral, com sobreposição de fuso horário europeu e brasileiro.',
+		'Tenho mais de 13 anos construindo produtos de pagamentos, fintech e investimentos de ponta a ponta e, hoje, agentes de IA que rodam em produção. Na Gravity Labs, consultoria de tecnologia e IA que fundei, construo software sob medida e agentes de IA para empresas, da estratégia ao software funcionando. Para o Divercity Park projetei e mantenho um agente de IA no WhatsApp que atende clientes e cota festas com preços atualizados da API do parque, repassa a conversa para a equipe com um resumo quando não sabe responder e transforma perguntas sem resposta em um FAQ que a equipe completa.\n\nNo Investidor10 sou desenvolvedor líder e responsável pela Carteira, produto de carteira que atende mais de 24.000 usuários por dia. Sou o engenheiro mais sênior do produto e a referência técnica para decisões de arquitetura e code review. Construí as atualizações em tempo real (WebSockets, Redis) e as integrações de IA/MCP, participei da migração de um monólito Laravel para React 19, Next.js e um app React Native offline-first, e projetei o produto de Imposto de Renda para o período anual de declaração no Brasil.\n\nAntes disso, trabalhei na plataforma principal de pagamentos da Payt, escalando-a do MVP a aproximadamente R$6,5 milhões (~US$1,3 milhão) em volume mensal no pico, com fluxos antifraude que reduziram em mais de 60% as fraudes e os chargebacks. Também construí uma camada de gateways de pagamento com mais de 50 provedores na Vega Checkout e entreguei mais de 10 projetos corporativos na Diwe para clientes como Unimed, Gerdau, Saint-Gobain, Adidas e Intelbras.\n\nTrabalho com desenvolvimento orientado a especificações e agentes de código com IA (Claude Code) para planejamento, implementação e revisão. Minha stack é TypeScript, PHP, Python, React, Next.js, React Native, Node.js, NestJS, Laravel, PostgreSQL, MySQL, Redis, AWS, Docker, n8n, as APIs da OpenAI e da Anthropic e MCP.\n\nAtuo como pessoa jurídica (B2B), por isso alguns vínculos ocorreram em paralelo. Moro em Dublin, Irlanda, e estou disponível para contratos remotos, meio período ou período integral, com sobreposição de fuso horário europeu e brasileiro.',
 
 	// experience
 	'Career Journey': 'Trajetória Profissional',
 	Present: 'Atual',
 
-	exp_gravitylabs_role: 'Fundador e Engenheiro de IA',
+	exp_gravitylabs_role: 'Fundador e CTO',
 	exp_gravitylabs_company: 'Gravity Labs',
 	exp_gravitylabs_period: 'Março de 2024 – Atual',
 	exp_gravitylabs_description:
-		'• Estúdio independente que constrói agentes de IA e produtos web para pequenos negócios.\n• Divercity Park: projetei e mantenho em produção um agente de IA no WhatsApp. Ele responde sobre preços, horários e festas com dados em tempo real da API do parque, segue regras rígidas de preço, repassa conversas para a equipe com um resumo e registra perguntas sem resposta em um ciclo de feedback de FAQ.\n• Construí o site do parque (Next.js, Supabase, Vercel), incluindo assinatura digital de contratos de festa e ingressos antecipados com validação por QR code.',
+		'• Consultoria de tecnologia e IA que ajuda empresas a melhorar produtos e processos, da estratégia ao software funcionando.\n• Desenvolvimento de software sob medida: plataformas web, ferramentas internas e integrações, com a stack escolhida conforme cada projeto.\n• Automação e agentes de IA: fluxos que reduzem trabalho manual e agentes de atendimento no WhatsApp e em outros canais via API da Meta, construídos com n8n, Claude e a API da OpenAI.\n• Redes sociais e presença digital: conteúdo, perfis e identidade de marca para que os negócios sejam encontrados e lembrados.\n• Consultoria em IA e tecnologia: onde a IA realmente economiza tempo e dinheiro, quais ferramentas adotar e como incorporá-las à rotina da operação.\n• Divercity Park: projetei e mantenho em produção um agente de IA no WhatsApp. Ele responde sobre preços, horários e festas com dados em tempo real da API do parque, segue regras rígidas de preço, repassa conversas para a equipe com um resumo e registra perguntas sem resposta em um ciclo de feedback de FAQ.\n• Construí o site do parque (Next.js, Supabase, Vercel), incluindo assinatura digital de contratos de festa e ingressos antecipados com validação por QR code.',
 	exp_gravitylabs_techStack:
 		'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
 
@@ -125,7 +122,7 @@ const ptBR: Record<string, string> = {
 	proj_gravitylabs_title: 'Gravity Labs',
 
 	proj_gravitylabs_description:
-		'Estúdio independente que constrói agentes de IA e produtos web para pequenos negócios.',
+		'Consultoria de tecnologia e IA que constrói software sob medida, automação e agentes de IA para empresas, da estratégia ao software funcionando.',
 
 	proj_divercity_title: 'Divercity Park',
 
