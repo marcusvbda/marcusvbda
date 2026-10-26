@@ -80,7 +80,6 @@ const EXPERIENCE_PDF: Array<{
 		companyKey: 'exp_gravitylabs_company',
 		roleKey: 'exp_gravitylabs_role',
 		periodKey: 'exp_gravitylabs_period',
-		techStackKey: 'exp_gravitylabs_techStack',
 		descKey: 'exp_gravitylabs_description',
 		displayPriority: 1,
 	},

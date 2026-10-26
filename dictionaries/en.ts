@@ -258,7 +258,7 @@ const en: Record<string, string> = {
 		'Available for remote contract work, part-time or full-time, with European and Brazilian time-zone overlap. Get in touch.',
 
 	Location: 'Location',
-	Phone: 'Phone',
+	Phone: 'WhatsApp',
 
 	contactLocationValue: 'Dublin, Ireland',
 	contactPhoneValue: '+353 83 881 8967',

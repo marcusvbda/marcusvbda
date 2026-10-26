@@ -258,10 +258,10 @@ const ptBR: Record<string, string> = {
 		'Disponível para contratos remotos, meio período ou período integral, com sobreposição de fuso horário europeu e brasileiro. Entre em contato.',
 
 	Location: 'Localização',
-	Phone: 'Telefone',
+	Phone: 'WhatsApp',
 
 	contactLocationValue: 'Dublin, Irlanda',
-	contactPhoneValue: '+353 83 881 8967',
+	contactPhoneValue: '+55 14 99676 6177',
 
 	// download CV
 	'Error generating PDF. Please try again.':

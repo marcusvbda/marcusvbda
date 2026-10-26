@@ -2,7 +2,7 @@
 
 **Engenheiro de Produto Sênior | Full Stack e Agentes de IA**
 
-Dublin, Irlanda | +353 83 881 8967 | bassalobre.vinicius@gmail.com
+Dublin, Irlanda | +55 14 99676 6177 | bassalobre.vinicius@gmail.com
 
 linkedin.com/in/mvbassalobre | github.com/marcusvbda | mvbassalobre.com
 
