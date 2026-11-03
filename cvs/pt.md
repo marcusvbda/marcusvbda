@@ -38,8 +38,17 @@ Remoto, empresa própria | Março de 2024 - Atual | Consultoria de tecnologia e 
 - Automação e agentes de IA: fluxos que reduzem trabalho manual e agentes de atendimento no WhatsApp e em outros canais via API da Meta, construídos com n8n, Claude e a API da OpenAI.
 - Redes sociais e presença digital: conteúdo, perfis e identidade de marca para que os negócios sejam encontrados e lembrados.
 - Consultoria em IA e tecnologia: onde a IA realmente economiza tempo e dinheiro, quais ferramentas adotar e como incorporá-las à rotina da operação.
+- Lancei dois produtos próprios pela Gravity Labs: [Trakk](https://trakk.mvbassalobre.com), app de metas pessoais com servidor MCP para assistentes de IA, e [Talent Labs](https://talentlabs.tech), plataforma de busca de vagas que envia candidaturas personalizadas pelo Gmail do próprio candidato.
 - Divercity Park: criei e opero um agente de IA no WhatsApp em produção (n8n, WAHA, OpenAI, PostgreSQL). Ele responde preços, horários e dúvidas de festas com dados em tempo real da API do parque, segue regras rígidas de preço, passa a conversa para a equipe com um resumo quando não sabe responder e registra as perguntas sem resposta num FAQ que a equipe completa.
 - Desenvolvi o site do parque (Next.js, Supabase, Vercel), com assinatura digital de contrato de festa e venda antecipada de ingressos com validação por QR code.
+
+### Fundador, Talent Labs
+
+Remoto, empresa própria | 2026 - Atual | Plataforma de busca de vagas para candidatos, lançada pela Gravity Labs ([talentlabs.tech](https://talentlabs.tech))
+
+- Coleta vagas de várias fontes e usa um LLM para extrair dados estruturados de cada uma: stack, senioridade, localização e remoto.
+- Encontra o contato de recrutamento da empresa e envia candidaturas personalizadas pelo Gmail do próprio candidato, com templates e currículos em inglês e português.
+- Construída com Laravel, Filament, Reverb, filas e a API da OpenAI.
 
 ### Engenheiro Full Stack Sênior, Investidor10
 
@@ -81,7 +90,7 @@ Remoto, contrato | Junho de 2021 - Abril de 2024 | Consultoria de software para 
 
 ## Projetos
 
-- **Trakk:** app de metas pessoais com servidor MCP, para assistentes de IA como o Claude lerem e atualizarem metas e tarefas. Laravel, React/Inertia, PostgreSQL. Em produção e em uso diário.
+- **[Trakk](https://trakk.mvbassalobre.com):** app de metas pessoais com servidor MCP, para assistentes de IA como o Claude lerem e atualizarem metas e tarefas. Laravel, React/Inertia, PostgreSQL. Em produção e em uso diário.
 
 ## Formação e Certificações
 

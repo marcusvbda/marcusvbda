@@ -44,9 +44,16 @@ const en: Record<string, string> = {
 	exp_gravitylabs_company: 'Gravity Labs',
 	exp_gravitylabs_period: 'March 2024 – Present',
 	exp_gravitylabs_description:
-		"• Technology and AI consultancy helping businesses improve their products and processes, from strategy to working software.\n• Custom software development: web platforms, internal tools, and integrations, with the stack chosen to fit each project.\n• AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude, and the OpenAI API.\n• Social media and digital presence: content, profiles, and brand identity so businesses get found and remembered.\n• AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
+		"• Technology and AI consultancy helping businesses improve their products and processes, from strategy to working software.\n• Custom software development: web platforms, internal tools, and integrations, with the stack chosen to fit each project.\n• AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude, and the OpenAI API.\n• Social media and digital presence: content, profiles, and brand identity so businesses get found and remembered.\n• AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.\n• Launched two own products under Gravity Labs: Trakk (https://trakk.mvbassalobre.com), a goal tracker with an MCP server for AI assistants, and Talent Labs (https://talentlabs.tech), a job-search platform that sends personalized applications from the candidate's own Gmail.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
 	exp_gravitylabs_techStack:
 		'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
+
+	exp_talentlabs_role: 'Founder',
+	exp_talentlabs_company: 'Talent Labs',
+	exp_talentlabs_period: '2026 – Present',
+	exp_talentlabs_description:
+		"• Founder of Talent Labs (https://talentlabs.tech), a job-search platform for candidates, launched under Gravity Labs.\n• Collects job postings from multiple sources and uses an LLM to extract structured data from each one: stack, seniority, location, and remote.\n• Finds the company's recruiting contact and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.\n• Built with Laravel, Filament, Reverb, queues, and the OpenAI API.",
+	exp_talentlabs_techStack: 'Laravel, Filament, Reverb, Queues, OpenAI API',
 
 	exp_investidor10_role: 'Senior Full Stack Engineer',
 	exp_investidor10_company: 'Investidor10',
@@ -132,12 +139,12 @@ const en: Record<string, string> = {
 	proj_talentlabs_title: 'Talent Labs',
 
 	proj_talentlabs_description:
-		"In closed beta. Job-search platform for candidates: collects job postings from multiple sources, uses an LLM to extract structured data from each posting (stack, seniority, location, remote), finds the company's recruiting contact, and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.",
+		"Launched under Gravity Labs. Job-search platform for candidates: collects job postings from multiple sources, uses an LLM to extract structured data from each posting (stack, seniority, location, remote), finds the company's recruiting contact, and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.",
 
 	proj_trakk_title: 'Trakk',
 
 	proj_trakk_description:
-		'Personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Deployed and in daily use.',
+		'Launched under Gravity Labs. Personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Deployed and in daily use.',
 
 	proj_investidor10_title: 'Investidor10 Platform',
 

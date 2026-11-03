@@ -38,8 +38,17 @@ Remote, self-employed | March 2024 - Present | Technology and AI consultancy hel
 - AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude and the OpenAI API.
 - Social media and digital presence: content, profiles and brand identity so businesses get found and remembered.
 - AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.
+- Launched two own products under Gravity Labs: [Trakk](https://trakk.mvbassalobre.com), a goal tracker with an MCP server for AI assistants, and [Talent Labs](https://talentlabs.tech), a job-search platform that sends personalized applications from the candidate's own Gmail.
 - Divercity Park: designed and run a WhatsApp AI agent in production (n8n, WAHA, OpenAI, PostgreSQL). It answers prices, hours and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.
 - Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.
+
+### Founder, Talent Labs
+
+Remote, self-employed | 2026 - Present | Job-search platform for candidates, launched under Gravity Labs ([talentlabs.tech](https://talentlabs.tech))
+
+- Collects job postings from multiple sources and uses an LLM to extract structured data from each one: stack, seniority, location and remote.
+- Finds the company's recruiting contact and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.
+- Built with Laravel, Filament, Reverb, queues and the OpenAI API.
 
 ### Senior Full Stack Engineer, Investidor10
 
@@ -81,8 +90,8 @@ Remote, contract | June 2021 - April 2024 | Enterprise software consultancy serv
 
 ## Projects
 
-- **Trakk:** personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Laravel, React/Inertia, PostgreSQL. Deployed and in daily use.
-- **TalentLabs (closed beta):** job-search platform that collects postings from multiple sources, uses an LLM to extract structured data from each one, and sends personalized applications from the candidate's own Gmail. Laravel, Filament, Reverb, OpenAI.
+- **[Trakk](https://trakk.mvbassalobre.com):** personal goal tracker with an MCP server, so AI assistants like Claude can read and update goals and tasks. Laravel, React/Inertia, PostgreSQL. Deployed and in daily use.
+- **[Talent Labs](https://talentlabs.tech):** job-search platform that collects postings from multiple sources, uses an LLM to extract structured data from each one, and sends personalized applications from the candidate's own Gmail. Laravel, Filament, Reverb, OpenAI.
 
 ## Education & Certifications
 

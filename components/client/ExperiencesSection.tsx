@@ -30,6 +30,17 @@ const EXPERIENCES: Array<{
 			"• Technology and AI consultancy helping businesses improve their products and processes, from strategy to working software.\n• Custom software development: web platforms, internal tools, and integrations, with the stack chosen to fit each project.\n• AI automation and agents: workflows that cut manual work, and customer-service agents on WhatsApp and other channels through the Meta API, built with n8n, Claude, and the OpenAI API.\n• Social media and digital presence: content, profiles, and brand identity so businesses get found and remembered.\n• AI and technology consulting: where AI really saves time and money in a business, which tools to adopt, and how to put them into day-to-day operations.\n• Divercity Park: designed and run a WhatsApp AI agent in production. It answers prices, hours, and party questions with live data from the park's API, follows strict pricing guardrails, hands conversations to staff with a summary, and logs unanswered questions into a FAQ feedback loop.\n• Built the park's website (Next.js, Supabase, Vercel), including digital party-contract signing and advance tickets with QR validation.",
 	},
 	{
+		id: 'talentlabs',
+		company: 'Talent Labs',
+		roleKey: 'exp_talentlabs_role',
+		roleEn: 'Founder',
+		periodKey: 'exp_talentlabs_period',
+		periodEn: '2026 – Present',
+		descKey: 'exp_talentlabs_description',
+		descEn:
+			"• Founder of Talent Labs (https://talentlabs.tech), a job-search platform for candidates, launched under Gravity Labs.\n• Collects job postings from multiple sources and uses an LLM to extract structured data from each one: stack, seniority, location, and remote.\n• Finds the company's recruiting contact and sends personalized applications from the candidate's own Gmail, with English and Portuguese templates and CVs.\n• Built with Laravel, Filament, Reverb, queues, and the OpenAI API.",
+	},
+	{
 		id: 'investidor10',
 		company: 'Investidor10',
 		roleKey: 'exp_investidor10_role',
@@ -138,6 +149,7 @@ const EXPERIENCES: Array<{
 
 const RECENT_IDS = new Set([
 	'gravitylabs',
+	'talentlabs',
 	'investidor10',
 	'bria',
 	'vega',

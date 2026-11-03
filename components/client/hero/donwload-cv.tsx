@@ -84,6 +84,15 @@ const EXPERIENCE_PDF: Array<{
 		displayPriority: 1,
 	},
 	{
+		id: 'talentlabs',
+		companyKey: 'exp_talentlabs_company',
+		roleKey: 'exp_talentlabs_role',
+		periodKey: 'exp_talentlabs_period',
+		techStackKey: 'exp_talentlabs_techStack',
+		descKey: 'exp_talentlabs_description',
+		displayPriority: 2,
+	},
+	{
 		id: 'investidor10',
 		companyKey: 'exp_investidor10_company',
 		roleKey: 'exp_investidor10_role',
@@ -91,7 +100,7 @@ const EXPERIENCE_PDF: Array<{
 		locationKey: 'exp_investidor10_location',
 		techStackKey: 'exp_investidor10_techStack',
 		descKey: 'exp_investidor10_description',
-		displayPriority: 2,
+		displayPriority: 3,
 	},
 	{
 		id: 'bria',
@@ -101,7 +110,7 @@ const EXPERIENCE_PDF: Array<{
 		locationKey: 'exp_bria_location',
 		techStackKey: 'exp_bria_techStack',
 		descKey: 'exp_bria_description',
-		displayPriority: 3,
+		displayPriority: 4,
 	},
 	{
 		id: 'vega',
@@ -111,7 +120,7 @@ const EXPERIENCE_PDF: Array<{
 		locationKey: 'exp_vega_location',
 		techStackKey: 'exp_vega_techStack',
 		descKey: 'exp_vega_description',
-		displayPriority: 4,
+		displayPriority: 5,
 	},
 	{
 		id: 'diwe',
@@ -121,7 +130,7 @@ const EXPERIENCE_PDF: Array<{
 		locationKey: 'exp_diwe_location',
 		techStackKey: 'exp_diwe_techStack',
 		descKey: 'exp_diwe_description',
-		displayPriority: 5,
+		displayPriority: 6,
 	},
 	{
 		id: 'otimize',
@@ -130,7 +139,7 @@ const EXPERIENCE_PDF: Array<{
 		periodKey: 'exp_otimize_period',
 		locationKey: 'exp_otimize_location',
 		descKey: 'exp_otimize_description',
-		displayPriority: 6,
+		displayPriority: 7,
 	},
 	{
 		id: 'umar',
@@ -138,7 +147,7 @@ const EXPERIENCE_PDF: Array<{
 		roleKey: 'exp_umar_role',
 		periodKey: 'exp_umar_period',
 		locationKey: 'exp_umar_location',
-		displayPriority: 7,
+		displayPriority: 8,
 	},
 	{
 		id: 'copysupply',
@@ -146,7 +155,7 @@ const EXPERIENCE_PDF: Array<{
 		roleKey: 'exp_copysupply_role',
 		periodKey: 'exp_copysupply_period',
 		locationKey: 'exp_copysupply_location',
-		displayPriority: 8,
+		displayPriority: 9,
 	},
 	{
 		id: 'aliveit',

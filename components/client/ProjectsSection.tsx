@@ -46,6 +46,7 @@ const PROJECTS: Array<{
 		titleKey: 'proj_talentlabs_title',
 		descKey: 'proj_talentlabs_description',
 		tech: 'Laravel, Filament, Reverb, Queues, OpenAI',
+		url: 'https://talentlabs.tech',
 	},
 	{
 		id: 'trakk',
@@ -53,6 +54,7 @@ const PROJECTS: Array<{
 		titleKey: 'proj_trakk_title',
 		descKey: 'proj_trakk_description',
 		tech: 'Laravel, React, Inertia, PostgreSQL, MCP',
+		url: 'https://trakk.mvbassalobre.com',
 	},
 	{
 		id: 'investidor10',

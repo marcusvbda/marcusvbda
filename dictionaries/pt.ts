@@ -44,9 +44,16 @@ const ptBR: Record<string, string> = {
 	exp_gravitylabs_company: 'Gravity Labs',
 	exp_gravitylabs_period: 'Março de 2024 – Atual',
 	exp_gravitylabs_description:
-		'• Consultoria de tecnologia e IA que ajuda empresas a melhorar produtos e processos, da estratégia ao software funcionando.\n• Desenvolvimento de software sob medida: plataformas web, ferramentas internas e integrações, com a stack escolhida conforme cada projeto.\n• Automação e agentes de IA: fluxos que reduzem trabalho manual e agentes de atendimento no WhatsApp e em outros canais via API da Meta, construídos com n8n, Claude e a API da OpenAI.\n• Redes sociais e presença digital: conteúdo, perfis e identidade de marca para que os negócios sejam encontrados e lembrados.\n• Consultoria em IA e tecnologia: onde a IA realmente economiza tempo e dinheiro, quais ferramentas adotar e como incorporá-las à rotina da operação.\n• Divercity Park: projetei e mantenho em produção um agente de IA no WhatsApp. Ele responde sobre preços, horários e festas com dados em tempo real da API do parque, segue regras rígidas de preço, repassa conversas para a equipe com um resumo e registra perguntas sem resposta em um ciclo de feedback de FAQ.\n• Construí o site do parque (Next.js, Supabase, Vercel), incluindo assinatura digital de contratos de festa e ingressos antecipados com validação por QR code.',
+		'• Consultoria de tecnologia e IA que ajuda empresas a melhorar produtos e processos, da estratégia ao software funcionando.\n• Desenvolvimento de software sob medida: plataformas web, ferramentas internas e integrações, com a stack escolhida conforme cada projeto.\n• Automação e agentes de IA: fluxos que reduzem trabalho manual e agentes de atendimento no WhatsApp e em outros canais via API da Meta, construídos com n8n, Claude e a API da OpenAI.\n• Redes sociais e presença digital: conteúdo, perfis e identidade de marca para que os negócios sejam encontrados e lembrados.\n• Consultoria em IA e tecnologia: onde a IA realmente economiza tempo e dinheiro, quais ferramentas adotar e como incorporá-las à rotina da operação.\n• Lancei dois produtos próprios pela Gravity Labs: Trakk (https://trakk.mvbassalobre.com), app de metas pessoais com servidor MCP para assistentes de IA, e Talent Labs (https://talentlabs.tech), plataforma de busca de vagas que envia candidaturas personalizadas pelo Gmail do próprio candidato.\n• Divercity Park: projetei e mantenho em produção um agente de IA no WhatsApp. Ele responde sobre preços, horários e festas com dados em tempo real da API do parque, segue regras rígidas de preço, repassa conversas para a equipe com um resumo e registra perguntas sem resposta em um ciclo de feedback de FAQ.\n• Construí o site do parque (Next.js, Supabase, Vercel), incluindo assinatura digital de contratos de festa e ingressos antecipados com validação por QR code.',
 	exp_gravitylabs_techStack:
 		'n8n, WAHA, OpenAI API, PostgreSQL, Next.js, Supabase, Vercel',
+
+	exp_talentlabs_role: 'Fundador',
+	exp_talentlabs_company: 'Talent Labs',
+	exp_talentlabs_period: '2026 – Atual',
+	exp_talentlabs_description:
+		'• Fundador da Talent Labs (https://talentlabs.tech), plataforma de busca de vagas para candidatos, lançada pela Gravity Labs.\n• Coleta vagas de várias fontes e usa um LLM para extrair dados estruturados de cada uma: stack, senioridade, localização e remoto.\n• Encontra o contato de recrutamento da empresa e envia candidaturas personalizadas pelo Gmail do próprio candidato, com templates e currículos em inglês e português.\n• Construída com Laravel, Filament, Reverb, filas e a API da OpenAI.',
+	exp_talentlabs_techStack: 'Laravel, Filament, Reverb, Queues, OpenAI API',
 
 	exp_investidor10_role: 'Engenheiro Full Stack Sênior',
 	exp_investidor10_company: 'Investidor10',
@@ -132,12 +139,12 @@ const ptBR: Record<string, string> = {
 	proj_talentlabs_title: 'Talent Labs',
 
 	proj_talentlabs_description:
-		'Em beta fechado. Plataforma de busca de vagas para candidatos: coleta vagas de várias fontes, usa um LLM para extrair dados estruturados de cada vaga (stack, senioridade, localização, remoto), encontra o contato de recrutamento da empresa e envia candidaturas personalizadas pelo Gmail do próprio candidato, com templates e currículos em inglês e português.',
+		'Lançado pela Gravity Labs. Plataforma de busca de vagas para candidatos: coleta vagas de várias fontes, usa um LLM para extrair dados estruturados de cada vaga (stack, senioridade, localização, remoto), encontra o contato de recrutamento da empresa e envia candidaturas personalizadas pelo Gmail do próprio candidato, com templates e currículos em inglês e português.',
 
 	proj_trakk_title: 'Trakk',
 
 	proj_trakk_description:
-		'Gerenciador pessoal de metas com um servidor MCP, para que assistentes de IA como o Claude possam ler e atualizar metas e tarefas. Em produção e em uso diário.',
+		'Lançado pela Gravity Labs. Gerenciador pessoal de metas com um servidor MCP, para que assistentes de IA como o Claude possam ler e atualizar metas e tarefas. Em produção e em uso diário.',
 
 	proj_investidor10_title: 'Plataforma Investidor10',
 
